@@ -73,6 +73,190 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--gold); }
+  .nav-links a.nav-cta {
+    background: var(--gold);
+    color: var(--bg);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+  }
+  .nav-links a.nav-cta:hover { background: var(--gold-dim); color: var(--bg); }
+  /* Pricing */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .price-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 28px;
+    position: relative;
+  }
+  .price-card.featured {
+    border-color: var(--gold);
+    background: linear-gradient(180deg, var(--bg-card) 0%, rgba(245,200,66,0.06) 100%);
+  }
+  .price-card.featured::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+  }
+  .price-tier {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .price-amount {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 4px;
+  }
+  .price-amount .per {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dim);
+    margin-left: 4px;
+  }
+  .price-tagline {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+  }
+  .price-features li {
+    font-size: 14px;
+    color: var(--text);
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+  }
+  .price-features li::before {
+    content: "✓";
+    color: var(--green);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+  }
+  .price-features li.no::before { content: "—"; color: var(--text-mute); }
+  .price-cta {
+    display: block;
+    text-align: center;
+    background: var(--gold);
+    color: var(--bg);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background 0.2s;
+  }
+  .price-cta:hover { background: var(--gold-dim); }
+  .price-cta.outline {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+  .price-cta.outline:hover { background: var(--gold); color: var(--bg); }
+  /* Subscribe form */
+  .subscribe-box {
+    background: var(--bg-card);
+    border: 1px solid var(--gold);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .subscribe-box h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+  }
+  .subscribe-box p {
+    color: var(--text-dim);
+    margin-bottom: 24px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscribe-cta-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--bg);
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .btn-primary:hover { background: var(--gold-dim); transform: translateY(-2px); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+    transition: border-color 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--gold); }
+  /* Social proof strip */
+  .proof-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+  .proof-item { text-align: center; }
+  .proof-item .num {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.02em;
+  }
+  .proof-item .label {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+  }
   /* Hero */
   .hero {
     padding: 100px 0 60px;
@@ -314,22 +498,28 @@
     <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
     <div class="nav-links">
       <a href="#desks">Desks</a>
+      <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="mailto:brandonpleone@gmail.com">Contact</a>
+      <a href="#subscribe" class="nav-cta">Subscribe</a>
     </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="container">
-    <div class="hero-eyebrow">Personal Trading Desk · Est. 2026</div>
-    <h1>Brandon P. Leone<br><span class="accent">multi-vertical trading desk.</span></h1>
-    <p>Equity research analyst by day, multi-asset operator by night. This is the hub for every market I trade — collectibles, sports, equities. Quant-scored signals, real-time alerts, mobile-first dashboards.</p>
+    <div class="hero-eyebrow">Quant Trading Desk · Live Since 2026</div>
+    <h1>Trade Pokémon TCG<br><span class="accent">like a quant.</span></h1>
+    <p>674 cards. Daily refresh. Composite quant score blending momentum, value, scarcity, liquidity. Built by an equity research analyst — now subscriber-accessible. Free demo, no card required.</p>
+    <div class="subscribe-cta-row" style="justify-content: flex-start; margin-bottom: 36px;">
+      <a href="https://pokemon.bpleone.com" class="btn-primary" target="_blank">Try Free Demo →</a>
+      <a href="#pricing" class="btn-secondary">See Pricing</a>
+    </div>
     <div class="hero-meta">
-      <span>Southern California</span>
-      <span>Finance / IB background</span>
-      <span>5 active desks</span>
-      <span>$0 stack, $0 ad spend</span>
+      <span>674 cards tracked</span>
+      <span>Buy/Sell verdict engine</span>
+      <span>Daily Trade of the Day email</span>
+      <span>$29/mo Pro</span>
     </div>
   </div>
 </header>
@@ -348,8 +538,8 @@
           <span class="badge live">● LIVE</span>
         </div>
         <h3>Pokémon TCG</h3>
-        <div class="tag">198 cards · quant-scored · daily refresh</div>
-        <p>Long-term vintage holds, modern alt-art chase, sealed product appreciation, raw-to-graded pipeline. Auto-refresh from PriceCharting + eBay sold comps, Reddit buzz detection, Discord alerts on STRONG BUY signals.</p>
+        <div class="tag">674 cards · quant-scored · daily refresh · 5 budget brackets</div>
+        <p>The flagship desk. From $2 penny stocks to $80K vintage grails. Composite quant score (momentum + value + scarcity + liquidity), daily auto-refresh, Discord alerts on STRONG BUY, IRS Form 8949 tax reports, sealed-product authentication checklist. <strong style="color: var(--gold);">Now accepting Pro subscribers →</strong></p>
         <div class="card-footer">
           <span class="url">pokemon.bpleone.com</span>
           <span class="arrow">→</span>
@@ -416,6 +606,124 @@
   </div>
 </section>
 
+<section id="pricing" class="section" style="padding-top: 20px;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Pokémon TCG — Plans & Pricing</h2>
+      <span class="label">SaaS · cancel anytime</span>
+    </div>
+
+    <div class="proof-strip">
+      <div class="proof-item"><div class="num">674</div><div class="label">Cards Tracked</div></div>
+      <div class="proof-item"><div class="num">5</div><div class="label">Budget Brackets</div></div>
+      <div class="proof-item"><div class="num">Daily</div><div class="label">Auto Refresh</div></div>
+      <div class="proof-item"><div class="num">$0</div><div class="label">To Try</div></div>
+      <div class="proof-item"><div class="num">28%</div><div class="label">LT Tax Modeling</div></div>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <div class="price-tier">Free Demo</div>
+        <div class="price-amount">$0<span class="per">/ forever</span></div>
+        <div class="price-tagline">Try before you buy. Watermarked prices.</div>
+        <ul class="price-features">
+          <li>Top-level watchlist preview</li>
+          <li>5 BUY signals visible</li>
+          <li>Quant scoring methodology</li>
+          <li class="no">Live prices</li>
+          <li class="no">All 674 cards</li>
+          <li class="no">Inventory P&L tracking</li>
+          <li class="no">Daily alerts</li>
+          <li class="no">Tax reports</li>
+        </ul>
+        <a href="https://pokemon.bpleone.com" class="price-cta outline" target="_blank">Try Demo →</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-tier">Pro Trader</div>
+        <div class="price-amount">$29<span class="per">/ month</span></div>
+        <div class="price-tagline">For serious flippers building a portfolio.</div>
+        <ul class="price-features">
+          <li>All 674 cards — live prices</li>
+          <li>5 budget brackets ($0-100 → $1000+)</li>
+          <li>🔍 Buy/Sell Verdict engine (80/90/95 MV)</li>
+          <li>🎯 Trade of the Day to your inbox daily</li>
+          <li>🏆 Top 500 searchable price index</li>
+          <li>Position sizer w/ capital allocation</li>
+          <li>Inventory P&L tracking</li>
+          <li>Discord alerts on STRONG BUY</li>
+          <li>IRS Form 8949 / Schedule D tax reports</li>
+          <li>Sealed authentication checklist</li>
+          <li>Cancel anytime</li>
+        </ul>
+        <a href="mailto:brandonpleone@gmail.com?subject=Pro%20Subscription%20Request" class="price-cta">Subscribe →</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-tier">Desk Elite</div>
+        <div class="price-amount">$99<span class="per">/ month</span></div>
+        <div class="price-tagline">For LCS owners, vault buyers, big bankrolls.</div>
+        <ul class="price-features">
+          <li>Everything in Pro</li>
+          <li>Cross-marketplace arbitrage scanner</li>
+          <li>PSA Population spike alerts</li>
+          <li>Reddit / Twitter buzz feed</li>
+          <li>1:1 onboarding call with Brandon</li>
+          <li>Direct Discord DM access</li>
+          <li>Multi-user seat (you + partner)</li>
+          <li>Priority feature requests</li>
+          <li>White-glove support</li>
+        </ul>
+        <a href="mailto:brandonpleone@gmail.com?subject=Elite%20Application" class="price-cta outline">Apply for Elite →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="subscribe" class="section" style="padding-top: 20px;">
+  <div class="container">
+    <div class="subscribe-box">
+      <h3>Ready to trade like a pro?</h3>
+      <p>Get the same daily quant signals Brandon runs his own $5K+ bankroll on. Free demo first — no card required. Subscribe when you're convinced.</p>
+      <div class="subscribe-cta-row">
+        <a href="https://pokemon.bpleone.com" class="btn-primary" target="_blank">Try Free Demo →</a>
+        <a href="mailto:brandonpleone@gmail.com?subject=Pro%20Subscription%20Request" class="btn-secondary">Subscribe to Pro</a>
+      </div>
+    </div>
+
+    <div style="margin-top: 60px;">
+      <div class="section-header">
+        <h2>FAQ</h2>
+        <span class="label">Common Questions</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Where does the data come from?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">PriceCharting for PSA 10 trailing prices, TCGPlayer for raw NM, eBay sold comps (last-5 sales), PSA pop reports. Refreshed daily via GitHub Actions.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Why a quant model instead of just prices?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Price alone misses scarcity, liquidity, and momentum. One composite score lets you screen 674 cards in 10 seconds and drill in from there.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Is this financial advice?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">No. Data tooling, not advice. Collectibles are speculative and illiquid. Trade your own conviction.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">How do I get access after subscribing?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Email brandonpleone@gmail.com to sign up. You'll receive an access code by email; enter it in the sidebar of pokemon.bpleone.com to unlock Pro.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Can I cancel?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Yes — month-to-month, no contract. Email to cancel. Prorated refunds on Elite.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Who built this?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Brandon P. Leone — finance / equity research analyst, Southern California. Built the desk for himself + his brother, now opening it up.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="about" class="about">
   <div class="container">
     <div class="about-grid">
@@ -423,6 +731,235 @@
         <h3>About</h3>
         <p>Brandon P. Leone. Investment banking / equity research analyst based in Southern California. Building a personal trading operation that scales the rigor of institutional analysis into asset classes my day-job doesn't touch — cards, sports, side bets.</p>
         <p>This hub is the front door. Each desk is an independent module with its own data, signals, and tooling. Built as a personal lab; sharing what I learn.</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p>Open to collaboration with other operators, recruiters, anyone interested in the infrastructure behind these desks.</p>
+        <div class="contact-row">
+          <a href="mailto:brandonpleone@gmail.com">✉ brandonpleone@gmail.com</a>
+          <a href="https://www.linkedin.com/in/brandonleone/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Brandon P. Leone · bpleone.com</div>
+    <div class="legal">Personal project. Not financial advice. Past performance is not indicative of future results. Trading and collecting involve risk of loss.</div>
+  </div>
+</footer>
+
+</body>
+</html>
+class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Trading Desks</h2>
+      <span class="label">5 modules · 1 live</span>
+    </div>
+    <div class="grid">
+
+      <a href="https://pokemon.bpleone.com" class="card live" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-icon">🃏</span>
+          <span class="badge live">● LIVE</span>
+        </div>
+        <h3>Pokémon TCG</h3>
+        <div class="tag">674 cards · quant-scored · daily refresh · 5 budget brackets</div>
+        <p>The flagship desk. From $2 penny stocks to $80K vintage grails. Composite quant score (momentum + value + scarcity + liquidity), daily auto-refresh, Discord alerts on STRONG BUY, IRS Form 8949 tax reports, sealed-product authentication checklist. <strong style="color: var(--gold);">Now accepting Pro subscribers →</strong></p>
+        <div class="card-footer">
+          <span class="url">pokemon.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <div class="card coming">
+        <div class="card-header">
+          <span class="card-icon">🏀</span>
+          <span class="badge coming">Coming Soon</span>
+        </div>
+        <h3>Sports Cards</h3>
+        <div class="tag">NBA · NFL · MLB · Pokémon-style ops</div>
+        <p>Apply the Pokémon trading framework to sports cards. PSA pop tracking, Panini National Treasures, Topps Chrome, prospect grading bets. Same Streamlit infrastructure, different watchlist.</p>
+        <div class="card-footer">
+          <span>sports-cards.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <div class="card coming">
+        <div class="card-header">
+          <span class="card-icon">🎲</span>
+          <span class="badge coming">Coming Soon</span>
+        </div>
+        <h3>Sports Betting / DFS</h3>
+        <div class="tag">Lines · models · parlays · DFS lineups</div>
+        <p>Edge-finding model across DraftKings, FanDuel, Underdog. Player props, sharps vs. public, weather-adjusted totals, optimal-lineup DFS solver. Bankroll discipline built in.</p>
+        <div class="card-footer">
+          <span>betting.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <div class="card coming">
+        <div class="card-header">
+          <span class="card-icon">📈</span>
+          <span class="badge coming">Coming Soon</span>
+        </div>
+        <h3>Equity Research</h3>
+        <div class="tag">stocks · options · IB-style memos</div>
+        <p>Bottom-up DCF + comps modeling, options structures, earnings plays. Single-name longs, sector pair trades, vol arbitrage. Discipline-of-IB applied to a personal book.</p>
+        <div class="card-footer">
+          <span>equity.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <div class="card coming">
+        <div class="card-header">
+          <span class="card-icon">🏟️</span>
+          <span class="badge coming">Coming Soon</span>
+        </div>
+        <h3>Sports Hub</h3>
+        <div class="tag">my teams · schedules · news · stats</div>
+        <p>One-stop dashboard for every team I follow — Lakers, Dodgers, Rams, USC, whoever. Live scores, schedule, injury reports, news aggregation, fantasy team integration. Pure consumption, no trading.</p>
+        <div class="card-footer">
+          <span>sports.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section" style="padding-top: 20px;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Pokémon TCG — Plans & Pricing</h2>
+      <span class="label">SaaS · cancel anytime</span>
+    </div>
+
+    <div class="proof-strip">
+      <div class="proof-item"><div class="num">674</div><div class="label">Cards Tracked</div></div>
+      <div class="proof-item"><div class="num">5</div><div class="label">Budget Brackets</div></div>
+      <div class="proof-item"><div class="num">Daily</div><div class="label">Auto Refresh</div></div>
+      <div class="proof-item"><div class="num">$0</div><div class="label">To Try</div></div>
+      <div class="proof-item"><div class="num">28%</div><div class="label">LT Tax Modeling</div></div>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <div class="price-tier">Free Demo</div>
+        <div class="price-amount">$0<span class="per">/ forever</span></div>
+        <div class="price-tagline">Try before you buy. Watermarked prices.</div>
+        <ul class="price-features">
+          <li>Top-level watchlist preview</li>
+          <li>5 BUY signals visible</li>
+          <li>Quant scoring methodology</li>
+          <li class="no">Live prices</li>
+          <li class="no">All 674 cards</li>
+          <li class="no">Inventory P&L tracking</li>
+          <li class="no">Daily alerts</li>
+          <li class="no">Tax reports</li>
+        </ul>
+        <a href="https://pokemon.bpleone.com" class="price-cta outline" target="_blank">Try Demo →</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-tier">Pro Trader</div>
+        <div class="price-amount">$29<span class="per">/ month</span></div>
+        <div class="price-tagline">For serious flippers building a portfolio.</div>
+        <ul class="price-features">
+          <li>All 674 cards — live prices</li>
+          <li>5 budget brackets ($0-100 → $1000+)</li>
+          <li>🔍 Buy/Sell Verdict engine (80/90/95 MV)</li>
+          <li>🎯 Trade of the Day to your inbox daily</li>
+          <li>🏆 Top 500 searchable price index</li>
+          <li>Position sizer w/ capital allocation</li>
+          <li>Inventory P&L tracking</li>
+          <li>Discord alerts on STRONG BUY</li>
+          <li>IRS Form 8949 / Schedule D tax reports</li>
+          <li>Sealed authentication checklist</li>
+          <li>Cancel anytime</li>
+        </ul>
+        <a href="mailto:brandonpleone@gmail.com?subject=Pro%20Subscription%20Request" class="price-cta">Subscribe →</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-tier">Desk Elite</div>
+        <div class="price-amount">$99<span class="per">/ month</span></div>
+        <div class="price-tagline">For LCS owners, vault buyers, big bankrolls.</div>
+        <ul class="price-features">
+          <li>Everything in Pro</li>
+          <li>Cross-marketplace arbitrage scanner</li>
+          <li>PSA Population spike alerts</li>
+          <li>Reddit / Twitter buzz feed</li>
+          <li>1:1 onboarding call with Brandon</li>
+          <li>Direct Discord DM access</li>
+          <li>Multi-user seat (you + partner)</li>
+          <li>Priority feature requests</li>
+          <li>White-glove support</li>
+        </ul>
+        <a href="mailto:brandonpleone@gmail.com?subject=Elite%20Application" class="price-cta outline">Apply for Elite →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="subscribe" class="section" style="padding-top: 20px;">
+  <div class="container">
+    <div class="subscribe-box">
+      <h3>Ready to trade like a pro?</h3>
+      <p>Get the same daily quant signals Brandon runs his own $5K+ bankroll on. Free demo first — no card required. Subscribe when you're convinced.</p>
+      <div class="subscribe-cta-row">
+        <a href="https://pokemon.bpleone.com" class="btn-primary" target="_blank">Try Free Demo →</a>
+        <a href="mailto:brandonpleone@gmail.com?subject=Pro%20Subscription%20Request" class="btn-secondary">Subscribe to Pro</a>
+      </div>
+    </div>
+
+    <div style="margin-top: 60px;">
+      <div class="section-header">
+        <h2>FAQ</h2>
+        <span class="label">Common Questions</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Where does the data come from?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">PriceCharting for PSA 10 trailing prices, TCGPlayer for raw NM, eBay sold comps (last-5 sales), PSA pop reports. Refreshed daily via GitHub Actions.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Why a quant model instead of just prices?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Price alone misses scarcity, liquidity, and momentum. One composite score lets you screen 674 cards in 10 seconds and drill in from there.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Is this financial advice?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">No. Data tooling, not advice. Collectibles are speculative and illiquid. Trade your own conviction.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">How do I get access after subscribing?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Email brandonpleone@gmail.com to sign up. You'll receive an access code by email; enter it in the sidebar of pokemon.bpleone.com to unlock Pro.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Can I cancel?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Yes — month-to-month, no contract. Email to cancel. Prorated refunds on Elite.</p>
+
+          <h4 style="color: var(--gold); margin-bottom: 8px; font-size: 16px;">Who built this?</h4>
+          <p style="color: var(--text-dim); font-size: 14px; margin-bottom: 24px;">Brandon P. Leone — finance / equity research analyst, Southern California. Built the desk for himself + his brother, now opening it up.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <h3>About</h3>
+        <p>Brandon P. Leone. Investment banking / equity research analyst based in Southern California. Building a personal trading operation that scales the rigor of institutional analysis into asset classes my day-job doesn't touch — cards, sports, side bets.</p>
+        <p>This hub is the front door. Each desk is an independent module with its own data, signals, and tooling. Built as a personal lab; now opening up the Pokémon desk to subscribers.</p>
       </div>
       <div>
         <h3>Connect</h3>
