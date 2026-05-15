@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade of the Day · History · bpleone.com</title>
+<meta name="description" content="Every past Trade of the Day pick, with current price and return %. Honest track record.">
+<meta property="og:title" content="TOTD History · bpleone.com">
+<meta property="og:description" content="Every past Trade of the Day pick, with current price and return %.">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/totd-history.html">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 48px 0 24px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 38px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+  h1 .accent { color: var(--gold); }
+  .lead { color: var(--text-dim); font-size: 16px; margin-bottom: 24px; max-width: 740px; }
+  .stat-row {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+    margin: 24px 0;
+  }
+  @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr 1fr; } }
+  .stat { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .stat .l { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); letter-spacing: 0.1em; text-transform: uppercase; }
+  .stat .v { font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700; color: var(--gold); margin-top: 4px; }
+  .stat .v.green { color: var(--green); }
+  .stat .v.red { color: var(--red); }
+  table {
+    width: 100%; border-collapse: collapse;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+    overflow: hidden; margin: 16px 0;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  thead th { background: rgba(0,0,0,0.2); font-size: 10px; color: var(--text-mute);
+              letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+  tbody tr:hover { background: var(--bg-card-hover); }
+  td.name { font-family: 'Inter', sans-serif; font-weight: 600; color: var(--text); }
+  td.name .var { color: var(--text-mute); font-size: 11px; font-family: monospace; display: block; }
+  td.num { text-align: right; }
+  td.delta { text-align: right; font-weight: 700; }
+  td.delta.up { color: var(--green); }
+  td.delta.down { color: var(--red); }
+  td.delta.flat { color: var(--text-mute); }
+  footer { padding: 32px 0; margin-top: 32px; border-top: 1px solid var(--border);
+           color: var(--text-mute); font-size: 13px; font-family: monospace; text-align: center; }
+  footer a { color: var(--gold-dim); text-decoration: none; }
+  .empty { text-align: center; padding: 80px 24px; color: var(--text-dim); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/compare.html">⚖️ Compare</a>
+      <a href="/totd-history.html" class="active">🎯 TOTD Log</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/changelog.html">📋 Changelog</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">🎯 Track Record</span>
+    <h1>Every <span class="accent">Trade of the Day</span> — ever.</h1>
+    <p class="lead">Algo picks one card daily. We log it. We track it. If a pick goes south, you see it here. Built in public.</p>
+
+    <div class="stat-row" id="stat-row">
+      <div class="stat"><div class="l">Total Picks</div><div class="v" id="kpi-total">—</div></div>
+      <div class="stat"><div class="l">Winners</div><div class="v green" id="kpi-winners">—</div></div>
+      <div class="stat"><div class="l">Avg Return</div><div class="v" id="kpi-avg-return">—</div></div>
+      <div class="stat"><div class="l">Best Pick</div><div class="v green" id="kpi-best">—</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <table id="history-table">
+      <thead><tr>
+        <th>Date</th>
+        <th>Card</th>
+        <th class="num">Pick $</th>
+        <th class="num">Current $</th>
+        <th class="num">Return</th>
+        <th class="num">Score @ pick</th>
+        <th>Signal</th>
+      </tr></thead>
+      <tbody id="history-body">
+        <tr><td colspan="7" class="empty">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  // totd_history.jsonl is on the trading-desk repo (cron appends to it)
+  const URLS = [
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/totd_history.jsonl',
+    '/totd_history.jsonl'
+  ];
+
+  function fmtMoney(n) {
+    if (n == null || isNaN(n) || n === 0) return '—';
+    if (n >= 1000) return '$' + Math.round(n).toLocaleString();
+    return '$' + n.toFixed(n < 10 ? 2 : 0);
+  }
+  function pctClass(p) {
+    if (p == null || isNaN(p) || Math.abs(p) < 0.5) return 'flat';
+    return p > 0 ? 'up' : 'down';
+  }
+
+  function tryFetch(urls, i) {
+    if (i >= urls.length) return Promise.reject('all sources failed');
+    return fetch(urls[i] + '?t=' + Date.now())
+      .then(r => r.ok ? r.text() : Promise.reject(r.status))
+      .catch(() => tryFetch(urls, i + 1));
+  }
+
+  function parseJsonl(text) {
+    return text.split('\n').filter(Boolean).map(l => {
+      try { return JSON.parse(l); } catch (e) { return null; }
+    }).filter(Boolean);
+  }
+
+  function render(records) {
+    if (!records || records.length === 0) {
+      document.getElementById('history-body').innerHTML =
+        '<tr><td colspan="7" class="empty">No TOTD history yet. The first pick gets logged on the next cron run.</td></tr>';
+      return;
+    }
+    records.sort((a, b) => b.date.localeCompare(a.date));
+
+    // KPIs
+    const closed = records.filter(r => r.current_price);
+    const wins = closed.filter(r => r.return_pct > 0).length;
+    const avgRet = closed.length ? closed.reduce((s, r) => s + r.return_pct, 0) / closed.length : 0;
+    const best = closed.length ? closed.reduce((b, r) => r.return_pct > b.return_pct ? r : b) : null;
+
+    document.getElementById('kpi-total').textContent = records.length;
+    document.getElementById('kpi-winners').textContent = wins + '/' + closed.length;
+    const avgEl = document.getElementById('kpi-avg-return');
+    avgEl.textContent = closed.length ? (avgRet >= 0 ? '+' : '') + avgRet.toFixed(1) + '%' : '—';
+    avgEl.className = 'v ' + (avgRet > 0 ? 'green' : avgRet < 0 ? 'red' : '');
+    document.getElementById('kpi-best').textContent = best ? best.card.name.slice(0, 18) + ' (+' + best.return_pct.toFixed(0) + '%)' : '—';
+
+    // Table
+    document.getElementById('history-body').innerHTML = records.map(r => {
+      const ret = r.return_pct;
+      const retCls = pctClass(ret);
+      const retStr = ret == null ? 'pending' : (ret >= 0 ? '+' : '') + ret.toFixed(1) + '%';
+      return '<tr>' +
+        '<td>' + r.date + '</td>' +
+        '<td class="name"><a href="/card.html?id=' + r.card.id + '" style="color:var(--text);text-decoration:none;">' + r.card.name + '</a>' +
+        '<span class="var">' + r.card.set + ' · ' + r.card.variant + '</span></td>' +
+        '<td class="num">' + fmtMoney(r.live_at_pick) + '</td>' +
+        '<td class="num">' + fmtMoney(r.current_price) + '</td>' +
+        '<td class="delta ' + retCls + '">' + retStr + '</td>' +
+        '<td class="num">' + (r.score_at_pick || '?') + '</td>' +
+        '<td>' + (r.signal_at_pick || '—') + '</td>' +
+      '</tr>';
+    }).join('');
+  }
+
+  function load() {
+    tryFetch(URLS, 0).then(text => render(parseJsonl(text)))
+      .catch(() => render([]));
+  }
+
+  document.addEventListener('DOMContentLoaded', load);
+})();
+</script>
+</body>
+</html>
