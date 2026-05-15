@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404 — bpleone.com</title>
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-card: #131826;
+    --border: #232a3e;
+    --gold: #f5c842;
+    --text: #e8ecf4;
+    --text-dim: #8b94a8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(245,200,66,0.05) 0, transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(74,222,128,0.03) 0, transparent 40%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+  .panel {
+    max-width: 520px;
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 48px 32px;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h1 { font-size: 64px; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 8px; }
+  p { color: var(--text-dim); margin-bottom: 28px; }
+  .btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--bg);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .quick-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .quick-links a {
+    color: var(--text-dim);
+    font-size: 13px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+  .quick-links a:hover { color: var(--gold); border-color: var(--gold); }
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="eyebrow">bpleone.com</div>
+    <h1>404</h1>
+    <p>The page you wanted moved or never existed. Drop back to the desk hub.</p>
+    <a class="btn" href="/">← Back to bpleone.com</a>
+    <div class="quick-links">
+      <a href="/sports-cards/">Sports Cards</a>
+      <a href="/sports/">Sports Hub</a>
+      <a href="https://pokemon.bpleone.com">Pokémon TCG</a>
+      <a href="https://betting.bpleone.com">Sports Betting</a>
+    </div>
+  </div>
+</body>
+</html>
