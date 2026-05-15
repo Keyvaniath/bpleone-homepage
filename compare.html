@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare cards · bpleone.com</title>
+<meta name="description" content="Side-by-side quant comparison of up to 4 Pokémon TCG cards. Score, price, signal, target buy/sell — all live.">
+<meta property="og:title" content="Compare Pokémon TCG cards · bpleone.com">
+<meta property="og:description" content="Side-by-side quant comparison.">
+<meta property="og:url" content="https://bpleone.com/compare.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/compare.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+  }
+  .container { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 48px 0 16px; }
+  .eyebrow { display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 12px; }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+  h1 .accent { color: var(--gold); }
+  .lead { color: var(--text-dim); font-size: 15px; margin-bottom: 20px; }
+  .add-row {
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+    margin-bottom: 24px;
+  }
+  .add-row input {
+    background: var(--bg-card); border: 1px solid var(--border);
+    color: var(--text); padding: 10px 14px; border-radius: 8px;
+    font-family: 'Inter', sans-serif; font-size: 14px;
+    outline: none; min-width: 240px;
+  }
+  .add-row input:focus { border-color: var(--gold); }
+  .add-row button {
+    background: var(--gold); color: var(--bg); border: none;
+    padding: 10px 18px; border-radius: 8px; font-weight: 700;
+    font-family: 'Inter', sans-serif; cursor: pointer; font-size: 14px;
+  }
+  .add-row button:hover { background: var(--gold-dim); }
+  .add-row .hint {
+    color: var(--text-mute); font-size: 13px; font-family: monospace;
+  }
+  /* Comparison grid */
+  .cmp-grid {
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .cmp-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+  }
+  .cmp-card .remove {
+    position: absolute; top: 10px; right: 12px;
+    background: transparent; border: none; color: var(--text-mute);
+    cursor: pointer; font-size: 18px;
+  }
+  .cmp-card .remove:hover { color: var(--red); }
+  .cmp-image {
+    aspect-ratio: 5/7;
+    background: var(--bg);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .cmp-image img { width: 100%; height: 100%; object-fit: contain; }
+  .cmp-name { font-size: 16px; font-weight: 700; margin-bottom: 2px; line-height: 1.3; }
+  .cmp-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute); margin-bottom: 10px; }
+  .cmp-signal {
+    display: inline-block; padding: 3px 10px; border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    letter-spacing: 0.1em; margin-bottom: 12px;
+  }
+  .cmp-row {
+    display: flex; justify-content: space-between; padding: 6px 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: 13px;
+  }
+  .cmp-row:last-child { border-bottom: none; }
+  .cmp-row .lbl { color: var(--text-mute); font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+  .cmp-row .val { color: var(--text); font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+  .cmp-row .val.gold { color: var(--gold); }
+  .cmp-row .val.green { color: var(--green); }
+  .cmp-row .val.red { color: var(--red); }
+  .cmp-best { box-shadow: 0 0 0 2px var(--gold); }
+  .cmp-best::before {
+    content: '🏆 Best score';
+    position: absolute; top: -10px; left: 12px;
+    background: var(--gold); color: var(--bg);
+    font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 700;
+    letter-spacing: 0.1em; padding: 3px 8px; border-radius: 4px;
+  }
+  .cmp-open { display: block; text-align: center; margin-top: 12px;
+              background: var(--bg); border: 1px solid var(--border);
+              color: var(--gold-dim); padding: 8px; border-radius: 6px;
+              text-decoration: none; font-size: 12px; font-family: monospace; }
+  .cmp-open:hover { border-color: var(--gold); color: var(--gold); }
+  .empty { text-align: center; padding: 80px 24px; color: var(--text-dim); }
+  .share-row {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 14px; margin-top: 20px; font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--text-mute); display: flex; gap: 10px; align-items: center;
+    flex-wrap: wrap;
+  }
+  .share-row code { color: var(--gold); background: rgba(245,200,66,0.06); padding: 2px 6px; border-radius: 3px; }
+  .share-row button {
+    background: var(--gold); color: var(--bg); border: none;
+    padding: 6px 14px; border-radius: 6px; font-family: 'Inter', sans-serif; font-weight: 600;
+    cursor: pointer; font-size: 12px; margin-left: auto;
+  }
+  footer { padding: 32px 0; margin-top: 40px; border-top: 1px solid var(--border);
+           color: var(--text-mute); font-size: 13px; font-family: monospace; text-align: center; }
+  footer a { color: var(--gold-dim); text-decoration: none; }
+  /* Autocomplete dropdown */
+  .ac-wrap { position: relative; flex: 1; min-width: 240px; }
+  .ac-list {
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; max-height: 280px; overflow-y: auto;
+    z-index: 10; margin-top: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  .ac-list .item {
+    padding: 8px 12px; cursor: pointer; font-size: 13px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ac-list .item:last-child { border-bottom: none; }
+  .ac-list .item:hover { background: var(--bg-card-hover); }
+  .ac-list .item .id { font-family: monospace; color: var(--text-mute); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/compare.html" class="active">⚖️ Compare</a>
+      <a href="/#desks">🧰 Desks</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/changelog.html">📋 Changelog</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">⚖️ Compare</span>
+    <h1>Compare cards <span class="accent">side-by-side.</span></h1>
+    <p class="lead">Add up to 4 cards by name or CardID. Quant score, signal, live price, targets — all in one view.</p>
+
+    <div class="add-row">
+      <div class="ac-wrap">
+        <input type="text" id="card-input" placeholder="Type card name (e.g. Moonbreon, Charizard)…" autocomplete="off">
+        <div class="ac-list" id="ac-list" style="display:none;"></div>
+      </div>
+      <button id="clear-btn" type="button">Clear all</button>
+      <span class="hint">Or share via URL: <code>/compare.html?ids=M001,V001,X019</code></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="cmp-grid" id="cmp-grid">
+      <p class="empty" style="grid-column: 1/-1;">Add up to 4 cards above to compare.</p>
+    </div>
+
+    <div class="share-row" id="share-row" style="display:none;">
+      <span>Share this comparison:</span>
+      <code id="share-url"></code>
+      <button id="copy-btn">📋 Copy</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const CARDS_URLS = [
+    '/cards_full.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
+  ];
+
+  let allCards = null;       // full {id → card} map
+  let cardsArr = null;       // array for searching
+  let selected = [];         // CardIDs in compare view
+
+  function fmtMoney(n) {
+    if (n == null || isNaN(n) || n === 0) return '—';
+    if (n >= 1e6) return '$' + (n/1e6).toFixed(2) + 'M';
+    if (n >= 1e3) return '$' + Math.round(n).toLocaleString();
+    return '$' + n.toFixed(n < 10 ? 2 : 0);
+  }
+
+  function signalCls(s) {
+    return ({
+      'STRONG BUY': 'rgba(74,222,128,0.12);color:#4ade80;border:1px solid rgba(74,222,128,0.3)',
+      'BUY':        'rgba(74,222,128,0.06);color:#4ade80',
+      'HOLD':       'rgba(139,148,168,0.1);color:#8b94a8',
+      'TRIM':       'rgba(251,146,60,0.1);color:#fb923c',
+      'SELL':       'rgba(248,113,113,0.12);color:#f87171',
+    })[s] || 'background:var(--bg);color:var(--text-dim)';
+  }
+
+  function tryFetch(urls, i) {
+    if (i >= urls.length) return Promise.reject('all sources failed');
+    return fetch(urls[i] + '?t=' + Date.now())
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .catch(() => tryFetch(urls, i + 1));
+  }
+
+  function urlState() {
+    const m = location.search.match(/[?&]ids=([^&]+)/);
+    if (!m) return [];
+    return decodeURIComponent(m[1]).split(',').filter(Boolean).slice(0, 4);
+  }
+
+  function setUrl() {
+    const u = new URL(location.href);
+    if (selected.length) u.searchParams.set('ids', selected.join(','));
+    else u.searchParams.delete('ids');
+    history.replaceState(null, '', u.toString());
+    const shareRow = document.getElementById('share-row');
+    if (selected.length >= 2) {
+      shareRow.style.display = '';
+      document.getElementById('share-url').textContent = u.toString();
+    } else {
+      shareRow.style.display = 'none';
+    }
+  }
+
+  function addCard(id) {
+    if (selected.includes(id) || selected.length >= 4) return;
+    if (!allCards || !allCards[id]) return;
+    selected.push(id);
+    render();
+  }
+
+  function removeCard(id) {
+    selected = selected.filter(x => x !== id);
+    render();
+  }
+
+  function render() {
+    setUrl();
+    const grid = document.getElementById('cmp-grid');
+    if (selected.length === 0) {
+      grid.innerHTML = '<p class="empty" style="grid-column: 1/-1;">Add up to 4 cards above to compare.</p>';
+      return;
+    }
+    const cards = selected.map(id => allCards[id]).filter(Boolean);
+    const bestScore = Math.max(...cards.map(c => c.score || 0));
+
+    grid.innerHTML = cards.map(c => {
+      const isBest = c.score === bestScore && cards.length > 1;
+      const cur = c.live_price || c.wb_price;
+      const wbDelta = c.wb_price > 0 ? (cur - c.wb_price) / c.wb_price * 100 : null;
+      const wbDeltaClass = wbDelta == null ? '' : (wbDelta > 0 ? 'green' : (wbDelta < 0 ? 'red' : ''));
+      const img = c.image ?
+        '<img src="' + c.image + '" alt="' + c.name + '">' :
+        '<div style="height:100%;display:flex;align-items:center;justify-content:center;color:var(--text-mute);font-family:monospace;font-size:11px;">no image</div>';
+
+      return '<div class="cmp-card' + (isBest ? ' cmp-best' : '') + '">' +
+        '<button class="remove" onclick="window.__removeCard(\'' + c.id + '\')">✕</button>' +
+        '<div class="cmp-image">' + img + '</div>' +
+        '<div class="cmp-name">' + c.name + '</div>' +
+        '<div class="cmp-meta">' + c.set + ' · ' + c.variant + '</div>' +
+        '<span class="cmp-signal" style="' + signalCls(c.signal) + '">' + c.signal + ' · ' + c.score + '/100</span>' +
+        '<div class="cmp-row"><span class="lbl">Live $</span><span class="val gold">' + fmtMoney(cur) + '</span></div>' +
+        '<div class="cmp-row"><span class="lbl">Workbook</span><span class="val">' + fmtMoney(c.wb_price) + '</span></div>' +
+        (wbDelta != null ? '<div class="cmp-row"><span class="lbl">Δ vs WB</span><span class="val ' + wbDeltaClass + '">' + (wbDelta > 0 ? '+' : '') + wbDelta.toFixed(1) + '%</span></div>' : '') +
+        '<div class="cmp-row"><span class="lbl">Buy ≤ 80%</span><span class="val green">' + fmtMoney(c.target_buy) + '</span></div>' +
+        '<div class="cmp-row"><span class="lbl">Sell ≥ 95%</span><span class="val gold">' + fmtMoney(c.target_sell) + '</span></div>' +
+        '<div class="cmp-row"><span class="lbl">Tier</span><span class="val">' + (c.tier || '—') + '</span></div>' +
+        '<div class="cmp-row"><span class="lbl">PSA 10 Pop</span><span class="val">' + (c.pop_psa10 || '—') + '</span></div>' +
+        '<a class="cmp-open" href="/card.html?id=' + c.id + '">→ full detail</a>' +
+        '</div>';
+    }).join('');
+  }
+
+  window.__removeCard = removeCard;
+
+  function setupAutocomplete() {
+    const input = document.getElementById('card-input');
+    const list = document.getElementById('ac-list');
+
+    function update() {
+      const q = input.value.trim().toLowerCase();
+      if (!q || q.length < 2) {
+        list.style.display = 'none';
+        return;
+      }
+      const matches = cardsArr.filter(c =>
+        c.name.toLowerCase().includes(q) ||
+        c.id.toLowerCase().includes(q) ||
+        c.set.toLowerCase().includes(q)
+      ).slice(0, 20);
+      if (matches.length === 0) {
+        list.style.display = 'none';
+        return;
+      }
+      list.innerHTML = matches.map(c =>
+        '<div class="item" data-id="' + c.id + '">' +
+        '<strong>' + c.name + '</strong> <span class="id">' + c.id + ' · ' + c.variant + '</span>' +
+        '</div>'
+      ).join('');
+      list.style.display = '';
+      list.querySelectorAll('.item').forEach(el => {
+        el.addEventListener('click', () => {
+          addCard(el.dataset.id);
+          input.value = '';
+          list.style.display = 'none';
+        });
+      });
+    }
+    input.addEventListener('input', update);
+    input.addEventListener('focus', update);
+    document.addEventListener('click', e => {
+      if (!input.contains(e.target) && !list.contains(e.target)) {
+        list.style.display = 'none';
+      }
+    });
+  }
+
+  function load() {
+    tryFetch(CARDS_URLS, 0).then(data => {
+      allCards = data.cards || {};
+      cardsArr = Object.values(allCards);
+      selected = urlState();
+      render();
+      setupAutocomplete();
+      document.getElementById('clear-btn').addEventListener('click', () => {
+        selected = [];
+        render();
+      });
+      document.getElementById('copy-btn').addEventListener('click', e => {
+        navigator.clipboard.writeText(location.href).then(() => {
+          e.target.textContent = '✓ Copied';
+          setTimeout(() => e.target.textContent = '📋 Copy', 1500);
+        });
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', load);
+})();
+</script>
+</body>
+</html>
