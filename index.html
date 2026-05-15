@@ -489,6 +489,129 @@
     gap: 12px;
   }
   footer .legal { font-size: 11px; max-width: 480px; line-height: 1.5; }
+  /* Shop section */
+  .shop-section {
+    padding: 40px 0 80px;
+    border-top: 1px solid var(--border);
+    background:
+      radial-gradient(circle at 50% 0%, rgba(245,200,66,0.05) 0, transparent 60%);
+  }
+  .shop-eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: rgba(245,200,66,0.08);
+    border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  .shop-headline {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+  .shop-headline .accent { color: var(--gold); }
+  .shop-sub {
+    color: var(--text-dim);
+    font-size: 16px;
+    max-width: 640px;
+    margin-bottom: 36px;
+  }
+  .shop-trust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    .shop-trust { grid-template-columns: repeat(2, 1fr); }
+    .shop-headline { font-size: 28px; }
+  }
+  .trust-tile {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .trust-tile:hover {
+    border-color: rgba(245,200,66,0.4);
+    transform: translateY(-2px);
+  }
+  .trust-tile .icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .trust-tile .title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .trust-tile .desc {
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .shop-cta-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .shop-cta-row .btn-primary {
+    background: var(--gold);
+    color: var(--bg);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .shop-cta-row .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(245,200,66,0.25);
+  }
+  .shop-cta-row .btn-ghost {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    border-bottom: 1px solid var(--text-mute);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .shop-cta-row .btn-ghost:hover { color: var(--gold); border-color: var(--gold); }
+  .shop-stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    border-top: 1px dashed var(--border);
+  }
+  .shop-stat .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    color: var(--gold);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .shop-stat .l {
+    font-size: 11px;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 6px;
+  }
 </style>
 </head>
 <body>
@@ -497,7 +620,7 @@
   <div class="container">
     <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
     <div class="nav-links">
-      <a href="https://pokemon.bpleone.com/?tab=store" target="_blank">🛒 Shop</a>
+      <a href="#shop">🛒 Shop</a>
       <a href="#desks">Desks</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
@@ -525,6 +648,69 @@
     </div>
   </div>
 </header>
+
+<section id="shop" class="shop-section">
+  <div class="container">
+    <span class="shop-eyebrow">🛒 Now Selling · Live Inventory</span>
+    <h2 class="shop-headline">Shop graded slabs at <span class="accent">5% below market.</span></h2>
+    <p class="shop-sub">
+      Every card priced live against TCGPlayer, eBay sold comps, and PriceCharting medians —
+      automatically marked 5% under fair market. PSA-graded slabs, sealed product, and clean raw cards
+      from a tracked grading pipeline. No fee gouging, no eBay 13% take.
+    </p>
+
+    <div class="shop-trust">
+      <div class="trust-tile">
+        <div class="icon">📊</div>
+        <div class="title">Market-Pegged</div>
+        <div class="desc">Asking price = live market × 0.95. Updated every 4 hours.</div>
+      </div>
+      <div class="trust-tile">
+        <div class="icon">💯</div>
+        <div class="title">Authentic Only</div>
+        <div class="desc">Every PSA cert verified against the public registry before shipment.</div>
+      </div>
+      <div class="trust-tile">
+        <div class="icon">📦</div>
+        <div class="title">Insured Shipping</div>
+        <div class="desc">USPS Priority + signature on every card $200+. Free shipping over $1k.</div>
+      </div>
+      <div class="trust-tile">
+        <div class="icon">🔄</div>
+        <div class="title">7-Day Returns</div>
+        <div class="desc">Condition not as described? Full refund with photo evidence.</div>
+      </div>
+    </div>
+
+    <div class="shop-cta-row">
+      <a href="https://pokemon.bpleone.com/?tab=store" class="btn-primary" target="_blank">
+        Browse Live Inventory →
+      </a>
+      <a href="mailto:brandonpleone@gmail.com?subject=Wantlist%20request" class="btn-ghost">
+        or send a wantlist
+      </a>
+    </div>
+
+    <div class="shop-stats">
+      <div class="shop-stat">
+        <div class="n">5%</div>
+        <div class="l">Below Market</div>
+      </div>
+      <div class="shop-stat">
+        <div class="n">0%</div>
+        <div class="l">eBay Fees</div>
+      </div>
+      <div class="shop-stat">
+        <div class="n">24h</div>
+        <div class="l">Ship Window</div>
+      </div>
+      <div class="shop-stat">
+        <div class="n">100%</div>
+        <div class="l">PSA-Verified</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="desks" class="section">
   <div class="container">
