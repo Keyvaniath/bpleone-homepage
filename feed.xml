@@ -5,25 +5,25 @@
   <link>https://bpleone.com/</link>
   <description>Daily market brief + STRONG BUY signals from Brandon P. Leone's personal trading desk.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 15 May 2026 07:53:43 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 15 May 2026 19:59:24 +0000</lastBuildDate>
   <atom:link href="https://bpleone.com/feed.xml" rel="self" type="application/rss+xml" />
   <item>
     <title>Market Brief · Friday, May 15, 2026</title>
     <link>https://bpleone.com/</link>
     <guid isPermaLink="false">https://bpleone.com/brief/2026-05-15</guid>
-    <pubDate>Fri, 15 May 2026 07:53:43 +0000</pubDate>
+    <pubDate>Fri, 15 May 2026 19:59:24 +0000</pubDate>
     <category>Market Brief</category>
-    <description><![CDATA[<p>Tracking **774 cards** · **499** live-priced (64% coverage) · 84 STRONG BUYs flagged today.</p>
-<p>**Trade of the Day: Magnezone V Alt Art** (PSA 10) — $35 live, quant score **76/100**, signal **STRONG BUY**. Lost Origin.</p>
+    <description><![CDATA[<p>Tracking **774 cards** · **555** live-priced (72% coverage) · 84 STRONG BUYs flagged today.</p>
+<p>**Trade of the Day: Lugia VSTAR Alt Art** (PSA 10) — $820 live, quant score **75/100**, signal **STRONG BUY**. Silver Tempest.</p>
 <p>Top algo picks right now: **Mega Gengar ex SIR**, **Birthday Pikachu Promo**, **Umbreon VMAX (Moonbreon)**. Each scoring 75+ and trading under $5K.</p>
 <p>Algo flags to trim/skip: **Charizard Base Unlimited**, **Umbreon VMAX Alt (Japanese)**, **Mewtwo Base Unlimited**. Score-rank suggests caution.</p>
-<p>Coverage is at **64%** — the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 275 cards. Real-time 30-day deltas activate after 5 days of live tracking.</p>]]></description>
+<p>Coverage is at **72%** — the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 219 cards. Real-time 30-day deltas activate after 5 days of live tracking.</p>]]></description>
   </item>
   <item>
     <title>STRONG BUY · Mega Gengar ex SIR (PSA 10) · $3,705</title>
     <link>https://bpleone.com/card.html?id=M081</link>
     <guid isPermaLink="false">https://bpleone.com/strong-buy/M081/2026-05-15</guid>
-    <pubDate>Fri, 15 May 2026 07:53:43 +0000</pubDate>
+    <pubDate>Fri, 15 May 2026 19:59:24 +0000</pubDate>
     <category>STRONG BUY</category>
     <description><![CDATA[<p>Live $ 3704.6 · Quant Score 78/100 · Set: Ascended Heroes · Variant: PSA 10</p><p>See full breakdown: <a href='https://bpleone.com/card.html?id=M081'>bpleone.com/card.html?id=M081</a></p>]]></description>
   </item>
@@ -31,7 +31,7 @@
     <title>STRONG BUY · Birthday Pikachu Promo (PSA 10) · $1,100</title>
     <link>https://bpleone.com/card.html?id=M092</link>
     <guid isPermaLink="false">https://bpleone.com/strong-buy/M092/2026-05-15</guid>
-    <pubDate>Fri, 15 May 2026 07:53:43 +0000</pubDate>
+    <pubDate>Fri, 15 May 2026 19:59:24 +0000</pubDate>
     <category>STRONG BUY</category>
     <description><![CDATA[<p>Live $ 1100.0 · Quant Score 78/100 · Set: Black Star Promo #24 · Variant: PSA 10</p><p>See full breakdown: <a href='https://bpleone.com/card.html?id=M092'>bpleone.com/card.html?id=M092</a></p>]]></description>
   </item>
@@ -39,7 +39,7 @@
     <title>STRONG BUY · Umbreon VMAX (Moonbreon) (Raw NM) · $1,856</title>
     <link>https://bpleone.com/card.html?id=M002</link>
     <guid isPermaLink="false">https://bpleone.com/strong-buy/M002/2026-05-15</guid>
-    <pubDate>Fri, 15 May 2026 07:53:43 +0000</pubDate>
+    <pubDate>Fri, 15 May 2026 19:59:24 +0000</pubDate>
     <category>STRONG BUY</category>
     <description><![CDATA[<p>Live $ 1855.94 · Quant Score 77/100 · Set: Evolving Skies · Variant: Raw NM</p><p>See full breakdown: <a href='https://bpleone.com/card.html?id=M002'>bpleone.com/card.html?id=M002</a></p>]]></description>
   </item>
@@ -47,7 +47,7 @@
     <title>STRONG BUY · Umbreon ex SIR (Raw NM) · $1,529</title>
     <link>https://bpleone.com/card.html?id=M070</link>
     <guid isPermaLink="false">https://bpleone.com/strong-buy/M070/2026-05-15</guid>
-    <pubDate>Fri, 15 May 2026 07:53:43 +0000</pubDate>
+    <pubDate>Fri, 15 May 2026 19:59:24 +0000</pubDate>
     <category>STRONG BUY</category>
     <description><![CDATA[<p>Live $ 1529.42 · Quant Score 77/100 · Set: Prismatic Evolutions · Variant: Raw NM</p><p>See full breakdown: <a href='https://bpleone.com/card.html?id=M070'>bpleone.com/card.html?id=M070</a></p>]]></description>
   </item>
@@ -55,7 +55,7 @@
     <title>STRONG BUY · Mega Charizard X ex SIR (PSA 10) · $1,800</title>
     <link>https://bpleone.com/card.html?id=M080</link>
     <guid isPermaLink="false">https://bpleone.com/strong-buy/M080/2026-05-15</guid>
-    <pubDate>Fri, 15 May 2026 07:53:43 +0000</pubDate>
+    <pubDate>Fri, 15 May 2026 19:59:24 +0000</pubDate>
     <category>STRONG BUY</category>
     <description><![CDATA[<p>Live $ 1800.0 · Quant Score 77/100 · Set: Mega Evolution (ME01) · Variant: PSA 10</p><p>See full breakdown: <a href='https://bpleone.com/card.html?id=M080'>bpleone.com/card.html?id=M080</a></p>]]></description>
   </item>
