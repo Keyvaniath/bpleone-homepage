@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · bpleone.com</title>
+<meta name="description" content="About Brandon P. Leone — investment banking / equity research analyst running a personal multi-desk trading operation.">
+<meta property="og:title" content="About Brandon P. Leone — bpleone.com">
+<meta property="og:description" content="One operator, seven trading desks. IB-style quant lab built in public.">
+<meta property="og:url" content="https://bpleone.com/about.html">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.7; min-height: 100vh;
+  }
+  .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { max-width: 1200px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 13px; transition: color 0.2s; white-space: nowrap; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 64px 0 32px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px; }
+  h1 .accent { color: var(--gold); }
+  h2 { font-size: 24px; font-weight: 700; margin: 40px 0 14px; letter-spacing: -0.01em; }
+  h2::before { content: '▸ '; color: var(--gold); }
+  p { color: var(--text); margin-bottom: 14px; font-size: 16px; }
+  .lead { color: var(--text-dim); font-size: 18px; margin-bottom: 24px; }
+  blockquote {
+    border-left: 3px solid var(--gold);
+    background: var(--bg-card);
+    padding: 18px 24px;
+    border-radius: 0 10px 10px 0;
+    margin: 20px 0;
+    font-size: 17px;
+    color: var(--text);
+    font-style: italic;
+  }
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    margin: 24px 0;
+  }
+  @media (max-width: 600px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+  .stat {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px; text-align: center;
+  }
+  .stat .n { font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700; color: var(--gold); letter-spacing: -0.01em; }
+  .stat .l { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+  .contact-card {
+    background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px;
+    padding: 24px; margin-top: 32px;
+  }
+  .contact-card p { margin-bottom: 6px; font-size: 15px; }
+  .contact-card a { color: var(--gold-dim); text-decoration: none; }
+  .contact-card a:hover { color: var(--gold); }
+  footer { padding: 48px 0; margin-top: 48px; border-top: 1px solid var(--border);
+           color: var(--text-mute); font-size: 13px;
+           font-family: 'JetBrains Mono', monospace; text-align: center; }
+  footer a { color: var(--gold-dim); text-decoration: none; }
+  code { font-family: 'JetBrains Mono', monospace; font-size: 14px;
+    background: rgba(245,200,66,0.06); color: var(--gold);
+    padding: 2px 6px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/#desks">🧰 Desks</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/about.html" class="active">👤 About</a>
+      <a href="/press.html">📰 Press</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">👤 About</span>
+    <h1>One operator. <span class="accent">Built in public.</span></h1>
+    <p class="lead">I'm Brandon P. Leone. An investment-banking / equity-research analyst by day. By night I run a personal multi-desk trading operation across Pokémon TCG, sports cards, options, and equity factor models.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h2>Why this exists</h2>
+    <p>Most card pricing tools are either (a) raw price feeds with no opinion, or (b) social-media hype amplifiers. Neither helps an operator size a position or know when to exit.</p>
+    <p>I wanted the same rigor an IB analyst applies to a single-name equity — momentum, scarcity, value, liquidity — flattened into one number per card. Then layered transparent sanity guards so the data quality is visible, not buried.</p>
+
+    <blockquote>"The score's math is in the methodology page. The sanity guards are in the audit tab. The scraper code is in the public repo. If you disagree with any of it, fork it and tell me why."</blockquote>
+
+    <h2>What's running today</h2>
+    <div class="stat-grid">
+      <div class="stat"><div class="n">7</div><div class="l">Desks Total</div></div>
+      <div class="stat"><div class="n">2</div><div class="l">Live</div></div>
+      <div class="stat"><div class="n">774</div><div class="l">Pokémon Cards Tracked</div></div>
+      <div class="stat"><div class="n">20K+</div><div class="l">Cards Searchable</div></div>
+      <div class="stat"><div class="n">4h</div><div class="l">Refresh Cadence</div></div>
+      <div class="stat"><div class="n">100%</div><div class="l">Methodology Public</div></div>
+    </div>
+    <p>Pokémon TCG and Sports Cards are running live with full UI. Trading Comps, Options Pricing, and Equity Factor Model are downloadable tools (email me). Sports Betting and Sports Hub are in flight.</p>
+
+    <h2>How I work</h2>
+    <p>I build in public. Every shipped feature is logged on the <a href="/changelog.html" style="color:var(--gold-dim);">changelog</a>. Every score has its math on the <a href="/methodology.html" style="color:var(--gold-dim);">methodology page</a>. The scraper, the dashboard, the data files — all in the <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk" target="_blank" style="color:var(--gold-dim);">public repo</a>.</p>
+    <p>When the data is wrong I document the bug, the root cause, and the fix in the changelog. Recent example: the Moonbreon PSA 10 mispricing (PPT median $3,250 vs PriceCharting $4,480) — fixed by flipping the source preference for graded cards. <a href="/changelog.html#v0.20" style="color:var(--gold-dim);">See v0.20 changelog</a>.</p>
+
+    <h2>Where the data comes from</h2>
+    <p>Four primary sources, ranked by trust for graded cards:</p>
+    <ol style="margin-left: 24px; margin-bottom: 16px;">
+      <li><strong>PriceCharting</strong> — per-grade aggregates, 3-6mo window. <em>Primary for graded.</em></li>
+      <li><strong>PokemonPriceTracker</strong> — per-grade eBay sold-comp medians, ~30d window. <em>Fallback when PC misses.</em></li>
+      <li><strong>TCGPlayer mp-search-api</strong> — live market for raw NM.</li>
+      <li><strong>PokemonTCG.io</strong> — full card universe + Cardmarket EU overlay + images.</li>
+    </ol>
+    <p>Every price overlay passes bidirectional sanity guards (lower-bound + upper-bound + grade-mapping). Failures are logged with reason codes — visible in the <a href="https://pokemon.bpleone.com/?tab=audit" style="color:var(--gold-dim);" target="_blank">Price Audit tab</a>.</p>
+
+    <h2>What this is NOT</h2>
+    <p><strong>Not financial advice.</strong> Collectibles are speculative, illiquid, and you can lose every dollar. Trade your own conviction.</p>
+    <p><strong>Not a recommendation engine.</strong> The quant score is one input. Pop reports, meta shifts, supply pipeline, your own balance sheet — all matter more than any single number.</p>
+    <p><strong>Not a paid product (yet).</strong> The current beta is open access. The eventual Pro tier exists for SaaS sustainability — alerts, tax reports, position sizing — but the core quant score will stay free.</p>
+
+    <h2>Background</h2>
+    <p>Investment-banking / equity-research analyst in Southern California. Equity factor models, DCF + comps, options structures during the day. Pokémon flips, sports cards, side projects after hours. The trading operation here is the visible part of how I think about asset markets when no one's paying me.</p>
+
+    <div class="contact-card">
+      <p style="margin-bottom: 12px;"><strong style="color: var(--gold);">Get in touch</strong></p>
+      <p>✉️ <a href="mailto:brandonpleone@gmail.com">brandonpleone@gmail.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/brandonleone/" target="_blank">LinkedIn</a></p>
+      <p>🐙 <a href="https://github.com/Keyvaniath" target="_blank">GitHub @Keyvaniath</a></p>
+      <p>📰 <a href="/press.html">Press kit</a> · 📋 <a href="/changelog.html">Changelog</a> · 📐 <a href="/methodology.html">Methodology</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a>
+  </div>
+</footer>
+
+</body>
+</html>
