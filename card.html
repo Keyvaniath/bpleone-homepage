@@ -56,6 +56,19 @@
   .card-head { margin-bottom: 16px; }
   .card-title { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; }
   .card-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-mute); margin-bottom: 16px; }
+  .variant-pill {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 6px 14px; border-radius: 6px;
+    margin-right: 10px; margin-bottom: 4px;
+  }
+  .variant-pill.v-psa10  { color: #4ade80; background: rgba(74,222,128,0.18); border: 1px solid rgba(74,222,128,0.4); }
+  .variant-pill.v-psa9   { color: #a3e635; background: rgba(163,230,53,0.13); border: 1px solid rgba(163,230,53,0.3); }
+  .variant-pill.v-psa8   { color: #fbbf24; background: rgba(251,191,36,0.13); border: 1px solid rgba(251,191,36,0.3); }
+  .variant-pill.v-raw    { color: #60a5fa; background: rgba(96,165,250,0.15); border: 1px solid rgba(96,165,250,0.35); }
+  .variant-pill.v-sealed { color: #c084fc; background: rgba(192,132,252,0.15); border: 1px solid rgba(192,132,252,0.35); }
+  .variant-pill.v-other  { color: #8b94a8; background: rgba(139,148,168,0.12); border: 1px solid var(--border); }
   .signal-pill {
     display: inline-block; padding: 5px 14px; border-radius: 999px;
     font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
@@ -193,6 +206,24 @@
 
   function signalClass(s) { return (s || '').toLowerCase().replace(' ', '-'); }
 
+  // Variant badge class — color-coded so PSA 10 vs Raw NM is unambiguous
+  function variantClass(v) {
+    v = (v || '').toUpperCase();
+    if (v.includes('PSA 10') || v.includes('BGS 10')) return 'v-psa10';
+    if (v.includes('PSA 9') || v.includes('BGS 9')) return 'v-psa9';
+    if (v.includes('PSA 8') || v.includes('BGS 8')) return 'v-psa8';
+    if (v.includes('RAW') || v.includes('NM')) return 'v-raw';
+    if (v.includes('SEALED') || v.includes('ETB') || v.includes('BOOSTER') || v.includes('BUNDLE')) return 'v-sealed';
+    return 'v-other';
+  }
+  function variantLabel(v) {
+    v = (v || '').trim();
+    if (!v) return '—';
+    if (/raw|^nm/i.test(v)) return '🃏 ' + v;
+    if (/sealed|etb|booster|bundle/i.test(v)) return '📦 ' + v;
+    return v;
+  }
+
   // Marketplace search shortcuts — open eBay sold-listings / TCGPlayer / PriceCharting / PPT
   function ebayLink(c) {
     const grade = (c.variant || '').match(/PSA \d+(\.\d)?/);
@@ -290,9 +321,12 @@
         '<div>' +
           '<div class="card-head">' +
             '<div class="card-title">' + card.name + '</div>' +
-            '<div class="card-meta">' + card.set + ' · #' + card.number + ' · ' + card.variant +
+            '<div class="card-meta">' + card.set + ' · #' + card.number +
               (card.tier ? ' · ' + card.tier : '') + '</div>' +
-            '<span class="signal-pill ' + signalClass(card.signal) + '">' + card.signal + ' · Score ' + card.score + '/100</span>' +
+            '<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 4px;">' +
+              '<span class="variant-pill ' + variantClass(card.variant) + '">' + variantLabel(card.variant) + '</span>' +
+              '<span class="signal-pill ' + signalClass(card.signal) + '">' + card.signal + ' · Score ' + card.score + '/100</span>' +
+            '</div>' +
           '</div>' +
 
           '<div class="kpi-row">' +
