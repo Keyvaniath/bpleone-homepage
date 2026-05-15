@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T06:42:27.366374Z",
+  "generated_at": "2026-05-15T06:50:20.822248Z",
   "live_updated_at": "2026-05-15T05:00:28.531494Z",
   "stats": {
     "total_cards": 774,
@@ -800,6 +800,7011 @@
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
       "score": 49,
+      "signal": "HOLD"
+    }
+  ],
+  "flip_bot": {
+    "updated_at": "2026-05-15T05:05:43.357237Z",
+    "candidates_scanned": 322,
+    "qualified_count": 3,
+    "top": [
+      {
+        "card": "Mew ex CHR (JP)",
+        "set": "Pokemon Card 151 JP",
+        "source": "tcgp",
+        "buy_total": 279.99,
+        "net_profit": 79.71,
+        "roi": 0.2847,
+        "confidence": "OK",
+        "buy_url": "https://www.tcgplayer.com/product/482427"
+      },
+      {
+        "card": "Mew ex CHR (JP)",
+        "set": "Pokemon Card 151 JP",
+        "source": "tcgp",
+        "buy_total": 279.99,
+        "net_profit": 79.71,
+        "roi": 0.2847,
+        "confidence": "OK",
+        "buy_url": "https://www.tcgplayer.com/product/482427"
+      },
+      {
+        "card": "Terapagos ex SIR raw",
+        "set": "Stellar Crown",
+        "source": "tcgp",
+        "buy_total": 51.13,
+        "net_profit": 18.47,
+        "roi": 0.3612,
+        "confidence": "OK",
+        "buy_url": "https://www.tcgplayer.com/product/567478"
+      }
+    ]
+  },
+  "card_index": [
+    {
+      "id": "V001",
+      "name": "Charizard",
+      "set": "Base Set 1st Edition Shadowless",
+      "variant": "PSA 9",
+      "price": 55888.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V002",
+      "name": "Charizard",
+      "set": "Base Set 1st Edition Shadowless",
+      "variant": "PSA 8",
+      "price": 31392.6,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V003",
+      "name": "Charizard",
+      "set": "Base Set Shadowless",
+      "variant": "PSA 9",
+      "price": 8500.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V004",
+      "name": "Charizard",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 30100.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V005",
+      "name": "Charizard",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 2866.13,
+      "score": 72,
+      "signal": "BUY"
+    },
+    {
+      "id": "V006",
+      "name": "Blastoise",
+      "set": "Base Set 1st Edition Shadowless",
+      "variant": "PSA 9",
+      "price": 10940.54,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V007",
+      "name": "Venusaur",
+      "set": "Base Set 1st Edition Shadowless",
+      "variant": "PSA 9",
+      "price": 6031.44,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V008",
+      "name": "Chansey",
+      "set": "Base Set 1st Edition",
+      "variant": "PSA 9",
+      "price": 4844.32,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V009",
+      "name": "Mewtwo",
+      "set": "Base Set 1st Edition",
+      "variant": "PSA 9",
+      "price": 6575.42,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V010",
+      "name": "Alakazam",
+      "set": "Base Set 1st Edition",
+      "variant": "PSA 9",
+      "price": 5200.75,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V011",
+      "name": "Ninetales",
+      "set": "Base Set 1st Edition",
+      "variant": "PSA 9",
+      "price": 2240.82,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V012",
+      "name": "Zapdos",
+      "set": "Base Set 1st Edition",
+      "variant": "PSA 9",
+      "price": 2158.77,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V013",
+      "name": "Pikachu Red Cheeks",
+      "set": "Base Set Shadowless",
+      "variant": "PSA 10",
+      "price": 2400.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V014",
+      "name": "Dragonite",
+      "set": "Fossil 1st Edition",
+      "variant": "PSA 9",
+      "price": 2425.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V015",
+      "name": "Mewtwo",
+      "set": "Fossil 1st Edition",
+      "variant": "PSA 9",
+      "price": 6575.42,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V016",
+      "name": "Lugia",
+      "set": "Neo Genesis 1st Edition",
+      "variant": "PSA 9",
+      "price": 8720.15,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V017",
+      "name": "Shining Charizard",
+      "set": "Neo Destiny 1st Edition",
+      "variant": "PSA 9",
+      "price": 10655.04,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V018",
+      "name": "Shining Tyranitar",
+      "set": "Neo Destiny 1st Edition",
+      "variant": "PSA 9",
+      "price": 4188.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V019",
+      "name": "Pikachu Trophy (Bronze)",
+      "set": "Pokemon World Championships 1999",
+      "variant": "PSA 8",
+      "price": 5500.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V020",
+      "name": "Charizard Gold Star",
+      "set": "EX Dragon Frontiers",
+      "variant": "PSA 10",
+      "price": 58723.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V021",
+      "name": "Charizard Gold Star",
+      "set": "EX Dragon Frontiers",
+      "variant": "PSA 9",
+      "price": 12984.62,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V022",
+      "name": "Umbreon Gold Star",
+      "set": "POP Series 5",
+      "variant": "PSA 9",
+      "price": 14705.92,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V023",
+      "name": "Espeon Gold Star",
+      "set": "POP Series 5",
+      "variant": "PSA 9",
+      "price": 15875.6,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V024",
+      "name": "Vaporeon Gold Star",
+      "set": "EX Power Keepers",
+      "variant": "PSA 9",
+      "price": 1725.39,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V025",
+      "name": "Jolteon Gold Star",
+      "set": "EX Power Keepers",
+      "variant": "PSA 9",
+      "price": 1632.43,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V026",
+      "name": "Flareon Gold Star",
+      "set": "EX Power Keepers",
+      "variant": "PSA 9",
+      "price": 1664.79,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V027",
+      "name": "Rayquaza Gold Star",
+      "set": "EX Deoxys",
+      "variant": "PSA 9",
+      "price": 25980.41,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V028",
+      "name": "Mew Gold Star",
+      "set": "EX Holon Phantoms",
+      "variant": "PSA 9",
+      "price": 3574.14,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V029",
+      "name": "Glaceon Gold Star",
+      "set": "Diamond & Pearl Promos",
+      "variant": "PSA 9",
+      "price": 1100.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V030",
+      "name": "Leafeon Gold Star",
+      "set": "Diamond & Pearl Promos",
+      "variant": "PSA 9",
+      "price": 950.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V031",
+      "name": "Pikachu Illustrator",
+      "set": "Trophy",
+      "variant": "PSA 4",
+      "price": 197261.51,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V032",
+      "name": "Tropical Wind",
+      "set": "WC 1999-2003",
+      "variant": "PSA 9",
+      "price": 1986.32,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V033",
+      "name": "No.2 Trainer",
+      "set": "1999 Tropical Mega Battle",
+      "variant": "PSA 8",
+      "price": 95000.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V034",
+      "name": "Blaine's Charizard",
+      "set": "Gym Heroes 1st Edition",
+      "variant": "PSA 9",
+      "price": 3050.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V035",
+      "name": "Dark Charizard",
+      "set": "Team Rocket 1st Edition",
+      "variant": "PSA 9",
+      "price": 2125.5,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M001",
+      "name": "Umbreon VMAX (Moonbreon)",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 4480.25,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M002",
+      "name": "Umbreon VMAX (Moonbreon)",
+      "set": "Evolving Skies",
+      "variant": "Raw NM",
+      "price": 1855.94,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M003",
+      "name": "Rayquaza VMAX Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 1480.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M004",
+      "name": "Sylveon VMAX Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 129.99,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M005",
+      "name": "Espeon VMAX Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 1100.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M006",
+      "name": "Leafeon VMAX Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 900.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M007",
+      "name": "Glaceon VMAX Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 1000.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M008",
+      "name": "Jolteon VMAX Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 980.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M009",
+      "name": "Umbreon V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 480.0,
+      "score": 74,
+      "signal": "BUY"
+    },
+    {
+      "id": "M010",
+      "name": "Dragonite V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 350.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M011",
+      "name": "Duraludon VMAX Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 99.97,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M012",
+      "name": "Rayquaza V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 110.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M013",
+      "name": "Charizard VMAX Rainbow",
+      "set": "Champion's Path",
+      "variant": "PSA 10",
+      "price": 374.45,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M014",
+      "name": "Charizard V Full Art",
+      "set": "Champion's Path",
+      "variant": "PSA 10",
+      "price": 553.38,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M015",
+      "name": "Charizard VSTAR Rainbow",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 240.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M016",
+      "name": "Mewtwo VSTAR Alt Art",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 520.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M017",
+      "name": "Whimsicott VSTAR Alt Art",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 320.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M018",
+      "name": "Arceus VSTAR Alt Art",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 380.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M019",
+      "name": "Origin Forme Palkia VSTAR Alt",
+      "set": "Astral Radiance",
+      "variant": "PSA 10",
+      "price": 390.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M020",
+      "name": "Origin Forme Dialga VSTAR Alt",
+      "set": "Astral Radiance",
+      "variant": "PSA 10",
+      "price": 380.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M021",
+      "name": "Giratina VSTAR Alt Art",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 524.1,
+      "score": 74,
+      "signal": "BUY"
+    },
+    {
+      "id": "M022",
+      "name": "Aerodactyl V Alt Art",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 78.72,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M023",
+      "name": "Magnezone V Alt Art",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 35.02,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M024",
+      "name": "Lugia VSTAR Alt Art",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 100.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M025",
+      "name": "Alakazam V Alt Art",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 56.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M026",
+      "name": "Serperior V Alt Art",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 71.5,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M027",
+      "name": "Tyranitar V Alt Art",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 300.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M028",
+      "name": "Articuno V Alt Art",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 220.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M029",
+      "name": "Giratina VSTAR Gold",
+      "set": "Crown Zenith",
+      "variant": "PSA 10",
+      "price": 150.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M030",
+      "name": "Mewtwo VSTAR (GG)",
+      "set": "Crown Zenith Galarian Gallery",
+      "variant": "PSA 10",
+      "price": 499.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M031",
+      "name": "Pikachu VMAX (GG)",
+      "set": "Crown Zenith Galarian Gallery",
+      "variant": "PSA 10",
+      "price": 580.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M032",
+      "name": "Charizard V (GG)",
+      "set": "Crown Zenith Galarian Gallery",
+      "variant": "PSA 10",
+      "price": 175.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M033",
+      "name": "Lugia V (GG)",
+      "set": "Crown Zenith Galarian Gallery",
+      "variant": "PSA 10",
+      "price": 68.09,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M034",
+      "name": "Charizard ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 1754.56,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M035",
+      "name": "Charizard ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "Raw NM",
+      "price": 350.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M036",
+      "name": "Charizard ex Full Art",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 227.5,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M037",
+      "name": "Mew ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 175.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M038",
+      "name": "Zapdos ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 462.5,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M039",
+      "name": "Venusaur ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 499.14,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M040",
+      "name": "Blastoise ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 653.65,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M041",
+      "name": "Mewtwo ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 76.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M042",
+      "name": "Pikachu Master Ball Pattern",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 380.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M043",
+      "name": "Alakazam ex SIR",
+      "set": "Scarlet & Violet 151",
+      "variant": "PSA 10",
+      "price": 360.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M044",
+      "name": "Iono SIR",
+      "set": "Paldea Evolved",
+      "variant": "PSA 10",
+      "price": 86.99,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M045",
+      "name": "Tinkaton ex SIR",
+      "set": "Paldea Evolved",
+      "variant": "PSA 10",
+      "price": 123.44,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M046",
+      "name": "Charizard ex SIR",
+      "set": "Obsidian Flames",
+      "variant": "PSA 10",
+      "price": 322.5,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M047",
+      "name": "Charizard ex SIR",
+      "set": "Obsidian Flames",
+      "variant": "Raw NM",
+      "price": 876.48,
+      "score": 62,
+      "signal": "BUY"
+    },
+    {
+      "id": "M048",
+      "name": "Tyranitar ex SIR",
+      "set": "Obsidian Flames",
+      "variant": "PSA 10",
+      "price": 75.82,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M049",
+      "name": "Mela SIR",
+      "set": "Obsidian Flames",
+      "variant": "PSA 10",
+      "price": 480.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M050",
+      "name": "Iron Hands ex Alt Art",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 69.13,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M051",
+      "name": "Roaring Moon ex Alt Art",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 340.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M052",
+      "name": "Penny SIR",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 380.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M053",
+      "name": "Garchomp ex Alt Art",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 106.39,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M054",
+      "name": "Roaring Moon ex SIR",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 211.21,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M055",
+      "name": "Garchomp ex SIR",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 106.39,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M056",
+      "name": "Charizard ex Shiny",
+      "set": "Paldean Fates",
+      "variant": "PSA 10",
+      "price": 740.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M057",
+      "name": "Mewtwo ex Shiny",
+      "set": "Paldean Fates",
+      "variant": "PSA 10",
+      "price": 640.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M058",
+      "name": "Pikachu Shiny",
+      "set": "Paldean Fates",
+      "variant": "PSA 10",
+      "price": 682.5,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M059",
+      "name": "Greninja ex SIR",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 975.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M060",
+      "name": "Carmine SIR",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 178.22,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M061",
+      "name": "Hoothoot SIR",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 240.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M062",
+      "name": "Pecharunt ex SIR",
+      "set": "Shrouded Fable",
+      "variant": "PSA 10",
+      "price": 480.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M063",
+      "name": "Fezandipiti ex Alt Art",
+      "set": "Shrouded Fable",
+      "variant": "PSA 10",
+      "price": 90.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M064",
+      "name": "Terapagos ex SIR",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 640.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M065",
+      "name": "Lacey SIR",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 400.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M066",
+      "name": "Pikachu ex Alt Art",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 400.0,
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M067",
+      "name": "Latias ex Alt Art",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 300.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M068",
+      "name": "Hydreigon ex Alt Art",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 260.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M069",
+      "name": "Umbreon ex SIR",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 5150.0,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M070",
+      "name": "Umbreon ex SIR",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 1529.42,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M071",
+      "name": "Sylveon ex SIR",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 1650.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M072",
+      "name": "Espeon ex SIR",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 1149.99,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M073",
+      "name": "Vaporeon ex SIR",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 1080.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M074",
+      "name": "Glaceon ex SIR",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 110.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M075",
+      "name": "Leafeon ex SIR",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 899.44,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M076",
+      "name": "Marnie SIR",
+      "set": "Journey Together",
+      "variant": "PSA 10",
+      "price": 480.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M077",
+      "name": "N's Zoroark ex Alt",
+      "set": "Journey Together",
+      "variant": "PSA 10",
+      "price": 280.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M078",
+      "name": "Lillie's Determination SIR",
+      "set": "Mega Evolution (ME01)",
+      "variant": "PSA 10",
+      "price": 195.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M079",
+      "name": "Lillie's Determination SIR",
+      "set": "Mega Evolution (ME01)",
+      "variant": "Raw NM",
+      "price": 68.36,
+      "score": 65,
+      "signal": "BUY"
+    },
+    {
+      "id": "M080",
+      "name": "Mega Charizard X ex SIR",
+      "set": "Mega Evolution (ME01)",
+      "variant": "PSA 10",
+      "price": 1800.0,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M081",
+      "name": "Mega Gengar ex SIR",
+      "set": "Ascended Heroes",
+      "variant": "PSA 10",
+      "price": 3704.6,
+      "score": 78,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M082",
+      "name": "Mega Gengar ex SIR",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 1391.19,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M083",
+      "name": "Mega Gengar ex MAR",
+      "set": "Ascended Heroes",
+      "variant": "PSA 10",
+      "price": 578.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M084",
+      "name": "Mega Rayquaza ex SIR",
+      "set": "Ascended Heroes",
+      "variant": "PSA 10",
+      "price": 560.0,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M085",
+      "name": "Mega Lucario ex SIR",
+      "set": "Ascended Heroes",
+      "variant": "PSA 10",
+      "price": 350.0,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M086",
+      "name": "Mega Lopunny ex SIR",
+      "set": "Ascended Heroes",
+      "variant": "PSA 10",
+      "price": 399.48,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M087",
+      "name": "Mega Charizard Y ex SIR",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 75.65,
+      "score": 60,
+      "signal": "BUY"
+    },
+    {
+      "id": "M088",
+      "name": "Mega Charizard Y ex SIR",
+      "set": "Ascended Heroes",
+      "variant": "PSA 10",
+      "price": 270.0,
+      "score": 77,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M089",
+      "name": "Van Gogh Pikachu",
+      "set": "Van Gogh Museum Promo",
+      "variant": "PSA 10",
+      "price": 578.77,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M090",
+      "name": "Van Gogh Pikachu",
+      "set": "Van Gogh Museum Promo",
+      "variant": "Raw NM",
+      "price": 966.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M091",
+      "name": "Pokemon Day 2026 Pikachu Promo",
+      "set": "30th Anniversary Promo",
+      "variant": "PSA 10",
+      "price": 700.0,
+      "score": 76,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M092",
+      "name": "Birthday Pikachu Promo",
+      "set": "Black Star Promo #24",
+      "variant": "PSA 10",
+      "price": 1100.0,
+      "score": 78,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "M093",
+      "name": "Tropical Wind Trainer",
+      "set": "WCS 2010",
+      "variant": "PSA 10",
+      "price": 1986.32,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S001",
+      "name": "Evolving Skies Booster Box",
+      "set": "Evolving Skies",
+      "variant": "Sealed (36 packs)",
+      "price": 2560.86,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S002",
+      "name": "Evolving Skies ETB",
+      "set": "Evolving Skies",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S003",
+      "name": "Evolving Skies Booster Bundle",
+      "set": "Evolving Skies",
+      "variant": "Sealed (6 packs)",
+      "price": 78.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S004",
+      "name": "Crown Zenith ETB",
+      "set": "Crown Zenith",
+      "variant": "Sealed",
+      "price": 307.67,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S005",
+      "name": "Crown Zenith Premium Playmat Collection",
+      "set": "Crown Zenith",
+      "variant": "Sealed",
+      "price": 140.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S006",
+      "name": "Brilliant Stars BB",
+      "set": "Brilliant Stars",
+      "variant": "Sealed (36 packs)",
+      "price": 595.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S007",
+      "name": "Astral Radiance BB",
+      "set": "Astral Radiance",
+      "variant": "Sealed (36 packs)",
+      "price": 375.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S008",
+      "name": "Lost Origin BB",
+      "set": "Lost Origin",
+      "variant": "Sealed (36 packs)",
+      "price": 744.23,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S009",
+      "name": "Silver Tempest BB",
+      "set": "Silver Tempest",
+      "variant": "Sealed (36 packs)",
+      "price": 470.5,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S010",
+      "name": "SV 151 Booster Bundle",
+      "set": "Scarlet & Violet 151",
+      "variant": "Sealed (6 packs)",
+      "price": 57.71,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S011",
+      "name": "SV 151 ETB",
+      "set": "Scarlet & Violet 151",
+      "variant": "Sealed",
+      "price": 618.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S012",
+      "name": "SV 151 Ultra-Premium Collection",
+      "set": "Scarlet & Violet 151",
+      "variant": "Sealed",
+      "price": 211.33,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S013",
+      "name": "Paldea Evolved BB",
+      "set": "Paldea Evolved",
+      "variant": "Sealed (36 packs)",
+      "price": 460.91,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S014",
+      "name": "Obsidian Flames BB",
+      "set": "Obsidian Flames",
+      "variant": "Sealed (36 packs)",
+      "price": 361.6,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S015",
+      "name": "Obsidian Flames ETB",
+      "set": "Obsidian Flames",
+      "variant": "Sealed",
+      "price": 269.95,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S016",
+      "name": "Paldean Fates ETB",
+      "set": "Paldean Fates",
+      "variant": "Sealed",
+      "price": 473.13,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S017",
+      "name": "Paldean Fates Booster Bundle",
+      "set": "Paldean Fates",
+      "variant": "Sealed (6 packs)",
+      "price": 142.79,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S018",
+      "name": "Paradox Rift BB",
+      "set": "Paradox Rift",
+      "variant": "Sealed (36 packs)",
+      "price": 271.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S019",
+      "name": "Paradox Rift ETB",
+      "set": "Paradox Rift",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S020",
+      "name": "Twilight Masquerade BB",
+      "set": "Twilight Masquerade",
+      "variant": "Sealed (36 packs)",
+      "price": 320.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S021",
+      "name": "Shrouded Fable Tin",
+      "set": "Shrouded Fable",
+      "variant": "Sealed",
+      "price": 49.97,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S022",
+      "name": "Stellar Crown BB",
+      "set": "Stellar Crown",
+      "variant": "Sealed (36 packs)",
+      "price": 293.13,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S023",
+      "name": "Surging Sparks BB",
+      "set": "Surging Sparks",
+      "variant": "Sealed (36 packs)",
+      "price": 264.07,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S024",
+      "name": "Prismatic Evolutions ETB",
+      "set": "Prismatic Evolutions",
+      "variant": "Sealed",
+      "price": 180.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S025",
+      "name": "Prismatic Evolutions Booster Bundle",
+      "set": "Prismatic Evolutions",
+      "variant": "Sealed (6 packs)",
+      "price": 78.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S026",
+      "name": "Mega Evolution (ME01) BB",
+      "set": "Mega Evolution (ME01)",
+      "variant": "Sealed",
+      "price": 203.5,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S027",
+      "name": "Ascended Heroes (ME2.5) BB",
+      "set": "Ascended Heroes",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S028",
+      "name": "Pokemon Day 2026 Collection",
+      "set": "30th Anniversary",
+      "variant": "Sealed",
+      "price": 29.99,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S029",
+      "name": "30th Anniversary ETB",
+      "set": "30th Anniversary Promo",
+      "variant": "Sealed",
+      "price": 110.0,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S030",
+      "name": "Charizard ex Premium Collection",
+      "set": "Black Star Promo",
+      "variant": "Sealed",
+      "price": 211.9,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S031",
+      "name": "Mew Ultra-Premium Collection",
+      "set": "Promo",
+      "variant": "Sealed",
+      "price": 919.67,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S032",
+      "name": "Crown Zenith Tin",
+      "set": "Crown Zenith",
+      "variant": "Sealed",
+      "price": 40.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X001",
+      "name": "Iono SIR",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 28.01,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X002",
+      "name": "Pikachu V-Union Promo",
+      "set": "SWSH Promos",
+      "variant": "PSA 10 set",
+      "price": 220.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X003",
+      "name": "Marnie Full Art",
+      "set": "Sword & Shield",
+      "variant": "PSA 10",
+      "price": 95.68,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X004",
+      "name": "Cynthia Full Art",
+      "set": "Ultra Prism",
+      "variant": "PSA 10",
+      "price": 757.62,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X005",
+      "name": "Erika's Invitation SIR",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 149.71,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X006",
+      "name": "Misty's Determination SIR",
+      "set": "Mega Evolution ME01",
+      "variant": "PSA 10",
+      "price": 51.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X007",
+      "name": "Mewtwo Wave Holo Promo",
+      "set": "Black Star Promo",
+      "variant": "PSA 10",
+      "price": 265.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X008",
+      "name": "Ancient Mew",
+      "set": "Movie Promo",
+      "variant": "PSA 10",
+      "price": 180.0,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X009",
+      "name": "_M Charizard EX Full Art",
+      "set": "Flashfire",
+      "variant": "PSA 10",
+      "price": 480.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X010",
+      "name": "M Rayquaza EX Full Art",
+      "set": "Roaring Skies",
+      "variant": "PSA 10",
+      "price": 420.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X011",
+      "name": "Charizard Star (Delta Species)",
+      "set": "EX Crystal Guardians",
+      "variant": "PSA 9",
+      "price": 2399.99,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X012",
+      "name": "Mimikyu V Alt Art",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 95.0,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X013",
+      "name": "Eevee Heroes Eevee V Alt Art",
+      "set": "Eevee Heroes (JP)",
+      "variant": "PSA 10",
+      "price": 280.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X014",
+      "name": "Charizard Star Holographic",
+      "set": "Various",
+      "variant": "PSA 10",
+      "price": 580.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X015",
+      "name": "Crystal Charizard",
+      "set": "Skyridge",
+      "variant": "PSA 9",
+      "price": 6499.99,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J001",
+      "name": "Pikachu Promo (Japanese)",
+      "set": "Pokemon Center Japan 25th",
+      "variant": "PSA 10",
+      "price": 850.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J002",
+      "name": "Mew V CHR (Japanese)",
+      "set": "VMAX Climax",
+      "variant": "PSA 10",
+      "price": 265.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J003",
+      "name": "Charizard V CSR (Japanese)",
+      "set": "VMAX Climax",
+      "variant": "PSA 10",
+      "price": 109.21,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J004",
+      "name": "Rayquaza V Alt Art (Japanese)",
+      "set": "Eevee Heroes JP",
+      "variant": "PSA 10",
+      "price": 580.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J005",
+      "name": "Umbreon VMAX Alt (Japanese)",
+      "set": "Eevee Heroes JP",
+      "variant": "PSA 10",
+      "price": 1480.0,
+      "score": 45,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J006",
+      "name": "Lugia VSTAR (Japanese)",
+      "set": "Paradigm Trigger",
+      "variant": "PSA 10",
+      "price": 320.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J007",
+      "name": "Trainer's Card (Pokemon Day JP)",
+      "set": "Pokemon Day JP",
+      "variant": "PSA 9",
+      "price": 4500.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J008",
+      "name": "Mewtwo Star (JP Promo)",
+      "set": "Movie Commemoration",
+      "variant": "PSA 9",
+      "price": 1800.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J009",
+      "name": "VSTAR Universe High-Class Box",
+      "set": "VSTAR Universe JP",
+      "variant": "Sealed",
+      "price": 850.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "J010",
+      "name": "Eevee Heroes Booster Box (JP)",
+      "set": "Eevee Heroes JP",
+      "variant": "Sealed",
+      "price": 945.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V036",
+      "name": "Pikachu",
+      "set": "Jungle 1st Edition",
+      "variant": "PSA 10",
+      "price": 1095.82,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V037",
+      "name": "Snorlax",
+      "set": "Jungle 1st Edition",
+      "variant": "PSA 9",
+      "price": 2437.71,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V038",
+      "name": "Aerodactyl",
+      "set": "Fossil 1st Edition",
+      "variant": "PSA 9",
+      "price": 285.5,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V039",
+      "name": "Gengar",
+      "set": "Fossil 1st Edition",
+      "variant": "PSA 9",
+      "price": 2146.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V040",
+      "name": "Dark Charizard",
+      "set": "Team Rocket 1st Edition",
+      "variant": "PSA 10",
+      "price": 16385.17,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V041",
+      "name": "Dark Blastoise",
+      "set": "Team Rocket 1st Edition",
+      "variant": "PSA 9",
+      "price": 141.45,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V042",
+      "name": "Suicune",
+      "set": "Neo Revelation 1st Edition",
+      "variant": "PSA 9",
+      "price": 972.01,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V043",
+      "name": "Ho-Oh",
+      "set": "Neo Revelation 1st Edition",
+      "variant": "PSA 9",
+      "price": 1604.95,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X016",
+      "name": "Erika SIR",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 240.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X017",
+      "name": "Misty's Tears Full Art",
+      "set": "Promo",
+      "variant": "PSA 10",
+      "price": 124.09,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X018",
+      "name": "Latias and Latios GX",
+      "set": "Hidden Fates",
+      "variant": "PSA 10",
+      "price": 444.35,
+      "score": 73,
+      "signal": "BUY"
+    },
+    {
+      "id": "X019",
+      "name": "Charizard GX Hidden Fates Shiny",
+      "set": "Hidden Fates",
+      "variant": "PSA 10",
+      "price": 1399.5,
+      "score": 72,
+      "signal": "BUY"
+    },
+    {
+      "id": "X020",
+      "name": "Mewtwo and Mew GX Hidden Fates",
+      "set": "Hidden Fates",
+      "variant": "PSA 10",
+      "price": 558.07,
+      "score": 72,
+      "signal": "BUY"
+    },
+    {
+      "id": "P001",
+      "name": "Carmine Holo Trainer",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P002",
+      "name": "Hoothoot Illustration Rare",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 8.18,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P003",
+      "name": "Munkidori ex Alt Art",
+      "set": "Shrouded Fable",
+      "variant": "Raw NM",
+      "price": 2.5,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P004",
+      "name": "Briar SIR",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 11.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P005",
+      "name": "Cyrano SIR",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 7.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P006",
+      "name": "Erika's Invitation Full Art",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 12.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P007",
+      "name": "Sabrina Promo",
+      "set": "Pokemon Center promo",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P008",
+      "name": "Lance Holo Trainer",
+      "set": "Crown Zenith",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P009",
+      "name": "Cynthia's Power Trainer",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 3.99,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P010",
+      "name": "Allister Trainer Gallery",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 5.05,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P011",
+      "name": "Granbull V Alt Art",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P012",
+      "name": "Glimmora ex Alt Art",
+      "set": "Obsidian Flames",
+      "variant": "Raw NM",
+      "price": 1.32,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P013",
+      "name": "Bombirdier ex Alt Art",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P014",
+      "name": "Klawf ex Alt Art",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P015",
+      "name": "Eiscue ex Alt Art",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 0.67,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P016",
+      "name": "Tatsugiri Alt Art",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 10.21,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P017",
+      "name": "Walking Wake ex Alt",
+      "set": "Temporal Forces",
+      "variant": "Raw NM",
+      "price": 10.22,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P018",
+      "name": "Iron Leaves ex Alt",
+      "set": "Temporal Forces",
+      "variant": "Raw NM",
+      "price": 2.54,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P019",
+      "name": "Lechonk Illustration Rare",
+      "set": "Scarlet & Violet base",
+      "variant": "Raw NM",
+      "price": 3.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P020",
+      "name": "Magikarp Illustration Rare",
+      "set": "Scarlet & Violet base",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P021",
+      "name": "Pikachu Common",
+      "set": "Scarlet & Violet 151",
+      "variant": "Raw NM",
+      "price": 0.98,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P022",
+      "name": "Charmander Common",
+      "set": "Scarlet & Violet 151",
+      "variant": "Raw NM",
+      "price": 2.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P023",
+      "name": "Squirtle Common",
+      "set": "Scarlet & Violet 151",
+      "variant": "Raw NM",
+      "price": 2.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P024",
+      "name": "Bulbasaur Common",
+      "set": "Scarlet & Violet 151",
+      "variant": "Raw NM",
+      "price": 2.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P025",
+      "name": "Eevee Common",
+      "set": "Scarlet & Violet 151",
+      "variant": "Raw NM",
+      "price": 3.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P026",
+      "name": "Mew V",
+      "set": "Pokemon GO",
+      "variant": "Raw NM",
+      "price": 0.74,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P027",
+      "name": "Mewtwo V (Pokemon GO)",
+      "set": "Pokemon GO",
+      "variant": "Raw NM",
+      "price": 5.29,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P028",
+      "name": "Pikachu Half Art (Pokemon GO)",
+      "set": "Pokemon GO",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P029",
+      "name": "Ditto V (Pokemon GO)",
+      "set": "Pokemon GO",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P030",
+      "name": "Charizard Full Art (Pokemon GO)",
+      "set": "Pokemon GO",
+      "variant": "Raw NM",
+      "price": 35.06,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P031",
+      "name": "Charmander Pokeball Pattern",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P032",
+      "name": "Squirtle Pokeball Pattern",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P033",
+      "name": "Bulbasaur Pokeball Pattern",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 7.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P034",
+      "name": "Mew Pokeball Pattern",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 9.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P035",
+      "name": "Pikachu Master Ball + others",
+      "set": "151",
+      "variant": "Raw NM bundle 10",
+      "price": 0.8,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P036",
+      "name": "Lillie's Determination Holo",
+      "set": "ME01",
+      "variant": "Raw NM",
+      "price": 0.7,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P037",
+      "name": "Marnie Holo Trainer",
+      "set": "Sword & Shield base",
+      "variant": "Raw NM",
+      "price": 16.1,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P038",
+      "name": "Klara Trainer SIR",
+      "set": "Chilling Reign",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P039",
+      "name": "Penny Trainer Gallery",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 9.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P040",
+      "name": "Iono Trainer Gallery (NM raw)",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 6.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P041",
+      "name": "Lillie Common Trainer",
+      "set": "ME01",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P042",
+      "name": "Mega Charizard X Common",
+      "set": "ME01",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P043",
+      "name": "Mega Charizard Y Common",
+      "set": "ME01",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P044",
+      "name": "Mega Gengar Common (AH)",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 6.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P045",
+      "name": "Mega Lucario Common (AH)",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P046",
+      "name": "Mega Rayquaza Common (AH)",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 16.75,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P047",
+      "name": "Eevee Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 0.64,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P048",
+      "name": "Vaporeon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P049",
+      "name": "Jolteon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P050",
+      "name": "Flareon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P051",
+      "name": "Espeon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 1.41,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P052",
+      "name": "Umbreon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P053",
+      "name": "Leafeon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P054",
+      "name": "Glaceon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P055",
+      "name": "Sylveon Holo",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 6.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P056",
+      "name": "Pikachu Holo (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 7.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P057",
+      "name": "Charizard Holo (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 9.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P058",
+      "name": "Mewtwo Holo (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P059",
+      "name": "Snorlax ex (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 0.53,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P060",
+      "name": "Greedent Trainer SIR",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B001",
+      "name": "Pikachu ex SIR",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 0.69,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B002",
+      "name": "Greninja ex SIR raw",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 25.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B003",
+      "name": "Hop's Zacian Trainer Gallery",
+      "set": "Lost Origin",
+      "variant": "Raw NM",
+      "price": 18.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B004",
+      "name": "Roaring Moon ex Alt raw",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 2.92,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B005",
+      "name": "Iron Hands ex Alt raw",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 28.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B006",
+      "name": "Mela Trainer SIR raw",
+      "set": "Obsidian Flames",
+      "variant": "Raw NM",
+      "price": 12.75,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B007",
+      "name": "Tyrunt ex Illustration",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 12.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B008",
+      "name": "Pikachu Promo (gold)",
+      "set": "SWSH295",
+      "variant": "Raw NM",
+      "price": 165.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B009",
+      "name": "Charizard VSTAR (BRS)",
+      "set": "Brilliant Stars",
+      "variant": "Raw NM",
+      "price": 11.61,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B010",
+      "name": "Mew VMAX Alt Art",
+      "set": "Fusion Strike",
+      "variant": "Raw NM",
+      "price": 35.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B011",
+      "name": "Gengar VMAX Alt Art",
+      "set": "Fusion Strike",
+      "variant": "Raw NM",
+      "price": 28.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B012",
+      "name": "Zekrom Trainer Gallery",
+      "set": "Lost Origin",
+      "variant": "Raw NM",
+      "price": 3.12,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B013",
+      "name": "Reshiram Trainer Gallery",
+      "set": "Brilliant Stars",
+      "variant": "Raw NM",
+      "price": 22.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B014",
+      "name": "Lugia V Alt Art (raw)",
+      "set": "Silver Tempest",
+      "variant": "Raw NM",
+      "price": 91.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B015",
+      "name": "Pok\u00e9mon Center Pikachu Promo 2026",
+      "set": "Promo",
+      "variant": "Raw NM",
+      "price": 20.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B016",
+      "name": "Origin Forme Palkia Alt Art Raw",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 25.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B017",
+      "name": "Origin Forme Dialga Alt Art Raw",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 25.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B018",
+      "name": "Whimsicott VSTAR Raw",
+      "set": "Brilliant Stars",
+      "variant": "Raw NM",
+      "price": 0.96,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B019",
+      "name": "Volcanion Trainer Gallery",
+      "set": "Lost Origin",
+      "variant": "Raw NM",
+      "price": 24.72,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "B020",
+      "name": "Hisuian Zoroark Alt Art Raw",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 199.99,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M101",
+      "name": "Charizard V Alt Art (CZ)",
+      "set": "Champion's Path",
+      "variant": "PSA 10",
+      "price": 553.38,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M102",
+      "name": "Drasna Trainer Gallery",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 65.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M103",
+      "name": "Calyrex VMAX Alt Art",
+      "set": "Chilling Reign",
+      "variant": "PSA 10",
+      "price": 144.95,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M104",
+      "name": "Galarian Moltres V Alt",
+      "set": "Crown Zenith",
+      "variant": "PSA 10",
+      "price": 75.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M105",
+      "name": "Galarian Articuno V Alt",
+      "set": "Crown Zenith",
+      "variant": "PSA 10",
+      "price": 70.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M106",
+      "name": "Galarian Zapdos V Alt",
+      "set": "Crown Zenith",
+      "variant": "PSA 10",
+      "price": 65.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M107",
+      "name": "Greninja V Alt Art (FS)",
+      "set": "Fusion Strike",
+      "variant": "PSA 10",
+      "price": 125.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M108",
+      "name": "Boltund V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 46.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M109",
+      "name": "Octillery V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 47.47,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M110",
+      "name": "Galarian Slowking VMAX Alt",
+      "set": "Chilling Reign",
+      "variant": "PSA 10",
+      "price": 130.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M111",
+      "name": "Empoleon V Alt Art",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 70.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M112",
+      "name": "Cresselia V Alt Art",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 95.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M113",
+      "name": "Spiritomb Trainer Gallery",
+      "set": "Astral Radiance",
+      "variant": "PSA 10",
+      "price": 60.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M114",
+      "name": "Mimikyu V Alt Art (LO)",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 85.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M115",
+      "name": "Pikachu V Black Star Promo",
+      "set": "SWSH Promo",
+      "variant": "PSA 10",
+      "price": 55.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V801",
+      "name": "Charizard Base Unlimited",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 1382.5,
+      "score": 44,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V802",
+      "name": "Blastoise Base Unlimited",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 353.89,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V803",
+      "name": "Venusaur Base Unlimited",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 295.0,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V804",
+      "name": "Mewtwo Base Unlimited",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 140.73,
+      "score": 45,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V805",
+      "name": "Pikachu Yellow Cheeks Shadowless",
+      "set": "Base Set Shadowless",
+      "variant": "PSA 8",
+      "price": 220.0,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V806",
+      "name": "Charizard Jungle",
+      "set": "Jungle",
+      "variant": "PSA 8",
+      "price": 190.0,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V807",
+      "name": "Dragonite Fossil Unlimited",
+      "set": "Fossil",
+      "variant": "PSA 8",
+      "price": 244.41,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V808",
+      "name": "Lugia Neo Genesis Unlimited",
+      "set": "Neo Genesis",
+      "variant": "PSA 8",
+      "price": 867.42,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V809",
+      "name": "Ho-Oh Neo Revelation Unlimited",
+      "set": "Neo Revelation",
+      "variant": "PSA 8",
+      "price": 339.94,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V810",
+      "name": "Espeon Neo Discovery",
+      "set": "Neo Discovery",
+      "variant": "PSA 8",
+      "price": 26.99,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V811",
+      "name": "Umbreon Neo Discovery",
+      "set": "Neo Discovery",
+      "variant": "PSA 8",
+      "price": 125.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V812",
+      "name": "Charizard Skyridge",
+      "set": "Skyridge",
+      "variant": "PSA 8",
+      "price": 11239.15,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V813",
+      "name": "Crystal Lugia Aquapolis",
+      "set": "Aquapolis",
+      "variant": "PSA 8",
+      "price": 380.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V814",
+      "name": "Crystal Charizard Skyridge",
+      "set": "Skyridge",
+      "variant": "PSA 8",
+      "price": 2200.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V815",
+      "name": "Espeon Gold Star (PP)",
+      "set": "EX Power Keepers",
+      "variant": "PSA 8",
+      "price": 7999.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB01",
+      "name": "Charizard ex CHR (JP)",
+      "set": "Pokemon Card 151 JP",
+      "variant": "Raw NM",
+      "price": 18.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB02",
+      "name": "Mew ex CHR (JP)",
+      "set": "Pokemon Card 151 JP",
+      "variant": "Raw NM",
+      "price": 14.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB03",
+      "name": "Pikachu Holo Stamp (JP)",
+      "set": "Various JP Promos",
+      "variant": "Raw NM",
+      "price": 29.08,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB04",
+      "name": "Eevee Heroes Booster (JP single)",
+      "set": "Eevee Heroes JP",
+      "variant": "Sealed",
+      "price": 13.9,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB05",
+      "name": "VMAX Climax Pack (JP single)",
+      "set": "VMAX Climax JP",
+      "variant": "Sealed",
+      "price": 6.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB06",
+      "name": "Eevee CHR (JP)",
+      "set": "Pokemon Card 151 JP",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB07",
+      "name": "Lugia VSTAR HR (JP)",
+      "set": "VSTAR Universe",
+      "variant": "Raw NM",
+      "price": 18.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "JB08",
+      "name": "Mewtwo VSTAR HR (JP)",
+      "set": "VSTAR Universe",
+      "variant": "Raw NM",
+      "price": 15.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S201",
+      "name": "Ogerpon (Teal/Hearthflame/Wellspring/Cornerstone) Set",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM Set of 4",
+      "price": 28.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S202",
+      "name": "Necrozma Trainer SIR (raw)",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 45.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S203",
+      "name": "Hydrapple ex SIR (raw)",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 22.82,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S204",
+      "name": "Galvantula ex Special Art",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 6.99,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S205",
+      "name": "Latias / Latios Tag Team Cards",
+      "set": "Surging Sparks",
+      "variant": "Raw NM mixed",
+      "price": 0.6,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S206",
+      "name": "Terapagos ex SIR raw",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 80.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S207",
+      "name": "Pecharunt Tin",
+      "set": "Shrouded Fable",
+      "variant": "Sealed",
+      "price": 2.99,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S208",
+      "name": "Stellar Tera-Charizard Premium",
+      "set": "Stellar Crown",
+      "variant": "Sealed",
+      "price": 211.9,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S209",
+      "name": "Surging Sparks ETB",
+      "set": "Surging Sparks",
+      "variant": "Sealed",
+      "price": 55.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S210",
+      "name": "Shrouded Fable ETB",
+      "set": "Shrouded Fable",
+      "variant": "Sealed",
+      "price": 50.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S211",
+      "name": "Stellar Crown ETB",
+      "set": "Stellar Crown",
+      "variant": "Sealed",
+      "price": 60.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S212",
+      "name": "Mega Evolution ME01 ETB",
+      "set": "Mega Evolution",
+      "variant": "Sealed",
+      "price": 70.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S213",
+      "name": "Ascended Heroes ETB",
+      "set": "Ascended Heroes",
+      "variant": "Sealed",
+      "price": 75.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S214",
+      "name": "Twilight Masquerade Booster Box",
+      "set": "Twilight Masquerade",
+      "variant": "Sealed (36 packs)",
+      "price": 320.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "S215",
+      "name": "Shrouded Fable Booster Bundle",
+      "set": "Shrouded Fable",
+      "variant": "Sealed (6 packs)",
+      "price": 49.99,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D01",
+      "name": "Stellar Crown Booster Bundle",
+      "set": "Stellar Crown",
+      "variant": "Sealed",
+      "price": 50.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D02",
+      "name": "Surging Sparks Booster Bundle",
+      "set": "Surging Sparks",
+      "variant": "Sealed",
+      "price": 49.99,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D03",
+      "name": "Twilight Masquerade ETB",
+      "set": "Twilight Masquerade",
+      "variant": "Sealed",
+      "price": 55.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D04",
+      "name": "Twin Pack 151 Charizard",
+      "set": "151 promo",
+      "variant": "Sealed",
+      "price": 18.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D05",
+      "name": "Stellar Crown Premium Playmat",
+      "set": "Stellar Crown",
+      "variant": "Sealed",
+      "price": 185.37,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D06",
+      "name": "Mega Evolution Booster Bundle",
+      "set": "Mega Evolution",
+      "variant": "Sealed",
+      "price": 55.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D07",
+      "name": "Ascended Heroes Bundle",
+      "set": "Ascended Heroes",
+      "variant": "Sealed",
+      "price": 65.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D08",
+      "name": "Pokemon Day 2026 Premium Collection",
+      "set": "30th Anniversary Promo",
+      "variant": "Sealed",
+      "price": 8.06,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X101",
+      "name": "Iono's Bellibolt ex IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 9.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X102",
+      "name": "N's Zorua IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 6.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X103",
+      "name": "N's Reshiram Full Art",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 3.95,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X104",
+      "name": "N's Zekrom Full Art",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 6.93,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X105",
+      "name": "Bianca's Devotion Full Art",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 9.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X106",
+      "name": "Cilan & Chili & Cress IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 2.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X107",
+      "name": "Hilbert FA Trainer",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X108",
+      "name": "Iris's Haxorus IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 10.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X109",
+      "name": "Bianca's Roserade IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 6.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X110",
+      "name": "Cheren's Stoutland IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X111",
+      "name": "Pikachu ex SIR (raw)",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 0.69,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X112",
+      "name": "Latias ex SIR (raw)",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 0.6,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X113",
+      "name": "Hydreigon ex SIR (raw)",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 1.1,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X114",
+      "name": "Greedent Trainer SIR (raw)",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 9.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X115",
+      "name": "Bouffalant Holo",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 0.69,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X116",
+      "name": "Pikachu Holo (SS)",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X117",
+      "name": "Eevee Special Art (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 172.16,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X118",
+      "name": "Pikachu Special Art (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 29.65,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X119",
+      "name": "Mewtwo Special Art (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 69.53,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X120",
+      "name": "Ditto Special Art (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "Raw NM",
+      "price": 33.5,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X121",
+      "name": "Munkidori ex SIR (raw)",
+      "set": "Shrouded Fable",
+      "variant": "Raw NM",
+      "price": 19.99,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X122",
+      "name": "Fezandipiti ex SIR (raw)",
+      "set": "Shrouded Fable",
+      "variant": "Raw NM",
+      "price": 7.86,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X123",
+      "name": "Okidogi ex SIR (raw)",
+      "set": "Shrouded Fable",
+      "variant": "Raw NM",
+      "price": 16.99,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X124",
+      "name": "Lacey SIR (raw)",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 17.36,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X125",
+      "name": "Terapagos ex SIR (raw)",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 10.87,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X126",
+      "name": "Briar SIR (raw)",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 11.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X127",
+      "name": "Hydrapple ex SIR (raw)",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 22.82,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X128",
+      "name": "Mega Charizard Y Common (raw)",
+      "set": "ME01",
+      "variant": "Raw NM",
+      "price": 0.59,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X129",
+      "name": "Mega Charizard X Common (raw)",
+      "set": "ME01",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X130",
+      "name": "Mega Gengar ex MAR (Ascended)",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 93.32,
+      "score": 60,
+      "signal": "BUY"
+    },
+    {
+      "id": "X131",
+      "name": "Mega Rayquaza ex SIR (raw)",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 187.14,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X132",
+      "name": "Mega Lucario ex SIR (raw)",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 68.6,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X133",
+      "name": "Mega Lopunny ex SIR (raw)",
+      "set": "Ascended Heroes",
+      "variant": "Raw NM",
+      "price": 71.9,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X134",
+      "name": "Charizard ex SIR raw (OF)",
+      "set": "Obsidian Flames",
+      "variant": "Raw NM",
+      "price": 2.39,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X135",
+      "name": "Tyranitar ex SIR raw (OF)",
+      "set": "Obsidian Flames",
+      "variant": "Raw NM",
+      "price": 50.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X136",
+      "name": "Iono SIR raw (PE)",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 28.01,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X137",
+      "name": "Marnie SIR raw (JT)",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 35.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X138",
+      "name": "Pikachu Master Ball raw (151)",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 35.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X139",
+      "name": "Charmander Master Ball raw (151)",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 200.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X140",
+      "name": "Mew Master Ball raw (151)",
+      "set": "151",
+      "variant": "Raw NM",
+      "price": 32.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X141",
+      "name": "Journey Together ETB",
+      "set": "Journey Together",
+      "variant": "Sealed",
+      "price": 55.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X142",
+      "name": "Journey Together Booster Bundle",
+      "set": "Journey Together",
+      "variant": "Sealed",
+      "price": 40.99,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X143",
+      "name": "Surging Sparks Premium Playmat",
+      "set": "Surging Sparks",
+      "variant": "Sealed",
+      "price": 185.37,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X144",
+      "name": "Twilight Masquerade Booster Bundle",
+      "set": "Twilight Masquerade",
+      "variant": "Sealed",
+      "price": 48.12,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X145",
+      "name": "Paldean Fates Mini Tin",
+      "set": "Paldean Fates",
+      "variant": "Sealed",
+      "price": 18.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X146",
+      "name": "Pokemon GO ETB",
+      "set": "Pokemon GO",
+      "variant": "Sealed",
+      "price": 85.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X147",
+      "name": "Pokemon GO Booster Bundle",
+      "set": "Pokemon GO",
+      "variant": "Sealed",
+      "price": 78.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X148",
+      "name": "Hidden Fates Tin (any)",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 75.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X149",
+      "name": "Shining Fates Mini Tin",
+      "set": "Shining Fates",
+      "variant": "Sealed",
+      "price": 240.43,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X150",
+      "name": "Pokemon Day 2026 Pikachu Box",
+      "set": "30th Anniversary Promo",
+      "variant": "Sealed",
+      "price": 8.06,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X151",
+      "name": "Rayquaza V Alt Art (BRS)",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 55.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X152",
+      "name": "Garchomp V Alt Art (AR)",
+      "set": "Astral Radiance",
+      "variant": "PSA 10",
+      "price": 65.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X153",
+      "name": "Aerodactyl V Alt Art (LO)",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 78.72,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X154",
+      "name": "Magnezone V Alt Art (LO)",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 35.02,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X155",
+      "name": "Mimikyu V Alt Art (LO)",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 75.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X156",
+      "name": "Drifloon V Alt Art (LO)",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 45.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X157",
+      "name": "Volcanion V Alt Art (LO)",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 55.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X158",
+      "name": "Pikachu Trainer Gallery (LO)",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 115.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X159",
+      "name": "Arceus V Alt Art (BRS)",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 224.5,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X160",
+      "name": "Greninja V Alt Art (FS)",
+      "set": "Fusion Strike",
+      "variant": "PSA 10",
+      "price": 125.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X161",
+      "name": "Cynthia's Power Trainer (raw)",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 18.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X162",
+      "name": "Allister Trainer Gallery (raw)",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 5.05,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X163",
+      "name": "Avery Trainer Gallery (raw)",
+      "set": "Astral Radiance",
+      "variant": "Raw NM",
+      "price": 11.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X164",
+      "name": "Drasna Trainer Gallery (raw)",
+      "set": "Silver Tempest",
+      "variant": "Raw NM",
+      "price": 10.96,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X165",
+      "name": "Cynthia Skla Trainer Gallery",
+      "set": "Silver Tempest",
+      "variant": "Raw NM",
+      "price": 18.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V901",
+      "name": "Mewtwo Base Unlimited PSA 7",
+      "set": "Base Set",
+      "variant": "PSA 7",
+      "price": 92.5,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V902",
+      "name": "Charizard Base Unlimited PSA 7",
+      "set": "Base Set",
+      "variant": "PSA 7",
+      "price": 800.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V903",
+      "name": "Blastoise Base Unlimited PSA 7",
+      "set": "Base Set",
+      "variant": "PSA 7",
+      "price": 225.86,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V904",
+      "name": "Venusaur Base Unlimited PSA 7",
+      "set": "Base Set",
+      "variant": "PSA 7",
+      "price": 198.75,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V905",
+      "name": "Alakazam Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 143.5,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V906",
+      "name": "Chansey Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 82.27,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V907",
+      "name": "Clefairy Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 60.5,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V908",
+      "name": "Gyarados Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 102.56,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V909",
+      "name": "Hitmonchan Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 69.05,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V910",
+      "name": "Machamp Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 112.5,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V911",
+      "name": "Magneton Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 60.0,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V912",
+      "name": "Nidoking Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 73.42,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V913",
+      "name": "Ninetales Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 87.5,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V914",
+      "name": "Poliwrath Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 69.99,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V915",
+      "name": "Raichu Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 110.84,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V916",
+      "name": "Zapdos Base Unlimited PSA 8",
+      "set": "Base Set",
+      "variant": "PSA 8",
+      "price": 84.84,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X201",
+      "name": "Calyrex VMAX Alt Art (CR)",
+      "set": "Chilling Reign",
+      "variant": "PSA 10",
+      "price": 144.95,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X202",
+      "name": "Galarian Slowking VMAX Alt",
+      "set": "Chilling Reign",
+      "variant": "PSA 10",
+      "price": 170.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X203",
+      "name": "Sylveon V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 195.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X204",
+      "name": "Espeon V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 289.94,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X205",
+      "name": "Leafeon V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 656.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X206",
+      "name": "Glaceon V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 44.18,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X207",
+      "name": "Jolteon V Alt Art",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 70.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X208",
+      "name": "Galarian Articuno V Alt (CZ)",
+      "set": "Crown Zenith",
+      "variant": "PSA 10",
+      "price": 140.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X209",
+      "name": "Galarian Moltres V Alt (CZ)",
+      "set": "Crown Zenith",
+      "variant": "PSA 10",
+      "price": 150.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X210",
+      "name": "Galarian Zapdos V Alt (CZ)",
+      "set": "Crown Zenith",
+      "variant": "PSA 10",
+      "price": 130.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X211",
+      "name": "Iono Trainer Gallery (PE)",
+      "set": "Paldea Evolved",
+      "variant": "PSA 10",
+      "price": 180.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X212",
+      "name": "Penny Trainer Gallery (PE)",
+      "set": "Paldea Evolved",
+      "variant": "PSA 10",
+      "price": 200.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X213",
+      "name": "Klara SIR (CR)",
+      "set": "Chilling Reign",
+      "variant": "PSA 10",
+      "price": 64.99,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X214",
+      "name": "Avery SIR (CR)",
+      "set": "Chilling Reign",
+      "variant": "PSA 10",
+      "price": 46.49,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X215",
+      "name": "Erika's Invitation SIR (151)",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 149.71,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X216",
+      "name": "Misty's Determination Full Art",
+      "set": "151 promo",
+      "variant": "PSA 10",
+      "price": 165.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X217",
+      "name": "Sabrina FA Trainer (151)",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 130.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X218",
+      "name": "Brock FA Trainer (151)",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 115.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X219",
+      "name": "Lt Surge FA Trainer (151)",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 100.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X220",
+      "name": "Giovanni FA Trainer (151)",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 145.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X221",
+      "name": "151 Booster Bundle",
+      "set": "151",
+      "variant": "Sealed (6 packs)",
+      "price": 204.03,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X222",
+      "name": "Hidden Fates Premium Powers Collection",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 220.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X223",
+      "name": "Champion's Path Booster Bundle",
+      "set": "Champion's Path",
+      "variant": "Sealed",
+      "price": 78.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X224",
+      "name": "Shining Fates Booster Box",
+      "set": "Shining Fates",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X225",
+      "name": "Pokemon GO Premium Collection",
+      "set": "Pokemon GO",
+      "variant": "Sealed",
+      "price": 130.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X226",
+      "name": "Evolving Skies Mini Tin",
+      "set": "Evolving Skies",
+      "variant": "Sealed",
+      "price": 240.43,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X227",
+      "name": "Brilliant Stars Booster Box",
+      "set": "Brilliant Stars",
+      "variant": "Sealed",
+      "price": 595.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X228",
+      "name": "Lost Origin Booster Box",
+      "set": "Lost Origin",
+      "variant": "Sealed",
+      "price": 744.23,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X229",
+      "name": "Silver Tempest Booster Box",
+      "set": "Silver Tempest",
+      "variant": "Sealed",
+      "price": 470.5,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X230",
+      "name": "Astral Radiance Booster Box",
+      "set": "Astral Radiance",
+      "variant": "Sealed",
+      "price": 375.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X231",
+      "name": "Charizard Base Unlimited PSA 9",
+      "set": "Base Set",
+      "variant": "PSA 9",
+      "price": 2866.13,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X232",
+      "name": "Dragonite Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 613.82,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X233",
+      "name": "Gengar Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 643.25,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X234",
+      "name": "Articuno Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 265.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X235",
+      "name": "Moltres Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 198.49,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X236",
+      "name": "Zapdos Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 151.19,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X237",
+      "name": "Mewtwo Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 92.5,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X238",
+      "name": "Mew Holo Promo PSA 9",
+      "set": "Black Star Promo",
+      "variant": "PSA 9",
+      "price": 220.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X239",
+      "name": "Lugia Neo Genesis Unlimited PSA 9",
+      "set": "Neo Genesis",
+      "variant": "PSA 9",
+      "price": 2146.87,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X240",
+      "name": "Houndoom Neo Discovery PSA 9",
+      "set": "Neo Discovery",
+      "variant": "PSA 9",
+      "price": 47.5,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X241",
+      "name": "Jolteon Aquapolis Crystal",
+      "set": "Aquapolis",
+      "variant": "PSA 8",
+      "price": 2088.32,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X242",
+      "name": "Crystal Kingdra Aquapolis PSA 8",
+      "set": "Aquapolis",
+      "variant": "PSA 8",
+      "price": 70.9,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X243",
+      "name": "Crystal Lugia Aquapolis PSA 8",
+      "set": "Aquapolis",
+      "variant": "PSA 8",
+      "price": 380.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X301",
+      "name": "Charizard VSTAR Rainbow (BRS) PSA 10",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 240.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X302",
+      "name": "Lugia VSTAR Alt Art (ST) PSA 10",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 126.5,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X303",
+      "name": "Charizard ex SIR (OF) PSA 10",
+      "set": "Obsidian Flames",
+      "variant": "PSA 10",
+      "price": 322.5,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X304",
+      "name": "Greninja ex SIR (TWM) PSA 10",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 975.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X305",
+      "name": "Iono SIR (PE) PSA 10",
+      "set": "Paldea Evolved",
+      "variant": "PSA 10",
+      "price": 86.99,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X306",
+      "name": "Marnie SIR (JT) PSA 10",
+      "set": "Journey Together",
+      "variant": "PSA 10",
+      "price": 360.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X307",
+      "name": "Charizard ex SIR (151) PSA 10",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 1754.56,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X308",
+      "name": "Charizard ex 199 Alt (151) PSA 10",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 350.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X309",
+      "name": "Mew ex SIR (151) PSA 10",
+      "set": "151",
+      "variant": "PSA 10",
+      "price": 175.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X310",
+      "name": "Marnie Sword & Shield Full Art PSA 10",
+      "set": "Sword & Shield",
+      "variant": "PSA 10",
+      "price": 110.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X311",
+      "name": "Cynthia Full Art (UP) PSA 10",
+      "set": "Ultra Prism",
+      "variant": "PSA 10",
+      "price": 757.62,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X312",
+      "name": "Charizard VMAX Rainbow CP PSA 10",
+      "set": "Champion's Path",
+      "variant": "PSA 10",
+      "price": 374.45,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X313",
+      "name": "151 ETB",
+      "set": "151",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X314",
+      "name": "151 Ultra Premium Collection",
+      "set": "151",
+      "variant": "Sealed",
+      "price": 380.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X315",
+      "name": "Hidden Fates Booster Box",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X316",
+      "name": "Shining Fates Premium Collection",
+      "set": "Shining Fates",
+      "variant": "Sealed",
+      "price": 290.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X317",
+      "name": "Crown Zenith Booster Box",
+      "set": "Crown Zenith",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X318",
+      "name": "Pokemon GO Booster Box",
+      "set": "Pokemon GO",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X319",
+      "name": "Champion's Path ETB",
+      "set": "Champion's Path",
+      "variant": "Sealed",
+      "price": 270.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X320",
+      "name": "Evolving Skies Premium Collection",
+      "set": "Evolving Skies",
+      "variant": "Sealed",
+      "price": 211.9,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X321",
+      "name": "Charizard Base Shadowless PSA 8",
+      "set": "Base Set Shadowless",
+      "variant": "PSA 8",
+      "price": 4300.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X322",
+      "name": "Blastoise Base Shadowless PSA 8",
+      "set": "Base Set Shadowless",
+      "variant": "PSA 8",
+      "price": 1150.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X323",
+      "name": "Charizard 1st Edition PSA 7",
+      "set": "Base Set 1st Edition",
+      "variant": "PSA 7",
+      "price": 380.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X324",
+      "name": "Pikachu Promo Birthday PSA 8",
+      "set": "Black Star Promo",
+      "variant": "PSA 8",
+      "price": 399.99,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X325",
+      "name": "Charizard Base 2 PSA 9",
+      "set": "Base Set 2",
+      "variant": "PSA 9",
+      "price": 1525.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X326",
+      "name": "Shining Charizard Neo Destiny PSA 8",
+      "set": "Neo Destiny",
+      "variant": "PSA 8",
+      "price": 480.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X327",
+      "name": "Shining Magikarp Neo Revelation",
+      "set": "Neo Revelation",
+      "variant": "PSA 9",
+      "price": 1203.34,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X328",
+      "name": "Shining Gyarados Neo Revelation PSA 9",
+      "set": "Neo Revelation",
+      "variant": "PSA 9",
+      "price": 2800.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X329",
+      "name": "Crystal Charizard Skyridge PSA 7",
+      "set": "Skyridge",
+      "variant": "PSA 7",
+      "price": 118.88,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X401",
+      "name": "Moonbreon Alt Art PSA 9",
+      "set": "Evolving Skies",
+      "variant": "PSA 9",
+      "price": 1800.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X402",
+      "name": "Rayquaza VMAX Alt PSA 9",
+      "set": "Evolving Skies",
+      "variant": "PSA 9",
+      "price": 580.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X403",
+      "name": "Charizard ex SIR (151) PSA 10 \u2014 duplicate of M034 alt",
+      "set": "151",
+      "variant": "PSA 10 BGS 9.5",
+      "price": 950.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X404",
+      "name": "Lillie's Determination SIR (ME01) PSA 10",
+      "set": "Mega Evolution",
+      "variant": "PSA 10",
+      "price": 195.0,
+      "score": 62,
+      "signal": "BUY"
+    },
+    {
+      "id": "X405",
+      "name": "Pikachu V-Union Set PSA 10",
+      "set": "SWSH Promos",
+      "variant": "PSA 10 set of 4",
+      "price": 580.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X411",
+      "name": "Charizard Base Unlimited PSA 9",
+      "set": "Base Set",
+      "variant": "PSA 9",
+      "price": 2866.13,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X412",
+      "name": "Charizard Base Shadowless PSA 8",
+      "set": "Base Set Shadowless",
+      "variant": "PSA 8",
+      "price": 4300.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X413",
+      "name": "Charizard 1st Edition PSA 8",
+      "set": "Base Set 1st Edition",
+      "variant": "PSA 8",
+      "price": 920.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X414",
+      "name": "Espeon Gold Star PSA 9",
+      "set": "POP Series 5",
+      "variant": "PSA 9",
+      "price": 720.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X415",
+      "name": "Rayquaza Gold Star EX Deoxys",
+      "set": "EX Deoxys",
+      "variant": "PSA 8",
+      "price": 940.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X416",
+      "name": "Mew Gold Star EX Holon",
+      "set": "EX Holon Phantoms",
+      "variant": "PSA 8",
+      "price": 580.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X417",
+      "name": "Glaceon Gold Star DP38 PSA 8",
+      "set": "DP Promo",
+      "variant": "PSA 8",
+      "price": 580.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X418",
+      "name": "Leafeon Gold Star DP37 PSA 8",
+      "set": "DP Promo",
+      "variant": "PSA 8",
+      "price": 52.18,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X419",
+      "name": "Lugia Neo Genesis 1st Ed PSA 8",
+      "set": "Neo Genesis",
+      "variant": "PSA 8",
+      "price": 4573.8,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X420",
+      "name": "Crystal Charizard Skyridge PSA 8",
+      "set": "Skyridge",
+      "variant": "PSA 8",
+      "price": 118.88,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X431",
+      "name": "Evolving Skies Booster Box",
+      "set": "Evolving Skies",
+      "variant": "Sealed (36 packs)",
+      "price": 2560.86,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X432",
+      "name": "Hidden Fates ETB",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 580.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X433",
+      "name": "Crown Zenith Premium Trainer Collection",
+      "set": "Crown Zenith",
+      "variant": "Sealed",
+      "price": 1419.73,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X434",
+      "name": "Champion's Path Booster Box",
+      "set": "Champion's Path",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X435",
+      "name": "Shining Fates Booster Box",
+      "set": "Shining Fates",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X501",
+      "name": "Charizard 1st Ed Shadowless PSA 8",
+      "set": "Base Set 1st Edition Shadowless",
+      "variant": "PSA 8",
+      "price": 31392.6,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X502",
+      "name": "Charizard 1st Ed Shadowless BGS 9",
+      "set": "Base Set 1st Edition",
+      "variant": "BGS 9",
+      "price": 55888.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X503",
+      "name": "Lugia Neo Genesis 1st Ed PSA 10",
+      "set": "Neo Genesis",
+      "variant": "PSA 10",
+      "price": 71000.32,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X504",
+      "name": "Crystal Charizard Skyridge PSA 10",
+      "set": "Skyridge",
+      "variant": "PSA 10",
+      "price": 38000.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "set": "EX Dragon Frontiers",
+      "variant": "PSA 10",
+      "price": 7231.98,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "set": "POP Series 5",
+      "variant": "PSA 10",
+      "price": 385.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "set": "POP Series 5",
+      "variant": "PSA 10",
+      "price": 400.0,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X508",
+      "name": "Pikachu Illustrator PSA 7",
+      "set": "Trophy",
+      "variant": "PSA 7",
+      "price": 197261.51,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X509",
+      "name": "No.1 Trainer 1999 PSA 8",
+      "set": "Trophy WC 1999",
+      "variant": "PSA 8",
+      "price": 320000.0,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X510",
+      "name": "Charizard 1st Ed Shadowless PSA 10",
+      "set": "Base Set 1st Edition Shadowless",
+      "variant": "PSA 10",
+      "price": 421294.98,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X511",
+      "name": "Shining Charizard Neo Destiny PSA 10",
+      "set": "Neo Destiny",
+      "variant": "PSA 10",
+      "price": 14777.77,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X512",
+      "name": "Charizard EX Dragon Frontiers 105 PSA 10",
+      "set": "EX Dragon Frontiers",
+      "variant": "PSA 10",
+      "price": 4200.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X521",
+      "name": "Evolving Skies Booster Box (case)",
+      "set": "Evolving Skies",
+      "variant": "Sealed",
+      "price": 3400.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X522",
+      "name": "Champion's Path Premium Collection",
+      "set": "Champion's Path",
+      "variant": "Sealed",
+      "price": 1100.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X523",
+      "name": "Hidden Fates Premium Collection",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 1200.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X524",
+      "name": "Pokemon GO Elite Trainer Bundle",
+      "set": "Pokemon GO",
+      "variant": "Sealed",
+      "price": 1300.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X525",
+      "name": "Hidden Fates Booster Box",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X526",
+      "name": "Champion's Path Booster Box (case)",
+      "set": "Champion's Path",
+      "variant": "Sealed",
+      "price": 6500.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X531",
+      "name": "Base Set Booster Box Unlimited (sealed)",
+      "set": "Base Set",
+      "variant": "Sealed",
+      "price": 36251.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X532",
+      "name": "Jungle Booster Box Unlimited (sealed)",
+      "set": "Jungle",
+      "variant": "Sealed",
+      "price": 13024.56,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X533",
+      "name": "Fossil Booster Box Unlimited (sealed)",
+      "set": "Fossil",
+      "variant": "Sealed",
+      "price": 15540.06,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X534",
+      "name": "Neo Genesis Booster Box Unlimited (sealed)",
+      "set": "Neo Genesis",
+      "variant": "Sealed",
+      "price": 7600.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X535",
+      "name": "Team Rocket Booster Box Unlimited (sealed)",
+      "set": "Team Rocket",
+      "variant": "Sealed",
+      "price": 15035.97,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z001",
+      "name": "Lugia",
+      "set": "Neo Genesis",
+      "variant": "PSA 10",
+      "price": 19651.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z002",
+      "name": "Lugia",
+      "set": "Neo Genesis",
+      "variant": "PSA 9",
+      "price": 2146.87,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z003",
+      "name": "Lugia",
+      "set": "Neo Genesis",
+      "variant": "PSA 8",
+      "price": 867.42,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z004",
+      "name": "Lugia 1st Ed",
+      "set": "Neo Genesis 1st Edition",
+      "variant": "PSA 9",
+      "price": 430.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z005",
+      "name": "Typhlosion 1st Ed",
+      "set": "Neo Genesis 1st Edition",
+      "variant": "PSA 10",
+      "price": 862.01,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z006",
+      "name": "Meganium 1st Ed",
+      "set": "Neo Genesis 1st Edition",
+      "variant": "PSA 10",
+      "price": 1400.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z007",
+      "name": "Feraligatr 1st Ed",
+      "set": "Neo Genesis 1st Edition",
+      "variant": "PSA 10",
+      "price": 1600.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z010",
+      "name": "Espeon",
+      "set": "Neo Discovery",
+      "variant": "PSA 10",
+      "price": 2980.97,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z011",
+      "name": "Umbreon",
+      "set": "Neo Discovery",
+      "variant": "PSA 10",
+      "price": 940.83,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z012",
+      "name": "Espeon 1st Ed",
+      "set": "Neo Discovery 1st Edition",
+      "variant": "PSA 10",
+      "price": 6500.0,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z013",
+      "name": "Umbreon 1st Ed",
+      "set": "Neo Discovery 1st Edition",
+      "variant": "PSA 10",
+      "price": 5500.0,
+      "score": 60,
+      "signal": "BUY"
+    },
+    {
+      "id": "Z020",
+      "name": "Shining Charizard",
+      "set": "Neo Revelation",
+      "variant": "PSA 10",
+      "price": 2500.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z021",
+      "name": "Shining Charizard",
+      "set": "Neo Revelation",
+      "variant": "PSA 9",
+      "price": 2500.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z022",
+      "name": "Shining Magikarp",
+      "set": "Neo Revelation",
+      "variant": "PSA 10",
+      "price": 3300.0,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z023",
+      "name": "Shining Gyarados",
+      "set": "Neo Revelation",
+      "variant": "PSA 10",
+      "price": 950.0,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z024",
+      "name": "Ho-Oh",
+      "set": "Neo Revelation",
+      "variant": "PSA 10",
+      "price": 839.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z030",
+      "name": "Shining Mewtwo",
+      "set": "Neo Destiny",
+      "variant": "PSA 10",
+      "price": 9349.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z031",
+      "name": "Dark Charizard",
+      "set": "Neo Destiny",
+      "variant": "PSA 10",
+      "price": 2200.0,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z032",
+      "name": "Light Dragonite",
+      "set": "Neo Destiny",
+      "variant": "PSA 10",
+      "price": 688.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z033",
+      "name": "Shining Tyranitar",
+      "set": "Neo Destiny",
+      "variant": "PSA 10",
+      "price": 9600.0,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z034",
+      "name": "Shining Steelix",
+      "set": "Neo Destiny",
+      "variant": "PSA 10",
+      "price": 1726.35,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z040",
+      "name": "Misty's Tentacruel",
+      "set": "Gym Heroes",
+      "variant": "PSA 10",
+      "price": 450.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z041",
+      "name": "Erika's Dragonair",
+      "set": "Gym Heroes",
+      "variant": "PSA 10",
+      "price": 1389.99,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z042",
+      "name": "Rocket's Zapdos",
+      "set": "Gym Challenge",
+      "variant": "PSA 10",
+      "price": 249.99,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z043",
+      "name": "Giovanni's Gyarados",
+      "set": "Gym Challenge",
+      "variant": "PSA 10",
+      "price": 275.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z044",
+      "name": "Blaine's Charizard",
+      "set": "Gym Challenge",
+      "variant": "PSA 10",
+      "price": 489.5,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z045",
+      "name": "Blaine's Charizard",
+      "set": "Gym Challenge",
+      "variant": "PSA 9",
+      "price": 489.5,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z046",
+      "name": "Rocket's Mewtwo 1st Ed",
+      "set": "Gym Challenge 1st Edition",
+      "variant": "PSA 10",
+      "price": 4200.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z050",
+      "name": "Charizard Crystal",
+      "set": "Skyridge",
+      "variant": "PSA 10",
+      "price": 16330.5,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z051",
+      "name": "Charizard Crystal",
+      "set": "Skyridge",
+      "variant": "PSA 9",
+      "price": 6500.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z052",
+      "name": "Crystal Lugia",
+      "set": "Aquapolis",
+      "variant": "PSA 10",
+      "price": 6500.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z053",
+      "name": "Crystal Charizard",
+      "set": "Expedition",
+      "variant": "PSA 10",
+      "price": 1352.3,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z054",
+      "name": "Mewtwo",
+      "set": "Expedition",
+      "variant": "PSA 10",
+      "price": 950.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q005",
+      "name": "Greninja ex SIR",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 95.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q006",
+      "name": "Greninja ex SIR",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 975.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q007",
+      "name": "Bloodmoon Ursaluna ex SIR",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 0.51,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q008",
+      "name": "Pecharunt ex SIR",
+      "set": "Shrouded Fable",
+      "variant": "Raw NM",
+      "price": 9.85,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q009",
+      "name": "Iono SIR",
+      "set": "Paldea Evolved",
+      "variant": "PSA 10",
+      "price": 180.0,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q010",
+      "name": "Iono SIR",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 55.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q011",
+      "name": "Roaring Moon ex SIR",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 72.59,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q012",
+      "name": "Iron Valiant ex SIR",
+      "set": "Paradox Rift",
+      "variant": "PSA 10",
+      "price": 58.5,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q013",
+      "name": "Walking Wake ex SIR",
+      "set": "Temporal Forces",
+      "variant": "PSA 10",
+      "price": 49.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Q014",
+      "name": "Iron Leaves ex SIR",
+      "set": "Temporal Forces",
+      "variant": "PSA 10",
+      "price": 52.86,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y001",
+      "name": "Pikachu V Special Set (JP)",
+      "set": "S-P Promo 270",
+      "variant": "Raw NM",
+      "price": 95.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y002",
+      "name": "Charizard V (Promo)",
+      "set": "Sword & Shield Promo SWSH050",
+      "variant": "Raw NM",
+      "price": 285.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y003",
+      "name": "Mew V Special Art (JP)",
+      "set": "S12a Vstar Universe",
+      "variant": "Raw NM",
+      "price": 165.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y004",
+      "name": "Charizard VStar Universe SAR (JP)",
+      "set": "S12a Vstar Universe",
+      "variant": "Raw NM",
+      "price": 285.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y005",
+      "name": "Umbreon VMAX Alt Art (JP)",
+      "set": "S6a Eevee Heroes",
+      "variant": "Raw NM",
+      "price": 4200.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y006",
+      "name": "Sylveon VMAX Alt Art (JP)",
+      "set": "S6a Eevee Heroes",
+      "variant": "Raw NM",
+      "price": 850.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y007",
+      "name": "Espeon VMAX Alt Art (JP)",
+      "set": "S6a Eevee Heroes",
+      "variant": "Raw NM",
+      "price": 950.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y008",
+      "name": "Glaceon VMAX Alt Art (JP)",
+      "set": "S6a Eevee Heroes",
+      "variant": "Raw NM",
+      "price": 480.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y009",
+      "name": "Leafeon VMAX Alt Art (JP)",
+      "set": "S6a Eevee Heroes",
+      "variant": "Raw NM",
+      "price": 420.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y010",
+      "name": "Cynthia & Garchomp GX SR (JP)",
+      "set": "SM12a Tag All Stars",
+      "variant": "Raw NM",
+      "price": 950.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y011",
+      "name": "Erika's Hospitality Trainer Gallery",
+      "set": "Trainer Gallery (JP)",
+      "variant": "Raw NM",
+      "price": 425.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y012",
+      "name": "Lillie's Pok\u00e9 Doll Trainer Promo (JP)",
+      "set": "Special Promo 407",
+      "variant": "Raw NM",
+      "price": 285.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y013",
+      "name": "Marnie Full Art (JP)",
+      "set": "S1a VMAX Climax",
+      "variant": "Raw NM",
+      "price": 165.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Y014",
+      "name": "Lillie's Poke Doll SR (JP)",
+      "set": "S6a Eevee Heroes",
+      "variant": "Raw NM",
+      "price": 950.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M201",
+      "name": "Garchomp ex SIR",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 179.05,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M202",
+      "name": "Hydreigon ex SIR",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 118.37,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M203",
+      "name": "Latias ex SIR",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 492.92,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M204",
+      "name": "Eevee Special Art PSA 10",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 146.86,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M205",
+      "name": "Mewtwo Special Art PSA 10",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 265.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M206",
+      "name": "Pikachu Special Art PSA 10",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 400.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M207",
+      "name": "Ditto Special Art PSA 10",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 345.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M208",
+      "name": "Sylveon ex Special Art PSA 10",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 165.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M209",
+      "name": "Umbreon ex Special Art PSA 10",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 285.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M210",
+      "name": "Espeon ex Special Art PSA 10",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 144.25,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M220",
+      "name": "Charizard ex SIR PSA 10",
+      "set": "Obsidian Flames",
+      "variant": "PSA 10",
+      "price": 180.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M221",
+      "name": "Pikachu ex SIR PSA 10",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 1250.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M222",
+      "name": "Iono SIR PSA 10 (PE)",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 425.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M223",
+      "name": "Terapagos ex SIR PSA 10",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 395.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M240",
+      "name": "Charizard VMAX Rainbow Rare PSA 10",
+      "set": "Darkness Ablaze",
+      "variant": "PSA 10",
+      "price": 109.21,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M241",
+      "name": "Charizard VSTAR Rainbow Rare PSA 10",
+      "set": "Brilliant Stars",
+      "variant": "PSA 10",
+      "price": 55.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M242",
+      "name": "Giratina V Alt Art PSA 10",
+      "set": "Lost Origin",
+      "variant": "PSA 10",
+      "price": 524.1,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M243",
+      "name": "Lugia V Alt Art PSA 10",
+      "set": "Silver Tempest",
+      "variant": "PSA 10",
+      "price": 298.36,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M244",
+      "name": "Rayquaza VMAX Alt Art PSA 10",
+      "set": "Evolving Skies",
+      "variant": "PSA 10",
+      "price": 520.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V100",
+      "name": "Pikachu Illustrator Promo",
+      "set": "Trophy Promo",
+      "variant": "PSA 7",
+      "price": 197261.51,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V101",
+      "name": "Trainer No. 3 Trophy",
+      "set": "Trophy Promo",
+      "variant": "PSA 9",
+      "price": 46.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V102",
+      "name": "Snap Pikachu Mountain Promo",
+      "set": "Snap Promo",
+      "variant": "PSA 10",
+      "price": 4500.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V103",
+      "name": "Tropical Mega Battle Trainer",
+      "set": "Tropical Mega Battle",
+      "variant": "PSA 9",
+      "price": 18500.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V104",
+      "name": "Master Key Promo",
+      "set": "Trophy",
+      "variant": "PSA 9",
+      "price": 19850.31,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D101",
+      "name": "Pokemon Base Set Booster Box (Unlimited)",
+      "set": "Base Set Unlimited",
+      "variant": "Sealed",
+      "price": 15000.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D102",
+      "name": "Pokemon Base Set 1st Ed Booster Box",
+      "set": "Base Set 1st Edition",
+      "variant": "Sealed",
+      "price": 425000.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D103",
+      "name": "Pokemon Jungle Booster Box (Unlimited)",
+      "set": "Jungle Unlimited",
+      "variant": "Sealed",
+      "price": 5500.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D104",
+      "name": "Pokemon Fossil Booster Box (Unlimited)",
+      "set": "Fossil Unlimited",
+      "variant": "Sealed",
+      "price": 4800.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D105",
+      "name": "Pokemon Team Rocket Booster Box (Unlimited)",
+      "set": "Team Rocket",
+      "variant": "Sealed",
+      "price": 6500.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D106",
+      "name": "Pokemon Gym Heroes Booster Box (Unlimited)",
+      "set": "Gym Heroes",
+      "variant": "Sealed",
+      "price": 5200.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D107",
+      "name": "Pokemon Neo Genesis Booster Box (Unlimited)",
+      "set": "Neo Genesis",
+      "variant": "Sealed",
+      "price": 455.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D108",
+      "name": "Pokemon Evolutions Booster Box",
+      "set": "Evolutions",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D109",
+      "name": "Pokemon Hidden Fates ETB",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D110",
+      "name": "Pokemon Hidden Fates Booster Box",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D111",
+      "name": "Pokemon Shining Fates ETB",
+      "set": "Shining Fates",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D112",
+      "name": "Pokemon Champion's Path ETB",
+      "set": "Champion's Path",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D113",
+      "name": "Pokemon Crown Zenith ETB",
+      "set": "Crown Zenith",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D114",
+      "name": "Pokemon Crown Zenith Booster Bundle",
+      "set": "Crown Zenith",
+      "variant": "Sealed",
+      "price": 78.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D115",
+      "name": "Pokemon 151 ETB",
+      "set": "Pokemon 151",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D116",
+      "name": "Pokemon Prismatic Evolutions ETB",
+      "set": "Prismatic Evolutions",
+      "variant": "Sealed",
+      "price": 170.0,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D117",
+      "name": "Pokemon Surging Sparks Booster Box",
+      "set": "Surging Sparks",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "D118",
+      "name": "Pokemon Mega Evolution ME01 Booster Box",
+      "set": "Mega Evolution ME01",
+      "variant": "Sealed",
+      "price": 195.0,
+      "score": 62,
+      "signal": "BUY"
+    },
+    {
+      "id": "D119",
+      "name": "Pokemon Mega Evolution ME01 ETB",
+      "set": "Mega Evolution ME01",
+      "variant": "Sealed",
+      "price": 75.0,
+      "score": 62,
+      "signal": "BUY"
+    },
+    {
+      "id": "V200",
+      "name": "Iono's Pikachu IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 12.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V201",
+      "name": "N's Castform IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V202",
+      "name": "Hilbert's Reshiram",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 8.34,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V203",
+      "name": "Iris's Hydreigon IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 11.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V204",
+      "name": "Cheren's Watchog IR",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 3.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V205",
+      "name": "Latios ex SIR (raw)",
+      "set": "Temporal Forces",
+      "variant": "Raw NM",
+      "price": 0.52,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V206",
+      "name": "Latias ex SIR (raw)",
+      "set": "Temporal Forces",
+      "variant": "Raw NM",
+      "price": 12.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V207",
+      "name": "Iron Hands ex SIR (raw)",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 11.41,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V208",
+      "name": "Gholdengo ex SIR (raw)",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 24.77,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V209",
+      "name": "Charizard ex Holo",
+      "set": "Obsidian Flames",
+      "variant": "Raw NM",
+      "price": 5.75,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V210",
+      "name": "Iono Holo Trainer",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 14.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V211",
+      "name": "Geeta Full Art",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 7.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V212",
+      "name": "Penny Full Art",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 5.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V213",
+      "name": "Hassel Full Art",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 4.0,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V214",
+      "name": "Atticus Full Art",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 17.85,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V215",
+      "name": "Carmine Full Art",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V216",
+      "name": "Kieran Full Art",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 12.25,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V217",
+      "name": "Briar Full Art",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 3.26,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V218",
+      "name": "Ogerpon ex Teal Mask SIR (raw)",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 10.53,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V219",
+      "name": "Ogerpon ex Hearthflame SIR (raw)",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 0.66,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V220",
+      "name": "Ogerpon ex Cornerstone SIR (raw)",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 2.99,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V250",
+      "name": "Blastoise",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 958.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V251",
+      "name": "Venusaur",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 669.33,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V252",
+      "name": "Charizard",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 2866.13,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V253",
+      "name": "Charizard",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 8",
+      "price": 1382.5,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V254",
+      "name": "Mewtwo",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 344.01,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V255",
+      "name": "Alakazam",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 340.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V256",
+      "name": "Gyarados",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 224.5,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V257",
+      "name": "Ninetales",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 9",
+      "price": 165.61,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V258",
+      "name": "Zapdos",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 151.19,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V259",
+      "name": "Articuno",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 265.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V260",
+      "name": "Moltres",
+      "set": "Fossil",
+      "variant": "PSA 9",
+      "price": 198.49,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V261",
+      "name": "Pikachu Red Cheeks",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 1450.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V262",
+      "name": "Pikachu Yellow Cheeks",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 285.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V270",
+      "name": "Blastoise PSA 10",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 7987.42,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V271",
+      "name": "Venusaur PSA 10",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 3267.32,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V272",
+      "name": "Mewtwo PSA 10",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 3721.73,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V273",
+      "name": "Alakazam PSA 10",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 2340.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V274",
+      "name": "Gyarados PSA 10",
+      "set": "Base Set Unlimited",
+      "variant": "PSA 10",
+      "price": 2256.25,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z100",
+      "name": "Charizard ex",
+      "set": "Crystal Guardians",
+      "variant": "PSA 10",
+      "price": 850.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z101",
+      "name": "Mewtwo ex",
+      "set": "Holon Phantoms",
+      "variant": "PSA 10",
+      "price": 950.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z102",
+      "name": "Gold Star Charizard",
+      "set": "EX Dragon Frontiers",
+      "variant": "PSA 10",
+      "price": 58723.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z103",
+      "name": "Gold Star Mew",
+      "set": "EX Dragon Frontiers",
+      "variant": "PSA 10",
+      "price": 26839.27,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z104",
+      "name": "Gold Star Espeon",
+      "set": "Power Keepers",
+      "variant": "PSA 10",
+      "price": 1500.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z105",
+      "name": "Gold Star Umbreon",
+      "set": "Power Keepers",
+      "variant": "PSA 10",
+      "price": 1400.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z106",
+      "name": "Mew Star",
+      "set": "Holon Phantoms",
+      "variant": "PSA 10",
+      "price": 3574.14,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z120",
+      "name": "Charizard G LV.X",
+      "set": "Supreme Victors",
+      "variant": "PSA 10",
+      "price": 750.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z121",
+      "name": "Darkrai LV.X",
+      "set": "Great Encounters",
+      "variant": "PSA 10",
+      "price": 7300.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z122",
+      "name": "Dialga G LV.X",
+      "set": "Platinum",
+      "variant": "PSA 10",
+      "price": 425.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z123",
+      "name": "Palkia G LV.X",
+      "set": "Platinum",
+      "variant": "PSA 10",
+      "price": 425.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z124",
+      "name": "Giratina LV.X",
+      "set": "Platinum",
+      "variant": "PSA 10",
+      "price": 654.85,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z125",
+      "name": "Rayquaza C LV.X",
+      "set": "Supreme Victors",
+      "variant": "PSA 10",
+      "price": 1450.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z126",
+      "name": "Pikachu Birthday",
+      "set": "Black Star Promo",
+      "variant": "PSA 10",
+      "price": 1100.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z140",
+      "name": "Charizard Prime",
+      "set": "Triumphant",
+      "variant": "PSA 10",
+      "price": 7231.98,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z141",
+      "name": "Umbreon Prime",
+      "set": "Undaunted",
+      "variant": "PSA 10",
+      "price": 260.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z142",
+      "name": "Espeon Prime",
+      "set": "Undaunted",
+      "variant": "PSA 10",
+      "price": 950.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z143",
+      "name": "Tyranitar Prime",
+      "set": "Unleashed",
+      "variant": "PSA 10",
+      "price": 799.99,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z144",
+      "name": "Lugia Legend (Top)",
+      "set": "HeartGold SoulSilver",
+      "variant": "PSA 10",
+      "price": 2565.23,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z145",
+      "name": "Ho-Oh Legend (Top)",
+      "set": "HeartGold SoulSilver",
+      "variant": "PSA 10",
+      "price": 137.18,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z160",
+      "name": "Reshiram Full Art",
+      "set": "Legendary Treasures",
+      "variant": "PSA 10",
+      "price": 3622.49,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z161",
+      "name": "Zekrom Full Art",
+      "set": "Legendary Treasures",
+      "variant": "PSA 10",
+      "price": 425.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z162",
+      "name": "Hilbert Full Art",
+      "set": "Black Star Promo",
+      "variant": "PSA 10",
+      "price": 152.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z163",
+      "name": "Iris Full Art",
+      "set": "Black Star Promo",
+      "variant": "PSA 10",
+      "price": 1150.0,
+      "score": 59,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z180",
+      "name": "Charizard EX Gold (Full Art)",
+      "set": "Flashfire",
+      "variant": "PSA 10",
+      "price": 650.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z181",
+      "name": "Mega Charizard EX (Y) Gold",
+      "set": "Flashfire",
+      "variant": "PSA 10",
+      "price": 754.98,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z182",
+      "name": "Mega Rayquaza EX (Full Art)",
+      "set": "Roaring Skies",
+      "variant": "PSA 10",
+      "price": 787.68,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z200",
+      "name": "Charizard GX Rainbow Rare",
+      "set": "Burning Shadows",
+      "variant": "PSA 10",
+      "price": 550.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z201",
+      "name": "Charizard GX Shiny",
+      "set": "Hidden Fates",
+      "variant": "PSA 10",
+      "price": 1399.5,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z202",
+      "name": "Pikachu GX Rainbow Rare",
+      "set": "Burning Shadows",
+      "variant": "PSA 10",
+      "price": 425.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z203",
+      "name": "Reshiram & Charizard GX RR",
+      "set": "Unbroken Bonds",
+      "variant": "PSA 10",
+      "price": 630.0,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z204",
+      "name": "Mewtwo & Mew GX RR",
+      "set": "Unified Minds",
+      "variant": "PSA 10",
+      "price": 1237.57,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z220",
+      "name": "Charizard VMAX Rainbow Rare",
+      "set": "Champion's Path",
+      "variant": "PSA 10",
+      "price": 374.45,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z221",
+      "name": "Charizard VMAX Shiny",
+      "set": "Shining Fates",
+      "variant": "PSA 10",
+      "price": 299.99,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z222",
+      "name": "Pikachu V Union Promo",
+      "set": "SWSH Promos",
+      "variant": "PSA 10",
+      "price": 79.98,
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z223",
+      "name": "Mew V Union Promo",
+      "set": "SWSH Promos",
+      "variant": "PSA 10",
+      "price": 42.43,
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W001",
+      "name": "Greedent Pikachu Trainer",
+      "set": "Surging Sparks",
+      "variant": "Raw NM",
+      "price": 25.0,
+      "score": 60,
+      "signal": "BUY"
+    },
+    {
+      "id": "W002",
+      "name": "Pikachu ex SAR (PSA 10)",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 247.87,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W003",
+      "name": "Latias ex SAR (PSA 10)",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 69.33,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W004",
+      "name": "Greedent SAR (PSA 10)",
+      "set": "Surging Sparks",
+      "variant": "PSA 10",
+      "price": 245.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W010",
+      "name": "Greninja ex SAR (PSA 10)",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 910.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W011",
+      "name": "Bloodmoon Ursaluna ex SAR",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 133.43,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W012",
+      "name": "Ogerpon Teal SAR (PSA 10)",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 60.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W013",
+      "name": "Ogerpon Hearthflame SAR",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 60.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W014",
+      "name": "Ogerpon Cornerstone SAR",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 51.5,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W015",
+      "name": "Briar SAR (PSA 10)",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 425.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W016",
+      "name": "Carmine SAR (PSA 10)",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 53.18,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W017",
+      "name": "Kieran SAR (PSA 10)",
+      "set": "Twilight Masquerade",
+      "variant": "PSA 10",
+      "price": 48.43,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W020",
+      "name": "Terapagos ex SAR (PSA 10)",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 425.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W021",
+      "name": "Garchomp ex SAR (PSA 10)",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 179.05,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W022",
+      "name": "Hydrapple ex SAR (PSA 10)",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 90.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W023",
+      "name": "Lacey SAR (PSA 10)",
+      "set": "Stellar Crown",
+      "variant": "PSA 10",
+      "price": 325.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W030",
+      "name": "Eevee SAR (PSA 10)",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 525.0,
+      "score": 58,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W031",
+      "name": "Vaporeon ex SAR (PSA 10)",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 1021.87,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W032",
+      "name": "Jolteon ex SAR (PSA 10)",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 104.5,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W033",
+      "name": "Flareon ex SAR (PSA 10)",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 666.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W034",
+      "name": "Glaceon ex SAR (PSA 10)",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 807.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "W035",
+      "name": "Leafeon ex SAR (PSA 10)",
+      "set": "Prismatic Evolutions",
+      "variant": "PSA 10",
+      "price": 157.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ001",
+      "name": "Pikachu (Master Ball Foil JP)",
+      "set": "Special Promo 25th",
+      "variant": "Raw NM",
+      "price": 145.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ002",
+      "name": "Charizard ex Master Ball Foil JP",
+      "set": "151 Master Ball",
+      "variant": "Raw NM",
+      "price": 245.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ003",
+      "name": "Pikachu Poker Card (JP)",
+      "set": "S12a Vstar Universe Promo",
+      "variant": "Raw NM",
+      "price": 850.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ004",
+      "name": "Charizard Vstar UR (JP)",
+      "set": "S12a Vstar Universe",
+      "variant": "Raw NM",
+      "price": 285.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ005",
+      "name": "Lugia Vstar UR (JP)",
+      "set": "S12a Vstar Universe",
+      "variant": "Raw NM",
+      "price": 225.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ006",
+      "name": "Arceus Vstar UR (JP)",
+      "set": "S12a Vstar Universe",
+      "variant": "Raw NM",
+      "price": 245.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ007",
+      "name": "Shiny Charizard ex SAR (JP)",
+      "set": "Shiny Treasure ex",
+      "variant": "Raw NM",
+      "price": 525.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ008",
+      "name": "Shiny Mew ex SAR (JP)",
+      "set": "Shiny Treasure ex",
+      "variant": "Raw NM",
+      "price": 425.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ009",
+      "name": "Shiny Mewtwo ex SAR (JP)",
+      "set": "Shiny Treasure ex",
+      "variant": "Raw NM",
+      "price": 425.0,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "YJ010",
+      "name": "Shiny Rayquaza ex SAR (JP)",
+      "set": "Shiny Treasure ex",
+      "variant": "Raw NM",
+      "price": 485.0,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "PC001",
+      "name": "Pokemon Center 25th Pikachu",
+      "set": "Celebrations PC Exclusive",
+      "variant": "Raw NM",
+      "price": 1.62,
+      "score": 46,
+      "signal": "HOLD"
+    },
+    {
+      "id": "PC002",
+      "name": "Pokemon Center Eevee 25th",
+      "set": "Celebrations PC Exclusive",
+      "variant": "Raw NM",
+      "price": 147.04,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "PC003",
+      "name": "Greninja V Pokemon Center Promo",
+      "set": "PC Exclusive Tin",
+      "variant": "Raw NM",
+      "price": 97.5,
+      "score": 49,
+      "signal": "HOLD"
+    },
+    {
+      "id": "PC004",
+      "name": "Premium Collection PSA 10 Box (Champion's Path)",
+      "set": "Champion's Path PC",
+      "variant": "Sealed",
+      "price": 211.9,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD001",
+      "name": "Pokemon Generations Booster Box",
+      "set": "Generations",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD002",
+      "name": "Pokemon Evolutions Booster Pack",
+      "set": "Evolutions",
+      "variant": "Sealed",
+      "price": 1200.0,
+      "score": 57,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD003",
+      "name": "Pokemon Burning Shadows Booster Box",
+      "set": "Burning Shadows",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD004",
+      "name": "Pokemon Team Up Booster Box",
+      "set": "Team Up",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD005",
+      "name": "Pokemon Unbroken Bonds Booster Box",
+      "set": "Unbroken Bonds",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD006",
+      "name": "Pokemon Hidden Fates Tin",
+      "set": "Hidden Fates",
+      "variant": "Sealed",
+      "price": 285.0,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD007",
+      "name": "Pokemon Vivid Voltage Booster Box",
+      "set": "Vivid Voltage",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD008",
+      "name": "Pokemon Brilliant Stars Booster Box",
+      "set": "Brilliant Stars",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD009",
+      "name": "Pokemon Astral Radiance Booster Box",
+      "set": "Astral Radiance",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD010",
+      "name": "Pokemon Silver Tempest Booster Box",
+      "set": "Silver Tempest",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD011",
+      "name": "Pokemon Lost Origin Booster Box",
+      "set": "Lost Origin",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD012",
+      "name": "Pokemon Paldea Evolved Booster Box",
+      "set": "Paldea Evolved",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD013",
+      "name": "Pokemon Obsidian Flames Booster Box",
+      "set": "Obsidian Flames",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD014",
+      "name": "Pokemon Paradox Rift Booster Box",
+      "set": "Paradox Rift",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD015",
+      "name": "Pokemon Temporal Forces Booster Box",
+      "set": "Temporal Forces",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD016",
+      "name": "Pokemon Twilight Masquerade Booster Box",
+      "set": "Twilight Masquerade",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD017",
+      "name": "Pokemon Shrouded Fable Booster Box",
+      "set": "Shrouded Fable",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 56,
+      "signal": "HOLD"
+    },
+    {
+      "id": "DD018",
+      "name": "Pokemon Stellar Crown Booster Box",
+      "set": "Stellar Crown",
+      "variant": "Sealed",
+      "price": 562.38,
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U001",
+      "name": "Iono Special Edition Trainer",
+      "set": "Paldea Evolved",
+      "variant": "Raw NM",
+      "price": 25.0,
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U002",
+      "name": "Nemona Full Art (raw)",
+      "set": "Scarlet & Violet",
+      "variant": "Raw NM",
+      "price": 12.0,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U003",
+      "name": "Penny Holo Trainer",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U004",
+      "name": "Hassel Full Art (raw)",
+      "set": "Stellar Crown",
+      "variant": "Raw NM",
+      "price": 6.0,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U005",
+      "name": "Atticus Full Art (raw)",
+      "set": "Twilight Masquerade",
+      "variant": "Raw NM",
+      "price": 17.85,
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U006",
+      "name": "Mela Full Art (raw)",
+      "set": "Paradox Rift",
+      "variant": "Raw NM",
+      "price": 8.74,
+      "score": 52,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U007",
+      "name": "Iris Holo Trainer (raw)",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U008",
+      "name": "Hilbert Holo Trainer (raw)",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 7.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U009",
+      "name": "N's Holo Trainer (raw)",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 9.0,
+      "score": 51,
+      "signal": "HOLD"
+    },
+    {
+      "id": "U010",
+      "name": "Bianca Holo Trainer (raw)",
+      "set": "Journey Together",
+      "variant": "Raw NM",
+      "price": 8.0,
+      "score": 51,
       "signal": "HOLD"
     }
   ]
