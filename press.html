@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Press Kit · bpleone.com</title>
+<meta name="description" content="Press kit for bpleone.com — Brandon P. Leone's personal trading operation. One-paragraph bio, project facts, screenshots, contact.">
+<meta property="og:title" content="bpleone.com — Press Kit">
+<meta property="og:description" content="Bio, project facts, screenshots, contact.">
+<meta property="og:url" content="https://bpleone.com/press.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/press.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.65; min-height: 100vh;
+  }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { max-width: 1200px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; transition: color 0.2s; white-space: nowrap; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 64px 0 32px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+  h1 .accent { color: var(--gold); }
+  h2 { font-size: 24px; font-weight: 700; margin: 40px 0 16px; letter-spacing: -0.01em; }
+  h2::before { content: '▸ '; color: var(--gold); }
+  h3 { font-size: 17px; font-weight: 700; margin: 24px 0 10px; color: var(--gold-dim); }
+  .lead { color: var(--text-dim); font-size: 17px; margin-bottom: 24px; }
+  .facts {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0;
+  }
+  @media (max-width: 768px) { .facts { grid-template-columns: 1fr 1fr; } }
+  .fact { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+  .fact .n { font-family: 'JetBrains Mono', monospace; font-size: 24px; font-weight: 700; color: var(--gold); }
+  .fact .l { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
+  blockquote {
+    border-left: 3px solid var(--gold);
+    background: var(--bg-card);
+    padding: 16px 24px;
+    border-radius: 0 10px 10px 0;
+    margin: 16px 0;
+    font-size: 15px;
+    color: var(--text);
+    font-style: italic;
+  }
+  .copy-box {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px 18px; margin: 12px 0; font-size: 14px;
+    position: relative;
+  }
+  .copy-box .label {
+    position: absolute; top: -8px; left: 12px;
+    background: var(--bg); padding: 0 8px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--gold);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  ul { margin: 6px 0 12px 22px; }
+  li { margin-bottom: 4px; font-size: 14px; }
+  code {
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    background: rgba(245,200,66,0.06); color: var(--gold);
+    padding: 1px 5px; border-radius: 3px;
+  }
+  a { color: var(--gold-dim); text-decoration: none; }
+  a:hover { color: var(--gold); }
+  .contact-card {
+    background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px;
+    padding: 24px; margin: 24px 0;
+  }
+  footer { padding: 48px 0; margin-top: 48px; border-top: 1px solid var(--border);
+           color: var(--text-mute); font-size: 13px;
+           font-family: 'JetBrains Mono', monospace; text-align: center; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/#desks">🧰 Desks</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/changelog.html">📋 Changelog</a>
+      <a href="/press.html" class="active">📰 Press</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">📰 Press Kit</span>
+    <h1>One operator. <span class="accent">Seven trading desks.</span></h1>
+    <p class="lead">Everything you need to write about bpleone.com — facts, quotes, screenshots, contact.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h2>The one-paragraph version</h2>
+    <p>Brandon P. Leone is an investment banking / equity research analyst building a personal multi-desk trading operation. The flagship is a Pokémon TCG quant terminal (774 cards live-priced, 4-hour auto-refresh, transparent composite scoring) — but the platform spans sports cards, options pricing, equity factor models, and IB-style trading comps. Every desk publishes its math, sanity-guards its data, and ships in public. There's no paywall during the beta; the upgrade is to a Pro tier with Discord alerts and tax reports when those ship.</p>
+
+    <h2>By the numbers</h2>
+    <div class="facts">
+      <div class="fact"><div class="n">774</div><div class="l">Cards Tracked</div></div>
+      <div class="fact"><div class="n">499</div><div class="l">Live-Priced</div></div>
+      <div class="fact"><div class="n">$3.2M</div><div class="l">Tracked Mcap</div></div>
+      <div class="fact"><div class="n">84</div><div class="l">STRONG BUYs Today</div></div>
+      <div class="fact"><div class="n">7</div><div class="l">Desks Total</div></div>
+      <div class="fact"><div class="n">2</div><div class="l">Live Desks</div></div>
+      <div class="fact"><div class="n">4h</div><div class="l">Refresh Cadence</div></div>
+      <div class="fact"><div class="n">20K+</div><div class="l">Cards Searchable</div></div>
+    </div>
+
+    <h2>Ready-to-use copy</h2>
+    <h3>Tweet-sized (240 chars)</h3>
+    <div class="copy-box">
+      <div class="label">Twitter</div>
+      <p>bpleone.com is a personal trading operation by Brandon P. Leone: 7 desks (Pokémon TCG live, Sports Cards live, Options, Equity Factors, Trading Comps, more incoming), built on transparent quant scoring with the full methodology published.</p>
+    </div>
+
+    <h3>Mid-length (400 chars)</h3>
+    <div class="copy-box">
+      <div class="label">Newsletter / blog</div>
+      <p>Brandon P. Leone, an IB / equity-research analyst, is running a personal multi-desk trading operation at bpleone.com — Pokémon TCG (774 cards live), Sports Cards (NBA/NFL/MLB), an options pricer with full Greeks, a multi-factor equity model, and an IB-style trading-comps tool he ships as a paid product. Free beta. Every score's math is published; sanity guards reject bad data.</p>
+    </div>
+
+    <h3>Long-form (800 chars)</h3>
+    <div class="copy-box">
+      <div class="label">Press / interview lead-in</div>
+      <p>Brandon P. Leone built bpleone.com as the front door for his personal trading operation — one operator running seven desks across collectibles, equities, options, and IB-style modeling tools. The Pokémon TCG desk is the flagship: 774 cards live-priced from PriceCharting, PokemonPriceTracker, and TCGPlayer; refreshed every 4 hours via GitHub Actions; ranked by a composite quant score (55% momentum, 20% scarcity, 15% value, 10% liquidity) with every input and threshold published on the methodology page. Sports Cards (NBA/NFL/MLB) ships the same framework. The Trading Comps Model is sold as a downloadable tool with white-label rights. The Options Pricer runs Black-Scholes Greeks with a live yfinance feed. The Equity Factor Model is a multi-factor long/short backbone. Everything's built in public.</p>
+    </div>
+
+    <h2>Quotable</h2>
+    <blockquote>"Price alone misses scarcity, liquidity, and momentum. One composite score lets you screen 774 cards in 10 seconds and drill in from there."</blockquote>
+    <blockquote>"PriceCharting wins over PokemonPriceTracker because PC tracks longer-window aggregates. PPT is a useful second opinion."</blockquote>
+    <blockquote>"Every artifact is in the public repo. The scoring code is in <code>streamlit_app.py</code>. Fork it, validate it, suggest changes."</blockquote>
+
+    <h2>Screenshots</h2>
+    <ul>
+      <li><strong>Live terminal</strong>: <a href="https://bpleone.com/" target="_blank">bpleone.com</a> — auto-scrolling ticker, KPI strip, Trade of the Day, movers tables</li>
+      <li><strong>Card directory</strong>: <a href="https://bpleone.com/cards.html" target="_blank">bpleone.com/cards.html</a> — searchable grid of all 774 cards with images + sparklines</li>
+      <li><strong>Pro dashboard</strong>: <a href="https://pokemon.bpleone.com" target="_blank">pokemon.bpleone.com</a> — 21 tabs, Price Audit, Crack-It Calculator, PSA Cert Verifier, Storefront</li>
+      <li><strong>OG share image</strong>: <a href="/og.svg" target="_blank">/og.svg</a> — 1200×630 branded asset</li>
+    </ul>
+    <p style="color: var(--text-dim); font-size: 13px;">Need raw PNGs at higher resolution or with no UI chrome? Email below; I'll send a media kit zip.</p>
+
+    <h2>Open data, audit-ready</h2>
+    <p>Every artifact is in the public <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk" target="_blank">trading-desk repo</a>:</p>
+    <ul>
+      <li><code>streamlit_app.py</code> — the Pro dashboard</li>
+      <li><code>live_prices.py</code> — the 4-hour scraper</li>
+      <li><code>build_homepage_feed.py</code> — homepage data generator</li>
+      <li><code>build_market_brief.py</code> — daily brief generator</li>
+      <li><code>sweep_pc_now.py</code> + <code>sweep_ppt_holdouts.py</code> — manual price corrections</li>
+      <li><code>live_prices.json</code> + <code>price_history.jsonl</code> — the live data itself</li>
+      <li><code>price_overrides.json</code> — every manual override is logged</li>
+      <li><a href="/methodology.html">methodology.html</a> — full quant model math</li>
+      <li><a href="/changelog.html">changelog.html</a> — every shipped release</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <p style="margin-bottom: 8px;"><strong>Brandon P. Leone</strong> · Investment banking / equity research analyst</p>
+      <p style="margin-bottom: 8px;">📍 Southern California</p>
+      <p style="margin-bottom: 8px;">✉️ <a href="mailto:brandonpleone@gmail.com">brandonpleone@gmail.com</a></p>
+      <p style="margin-bottom: 8px;">🔗 <a href="https://www.linkedin.com/in/brandonleone/" target="_blank">LinkedIn</a></p>
+      <p>🐙 <a href="https://github.com/Keyvaniath" target="_blank">GitHub: @Keyvaniath</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a>
+  </div>
+</footer>
+
+</body>
+</html>
