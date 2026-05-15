@@ -376,6 +376,17 @@
     <button type="button" class="search-clear" id="search-clear">×</button>
   </div>
 
+  <!-- Recent lookups — last 5 cards checked at this show, stored in localStorage.
+       Lets you tap back to a card you flagged at table 1 when you spot a similar
+       one at table 5 without retyping the name. -->
+  <div id="recent-lookups" style="display:none;margin-bottom:14px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.08em;">Recent lookups</span>
+      <button type="button" id="clear-recent" style="background:transparent;border:none;color:var(--text-mute);font-size:11px;cursor:pointer;text-decoration:underline;">clear</button>
+    </div>
+    <div id="recent-chips" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
+  </div>
+
   <div class="results-list" id="results"></div>
 
   <div class="sticker-section" id="sticker-section">
@@ -479,6 +490,7 @@
     if (CARDS.length) {
       status.textContent = '● ' + CARDS.length + ' cards · live';
       status.classList.add('live');
+      renderRecent();   // shows the chips once we know the card list exists
     } else {
       status.textContent = '⚠ feed empty';
     }
@@ -545,11 +557,58 @@
     // Pre-fill verdict with no sticker (just shows fair value + targets)
     renderVerdict(c, null);
 
+    // Track in recent lookups (newest first, dedupe by id, cap 5)
+    pushRecent(c);
+
     // Focus the sticker input
     const st = document.getElementById('sticker');
     st.value = '';
     setTimeout(() => st.focus(), 50);
   }
+
+  // ----- Recent lookups (localStorage) -----
+  const RECENT_KEY = 'show-recent-v1';
+  function loadRecent() {
+    try { return JSON.parse(localStorage.getItem(RECENT_KEY) || '[]'); }
+    catch { return []; }
+  }
+  function saveRecent(list) {
+    try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch {}
+  }
+  function pushRecent(c) {
+    const list = loadRecent().filter(x => x.id !== c.id);
+    list.unshift({ id: c.id, name: c.name, set: c.set, variant: c.variant, ts: Date.now() });
+    saveRecent(list.slice(0, 5));
+    renderRecent();
+  }
+  function renderRecent() {
+    const list = loadRecent();
+    const box = document.getElementById('recent-lookups');
+    const chips = document.getElementById('recent-chips');
+    if (!list.length || !CARDS.length) {
+      box.style.display = 'none';
+      return;
+    }
+    box.style.display = 'block';
+    chips.innerHTML = list.map(r => (
+      '<button type="button" data-id="' + escapeHtml(r.id) + '" ' +
+      'style="background:var(--bg-card);border:1px solid var(--border);color:var(--text-dim);' +
+      'padding:6px 12px;border-radius:14px;font-size:12px;cursor:pointer;font-family:Inter,sans-serif;' +
+      'max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' +
+      escapeHtml(r.name) + '</button>'
+    )).join('');
+    chips.querySelectorAll('button').forEach(b => {
+      b.addEventListener('click', () => {
+        const id = b.getAttribute('data-id');
+        const card = CARDS.find(c => c.id === id);
+        if (card) selectCard(card);
+      });
+    });
+  }
+  document.getElementById('clear-recent').addEventListener('click', () => {
+    saveRecent([]);
+    renderRecent();
+  });
 
   function renderVerdict(c, sticker) {
     const fair = c.price || 0;
