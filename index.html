@@ -575,7 +575,61 @@
     border: 1px solid rgba(74,222,128,0.4);
     padding: 3px 8px; border-radius: 4px;
     font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    box-shadow: 0 0 12px rgba(74,222,128,0.25);
   }
+  /* Sticky sub-nav under main nav for in-page jumps */
+  .sub-nav {
+    position: sticky; top: 60px; z-index: 90;
+    background: rgba(10,14,26,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+  }
+  .sub-nav .container {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    align-items: center;
+    overflow-x: auto;
+  }
+  .sub-nav a {
+    color: var(--text-dim); text-decoration: none;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    padding: 6px 10px; border-radius: 6px;
+    transition: all 0.18s;
+  }
+  .sub-nav a:hover { color: var(--gold); background: rgba(245,200,66,0.06); }
+  .sub-nav .stats {
+    margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute);
+  }
+  .sub-nav .stats strong { color: var(--gold); }
+  @media (max-width: 700px) {
+    .sub-nav { top: auto; position: relative; }
+    .sub-nav a { font-size: 10px; padding: 5px 8px; }
+    .sub-nav .stats { display: none; }
+  }
+  /* Subtle glow on STRONG BUY pills inside data-tables */
+  .data-table .signal .strong-buy {
+    box-shadow: 0 0 14px rgba(74,222,128,0.35);
+    animation: pulse-glow 2.5s ease-in-out infinite;
+  }
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 14px rgba(74,222,128,0.35); }
+    50% { box-shadow: 0 0 22px rgba(74,222,128,0.55); }
+  }
+  /* Smooth fade-in for sections that load via JS */
+  .fw-grid > .fw-tile, .t500-grid > .t500-tile, .sets-grid > .set-card, .stat-box {
+    animation: fade-in 0.4s ease-out backwards;
+  }
+  @keyframes fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  /* Section divider — subtle gradient line */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 32px 0;
+  }
+  /* Improved section spacing on the homepage */
+  section { scroll-margin-top: 130px; }
   .fw-tile .img {
     aspect-ratio: 5/7;
     background: rgba(0,0,0,0.2);
@@ -1331,6 +1385,18 @@
   </div>
 </div>
 
+<!-- Sticky in-page nav — quick-jump between research sections. -->
+<div class="sub-nav">
+  <div class="container">
+    <a href="#future-winners">🔮 Future Winners</a>
+    <a href="#top500">🏆 Top 500</a>
+    <a href="#live">📊 Movers</a>
+    <a href="#featured-sets-section">🔥 New Sets</a>
+    <a href="#brief">📰 Brief</a>
+    <span class="stats" id="sub-nav-stats">774 tracked · <strong id="snk-buys">—</strong> STRONG BUYs · feed <strong id="snk-age">—</strong></span>
+  </div>
+</div>
+
 <header class="hero" style="padding-bottom: 24px;">
   <div class="container">
     <div class="hero-eyebrow">
@@ -1355,6 +1421,15 @@
     </div>
   </div>
 </header>
+
+<!-- ============ LIVE TICKER TAPE ============ -->
+<div class="tape-wrap">
+  <div class="tape-track" id="tape-track">
+    <span class="tape-item skeleton">⏳ Loading live tape…</span>
+  </div>
+</div>
+
+
 
 <!-- ============ FUTURE WINNERS — AI predictive hunt list ============ -->
 <section class="fw-section" id="future-winners">
@@ -1404,7 +1479,7 @@
 </section>
 
 <!-- ============ FEATURED SETS — drillable cards directory shortcut ============ -->
-<section class="featured-sets">
+<section class="featured-sets" id="featured-sets-section">
   <div class="container">
     <div class="head">
       <h3>🔥 Featured Recent Sets</h3>
@@ -1417,7 +1492,7 @@
 </section>
 
 <!-- ============ MARKET BRIEF — auto-generated morning note ============ -->
-<section class="brief-section">
+<section class="brief-section" id="brief">
   <div class="container">
     <div class="brief-card">
       <div class="brief-header">
@@ -1433,208 +1508,6 @@
 </section>
 
 <!-- ============ MY DESKS — compact dashboard strip ============ -->
-<section class="desks-strip">
-  <div class="container">
-    <div class="strip-header">
-      <h3>🧰 My Desks</h3>
-      <a href="#desks">view full grid →</a>
-    </div>
-    <div class="desks-row">
-      <a href="https://pokemon.bpleone.com" class="desk-chip" target="_blank" rel="noopener">
-        <span class="live-dot"></span>
-        <span class="icon">🃏</span>
-        <span class="info">
-          <span class="name">Pokémon TCG</span>
-          <span class="meta">LIVE · 774 cards</span>
-        </span>
-      </a>
-      <a href="https://pokemon.bpleone.com/?tab=flip" class="desk-chip" target="_blank" rel="noopener">
-        <span class="live-dot"></span>
-        <span class="icon">💸</span>
-        <span class="info">
-          <span class="name">Flip Bot</span>
-          <span class="meta">LIVE · TCGP arb scanner</span>
-        </span>
-      </a>
-      <a href="https://sports-cards.bpleone.com" class="desk-chip" target="_blank" rel="noopener">
-        <span class="live-dot"></span>
-        <span class="icon">🏀</span>
-        <span class="info">
-          <span class="name">Sports Cards</span>
-          <span class="meta">LIVE · NBA/NFL/MLB</span>
-        </span>
-      </a>
-      <a href="mailto:brandonpleone@gmail.com?subject=Trading%20Comps%20interest" class="desk-chip">
-        <span class="icon">📊</span>
-        <span class="info">
-          <span class="name">Trading Comps</span>
-          <span class="meta">TOOL · IB-style comps</span>
-        </span>
-      </a>
-      <a href="mailto:brandonpleone@gmail.com?subject=Options%20Pricer%20interest" class="desk-chip">
-        <span class="icon">🧮</span>
-        <span class="info">
-          <span class="name">Options Pricing</span>
-          <span class="meta">TOOL · Black-Scholes</span>
-        </span>
-      </a>
-      <a href="mailto:brandonpleone@gmail.com?subject=Equity%20Factor%20Model%20interest" class="desk-chip">
-        <span class="icon">📈</span>
-        <span class="info">
-          <span class="name">Equity Factors</span>
-          <span class="meta">TOOL · multi-factor</span>
-        </span>
-      </a>
-      <div class="desk-chip coming">
-        <span class="icon">🎲</span>
-        <span class="info">
-          <span class="name">Sports Betting</span>
-          <span class="meta">soon · DFS · parlays</span>
-        </span>
-      </div>
-      <div class="desk-chip coming">
-        <span class="icon">🏟️</span>
-        <span class="info">
-          <span class="name">Sports Hub</span>
-          <span class="meta">soon · scores · news</span>
-        </span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="desks" class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Trading Desks</h2>
-      <span class="label">8 modules · 4 live · 3 tools · 1 soon</span>
-    </div>
-    <div class="grid">
-
-      <a href="https://pokemon-tcg-trading-desk.streamlit.app" class="card live" target="_blank" rel="noopener">
-        <div class="card-header">
-          <span class="card-icon">🃏</span>
-          <span class="badge live">● LIVE</span>
-        </div>
-        <h3>Pokémon TCG</h3>
-        <div class="tag">20,000+ cards searchable · 774 quant-scored · live TCGPlayer prices · 5 budget brackets</div>
-        <p>The flagship desk. From $2 penny stocks to $80K vintage grails. Composite quant score (momentum + value + scarcity + liquidity), 4-hour live refresh, Crack-It sealed-product EV calculator, PSA cert verifier, transparent Price Audit tab, IRS Form 8949 tax reports. <strong style="color: var(--gold);">Free beta — full Pro access while we test →</strong></p>
-        <div class="card-footer">
-          <span class="url">pokemon.bpleone.com</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a href="https://pokemon.bpleone.com/?tab=flip" class="card live" target="_blank" rel="noopener">
-        <div class="card-header">
-          <span class="card-icon">💸</span>
-          <span class="badge live">● LIVE</span>
-        </div>
-        <h3>Flip Bot</h3>
-        <div class="tag">TCGPlayer arb scanner · eBay sold-comp anchored · Discord alerts · 20-min cron</div>
-        <p>Scans live TCGPlayer BIN listings every 20 minutes against eBay sold-comp medians for the 322-card watchlist. Computes net-of-fees profit + ROI for each candidate, flags qualified flips with confidence tiers (OK / VERIFY / SUSPECT) to gate false positives. Locale-aware JP-vs-EN matching, dedupe across runs so the same listing doesn't spam twice. Pushes Discord on hits; full results table on the dashboard's 💸 Flip Bot tab.</p>
-        <div class="card-footer">
-          <span class="url">pokemon.bpleone.com → 💸 Flip Bot tab</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a href="https://sports-cards.bpleone.com" class="card live" target="_blank" rel="noopener">
-        <div class="card-header">
-          <span class="card-icon">🏀</span>
-          <span class="badge live">● LIVE</span>
-        </div>
-        <h3>Sports Cards</h3>
-        <div class="tag">98 cards · NBA · NFL · MLB · Bowman 1st · NIL · Vintage HOF</div>
-        <p>The Pokémon framework applied to PSA-graded sports cards. Caleb Williams, Wemby, Salas, '52 Mantle. Composite quant score (momentum + value + scarcity + liquidity), live eBay sold-comps, BUY/SELL verdicts, inventory P&L. <strong style="color: var(--gold);">Now live →</strong></p>
-        <div class="card-footer">
-          <span class="url">sports-cards.bpleone.com</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a href="mailto:brandonpleone@gmail.com?subject=Trading%20Comps%20interest" class="card live">
-        <div class="card-header">
-          <span class="card-icon">📊</span>
-          <span class="badge beta">TOOL · Sold</span>
-        </div>
-        <h3>Trading Comps Model</h3>
-        <div class="tag">IB-style peer comps · DCF · sector valuations · 3 tiers</div>
-        <p>White-label peer-comps model built in pure Python + Excel. Drop in any ticker, get sector multiples, percentile rankings, comp tables in IB format. Demo / Standard / Pro tiers, with the Pro edition shipping full source for white-label distribution. Built from my equity-research desk experience.</p>
-        <div class="card-footer">
-          <span class="url">email to request →</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a href="mailto:brandonpleone@gmail.com?subject=Options%20Pricer%20interest" class="card live">
-        <div class="card-header">
-          <span class="card-icon">🧮</span>
-          <span class="badge beta">TOOL</span>
-        </div>
-        <h3>Options Pricing Model</h3>
-        <div class="tag">Black-Scholes · Greeks · IV surface · yfinance feed</div>
-        <p>Python-native options pricer: Black-Scholes Δ/Γ/Θ/ν/ρ, implied-vol surface, term-structure plots, straddle/strangle/iron-condor PnL profiles. Pull live chain from yfinance, screen for vol-rich names, structure expirations. For traders who want real Greeks instead of broker-platform approximations.</p>
-        <div class="card-footer">
-          <span class="url">email to request →</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a href="mailto:brandonpleone@gmail.com?subject=Equity%20Factor%20Model%20interest" class="card live">
-        <div class="card-header">
-          <span class="card-icon">📈</span>
-          <span class="badge beta">TOOL</span>
-        </div>
-        <h3>Equity Factor Model</h3>
-        <div class="tag">multi-factor · momentum · value · quality · low-vol</div>
-        <p>Cross-sectional multi-factor equity model in Python: momentum, value, quality, size, low-vol. Long/short portfolio construction with sector neutralization, transaction-cost-aware rebalancing, and backtested factor returns. The framework I run my personal equity book on.</p>
-        <div class="card-footer">
-          <span class="url">email to request →</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a href="https://betting.bpleone.com" class="card live" target="_blank" rel="noopener">
-        <div class="card-header">
-          <span class="card-icon">🎲</span>
-          <span class="badge live">● LIVE</span>
-        </div>
-        <h3>Sports Betting / DFS</h3>
-        <div class="tag">32 markets · Pinnacle-anchored EV · 1/2 Kelly sizer · PuLP DFS solver</div>
-        <p>EV-finder across DK / FanDuel / BetMGM / Caesars, anchored to Pinnacle's de-vigged true probabilities. Composite score (0.40·EV + 0.25·CLV + 0.20·Sharp + 0.15·Liquidity), STRONG BET / BET / PASS / FADE verdicts, hard 2% bankroll cap per ticket, daily stop-loss. DFS optimizer for DraftKings + FanDuel main slates. <strong style="color: var(--gold);">Now live →</strong></p>
-        <div class="card-footer">
-          <span class="url">betting.bpleone.com</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <div class="card coming">
-        <div class="card-header">
-          <span class="card-icon">🏟️</span>
-          <span class="badge coming">Coming Soon</span>
-        </div>
-        <h3>Sports Hub</h3>
-        <div class="tag">my teams · schedules · news · stats</div>
-        <p>One-stop dashboard for every team I follow — Lakers, Dodgers, Rams, USC, whoever. Live scores, schedule, injury reports, news aggregation, fantasy team integration. Pure consumption, no trading.</p>
-        <div class="card-footer">
-          <span>sports.bpleone.com</span>
-          <span class="arrow">→</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ LIVE TICKER TAPE ============ -->
-<div class="tape-wrap">
-  <div class="tape-track" id="tape-track">
-    <span class="tape-item skeleton">⏳ Loading live tape…</span>
-  </div>
-</div>
-
 <!-- ============ LIVE DATA TERMINAL ============ -->
 <section id="live" class="terminal">
   <div class="container">
@@ -1786,6 +1659,139 @@
     </div>
 
   </div>
+</section>
+
+<section class="section" style="padding-top: 40px;">
+  <details style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 24px;">
+    <summary style="cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 0;">🧰 Other Trading Desks — click to expand</summary>
+    <div style="margin-top: 20px;">
+<section id="desks" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Trading Desks</h2>
+      <span class="label">8 modules · 4 live · 3 tools · 1 soon</span>
+    </div>
+    <div class="grid">
+
+      <a href="https://pokemon-tcg-trading-desk.streamlit.app" class="card live" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-icon">🃏</span>
+          <span class="badge live">● LIVE</span>
+        </div>
+        <h3>Pokémon TCG</h3>
+        <div class="tag">20,000+ cards searchable · 774 quant-scored · live TCGPlayer prices · 5 budget brackets</div>
+        <p>The flagship desk. From $2 penny stocks to $80K vintage grails. Composite quant score (momentum + value + scarcity + liquidity), 4-hour live refresh, Crack-It sealed-product EV calculator, PSA cert verifier, transparent Price Audit tab, IRS Form 8949 tax reports. <strong style="color: var(--gold);">Free beta — full Pro access while we test →</strong></p>
+        <div class="card-footer">
+          <span class="url">pokemon.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://pokemon.bpleone.com/?tab=flip" class="card live" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-icon">💸</span>
+          <span class="badge live">● LIVE</span>
+        </div>
+        <h3>Flip Bot</h3>
+        <div class="tag">TCGPlayer arb scanner · eBay sold-comp anchored · Discord alerts · 20-min cron</div>
+        <p>Scans live TCGPlayer BIN listings every 20 minutes against eBay sold-comp medians for the 322-card watchlist. Computes net-of-fees profit + ROI for each candidate, flags qualified flips with confidence tiers (OK / VERIFY / SUSPECT) to gate false positives. Locale-aware JP-vs-EN matching, dedupe across runs so the same listing doesn't spam twice. Pushes Discord on hits; full results table on the dashboard's 💸 Flip Bot tab.</p>
+        <div class="card-footer">
+          <span class="url">pokemon.bpleone.com → 💸 Flip Bot tab</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://sports-cards.bpleone.com" class="card live" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-icon">🏀</span>
+          <span class="badge live">● LIVE</span>
+        </div>
+        <h3>Sports Cards</h3>
+        <div class="tag">98 cards · NBA · NFL · MLB · Bowman 1st · NIL · Vintage HOF</div>
+        <p>The Pokémon framework applied to PSA-graded sports cards. Caleb Williams, Wemby, Salas, '52 Mantle. Composite quant score (momentum + value + scarcity + liquidity), live eBay sold-comps, BUY/SELL verdicts, inventory P&L. <strong style="color: var(--gold);">Now live →</strong></p>
+        <div class="card-footer">
+          <span class="url">sports-cards.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="mailto:brandonpleone@gmail.com?subject=Trading%20Comps%20interest" class="card live">
+        <div class="card-header">
+          <span class="card-icon">📊</span>
+          <span class="badge beta">TOOL · Sold</span>
+        </div>
+        <h3>Trading Comps Model</h3>
+        <div class="tag">IB-style peer comps · DCF · sector valuations · 3 tiers</div>
+        <p>White-label peer-comps model built in pure Python + Excel. Drop in any ticker, get sector multiples, percentile rankings, comp tables in IB format. Demo / Standard / Pro tiers, with the Pro edition shipping full source for white-label distribution. Built from my equity-research desk experience.</p>
+        <div class="card-footer">
+          <span class="url">email to request →</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="mailto:brandonpleone@gmail.com?subject=Options%20Pricer%20interest" class="card live">
+        <div class="card-header">
+          <span class="card-icon">🧮</span>
+          <span class="badge beta">TOOL</span>
+        </div>
+        <h3>Options Pricing Model</h3>
+        <div class="tag">Black-Scholes · Greeks · IV surface · yfinance feed</div>
+        <p>Python-native options pricer: Black-Scholes Δ/Γ/Θ/ν/ρ, implied-vol surface, term-structure plots, straddle/strangle/iron-condor PnL profiles. Pull live chain from yfinance, screen for vol-rich names, structure expirations. For traders who want real Greeks instead of broker-platform approximations.</p>
+        <div class="card-footer">
+          <span class="url">email to request →</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="mailto:brandonpleone@gmail.com?subject=Equity%20Factor%20Model%20interest" class="card live">
+        <div class="card-header">
+          <span class="card-icon">📈</span>
+          <span class="badge beta">TOOL</span>
+        </div>
+        <h3>Equity Factor Model</h3>
+        <div class="tag">multi-factor · momentum · value · quality · low-vol</div>
+        <p>Cross-sectional multi-factor equity model in Python: momentum, value, quality, size, low-vol. Long/short portfolio construction with sector neutralization, transaction-cost-aware rebalancing, and backtested factor returns. The framework I run my personal equity book on.</p>
+        <div class="card-footer">
+          <span class="url">email to request →</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://betting.bpleone.com" class="card live" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-icon">🎲</span>
+          <span class="badge live">● LIVE</span>
+        </div>
+        <h3>Sports Betting / DFS</h3>
+        <div class="tag">32 markets · Pinnacle-anchored EV · 1/2 Kelly sizer · PuLP DFS solver</div>
+        <p>EV-finder across DK / FanDuel / BetMGM / Caesars, anchored to Pinnacle's de-vigged true probabilities. Composite score (0.40·EV + 0.25·CLV + 0.20·Sharp + 0.15·Liquidity), STRONG BET / BET / PASS / FADE verdicts, hard 2% bankroll cap per ticket, daily stop-loss. DFS optimizer for DraftKings + FanDuel main slates. <strong style="color: var(--gold);">Now live →</strong></p>
+        <div class="card-footer">
+          <span class="url">betting.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <div class="card coming">
+        <div class="card-header">
+          <span class="card-icon">🏟️</span>
+          <span class="badge coming">Coming Soon</span>
+        </div>
+        <h3>Sports Hub</h3>
+        <div class="tag">my teams · schedules · news · stats</div>
+        <p>One-stop dashboard for every team I follow — Lakers, Dodgers, Rams, USC, whoever. Live scores, schedule, injury reports, news aggregation, fantasy team integration. Pure consumption, no trading.</p>
+        <div class="card-footer">
+          <span>sports.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    </div>
+  </details>
 </section>
 
 <section id="pricing" class="section" style="padding-top: 20px;">
@@ -2268,6 +2274,10 @@
       d30El.style.color = d30 > 0 ? 'var(--green)' : (d30 < 0 ? 'var(--red)' : 'var(--text)');
     }
     setText('kpi-updated', 'updated ' + relTime(feed.live_updated_at));
+
+    // Sticky sub-nav live stats
+    setText('snk-buys', (s.strong_buys || 0).toLocaleString());
+    setText('snk-age', relTime(feed.live_updated_at));
 
     // Freshness banner: warn if data is older than 6h, scream if older than 24h
     try {
