@@ -1,0 +1,54 @@
+{
+  "name": "bpleone.com — Trading Desks",
+  "short_name": "bpleone",
+  "description": "One operator. Seven trading desks. IB-style quant lab built in public.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "categories": ["finance", "productivity", "business"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Live Terminal",
+      "short_name": "Live",
+      "description": "The live data terminal",
+      "url": "/#live",
+      "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+    },
+    {
+      "name": "Card Directory",
+      "short_name": "Cards",
+      "description": "All 774 cards searchable",
+      "url": "/cards.html",
+      "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+    },
+    {
+      "name": "Compare Cards",
+      "short_name": "Compare",
+      "description": "Side-by-side card comparison",
+      "url": "/compare.html",
+      "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+    }
+  ]
+}
