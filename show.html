@@ -3,9 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<meta name="description" content="Card-show buying mode — instant fair-value check for Pokemon cards.">
+<meta name="description" content="Card-show buying mode — instant fair-value check for Pokemon cards. Type a card name, enter the dealer's sticker price, get an instant BUY / PASS verdict backed by 774-card live market data.">
 <meta name="theme-color" content="#0a0e1a">
-<title>🃏 Show Mode — Card-show buying tool</title>
+<meta name="keywords" content="pokemon card prices, card show buying tool, pokemon tcg fair value, moonbreon price, pokemon card scanner">
+<title>🃏 Show Mode — Card-show buying tool · bpleone.com</title>
+<link rel="canonical" href="https://bpleone.com/show.html">
+
+<!-- Open Graph — Twitter, Discord, iMessage previews -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bpleone.com/show.html">
+<meta property="og:title" content="🃏 Show Mode — Card-show buying tool">
+<meta property="og:description" content="Instant fair-value check for Pokemon cards. Type a card, enter the dealer's sticker, get BUY / PASS verdict.">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta property="og:site_name" content="bpleone.com">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🃏 Show Mode — Card-show buying tool">
+<meta name="twitter:description" content="Instant fair-value check for Pokemon cards at card shows. Type, enter price, get verdict.">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+
+<!-- Structured data for Google rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Show Mode",
+  "alternateName": "bpleone Card-Show Buying Tool",
+  "url": "https://bpleone.com/show.html",
+  "description": "Instant fair-value check for Pokemon cards at card shows. Type a card name, enter the dealer's sticker price, get an instant BUY / PASS verdict.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Brandon P. Leone",
+    "url": "https://bpleone.com"
+  }
+}
+</script>
 
 <!-- PWA: install to phone home screen, opens fullscreen, offline-capable -->
 <link rel="manifest" href="/show-manifest.json">
@@ -358,6 +397,13 @@
 </style>
 </head>
 <body>
+<noscript>
+  <div style="background:#f87171;color:#0a0e1a;padding:18px;text-align:center;font-weight:600;">
+    Show Mode needs JavaScript to filter cards + compute verdicts.
+    Browse the static <a href="/cards.html" style="color:#0a0e1a;text-decoration:underline;">cards directory</a>
+    or open the <a href="https://pokemon.bpleone.com" style="color:#0a0e1a;text-decoration:underline;">full dashboard</a> instead.
+  </div>
+</noscript>
 
 <header>
   <div class="header-row">
