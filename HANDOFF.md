@@ -71,6 +71,6 @@ Copies are mirrored into `bpleone-homepage/sports-cards/index.html` and `bpleone
 - `Keyvaniath/bpleone-options-desk` — Options desk
 - `Keyvaniath/bpleone-sports-betting-desk` — **archived** (duplicate of bpleone-betting)
 
-## Last updated
+## Last updated: 2026-05-15 08:22 UTC
 
 2026-05-15 by Claude Opus 4.7 working on the Sports Cards + Sports Hub desks.
