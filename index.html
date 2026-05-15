@@ -531,6 +531,141 @@
     gap: 12px;
   }
   footer .legal { font-size: 11px; max-width: 480px; line-height: 1.5; }
+  /* ============ FUTURE WINNERS ============ */
+  .fw-section { padding: 32px 0 8px; }
+  .fw-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 16px;
+  }
+  .fw-head h2 {
+    font-size: 28px; font-weight: 800; letter-spacing: -0.02em;
+  }
+  .fw-head h2 .accent { color: var(--gold); }
+  .fw-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+    max-width: 480px; text-align: right;
+  }
+  .fw-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  @media (max-width: 600px) { .fw-grid { grid-template-columns: repeat(2, 1fr); } }
+  .fw-tile {
+    background: linear-gradient(180deg, var(--bg-card) 0%, rgba(245,200,66,0.02) 100%);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0; overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    display: flex; flex-direction: column;
+    position: relative;
+  }
+  .fw-tile:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+  .fw-tile .rank {
+    position: absolute; top: 6px; left: 6px; z-index: 2;
+    background: rgba(10,14,26,0.85); backdrop-filter: blur(4px);
+    color: var(--gold); padding: 2px 8px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+  }
+  .fw-tile .fw-score-pill {
+    position: absolute; top: 6px; right: 6px; z-index: 2;
+    background: rgba(74,222,128,0.18); color: #4ade80;
+    border: 1px solid rgba(74,222,128,0.4);
+    padding: 3px 8px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+  }
+  .fw-tile .img {
+    aspect-ratio: 5/7;
+    background: rgba(0,0,0,0.2);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fw-tile .img img { width: 100%; height: 100%; object-fit: contain; }
+  .fw-tile .body { padding: 10px 12px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
+  .fw-tile .name {
+    font-size: 13px; font-weight: 700; line-height: 1.2;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .fw-tile .var {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute);
+  }
+  .fw-tile .price-row {
+    display: flex; justify-content: space-between; align-items: baseline; margin-top: auto;
+    padding-top: 6px; border-top: 1px dashed var(--border);
+  }
+  .fw-tile .price { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--gold); }
+  .fw-tile .target { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); }
+  .fw-tile .thesis {
+    font-size: 10px; color: var(--text-dim); margin-top: 4px;
+    line-height: 1.35;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  /* ============ TOP 500 INLINE GRID ============ */
+  .t500-section { padding: 32px 0 16px; }
+  .t500-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+  }
+  .t500-head h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+  .t500-head h2 .accent { color: var(--gold); }
+  .t500-controls {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px;
+  }
+  .t500-controls input, .t500-controls select {
+    background: var(--bg-card); border: 1px solid var(--border);
+    color: var(--text); padding: 8px 12px; border-radius: 6px;
+    font-family: 'Inter', sans-serif; font-size: 13px; outline: none;
+  }
+  .t500-controls input.search { flex: 1; min-width: 200px; }
+  .t500-controls .count {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-mute);
+    margin-left: auto; align-self: center;
+  }
+  .t500-grid {
+    display: grid; gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+  .t500-tile {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0; overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.15s;
+    display: flex; flex-direction: column;
+  }
+  .t500-tile:hover { border-color: var(--gold); transform: translateY(-1px); }
+  .t500-tile .img {
+    aspect-ratio: 5/7;
+    background: rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  .t500-tile .img img { width: 100%; height: 100%; object-fit: contain; }
+  .t500-tile .body { padding: 8px 10px; }
+  .t500-tile .name {
+    font-size: 12px; font-weight: 600;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    margin-bottom: 2px;
+  }
+  .t500-tile .row {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  }
+  .t500-tile .price { color: var(--gold); font-weight: 700; }
+  .t500-tile .score { color: var(--text-mute); }
+  .t500-load-more {
+    text-align: center; margin: 16px 0 0;
+  }
+  .t500-load-more button {
+    background: transparent; border: 1px solid var(--gold); color: var(--gold);
+    padding: 10px 28px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .t500-load-more button:hover { background: var(--gold); color: var(--bg); }
   /* ============ FEATURED SETS ============ */
   .featured-sets {
     padding: 36px 0 16px;
@@ -1188,31 +1323,77 @@
   </div>
 </nav>
 
-<header class="hero" style="padding-bottom: 30px;">
+<header class="hero" style="padding-bottom: 24px;">
   <div class="container">
     <div class="hero-eyebrow">
       <span class="live-pulse" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle;animation:pulse 1.6s infinite;"></span>
-      Brandon P. Leone · Personal Trading Operation
+      <span id="hero-status">Pokémon TCG Research Center · Live Since 2026</span>
     </div>
-    <h1>One operator.<br><span class="accent">Eight trading desks.</span></h1>
-    <p>An IB-style quant lab built from scratch — Pokémon TCG, sports cards, equity factor models, options pricing, and IB peer-comps tools. Each desk runs its own data pipeline, signals, and tooling. Live data, transparent scoring, no chartcraft.</p>
+    <h1>Find the next moonshot<br><span class="accent">before it moves.</span></h1>
+    <p>774 cards · 4-hour refresh · AI-driven Future Winners model · transparent quant score · cross-checked across PriceCharting + PokemonPriceTracker + TCGPlayer. No hype, no chartcraft — just signals that survive a sanity guard.</p>
 
-    <!-- Flip Bot live counter — populated by JS from feed.flip_bot (hidden until feed loads).
-         Catches the eye above the fold without cluttering the hero copy. -->
+    <!-- Flip Bot live counter — populated by JS from feed.flip_bot (hidden until feed loads). -->
     <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank" rel="noopener" id="flip-hero-pill" style="display:none;text-decoration:none;align-items:center;gap:10px;background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.3);padding:10px 16px;border-radius:24px;margin-bottom:18px;font-size:13px;font-family:'JetBrains Mono',monospace;color:var(--text);">
       <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.6s infinite;"></span>
       <span><strong style="color:var(--green);">💸 Flip Bot live</strong> · <span id="flip-hero-count">—</span> qualified flip<span id="flip-hero-plural"></span> right now</span>
       <span style="color:var(--text-mute);margin-left:auto;">view →</span>
     </a>
 
-    <div class="subscribe-cta-row" style="justify-content: flex-start; margin-bottom: 24px;">
-      <a href="#desks" class="btn-primary">🧰 Browse All Desks</a>
-      <a href="https://pokemon.bpleone.com" class="btn-secondary" target="_blank" style="border-color: var(--green); color: var(--green);">🃏 Pokémon TCG (Live)</a>
-      <a href="/show.html" class="btn-secondary" style="border-color: var(--gold); color: var(--gold);">📱 Show Mode</a>
-      <a href="https://sports-cards.bpleone.com" class="btn-secondary" target="_blank">🏀 Sports Cards (Live)</a>
+    <div class="subscribe-cta-row" style="justify-content: flex-start; margin-bottom: 16px;">
+      <a href="#future-winners" class="btn-primary">🔮 Future Winners</a>
+      <a href="#top500" class="btn-secondary" style="border-color: var(--gold); color: var(--gold);">🏆 Top 500</a>
+      <a href="https://pokemon.bpleone.com" class="btn-secondary" target="_blank" style="border-color: var(--green); color: var(--green);">📊 Pro Dashboard</a>
+      <a href="#desks" class="btn-secondary" style="font-size: 13px; opacity: 0.7;">🧰 Other Desks</a>
     </div>
   </div>
 </header>
+
+<!-- ============ FUTURE WINNERS — AI predictive hunt list ============ -->
+<section class="fw-section" id="future-winners">
+  <div class="container">
+    <div class="fw-head">
+      <h2>🔮 <span class="accent">Future Winners</span> — the AI hunt list</h2>
+      <span class="sub">Predictive model: momentum + scarcity + accessibility + chase-variant signal + tier premium. Capped at $5,000 entry for accessibility.</span>
+    </div>
+    <div class="fw-grid" id="fw-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 40px 0; text-align:center;">⏳ Loading Future Winners…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOP 500 INLINE GRID — research center main feed ============ -->
+<section class="t500-section" id="top500">
+  <div class="container">
+    <div class="t500-head">
+      <h2>🏆 Top <span class="accent">500</span> · live-ranked</h2>
+      <span class="sub" style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);">Every card in the watchlist, sorted by composite quant score. Click any card for full thesis + price history.</span>
+    </div>
+    <div class="t500-controls">
+      <input type="search" class="search" id="t500-search" placeholder="Search any of 774 cards…">
+      <select id="t500-sort">
+        <option value="score">Sort: Score (high→low)</option>
+        <option value="signal">Sort: Signal · STRONG BUY first</option>
+        <option value="price-desc">Sort: Price (high→low)</option>
+        <option value="price-asc">Sort: Price (low→high)</option>
+        <option value="name">Sort: Name A→Z</option>
+      </select>
+      <select id="t500-variant">
+        <option value="all">All grades</option>
+        <option value="psa10">PSA 10 only</option>
+        <option value="psa9">PSA 9 only</option>
+        <option value="raw">Raw NM only</option>
+        <option value="sealed">Sealed only</option>
+      </select>
+      <span class="count" id="t500-count">—</span>
+    </div>
+    <div class="t500-grid" id="t500-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 40px 0; text-align:center;">⏳ Loading Top 500…</p>
+    </div>
+    <div class="t500-load-more">
+      <button id="t500-more" type="button">Show more cards</button>
+    </div>
+  </div>
+</section>
 
 <!-- ============ FEATURED SETS — drillable cards directory shortcut ============ -->
 <section class="featured-sets">
@@ -1771,6 +1952,14 @@
     '/featured_sets.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/featured_sets.json'
   ];
+  const FW_URLS = [
+    '/future_winners.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/future_winners.json'
+  ];
+  const CARDS_FULL_URLS = [
+    '/cards_full.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
+  ];
   const REFRESH_MS = 60 * 1000;
 
   function mdInline(s) {
@@ -1828,6 +2017,121 @@
         console.warn('Featured sets load failed:', err);
         const grid = document.getElementById('featured-sets-grid');
         if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); text-align:center; padding: 20px;">Featured sets unavailable.</p>';
+      });
+  }
+
+  function renderFutureWinners(data) {
+    const grid = document.getElementById('fw-grid');
+    if (!grid || !data || !Array.isArray(data.winners)) return;
+    if (data.winners.length === 0) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">No Future Winners yet — needs at least one cron run.</p>';
+      return;
+    }
+    grid.innerHTML = data.winners.slice(0, 12).map((w, i) => {
+      const img = w.image ? '<img src="' + w.image + '" alt="' + w.name + '" loading="lazy">' :
+                            '<div style="color:var(--text-mute);font-family:monospace;font-size:10px;">no image</div>';
+      const price = '$' + (w.live_price >= 1000 ? Math.round(w.live_price).toLocaleString() : w.live_price.toFixed(0));
+      const target = '$' + Math.round(w.target_buy).toLocaleString();
+      return '<a class="fw-tile" href="/card.html?id=' + w.id + '">' +
+        '<span class="rank">#' + (i+1) + '</span>' +
+        '<span class="fw-score-pill">FW ' + Math.round(w.fw_score) + '</span>' +
+        '<div class="img">' + img + '</div>' +
+        '<div class="body">' +
+          '<div class="name">' + w.name + '</div>' +
+          '<div class="var">' + w.variant + ' · ' + (w.tier || '') + '</div>' +
+          '<div class="thesis">' + (w.thesis || '') + '</div>' +
+          '<div class="price-row">' +
+            '<span class="price">' + price + '</span>' +
+            '<span class="target">buy ≤ ' + target + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</a>';
+    }).join('');
+  }
+
+  function loadFutureWinners() {
+    tryFetch(FW_URLS, 0)
+      .then(renderFutureWinners)
+      .catch(err => {
+        console.warn('FW load failed:', err);
+        const grid = document.getElementById('fw-grid');
+        if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); text-align:center; padding: 30px 0;">Future Winners model output unavailable. Trigger the workflow at github.com/Keyvaniath/pokemon-tcg-trading-desk/actions to populate.</p>';
+      });
+  }
+
+  // ============ INLINE TOP 500 ============
+  let allCards = null;
+  let t500Visible = 60;
+  let t500Filter = { q: '', sort: 'score', variant: 'all' };
+
+  function variantMatch(card, filter) {
+    if (filter === 'all') return true;
+    const v = (card.variant || '').toUpperCase();
+    if (filter === 'psa10') return v.includes('PSA 10');
+    if (filter === 'psa9')  return v.includes('PSA 9') && !v.includes('PSA 9.5');
+    if (filter === 'raw')   return v.includes('RAW') || v.includes('NM');
+    if (filter === 'sealed') return v.includes('SEALED') || v.includes('ETB') || v.includes('BOOSTER') || v.includes('BUNDLE');
+    return true;
+  }
+  function signalRank(s) {
+    return ({'STRONG BUY':0, 'BUY':1, 'HOLD':2, 'TRIM':3, 'SELL':4})[s] ?? 5;
+  }
+
+  function renderTop500() {
+    if (!allCards) return;
+    const arr = Object.values(allCards);
+    let f = arr.filter(c => c.live_price > 0 && variantMatch(c, t500Filter.variant));
+    if (t500Filter.q) {
+      const q = t500Filter.q.toLowerCase();
+      f = f.filter(c => (c.name || '').toLowerCase().includes(q) ||
+                         (c.set || '').toLowerCase().includes(q) ||
+                         (c.id || '').toLowerCase().includes(q) ||
+                         (c.variant || '').toLowerCase().includes(q));
+    }
+    const sortFns = {
+      score:      (a,b) => b.score - a.score,
+      signal:     (a,b) => signalRank(a.signal) - signalRank(b.signal) || b.score - a.score,
+      'price-desc': (a,b) => b.live_price - a.live_price,
+      'price-asc':  (a,b) => a.live_price - b.live_price,
+      name:        (a,b) => (a.name || '').localeCompare(b.name || ''),
+    };
+    f.sort(sortFns[t500Filter.sort] || sortFns.score);
+    setText('t500-count', f.length + ' / ' + arr.length + ' cards');
+    const slice = f.slice(0, t500Visible);
+    const grid = document.getElementById('t500-grid');
+    grid.innerHTML = slice.map(c => {
+      const img = c.image ? '<img src="' + c.image + '" alt="" loading="lazy">' :
+                            '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-mute);font-family:monospace;font-size:10px;">no img</div>';
+      const price = c.live_price >= 1000 ? '$' + Math.round(c.live_price).toLocaleString() : '$' + c.live_price.toFixed(0);
+      return '<a class="t500-tile" href="/card.html?id=' + c.id + '">' +
+        '<div class="img">' + img + '</div>' +
+        '<div class="body">' +
+          '<div class="name">' + c.name + '</div>' +
+          '<div class="row"><span class="price">' + price + '</span><span class="score">' + c.signal + ' ' + c.score + '</span></div>' +
+        '</div>' +
+      '</a>';
+    }).join('');
+    document.getElementById('t500-more').style.display = (slice.length < f.length) ? '' : 'none';
+  }
+
+  function loadTop500() {
+    tryFetch(CARDS_FULL_URLS, 0)
+      .then(data => {
+        allCards = data.cards || {};
+        renderTop500();
+        const searchEl = document.getElementById('t500-search');
+        const sortEl = document.getElementById('t500-sort');
+        const varEl = document.getElementById('t500-variant');
+        if (searchEl) searchEl.addEventListener('input', e => { t500Filter.q = e.target.value; t500Visible = 60; renderTop500(); });
+        if (sortEl) sortEl.addEventListener('change', e => { t500Filter.sort = e.target.value; renderTop500(); });
+        if (varEl) varEl.addEventListener('change', e => { t500Filter.variant = e.target.value; t500Visible = 60; renderTop500(); });
+        const moreBtn = document.getElementById('t500-more');
+        if (moreBtn) moreBtn.addEventListener('click', () => { t500Visible += 60; renderTop500(); });
+      })
+      .catch(err => {
+        console.warn('Top 500 load failed:', err);
+        const grid = document.getElementById('t500-grid');
+        if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">Top 500 data unavailable.</p>';
       });
   }
 
@@ -2039,9 +2343,13 @@
     load();
     loadBrief();
     loadFeaturedSets();
+    loadFutureWinners();
+    loadTop500();
     setInterval(load, REFRESH_MS);
     setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
     setInterval(loadFeaturedSets, REFRESH_MS * 30);  // refresh sets hourly
+    setInterval(loadFutureWinners, REFRESH_MS * 15);  // refresh winners every 15 min
+    setInterval(loadTop500, REFRESH_MS * 5);  // refresh top500 every 5 min
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
     if (btn) {
