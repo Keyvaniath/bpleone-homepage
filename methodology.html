@@ -231,6 +231,59 @@ value = clamp(20, 100, 50 + (target_buy - price) / target_buy · 100)
       <li>Reddit/Twitter buzz scores (data files exist; not wired into Score yet)</li>
     </ul>
 
+    <h2>Flip Bot — TCGPlayer + eBay BIN arbitrage scanner</h2>
+    <p>A separate engine on top of the quant model. Where the score answers <em>"should I want this card?"</em>,
+       the flip bot answers <em>"is there an underpriced live listing I should grab right now?"</em>.</p>
+
+    <h3>Core formula (per live listing)</h3>
+    <div class="formula">
+buy_total       = listing_price + shipping
+sell_net        = fair_value × (1 − ebay_fee_rate)        # default fee = 0.13
+net_profit      = sell_net − buy_total
+roi             = net_profit / buy_total
+qualified       = (net_profit ≥ $15) AND (roi ≥ 0.20)
+    </div>
+
+    <h3>Fair-value selection (variant-aware)</h3>
+    <ul>
+      <li><strong>Raw NM:</strong> <code>pricecharting.ungraded</code> → workbook price → live_price (in that order)</li>
+      <li><strong>Sealed:</strong> workbook hand-curated price (sealed products lack reliable third-party medians)</li>
+      <li><strong>Graded:</strong> not currently scanned by the bot — TCGP/eBay BIN graded markets are too thin to flip reliably</li>
+    </ul>
+
+    <h3>Confidence tiers</h3>
+    <p>ROI magnitude is a tell — real arbs cluster 20–50%. Above 50% means either the listing is a steal
+       or (more often) the fair-value reference is stale. The bot labels rather than auto-hides:</p>
+    <table class="signal-table">
+      <thead><tr><th>ROI</th><th>Tier</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td>20–49%</td><td class="signal-strong">OK</td><td>Real spread within historical norms. Trust the alert.</td></tr>
+        <tr><td>50–99%</td><td class="signal-hold">VERIFY</td><td>Big spread — eyeball before buying. Often legit but check the listing.</td></tr>
+        <tr><td>≥ 100%</td><td class="signal-sell">SUSPECT</td><td>Almost always bad fair-value data or a fake/scam listing. Don't blind-click.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>False-positive guards</h3>
+    <ul>
+      <li><strong>Sub-30% floor:</strong> if <code>buy_total &lt; 0.30 × fair_value</code>, reject (wrong-product fuzzy match)</li>
+      <li><strong>Locale gate:</strong> JP watchlist rows reject English products and vice-versa (English Moonbreon ≠ JP Moonbreon)</li>
+      <li><strong>Bundle exclusion:</strong> watchlist rows with variant "Set", "Bundle", "Mixed" excluded (can't compare to single-card listings)</li>
+      <li><strong>Title accessory blocklist:</strong> eBay listings whose titles contain "case", "display", "sleeve", "proxy", "custom", etc. rejected before pricing</li>
+      <li><strong>Dedupe:</strong> source-aware key (<code>source:cardId:listingId</code>) with 7-day TTL so reruns don't re-alert</li>
+    </ul>
+
+    <h3>Two sourcing channels</h3>
+    <p><strong>TCGPlayer path:</strong> public <code>mp-search-api.tcgplayer.com</code> endpoint, ~3 minutes for the
+       full 320-card sweep. TCGP sellers are mostly informed dealers so spreads tend to be tight but frequent.</p>
+    <p><strong>eBay BIN path:</strong> scrapes <code>ebay.com/sch/i.html?LH_BIN=1</code> sorted price-ascending. eBay has casual
+       sellers who under-price 30–50% below sold median on the same card — bigger spreads but rarer hits. A circuit
+       breaker aborts the scan if Akamai flags the IP (typically 8 consecutive blocked responses), so TCGP results
+       remain valid even when eBay is throttled.</p>
+
+    <p>Source code: <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk/blob/main/flip_bot.py" target="_blank" style="color: var(--gold);"><code>flip_bot.py</code></a>.
+       Run output (qualified + near-misses + thresholds) is published to <code>flip_bot_results.json</code> on every scan
+       and rendered live on the homepage and the <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank">💸 Flip Bot tab</a>.</p>
+
     <h2>Refresh cadence</h2>
     <ul>
       <li><strong>Every 4 hours:</strong> GitHub Actions cron runs the full scraper, regenerates <code>live_prices.json</code>, <code>homepage_feed.json</code>, <code>cards.html</code>, and the Market Brief.</li>
