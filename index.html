@@ -489,6 +489,76 @@
     gap: 12px;
   }
   footer .legal { font-size: 11px; max-width: 480px; line-height: 1.5; }
+  /* ============ DESKS STRIP (compact dashboard) ============ */
+  .desks-strip {
+    padding: 16px 0 32px;
+    border-top: 1px solid var(--border);
+  }
+  .desks-strip .strip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+  }
+  .desks-strip .strip-header h3 {
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .desks-strip .strip-header a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .desks-strip .strip-header a:hover { color: var(--gold); }
+  .desks-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 900px) { .desks-row { grid-template-columns: repeat(2, 1fr); } }
+  .desk-chip {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.18s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  .desk-chip:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    background: var(--bg-card-hover);
+  }
+  .desk-chip.coming { opacity: 0.55; cursor: default; }
+  .desk-chip.coming:hover { transform: none; border-color: var(--border); }
+  .desk-chip .icon { font-size: 22px; flex-shrink: 0; }
+  .desk-chip .info { display: flex; flex-direction: column; min-width: 0; }
+  .desk-chip .name {
+    font-size: 13px; font-weight: 700; letter-spacing: -0.01em;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .desk-chip .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    margin-top: 1px;
+  }
+  .desk-chip .live-dot {
+    position: absolute; top: 8px; right: 8px;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--green);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
   /* ============ LIVE DATA TERMINAL ============ */
   .terminal {
     padding: 24px 0 80px;
@@ -925,7 +995,7 @@
     <div class="nav-links">
       <a href="#live">📊 Live</a>
       <a href="/cards.html">📇 All Cards</a>
-      <a href="#desks">Desks</a>
+      <a href="#desks">🧰 Desks</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="https://pokemon.bpleone.com/?tab=store" target="_blank">Shop</a>
@@ -949,6 +1019,55 @@
     </div>
   </div>
 </header>
+
+<!-- ============ MY DESKS — compact dashboard strip ============ -->
+<section class="desks-strip">
+  <div class="container">
+    <div class="strip-header">
+      <h3>🧰 My Desks</h3>
+      <a href="#desks">view full grid →</a>
+    </div>
+    <div class="desks-row">
+      <a href="https://pokemon.bpleone.com" class="desk-chip" target="_blank" rel="noopener">
+        <span class="live-dot"></span>
+        <span class="icon">🃏</span>
+        <span class="info">
+          <span class="name">Pokémon TCG</span>
+          <span class="meta">LIVE · 774 cards</span>
+        </span>
+      </a>
+      <a href="https://sports-cards.bpleone.com" class="desk-chip" target="_blank" rel="noopener">
+        <span class="live-dot"></span>
+        <span class="icon">🏀</span>
+        <span class="info">
+          <span class="name">Sports Cards</span>
+          <span class="meta">LIVE · NBA/NFL/MLB</span>
+        </span>
+      </a>
+      <div class="desk-chip coming">
+        <span class="icon">🎲</span>
+        <span class="info">
+          <span class="name">Sports Betting</span>
+          <span class="meta">soon · DFS · parlays</span>
+        </span>
+      </div>
+      <div class="desk-chip coming">
+        <span class="icon">📈</span>
+        <span class="info">
+          <span class="name">Equity Research</span>
+          <span class="meta">soon · DCF · options</span>
+        </span>
+      </div>
+      <div class="desk-chip coming">
+        <span class="icon">🏟️</span>
+        <span class="info">
+          <span class="name">Sports Hub</span>
+          <span class="meta">soon · scores · news</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============ LIVE TICKER TAPE ============ -->
 <div class="tape-wrap">
