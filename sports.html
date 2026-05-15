@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="bpleone Sports Hub — personal team dashboard. Lakers, Dodgers, Rams, USC. Live scores, schedule, injuries, news, fantasy. Pure consumption, no trading.">
+<meta name="keywords" content="Lakers, Dodgers, Rams, USC, sports dashboard, ESPN, fantasy, Sleeper, live scores, injury report">
+<meta name="author" content="Brandon P. Leone">
+<meta property="og:title" content="Sports Hub · bpleone.com">
+<meta property="og:description" content="6 teams in one dashboard — Lakers, Dodgers, Rams, USC FB/BB/Baseball. Live scores, schedules, injuries, news, Sleeper fantasy. Pure consumption, no trading.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bpleone.com/sports/">
+<meta property="og:site_name" content="bpleone.com">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:title" content="Sports Hub · bpleone.com">
+<meta name="twitter:description" content="Lakers, Dodgers, Rams, USC. One dashboard. ESPN data + Sleeper fantasy + weather. No API keys.">
+<link rel="canonical" href="https://bpleone.com/sports/">
+<title>Sports Hub — bpleone.com</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Sports Hub",
+  "url": "https://bpleone.com/sports/",
+  "description": "Personal team dashboard tracking Lakers, Dodgers, Rams, USC. Live ESPN scores, schedules, injuries, fantasy.",
+  "author": {"@type": "Person", "name": "Brandon P. Leone", "url": "https://bpleone.com"},
+  "isPartOf": {"@type": "WebSite", "name": "bpleone.com", "url": "https://bpleone.com"},
+  "about": [
+    {"@type": "SportsTeam", "name": "Los Angeles Lakers"},
+    {"@type": "SportsTeam", "name": "Los Angeles Dodgers"},
+    {"@type": "SportsTeam", "name": "Los Angeles Rams"},
+    {"@type": "SportsTeam", "name": "USC Trojans"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-card: #131826;
+    --border: #232a3e;
+    --gold: #f5c842;
+    --gold-dim: #c9a73c;
+    --text: #e8ecf4;
+    --text-dim: #8b94a8;
+    --green: #4ade80;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(245,200,66,0.05) 0, transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(74,222,128,0.03) 0, transparent 40%);
+    background-attachment: fixed;
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  nav {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(10,14,26,0.85);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+  nav .container { display: flex; align-items: center; justify-content: space-between; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-back { color: var(--text-dim); text-decoration: none; font-size: 14px; }
+  .nav-back:hover { color: var(--gold); }
+
+  .hero { padding: 80px 0 40px; }
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin-bottom: 18px;
+  }
+  .hero h1 .accent { color: var(--gold); }
+  .hero p.lede {
+    color: var(--text-dim);
+    font-size: 17px;
+    max-width: 640px;
+    margin-bottom: 32px;
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(74,222,128,0.12);
+    border: 1px solid rgba(74,222,128,0.35);
+    color: var(--green);
+    padding: 4px 10px; border-radius: 6px;
+    font-size: 11px; font-family: 'JetBrains Mono', monospace;
+    font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .team-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+  }
+  .team-card .emoji { font-size: 36px; margin-bottom: 8px; }
+  .team-card .name { font-weight: 700; font-size: 16px; }
+  .team-card .league { color: var(--text-dim); font-size: 12px; margin-top: 4px; }
+
+  section.block { margin-bottom: 48px; }
+  section.block h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .feature {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+  }
+  .feature .icon { font-size: 22px; margin-bottom: 8px; }
+  .feature h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .feature p { color: var(--text-dim); font-size: 14px; line-height: 1.5; }
+
+  .cta-row {
+    display: flex; gap: 16px; flex-wrap: wrap;
+    padding: 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--gold);
+    border-radius: 16px;
+    margin-bottom: 48px;
+  }
+  .cta-row .pitch { flex: 1; min-width: 280px; }
+  .cta-row h3 { font-size: 20px; margin-bottom: 8px; }
+  .cta-row p { color: var(--text-dim); font-size: 14px; }
+  .cta-row .actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .btn-gold {
+    background: var(--gold); color: var(--bg);
+    padding: 12px 22px; border-radius: 8px; font-weight: 700;
+    text-decoration: none; font-size: 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-gold:hover { background: var(--gold-dim); }
+  .btn-ghost {
+    color: var(--text-dim); padding: 12px 22px;
+    border: 1px solid var(--border); border-radius: 8px;
+    font-weight: 500; text-decoration: none; font-size: 14px;
+  }
+  .btn-ghost:hover { color: var(--gold); border-color: var(--gold); }
+
+  .snap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin: 20px 0;
+  }
+  .snap-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .snap-card .head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .snap-card .emoji { font-size: 26px; }
+  .snap-card .meta { color: var(--text-dim); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .snap-card .name { font-weight: 700; font-size: 16px; }
+  .snap-card .record { color: var(--gold); font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 13px; }
+  .snap-card .row { display: flex; justify-content: space-between; font-size: 13px; padding: 6px 0; border-bottom: 1px dashed var(--border); }
+  .snap-card .row:last-child { border-bottom: none; }
+  .snap-card .row .lbl { color: var(--text-dim); }
+  .snap-card .row .val { color: var(--text); font-weight: 600; }
+  .snap-card .row .val.win { color: var(--green); }
+  .snap-card .row .val.loss { color: #f87171; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+  footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--text-dim); text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com / sports-hub</div>
+    <a href="https://bpleone.com" class="nav-back">← all desks</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="badge">● Live</div>
+    <div class="hero-eyebrow">Personal team dashboard · pure consumption, no trading</div>
+    <h1>Every team I follow, <span class="accent">one dashboard</span>.</h1>
+    <p class="lede">Live scores, schedule, injury reports, standings, team stats, player gamelog deep-dive, news aggregation, Sleeper fantasy integration. Auto-refresh every 30 seconds during live games. ESPN unofficial JSON + Sleeper public API. No API keys required.</p>
+
+    <div class="teams-grid">
+      <div class="team-card">
+        <div class="emoji">🏀</div>
+        <div class="name">Lakers</div>
+        <div class="league">NBA · LeBron · Luka</div>
+      </div>
+      <div class="team-card">
+        <div class="emoji">⚾</div>
+        <div class="name">Dodgers</div>
+        <div class="league">MLB · Ohtani · Mookie · Freeman</div>
+      </div>
+      <div class="team-card">
+        <div class="emoji">🏈</div>
+        <div class="name">Rams</div>
+        <div class="league">NFL · Stafford · Kupp</div>
+      </div>
+      <div class="team-card">
+        <div class="emoji">🏈</div>
+        <div class="name">USC Football</div>
+        <div class="league">NCAAF · Trojans</div>
+      </div>
+      <div class="team-card">
+        <div class="emoji">🏀</div>
+        <div class="name">USC Basketball</div>
+        <div class="league">NCAAM · Trojans</div>
+      </div>
+      <div class="team-card">
+        <div class="emoji">⚾</div>
+        <div class="name">USC Baseball</div>
+        <div class="league">CBB · Trojans</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+  <section class="block">
+    <h2>Today's snapshot <span id="live-indicator" style="display:inline-block; width:8px; height:8px; background:#4ade80; border-radius:50%; margin-left:8px; animation:pulse 2s infinite;"></span></h2>
+    <p style="color:var(--text-dim); margin-bottom:8px; font-size:14px;">Pulled live from ESPN via your browser. Each card shows current record + last game outcome + next game. Refreshes every 5 minutes.</p>
+    <style>@keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: 0.4 } }</style>
+    <div class="snap-grid" id="snap-grid">
+      <div class="snap-card">
+        <div class="head"><span class="emoji">🏀</span>
+          <div><div class="name">Lakers</div><div class="meta">NBA</div></div>
+          <div class="record" style="margin-left:auto">53-29</div>
+        </div>
+        <div class="row"><span class="lbl">Last</span><span class="val loss">L 110-115 vs OKC</span></div>
+        <div class="row"><span class="lbl">Status</span><span class="val">Playoffs</span></div>
+      </div>
+      <div class="snap-card">
+        <div class="head"><span class="emoji">⚾</span>
+          <div><div class="name">Dodgers</div><div class="meta">MLB</div></div>
+          <div class="record" style="margin-left:auto">26-18</div>
+        </div>
+        <div class="row"><span class="lbl">Last</span><span class="val win">W 5-2 vs SF</span></div>
+        <div class="row"><span class="lbl">Next</span><span class="val">@ LAA · May 16</span></div>
+      </div>
+      <div class="snap-card">
+        <div class="head"><span class="emoji">🏈</span>
+          <div><div class="name">Rams</div><div class="meta">NFL</div></div>
+          <div class="record" style="margin-left:auto">2nd NFC West</div>
+        </div>
+        <div class="row"><span class="lbl">Next</span><span class="val">vs SF · Sep 11</span></div>
+        <div class="row"><span class="lbl">Status</span><span class="val">Offseason</span></div>
+      </div>
+      <div class="snap-card">
+        <div class="head"><span class="emoji">🏈</span>
+          <div><div class="name">USC Football</div><div class="meta">NCAAF · Big Ten</div></div>
+          <div class="record" style="margin-left:auto">4th Big Ten</div>
+        </div>
+        <div class="row"><span class="lbl">Status</span><span class="val">Offseason</span></div>
+        <div class="row"><span class="lbl">Next opener</span><span class="val">Aug 23</span></div>
+      </div>
+      <div class="snap-card">
+        <div class="head"><span class="emoji">🏀</span>
+          <div><div class="name">USC Basketball</div><div class="meta">NCAAM</div></div>
+          <div class="record" style="margin-left:auto">18-14</div>
+        </div>
+        <div class="row"><span class="lbl">Last</span><span class="val loss">L 79-83 vs WASH</span></div>
+        <div class="row"><span class="lbl">Status</span><span class="val">Offseason</span></div>
+      </div>
+      <div class="snap-card">
+        <div class="head"><span class="emoji">⚾</span>
+          <div><div class="name">USC Baseball</div><div class="meta">CBB · Big Ten</div></div>
+          <div class="record" style="margin-left:auto">42-12</div>
+        </div>
+        <div class="row"><span class="lbl">Last</span><span class="val win">W 2-1 @ ORE</span></div>
+        <div class="row"><span class="lbl">Next</span><span class="val">@ ORE · May 16</span></div>
+      </div>
+    </div>
+    <p style="color:var(--text-dim); margin-top:14px; font-size:12px; font-style:italic;">Snapshot taken 2026-05-14. Inside the dashboard, this refreshes every 30 seconds during live games.</p>
+  </section>
+
+  <div class="cta-row">
+    <div class="pitch">
+      <h3>The full Streamlit dashboard</h3>
+      <p>9 views per team — Overview, Today, Schedule, Standings, Stats, Injuries, Roster (with player gamelog), News, Fantasy — plus an all-teams cross-team overview at a glance.</p>
+    </div>
+    <div class="actions">
+      <a class="btn-gold" href="https://github.com/Keyvaniath/bpleone-sports-hub" target="_blank" rel="noopener">View source →</a>
+      <a class="btn-ghost" href="https://share.streamlit.io" target="_blank" rel="noopener">Streamlit Cloud</a>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>What you see per team</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="icon">🏠</div>
+        <h3>Today</h3>
+        <p>Record, last game outcome, next game, games played, today's game card, around-the-league scoreboard, latest news.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📅</div>
+        <h3>Schedule</h3>
+        <p>Full season schedule with upcoming/past tabs, W/L outcomes, broadcast networks, weather forecast for outdoor home games.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📊</div>
+        <h3>Standings</h3>
+        <p>Division and conference standings with your team highlighted. Win %, streak, home/road splits.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📈</div>
+        <h3>Stats</h3>
+        <p>Team season stats grouped by category (general / offense / defense) with league ranks.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🩹</div>
+        <h3>Injuries</h3>
+        <p>Current injury report, severity-coded (Out → Doubtful → Questionable → Probable) with return-date estimates.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">👥</div>
+        <h3>Roster + Gamelog</h3>
+        <p>Full roster with position filter. Click any player to see their last 20-game log with stat breakdown.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📰</div>
+        <h3>News</h3>
+        <p>Team-specific articles with thumbnails + league-wide feed. Updated every 5 minutes.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎮</div>
+        <h3>Fantasy</h3>
+        <p>Sleeper integration — enter your username, browse all your NFL/NBA leagues, see standings and matchups.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏟️</div>
+        <h3>All Teams Overview</h3>
+        <p>Cross-team glance — last game, next game, live status for every team in one row. Auto-refreshes when any game is live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Data sources</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="icon">📡</div>
+        <h3>ESPN unofficial JSON</h3>
+        <p>site.api.espn.com, cdn.espn.com, site.web.api.espn.com — scores, schedules, standings, news, injuries, rosters, team stats, player gamelogs, box scores. No auth.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎮</div>
+        <h3>Sleeper API</h3>
+        <p>api.sleeper.app — fantasy league lookup by username. No OAuth required for public league data.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">☁️</div>
+        <h3>Open-Meteo</h3>
+        <p>Free weather forecasts for outdoor home games — Dodger Stadium, Coliseum, Dedeaux Field. Temperature, wind, precipitation chance per game.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-row">
+    <div class="pitch">
+      <h3>Run it yourself</h3>
+      <p>Clone the repo, <code>pip install -r requirements.txt</code>, <code>streamlit run streamlit_app.py</code>. No API keys needed.</p>
+    </div>
+    <div class="actions">
+      <a class="btn-gold" href="https://github.com/Keyvaniath/bpleone-sports-hub" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Other desks</h2>
+    <div class="features-grid">
+      <a class="feature" href="/sports-cards/" rel="noopener" style="text-decoration:none; color:inherit; display:block;">
+        <div class="icon">🏀</div>
+        <h3>Sports Cards</h3>
+        <p>PSA-graded NBA/NFL/MLB watchlist. 98 cards, 36 parallels, 17 sealed boxes, composite quant scoring.</p>
+      </a>
+      <a class="feature" href="https://pokemon.bpleone.com" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;">
+        <div class="icon">🃏</div>
+        <h3>Pokémon TCG</h3>
+        <p>20,000+ cards searchable, 774 quant-scored, live TCGPlayer prices, 5 budget brackets.</p>
+      </a>
+      <a class="feature" href="https://betting.bpleone.com" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;">
+        <div class="icon">🎲</div>
+        <h3>Sports Betting / DFS</h3>
+        <p>Lines, models, ML lab, parlays, DFS lineups. Bankroll discipline built in.</p>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Brandon P. Leone</span>
+    <span><a href="https://bpleone.com">bpleone.com</a> · <a href="https://github.com/Keyvaniath/bpleone-sports-hub">GitHub</a></span>
+  </div>
+</footer>
+
+<script>
+// Live ESPN data fetcher — pulls real records + last/next game for each team
+// and overwrites the static snapshot. Refreshes every 5 minutes.
+(function() {
+  const TEAMS = [
+    {key:"lakers", short:"Lakers",      meta:"NBA",                 emoji:"🏀", sport:"basketball", league:"nba",                      espn_id:"13", abbr:"LAL"},
+    {key:"dodgers", short:"Dodgers",    meta:"MLB",                 emoji:"⚾", sport:"baseball",  league:"mlb",                      espn_id:"19", abbr:"LAD"},
+    {key:"rams", short:"Rams",          meta:"NFL",                 emoji:"🏈", sport:"football",  league:"nfl",                      espn_id:"14", abbr:"LAR"},
+    {key:"usc_fb", short:"USC Football",meta:"NCAAF · Big Ten",     emoji:"🏈", sport:"football",  league:"college-football",         espn_id:"30", abbr:"USC"},
+    {key:"usc_mbb",short:"USC Basketball",meta:"NCAAM",             emoji:"🏀", sport:"basketball",league:"mens-college-basketball",  espn_id:"30", abbr:"USC"},
+    {key:"usc_bb", short:"USC Baseball",meta:"CBB · Big Ten",       emoji:"⚾", sport:"baseball",  league:"college-baseball",         espn_id:"68", abbr:"USC"},
+  ];
+
+  async function fetchTeam(t) {
+    const base = `https://site.api.espn.com/apis/site/v2/sports/${t.sport}/${t.league}/teams/${t.espn_id}`;
+    try {
+      const [sumRes, schedRes] = await Promise.all([fetch(base), fetch(`${base}/schedule`)]);
+      const sum = await sumRes.json();
+      const sched = await schedRes.json();
+      const team = sum.team || {};
+      const recItems = (team.record || {}).items || [];
+      const record = recItems[0]?.summary || team.standingSummary || "—";
+      const events = (sched.events || []).map(e => {
+        const comp = (e.competitions || [{}])[0];
+        const comps = comp.competitors || [];
+        const home = comps.find(c => c.homeAway === "home");
+        const away = comps.find(c => c.homeAway === "away");
+        const status = (comp.status || {}).type || {};
+        const date = new Date(e.date);
+        const isHome = (home?.team?.abbreviation || "").toUpperCase() === t.abbr.toUpperCase();
+        return { date, name: e.shortName || e.name, state: status.state, completed: status.completed, isHome,
+                 home, away, myAbbr: t.abbr.toUpperCase() };
+      }).sort((a,b)=>a.date-b.date);
+      const now = new Date();
+      const past = events.filter(e => e.completed || e.date < new Date(now.getTime() - 6*3600*1000)).reverse();
+      const upcoming = events.filter(e => !e.completed && e.date >= new Date(now.getTime() - 6*3600*1000));
+      return { team: t, record, last: past[0], next: upcoming[0] };
+    } catch (e) {
+      return { team: t, record: "—", error: e.message };
+    }
+  }
+
+  function outcomeFor(g) {
+    if (!g) return "";
+    const me = g.isHome ? g.home : g.away;
+    const opp = g.isHome ? g.away : g.home;
+    const myS = parseInt(me?.score?.displayValue || me?.score || 0);
+    const oppS = parseInt(opp?.score?.displayValue || opp?.score || 0);
+    if (g.completed) {
+      const wl = myS > oppS ? "W" : myS < oppS ? "L" : "T";
+      return { txt: `${wl} ${myS}-${oppS} ${g.isHome ? 'vs' : '@'} ${opp?.team?.abbreviation || ''}`, cls: wl === "W" ? "win" : (wl === "L" ? "loss" : "") };
+    }
+    if (g.state === "in") return { txt: `LIVE ${myS}-${oppS}`, cls: "" };
+    return { txt: g.name, cls: "" };
+  }
+
+  function nextLabel(g) {
+    if (!g) return "";
+    const opp = g.isHome ? g.away : g.home;
+    const label = (g.isHome ? "vs " : "@ ") + (opp?.team?.abbreviation || "?");
+    const d = g.date;
+    const dateStr = d.toLocaleDateString("en-US", {month: "short", day: "numeric"});
+    return `${label} · ${dateStr}`;
+  }
+
+  function renderCards(snapshots) {
+    const grid = document.getElementById("snap-grid");
+    if (!grid) return;
+    grid.innerHTML = snapshots.map(s => {
+      const t = s.team;
+      const last = s.last ? outcomeFor(s.last) : null;
+      const next = s.next ? nextLabel(s.next) : null;
+      let status = "";
+      if (!last && !next) status = "Offseason";
+      const rows = [];
+      if (last) rows.push(`<div class="row"><span class="lbl">Last</span><span class="val ${last.cls}">${last.txt}</span></div>`);
+      if (next) rows.push(`<div class="row"><span class="lbl">Next</span><span class="val">${next}</span></div>`);
+      if (!last && !next) rows.push(`<div class="row"><span class="lbl">Status</span><span class="val">Offseason</span></div>`);
+      return `<div class="snap-card">
+        <div class="head"><span class="emoji">${t.emoji}</span>
+          <div><div class="name">${t.short}</div><div class="meta">${t.meta}</div></div>
+          <div class="record" style="margin-left:auto">${s.record}</div>
+        </div>
+        ${rows.join("")}
+      </div>`;
+    }).join("");
+  }
+
+  async function refresh() {
+    try {
+      const results = await Promise.all(TEAMS.map(fetchTeam));
+      renderCards(results);
+    } catch (e) { /* keep static fallback */ }
+  }
+
+  refresh();
+  setInterval(refresh, 5 * 60 * 1000);
+})();
+</script>
+</body>
+</html>
