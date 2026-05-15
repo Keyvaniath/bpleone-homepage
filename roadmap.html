@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roadmap · bpleone.com</title>
+<meta name="description" content="What's next on bpleone.com — features in flight, on the runway, and parked. Built in public.">
+<meta property="og:title" content="bpleone.com — Roadmap">
+<meta property="og:description" content="What's shipping next.">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/roadmap.html">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 48px 0 24px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+  h1 .accent { color: var(--gold); }
+  .lead { color: var(--text-dim); font-size: 17px; margin-bottom: 24px; max-width: 720px; }
+  .columns {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  }
+  @media (max-width: 900px) { .columns { grid-template-columns: 1fr; } }
+  .col {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px;
+  }
+  .col h2 {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    padding-bottom: 12px; margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .col.now h2 { color: var(--green); }
+  .col.next h2 { color: var(--gold); }
+  .col.later h2 { color: var(--text-mute); }
+  .col h2 .count {
+    margin-left: auto; font-size: 11px; color: var(--text-mute);
+    background: rgba(0,0,0,0.2); padding: 2px 8px; border-radius: 10px;
+  }
+  .item {
+    padding: 12px 0; border-bottom: 1px dashed var(--border);
+  }
+  .item:last-child { border-bottom: none; }
+  .item .title {
+    font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;
+    display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap;
+  }
+  .item .badge {
+    font-family: 'JetBrains Mono', monospace; font-size: 9px;
+    padding: 2px 6px; border-radius: 4px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .item .badge.feat { background: rgba(74,222,128,0.1); color: var(--green); }
+  .item .badge.data { background: rgba(245,200,66,0.08); color: var(--gold); }
+  .item .badge.ui { background: rgba(139,148,168,0.1); color: var(--text-dim); }
+  .item .badge.alert { background: rgba(248,113,113,0.1); color: var(--red); }
+  .item .desc {
+    font-size: 13px; color: var(--text-dim); line-height: 1.5;
+  }
+  .item .eta {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); margin-top: 4px;
+  }
+  footer { padding: 32px 0; margin-top: 40px; border-top: 1px solid var(--border);
+           color: var(--text-mute); font-size: 13px; font-family: monospace; text-align: center; }
+  footer a { color: var(--gold-dim); text-decoration: none; }
+  .help {
+    background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px;
+    padding: 20px 24px; margin: 32px 0;
+  }
+  .help h3 { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gold);
+             letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 10px; }
+  .help p { font-size: 14px; color: var(--text-dim); margin-bottom: 6px; }
+  .help a { color: var(--gold-dim); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/#desks">🧰 Desks</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/changelog.html">📋 Changelog</a>
+      <a href="/roadmap.html" class="active">🗺️ Roadmap</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">🗺️ Roadmap</span>
+    <h1>What's <span class="accent">next.</span></h1>
+    <p class="lead">Built in public. Three columns: shipping right now, queued for next week, parked for later. If you want one bumped up, email me.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="columns">
+      <div class="col now">
+        <h2>🟢 Now (in flight) <span class="count">5</span></h2>
+        <div class="item">
+          <div class="title">eBay Browse API <span class="badge data">DATA</span></div>
+          <div class="desc">Real eBay sold-comp data feeds in via the official OAuth Browse API. Solves the data-center IP block on direct scraping.</div>
+          <div class="eta">ETA: pending dev account approval</div>
+        </div>
+        <div class="item">
+          <div class="title">Discord alerts <span class="badge feat">FEAT</span></div>
+          <div class="desc"><code>discord_alert.py</code> wired into cron — fires a webhook when a card flips to STRONG BUY. Engagement loop.</div>
+          <div class="eta">ETA: 1 day after webhook URL configured</div>
+        </div>
+        <div class="item">
+          <div class="title">PWA install prompt <span class="badge ui">UI</span></div>
+          <div class="desc">bpleone.com installable to phone home screen, service worker for offline cache.</div>
+          <div class="eta">ETA: this week</div>
+        </div>
+        <div class="item">
+          <div class="title">Cardladder paid API <span class="badge data">DATA</span></div>
+          <div class="desc">$20/mo Pro tier gives us PSA pop reports + longer price history. Replaces the free-source pop scrape that PSA broke.</div>
+          <div class="eta">ETA: decision pending</div>
+        </div>
+        <div class="item">
+          <div class="title">Coverage push 64% → 90%+ <span class="badge data">DATA</span></div>
+          <div class="desc">URL auto-discovery wired in (deployed) but cron hasn't run yet. Next refresh closes the gap.</div>
+          <div class="eta">ETA: next cron cycle</div>
+        </div>
+      </div>
+
+      <div class="col next">
+        <h2>🟡 Next (queued) <span class="count">7</span></h2>
+        <div class="item">
+          <div class="title">Tax-loss harvester <span class="badge feat">FEAT</span></div>
+          <div class="desc">Surface losing positions in Inventory tab with Form 8949 staging. For year-end tax optimization.</div>
+        </div>
+        <div class="item">
+          <div class="title">PSA submission tracker <span class="badge feat">FEAT</span></div>
+          <div class="desc">Track grading submissions in flight — turnaround days, expected return, EV vs current market.</div>
+        </div>
+        <div class="item">
+          <div class="title">Backtest widget <span class="badge feat">FEAT</span></div>
+          <div class="desc">"If you'd bought this card 6 months ago…" — historical performance with overlayed entry/exit points.</div>
+        </div>
+        <div class="item">
+          <div class="title">Stripe checkout for storefront <span class="badge feat">FEAT</span></div>
+          <div class="desc">Replace mailto buy flow with real card payment. Webhook fires email with shipping address.</div>
+        </div>
+        <div class="item">
+          <div class="title">Daily TOTD history page <span class="badge ui">UI</span></div>
+          <div class="desc">Browse every past Trade of the Day. Honest track record: % that returned ≥ 10%, average hold time.</div>
+        </div>
+        <div class="item">
+          <div class="title">Twitter/X auto-poster <span class="badge feat">FEAT</span></div>
+          <div class="desc">When a card flips to STRONG BUY, tweet a card image + score + buy target. Discovery loop.</div>
+        </div>
+        <div class="item">
+          <div class="title">Sports Cards desk full launch <span class="badge feat">FEAT</span></div>
+          <div class="desc">Currently at 98 cards live. Expand to 500+ across NBA / NFL / MLB / Bowman 1st / NIL / Vintage HOF.</div>
+        </div>
+      </div>
+
+      <div class="col later">
+        <h2>⚪ Later (parked) <span class="count">8</span></h2>
+        <div class="item">
+          <div class="title">Sports Betting / DFS desk <span class="badge feat">FEAT</span></div>
+          <div class="desc">Edge-finding model across DraftKings / FanDuel / Underdog. Player props, sharps vs public, DFS lineup solver.</div>
+        </div>
+        <div class="item">
+          <div class="title">Sports Hub desk <span class="badge feat">FEAT</span></div>
+          <div class="desc">Single-page dashboard for every team I follow — scores, schedules, injuries, news aggregator.</div>
+        </div>
+        <div class="item">
+          <div class="title">Crowdsourced price corrections <span class="badge data">DATA</span></div>
+          <div class="desc">Public submit form. Users flag prices they believe are wrong; queue for review.</div>
+        </div>
+        <div class="item">
+          <div class="title">Set release countdown widget <span class="badge ui">UI</span></div>
+          <div class="desc">"Surging Sparks drops in 12 days" — count to next release w/ projected demand curve.</div>
+        </div>
+        <div class="item">
+          <div class="title">Reddit/Twitter buzz overlay <span class="badge data">DATA</span></div>
+          <div class="desc"><code>reddit_buzz.py</code> exists — wire it in as a 5th score component.</div>
+        </div>
+        <div class="item">
+          <div class="title">SMS alerts (Twilio) <span class="badge alert">ALERT</span></div>
+          <div class="desc">SMS for highest-conviction STRONG BUYs only. Sticky engagement.</div>
+        </div>
+        <div class="item">
+          <div class="title">Power-9 leaderboard <span class="badge ui">UI</span></div>
+          <div class="desc">9 best cards across all brackets at any moment — public flex page for traffic.</div>
+        </div>
+        <div class="item">
+          <div class="title">Mobile-first design pass <span class="badge ui">UI</span></div>
+          <div class="desc">Dedicated mobile templates, not just responsive shrinking. Card-show buying mode.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="help">
+      <h3>🚀 Want to bump something up?</h3>
+      <p>If you'd use a queued feature today, tell me — <a href="mailto:brandonpleone@gmail.com?subject=Roadmap%20vote">brandonpleone@gmail.com</a>. Direct signal beats my guessing.</p>
+      <p>Subscribers (when SaaS launches) get to vote-up the roadmap. Today it's just my judgment.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a>
+  </div>
+</footer>
+
+</body>
+</html>
