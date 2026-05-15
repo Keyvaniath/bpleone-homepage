@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-15T07:06:13.036741Z",
+  "generated_at": "2026-05-15T17:59:32.130976Z",
   "live_updated_at": "2026-05-15T05:00:28.531494Z",
   "stats": {
     "total_cards": 774,
     "live_matched": 499,
-    "total_mcap": 3152684.0,
+    "total_mcap": 3152849.0,
     "avg_d30_pct": 0.1709,
     "strong_buys": 84,
     "history_snapshots": 2,
-    "history_age_days": 0.3,
+    "history_age_days": 0.7,
     "history_overlay_count": 0
   },
   "trade_of_day": {
@@ -467,17 +467,17 @@
       "signal": "HOLD"
     },
     {
-      "id": "V208",
-      "name": "Gholdengo ex SIR (raw)",
-      "set": "Paradox Rift",
-      "number": "267/182",
-      "variant": "Raw NM",
-      "price": 24.77,
-      "d7": 0.56,
-      "d30": 7.02,
+      "id": "V911",
+      "name": "Magneton Base Unlimited PSA 8",
+      "set": "Base Set",
+      "number": "9/102",
+      "variant": "PSA 8",
+      "price": 60.0,
+      "d7": -0.73,
+      "d30": 3.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 50,
+      "score": 47,
       "signal": "HOLD"
     },
     {
@@ -523,12 +523,12 @@
       "signal": "HOLD"
     },
     {
-      "id": "B012",
-      "name": "Zekrom Trainer Gallery",
-      "set": "Lost Origin",
-      "number": "TG18/TG30",
+      "id": "P017",
+      "name": "Walking Wake ex Alt",
+      "set": "Temporal Forces",
+      "number": "227/162",
       "variant": "Raw NM",
-      "price": 3.12,
+      "price": 10.22,
       "d7": 0.0,
       "d30": 0.0,
       "d7_source": "workbook_formula",
@@ -565,17 +565,17 @@
       "signal": "BUY"
     },
     {
-      "id": "B016",
-      "name": "Origin Forme Palkia Alt Art Raw",
-      "set": "Astral Radiance",
-      "number": "TG24/TG30",
+      "id": "X113",
+      "name": "Hydreigon ex SIR (raw)",
+      "set": "Surging Sparks",
+      "number": "240/191",
       "variant": "Raw NM",
-      "price": 25.0,
-      "d7": 0.0,
-      "d30": 0.0,
+      "price": 1.1,
+      "d7": 1.14,
+      "d30": 10.04,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 47,
+      "score": 52,
       "signal": "HOLD"
     },
     {
@@ -761,17 +761,17 @@
       "signal": "HOLD"
     },
     {
-      "id": "M206",
-      "name": "Pikachu Special Art PSA 10",
+      "id": "M205",
+      "name": "Mewtwo Special Art PSA 10",
       "set": "Prismatic Evolutions",
-      "number": "165/131",
+      "number": "166/131",
       "variant": "PSA 10",
-      "price": 400.0,
-      "d7": 3.64,
-      "d30": 15.0,
+      "price": 265.0,
+      "d7": 4.08,
+      "d30": 20.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 55,
+      "score": 57,
       "signal": "HOLD"
     },
     {
@@ -7405,7 +7405,7 @@
       "name": "Iono SIR",
       "set": "Paldea Evolved",
       "variant": "Raw NM",
-      "price": 55.0,
+      "price": 220.0,
       "score": 53,
       "signal": "HOLD",
       "image": null,
