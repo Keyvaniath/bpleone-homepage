@@ -1385,6 +1385,23 @@
   </div>
 </div>
 
+<!-- Data Quality Score banner — auto-audit result. Shows live data quality grade
+     (A-F) + count of issues so Brandon can see at-a-glance if today's data is
+     trustworthy. Populated from feed.data_quality. -->
+<div id="dq-banner" style="display:none;border-bottom:1px solid var(--border);padding:10px 0;background:rgba(0,0,0,0.18);font-family:'JetBrains Mono',monospace;font-size:12px;">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span id="dq-grade-pill" style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:18px;font-weight:700;letter-spacing:0.04em;">
+        <span id="dq-grade-letter" style="font-size:18px;">—</span>
+        <span style="font-size:11px;opacity:0.7;">DATA QUALITY</span>
+        <span id="dq-score" style="font-size:12px;opacity:0.85;">—/100</span>
+      </span>
+      <span id="dq-counts" style="color:var(--text-mute);"></span>
+    </div>
+    <a href="#data-quality" style="color:var(--gold);text-decoration:none;font-weight:600;">View alerts →</a>
+  </div>
+</div>
+
 <!-- Sticky in-page nav — quick-jump between research sections. -->
 <div class="sub-nav">
   <div class="container">
@@ -1503,6 +1520,33 @@
       <div class="brief-body" id="brief-body">
         <p style="color:var(--text-mute);">Loading today's market brief…</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DATA QUALITY ALERTS — auto-audit results ============ -->
+<section id="data-quality" style="padding:24px 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
+        🔍 Data Quality · <span style="color:var(--gold);">Auto-Audit</span>
+      </h2>
+      <span style="color:var(--text-mute);font-size:12px;">Continuous cross-source verification · runs after every scrape</span>
+    </div>
+    <div id="dq-card" style="border:1px solid var(--border);border-radius:8px;padding:18px;background:rgba(0,0,0,0.22);">
+      <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-bottom:14px;">
+        <div>
+          <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px;">Score</div>
+          <div style="font-size:36px;font-weight:800;font-family:'JetBrains Mono',monospace;" id="dq-score-big">—</div>
+          <div style="font-size:11px;color:var(--text-mute);" id="dq-grade-big">—</div>
+        </div>
+        <div style="flex:1;min-width:220px;">
+          <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px;">Issues found</div>
+          <div id="dq-summary" style="font-size:13px;line-height:1.6;color:var(--text-dim);">Loading audit…</div>
+        </div>
+      </div>
+      <div id="dq-alerts" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));"></div>
+      <p style="margin:14px 0 0;font-size:11px;color:var(--text-mute);">Cards flagged here are using workbook fallback values until a fresh, sane scrape arrives — never bad data.</p>
     </div>
   </div>
 </section>
@@ -2298,6 +2342,63 @@
         }
       }
     } catch (e) {}
+
+    // Data Quality auto-audit — surfaces grade-ladder violations, source
+    // disagreements, workbook fallbacks, etc. Cron writes feed.data_quality.
+    try {
+      const dq = feed.data_quality;
+      if (dq) {
+        const banner = document.getElementById('dq-banner');
+        const dqCard = document.getElementById('dq-card');
+        const score = dq.score ?? 0;
+        const grade = dq.grade || '—';
+        const counts = dq.alert_counts || {};
+        const stats = dq.top_issues_by_category || {};
+        // Color theming
+        let pillBg, pillFg, pillBr;
+        if (grade === 'A' || grade === 'B') { pillFg='#4ade80'; pillBg='rgba(74,222,128,0.13)'; pillBr='#4ade8055'; }
+        else if (grade === 'C') { pillFg='#fbbf24'; pillBg='rgba(251,191,36,0.13)'; pillBr='#fbbf2455'; }
+        else { pillFg='#f87171'; pillBg='rgba(248,113,113,0.13)'; pillBr='#f8717155'; }
+        if (banner) {
+          banner.style.display = '';
+          banner.style.background = pillBg;
+          banner.style.borderTop = '1px solid ' + pillBr;
+          const pill = document.getElementById('dq-grade-pill');
+          if (pill) { pill.style.background = pillBg; pill.style.color = pillFg; pill.style.border = '1px solid ' + pillBr; }
+          setText('dq-grade-letter', grade);
+          setText('dq-score', score + '/100');
+          const ageStr = dq.data_age_hours != null ? Math.round(dq.data_age_hours) + 'h old' : '';
+          setText('dq-counts', (counts.high || 0) + ' high · ' + (counts.warn || 0) + ' warn · ' + ageStr);
+        }
+        // Main card
+        const scoreBig = document.getElementById('dq-score-big');
+        if (scoreBig) { scoreBig.textContent = score; scoreBig.style.color = pillFg; }
+        setText('dq-grade-big', 'Grade ' + grade);
+        const issueLines = [];
+        if (stats.grade_ladder_violation) issueLines.push('<strong style="color:#f87171;">' + stats.grade_ladder_violation + '</strong> grade-ladder violations (PC matched wrong page)');
+        if (stats.cross_source_disagree) issueLines.push('<strong style="color:#fbbf24;">' + stats.cross_source_disagree + '</strong> cross-source disagreements');
+        if (stats.wb_fallback_highvalue) issueLines.push('<strong style="color:#fbbf24;">' + stats.wb_fallback_highvalue + '</strong> high-value cards on workbook fallback');
+        if (stats.graded_no_data) issueLines.push('<strong>' + stats.graded_no_data + '</strong> graded cards w/ no PC+PPT data');
+        if (stats.duplicate_entries) issueLines.push('<strong>' + stats.duplicate_entries + '</strong> duplicate name+variant entries');
+        if (stats.stale_data) issueLines.push('<strong style="color:#f87171;">⚠ data is stale</strong>');
+        if (!issueLines.length) issueLines.push('<strong style="color:#4ade80;">✓ No major issues detected</strong>');
+        setHTML('dq-summary', issueLines.join('<br>'));
+        // Top high-severity alerts
+        const alertsEl = document.getElementById('dq-alerts');
+        if (alertsEl) {
+          const html = (dq.top_alerts || []).map(a => {
+            const sev = a.severity === 'high' ? 'rgba(248,113,113,0.10)' : 'rgba(251,191,36,0.08)';
+            const sevBr = a.severity === 'high' ? '#f8717155' : '#fbbf2455';
+            return '<a href="/card.html?id=' + (a.cid||'') + '" style="display:block;padding:10px 12px;border-radius:6px;background:' + sev + ';border:1px solid ' + sevBr + ';text-decoration:none;color:var(--text);transition:transform 0.15s;">' +
+              '<div style="font-size:11px;color:var(--text-mute);font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;">' + (a.category || '').replace(/_/g,' ') + '</div>' +
+              '<div style="font-weight:600;margin:2px 0;">' + (a.name || a.cid || '?') + ' <span style="color:var(--text-mute);font-weight:400;">· ' + (a.variant || '') + '</span></div>' +
+              '<div style="font-size:11px;color:var(--text-dim);">' + (a.message || '').slice(0,90) + '</div>' +
+            '</a>';
+          }).join('');
+          alertsEl.innerHTML = html || '<p style="color:var(--text-mute);">No high-severity alerts. ✓</p>';
+        }
+      }
+    } catch (e) { console.error('Data quality render failed:', e); }
 
     // Live-tracking freshness pill: shows how long we have history + how stale the scrape is
     const histDays = s.history_age_days || 0;
