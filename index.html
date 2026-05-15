@@ -98,6 +98,28 @@
     font-weight: 700;
   }
   .nav-links a.nav-cta:hover { background: var(--gold-dim); color: var(--bg); }
+  .nav-links { flex-wrap: wrap; }
+  .nav-links a { white-space: nowrap; }
+  @media (max-width: 900px) {
+    nav .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .nav-links { gap: 14px; }
+    .nav-links a { font-size: 13px; }
+  }
+  @media (max-width: 600px) {
+    .nav-links { gap: 10px; }
+    .nav-links a:not(.nav-cta) { font-size: 12px; }
+    .hero h1 { font-size: 32px !important; }
+    .hero p { font-size: 15px; }
+    .container { padding: 0 16px; }
+    .stat-row { grid-template-columns: 1fr 1fr !important; }
+    .totd { padding: 16px !important; }
+    .data-grid { grid-template-columns: 1fr !important; }
+    .data-table th, .data-table td { padding: 8px 10px; font-size: 12px; }
+    .data-table td.name { max-width: 180px; }
+    .brief-card { padding: 18px 20px; }
+    .brief-body { font-size: 13px; }
+    .desks-row { grid-template-columns: 1fr 1fr !important; }
+  }
   /* Pricing */
   .pricing-grid {
     display: grid;
@@ -506,6 +528,60 @@
     gap: 12px;
   }
   footer .legal { font-size: 11px; max-width: 480px; line-height: 1.5; }
+  /* ============ MARKET BRIEF ============ */
+  .brief-section {
+    padding: 24px 0 0;
+  }
+  .brief-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245,200,66,0.04) 100%);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: 12px;
+    padding: 24px 28px;
+  }
+  .brief-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .brief-header h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .brief-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+  }
+  .brief-tldr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .brief-tldr .pill {
+    background: rgba(245,200,66,0.06);
+    border: 1px solid rgba(245,200,66,0.2);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .brief-body {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .brief-body p { margin-bottom: 8px; }
+  .brief-body p:last-child { margin-bottom: 0; }
+  .brief-body strong { color: var(--text); font-weight: 700; }
   /* ============ DESKS STRIP (compact dashboard) ============ */
   .desks-strip {
     padding: 16px 0 32px;
@@ -1012,8 +1088,11 @@
     <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
     <div class="nav-links">
       <a href="#live">📊 Live</a>
-      <a href="/cards.html">📇 All Cards</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/show.html">📱 Show Mode</a>
       <a href="#desks">🧰 Desks</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/changelog.html">📋 Changelog</a>
       <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank">💸 Flip Bot</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
@@ -1038,6 +1117,22 @@
     </div>
   </div>
 </header>
+
+<!-- ============ MARKET BRIEF — auto-generated morning note ============ -->
+<section class="brief-section">
+  <div class="container">
+    <div class="brief-card">
+      <div class="brief-header">
+        <h3>📰 Market Brief</h3>
+        <span class="brief-date" id="brief-date">loading…</span>
+      </div>
+      <div class="brief-tldr" id="brief-tldr"></div>
+      <div class="brief-body" id="brief-body">
+        <p style="color:var(--text-mute);">Loading today's market brief…</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============ MY DESKS — compact dashboard strip ============ -->
 <section class="desks-strip">
@@ -1092,22 +1187,20 @@
           <span class="meta">TOOL · multi-factor</span>
         </span>
       </a>
-      <a href="http://betting.bpleone.com" class="desk-chip" target="_blank" rel="noopener">
-        <span class="live-dot"></span>
+      <div class="desk-chip coming">
         <span class="icon">🎲</span>
         <span class="info">
           <span class="name">Sports Betting</span>
-          <span class="meta">LIVE · 32 markets · EV</span>
+          <span class="meta">soon · DFS · parlays</span>
         </span>
-      </a>
-      <a href="https://sports.bpleone.com" class="desk-chip" target="_blank" rel="noopener">
-        <span class="live-dot"></span>
+      </div>
+      <div class="desk-chip coming">
         <span class="icon">🏟️</span>
         <span class="info">
           <span class="name">Sports Hub</span>
-          <span class="meta">LIVE · 6 teams · ESPN</span>
+          <span class="meta">soon · scores · news</span>
         </span>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -1204,7 +1297,7 @@
         </div>
       </a>
 
-      <a href="http://betting.bpleone.com" class="card live" target="_blank" rel="noopener">
+      <a href="https://betting.bpleone.com" class="card live" target="_blank" rel="noopener">
         <div class="card-header">
           <span class="card-icon">🎲</span>
           <span class="badge live">● LIVE</span>
@@ -1351,6 +1444,28 @@
       </table>
     </div>
 
+    <!-- Flip Bot — current live arbitrage opportunities (read from flip_bot_results.json
+         via build_homepage_feed.py). Shows TCGP + eBay BIN listings priced below sold-comp
+         median, with net-of-fees profit and ROI. Skips SUSPECT entries (likely bad data).
+         Auto-refreshes with the rest of the live terminal every 60s. -->
+    <div class="data-panel" style="margin-bottom: 32px;">
+      <div class="data-panel-header">
+        <span class="title">💸 Flip Bot · Live Arbitrage</span>
+        <span class="sub" id="flip-bot-sub">TCGPlayer + eBay BIN listings priced below sold median · checking feed…</span>
+      </div>
+      <table class="data-table">
+        <thead><tr>
+          <th>Src</th>
+          <th>Card</th>
+          <th style="text-align:right;">Buy $</th>
+          <th style="text-align:right;">Net $</th>
+          <th style="text-align:right;">ROI</th>
+          <th style="text-align:right;">Action</th>
+        </tr></thead>
+        <tbody id="flip-bot-rows"><tr><td colspan="6" class="skeleton">⏳ Loading flip bot feed…</td></tr></tbody>
+      </table>
+    </div>
+
     <!-- What to do today -->
     <div class="what-todo">
       <h3>📋 What to do in the next 24 hours</h3>
@@ -1446,12 +1561,19 @@
 <section id="subscribe" class="section" style="padding-top: 20px;">
   <div class="container">
     <div class="subscribe-box">
-      <h3>Ready to trade like a pro?</h3>
-      <p>Get the same daily quant signals Brandon runs his own $5K+ bankroll on. Free demo first — no card required. Subscribe when you're convinced.</p>
-      <div class="subscribe-cta-row">
-        <a href="https://pokemon.bpleone.com" class="btn-primary" target="_blank">Try Free Demo →</a>
-        <a href="mailto:brandonpleone@gmail.com?subject=Pro%20Subscription%20Request" class="btn-secondary">Subscribe to Pro</a>
-      </div>
+      <h3>Get the daily Trade of the Day in your inbox.</h3>
+      <p>One email per day. Today's algo-picked best opportunity + a short market brief. Free, no spam, unsubscribe with one click.</p>
+      <form id="signup-form" action="https://formspree.io/f/brandonpleone@gmail.com" method="POST"
+            style="display: flex; gap: 10px; max-width: 540px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+        <input type="email" name="email" placeholder="you@email.com" required
+               style="flex: 1; min-width: 260px; background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 14px 18px; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 15px; outline: none;">
+        <input type="hidden" name="_subject" value="New subscriber from bpleone.com">
+        <input type="hidden" name="source" value="bpleone.com /subscribe">
+        <button type="submit" class="btn-primary" style="cursor: pointer; border: none;">Subscribe Free →</button>
+      </form>
+      <p style="font-size: 13px; color: var(--text-mute); margin-top: 16px;">
+        Or skip the email — <a href="https://pokemon.bpleone.com" target="_blank" style="color: var(--gold-dim);">open the full live dashboard</a> directly.
+      </p>
     </div>
 
     <div style="margin-top: 60px;">
@@ -1523,7 +1645,39 @@
     '/homepage_feed.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/homepage_feed.json'
   ];
+  const BRIEF_URLS = [
+    '/market_brief.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/market_brief.json'
+  ];
   const REFRESH_MS = 60 * 1000;
+
+  function mdInline(s) {
+    // Tiny markdown-to-HTML for **bold** only — keeps the brief safe
+    return (s || '').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  }
+
+  function renderBrief(brief) {
+    if (!brief) return;
+    setText('brief-date', brief.date_human || '');
+    const tldr = document.getElementById('brief-tldr');
+    if (tldr && Array.isArray(brief.tldr)) {
+      tldr.innerHTML = brief.tldr.map(t => '<span class="pill">' + t + '</span>').join('');
+    }
+    const body = document.getElementById('brief-body');
+    if (body && Array.isArray(brief.paragraphs)) {
+      body.innerHTML = brief.paragraphs.map(p => '<p>' + mdInline(p) + '</p>').join('');
+    }
+  }
+
+  function loadBrief() {
+    tryFetch(BRIEF_URLS, 0)
+      .then(renderBrief)
+      .catch(err => {
+        console.warn('Brief load failed:', err);
+        const body = document.getElementById('brief-body');
+        if (body) body.innerHTML = '<p style="color:var(--text-mute);">Market brief unavailable. Try refreshing in 60s.</p>';
+      });
+  }
 
   function fmtMoney(n) {
     if (n == null || isNaN(n)) return '—';
@@ -1724,7 +1878,9 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     load();
+    loadBrief();
     setInterval(load, REFRESH_MS);
+    setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
     if (btn) {
