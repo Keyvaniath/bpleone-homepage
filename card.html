@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card · bpleone.com</title>
+<meta name="description" content="Live quant score, price history, BUY/SELL verdict, and target levels for any Pokémon TCG card.">
+<meta property="og:title" content="bpleone.com — Card Detail">
+<meta property="og:description" content="Live quant score + price history + BUY/SELL verdict.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { max-width: 1200px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 13px; transition: color 0.2s; white-space: nowrap; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  /* Card detail layout */
+  .card-detail { padding: 32px 0; }
+  .card-grid {
+    display: grid; grid-template-columns: 320px 1fr; gap: 32px;
+  }
+  @media (max-width: 720px) { .card-grid { grid-template-columns: 1fr; } }
+  .card-image-wrap {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;
+    padding: 16px; aspect-ratio: 5/7; display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .card-image-wrap img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+  .card-image-wrap .placeholder {
+    color: var(--text-mute); font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  }
+  /* Body */
+  .card-head { margin-bottom: 16px; }
+  .card-title { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; }
+  .card-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-mute); margin-bottom: 16px; }
+  .signal-pill {
+    display: inline-block; padding: 5px 14px; border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .signal-pill.strong-buy { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.3); }
+  .signal-pill.buy { background: rgba(74,222,128,0.06); color: var(--green); border: 1px solid rgba(74,222,128,0.2); }
+  .signal-pill.hold { background: rgba(139,148,168,0.1); color: var(--text-dim); border: 1px solid var(--border); }
+  .signal-pill.trim { background: rgba(251,146,60,0.1); color: var(--orange); border: 1px solid rgba(251,146,60,0.25); }
+  .signal-pill.sell { background: rgba(248,113,113,0.12); color: var(--red); border: 1px solid rgba(248,113,113,0.3); }
+  .kpi-row {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 24px 0;
+  }
+  @media (max-width: 600px) { .kpi-row { grid-template-columns: 1fr 1fr; } }
+  .kpi {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .kpi .l { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+  .kpi .v { font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700; }
+  .kpi .v.gold { color: var(--gold); }
+  .kpi .v.green { color: var(--green); }
+  .kpi .v.red { color: var(--red); }
+  .kpi .sub { font-size: 11px; color: var(--text-mute); margin-top: 2px; font-family: 'JetBrains Mono', monospace; }
+  /* Chart panel */
+  .chart-panel {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px 24px; margin: 24px 0;
+  }
+  .chart-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+  .chart-head h3 { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; }
+  .chart-head .sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute); }
+  .chart-svg { width: 100%; height: 160px; display: block; }
+  /* CTAs */
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0; }
+  .actions a, .actions button {
+    background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+    padding: 10px 18px; border-radius: 8px; text-decoration: none; font-size: 14px;
+    font-family: 'Inter', sans-serif; cursor: pointer; transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .actions a:hover, .actions button:hover { border-color: var(--gold); color: var(--gold); }
+  .actions .primary { background: var(--gold); color: var(--bg); border-color: var(--gold); font-weight: 700; }
+  .actions .primary:hover { background: var(--gold-dim); color: var(--bg); }
+  /* Targets card */
+  .targets {
+    background: linear-gradient(135deg, var(--bg-card), rgba(245,200,66,0.03));
+    border: 1px solid var(--gold); border-left: 3px solid var(--gold); border-radius: 12px;
+    padding: 20px 24px; margin: 24px 0;
+  }
+  .targets h3 { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 12px; }
+  .targets .row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed var(--border); }
+  .targets .row:last-child { border-bottom: none; }
+  .targets .row .lbl { color: var(--text-dim); font-size: 14px; }
+  .targets .row .val { font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--text); }
+  .targets .row .val.green { color: var(--green); }
+  .targets .row .val.red { color: var(--red); }
+  /* Sections */
+  h2.section { font-size: 18px; margin: 32px 0 12px; color: var(--text); }
+  h2.section::before { content: '▸ '; color: var(--gold); }
+  .body-card {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px 24px; margin: 12px 0;
+    font-size: 14px; color: var(--text-dim); line-height: 1.7;
+  }
+  .body-card a { color: var(--gold-dim); text-decoration: none; }
+  .body-card a:hover { color: var(--gold); }
+  /* Not found state */
+  .empty {
+    text-align: center; padding: 80px 24px; color: var(--text-dim);
+  }
+  .empty h2 { color: var(--text); font-size: 24px; margin-bottom: 12px; }
+  footer { padding: 32px 0; margin-top: 40px; border-top: 1px solid var(--border);
+           color: var(--text-mute); font-size: 13px; font-family: 'JetBrains Mono', monospace; text-align: center; }
+  footer a { color: var(--gold-dim); text-decoration: none; }
+  code {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    background: rgba(245,200,66,0.06); color: var(--gold);
+    padding: 1px 5px; border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/#desks">🧰 Desks</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/changelog.html">📋 Changelog</a>
+    </div>
+  </div>
+</nav>
+
+<main class="card-detail">
+  <div class="container">
+    <div id="content">
+      <p class="empty" style="padding:60px 0;">⏳ Loading card…</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const CARDS_URLS = [
+    '/cards_full.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
+  ];
+
+  function getParam(name) {
+    const m = location.search.match(new RegExp('[?&]' + name + '=([^&]+)'));
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+
+  function fmtMoney(n) {
+    if (n == null || isNaN(n) || n === 0) return '—';
+    if (n >= 1e6) return '$' + (n/1e6).toFixed(2) + 'M';
+    if (n >= 1e3) return '$' + Math.round(n).toLocaleString();
+    return '$' + n.toFixed(n < 10 ? 2 : 0);
+  }
+
+  function fmtPct(p) {
+    if (p == null || isNaN(p)) return '—';
+    return (p >= 0 ? '+' : '') + p.toFixed(1) + '%';
+  }
+
+  function signalClass(s) { return (s || '').toLowerCase().replace(' ', '-'); }
+
+  function svgLineChart(history, width, height) {
+    if (!history || history.length < 2) return '';
+    const points = history.map(h => h.p);
+    const lo = Math.min(...points), hi = Math.max(...points);
+    const rng = hi - lo || 1;
+    const pts = history.map((h, i) => {
+      const x = i / (history.length - 1) * (width - 40) + 20;
+      const y = height - 20 - ((h.p - lo) / rng) * (height - 40);
+      return [x, y, h.p];
+    });
+    const polyPoints = pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+    const areaPath = 'M' + pts[0][0] + ',' + (height - 20) +
+                     ' L' + pts.map(p => p[0] + ',' + p[1]).join(' L') +
+                     ' L' + pts[pts.length-1][0] + ',' + (height - 20) + ' Z';
+    const trendColor = pts[pts.length-1][2] > pts[0][2] ? '#4ade80' :
+                       (pts[pts.length-1][2] < pts[0][2] ? '#f87171' : '#8b94a8');
+    return '<svg class="chart-svg" viewBox="0 0 ' + width + ' ' + height + '" xmlns="http://www.w3.org/2000/svg">' +
+      '<defs><linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%">' +
+      '<stop offset="0%" style="stop-color:' + trendColor + ';stop-opacity:0.25"/>' +
+      '<stop offset="100%" style="stop-color:' + trendColor + ';stop-opacity:0"/>' +
+      '</linearGradient></defs>' +
+      '<path d="' + areaPath + '" fill="url(#g)"/>' +
+      '<polyline points="' + polyPoints + '" fill="none" stroke="' + trendColor + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+      // Y-axis labels
+      '<text x="10" y="20" font-family="monospace" font-size="10" fill="#5a6378">$' + Math.round(hi).toLocaleString() + '</text>' +
+      '<text x="10" y="' + (height - 8) + '" font-family="monospace" font-size="10" fill="#5a6378">$' + Math.round(lo).toLocaleString() + '</text>' +
+      '</svg>';
+  }
+
+  function renderCard(card) {
+    const content = document.getElementById('content');
+    if (!card) {
+      content.innerHTML =
+        '<div class="empty"><h2>Card not found</h2>' +
+        '<p>This card ID does not exist in our watchlist. Try the <a href="/cards.html" style="color:var(--gold);">directory</a> or <a href="/" style="color:var(--gold);">live terminal</a>.</p></div>';
+      document.title = 'Card not found · bpleone.com';
+      return;
+    }
+
+    // Update meta tags for proper share previews
+    document.title = card.name + ' (' + card.variant + ') · bpleone.com';
+    const desc = card.signal + ' · Score ' + card.score + '/100 · ' + fmtMoney(card.live_price || card.wb_price) + ' live · ' + card.set;
+    document.querySelector('meta[name="description"]').setAttribute('content', desc);
+    document.querySelector('meta[property="og:title"]').setAttribute('content', card.name + ' · ' + fmtMoney(card.live_price || card.wb_price) + ' · ' + card.signal);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', desc);
+
+    const cur = card.live_price || card.wb_price;
+    const wbDelta = card.wb_price > 0 ? (cur - card.wb_price) / card.wb_price * 100 : null;
+    const wbDeltaClass = wbDelta == null ? '' : (wbDelta > 0 ? 'green' : (wbDelta < 0 ? 'red' : ''));
+
+    const img = card.image ?
+      '<img src="' + card.image + '" alt="' + card.name + '">' :
+      '<div class="placeholder">No image yet</div>';
+
+    const chart = svgLineChart(card.history, 600, 160);
+    const chartBlock = chart ?
+      '<div class="chart-panel">' +
+      '<div class="chart-head">' +
+      '<h3>📈 Price History · ' + (card.history.length) + ' snapshots</h3>' +
+      '<span class="sub">scraped every 4h since live tracking started</span>' +
+      '</div>' + chart + '</div>'
+      :
+      '<div class="chart-panel"><div class="chart-head"><h3>📈 Price History</h3><span class="sub">no history yet</span></div>' +
+      '<p style="color:var(--text-mute);font-size:13px;padding:24px 0;">Tracking begins on the next 4h cron run. Real 30D % activates after 5 days.</p></div>';
+
+    content.innerHTML =
+      '<a href="/cards.html" style="color:var(--text-mute);text-decoration:none;font-family:monospace;font-size:12px;">← back to directory</a>' +
+      '<div class="card-grid">' +
+        '<div>' +
+          '<div class="card-image-wrap">' + img + '</div>' +
+          '<div class="actions" style="margin-top:14px;">' +
+            '<a class="primary" href="https://pokemon.bpleone.com/?card=' + card.id + '" target="_blank">Open in Pro →</a>' +
+            '<button onclick="navigator.share && navigator.share({title:\'' + card.name.replace(/'/g, '\\\'') + '\',url:location.href}) || navigator.clipboard.writeText(location.href).then(() => this.textContent=\'✓ copied\')">🔗 Share</button>' +
+          '</div>' +
+        '</div>' +
+        '<div>' +
+          '<div class="card-head">' +
+            '<div class="card-title">' + card.name + '</div>' +
+            '<div class="card-meta">' + card.set + ' · #' + card.number + ' · ' + card.variant +
+              (card.tier ? ' · ' + card.tier : '') + '</div>' +
+            '<span class="signal-pill ' + signalClass(card.signal) + '">' + card.signal + ' · Score ' + card.score + '/100</span>' +
+          '</div>' +
+
+          '<div class="kpi-row">' +
+            '<div class="kpi"><div class="l">Live $</div><div class="v gold">' + fmtMoney(cur) + '</div>' +
+              (wbDelta != null ? '<div class="sub">' + (wbDelta > 0 ? '↑' : '↓') + ' ' + fmtPct(wbDelta) + ' vs WB</div>' : '') + '</div>' +
+            '<div class="kpi"><div class="l">Workbook</div><div class="v">' + fmtMoney(card.wb_price) + '</div><div class="sub">reference</div></div>' +
+            '<div class="kpi"><div class="l">Target Buy (80%)</div><div class="v green">' + fmtMoney(card.target_buy) + '</div></div>' +
+            '<div class="kpi"><div class="l">Target Sell (95%)</div><div class="v gold">' + fmtMoney(card.target_sell) + '</div></div>' +
+          '</div>' +
+
+          '<div class="targets">' +
+            '<h3>🎯 Trade Targets</h3>' +
+            '<div class="row"><span class="lbl">STRONG BUY (≤ 80% MV)</span><span class="val green">≤ ' + fmtMoney(cur * 0.80) + '</span></div>' +
+            '<div class="row"><span class="lbl">BUY (≤ 90% MV)</span><span class="val">≤ ' + fmtMoney(cur * 0.90) + '</span></div>' +
+            '<div class="row"><span class="lbl">SELL (95-100% MV)</span><span class="val gold">' + fmtMoney(cur * 0.95) + ' – ' + fmtMoney(cur) + '</span></div>' +
+            '<div class="row"><span class="lbl">P&L per card if filled at 80% → 95%</span><span class="val green">+' + fmtMoney(cur * 0.15) + '</span></div>' +
+          '</div>' +
+
+          chartBlock +
+
+          (card.notes ? '<h2 class="section">Notes</h2><div class="body-card">' + card.notes + '</div>' : '') +
+
+          '<h2 class="section">Live data sources</h2>' +
+          '<div class="body-card">' +
+          '<p>Source: <code>' + card.live_source + '</code></p>' +
+          '<p>PSA 10 pop: <strong>' + (card.pop_psa10 || 'unknown') + '</strong> · Tier: <strong>' + (card.tier || 'unranked') + '</strong> · Category: <strong>' + (card.category || '—') + '</strong></p>' +
+          '<p>Composite score breakdown is documented at <a href="/methodology.html">/methodology</a>. Every price passes bidirectional sanity guards.</p>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function tryFetch(urls, i) {
+    if (i >= urls.length) return Promise.reject('all sources failed');
+    return fetch(urls[i] + '?t=' + Date.now())
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .catch(() => tryFetch(urls, i + 1));
+  }
+
+  function load() {
+    const id = getParam('id') || getParam('card');
+    if (!id) {
+      renderCard(null);
+      return;
+    }
+    tryFetch(CARDS_URLS, 0)
+      .then(data => {
+        const card = (data && data.cards) ? data.cards[id] : null;
+        renderCard(card);
+      })
+      .catch(err => {
+        console.warn('Load failed:', err);
+        document.getElementById('content').innerHTML =
+          '<div class="empty"><h2>Data unavailable</h2><p>Try refreshing in 60s.</p></div>';
+      });
+  }
+
+  document.addEventListener('DOMContentLoaded', load);
+})();
+</script>
+</body>
+</html>
