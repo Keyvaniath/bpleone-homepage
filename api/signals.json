@@ -1,28 +1,28 @@
 {
   "version": 1,
-  "generated_at": "2026-05-15T07:53:44.066057Z",
+  "generated_at": "2026-05-15T19:59:24.451175Z",
   "license": "personal-use OK; commercial use requires attribution to bpleone.com",
   "source_repo": "https://github.com/Keyvaniath/pokemon-tcg-trading-desk",
   "methodology": "https://bpleone.com/methodology.html",
   "stats": {
     "total_cards": 774,
-    "live_matched": 499,
-    "total_mcap": 3152684.0,
+    "live_matched": 555,
+    "total_mcap": 3800725.0,
     "strong_buys": 84,
-    "history_age_days": 0.3
+    "history_age_days": 0.8
   },
   "trade_of_day": {
-    "id": "M023",
-    "name": "Magnezone V Alt Art",
-    "set": "Lost Origin",
-    "number": "TG13/TG30",
+    "id": "M024",
+    "name": "Lugia VSTAR Alt Art",
+    "set": "Silver Tempest",
+    "number": "TG30/TG30",
     "variant": "PSA 10",
-    "price": 35.02,
-    "d7": 82.51,
-    "d30": 91.4,
+    "price": 820.0,
+    "d7": 58.52,
+    "d30": 68.78,
     "d7_source": "workbook_formula",
     "d30_source": "workbook_formula",
-    "score": 76,
+    "score": 75,
     "signal": "STRONG BUY"
   },
   "strong_buys": [
@@ -144,7 +144,7 @@
       "set": "Ascended Heroes",
       "number": "288/217",
       "variant": "PSA 10",
-      "price": 270.0,
+      "price": 1700.0,
       "d7": 33.41,
       "d30": 57.16,
       "d7_source": "workbook_formula",
@@ -300,7 +300,7 @@
       "set": "Ascended Heroes",
       "number": "288/217",
       "variant": "PSA 10",
-      "price": 270.0,
+      "price": 1700.0,
       "d7": 33.41,
       "d30": 57.16,
       "d7_source": "workbook_formula",
@@ -594,10 +594,10 @@
       "number": "1/102",
       "variant": "PSA 9",
       "tier": "T1",
-      "live_price": 5200.75,
+      "live_price": 950.0,
       "wb_price": 950.0,
-      "target_buy": 4160.6,
-      "target_sell": 4940.71,
+      "target_buy": 760.0,
+      "target_sell": 902.5,
       "score": 49,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard1/1.png"
@@ -639,7 +639,7 @@
       "number": "58/102",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 2400.0,
       "wb_price": 2400.0,
       "target_buy": 1920.0,
       "target_sell": 2280.0,
@@ -669,10 +669,10 @@
       "number": "10/62",
       "variant": "PSA 9",
       "tier": "T1",
-      "live_price": 6575.42,
+      "live_price": 800.0,
       "wb_price": 800.0,
-      "target_buy": 5260.34,
-      "target_sell": 6246.65,
+      "target_buy": 640.0,
+      "target_sell": 760.0,
       "score": 50,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/base6/29.png"
@@ -729,13 +729,13 @@
       "number": "Trophy",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 5500.0,
       "wb_price": 5500.0,
       "target_buy": 4400.0,
       "target_sell": 5225.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/4114b3e6832bf8d39641c4d9594740579609bb71f30178678739b740f7f37154/60.jpg"
     },
     {
       "id": "V020",
@@ -849,11 +849,11 @@
       "number": "Gold Star",
       "variant": "PSA 9",
       "tier": "T1",
-      "live_price": 25980.41,
+      "live_price": 4200.0,
       "wb_price": 4200.0,
-      "target_buy": 20784.33,
-      "target_sell": 24681.39,
-      "score": 54,
+      "target_buy": 3360.0,
+      "target_sell": 3990.0,
+      "score": 55,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/col1/SL10.png"
     },
@@ -909,13 +909,13 @@
       "number": "Promo",
       "variant": "PSA 4",
       "tier": "T1",
-      "live_price": 197261.51,
+      "live_price": 850000.0,
       "wb_price": 850000.0,
-      "target_buy": 157809.21,
-      "target_sell": 187398.43,
-      "score": 67,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 680000.0,
+      "target_sell": 807500.0,
+      "score": 57,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg"
     },
     {
       "id": "V032",
@@ -924,12 +924,12 @@
       "number": "Promo",
       "variant": "PSA 9",
       "tier": "T1",
-      "live_price": 1986.32,
+      "live_price": 6500.0,
       "wb_price": 6500.0,
-      "target_buy": 1589.06,
-      "target_sell": 1887.0,
-      "score": 66,
-      "signal": "BUY",
+      "target_buy": 5200.0,
+      "target_sell": 6175.0,
+      "score": 54,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/dpp/DP05.png"
     },
     {
@@ -1029,11 +1029,11 @@
       "number": "212/203",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 129.99,
+      "live_price": 1200.0,
       "wb_price": 1200.0,
-      "target_buy": 103.99,
-      "target_sell": 123.49,
-      "score": 88,
+      "target_buy": 960.0,
+      "target_sell": 1140.0,
+      "score": 76,
       "signal": "STRONG BUY",
       "image": "https://images.pokemontcg.io/swsh7/212.png"
     },
@@ -1134,11 +1134,11 @@
       "number": "217/203",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 99.97,
+      "live_price": 520.0,
       "wb_price": 520.0,
-      "target_buy": 79.98,
-      "target_sell": 94.97,
-      "score": 88,
+      "target_buy": 416.0,
+      "target_sell": 494.0,
+      "score": 76,
       "signal": "STRONG BUY",
       "image": "https://images.pokemontcg.io/swsh7/220.png"
     },
@@ -1149,11 +1149,11 @@
       "number": "194/203",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 110.0,
+      "live_price": 620.0,
       "wb_price": 620.0,
-      "target_buy": 88.0,
-      "target_sell": 104.5,
-      "score": 87,
+      "target_buy": 496.0,
+      "target_sell": 589.0,
+      "score": 75,
       "signal": "STRONG BUY",
       "image": "https://images.pokemontcg.io/swsh7/194.png"
     },
@@ -1329,11 +1329,11 @@
       "number": "TG30/TG30",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 100.0,
+      "live_price": 820.0,
       "wb_price": 820.0,
-      "target_buy": 80.0,
-      "target_sell": 95.0,
-      "score": 87,
+      "target_buy": 656.0,
+      "target_sell": 779.0,
+      "score": 75,
       "signal": "STRONG BUY",
       "image": "https://images.pokemontcg.io/swsh12/202.png"
     },
@@ -1584,11 +1584,11 @@
       "number": "201/165",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 75.995,
+      "live_price": 540.0,
       "wb_price": 540.0,
-      "target_buy": 60.8,
-      "target_sell": 72.2,
-      "score": 88,
+      "target_buy": 432.0,
+      "target_sell": 513.0,
+      "score": 76,
       "signal": "STRONG BUY",
       "image": "https://images.pokemontcg.io/ex1/101.png"
     },
@@ -1629,11 +1629,11 @@
       "number": "269/193",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 86.99,
+      "live_price": 700.0,
       "wb_price": 700.0,
-      "target_buy": 69.59,
-      "target_sell": 82.64,
-      "score": 88,
+      "target_buy": 560.0,
+      "target_sell": 665.0,
+      "score": 76,
       "signal": "STRONG BUY",
       "image": "https://images.pokemontcg.io/sv2/269.png"
     },
@@ -2079,11 +2079,11 @@
       "number": "158/131",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 110.0,
+      "live_price": 920.0,
       "wb_price": 920.0,
-      "target_buy": 88.0,
-      "target_sell": 104.5,
-      "score": 88,
+      "target_buy": 736.0,
+      "target_sell": 874.0,
+      "score": 76,
       "signal": "STRONG BUY",
       "image": "https://images.pokemontcg.io/sv8pt5/150.png"
     },
@@ -2274,11 +2274,11 @@
       "number": "288/217",
       "variant": "Raw NM",
       "tier": "T4",
-      "live_price": 75.65,
+      "live_price": 280.0,
       "wb_price": 280.0,
-      "target_buy": 60.52,
-      "target_sell": 71.87,
-      "score": 72,
+      "target_buy": 224.0,
+      "target_sell": 266.0,
+      "score": 61,
       "signal": "BUY",
       "image": "https://images.scrydex.com/pokemon/me2pt5-22/small"
     },
@@ -2289,11 +2289,11 @@
       "number": "288/217",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 270.0,
+      "live_price": 1700.0,
       "wb_price": 1700.0,
-      "target_buy": 216.0,
-      "target_sell": 256.5,
-      "score": 89,
+      "target_buy": 1360.0,
+      "target_sell": 1615.0,
+      "score": 77,
       "signal": "STRONG BUY",
       "image": "https://images.scrydex.com/pokemon/me2pt5-22/small"
     },
@@ -2304,13 +2304,13 @@
       "number": "085",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 578.77,
+      "live_price": 2800.0,
       "wb_price": 2800.0,
-      "target_buy": 463.02,
-      "target_sell": 549.83,
-      "score": 88,
+      "target_buy": 2240.0,
+      "target_sell": 2660.0,
+      "score": 76,
       "signal": "STRONG BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/5e96704258cea7c698de7602006f71dfe88d868c0c9585a1e11055de7d488007/60.jpg"
     },
     {
       "id": "M090",
@@ -2325,7 +2325,7 @@
       "target_sell": 917.7,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/5e96704258cea7c698de7602006f71dfe88d868c0c9585a1e11055de7d488007/60.jpg"
     },
     {
       "id": "M091",
@@ -2340,7 +2340,7 @@
       "target_sell": 665.0,
       "score": 77,
       "signal": "STRONG BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/240.jpg"
     },
     {
       "id": "M092",
@@ -2355,7 +2355,7 @@
       "target_sell": 1045.0,
       "score": 78,
       "signal": "STRONG BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/2f37c729f4ae91cb0c9013f9549d8a53096e707be680dcc9b4a3d99c89e60836/240.jpg"
     },
     {
       "id": "M093",
@@ -2379,13 +2379,13 @@
       "number": "Box",
       "variant": "Sealed (36 packs)",
       "tier": "T3",
-      "live_price": 2560.86,
+      "live_price": 290.0,
       "wb_price": 290.0,
-      "target_buy": 2048.69,
-      "target_sell": 2432.82,
-      "score": 52,
+      "target_buy": 232.0,
+      "target_sell": 275.5,
+      "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/1d53b2174ffd9baeadc62527270258c117f0a5087894ecef387ff96810e4eaa2/240.jpg"
     },
     {
       "id": "S002",
@@ -2400,7 +2400,7 @@
       "target_sell": 161.5,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "S003",
@@ -2415,7 +2415,7 @@
       "target_sell": 74.1,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/it2f4kt6owa3oucf/60.jpg"
     },
     {
       "id": "S004",
@@ -2445,7 +2445,7 @@
       "target_sell": 133.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/7654003fb731717598d267d87c823c64be6398128a35dbe263db9ef98dff9d03/60.jpg"
     },
     {
       "id": "S006",
@@ -2460,7 +2460,7 @@
       "target_sell": 565.25,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/230e99e882ea1a4fad096878c14b9f78a8c6e1ba3da1ea8032db6062439bbbae/240.jpg"
     },
     {
       "id": "S007",
@@ -2475,7 +2475,7 @@
       "target_sell": 356.25,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ugsxjoig7mzehidq/240.jpg"
     },
     {
       "id": "S008",
@@ -2490,7 +2490,7 @@
       "target_sell": 707.02,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gd6mivft4qcajxyo/240.jpg"
     },
     {
       "id": "S009",
@@ -2505,7 +2505,7 @@
       "target_sell": 446.97,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c1cd5f96c2f1776e6e5e8f549ffd3d066aff2439eac8fc4fdfc022abc27d6971/240.jpg"
     },
     {
       "id": "S010",
@@ -2535,7 +2535,7 @@
       "target_sell": 587.1,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/b9f018596fc96ec1af92d71d1a658b8aef0c685301af88f1e7b0839259e85f57/240.jpg"
     },
     {
       "id": "S012",
@@ -2550,7 +2550,7 @@
       "target_sell": 200.76,
       "score": 64,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "S013",
@@ -2565,7 +2565,7 @@
       "target_sell": 437.86,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/131bafe4b1fcc2a4ba44e58462d68896c0c3e35ad727e2c8b04aa7c68bd509bc/240.jpg"
     },
     {
       "id": "S014",
@@ -2580,7 +2580,7 @@
       "target_sell": 343.52,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/b83473210e750afa40327787e3e9857c0494e9c6bdc92b72e975157aabfa469b/240.jpg"
     },
     {
       "id": "S015",
@@ -2595,7 +2595,7 @@
       "target_sell": 256.45,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c665ba12e32be94d078e3d287b845b8c57348e5943e471a322e10ca98b31ea30/240.jpg"
     },
     {
       "id": "S016",
@@ -2610,7 +2610,7 @@
       "target_sell": 449.47,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/b347a7054acebd2a77f73871069c1af821fa79b9bd44ff64395f879ddae47765/240.jpg"
     },
     {
       "id": "S017",
@@ -2625,7 +2625,7 @@
       "target_sell": 135.65,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c9ec00614ec0ce1f87ffe426b17815b5a0812d610a9b1361a81f2f60f3789d36/240.jpg"
     },
     {
       "id": "S018",
@@ -2640,7 +2640,7 @@
       "target_sell": 257.45,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/a349b4813e9c78d60e47a28d3ad7eb8d259f2de84fe4fa9cdf6e6c411c19df49/240.jpg"
     },
     {
       "id": "S019",
@@ -2655,7 +2655,7 @@
       "target_sell": 161.5,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "S020",
@@ -2670,7 +2670,7 @@
       "target_sell": 304.0,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/3a276e35f46ccd9c8600887aa08763db0853a9a75dbf2ba4ea65d1159c10d49e/240.jpg"
     },
     {
       "id": "S021",
@@ -2685,7 +2685,7 @@
       "target_sell": 47.47,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/lqchalmdl6wrbpss/60.jpg"
     },
     {
       "id": "S022",
@@ -2700,7 +2700,7 @@
       "target_sell": 278.47,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/klvcx7ydzilxx47e/240.jpg"
     },
     {
       "id": "S023",
@@ -2715,7 +2715,7 @@
       "target_sell": 250.87,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/240.jpg"
     },
     {
       "id": "S024",
@@ -2745,7 +2745,7 @@
       "target_sell": 74.1,
       "score": 60,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/it2f4kt6owa3oucf/240.jpg"
     },
     {
       "id": "S026",
@@ -2760,7 +2760,7 @@
       "target_sell": 193.32,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/u5xnrlbvhqoqnwaq/240.jpg"
     },
     {
       "id": "S027",
@@ -2775,7 +2775,7 @@
       "target_sell": 534.26,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "S028",
@@ -2790,7 +2790,7 @@
       "target_sell": 28.49,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hlblvcxh472iqrwf/240.jpg"
     },
     {
       "id": "S029",
@@ -2805,7 +2805,7 @@
       "target_sell": 104.5,
       "score": 58,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/1f4f5237ded529664177ba0975e3ee1533ca31dde5d8296ac4eb32924491e0ac/60.jpg"
     },
     {
       "id": "S030",
@@ -2835,7 +2835,7 @@
       "target_sell": 873.69,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/eea5fcb3643abe960fa25690b4a5e99fac28cc23d0051df3417658c8f95ec712/240.jpg"
     },
     {
       "id": "S032",
@@ -2964,13 +2964,13 @@
       "number": "Promo",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 180.0,
       "wb_price": 180.0,
       "target_buy": 144.0,
       "target_sell": 171.0,
       "score": 46,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/he6cmgeivakceyt4/240.jpg"
     },
     {
       "id": "X009",
@@ -2985,7 +2985,7 @@
       "target_sell": 456.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/v7di2q5lovmym62w/60.jpg"
     },
     {
       "id": "X010",
@@ -2994,13 +2994,13 @@
       "number": "76/108",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 420.0,
       "wb_price": 420.0,
       "target_buy": 336.0,
       "target_sell": 399.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/xy6/61.png"
     },
     {
       "id": "X011",
@@ -3045,7 +3045,7 @@
       "target_sell": 266.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/b270b1697a16c9648abdc535c6d0dedddc7751c27544f917377df3c2a210e79e/60.jpg"
     },
     {
       "id": "X014",
@@ -3060,7 +3060,7 @@
       "target_sell": 551.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/5cd8deed1e78ad2fe18bde3b4a04ec80a4986e3d0363ab18750e212b54bcc3ca/60.jpg"
     },
     {
       "id": "X015",
@@ -3075,7 +3075,7 @@
       "target_sell": 6174.99,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg"
     },
     {
       "id": "J001",
@@ -3114,12 +3114,12 @@
       "number": "JP",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 109.21,
+      "live_price": 380.0,
       "wb_price": 380.0,
-      "target_buy": 87.37,
-      "target_sell": 103.75,
-      "score": 63,
-      "signal": "BUY",
+      "target_buy": 304.0,
+      "target_sell": 361.0,
+      "score": 51,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh9/154.png"
     },
     {
@@ -3129,7 +3129,7 @@
       "number": "JP",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 580.0,
       "wb_price": 580.0,
       "target_buy": 464.0,
       "target_sell": 551.0,
@@ -3174,13 +3174,13 @@
       "number": "JP Trophy",
       "variant": "PSA 9",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 4500.0,
       "wb_price": 4500.0,
       "target_buy": 3600.0,
       "target_sell": 4275.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/60.jpg"
     },
     {
       "id": "J008",
@@ -3189,7 +3189,7 @@
       "number": "JP Promo",
       "variant": "PSA 9",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 1800.0,
       "wb_price": 1800.0,
       "target_buy": 1440.0,
       "target_sell": 1710.0,
@@ -3210,7 +3210,7 @@
       "target_sell": 807.5,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/b9bbbfc0058338076f808d22cd471c3ded31326612bd5c5201c1824bca6b82e5/60.jpg"
     },
     {
       "id": "J010",
@@ -3225,7 +3225,7 @@
       "target_sell": 897.75,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0c7fa58218a74087d899472fb1fd4a5ebef64157691c0ae83c8656dca073449e/240.jpg"
     },
     {
       "id": "V036",
@@ -3369,12 +3369,12 @@
       "number": "Misty Promo",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 124.09,
+      "live_price": 380.0,
       "wb_price": 380.0,
-      "target_buy": 99.27,
-      "target_sell": 117.89,
-      "score": 64,
-      "signal": "BUY",
+      "target_buy": 304.0,
+      "target_sell": 361.0,
+      "score": 52,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/gym2/118.png"
     },
     {
@@ -3390,7 +3390,7 @@
       "target_sell": 422.13,
       "score": 73,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/l3qqpmgaj3myh646/240.jpg"
     },
     {
       "id": "X019",
@@ -3399,10 +3399,10 @@
       "number": "SV49/SV94",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 1399.5,
+      "live_price": 715.47,
       "wb_price": 320.0,
-      "target_buy": 1119.6,
-      "target_sell": 1329.52,
+      "target_buy": 572.38,
+      "target_sell": 679.7,
       "score": 73,
       "signal": "BUY",
       "image": null
@@ -3489,10 +3489,10 @@
       "number": "170/142",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 79.99,
       "wb_price": 7.0,
-      "target_buy": 5.6,
-      "target_sell": 6.65,
+      "target_buy": 63.99,
+      "target_sell": 75.99,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv8/230.png"
@@ -3564,11 +3564,11 @@
       "number": "TG24/TG30",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 5.05,
+      "live_price": 2.56,
       "wb_price": 5.0,
-      "target_buy": 4.04,
-      "target_sell": 4.8,
-      "score": 47,
+      "target_buy": 2.05,
+      "target_sell": 2.43,
+      "score": 54,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh4/192.png"
     },
@@ -3714,10 +3714,10 @@
       "number": "201/198",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 125.07,
       "wb_price": 5.0,
-      "target_buy": 4.0,
-      "target_sell": 4.75,
+      "target_buy": 100.06,
+      "target_sell": 118.82,
       "score": 47,
       "signal": "HOLD",
       "image": null
@@ -3729,11 +3729,11 @@
       "number": "025/165",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 0.98,
+      "live_price": 0.61,
       "wb_price": 2.0,
-      "target_buy": 0.78,
-      "target_sell": 0.93,
-      "score": 52,
+      "target_buy": 0.49,
+      "target_sell": 0.58,
+      "score": 57,
       "signal": "HOLD",
       "image": null
     },
@@ -3819,11 +3819,11 @@
       "number": "030/078",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 5.29,
+      "live_price": 2.83,
       "wb_price": 5.0,
-      "target_buy": 4.23,
-      "target_sell": 5.03,
-      "score": 47,
+      "target_buy": 2.26,
+      "target_sell": 2.69,
+      "score": 52,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/pgo/72.png"
     },
@@ -3849,10 +3849,10 @@
       "number": "045/078",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 11.95,
       "wb_price": 5.0,
-      "target_buy": 4.0,
-      "target_sell": 4.75,
+      "target_buy": 9.56,
+      "target_sell": 11.35,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh45sv/SV118.png"
@@ -3879,10 +3879,10 @@
       "number": "004/165",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 200.0,
       "wb_price": 8.0,
-      "target_buy": 6.4,
-      "target_sell": 7.6,
+      "target_buy": 160.0,
+      "target_sell": 190.0,
       "score": 47,
       "signal": "HOLD",
       "image": null
@@ -4014,10 +4014,10 @@
       "number": "237/193",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 61.79,
       "wb_price": 6.0,
-      "target_buy": 4.8,
-      "target_sell": 5.7,
+      "target_buy": 49.43,
+      "target_sell": 58.7,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv2/269.png"
@@ -4080,7 +4080,7 @@
       "target_sell": 5.7,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.scrydex.com/pokemon/me2pt5-125/small"
     },
     {
       "id": "P045",
@@ -4095,7 +4095,7 @@
       "target_sell": 3.8,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.scrydex.com/pokemon/me2pt5-113/small"
     },
     {
       "id": "P046",
@@ -4119,10 +4119,10 @@
       "number": "032/131",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 0.64,
+      "live_price": 0.68,
       "wb_price": 4.0,
-      "target_buy": 0.51,
-      "target_sell": 0.61,
+      "target_buy": 0.54,
+      "target_sell": 0.65,
       "score": 59,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/bwp/BW97.png"
@@ -4299,10 +4299,10 @@
       "number": "143/131",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 0.53,
+      "live_price": 0.49,
       "wb_price": 6.0,
-      "target_buy": 0.42,
-      "target_sell": 0.5,
+      "target_buy": 0.39,
+      "target_sell": 0.47,
       "score": 59,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv8pt5/76.png"
@@ -4314,10 +4314,10 @@
       "number": "265/191",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 1493.04,
       "wb_price": 8.0,
-      "target_buy": 6.4,
-      "target_sell": 7.6,
+      "target_buy": 1194.43,
+      "target_sell": 1418.39,
       "score": 47,
       "signal": "HOLD",
       "image": null
@@ -4380,7 +4380,7 @@
       "target_sell": 2.77,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/sv4/124.png"
     },
     {
       "id": "B005",
@@ -4395,7 +4395,7 @@
       "target_sell": 26.6,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/sv4/70.png"
     },
     {
       "id": "B006",
@@ -4449,11 +4449,11 @@
       "number": "018/172",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 11.61,
+      "live_price": 5.83,
       "wb_price": 28.0,
-      "target_buy": 9.29,
-      "target_sell": 11.03,
-      "score": 58,
+      "target_buy": 4.66,
+      "target_sell": 5.54,
+      "score": 59,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swshp/SWSH262.png"
     },
@@ -4464,10 +4464,10 @@
       "number": "TG30/TG30",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 103.19,
       "wb_price": 35.0,
-      "target_buy": 28.0,
-      "target_sell": 33.25,
+      "target_buy": 82.55,
+      "target_sell": 98.03,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh8/269.png"
@@ -4479,10 +4479,10 @@
       "number": "TG29/TG30",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 435.07,
       "wb_price": 28.0,
-      "target_buy": 22.4,
-      "target_sell": 26.6,
+      "target_buy": 348.06,
+      "target_sell": 413.32,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh8/271.png"
@@ -4509,10 +4509,10 @@
       "number": "TG07/TG30",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 498.9,
       "wb_price": 22.0,
-      "target_buy": 17.6,
-      "target_sell": 20.9,
+      "target_buy": 399.12,
+      "target_sell": 473.95,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/bw11/114.png"
@@ -4560,7 +4560,7 @@
       "target_sell": 23.75,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/swsh10/39.png"
     },
     {
       "id": "B017",
@@ -4575,7 +4575,7 @@
       "target_sell": 23.75,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/swsh10/113.png"
     },
     {
       "id": "B018",
@@ -4665,7 +4665,7 @@
       "target_sell": 137.7,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/swsh6/46.png"
     },
     {
       "id": "M104",
@@ -4860,7 +4860,7 @@
       "target_sell": 1313.38,
       "score": 44,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hpgpcpsd42huitud/240.jpg"
     },
     {
       "id": "V802",
@@ -4875,7 +4875,7 @@
       "target_sell": 336.2,
       "score": 46,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg"
     },
     {
       "id": "V803",
@@ -4890,7 +4890,7 @@
       "target_sell": 280.25,
       "score": 46,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/jw45qdlqbx652hmf/240.jpg"
     },
     {
       "id": "V804",
@@ -4905,7 +4905,7 @@
       "target_sell": 133.69,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/240.jpg"
     },
     {
       "id": "V805",
@@ -4920,7 +4920,7 @@
       "target_sell": 209.0,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/edi66k3j3htnzmqn/240.jpg"
     },
     {
       "id": "V806",
@@ -4935,7 +4935,7 @@
       "target_sell": 180.5,
       "score": 46,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/reffd4cefcefd053936849b85677b21fcc164bf9fc82cd5e080fa91df29d49f1a83/60.jpg"
     },
     {
       "id": "V807",
@@ -4950,7 +4950,7 @@
       "target_sell": 232.19,
       "score": 46,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/589d190e6f58444390da3104132dad3ab64fc5d70ecb9da2922a10732c192c34/240.jpg"
     },
     {
       "id": "V808",
@@ -4965,7 +4965,7 @@
       "target_sell": 824.05,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/8f5089e3fdf8cbc1847df3bbc8d1a3ba1a3ac227a21c149e97cd0f642e252f34/240.jpg"
     },
     {
       "id": "V809",
@@ -4980,7 +4980,7 @@
       "target_sell": 322.94,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/7d8d5ae3dee91d23c5130c69e9dfd8e2135ba5fc099bf7a1972789321d54fe3a/240.jpg"
     },
     {
       "id": "V810",
@@ -4989,13 +4989,13 @@
       "number": "20/75",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": 26.994999999999997,
+      "live_price": 110.0,
       "wb_price": 110.0,
-      "target_buy": 21.6,
-      "target_sell": 25.65,
-      "score": 60,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 88.0,
+      "target_sell": 104.5,
+      "score": 48,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/09616703aa9076bf12794ceae4f79c2a754c1d73404e0d074d6d88f5927fb6b0/240.jpg"
     },
     {
       "id": "V811",
@@ -5010,7 +5010,7 @@
       "target_sell": 118.75,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/72baeee84904f7fc2e754c32ee7c64745a9f34930a328360506cdb3428b0253a/240.jpg"
     },
     {
       "id": "V812",
@@ -5025,7 +5025,7 @@
       "target_sell": 10677.19,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/bd96c0864982e5728f6865cb53b48cef4ff034eae52a496e594c40eca129a79a/240.jpg"
     },
     {
       "id": "V813",
@@ -5040,7 +5040,7 @@
       "target_sell": 361.0,
       "score": 61,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/qpo3i3mlmiezitvq/60.jpg"
     },
     {
       "id": "V814",
@@ -5049,13 +5049,13 @@
       "number": "146/144",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 2200.0,
       "wb_price": 2200.0,
       "target_buy": 1760.0,
       "target_sell": 2090.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg"
     },
     {
       "id": "V815",
@@ -5064,11 +5064,11 @@
       "number": "Gold Star",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": 7999.0,
+      "live_price": 880.0,
       "wb_price": 880.0,
-      "target_buy": 6399.2,
-      "target_sell": 7599.05,
-      "score": 49,
+      "target_buy": 704.0,
+      "target_sell": 836.0,
+      "score": 50,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/neo2/1.png"
     },
@@ -5079,10 +5079,10 @@
       "number": "JP",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 876.48,
       "wb_price": 18.0,
-      "target_buy": 14.4,
-      "target_sell": 17.1,
+      "target_buy": 701.18,
+      "target_sell": 832.66,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ex6/105.png"
@@ -5094,10 +5094,10 @@
       "number": "JP",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 413.45,
       "wb_price": 14.0,
-      "target_buy": 11.2,
-      "target_sell": 13.3,
+      "target_buy": 330.76,
+      "target_sell": 392.78,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv4pt5/232.png"
@@ -5115,7 +5115,7 @@
       "target_sell": 27.63,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/e6cbcf4747f46d29824eecb3c2477ec37ca280e564b48b3e299f7f84dae2f2b6/60.jpg"
     },
     {
       "id": "JB04",
@@ -5130,7 +5130,7 @@
       "target_sell": 13.21,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/2fu3e6vrasznpp3j/240.jpg"
     },
     {
       "id": "JB05",
@@ -5145,7 +5145,7 @@
       "target_sell": 5.7,
       "score": 58,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/5b79e524aa8aa5f9e9a74de180e6869eddebdf8cfa4610c7661890e147a0b95f/240.jpg"
     },
     {
       "id": "JB06",
@@ -5154,10 +5154,10 @@
       "number": "JP",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 93.2,
       "wb_price": 8.0,
-      "target_buy": 6.4,
-      "target_sell": 7.6,
+      "target_buy": 74.56,
+      "target_sell": 88.54,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/bwp/BW97.png"
@@ -5169,10 +5169,10 @@
       "number": "JP",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 422.5,
       "wb_price": 18.0,
-      "target_buy": 14.4,
-      "target_sell": 17.1,
+      "target_buy": 338.0,
+      "target_sell": 401.38,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh12/202.png"
@@ -5184,10 +5184,10 @@
       "number": "JP",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 282.68,
       "wb_price": 15.0,
-      "target_buy": 12.0,
-      "target_sell": 14.25,
+      "target_buy": 226.14,
+      "target_sell": 268.55,
       "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh12pt5gg/GG44.png"
@@ -5295,7 +5295,7 @@
       "target_sell": 2.84,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c3qo5ca6kugjskya/60.jpg"
     },
     {
       "id": "S208",
@@ -5310,7 +5310,7 @@
       "target_sell": 201.31,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "S209",
@@ -5400,7 +5400,7 @@
       "target_sell": 304.0,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/3a276e35f46ccd9c8600887aa08763db0853a9a75dbf2ba4ea65d1159c10d49e/240.jpg"
     },
     {
       "id": "S215",
@@ -5415,7 +5415,7 @@
       "target_sell": 47.49,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/alaqmjyp3dxtyhzi/240.jpg"
     },
     {
       "id": "D01",
@@ -5430,7 +5430,7 @@
       "target_sell": 47.5,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/kl2i7msts33pdwbh/240.jpg"
     },
     {
       "id": "D02",
@@ -5445,7 +5445,7 @@
       "target_sell": 47.49,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/apc3j2kazb4kuf43/240.jpg"
     },
     {
       "id": "D03",
@@ -5469,13 +5469,13 @@
       "number": "Pack",
       "variant": "Sealed",
       "tier": "T3",
-      "live_price": null,
+      "live_price": 250.74,
       "wb_price": 18.0,
-      "target_buy": 14.4,
-      "target_sell": 17.1,
+      "target_buy": 200.59,
+      "target_sell": 238.2,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/qroijvdazpg52cuh/60.jpg"
     },
     {
       "id": "D05",
@@ -5490,7 +5490,7 @@
       "target_sell": 176.1,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/7654003fb731717598d267d87c823c64be6398128a35dbe263db9ef98dff9d03/60.jpg"
     },
     {
       "id": "D06",
@@ -5505,7 +5505,7 @@
       "target_sell": 52.25,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ykd7lfo7cur3mhh7/240.jpg"
     },
     {
       "id": "D07",
@@ -5520,7 +5520,7 @@
       "target_sell": 61.75,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/aovdfqgyeftmekpl/240.jpg"
     },
     {
       "id": "D08",
@@ -5535,7 +5535,7 @@
       "target_sell": 7.66,
       "score": 60,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/60.jpg"
     },
     {
       "id": "X101",
@@ -5550,7 +5550,7 @@
       "target_sell": 8.55,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/sv9/53.png"
     },
     {
       "id": "X102",
@@ -5565,7 +5565,7 @@
       "target_sell": 5.7,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/sv9/97.png"
     },
     {
       "id": "X103",
@@ -5739,10 +5739,10 @@
       "number": "265/191",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 1493.04,
       "wb_price": 9.0,
-      "target_buy": 7.2,
-      "target_sell": 8.55,
+      "target_buy": 1194.43,
+      "target_sell": 1418.39,
       "score": 55,
       "signal": "HOLD",
       "image": null
@@ -6075,7 +6075,7 @@
       "target_sell": 26.61,
       "score": 66,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/a2d1db3fe118113f605cada5ca0d3bc169722057c6a9637f47bd3eae6c2f451b/240.jpg"
     },
     {
       "id": "X137",
@@ -6165,7 +6165,7 @@
       "target_sell": 38.94,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/4b5fnjqg6t2vt5ew/240.jpg"
     },
     {
       "id": "X143",
@@ -6180,7 +6180,7 @@
       "target_sell": 176.1,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/7654003fb731717598d267d87c823c64be6398128a35dbe263db9ef98dff9d03/60.jpg"
     },
     {
       "id": "X144",
@@ -6195,7 +6195,7 @@
       "target_sell": 45.71,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/5ca5b0a399db5adf7337ad8019bd27ac791b4620443ec1298900978fe8e8fcd7/240.jpg"
     },
     {
       "id": "X145",
@@ -6204,13 +6204,13 @@
       "number": "Tin",
       "variant": "Sealed",
       "tier": "T3",
-      "live_price": null,
+      "live_price": 240.43,
       "wb_price": 18.0,
-      "target_buy": 14.4,
-      "target_sell": 17.1,
+      "target_buy": 192.34,
+      "target_sell": 228.41,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rgsh346vh3ul2h76/60.jpg"
     },
     {
       "id": "X146",
@@ -6240,7 +6240,7 @@
       "target_sell": 74.1,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/it2f4kt6owa3oucf/60.jpg"
     },
     {
       "id": "X148",
@@ -6255,7 +6255,7 @@
       "target_sell": 71.25,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/lqchalmdl6wrbpss/60.jpg"
     },
     {
       "id": "X149",
@@ -6270,7 +6270,7 @@
       "target_sell": 228.41,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rgsh346vh3ul2h76/60.jpg"
     },
     {
       "id": "X150",
@@ -6285,7 +6285,7 @@
       "target_sell": 7.66,
       "score": 65,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/60.jpg"
     },
     {
       "id": "X151",
@@ -6459,10 +6459,10 @@
       "number": "TG24/TG30",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 5.05,
+      "live_price": 2.56,
       "wb_price": 14.0,
-      "target_buy": 4.04,
-      "target_sell": 4.8,
+      "target_buy": 2.05,
+      "target_sell": 2.43,
       "score": 63,
       "signal": "BUY",
       "image": "https://images.pokemontcg.io/swsh4/192.png"
@@ -6525,7 +6525,7 @@
       "target_sell": 87.88,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/240.jpg"
     },
     {
       "id": "V902",
@@ -6540,7 +6540,7 @@
       "target_sell": 760.0,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hpgpcpsd42huitud/240.jpg"
     },
     {
       "id": "V903",
@@ -6555,7 +6555,7 @@
       "target_sell": 214.57,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg"
     },
     {
       "id": "V904",
@@ -6570,7 +6570,7 @@
       "target_sell": 188.81,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/jw45qdlqbx652hmf/240.jpg"
     },
     {
       "id": "V905",
@@ -6585,7 +6585,7 @@
       "target_sell": 136.32,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c377255c9193086af0d715d279d4fda50021ddd332977ac5974dd5bd004e695c/240.jpg"
     },
     {
       "id": "V906",
@@ -6600,7 +6600,7 @@
       "target_sell": 78.16,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/va2mjhk5v2rtxxe3/240.jpg"
     },
     {
       "id": "V907",
@@ -6615,7 +6615,7 @@
       "target_sell": 57.47,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/47d59467ece3bf922c56e3d649493160dd86c45252e7895a78693de79d34b72d/240.jpg"
     },
     {
       "id": "V908",
@@ -6630,7 +6630,7 @@
       "target_sell": 97.43,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/416dd89a3567bdca9fbccd2a751c54557bd9cf2210351de3e8913949659c6be3/240.jpg"
     },
     {
       "id": "V909",
@@ -6645,7 +6645,7 @@
       "target_sell": 65.6,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/e31d05739c6a5449f22f91f25332c068c07a768deac903c6df7f70988f42df7b/240.jpg"
     },
     {
       "id": "V910",
@@ -6660,7 +6660,7 @@
       "target_sell": 106.88,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/91aa3156232af474ab31532da48755643508b4ba4039ddb1989a3f933b70e118/60.jpg"
     },
     {
       "id": "V911",
@@ -6675,7 +6675,7 @@
       "target_sell": 57.0,
       "score": 47,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/90a71879c545bc03fb68e55744b2fb845ef4af2c25360b72410d7f8a6f9c3267/240.jpg"
     },
     {
       "id": "V912",
@@ -6690,7 +6690,7 @@
       "target_sell": 69.75,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ub7hurj6g3mqkl5f/240.jpg"
     },
     {
       "id": "V913",
@@ -6705,7 +6705,7 @@
       "target_sell": 83.12,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ywmwry3xp24ylmc4/240.jpg"
     },
     {
       "id": "V914",
@@ -6720,7 +6720,7 @@
       "target_sell": 66.49,
       "score": 48,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/548a35b585a2a50ad54d63bc2f5af5582d72f5bb53015b910299d38c50d7f68c/240.jpg"
     },
     {
       "id": "V915",
@@ -6735,7 +6735,7 @@
       "target_sell": 105.3,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/69fc4a31bea50863341ef21ae87bdb487a377ab96612ddd2ebc39d0641748b8c/240.jpg"
     },
     {
       "id": "V916",
@@ -6750,7 +6750,7 @@
       "target_sell": 80.6,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c68de3d4f63adc0f7f641ea513dd197356860fc3326d955def5c17c70052bcfc/240.jpg"
     },
     {
       "id": "X201",
@@ -6765,7 +6765,7 @@
       "target_sell": 137.7,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/swsh6/46.png"
     },
     {
       "id": "X202",
@@ -7080,7 +7080,7 @@
       "target_sell": 209.0,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/p3vtbhdudcamcxse/60.jpg"
     },
     {
       "id": "X223",
@@ -7095,7 +7095,7 @@
       "target_sell": 74.1,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/it2f4kt6owa3oucf/60.jpg"
     },
     {
       "id": "X224",
@@ -7110,7 +7110,7 @@
       "target_sell": 534.26,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "X225",
@@ -7125,7 +7125,7 @@
       "target_sell": 123.5,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "X226",
@@ -7140,7 +7140,7 @@
       "target_sell": 228.41,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rgsh346vh3ul2h76/60.jpg"
     },
     {
       "id": "X227",
@@ -7155,7 +7155,7 @@
       "target_sell": 565.25,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/230e99e882ea1a4fad096878c14b9f78a8c6e1ba3da1ea8032db6062439bbbae/240.jpg"
     },
     {
       "id": "X228",
@@ -7170,7 +7170,7 @@
       "target_sell": 707.02,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gd6mivft4qcajxyo/240.jpg"
     },
     {
       "id": "X229",
@@ -7185,7 +7185,7 @@
       "target_sell": 446.97,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c1cd5f96c2f1776e6e5e8f549ffd3d066aff2439eac8fc4fdfc022abc27d6971/240.jpg"
     },
     {
       "id": "X230",
@@ -7200,7 +7200,7 @@
       "target_sell": 356.25,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ugsxjoig7mzehidq/240.jpg"
     },
     {
       "id": "X231",
@@ -7215,7 +7215,7 @@
       "target_sell": 2722.82,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hpgpcpsd42huitud/240.jpg"
     },
     {
       "id": "X232",
@@ -7230,7 +7230,7 @@
       "target_sell": 583.13,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/589d190e6f58444390da3104132dad3ab64fc5d70ecb9da2922a10732c192c34/240.jpg"
     },
     {
       "id": "X233",
@@ -7245,7 +7245,7 @@
       "target_sell": 611.09,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/bz35k24srfg6jbvn/240.jpg"
     },
     {
       "id": "X234",
@@ -7260,7 +7260,7 @@
       "target_sell": 251.75,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/snmsijxrd25ytvhh/240.jpg"
     },
     {
       "id": "X235",
@@ -7275,7 +7275,7 @@
       "target_sell": 188.57,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/39dd6f72a724d7107d1ba02ff7272cb42f3ace9bb9037c39d2b491ab69f632e9/240.jpg"
     },
     {
       "id": "X236",
@@ -7290,7 +7290,7 @@
       "target_sell": 143.63,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0d1bace55eaa0d61426fb31faadc85b9d9a595a5a6b0fd2b9f469e242c01e5a8/240.jpg"
     },
     {
       "id": "X237",
@@ -7305,7 +7305,7 @@
       "target_sell": 87.88,
       "score": 60,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/60.jpg"
     },
     {
       "id": "X238",
@@ -7320,7 +7320,7 @@
       "target_sell": 209.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/a7152ca91d4d2b2251e1c0bb3280353bf9cad50600ae72d8679aac62efb723b5/240.jpg"
     },
     {
       "id": "X239",
@@ -7335,7 +7335,7 @@
       "target_sell": 2039.53,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/8f5089e3fdf8cbc1847df3bbc8d1a3ba1a3ac227a21c149e97cd0f642e252f34/240.jpg"
     },
     {
       "id": "X240",
@@ -7350,7 +7350,7 @@
       "target_sell": 45.12,
       "score": 62,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/428a647f1334c50836afe46890823a8167a7921aaf0269613889abe2789eb2a7/60.jpg"
     },
     {
       "id": "X241",
@@ -7359,13 +7359,13 @@
       "number": "148/147",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": 2088.32,
+      "live_price": 240.0,
       "wb_price": 240.0,
-      "target_buy": 1670.66,
-      "target_sell": 1983.9,
+      "target_buy": 192.0,
+      "target_sell": 228.0,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/e87a36a0e4384e91810b9734189257f340fe7cffbb50d1fb30ff1e6566021ba5/60.jpg"
     },
     {
       "id": "X242",
@@ -7380,7 +7380,7 @@
       "target_sell": 67.36,
       "score": 64,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/dqv56jtl6eron3m4/60.jpg"
     },
     {
       "id": "X243",
@@ -7395,7 +7395,7 @@
       "target_sell": 361.0,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/qpo3i3mlmiezitvq/60.jpg"
     },
     {
       "id": "X301",
@@ -7470,7 +7470,7 @@
       "target_sell": 82.64,
       "score": 67,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/a2d1db3fe118113f605cada5ca0d3bc169722057c6a9637f47bd3eae6c2f451b/240.jpg"
     },
     {
       "id": "X306",
@@ -7545,7 +7545,7 @@
       "target_sell": 104.5,
       "score": 64,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/27bvljvln66ixpot/60.jpg"
     },
     {
       "id": "X311",
@@ -7560,7 +7560,7 @@
       "target_sell": 719.74,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/eq7gov42b66gh3lg/60.jpg"
     },
     {
       "id": "X312",
@@ -7590,7 +7590,7 @@
       "target_sell": 161.5,
       "score": 61,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "X314",
@@ -7605,7 +7605,7 @@
       "target_sell": 361.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/sn4ime7o52fbj6th/60.jpg"
     },
     {
       "id": "X315",
@@ -7620,7 +7620,7 @@
       "target_sell": 534.26,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "X316",
@@ -7635,7 +7635,7 @@
       "target_sell": 275.5,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "X317",
@@ -7650,7 +7650,7 @@
       "target_sell": 534.26,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "X318",
@@ -7665,7 +7665,7 @@
       "target_sell": 534.26,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "X319",
@@ -7695,7 +7695,7 @@
       "target_sell": 201.31,
       "score": 62,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "X321",
@@ -7710,7 +7710,7 @@
       "target_sell": 4085.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ym4hvnapxhl5iuny/240.jpg"
     },
     {
       "id": "X322",
@@ -7725,7 +7725,7 @@
       "target_sell": 1092.5,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0f6ceabe0130339374548abe87c18eb15bdb5b5b4dd3fb3fce8f3b72798ea32a/240.jpg"
     },
     {
       "id": "X323",
@@ -7734,13 +7734,13 @@
       "number": "4/102",
       "variant": "PSA 7",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 380.0,
       "wb_price": 380.0,
       "target_buy": 304.0,
       "target_sell": 361.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg"
     },
     {
       "id": "X324",
@@ -7755,7 +7755,7 @@
       "target_sell": 379.99,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/2f37c729f4ae91cb0c9013f9549d8a53096e707be680dcc9b4a3d99c89e60836/240.jpg"
     },
     {
       "id": "X325",
@@ -7770,7 +7770,7 @@
       "target_sell": 1448.75,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ho5lggvzrgauqotu/240.jpg"
     },
     {
       "id": "X326",
@@ -7779,7 +7779,7 @@
       "number": "107/105",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 480.0,
       "wb_price": 480.0,
       "target_buy": 384.0,
       "target_sell": 456.0,
@@ -7809,10 +7809,10 @@
       "number": "65/64",
       "variant": "PSA 9",
       "tier": "T1",
-      "live_price": 2800.0,
+      "live_price": 410.0,
       "wb_price": 410.0,
-      "target_buy": 2240.0,
-      "target_sell": 2660.0,
+      "target_buy": 328.0,
+      "target_sell": 389.5,
       "score": 52,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/neo3/65.png"
@@ -7824,13 +7824,13 @@
       "number": "146/144",
       "variant": "PSA 7",
       "tier": "T1",
-      "live_price": 118.88,
+      "live_price": 380.0,
       "wb_price": 380.0,
-      "target_buy": 95.1,
-      "target_sell": 112.94,
-      "score": 66,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 304.0,
+      "target_sell": 361.0,
+      "score": 54,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg"
     },
     {
       "id": "X401",
@@ -7905,7 +7905,7 @@
       "target_sell": 551.0,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/17f963bc971005f93054eff80eee60259616ab0485779d42830ea3f37c4de578/60.jpg"
     },
     {
       "id": "X411",
@@ -7920,7 +7920,7 @@
       "target_sell": 2722.82,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hpgpcpsd42huitud/240.jpg"
     },
     {
       "id": "X412",
@@ -7935,7 +7935,7 @@
       "target_sell": 4085.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ym4hvnapxhl5iuny/240.jpg"
     },
     {
       "id": "X413",
@@ -7944,13 +7944,13 @@
       "number": "4/102",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 920.0,
       "wb_price": 920.0,
       "target_buy": 736.0,
       "target_sell": 874.0,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg"
     },
     {
       "id": "X414",
@@ -7959,13 +7959,13 @@
       "number": "16/17",
       "variant": "PSA 9",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 720.0,
       "wb_price": 720.0,
       "target_buy": 576.0,
       "target_sell": 684.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/2ed0a8e8f070e2c9860e57a9d52d0f9627aa59aef90670f9b8b8f856a2231f30/60.jpg"
     },
     {
       "id": "X415",
@@ -7974,13 +7974,13 @@
       "number": "Gold Star",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 940.0,
       "wb_price": 940.0,
       "target_buy": 752.0,
       "target_sell": 893.0,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/7bxilsmsywql2lf4/240.jpg"
     },
     {
       "id": "X416",
@@ -7989,13 +7989,13 @@
       "number": "Gold Star",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 580.0,
       "wb_price": 580.0,
       "target_buy": 464.0,
       "target_sell": 551.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/1177e9f8d40b16f6d16f44d8994f7aee74f5e9b75d82d49f81b43788c24acb20/60.jpg"
     },
     {
       "id": "X417",
@@ -8010,7 +8010,7 @@
       "target_sell": 551.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/cd75c84cf7d178d23d8ab220800389cc0c970863f57951f33abd62b049670bb1/60.jpg"
     },
     {
       "id": "X418",
@@ -8019,13 +8019,13 @@
       "number": "DP37",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": 52.18,
+      "live_price": 520.0,
       "wb_price": 520.0,
-      "target_buy": 41.74,
-      "target_sell": 49.57,
-      "score": 64,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 416.0,
+      "target_sell": 494.0,
+      "score": 52,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/61debdc6f7850ae208ce17ef08638c1094d1da526b95579fdff4de58b5a5c368/60.jpg"
     },
     {
       "id": "X419",
@@ -8034,13 +8034,13 @@
       "number": "9/111",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": 4573.8,
+      "live_price": 750.0,
       "wb_price": 750.0,
-      "target_buy": 3659.04,
-      "target_sell": 4345.11,
+      "target_buy": 600.0,
+      "target_sell": 712.5,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/b51a881854783a5337801f7b6640f4aa387a8df72537d1719719aadaf37237a1/240.jpg"
     },
     {
       "id": "X420",
@@ -8049,13 +8049,13 @@
       "number": "146/144",
       "variant": "PSA 8",
       "tier": "T1",
-      "live_price": 118.88,
+      "live_price": 760.0,
       "wb_price": 760.0,
-      "target_buy": 95.1,
-      "target_sell": 112.94,
-      "score": 64,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 608.0,
+      "target_sell": 722.0,
+      "score": 52,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg"
     },
     {
       "id": "X431",
@@ -8070,7 +8070,7 @@
       "target_sell": 2432.82,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/1d53b2174ffd9baeadc62527270258c117f0a5087894ecef387ff96810e4eaa2/240.jpg"
     },
     {
       "id": "X432",
@@ -8100,7 +8100,7 @@
       "target_sell": 1348.74,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/o4gjgwo6iu7jvzly/60.jpg"
     },
     {
       "id": "X434",
@@ -8115,7 +8115,7 @@
       "target_sell": 534.26,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "X435",
@@ -8130,7 +8130,7 @@
       "target_sell": 534.26,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "X501",
@@ -8145,7 +8145,7 @@
       "target_sell": 29822.97,
       "score": 49,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg"
     },
     {
       "id": "X502",
@@ -8154,13 +8154,13 @@
       "number": "4/102",
       "variant": "BGS 9",
       "tier": "T1",
-      "live_price": 55888.0,
+      "live_price": 29867.5,
       "wb_price": 16000.0,
-      "target_buy": 44710.4,
-      "target_sell": 53093.6,
+      "target_buy": 23894.0,
+      "target_sell": 28374.12,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg"
     },
     {
       "id": "X503",
@@ -8175,7 +8175,7 @@
       "target_sell": 67450.3,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/b51a881854783a5337801f7b6640f4aa387a8df72537d1719719aadaf37237a1/240.jpg"
     },
     {
       "id": "X504",
@@ -8184,13 +8184,13 @@
       "number": "146/144",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 38000.0,
       "wb_price": 38000.0,
       "target_buy": 30400.0,
       "target_sell": 36100.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg"
     },
     {
       "id": "X505",
@@ -8199,13 +8199,13 @@
       "number": "100/101",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": 7231.98,
+      "live_price": 18000.0,
       "wb_price": 18000.0,
-      "target_buy": 5785.58,
-      "target_sell": 6870.38,
-      "score": 67,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 14400.0,
+      "target_sell": 17100.0,
+      "score": 55,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/60.jpg"
     },
     {
       "id": "X506",
@@ -8214,13 +8214,13 @@
       "number": "16/17",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": 385.0,
+      "live_price": 16000.0,
       "wb_price": 16000.0,
-      "target_buy": 308.0,
-      "target_sell": 365.75,
-      "score": 67,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 12800.0,
+      "target_sell": 15200.0,
+      "score": 55,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/2ed0a8e8f070e2c9860e57a9d52d0f9627aa59aef90670f9b8b8f856a2231f30/60.jpg"
     },
     {
       "id": "X507",
@@ -8229,13 +8229,13 @@
       "number": "17/17",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": 400.0,
+      "live_price": 22000.0,
       "wb_price": 22000.0,
-      "target_buy": 320.0,
-      "target_sell": 380.0,
-      "score": 70,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 17600.0,
+      "target_sell": 20900.0,
+      "score": 58,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/18a487e2ef2a60bb7342532094af9d7656a6a2d1797bc10b848b37a64e6a5eb3/60.jpg"
     },
     {
       "id": "X508",
@@ -8250,7 +8250,7 @@
       "target_sell": 187398.43,
       "score": 65,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg"
     },
     {
       "id": "X509",
@@ -8265,7 +8265,7 @@
       "target_sell": 304000.0,
       "score": 58,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/h72q2qv3flh6zrab/240.jpg"
     },
     {
       "id": "X510",
@@ -8280,7 +8280,7 @@
       "target_sell": 400230.23,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg"
     },
     {
       "id": "X511",
@@ -8304,13 +8304,13 @@
       "number": "105/101",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 4200.0,
       "wb_price": 4200.0,
       "target_buy": 3360.0,
       "target_sell": 3990.0,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/u5icajtukxa7poc7/60.jpg"
     },
     {
       "id": "X521",
@@ -8319,13 +8319,13 @@
       "number": "6-box case",
       "variant": "Sealed",
       "tier": "T3",
-      "live_price": null,
+      "live_price": 3400.0,
       "wb_price": 3400.0,
       "target_buy": 2720.0,
       "target_sell": 3230.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/56c641e238113f941bee25dc90e66ef5cf7e788c796e25df53a42a3da4d4cfca/60.jpg"
     },
     {
       "id": "X522",
@@ -8340,7 +8340,7 @@
       "target_sell": 1045.0,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "X523",
@@ -8355,7 +8355,7 @@
       "target_sell": 1140.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "X524",
@@ -8370,7 +8370,7 @@
       "target_sell": 1235.0,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/db0c4670ad9a680b437071e25c106e57be026f5dc0f42f4a607659a034e05cc7/60.jpg"
     },
     {
       "id": "X525",
@@ -8385,7 +8385,7 @@
       "target_sell": 534.26,
       "score": 64,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg"
     },
     {
       "id": "X526",
@@ -8394,13 +8394,13 @@
       "number": "Case",
       "variant": "Sealed",
       "tier": "T3",
-      "live_price": null,
+      "live_price": 6500.0,
       "wb_price": 6500.0,
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/56c641e238113f941bee25dc90e66ef5cf7e788c796e25df53a42a3da4d4cfca/60.jpg"
     },
     {
       "id": "X531",
@@ -8415,7 +8415,7 @@
       "target_sell": 34438.45,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/orivxucn55izr4v3/240.jpg"
     },
     {
       "id": "X532",
@@ -8430,7 +8430,7 @@
       "target_sell": 12373.33,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/y4tmxstxkimjis4u/240.jpg"
     },
     {
       "id": "X533",
@@ -8445,7 +8445,7 @@
       "target_sell": 14763.06,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/pkcplrc2rvjn7yev/240.jpg"
     },
     {
       "id": "X534",
@@ -8460,7 +8460,7 @@
       "target_sell": 7220.0,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/f4d9b697991cbf388e275605cd7be4961b8bba69eef1808e52c158c8125f839b/240.jpg"
     },
     {
       "id": "X535",
@@ -8475,7 +8475,7 @@
       "target_sell": 14284.17,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/base5/15.png"
     },
     {
       "id": "Z001",
@@ -8529,12 +8529,12 @@
       "number": "9/111",
       "variant": "PSA 9",
       "tier": "T2",
-      "live_price": 430.0,
+      "live_price": 8500.0,
       "wb_price": 8500.0,
-      "target_buy": 344.0,
-      "target_sell": 408.5,
-      "score": 68,
-      "signal": "BUY",
+      "target_buy": 6800.0,
+      "target_sell": 8075.0,
+      "score": 56,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard2/149.png"
     },
     {
@@ -8544,12 +8544,12 @@
       "number": "17/111",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 862.01,
+      "live_price": 1800.0,
       "wb_price": 1800.0,
-      "target_buy": 689.61,
-      "target_sell": 818.91,
-      "score": 69,
-      "signal": "BUY",
+      "target_buy": 1440.0,
+      "target_sell": 1710.0,
+      "score": 59,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/neo1/17.png"
     },
     {
@@ -8619,7 +8619,7 @@
       "number": "1/75",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 6500.0,
       "wb_price": 6500.0,
       "target_buy": 5200.0,
       "target_sell": 6175.0,
@@ -8634,7 +8634,7 @@
       "number": "32/75",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 5500.0,
       "wb_price": 5500.0,
       "target_buy": 4400.0,
       "target_sell": 5225.0,
@@ -8694,7 +8694,7 @@
       "number": "65/64",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 950.0,
       "wb_price": 950.0,
       "target_buy": 760.0,
       "target_sell": 902.5,
@@ -8739,7 +8739,7 @@
       "number": "5/105",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 2200.0,
       "wb_price": 2200.0,
       "target_buy": 1760.0,
       "target_sell": 2090.0,
@@ -8829,12 +8829,12 @@
       "number": "15/132",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": 249.99,
+      "live_price": 1700.0,
       "wb_price": 1700.0,
-      "target_buy": 199.99,
-      "target_sell": 237.49,
-      "score": 68,
-      "signal": "BUY",
+      "target_buy": 1360.0,
+      "target_sell": 1615.0,
+      "score": 56,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/gym2/15.png"
     },
     {
@@ -8844,12 +8844,12 @@
       "number": "5/132",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": 275.0,
+      "live_price": 1500.0,
       "wb_price": 1500.0,
-      "target_buy": 220.0,
-      "target_sell": 261.25,
-      "score": 67,
-      "signal": "BUY",
+      "target_buy": 1200.0,
+      "target_sell": 1425.0,
+      "score": 55,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/gym2/5.png"
     },
     {
@@ -8859,12 +8859,12 @@
       "number": "2/132",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": 489.5,
+      "live_price": 3500.0,
       "wb_price": 3500.0,
-      "target_buy": 391.6,
-      "target_sell": 465.02,
-      "score": 67,
-      "signal": "BUY",
+      "target_buy": 2800.0,
+      "target_sell": 3325.0,
+      "score": 55,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/gym2/2.png"
     },
     {
@@ -8889,7 +8889,7 @@
       "number": "14/132",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 4200.0,
       "wb_price": 4200.0,
       "target_buy": 3360.0,
       "target_sell": 3990.0,
@@ -8934,13 +8934,13 @@
       "number": "149/147",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 6500.0,
       "wb_price": 6500.0,
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/qpo3i3mlmiezitvq/60.jpg"
     },
     {
       "id": "Z053",
@@ -8955,7 +8955,7 @@
       "target_sell": 1284.68,
       "score": 60,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg"
     },
     {
       "id": "Z054",
@@ -8979,10 +8979,10 @@
       "number": "214/167",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 362.2,
       "wb_price": 95.0,
-      "target_buy": 76.0,
-      "target_sell": 90.25,
+      "target_buy": 289.76,
+      "target_sell": 344.09,
       "score": 52,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv6/214.png"
@@ -9054,12 +9054,12 @@
       "number": "266/193",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 55.0,
+      "live_price": 220.0,
       "wb_price": 220.0,
-      "target_buy": 44.0,
-      "target_sell": 52.25,
-      "score": 65,
-      "signal": "BUY",
+      "target_buy": 176.0,
+      "target_sell": 209.0,
+      "score": 54,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv2/269.png"
     },
     {
@@ -9384,13 +9384,13 @@
       "number": "167/131",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 146.86,
+      "live_price": 425.0,
       "wb_price": 425.0,
-      "target_buy": 117.49,
-      "target_sell": 139.52,
-      "score": 69,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 340.0,
+      "target_sell": 403.75,
+      "score": 57,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ygcn2qzjwhia6ymb/60.jpg"
     },
     {
       "id": "M205",
@@ -9405,7 +9405,7 @@
       "target_sell": 251.75,
       "score": 67,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/757f12013e07e9012a5ae3ee009a40bd5c0d6ed6e0918762ff61dfb8765c36dc/60.jpg"
     },
     {
       "id": "M206",
@@ -9420,7 +9420,7 @@
       "target_sell": 380.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/3swgb4chyqb6k72g/60.jpg"
     },
     {
       "id": "M207",
@@ -9435,7 +9435,7 @@
       "target_sell": 327.75,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/a2c65939a228a9181ef75a99d42312954296a6a805e63fa25925d41c2e8154c5/60.jpg"
     },
     {
       "id": "M208",
@@ -9444,7 +9444,7 @@
       "number": "156/131",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 165.0,
       "wb_price": 165.0,
       "target_buy": 132.0,
       "target_sell": 156.75,
@@ -9459,7 +9459,7 @@
       "number": "161/131",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 285.0,
       "wb_price": 285.0,
       "target_buy": 228.0,
       "target_sell": 270.75,
@@ -9525,7 +9525,7 @@
       "target_sell": 403.75,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/zq2xyiiiyxzzkeb6/60.jpg"
     },
     {
       "id": "M223",
@@ -9549,12 +9549,12 @@
       "number": "074/189",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 109.21,
+      "live_price": 685.0,
       "wb_price": 685.0,
-      "target_buy": 87.37,
-      "target_sell": 103.75,
-      "score": 64,
-      "signal": "BUY",
+      "target_buy": 548.0,
+      "target_sell": 650.75,
+      "score": 52,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh35/74.png"
     },
     {
@@ -9564,12 +9564,12 @@
       "number": "174/172",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 55.0,
+      "live_price": 545.0,
       "wb_price": 545.0,
-      "target_buy": 44.0,
-      "target_sell": 52.25,
-      "score": 62,
-      "signal": "BUY",
+      "target_buy": 436.0,
+      "target_sell": 517.75,
+      "score": 50,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swshp/SWSH262.png"
     },
     {
@@ -9585,7 +9585,7 @@
       "target_sell": 497.89,
       "score": 59,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/swsh11/130.png"
     },
     {
       "id": "M243",
@@ -9594,12 +9594,12 @@
       "number": "186/195",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 298.36,
+      "live_price": 750.0,
       "wb_price": 750.0,
-      "target_buy": 238.69,
-      "target_sell": 283.44,
-      "score": 63,
-      "signal": "BUY",
+      "target_buy": 600.0,
+      "target_sell": 712.5,
+      "score": 52,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh12/186.png"
     },
     {
@@ -9630,7 +9630,7 @@
       "target_sell": 187398.43,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg"
     },
     {
       "id": "V101",
@@ -9639,13 +9639,13 @@
       "number": "\u2014",
       "variant": "PSA 9",
       "tier": "T1",
-      "live_price": 46.0,
+      "live_price": 65000.0,
       "wb_price": 65000.0,
-      "target_buy": 36.8,
-      "target_sell": 43.7,
-      "score": 67,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 52000.0,
+      "target_sell": 61750.0,
+      "score": 55,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/6n2ycfr6colaeld5/240.jpg"
     },
     {
       "id": "V102",
@@ -9654,13 +9654,13 @@
       "number": "\u2014",
       "variant": "PSA 10",
       "tier": "T1",
-      "live_price": null,
+      "live_price": 4500.0,
       "wb_price": 4500.0,
       "target_buy": 3600.0,
       "target_sell": 4275.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/AMIfv96kXFbfUXCno-tbRB2bLLlHpe2OnCjDrr005CNTMdH4IE6M00T-Gaik_tPtsaGQpxIpT7FwmYyn8OpXo4WL46RY8Nq03-mEnQnH8km2rZi-c0ETiswE1g00aWXgJcqk0NNNxwttBCyg90ljvTc0Q1y3GPZq5w/60.jpg"
     },
     {
       "id": "V103",
@@ -9675,7 +9675,7 @@
       "target_sell": 17575.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/6esna7b7vltlrsxp/60.jpg"
     },
     {
       "id": "V104",
@@ -9690,7 +9690,7 @@
       "target_sell": 18857.79,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/4gn2t3ofzq3giq6w/60.jpg"
     },
     {
       "id": "D101",
@@ -9699,13 +9699,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 15000.0,
       "wb_price": 15000.0,
       "target_buy": 12000.0,
       "target_sell": 14250.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg"
     },
     {
       "id": "D102",
@@ -9714,13 +9714,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 425000.0,
       "wb_price": 425000.0,
       "target_buy": 340000.0,
       "target_sell": 403750.0,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/91749045dc974aaeaf9943a17290bb3affadda4fd4e245c1dc58f3de87a9fb10/60.jpg"
     },
     {
       "id": "D103",
@@ -9729,13 +9729,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 5500.0,
       "wb_price": 5500.0,
       "target_buy": 4400.0,
       "target_sell": 5225.0,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg"
     },
     {
       "id": "D104",
@@ -9744,13 +9744,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 4800.0,
       "wb_price": 4800.0,
       "target_buy": 3840.0,
       "target_sell": 4560.0,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg"
     },
     {
       "id": "D105",
@@ -9759,13 +9759,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 6500.0,
       "wb_price": 6500.0,
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg"
     },
     {
       "id": "D106",
@@ -9774,13 +9774,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 5200.0,
       "wb_price": 5200.0,
       "target_buy": 4160.0,
       "target_sell": 4940.0,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg"
     },
     {
       "id": "D107",
@@ -9789,13 +9789,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": 455.0,
+      "live_price": 11500.0,
       "wb_price": 11500.0,
-      "target_buy": 364.0,
-      "target_sell": 432.25,
-      "score": 68,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 9200.0,
+      "target_sell": 10925.0,
+      "score": 56,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg"
     },
     {
       "id": "D108",
@@ -9810,7 +9810,7 @@
       "target_sell": 534.26,
       "score": 64,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "D109",
@@ -9825,7 +9825,7 @@
       "target_sell": 161.5,
       "score": 68,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "D110",
@@ -9840,7 +9840,7 @@
       "target_sell": 534.26,
       "score": 67,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "D111",
@@ -9855,7 +9855,7 @@
       "target_sell": 161.5,
       "score": 60,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "D112",
@@ -9870,7 +9870,7 @@
       "target_sell": 161.5,
       "score": 68,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "D113",
@@ -9885,7 +9885,7 @@
       "target_sell": 161.5,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "D114",
@@ -9900,7 +9900,7 @@
       "target_sell": 74.1,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/it2f4kt6owa3oucf/60.jpg"
     },
     {
       "id": "D115",
@@ -9915,7 +9915,7 @@
       "target_sell": 161.5,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "D116",
@@ -9930,7 +9930,7 @@
       "target_sell": 161.5,
       "score": 67,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg"
     },
     {
       "id": "D117",
@@ -9945,7 +9945,7 @@
       "target_sell": 534.26,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "D118",
@@ -10089,11 +10089,11 @@
       "number": "265/182",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": 11.41,
+      "live_price": 5.78,
       "wb_price": 8.0,
-      "target_buy": 9.13,
-      "target_sell": 10.84,
-      "score": 52,
+      "target_buy": 4.62,
+      "target_sell": 5.49,
+      "score": 57,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv8pt5/154.png"
     },
@@ -10179,10 +10179,10 @@
       "number": "151/142",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 79.99,
       "wb_price": 4.0,
-      "target_buy": 3.2,
-      "target_sell": 3.8,
+      "target_buy": 63.99,
+      "target_sell": 75.99,
       "score": 49,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv6/205.png"
@@ -10209,10 +10209,10 @@
       "number": "175/167",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 77.04,
       "wb_price": 8.0,
-      "target_buy": 6.4,
-      "target_sell": 7.6,
+      "target_buy": 61.63,
+      "target_sell": 73.19,
       "score": 52,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv6/217.png"
@@ -10260,7 +10260,7 @@
       "target_sell": 10.0,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/sv6/25.png"
     },
     {
       "id": "V219",
@@ -10275,7 +10275,7 @@
       "target_sell": 0.63,
       "score": 64,
       "signal": "BUY",
-      "image": null
+      "image": "https://images.pokemontcg.io/sv6/25.png"
     },
     {
       "id": "V220",
@@ -10290,7 +10290,7 @@
       "target_sell": 2.84,
       "score": 63,
       "signal": "BUY",
-      "image": null
+      "image": "https://images.pokemontcg.io/sv6/25.png"
     },
     {
       "id": "V250",
@@ -10485,7 +10485,7 @@
       "target_sell": 270.75,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/60.jpg"
     },
     {
       "id": "V270",
@@ -10500,7 +10500,7 @@
       "target_sell": 7588.05,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg"
     },
     {
       "id": "V271",
@@ -10515,7 +10515,7 @@
       "target_sell": 3103.95,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/jw45qdlqbx652hmf/240.jpg"
     },
     {
       "id": "V272",
@@ -10530,7 +10530,7 @@
       "target_sell": 3535.64,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/240.jpg"
     },
     {
       "id": "V273",
@@ -10545,7 +10545,7 @@
       "target_sell": 2223.0,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c377255c9193086af0d715d279d4fda50021ddd332977ac5974dd5bd004e695c/240.jpg"
     },
     {
       "id": "V274",
@@ -10560,7 +10560,7 @@
       "target_sell": 2143.44,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/416dd89a3567bdca9fbccd2a751c54557bd9cf2210351de3e8913949659c6be3/240.jpg"
     },
     {
       "id": "Z100",
@@ -10599,13 +10599,13 @@
       "number": "100/101",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 58723.0,
+      "live_price": 6500.0,
       "wb_price": 6500.0,
-      "target_buy": 46978.4,
-      "target_sell": 55786.85,
+      "target_buy": 5200.0,
+      "target_sell": 6175.0,
       "score": 58,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/240.jpg"
     },
     {
       "id": "Z103",
@@ -10614,13 +10614,13 @@
       "number": "101/101",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 26839.27,
+      "live_price": 1800.0,
       "wb_price": 1800.0,
-      "target_buy": 21471.42,
-      "target_sell": 25497.31,
+      "target_buy": 1440.0,
+      "target_sell": 1710.0,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/1177e9f8d40b16f6d16f44d8994f7aee74f5e9b75d82d49f81b43788c24acb20/240.jpg"
     },
     {
       "id": "Z104",
@@ -10635,7 +10635,7 @@
       "target_sell": 1425.0,
       "score": 58,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/f6telwxirmqxhmhr/60.jpg"
     },
     {
       "id": "Z105",
@@ -10650,7 +10650,7 @@
       "target_sell": 1330.0,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/4lmguluyj3iqrhcx/60.jpg"
     },
     {
       "id": "Z106",
@@ -10659,10 +10659,10 @@
       "number": "101/110",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 3574.14,
+      "live_price": 1100.0,
       "wb_price": 1100.0,
-      "target_buy": 2859.31,
-      "target_sell": 3395.43,
+      "target_buy": 880.0,
+      "target_sell": 1045.0,
       "score": 56,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/si1/1.png"
@@ -10674,7 +10674,7 @@
       "number": "143/147",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 750.0,
       "wb_price": 750.0,
       "target_buy": 600.0,
       "target_sell": 712.5,
@@ -10689,10 +10689,10 @@
       "number": "DP41",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 7300.0,
+      "live_price": 950.0,
       "wb_price": 950.0,
-      "target_buy": 5840.0,
-      "target_sell": 6935.0,
+      "target_buy": 760.0,
+      "target_sell": 902.5,
       "score": 56,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/dp4/104.png"
@@ -10704,7 +10704,7 @@
       "number": "122/127",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 425.0,
       "wb_price": 425.0,
       "target_buy": 340.0,
       "target_sell": 403.75,
@@ -10719,7 +10719,7 @@
       "number": "125/127",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 425.0,
       "wb_price": 425.0,
       "target_buy": 340.0,
       "target_sell": 403.75,
@@ -10749,7 +10749,7 @@
       "number": "146/147",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 1450.0,
       "wb_price": 1450.0,
       "target_buy": 1160.0,
       "target_sell": 1377.5,
@@ -10770,7 +10770,7 @@
       "target_sell": 1045.0,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/2f37c729f4ae91cb0c9013f9549d8a53096e707be680dcc9b4a3d99c89e60836/240.jpg"
     },
     {
       "id": "Z140",
@@ -10779,13 +10779,13 @@
       "number": "100/102",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 7231.98,
+      "live_price": 1850.0,
       "wb_price": 1850.0,
-      "target_buy": 5785.58,
-      "target_sell": 6870.38,
+      "target_buy": 1480.0,
+      "target_sell": 1757.5,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/60.jpg"
     },
     {
       "id": "Z141",
@@ -10794,13 +10794,13 @@
       "number": "86/90",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 260.0,
+      "live_price": 1950.0,
       "wb_price": 1950.0,
-      "target_buy": 208.0,
-      "target_sell": 247.0,
-      "score": 70,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 1560.0,
+      "target_sell": 1852.5,
+      "score": 58,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/5311cd4112f598235180016fa77f16d97535b114df0e8e99a9f8a1e4242ca967/60.jpg"
     },
     {
       "id": "Z142",
@@ -10809,13 +10809,13 @@
       "number": "85/90",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 950.0,
       "wb_price": 950.0,
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/2vlqindu7c3ewpuq/60.jpg"
     },
     {
       "id": "Z143",
@@ -10830,7 +10830,7 @@
       "target_sell": 759.99,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/bf016cb852f76eb1ac56b56f5b108abea2ce18a270d43928f491206e3a5e7152/60.jpg"
     },
     {
       "id": "Z144",
@@ -10845,7 +10845,7 @@
       "target_sell": 2436.97,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/qpo3i3mlmiezitvq/60.jpg"
     },
     {
       "id": "Z145",
@@ -10854,13 +10854,13 @@
       "number": "111/123",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 137.18,
+      "live_price": 950.0,
       "wb_price": 950.0,
-      "target_buy": 109.74,
-      "target_sell": 130.32,
-      "score": 68,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 760.0,
+      "target_sell": 902.5,
+      "score": 56,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/qa24zph4ud2igr2l/60.jpg"
     },
     {
       "id": "Z160",
@@ -10869,10 +10869,10 @@
       "number": "RC4/RC25",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 3622.495,
+      "live_price": 425.0,
       "wb_price": 425.0,
-      "target_buy": 2898.0,
-      "target_sell": 3441.37,
+      "target_buy": 340.0,
+      "target_sell": 403.75,
       "score": 54,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/bw11/114.png"
@@ -10884,7 +10884,7 @@
       "number": "RC5/RC25",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 425.0,
       "wb_price": 425.0,
       "target_buy": 340.0,
       "target_sell": 403.75,
@@ -10899,13 +10899,13 @@
       "number": "BW79",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": 152.0,
+      "live_price": 850.0,
       "wb_price": 850.0,
-      "target_buy": 121.6,
-      "target_sell": 144.4,
-      "score": 69,
-      "signal": "BUY",
-      "image": null
+      "target_buy": 680.0,
+      "target_sell": 807.5,
+      "score": 57,
+      "signal": "HOLD",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/1c632fbb26b49747017244d0ab79dfc796082f7c262d2418099f8f9993c120ac/60.jpg"
     },
     {
       "id": "Z163",
@@ -10929,13 +10929,13 @@
       "number": "100/106",
       "variant": "PSA 10",
       "tier": "T2",
-      "live_price": null,
+      "live_price": 650.0,
       "wb_price": 650.0,
       "target_buy": 520.0,
       "target_sell": 617.5,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/cf83ee46d7865a5b82edb57a4b20fe676b5f961bd12908cfc5aa7ab868a7f0bd/240.jpg"
     },
     {
       "id": "Z181",
@@ -10950,7 +10950,7 @@
       "target_sell": 717.23,
       "score": 57,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/240.jpg"
     },
     {
       "id": "Z182",
@@ -10965,7 +10965,7 @@
       "target_sell": 748.3,
       "score": 52,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/c296bf34d4a6da645044ee4cb14027cece280062783745e7be4f643131b834d5/60.jpg"
     },
     {
       "id": "Z200",
@@ -10974,13 +10974,13 @@
       "number": "150/147",
       "variant": "PSA 10",
       "tier": "T3",
-      "live_price": null,
+      "live_price": 550.0,
       "wb_price": 550.0,
       "target_buy": 440.0,
       "target_sell": 522.5,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/527754e6c8e1d55202af70e15358d6f355bf40f00d10ddb1c892458ed8a94d6b/240.jpg"
     },
     {
       "id": "Z201",
@@ -10995,7 +10995,7 @@
       "target_sell": 1329.52,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/556d3eab00d5ea76807dad43a619f39614dcb774d5e4334f97567526fed14741/60.jpg"
     },
     {
       "id": "Z202",
@@ -11010,7 +11010,7 @@
       "target_sell": 403.75,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/60.jpg"
     },
     {
       "id": "Z203",
@@ -11025,7 +11025,7 @@
       "target_sell": 598.5,
       "score": 50,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/sm10/20.png"
     },
     {
       "id": "Z204",
@@ -11040,7 +11040,7 @@
       "target_sell": 1175.69,
       "score": 51,
       "signal": "HOLD",
-      "image": null
+      "image": "https://images.pokemontcg.io/sm11/71.png"
     },
     {
       "id": "Z220",
@@ -11094,11 +11094,11 @@
       "number": "SWSH216-219",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 42.43,
+      "live_price": 195.0,
       "wb_price": 195.0,
-      "target_buy": 33.94,
-      "target_sell": 40.31,
-      "score": 59,
+      "target_buy": 156.0,
+      "target_sell": 185.25,
+      "score": 47,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/swsh8/251.png"
     },
@@ -11139,12 +11139,12 @@
       "number": "239/191",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 69.33,
+      "live_price": 285.0,
       "wb_price": 285.0,
-      "target_buy": 55.46,
-      "target_sell": 65.86,
-      "score": 66,
-      "signal": "BUY",
+      "target_buy": 228.0,
+      "target_sell": 270.75,
+      "score": 54,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv8/239.png"
     },
     {
@@ -11205,7 +11205,7 @@
       "target_sell": 57.0,
       "score": 62,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/490abada9a74aba75bc8e852d08451200750043d94c6695a8f030a8f8df6d29b/240.jpg"
     },
     {
       "id": "W013",
@@ -11220,7 +11220,7 @@
       "target_sell": 57.0,
       "score": 61,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/ede8e15ddb25b7bf64b5ce4f3756c5863e17e74a21107352827c8d1859dd3236/240.jpg"
     },
     {
       "id": "W014",
@@ -11235,7 +11235,7 @@
       "target_sell": 48.92,
       "score": 61,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/9ab1a78764cf1f0b3815bbccded46377f08c2c43b65ffd417d4209937c3ab493/60.jpg"
     },
     {
       "id": "W015",
@@ -11259,12 +11259,12 @@
       "number": "175/167",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 53.18,
+      "live_price": 245.0,
       "wb_price": 245.0,
-      "target_buy": 42.54,
-      "target_sell": 50.52,
-      "score": 66,
-      "signal": "BUY",
+      "target_buy": 196.0,
+      "target_sell": 232.75,
+      "score": 54,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv6/217.png"
     },
     {
@@ -11274,12 +11274,12 @@
       "number": "177/167",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 48.43,
+      "live_price": 195.0,
       "wb_price": 195.0,
-      "target_buy": 38.74,
-      "target_sell": 46.01,
-      "score": 64,
-      "signal": "BUY",
+      "target_buy": 156.0,
+      "target_sell": 185.25,
+      "score": 52,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv6/218.png"
     },
     {
@@ -11379,12 +11379,12 @@
       "number": "184/131",
       "variant": "PSA 10",
       "tier": "T5",
-      "live_price": 104.5,
+      "live_price": 285.0,
       "wb_price": 285.0,
-      "target_buy": 83.6,
-      "target_sell": 99.27,
-      "score": 67,
-      "signal": "BUY",
+      "target_buy": 228.0,
+      "target_sell": 270.75,
+      "score": 55,
+      "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ex11/109.png"
     },
     {
@@ -11640,7 +11640,7 @@
       "target_sell": 201.31,
       "score": 64,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg"
     },
     {
       "id": "DD001",
@@ -11655,7 +11655,7 @@
       "target_sell": 534.26,
       "score": 68,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD002",
@@ -11664,13 +11664,13 @@
       "number": "\u2014",
       "variant": "Sealed",
       "tier": "T2",
-      "live_price": 1200.0,
+      "live_price": 145.0,
       "wb_price": 145.0,
-      "target_buy": 960.0,
-      "target_sell": 1140.0,
+      "target_buy": 116.0,
+      "target_sell": 137.75,
       "score": 58,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/46836f7c135e706c48208e9dcfd759397baed9a68a4dd6cc6c23335ca84f7610/60.jpg"
     },
     {
       "id": "DD003",
@@ -11685,7 +11685,7 @@
       "target_sell": 534.26,
       "score": 62,
       "signal": "BUY",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD004",
@@ -11700,7 +11700,7 @@
       "target_sell": 534.26,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD005",
@@ -11715,7 +11715,7 @@
       "target_sell": 534.26,
       "score": 58,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD006",
@@ -11730,7 +11730,7 @@
       "target_sell": 270.75,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/lqchalmdl6wrbpss/60.jpg"
     },
     {
       "id": "DD007",
@@ -11745,7 +11745,7 @@
       "target_sell": 534.26,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD008",
@@ -11760,7 +11760,7 @@
       "target_sell": 534.26,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD009",
@@ -11775,7 +11775,7 @@
       "target_sell": 534.26,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD010",
@@ -11790,7 +11790,7 @@
       "target_sell": 534.26,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD011",
@@ -11805,7 +11805,7 @@
       "target_sell": 534.26,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD012",
@@ -11820,7 +11820,7 @@
       "target_sell": 534.26,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD013",
@@ -11835,7 +11835,7 @@
       "target_sell": 534.26,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD014",
@@ -11850,7 +11850,7 @@
       "target_sell": 534.26,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD015",
@@ -11865,7 +11865,7 @@
       "target_sell": 534.26,
       "score": 53,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD016",
@@ -11880,7 +11880,7 @@
       "target_sell": 534.26,
       "score": 54,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD017",
@@ -11895,7 +11895,7 @@
       "target_sell": 534.26,
       "score": 56,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "DD018",
@@ -11910,7 +11910,7 @@
       "target_sell": 534.26,
       "score": 55,
       "signal": "HOLD",
-      "image": null
+      "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg"
     },
     {
       "id": "U001",
@@ -11964,10 +11964,10 @@
       "number": "151/142",
       "variant": "Raw NM",
       "tier": "T5",
-      "live_price": null,
+      "live_price": 79.99,
       "wb_price": 6.0,
-      "target_buy": 4.8,
-      "target_sell": 5.7,
+      "target_buy": 63.99,
+      "target_sell": 75.99,
       "score": 50,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/sv6/205.png"
