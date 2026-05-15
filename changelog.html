@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changelog · bpleone.com</title>
+<meta name="description" content="What's new on bpleone.com — features, fixes, and data improvements as they ship.">
+<meta property="og:title" content="bpleone.com — Changelog">
+<meta property="og:description" content="What's new on the trading desks.">
+<meta property="og:url" content="https://bpleone.com/changelog.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/changelog.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+  }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { max-width: 1200px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 64px 0 32px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+  h1 .accent { color: var(--gold); }
+  .lead { color: var(--text-dim); font-size: 17px; margin-bottom: 36px; }
+  .release {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 18px;
+  }
+  .release-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px; flex-wrap: wrap;
+    margin-bottom: 14px; padding-bottom: 10px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .release-version {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700; font-size: 16px;
+    color: var(--gold);
+  }
+  .release-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--text-mute);
+  }
+  .release-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+  .tag-feat { background: rgba(74,222,128,0.1); color: var(--green); border: 1px solid rgba(74,222,128,0.25); }
+  .tag-fix { background: rgba(251,146,60,0.1); color: var(--orange); border: 1px solid rgba(251,146,60,0.25); }
+  .tag-data { background: rgba(245,200,66,0.08); color: var(--gold); border: 1px solid rgba(245,200,66,0.25); }
+  .tag-ui { background: rgba(139,148,168,0.1); color: var(--text-dim); border: 1px solid var(--border); }
+  ul { margin: 0 0 0 22px; }
+  li { margin-bottom: 6px; font-size: 14px; color: var(--text); }
+  li strong { color: var(--gold); font-weight: 600; }
+  code {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    background: rgba(245,200,66,0.06); color: var(--gold);
+    padding: 1px 5px; border-radius: 3px;
+  }
+  footer { padding: 48px 0; margin-top: 48px; border-top: 1px solid var(--border);
+           color: var(--text-mute); font-size: 13px;
+           font-family: 'JetBrains Mono', monospace; text-align: center; }
+  footer a { color: var(--gold-dim); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/#desks">🧰 Desks</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/changelog.html" class="active">📋 Changelog</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">📋 Changelog</span>
+    <h1>What's <span class="accent">new.</span></h1>
+    <p class="lead">Every meaningful update to the trading desks, in reverse chronological order. Built in public.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.21 — Auto Brief + Methodology</span>
+        <span class="release-date">2026-05-15</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-ui">UI</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Market Brief</strong> — auto-generated morning note on the homepage with daily TL;DR pills and full prose summary, refreshes every 5 minutes</li>
+        <li><strong>Methodology page</strong> — full math published: composite score formula, component weights, signal thresholds, sanity guards, data sources</li>
+        <li><strong>Changelog page</strong> — this one. Every shipped release tracked here</li>
+        <li><strong>OG share image</strong> — branded 1200×630 SVG with live KPIs. Twitter / Discord / iMessage embeds now show a proper preview</li>
+        <li><strong>robots.txt + sitemap pointer</strong> — Googlebot now has a crawl map for all 774 card pages</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.20 — Source Preference Fix</span>
+        <span class="release-date">2026-05-15</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-fix">FIX</span>
+          <span class="tag-pill tag-data">DATA</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>PriceCharting now wins over PokemonPriceTracker</strong> for graded cards — fixes Moonbreon PSA 10 ($3,250 → $4,480) and 11 other divergent prices</li>
+        <li><strong>Bidirectional sanity guards</strong> — sweep tools now reject PC matches that are &lt;20% of live OR wb (caught a Charizard GX dropping to $31 from a bad URL match)</li>
+        <li><strong>9 egregious prices reverted</strong> — Pikachu Trophy Bronze ($982k → null), Birthday Pikachu Promo ($11k → $1.1k), Rayquaza C LV.X ($27k → null)</li>
+        <li><strong>74 PPT-holdout cards swept</strong> through PC verification — 12 corrected</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.19 — Card Directory + Click-to-Open</span>
+        <span class="release-date">2026-05-15</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-ui">UI</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>/cards.html directory</strong> — all 774 cards as a searchable grid w/ image, signal, score, live $</li>
+        <li><strong>🔗 Open column</strong> on every dashboard table — one-click deep-link to any card</li>
+        <li><strong>Featured Sets clickable</strong> — Card Universe drill-down shows full set + chase cards w/ TCGPlayer market prices</li>
+        <li><strong>?card=X deep-link handler</strong> — share <code>bpleone.com/cards.html#X</code> on Discord; clicks land on the right card in the dashboard</li>
+        <li><strong>354 card images cached</strong> — multi-variant fuzzy matching against PokemonTCG.io</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.18 — Trade-of-the-Day Redesign</span>
+        <span class="release-date">2026-05-15</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-ui">UI</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Trade of the Day card rebuilt</strong> — now shows Live $, Δ vs Workbook, Score, Signal, plus Buy/Sell targets + per-card P&amp;L</li>
+        <li><strong>"What's Moving" 4-panel grid</strong> replaces fake 30D mover lists — uses real signals (Score + Live vs Workbook delta)</li>
+        <li><strong>Live vs Workbook</strong> KPI replaces "Avg 30D Trend" — finally a delta that's based on real data</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.17 — Hub Restructure</span>
+        <span class="release-date">2026-05-15</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-ui">UI</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>bpleone.com is a hub again</strong> — Pokémon is one featured desk, not the whole site</li>
+        <li><strong>7 trading desks surfaced</strong> — Pokémon TCG (live), Sports Cards (live), Trading Comps (tool), Options Pricing (tool), Equity Factor Model (tool), Sports Betting (soon), Sports Hub (soon)</li>
+        <li><strong>Compact "🧰 My Desks" strip</strong> + full Trading Desks grid both prominent above the live terminal</li>
+        <li><strong>Hero rewritten</strong> — "One operator. Seven trading desks." replaces the Pokemon-first framing</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.16 — Ticker Honesty</span>
+        <span class="release-date">2026-05-15</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-fix">FIX</span>
+          <span class="tag-pill tag-data">DATA</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Workbook-formula 30D % suppressed</strong> in the ticker — no more "Moonbreon +233%" nonsense</li>
+        <li><strong>Score-ranked stand-in</strong> when live history is &lt; 5 days — auto-promotes to real 30D % gainers once enough history accumulates</li>
+        <li><strong>Live tape</strong> shows price + signal pill instead of fake percentages</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.15 — Live Data Terminal</span>
+        <span class="release-date">2026-05-14</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-ui">UI</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Live ticker tape</strong> across the top of bpleone.com — auto-scrolls, pauses on hover</li>
+        <li><strong>5-KPI strip</strong> + Trade of the Day card + ▲▼ movers tables + STRONG BUYs table + "What to do today" action list</li>
+        <li><strong>↻ Refresh Now button</strong> for manual refetches</li>
+        <li><strong>Freshness pill</strong> showing scrape age + tracking duration</li>
+        <li><strong>Cross-origin fallback</strong> to raw.githubusercontent.com if Cloudflare hasn't deployed the latest feed</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.14 — Price Audit + Crack-It + Cert Verify</span>
+        <span class="release-date">2026-05-14</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>🔬 Price Audit tab</strong> — surfaces every flagged price with manual override form. Transparent data-quality dashboard no competitor has</li>
+        <li><strong>📦 Crack-It Calculator</strong> — sealed product EV math: pull rate × PSA 10 grade rate × net fees vs hold-sealed projection</li>
+        <li><strong>🛡️ PSA Cert Verifier</strong> — paste cert number, hits PSA's public registry, returns grade + card description + pop higher. Built-in fraud detection</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.13 — Storefront</span>
+        <span class="release-date">2026-05-14</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>🛒 For Sale tab</strong> — Brandon's storefront with verified seller, market-pegged pricing, insured shipping, 7-day returns</li>
+        <li><strong>Admin form at <code>?admin=1</code></strong> — self-serve listing add: card name, condition, cost, market, image URL, notes</li>
+        <li><strong>merge_inventory.py</strong> — bakes pending CSV submissions into the workbook with auto-generated INV-XXX IDs</li>
+      </ul>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a>
+  </div>
+</footer>
+
+</body>
+</html>
