@@ -129,6 +129,27 @@
 
     <article class="release">
       <div class="release-head">
+        <span class="release-version">v0.22 — Flip Bot + Show Mode</span>
+        <span class="release-date">2026-05-15</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-ui">UI</span>
+          <span class="tag-pill tag-data">DATA</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>💸 Flip Bot</strong> — live arbitrage scanner across TCGPlayer + eBay BIN. Runs every 20 min, compares each live listing against eBay sold median + PriceCharting, flags net-after-fees flips with OK / VERIFY / SUSPECT confidence tiers</li>
+        <li><strong>💸 Flip Bot tab on the dashboard</strong> — KPI strip (total $ profit on table, capital required, blended ROI, freshness), source filter (TCGP / eBay / Both), confidence filter, sub-threshold near-misses expander</li>
+        <li><strong>Homepage live arb widget</strong> — top flips inline in the live data terminal with click-to-buy links + hero pill showing "X qualified flips right now"</li>
+        <li><strong>📱 Show Mode</strong> at <a href="/show.html">bpleone.com/show.html</a> — mobile-first card-show buying tool. Search 774 cards, enter dealer sticker price, get instant BUY / OK / FAIR / PASS verdict with target buy + target sell. Card image preview, recent eBay sold-comps, recent lookups history</li>
+        <li><strong>Show Mode is a PWA</strong> — install to phone home screen, opens fullscreen, offline-capable via service worker</li>
+        <li><strong>Locale-aware matching</strong> — JP vs EN cards no longer cross-pollinate (English Moonbreon ≠ JP Moonbreon)</li>
+        <li><strong>Workbook staleness audit</strong> — <code>audit_workbook_staleness.py</code> flags watchlist rows where hand-curated price disagrees with live market by &gt;30% (389 rows surfaced on first run)</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
         <span class="release-version">v0.21 — Auto Brief + Methodology</span>
         <span class="release-date">2026-05-15</span>
         <div class="release-tags">
