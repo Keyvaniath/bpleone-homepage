@@ -517,10 +517,11 @@
   .desks-strip .strip-header a:hover { color: var(--gold); }
   .desks-row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
   }
-  @media (max-width: 900px) { .desks-row { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 1100px) { .desks-row { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 768px) { .desks-row { grid-template-columns: repeat(2, 1fr); } }
   .desk-chip {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -1044,18 +1045,32 @@
           <span class="meta">LIVE · NBA/NFL/MLB</span>
         </span>
       </a>
+      <a href="mailto:brandonpleone@gmail.com?subject=Trading%20Comps%20interest" class="desk-chip">
+        <span class="icon">📊</span>
+        <span class="info">
+          <span class="name">Trading Comps</span>
+          <span class="meta">TOOL · IB-style comps</span>
+        </span>
+      </a>
+      <a href="mailto:brandonpleone@gmail.com?subject=Options%20Pricer%20interest" class="desk-chip">
+        <span class="icon">🧮</span>
+        <span class="info">
+          <span class="name">Options Pricing</span>
+          <span class="meta">TOOL · Black-Scholes</span>
+        </span>
+      </a>
+      <a href="mailto:brandonpleone@gmail.com?subject=Equity%20Factor%20Model%20interest" class="desk-chip">
+        <span class="icon">📈</span>
+        <span class="info">
+          <span class="name">Equity Factors</span>
+          <span class="meta">TOOL · multi-factor</span>
+        </span>
+      </a>
       <div class="desk-chip coming">
         <span class="icon">🎲</span>
         <span class="info">
           <span class="name">Sports Betting</span>
           <span class="meta">soon · DFS · parlays</span>
-        </span>
-      </div>
-      <div class="desk-chip coming">
-        <span class="icon">📈</span>
-        <span class="info">
-          <span class="name">Equity Research</span>
-          <span class="meta">soon · DCF · options</span>
         </span>
       </div>
       <div class="desk-chip coming">
@@ -1204,7 +1219,7 @@
   <div class="container">
     <div class="section-header">
       <h2>Trading Desks</h2>
-      <span class="label">5 modules · 1 live</span>
+      <span class="label">7 modules · 2 live · 3 tools · 2 soon</span>
     </div>
     <div class="grid">
 
@@ -1236,33 +1251,61 @@
         </div>
       </a>
 
-      <div class="card coming">
+      <a href="mailto:brandonpleone@gmail.com?subject=Trading%20Comps%20interest" class="card live">
         <div class="card-header">
-          <span class="card-icon">🎲</span>
-          <span class="badge coming">Coming Soon</span>
+          <span class="card-icon">📊</span>
+          <span class="badge beta">TOOL · Sold</span>
         </div>
-        <h3>Sports Betting / DFS</h3>
-        <div class="tag">Lines · models · parlays · DFS lineups</div>
-        <p>Edge-finding model across DraftKings, FanDuel, Underdog. Player props, sharps vs. public, weather-adjusted totals, optimal-lineup DFS solver. Bankroll discipline built in.</p>
+        <h3>Trading Comps Model</h3>
+        <div class="tag">IB-style peer comps · DCF · sector valuations · 3 tiers</div>
+        <p>White-label peer-comps model built in pure Python + Excel. Drop in any ticker, get sector multiples, percentile rankings, comp tables in IB format. Demo / Standard / Pro tiers, with the Pro edition shipping full source for white-label distribution. Built from my equity-research desk experience.</p>
         <div class="card-footer">
-          <span>betting.bpleone.com</span>
+          <span class="url">email to request →</span>
           <span class="arrow">→</span>
         </div>
-      </div>
+      </a>
 
-      <div class="card coming">
+      <a href="mailto:brandonpleone@gmail.com?subject=Options%20Pricer%20interest" class="card live">
+        <div class="card-header">
+          <span class="card-icon">🧮</span>
+          <span class="badge beta">TOOL</span>
+        </div>
+        <h3>Options Pricing Model</h3>
+        <div class="tag">Black-Scholes · Greeks · IV surface · yfinance feed</div>
+        <p>Python-native options pricer: Black-Scholes Δ/Γ/Θ/ν/ρ, implied-vol surface, term-structure plots, straddle/strangle/iron-condor PnL profiles. Pull live chain from yfinance, screen for vol-rich names, structure expirations. For traders who want real Greeks instead of broker-platform approximations.</p>
+        <div class="card-footer">
+          <span class="url">email to request →</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="mailto:brandonpleone@gmail.com?subject=Equity%20Factor%20Model%20interest" class="card live">
         <div class="card-header">
           <span class="card-icon">📈</span>
-          <span class="badge coming">Coming Soon</span>
+          <span class="badge beta">TOOL</span>
         </div>
-        <h3>Equity Research</h3>
-        <div class="tag">stocks · options · IB-style memos</div>
-        <p>Bottom-up DCF + comps modeling, options structures, earnings plays. Single-name longs, sector pair trades, vol arbitrage. Discipline-of-IB applied to a personal book.</p>
+        <h3>Equity Factor Model</h3>
+        <div class="tag">multi-factor · momentum · value · quality · low-vol</div>
+        <p>Cross-sectional multi-factor equity model in Python: momentum, value, quality, size, low-vol. Long/short portfolio construction with sector neutralization, transaction-cost-aware rebalancing, and backtested factor returns. The framework I run my personal equity book on.</p>
         <div class="card-footer">
-          <span>equity.bpleone.com</span>
+          <span class="url">email to request →</span>
           <span class="arrow">→</span>
         </div>
-      </div>
+      </a>
+
+      <a href="https://betting.bpleone.com" class="card live" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-icon">🎲</span>
+          <span class="badge live">● LIVE</span>
+        </div>
+        <h3>Sports Betting / DFS</h3>
+        <div class="tag">32 markets · Pinnacle-anchored EV · 1/2 Kelly sizer · PuLP DFS solver</div>
+        <p>EV-finder across DK / FanDuel / BetMGM / Caesars, anchored to Pinnacle's de-vigged true probabilities. Composite score (0.40·EV + 0.25·CLV + 0.20·Sharp + 0.15·Liquidity), STRONG BET / BET / PASS / FADE verdicts, hard 2% bankroll cap per ticket, daily stop-loss. DFS optimizer for DraftKings + FanDuel main slates. <strong style="color: var(--gold);">Now live →</strong></p>
+        <div class="card-footer">
+          <span class="url">betting.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
 
       <div class="card coming">
         <div class="card-header">
