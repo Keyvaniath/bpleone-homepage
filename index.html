@@ -1937,28 +1937,6 @@
     }).join('');
   }
 
-  function buildFlipRows(flip) {
-    if (!flip || !flip.top || flip.top.length === 0) {
-      return '<tr><td colspan="6" class="skeleton">No qualified flips right now — bot rescans every 20 min.</td></tr>';
-    }
-    return flip.top.map(f => {
-      const src = (f.source || 'tcgp').toUpperCase();
-      const srcColor = src === 'TCGP' ? 'var(--gold)' : 'var(--green)';
-      const conf = f.confidence || 'OK';
-      const confColor = conf === 'OK' ? 'var(--green)' : (conf === 'VERIFY' ? 'var(--orange)' : 'var(--red)');
-      const roi = f.roi || 0;
-      const url = f.buy_url || '#';
-      return '<tr>' +
-        '<td><span style="color:' + srcColor + ';font-family:\'JetBrains Mono\',monospace;font-size:11px;font-weight:600;">' + (src === 'TCGP' ? 'TCGP' : 'eBay') + '</span></td>' +
-        '<td class="name">' + (f.card || '') + '<span class="var">' + (f.set || '') + ' · <span style="color:' + confColor + ';font-weight:600;">' + conf + '</span></span></td>' +
-        '<td class="num">' + fmtMoney(f.buy_total) + '</td>' +
-        '<td class="num green">' + fmtMoney(f.net_profit) + '</td>' +
-        '<td class="num green">' + (roi * 100).toFixed(0) + '%</td>' +
-        '<td style="text-align:right;"><a href="' + url + '" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">🛒 Buy →</a></td>' +
-      '</tr>';
-    }).join('');
-  }
-
   function setText(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; }
   function setHTML(id, val) { var el = document.getElementById(id); if (el) el.innerHTML = val; }
 
@@ -2027,42 +2005,6 @@
     setHTML('movers-down', buildMoverRows(feed.movers_down));
     setHTML('strong-buys', buildBuyRows(feed.strong_buys));
 
-    // Flip Bot live arb table + hero pill
-    setHTML('flip-bot-rows', buildFlipRows(feed.flip_bot));
-    if (feed.flip_bot) {
-      const fb = feed.flip_bot;
-      const scanned = fb.candidates_scanned || 0;
-      const qual = fb.qualified_count || 0;
-      const upd = fb.updated_at ? ' · updated ' + relTime(fb.updated_at) : '';
-      setText('flip-bot-sub', qual + ' qualified flip' + (qual === 1 ? '' : 's') + ' of ' + scanned + ' cards scanned' + upd);
-
-      // Mini KPI strip — show totals across the top entries (the feed already filters SUSPECT)
-      const top = fb.top || [];
-      const totalProfit = top.reduce((a, x) => a + (Number(x.net_profit) || 0), 0);
-      const totalCapital = top.reduce((a, x) => a + (Number(x.buy_total) || 0), 0);
-      const blendedRoi = totalCapital > 0 ? totalProfit / totalCapital : 0;
-      const kpiEl = document.getElementById('flip-bot-kpi');
-      if (top.length > 0 && kpiEl) {
-        setText('flip-kpi-profit', '$' + Math.round(totalProfit).toLocaleString());
-        setText('flip-kpi-capital', '$' + Math.round(totalCapital).toLocaleString());
-        setText('flip-kpi-roi', (blendedRoi * 100).toFixed(0) + '%');
-        kpiEl.style.display = 'block';
-      } else if (kpiEl) {
-        kpiEl.style.display = 'none';
-      }
-
-      const heroPill = document.getElementById('flip-hero-pill');
-      if (heroPill) {
-        if (qual > 0) {
-          setText('flip-hero-count', qual);
-          setText('flip-hero-plural', qual === 1 ? '' : 's');
-          heroPill.style.display = 'inline-flex';
-        } else {
-          heroPill.style.display = 'none';
-        }
-      }
-    }
-
     const tapeItems = (feed.tape && feed.tape.length) ? feed.tape : (feed.movers_up || []).concat(feed.movers_down || []);
     setHTML('tape-track', buildTape(tapeItems));
   }
@@ -2084,6 +2026,13 @@
         setHTML('tape-track',
           '<span class="tape-item" style="color:var(--red);">Feed offline — data refreshes every 4h. Try reload in 60s.</span>');
       });
+  }
+
+  // Register service worker for offline cache + faster repeat loads
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').catch(function() {});
+    });
   }
 
   document.addEventListener('DOMContentLoaded', function() {
