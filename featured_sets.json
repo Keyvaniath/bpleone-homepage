@@ -1,0 +1,126 @@
+[
+  {
+    "id": "me3",
+    "name": "Perfect Order",
+    "release_date": "2026/03/27",
+    "total": 124,
+    "logo": "https://images.scrydex.com/pokemon/me3-logo/logo",
+    "symbol": "https://images.scrydex.com/pokemon/me3-symbol/symbol",
+    "chase": null,
+    "chase_count": 0,
+    "total_market": 0
+  },
+  {
+    "id": "me2pt5",
+    "name": "Ascended Heroes",
+    "release_date": "2026/01/30",
+    "total": 295,
+    "logo": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
+    "symbol": "https://images.scrydex.com/pokemon/me2pt5-symbol/symbol",
+    "chase": null,
+    "chase_count": 0,
+    "total_market": 0
+  },
+  {
+    "id": "me2",
+    "name": "Phantasmal Flames",
+    "release_date": "2025/11/14",
+    "total": 130,
+    "logo": "https://images.pokemontcg.io/me2/logo.png",
+    "symbol": "https://images.pokemontcg.io/me2/symbol.png",
+    "chase": {
+      "name": "Mega Charizard X ex",
+      "number": "125",
+      "rarity": "Special Illustration Rare",
+      "market": 838.05,
+      "image": "https://images.pokemontcg.io/me2/125.png"
+    },
+    "chase_count": 6,
+    "total_market": 1473.0
+  },
+  {
+    "id": "me1",
+    "name": "Mega Evolution",
+    "release_date": "2025/09/26",
+    "total": 188,
+    "logo": "https://images.pokemontcg.io/me1/logo.png",
+    "symbol": "https://images.pokemontcg.io/me1/symbol.png",
+    "chase": {
+      "name": "Mega Lucario ex",
+      "number": "179",
+      "rarity": "Special Illustration Rare",
+      "market": 244.65,
+      "image": "https://images.pokemontcg.io/me1/179.png"
+    },
+    "chase_count": 14,
+    "total_market": 1745.0
+  },
+  {
+    "id": "zsv10pt5",
+    "name": "Black Bolt",
+    "release_date": "2025/07/18",
+    "total": 172,
+    "logo": "https://images.pokemontcg.io/zsv10pt5/logo.png",
+    "symbol": "https://images.pokemontcg.io/zsv10pt5/symbol.png",
+    "chase": {
+      "name": "Victini",
+      "number": "171",
+      "rarity": "Rare",
+      "market": 512.55,
+      "image": "https://images.pokemontcg.io/zsv10pt5/171.png"
+    },
+    "chase_count": 32,
+    "total_market": 2865.0
+  },
+  {
+    "id": "rsv10pt5",
+    "name": "White Flare",
+    "release_date": "2025/07/18",
+    "total": 173,
+    "logo": "https://images.pokemontcg.io/rsv10pt5/logo.png",
+    "symbol": "https://images.pokemontcg.io/rsv10pt5/symbol.png",
+    "chase": {
+      "name": "Reshiram ex",
+      "number": "173",
+      "rarity": "Black White Rare",
+      "market": 429.46,
+      "image": "https://images.pokemontcg.io/rsv10pt5/173.png"
+    },
+    "chase_count": 27,
+    "total_market": 2647.0
+  },
+  {
+    "id": "sv10",
+    "name": "Destined Rivals",
+    "release_date": "2025/05/30",
+    "total": 244,
+    "logo": "https://images.pokemontcg.io/sv10/logo.png",
+    "symbol": "https://images.pokemontcg.io/sv10/symbol.png",
+    "chase": {
+      "name": "Team Rocket's Mewtwo ex",
+      "number": "231",
+      "rarity": "Special Illustration Rare",
+      "market": 540.94,
+      "image": "https://images.pokemontcg.io/sv10/231.png"
+    },
+    "chase_count": 19,
+    "total_market": 2130.0
+  },
+  {
+    "id": "sv9",
+    "name": "Journey Together",
+    "release_date": "2025/03/28",
+    "total": 190,
+    "logo": "https://images.pokemontcg.io/sv9/logo.png",
+    "symbol": "https://images.pokemontcg.io/sv9/symbol.png",
+    "chase": {
+      "name": "Lillie's Clefairy ex",
+      "number": "184",
+      "rarity": "Special Illustration Rare",
+      "market": 129.94,
+      "image": "https://images.pokemontcg.io/sv9/184.png"
+    },
+    "chase_count": 8,
+    "total_market": 583.0
+  }
+]
