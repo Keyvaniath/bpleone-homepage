@@ -238,46 +238,77 @@
     return v;
   }
 
-  // Dual-source price table — shows EVERY price source side by side. This is
-  // what the $10/mo PPT subscription is actually buying: PPT eBay-sold medians
-  // alongside PriceCharting's longer-window aggregates.
+  // Consensus-per-grade table — collapses PC + PPT + TCGPlayer into ONE number
+  // per grade row, with a "verify" badge when sources disagree by >25%.
+  // No more "$1500–$4000 range — useless data" — single actionable number per grade.
   function sourceTable(card) {
     const s = card.sources || {};
     const pc = s.pricecharting || {};
     const ppt = s.pokeprice || {};
     if (!s.pricecharting && !s.pokeprice && !s.ebay_recent_avg && !s.tcgplayer_market) return '';
 
-    function cell(v) {
-      if (v == null || v === 0) return '<span style="color:var(--text-mute);">—</span>';
+    const grades = [
+      {key:'ungraded',  label:'Ungraded (Raw NM)', extra:s.tcgplayer_market},
+      {key:'grade_7',   label:'PSA 7',             extra:null},
+      {key:'grade_8',   label:'PSA 8',             extra:null},
+      {key:'grade_9',   label:'PSA 9',             extra:null},
+      {key:'grade_9_5', label:'PSA 9.5',           extra:null},
+      {key:'grade_10',  label:'PSA 10',            extra:null},
+    ];
+
+    function consensus(values) {
+      const v = values.filter(x => x != null && x > 0);
+      if (!v.length) return {value:null, disagree:0, n:0};
+      v.sort((a,b) => a-b);
+      const mid = v.length === 1 ? v[0] : v.length % 2 === 1
+        ? v[(v.length-1)/2]
+        : (v[v.length/2 - 1] + v[v.length/2]) / 2;
+      const spread = (v[v.length-1] - v[0]) / mid * 100;
+      return {value: mid, disagree: spread, n: v.length};
+    }
+
+    const rows = grades.map(g => {
+      const pcv = pc[g.key];
+      const pptv = ppt[g.key];
+      const cons = consensus([pcv, pptv, g.extra]);
+      return {label:g.label, ...cons, pc:pcv, ppt:pptv, extra:g.extra};
+    });
+
+    function fmt(v) {
+      if (v == null) return '<span style="color:var(--text-mute);">—</span>';
       return '$' + Math.round(v).toLocaleString();
     }
-    const rows = [
-      ['Ungraded (Raw NM)', pc.ungraded, ppt.ungraded, s.tcgplayer_market],
-      ['Grade 7 / PSA 7',   pc.grade_7,  ppt.grade_7,  null],
-      ['Grade 8 / PSA 8',   pc.grade_8,  ppt.grade_8,  null],
-      ['Grade 9 / PSA 9',   pc.grade_9,  ppt.grade_9,  null],
-      ['Grade 9.5 / PSA 9.5', pc.grade_9_5, ppt.grade_9_5, null],
-      ['Grade 10 / PSA 10', pc.grade_10, ppt.grade_10, null],
-    ];
-    const body = rows.map(r =>
-      '<tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text-dim);font-size:12px;">' + r[0] + '</td>' +
-      '<td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:right;font-family:monospace;font-weight:700;color:var(--gold);">' + cell(r[1]) + '</td>' +
-      '<td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:right;font-family:monospace;font-weight:700;color:#4ade80;">' + cell(r[2]) + '</td>' +
-      '<td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:right;font-family:monospace;font-weight:700;color:#60a5fa;">' + cell(r[3]) + '</td>' +
-      '</tr>'
-    ).join('');
 
-    return '<h2 class="section">All sources · cross-check yourself</h2>' +
+    const body = rows.map(r => {
+      const isFlagged = r.disagree > 25 && r.n >= 2;
+      const flagBadge = isFlagged ? '<span style="display:inline-block;font-size:9px;padding:1px 5px;border-radius:3px;background:rgba(251,146,60,0.15);color:#fb923c;margin-left:6px;letter-spacing:0.05em;" title="Sources spread ' + Math.round(r.disagree) + '% — verify with eBay sold comps">VERIFY</span>' : '';
+      const consensusFootnote = r.n === 0 ? '' : r.n === 1
+        ? '<span style="font-size:10px;color:var(--text-mute);margin-left:6px;">(1 src)</span>'
+        : '<span style="font-size:10px;color:' + (isFlagged ? '#fb923c' : '#4ade80') + ';margin-left:6px;">(' + r.n + ' src · ±' + Math.round(r.disagree) + '%)</span>';
+      const breakdown = (r.n >= 1) ? (
+        '<div style="font-size:10px;color:var(--text-mute);font-family:monospace;margin-top:2px;">' +
+          (r.pc ? 'PC ' + fmt(r.pc) + ' · ' : '') +
+          (r.ppt ? 'PPT ' + fmt(r.ppt) + ' · ' : '') +
+          (r.extra ? 'TCG ' + fmt(r.extra) : '') +
+        '</div>'
+      ) : '';
+      return '<tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-dim);font-size:13px;">' + r.label + flagBadge + '</td>' +
+        '<td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:right;font-family:monospace;font-weight:700;color:var(--gold);">' +
+          fmt(r.value) + consensusFootnote +
+          breakdown +
+        '</td>' +
+        '</tr>';
+    }).join('');
+
+    return '<h2 class="section">Cross-source price table</h2>' +
       '<div class="body-card" style="padding:0;overflow-x:auto;">' +
       '<table style="width:100%;border-collapse:collapse;font-size:13px;">' +
       '<thead><tr>' +
-        '<th style="padding:10px 12px;text-align:left;background:rgba(0,0,0,0.2);font-family:monospace;font-size:10px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;">Grade</th>' +
-        '<th style="padding:10px 12px;text-align:right;background:rgba(0,0,0,0.2);font-family:monospace;font-size:10px;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">PriceCharting</th>' +
-        '<th style="padding:10px 12px;text-align:right;background:rgba(0,0,0,0.2);font-family:monospace;font-size:10px;color:#4ade80;letter-spacing:0.1em;text-transform:uppercase;">PPT (eBay median)</th>' +
-        '<th style="padding:10px 12px;text-align:right;background:rgba(0,0,0,0.2);font-family:monospace;font-size:10px;color:#60a5fa;letter-spacing:0.1em;text-transform:uppercase;">TCGPlayer Mkt</th>' +
+        '<th style="padding:10px 14px;text-align:left;background:rgba(0,0,0,0.2);font-family:monospace;font-size:10px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;">Grade</th>' +
+        '<th style="padding:10px 14px;text-align:right;background:rgba(0,0,0,0.2);font-family:monospace;font-size:10px;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">Consensus · sources</th>' +
       '</tr></thead><tbody>' + body + '</tbody></table>' +
       (s.ebay_recent_avg ? '<p style="padding:10px 14px;font-size:12px;color:var(--text-dim);">📊 Recent eBay sales (avg of last 5): <strong style="color:var(--gold);">$' + Math.round(s.ebay_recent_avg).toLocaleString() + '</strong></p>' : '') +
-      '<p style="padding:0 14px 14px;font-size:11px;color:var(--text-mute);">PriceCharting = 3-6mo window. PPT = recent eBay medians. TCGPlayer Mkt = live raw listings. When sources disagree the dashboard prefers PriceCharting (more stable benchmark).</p>' +
+      '<p style="padding:0 14px 14px;font-size:11px;color:var(--text-mute);">One <strong>median consensus price</strong> per grade. Sources: PriceCharting (3-6mo window), PPT (recent eBay medians), TCGPlayer Mkt (live raw listings). VERIFY badge appears when sources spread >25%.</p>' +
       '</div>';
   }
 
