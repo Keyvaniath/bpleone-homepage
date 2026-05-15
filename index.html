@@ -1403,7 +1403,8 @@
     const s = feed.stats || {};
     setText('kpi-cards', (s.total_cards || 0).toLocaleString());
     setText('kpi-matched', (s.live_matched || 0).toLocaleString());
-    setText('kpi-matched-sub', 'of ' + (s.total_cards || 0).toLocaleString() + ' tracked');
+    const coveragePct = s.total_cards ? Math.round(100 * s.live_matched / s.total_cards) : 0;
+    setText('kpi-matched-sub', coveragePct + '% coverage of ' + (s.total_cards || 0).toLocaleString());
     setText('kpi-mcap', fmtMoney(s.total_mcap));
     setText('kpi-buys', (s.strong_buys || 0).toLocaleString());
 
