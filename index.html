@@ -959,7 +959,13 @@
 <!-- ============ LIVE DATA TERMINAL ============ -->
 <section id="live" class="terminal">
   <div class="container">
-    <span class="live-eyebrow"><span class="live-pulse"></span> Live · auto-refreshes every 60s</span>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px;">
+      <span class="live-eyebrow"><span class="live-pulse"></span> Live · auto-refreshes every 60s</span>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span id="data-freshness" style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);">checking feed…</span>
+        <button id="refresh-now-btn" type="button" style="background:transparent;border:1px solid var(--border);color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:11px;padding:5px 12px;border-radius:6px;cursor:pointer;letter-spacing:0.05em;text-transform:uppercase;transition:all 0.2s;">↻ Refresh Now</button>
+      </div>
+    </div>
     <h2 class="live-headline">The market <span class="accent">right now.</span></h2>
     <p class="live-sub">
       No fluff. The same data feed that powers Brandon's dashboard, surfaced in plain English:
@@ -1078,7 +1084,7 @@
   <div class="container">
     <div class="section-header">
       <h2>Trading Desks</h2>
-      <span class="label">5 modules · 2 live</span>
+      <span class="label">5 modules · 1 live</span>
     </div>
     <div class="grid">
 
@@ -1138,19 +1144,19 @@
         </div>
       </div>
 
-      <a href="https://sports.bpleone.com" class="card live" target="_blank" rel="noopener">
+      <div class="card coming">
         <div class="card-header">
           <span class="card-icon">🏟️</span>
-          <span class="badge live">● LIVE</span>
+          <span class="badge coming">Coming Soon</span>
         </div>
         <h3>Sports Hub</h3>
-        <div class="tag">Lakers · Dodgers · Rams · USC · 5 teams tracked</div>
-        <p>One-stop dashboard for every team I follow — Lakers, Dodgers, Rams, USC Football, USC Basketball. Live scores, schedule, injuries, news aggregation, Sleeper fantasy integration. Pure consumption, no trading.</p>
+        <div class="tag">my teams · schedules · news · stats</div>
+        <p>One-stop dashboard for every team I follow — Lakers, Dodgers, Rams, USC, whoever. Live scores, schedule, injury reports, news aggregation, fantasy team integration. Pure consumption, no trading.</p>
         <div class="card-footer">
-          <span class="url">sports.bpleone.com</span>
+          <span>sports.bpleone.com</span>
           <span class="arrow">→</span>
         </div>
-      </a>
+      </div>
 
     </div>
   </div>
@@ -1409,6 +1415,17 @@
     }
     setText('kpi-updated', 'updated ' + relTime(feed.live_updated_at));
 
+    // Live-tracking freshness pill: shows how long we have history + how stale the scrape is
+    const histDays = s.history_age_days || 0;
+    const histN = s.history_snapshots || 0;
+    const histOverlay = s.history_overlay_count || 0;
+    let freshness = '📡 Scrape ' + relTime(feed.live_updated_at);
+    if (histN > 0) {
+      freshness += ' · 📊 Tracking ' + histDays.toFixed(1) + 'd';
+      if (histOverlay > 0) freshness += ' · ' + histOverlay + ' real-history deltas';
+    }
+    setText('data-freshness', freshness);
+
     const t = feed.trade_of_day;
     if (t) {
       setText('totd-name', t.name);
@@ -1463,6 +1480,19 @@
   document.addEventListener('DOMContentLoaded', function() {
     load();
     setInterval(load, REFRESH_MS);
+    // Manual refresh button
+    var btn = document.getElementById('refresh-now-btn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        btn.textContent = '↻ Refreshing…';
+        btn.disabled = true;
+        load();
+        setTimeout(function() {
+          btn.textContent = '↻ Refresh Now';
+          btn.disabled = false;
+        }, 1500);
+      });
+    }
   });
 })();
 </script>
