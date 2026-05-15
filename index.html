@@ -1554,10 +1554,19 @@
          via build_homepage_feed.py). Shows TCGP + eBay BIN listings priced below sold-comp
          median, with net-of-fees profit and ROI. Skips SUSPECT entries (likely bad data).
          Auto-refreshes with the rest of the live terminal every 60s. -->
-    <div class="data-panel" style="margin-bottom: 32px;">
-      <div class="data-panel-header">
+    <div class="data-panel" style="margin-bottom: 32px; border-color: rgba(74,222,128,0.25);">
+      <div class="data-panel-header" style="background: linear-gradient(90deg, rgba(74,222,128,0.06), transparent);">
         <span class="title">💸 Flip Bot · Live Arbitrage</span>
         <span class="sub" id="flip-bot-sub">TCGPlayer + eBay BIN listings priced below sold median · checking feed…</span>
+      </div>
+      <!-- Inline mini-KPI strip — total $ profit + ROI across all qualified flips, populated by JS -->
+      <div id="flip-bot-kpi" style="display:none;padding:14px 18px;border-bottom:1px solid var(--border);background:rgba(74,222,128,0.03);">
+        <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:baseline;">
+          <span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.08em;">Net profit on table</span> <strong id="flip-kpi-profit" style="font-size:18px;color:var(--green);margin-left:6px;">$0</strong></span>
+          <span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.08em;">Capital req'd</span> <strong id="flip-kpi-capital" style="font-size:18px;color:var(--gold);margin-left:6px;">$0</strong></span>
+          <span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.08em;">Blended ROI</span> <strong id="flip-kpi-roi" style="font-size:18px;color:var(--green);margin-left:6px;">—</strong></span>
+          <span style="margin-left:auto;"><a href="https://pokemon.bpleone.com/?tab=flip" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-size:13px;font-weight:600;">View all on dashboard →</a></span>
+        </div>
       </div>
       <table class="data-table">
         <thead><tr>
@@ -2023,6 +2032,22 @@
       const qual = fb.qualified_count || 0;
       const upd = fb.updated_at ? ' · updated ' + relTime(fb.updated_at) : '';
       setText('flip-bot-sub', qual + ' qualified flip' + (qual === 1 ? '' : 's') + ' of ' + scanned + ' cards scanned' + upd);
+
+      // Mini KPI strip — show totals across the top entries (the feed already filters SUSPECT)
+      const top = fb.top || [];
+      const totalProfit = top.reduce((a, x) => a + (Number(x.net_profit) || 0), 0);
+      const totalCapital = top.reduce((a, x) => a + (Number(x.buy_total) || 0), 0);
+      const blendedRoi = totalCapital > 0 ? totalProfit / totalCapital : 0;
+      const kpiEl = document.getElementById('flip-bot-kpi');
+      if (top.length > 0 && kpiEl) {
+        setText('flip-kpi-profit', '$' + Math.round(totalProfit).toLocaleString());
+        setText('flip-kpi-capital', '$' + Math.round(totalCapital).toLocaleString());
+        setText('flip-kpi-roi', (blendedRoi * 100).toFixed(0) + '%');
+        kpiEl.style.display = 'block';
+      } else if (kpiEl) {
+        kpiEl.style.display = 'none';
+      }
+
       const heroPill = document.getElementById('flip-hero-pill');
       if (heroPill) {
         if (qual > 0) {
