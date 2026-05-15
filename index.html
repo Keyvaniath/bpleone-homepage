@@ -1193,9 +1193,19 @@
     </div>
     <h1>One operator.<br><span class="accent">Eight trading desks.</span></h1>
     <p>An IB-style quant lab built from scratch — Pokémon TCG, sports cards, equity factor models, options pricing, and IB peer-comps tools. Each desk runs its own data pipeline, signals, and tooling. Live data, transparent scoring, no chartcraft.</p>
+
+    <!-- Flip Bot live counter — populated by JS from feed.flip_bot (hidden until feed loads).
+         Catches the eye above the fold without cluttering the hero copy. -->
+    <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank" rel="noopener" id="flip-hero-pill" style="display:none;text-decoration:none;align-items:center;gap:10px;background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.3);padding:10px 16px;border-radius:24px;margin-bottom:18px;font-size:13px;font-family:'JetBrains Mono',monospace;color:var(--text);">
+      <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.6s infinite;"></span>
+      <span><strong style="color:var(--green);">💸 Flip Bot live</strong> · <span id="flip-hero-count">—</span> qualified flip<span id="flip-hero-plural"></span> right now</span>
+      <span style="color:var(--text-mute);margin-left:auto;">view →</span>
+    </a>
+
     <div class="subscribe-cta-row" style="justify-content: flex-start; margin-bottom: 24px;">
       <a href="#desks" class="btn-primary">🧰 Browse All Desks</a>
       <a href="https://pokemon.bpleone.com" class="btn-secondary" target="_blank" style="border-color: var(--green); color: var(--green);">🃏 Pokémon TCG (Live)</a>
+      <a href="/show.html" class="btn-secondary" style="border-color: var(--gold); color: var(--gold);">📱 Show Mode</a>
       <a href="https://sports-cards.bpleone.com" class="btn-secondary" target="_blank">🏀 Sports Cards (Live)</a>
     </div>
   </div>
