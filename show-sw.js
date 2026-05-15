@@ -8,7 +8,7 @@
 // installed PWA clients pick up the new shell. The service worker calls
 // skipWaiting() + clients.claim() so the update lands on next page navigation
 // without requiring two reloads.
-const CACHE = 'show-mode-v2';
+const CACHE = 'show-mode-v3';
 const CORE = [
   '/show.html',
   '/show-manifest.json',
