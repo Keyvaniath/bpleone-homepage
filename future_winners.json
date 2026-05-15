@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-15T19:06:13.156208Z",
+  "generated_at": "2026-05-15T19:57:29.099281Z",
   "methodology": "Future Winners is a forward-looking model. Score = 0.25*momentum_rising + 0.20*scarcity + 0.15*accessibility + 0.15*hidden_alpha + 0.15*tier_premium + 0.10*liquidity. Candidates capped at $5,000 live price for accessibility.",
   "count": 30,
   "winners": [
@@ -51,30 +51,6 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/sv6pt5/92.png"
-    },
-    {
-      "id": "M041",
-      "name": "Mewtwo ex SIR",
-      "set": "Scarlet & Violet 151",
-      "number": "201/165",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 1400,
-      "live_price": 75.995,
-      "wb_price": 540.0,
-      "target_buy": 60.8,
-      "target_sell": 72.2,
-      "fw_score": 76.4,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 43.4,
-        "accessibility": 80,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/ex1/101.png"
     },
     {
       "id": "M050",
@@ -195,54 +171,6 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/swsh4/172.png"
-    },
-    {
-      "id": "M011",
-      "name": "Duraludon VMAX Alt Art",
-      "set": "Evolving Skies",
-      "number": "217/203",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 2100,
-      "live_price": 99.97,
-      "wb_price": 520.0,
-      "target_buy": 79.98,
-      "target_sell": 94.97,
-      "fw_score": 75.8,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 40.2,
-        "accessibility": 80,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh7/220.png"
-    },
-    {
-      "id": "M044",
-      "name": "Iono SIR",
-      "set": "Paldea Evolved",
-      "number": "269/193",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 2500,
-      "live_price": 86.99,
-      "wb_price": 700.0,
-      "target_buy": 69.59,
-      "target_sell": 82.64,
-      "fw_score": 75.5,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 38.8,
-        "accessibility": 80,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/sv2/269.png"
     },
     {
       "id": "M078",
@@ -389,30 +317,6 @@
       "image": "https://images.pokemontcg.io/sv6/217.png"
     },
     {
-      "id": "M004",
-      "name": "Sylveon VMAX Alt Art",
-      "set": "Evolving Skies",
-      "number": "212/203",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 2400,
-      "live_price": 129.99,
-      "wb_price": 1200.0,
-      "target_buy": 103.99,
-      "target_sell": 123.49,
-      "fw_score": 74.1,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 39.2,
-        "accessibility": 70,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh7/212.png"
-    },
-    {
       "id": "M029",
       "name": "Giratina VSTAR Gold",
       "set": "Crown Zenith",
@@ -461,30 +365,6 @@
       "image": "https://images.pokemontcg.io/ex6/105.png"
     },
     {
-      "id": "M012",
-      "name": "Rayquaza V Alt Art",
-      "set": "Evolving Skies",
-      "number": "194/203",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 3200,
-      "live_price": 110.0,
-      "wb_price": 620.0,
-      "target_buy": 88.0,
-      "target_sell": 104.5,
-      "fw_score": 73.6,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 36.9,
-        "accessibility": 70,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh7/194.png"
-    },
-    {
       "id": "M015",
       "name": "Charizard VSTAR Rainbow",
       "set": "Brilliant Stars",
@@ -507,30 +387,6 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/swshp/SWSH262.png"
-    },
-    {
-      "id": "M024",
-      "name": "Lugia VSTAR Alt Art",
-      "set": "Silver Tempest",
-      "number": "TG30/TG30",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 3800,
-      "live_price": 100.0,
-      "wb_price": 820.0,
-      "target_buy": 80.0,
-      "target_sell": 95.0,
-      "fw_score": 73.4,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 35.6,
-        "accessibility": 70,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh12/202.png"
     },
     {
       "id": "M043",
@@ -629,30 +485,6 @@
       "image": "https://images.pokemontcg.io/ex6/105.png"
     },
     {
-      "id": "M088",
-      "name": "Mega Charizard Y ex SIR",
-      "set": "Ascended Heroes",
-      "number": "288/217",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 700,
-      "live_price": 270.0,
-      "wb_price": 1700.0,
-      "target_buy": 216.0,
-      "target_sell": 256.5,
-      "fw_score": 72.7,
-      "components": {
-        "momentum_rising": 92.9,
-        "scarcity": 48.8,
-        "accessibility": 60,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.scrydex.com/pokemon/me2pt5-22/small"
-    },
-    {
       "id": "M010",
       "name": "Dragonite V Alt Art",
       "set": "Evolving Skies",
@@ -675,6 +507,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/swsh7/192.png"
+    },
+    {
+      "id": "M041",
+      "name": "Mewtwo ex SIR",
+      "set": "Scarlet & Violet 151",
+      "number": "201/165",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 1400,
+      "live_price": 540.0,
+      "wb_price": 540.0,
+      "target_buy": 432.0,
+      "target_sell": 513.0,
+      "fw_score": 71.2,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 43.4,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/ex1/101.png"
     },
     {
       "id": "M040",
@@ -723,6 +579,150 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/sv6/214.png"
+    },
+    {
+      "id": "M085",
+      "name": "Mega Lucario ex SIR",
+      "set": "Ascended Heroes",
+      "number": "285/217",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 800,
+      "live_price": 350.0,
+      "wb_price": 820.0,
+      "target_buy": 280.0,
+      "target_sell": 332.5,
+      "fw_score": 70.8,
+      "components": {
+        "momentum_rising": 86.2,
+        "scarcity": 47.7,
+        "accessibility": 60,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/me1/188.png"
+    },
+    {
+      "id": "M011",
+      "name": "Duraludon VMAX Alt Art",
+      "set": "Evolving Skies",
+      "number": "217/203",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 2100,
+      "live_price": 520.0,
+      "wb_price": 520.0,
+      "target_buy": 416.0,
+      "target_sell": 494.0,
+      "fw_score": 70.5,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 40.2,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/swsh7/220.png"
+    },
+    {
+      "id": "M033",
+      "name": "Lugia V (GG)",
+      "set": "Crown Zenith Galarian Gallery",
+      "number": "GG62/GG70",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 2400,
+      "live_price": 68.09,
+      "wb_price": 280.0,
+      "target_buy": 54.47,
+      "target_sell": 64.69,
+      "fw_score": 70.3,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 39.2,
+        "accessibility": 80,
+        "hidden_alpha": 40,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Composite picks: liquidity + tier + accessibility.",
+      "image": "https://images.pokemontcg.io/swsh12/186.png"
+    },
+    {
+      "id": "M044",
+      "name": "Iono SIR",
+      "set": "Paldea Evolved",
+      "number": "269/193",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 2500,
+      "live_price": 700.0,
+      "wb_price": 700.0,
+      "target_buy": 560.0,
+      "target_sell": 665.0,
+      "fw_score": 70.3,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 38.8,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/sv2/269.png"
+    },
+    {
+      "id": "M081",
+      "name": "Mega Gengar ex SIR",
+      "set": "Ascended Heroes",
+      "number": "284/217",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 400,
+      "live_price": 3704.6,
+      "wb_price": 3000.0,
+      "target_buy": 2963.68,
+      "target_sell": 3519.37,
+      "fw_score": 70.1,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 53.2,
+        "accessibility": 25,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/me2/56.png"
+    },
+    {
+      "id": "M012",
+      "name": "Rayquaza V Alt Art",
+      "set": "Evolving Skies",
+      "number": "194/203",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 3200,
+      "live_price": 620.0,
+      "wb_price": 620.0,
+      "target_buy": 496.0,
+      "target_sell": 589.0,
+      "fw_score": 69.9,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 36.9,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/swsh7/194.png"
     }
   ]
 }
