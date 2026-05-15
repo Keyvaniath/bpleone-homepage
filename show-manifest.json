@@ -1,0 +1,20 @@
+{
+  "name": "Show Mode — bpleone.com",
+  "short_name": "Show Mode",
+  "description": "Card-show buying tool — instant fair-value check for Pokemon cards.",
+  "start_url": "/show.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "categories": ["finance", "shopping", "utilities"],
+  "icons": [
+    {
+      "src": "/show-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
