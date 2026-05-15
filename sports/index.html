@@ -249,9 +249,10 @@
 <div class="container">
 
   <section class="block">
-    <h2>Today's snapshot</h2>
-    <p style="color:var(--text-dim); margin-bottom:8px; font-size:14px;">Pulled live from ESPN. Each card shows current record + last game outcome + next game.</p>
-    <div class="snap-grid">
+    <h2>Today's snapshot <span id="live-indicator" style="display:inline-block; width:8px; height:8px; background:#4ade80; border-radius:50%; margin-left:8px; animation:pulse 2s infinite;"></span></h2>
+    <p style="color:var(--text-dim); margin-bottom:8px; font-size:14px;">Pulled live from ESPN via your browser. Each card shows current record + last game outcome + next game. Refreshes every 5 minutes.</p>
+    <style>@keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: 0.4 } }</style>
+    <div class="snap-grid" id="snap-grid">
       <div class="snap-card">
         <div class="head"><span class="emoji">🏀</span>
           <div><div class="name">Lakers</div><div class="meta">NBA</div></div>
@@ -406,5 +407,104 @@
   </div>
 </footer>
 
+<script>
+// Live ESPN data fetcher — pulls real records + last/next game for each team
+// and overwrites the static snapshot. Refreshes every 5 minutes.
+(function() {
+  const TEAMS = [
+    {key:"lakers", short:"Lakers",      meta:"NBA",                 emoji:"🏀", sport:"basketball", league:"nba",                      espn_id:"13", abbr:"LAL"},
+    {key:"dodgers", short:"Dodgers",    meta:"MLB",                 emoji:"⚾", sport:"baseball",  league:"mlb",                      espn_id:"19", abbr:"LAD"},
+    {key:"rams", short:"Rams",          meta:"NFL",                 emoji:"🏈", sport:"football",  league:"nfl",                      espn_id:"14", abbr:"LAR"},
+    {key:"usc_fb", short:"USC Football",meta:"NCAAF · Big Ten",     emoji:"🏈", sport:"football",  league:"college-football",         espn_id:"30", abbr:"USC"},
+    {key:"usc_mbb",short:"USC Basketball",meta:"NCAAM",             emoji:"🏀", sport:"basketball",league:"mens-college-basketball",  espn_id:"30", abbr:"USC"},
+    {key:"usc_bb", short:"USC Baseball",meta:"CBB · Big Ten",       emoji:"⚾", sport:"baseball",  league:"college-baseball",         espn_id:"68", abbr:"USC"},
+  ];
+
+  async function fetchTeam(t) {
+    const base = `https://site.api.espn.com/apis/site/v2/sports/${t.sport}/${t.league}/teams/${t.espn_id}`;
+    try {
+      const [sumRes, schedRes] = await Promise.all([fetch(base), fetch(`${base}/schedule`)]);
+      const sum = await sumRes.json();
+      const sched = await schedRes.json();
+      const team = sum.team || {};
+      const recItems = (team.record || {}).items || [];
+      const record = recItems[0]?.summary || team.standingSummary || "—";
+      const events = (sched.events || []).map(e => {
+        const comp = (e.competitions || [{}])[0];
+        const comps = comp.competitors || [];
+        const home = comps.find(c => c.homeAway === "home");
+        const away = comps.find(c => c.homeAway === "away");
+        const status = (comp.status || {}).type || {};
+        const date = new Date(e.date);
+        const isHome = (home?.team?.abbreviation || "").toUpperCase() === t.abbr.toUpperCase();
+        return { date, name: e.shortName || e.name, state: status.state, completed: status.completed, isHome,
+                 home, away, myAbbr: t.abbr.toUpperCase() };
+      }).sort((a,b)=>a.date-b.date);
+      const now = new Date();
+      const past = events.filter(e => e.completed || e.date < new Date(now.getTime() - 6*3600*1000)).reverse();
+      const upcoming = events.filter(e => !e.completed && e.date >= new Date(now.getTime() - 6*3600*1000));
+      return { team: t, record, last: past[0], next: upcoming[0] };
+    } catch (e) {
+      return { team: t, record: "—", error: e.message };
+    }
+  }
+
+  function outcomeFor(g) {
+    if (!g) return "";
+    const me = g.isHome ? g.home : g.away;
+    const opp = g.isHome ? g.away : g.home;
+    const myS = parseInt(me?.score?.displayValue || me?.score || 0);
+    const oppS = parseInt(opp?.score?.displayValue || opp?.score || 0);
+    if (g.completed) {
+      const wl = myS > oppS ? "W" : myS < oppS ? "L" : "T";
+      return { txt: `${wl} ${myS}-${oppS} ${g.isHome ? 'vs' : '@'} ${opp?.team?.abbreviation || ''}`, cls: wl === "W" ? "win" : (wl === "L" ? "loss" : "") };
+    }
+    if (g.state === "in") return { txt: `LIVE ${myS}-${oppS}`, cls: "" };
+    return { txt: g.name, cls: "" };
+  }
+
+  function nextLabel(g) {
+    if (!g) return "";
+    const opp = g.isHome ? g.away : g.home;
+    const label = (g.isHome ? "vs " : "@ ") + (opp?.team?.abbreviation || "?");
+    const d = g.date;
+    const dateStr = d.toLocaleDateString("en-US", {month: "short", day: "numeric"});
+    return `${label} · ${dateStr}`;
+  }
+
+  function renderCards(snapshots) {
+    const grid = document.getElementById("snap-grid");
+    if (!grid) return;
+    grid.innerHTML = snapshots.map(s => {
+      const t = s.team;
+      const last = s.last ? outcomeFor(s.last) : null;
+      const next = s.next ? nextLabel(s.next) : null;
+      let status = "";
+      if (!last && !next) status = "Offseason";
+      const rows = [];
+      if (last) rows.push(`<div class="row"><span class="lbl">Last</span><span class="val ${last.cls}">${last.txt}</span></div>`);
+      if (next) rows.push(`<div class="row"><span class="lbl">Next</span><span class="val">${next}</span></div>`);
+      if (!last && !next) rows.push(`<div class="row"><span class="lbl">Status</span><span class="val">Offseason</span></div>`);
+      return `<div class="snap-card">
+        <div class="head"><span class="emoji">${t.emoji}</span>
+          <div><div class="name">${t.short}</div><div class="meta">${t.meta}</div></div>
+          <div class="record" style="margin-left:auto">${s.record}</div>
+        </div>
+        ${rows.join("")}
+      </div>`;
+    }).join("");
+  }
+
+  async function refresh() {
+    try {
+      const results = await Promise.all(TEAMS.map(fetchTeam));
+      renderCards(results);
+    } catch (e) { /* keep static fallback */ }
+  }
+
+  refresh();
+  setInterval(refresh, 5 * 60 * 1000);
+})();
+</script>
 </body>
 </html>
