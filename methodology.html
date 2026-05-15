@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology · How the bpleone.com quant score works</title>
+<meta name="description" content="Composite quant score for Pokémon TCG: momentum (55%) + scarcity (20%) + value (15%) + liquidity (10%). Full math, sourcing, and sanity guards.">
+<meta property="og:title" content="bpleone.com — Quant Methodology">
+<meta property="og:description" content="How the 0-100 composite score is computed across 774 cards. Full math + data sources.">
+<meta property="og:url" content="https://bpleone.com/methodology.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/methodology.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    background-image: radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%);
+    color: var(--text); line-height: 1.7; min-height: 100vh;
+  }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { max-width: 1200px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 64px 0 32px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px; }
+  h1 .accent { color: var(--gold); }
+  h2 { font-size: 24px; font-weight: 700; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  h2::before { content: '▸ '; color: var(--gold); }
+  h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; color: var(--gold-dim); }
+  p { color: var(--text); margin-bottom: 12px; font-size: 15px; }
+  ul { margin: 8px 0 16px 24px; }
+  li { margin-bottom: 6px; font-size: 15px; }
+  .lead { color: var(--text-dim); font-size: 17px; margin-bottom: 24px; }
+  .formula {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    padding: 20px 24px; margin: 20px 0; border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    color: var(--text); overflow-x: auto;
+  }
+  .weights {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+    margin: 20px 0; padding: 24px;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+  }
+  @media (max-width: 768px) { .weights { grid-template-columns: repeat(2, 1fr); } }
+  .weight {
+    text-align: center;
+  }
+  .weight .pct {
+    font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 700; color: var(--gold);
+  }
+  .weight .label {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px;
+  }
+  .signal-table {
+    width: 100%; border-collapse: collapse; margin: 16px 0;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden;
+  }
+  .signal-table th, .signal-table td { padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+  .signal-table thead { background: rgba(0,0,0,0.2); }
+  .signal-table th { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+                       letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+  .signal-table .signal-strong { color: var(--green); font-weight: 700; }
+  .signal-table .signal-buy { color: var(--green); }
+  .signal-table .signal-hold { color: var(--text-dim); }
+  .signal-table .signal-trim { color: var(--orange); }
+  .signal-table .signal-sell { color: var(--red); font-weight: 700; }
+  footer {
+    padding: 48px 0; margin-top: 60px; border-top: 1px solid var(--border);
+    color: var(--text-mute); font-size: 13px;
+    font-family: 'JetBrains Mono', monospace; text-align: center;
+  }
+  footer a { color: var(--gold-dim); text-decoration: none; }
+  code {
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    background: rgba(245,200,66,0.06); color: var(--gold);
+    padding: 2px 6px; border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/#desks">🧰 Desks</a>
+      <a href="/methodology.html" class="active">📐 Method</a>
+      <a href="/changelog.html">📋 Changelog</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">📐 Methodology</span>
+    <h1>How the <span class="accent">quant score</span> works.</h1>
+    <p class="lead">No black boxes. Every input, every weight, every threshold — published here so you can stress-test the model yourself.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h2>The composite score in one formula</h2>
+    <div class="formula">
+score = 0.55 · momentum + 0.20 · scarcity + 0.15 · value + 0.10 · liquidity
+    </div>
+    <p>Each component is normalized to <code>[0, 100]</code>. The weighted sum is bounded at 100. Three strategy modes change the weights:</p>
+
+    <div class="weights">
+      <div class="weight"><div class="pct">55%</div><div class="label">Momentum</div></div>
+      <div class="weight"><div class="pct">20%</div><div class="label">Scarcity</div></div>
+      <div class="weight"><div class="pct">15%</div><div class="label">Value</div></div>
+      <div class="weight"><div class="pct">10%</div><div class="label">Liquidity</div></div>
+    </div>
+
+    <h3>Mode: Balanced (default)</h3>
+    <p><code>55 / 20 / 15 / 10</code> — covers most use cases.</p>
+    <h3>Mode: Momentum (chase the runners)</h3>
+    <p><code>70 / 10 / 10 / 10</code> — weights recent moves heavily, less concerned with scarcity.</p>
+    <h3>Mode: Long-Term Hold (grail premium)</h3>
+    <p><code>30 / 40 / 15 / 15</code> — flips weights toward PSA pop scarcity, smooths over short-term noise.</p>
+
+    <h2>Component math</h2>
+
+    <h3>Momentum (0-100)</h3>
+    <div class="formula">
+momentum = clamp(0, 100, 50 + (d7 · 0.6 + d30 · 0.4) · 200)
+    </div>
+    <p>Recent-weighted (60% 7-day, 40% 30-day). Centered at 50 (flat = neutral). A 25% 30D run produces momentum ≈ 70.</p>
+    <p><strong>Live delta source:</strong> Until 5 days of <code>price_history.jsonl</code> accumulates, deltas are workbook-formula based and are <em>suppressed</em> in the public-facing ticker. Real 30D % activates after the 5-day mark.</p>
+
+    <h3>Scarcity (0-100)</h3>
+    <div class="formula">
+scarcity = clamp(0, 100, 100 - log₁₀(pop_psa10) · 16)
+    </div>
+    <p>Logarithmic decay against PSA 10 population. <strong>Pop 100</strong> → scarcity ≈ 68. <strong>Pop 10,000</strong> → scarcity ≈ 36. <strong>Pop unknown</strong> → default 60.</p>
+
+    <h3>Value (0-100)</h3>
+    <div class="formula">
+value = clamp(20, 100, 50 + (target_buy - price) / target_buy · 100)
+    </div>
+    <p>Where <code>target_buy = 0.80 × live_price</code>. Cards trading below the 80% MV threshold score higher. Floored at 20 so chase cards never zero out.</p>
+
+    <h3>Liquidity (0-100)</h3>
+    <p>Lookup by tier:</p>
+    <ul>
+      <li><strong>T1 Vintage Grails</strong> (Charizard 1st Ed, Pikachu Illustrator): 65</li>
+      <li><strong>T2 Modern Chase</strong> (Moonbreon, SIRs): 85</li>
+      <li><strong>T3 Mid-Modern</strong>: 55</li>
+      <li><strong>T4 Sealed/Specialty</strong>: 70</li>
+      <li><strong>T5 Modern Bulk</strong>: 45</li>
+      <li><strong>Unknown</strong>: 50</li>
+    </ul>
+
+    <h2>Signal thresholds</h2>
+    <table class="signal-table">
+      <thead><tr><th>Score</th><th>Signal</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td>≥ 75</td><td class="signal-strong">STRONG BUY</td><td>Algo says load up. Top-decile composite.</td></tr>
+        <tr><td>60–74</td><td class="signal-buy">BUY</td><td>Positive — worth a position.</td></tr>
+        <tr><td>40–59</td><td class="signal-hold">HOLD</td><td>Neutral. Existing positions OK, no new entries.</td></tr>
+        <tr><td>25–39</td><td class="signal-trim">TRIM</td><td>Reduce exposure; rotate capital.</td></tr>
+        <tr><td>&lt; 25</td><td class="signal-sell">SELL</td><td>Exit. Algo flags structural weakness.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Data sources</h2>
+    <h3>1. PriceCharting (primary for graded slabs)</h3>
+    <p>Per-grade aggregate prices (PSA 7/8/9/9.5/10). 3-6 month trailing window. <strong>This is the trusted benchmark</strong> — when PPT and PC disagree, PC wins.</p>
+
+    <h3>2. PokemonPriceTracker (graded fallback + ungraded reference)</h3>
+    <p>Per-grade eBay sold-comp medians (last ~30 days). More responsive to recent volatility but sensitive to thin-sample outliers. Used when PC has no data for the card, or paired with TCGPlayer market for raw NM.</p>
+
+    <h3>3. TCGPlayer mp-search-api (live raw market)</h3>
+    <p>No-auth public endpoint. Best signal for raw NM cards because it's the price Brandon's competitors actually see on TCGPlayer.</p>
+
+    <h3>4. PokemonTCG.io (card universe + images)</h3>
+    <p>20,000+ card catalog with TCGPlayer + Cardmarket price overlays. Powers the searchable Card Universe + card image enrichment.</p>
+
+    <h3>5. eBay sold-listings scrape (when available)</h3>
+    <p>Browse API integration pending. Direct scraping is blocked from data-center IPs (Akamai protection); GitHub Actions cron cannot reach eBay sold pages from its runners.</p>
+
+    <h2>Sanity guards</h2>
+    <p>Every price overlay passes through bidirectional sanity guards before reaching production:</p>
+    <ul>
+      <li><strong>Lower:</strong> reject if <code>live &lt; 20% × workbook</code> when workbook ≥ $100 — catches URL mismatches to cheap unrelated cards</li>
+      <li><strong>Upper:</strong> reject if <code>live &gt; 10× workbook</code> on sub-$1k cards — catches URL mismatches to grail-card auction records (e.g. matching a $5 Pikachu to a $300k trophy)</li>
+      <li><strong>Grade mapping:</strong> reject if PC <code>grade_10 / grade_9 &gt; 50×</code> in the same payload (parser bug detector)</li>
+      <li><strong>Thin sample:</strong> reject PPT data with fewer than 2 sales when live differs &gt;3× from workbook</li>
+      <li><strong>Match score floor:</strong> PriceCharting URL discovery requires a match score ≥ 6 (name + set + grade-marker tokens) before accepting a discovered URL</li>
+    </ul>
+    <p>Rejected entries are visible in the <a href="https://pokemon.bpleone.com/?tab=audit" target="_blank">Price Audit tab</a> with their original price, source, and rejection reason. Users can manually override via the same tab.</p>
+
+    <h2>What we explicitly don't model</h2>
+    <ul>
+      <li>Tournament-meta tier shifts (qualitative; no clean signal)</li>
+      <li>Anime/social-media virality (would require sentiment API; not built)</li>
+      <li>Vault/auction sentiment (proprietary; not public-data)</li>
+      <li>Reddit/Twitter buzz scores (data files exist; not wired into Score yet)</li>
+    </ul>
+
+    <h2>Refresh cadence</h2>
+    <ul>
+      <li><strong>Every 4 hours:</strong> GitHub Actions cron runs the full scraper, regenerates <code>live_prices.json</code>, <code>homepage_feed.json</code>, <code>cards.html</code>, and the Market Brief.</li>
+      <li><strong>Every 60s:</strong> Marketing site auto-refetches <code>/homepage_feed.json</code> from Cloudflare Pages (falls back to GitHub raw).</li>
+      <li><strong>On click:</strong> "↻ Refresh Now" button on the homepage forces immediate refetch.</li>
+    </ul>
+
+    <h2>Open data, audit-ready</h2>
+    <p>Every artifact mentioned here is in the public <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk" target="_blank" style="color: var(--gold);">trading-desk repo</a>. The scoring code is in <code>streamlit_app.py</code> (function <code>compute_score</code>). The scraper is <code>live_prices.py</code>. The sweep tools are <code>sweep_pc_now.py</code> and <code>sweep_ppt_holdouts.py</code>. Fork, validate, suggest changes.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Personal project · not financial advice · <a href="/">back to live terminal</a> ·
+    <a href="https://pokemon.bpleone.com" target="_blank">open Pro dashboard →</a>
+  </div>
+</footer>
+
+</body>
+</html>
