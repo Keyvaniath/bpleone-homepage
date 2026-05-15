@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-05-15T19:58:45.563347Z",
+  "generated_at": "2026-05-15T20:30:04.771811Z",
   "date_human": "Friday, May 15, 2026",
   "headline": "Tracking **774 cards** \u00b7 **555** live-priced (72% coverage) \u00b7 84 STRONG BUYs flagged today.",
   "paragraphs": [
     "Tracking **774 cards** \u00b7 **555** live-priced (72% coverage) \u00b7 84 STRONG BUYs flagged today.",
-    "**Trade of the Day: Lugia VSTAR Alt Art** (PSA 10) \u2014 $820 live, quant score **75/100**, signal **STRONG BUY**. Silver Tempest.",
+    "**Trade of the Day: Lugia VSTAR Alt Art** (PSA 10) \u2014 $113 live, quant score **75/100**, signal **STRONG BUY**. Silver Tempest.",
     "Top algo picks right now: **Mega Gengar ex SIR**, **Birthday Pikachu Promo**, **Umbreon VMAX (Moonbreon)**. Each scoring 75+ and trading under $5K.",
     "Algo flags to trim/skip: **Charizard Base Unlimited**, **Umbreon VMAX Alt (Japanese)**, **Mewtwo Base Unlimited**. Score-rank suggests caution.",
     "Coverage is at **72%** \u2014 the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 219 cards. Real-time 30-day deltas activate after 5 days of live tracking.",
-    "Total tracked-universe market cap: **$3.8M** (~$7k avg per card)."
+    "Total tracked-universe market cap: **$3.9M** (~$7k avg per card)."
   ],
   "tldr": [
     "555 cards live-priced of 774",
     "84 STRONG BUYs flagged today",
-    "Total mcap $3.8M",
+    "Total mcap $3.9M",
     "Trade of the Day: Lugia VSTAR Alt Art"
   ],
   "stats": {
     "total_cards": 774,
     "live_matched": 555,
-    "total_mcap": 3800725.0,
+    "total_mcap": 3855096.0,
     "avg_d30_pct": 0.1709,
     "strong_buys": 84,
     "history_snapshots": 2,
