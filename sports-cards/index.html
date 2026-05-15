@@ -11,7 +11,9 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bpleone.com/sports-cards/">
 <meta property="og:site_name" content="bpleone.com">
+<meta property="og:image" content="https://bpleone.com/og.svg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bpleone.com/og.svg">
 <meta name="twitter:title" content="Sports Cards Desk · bpleone.com">
 <meta name="twitter:description" content="PSA-graded sports cards. 98-card watchlist with composite quant scoring. Caleb Williams, Wemby, Skenes, '52 Mantle.">
 <link rel="canonical" href="https://bpleone.com/sports-cards/">
@@ -225,6 +227,63 @@
   th { color: var(--text-dim); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
   td.num { font-family: 'JetBrains Mono', monospace; text-align: right; }
 
+  .signal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+  }
+  .signal-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: border-color 0.15s;
+  }
+  .signal-card:hover { border-color: var(--gold); }
+  .signal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .signal-verdict {
+    color: #0a0e1a;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+  .signal-score {
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .signal-player {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .signal-meta {
+    color: var(--text-dim);
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .signal-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-dim);
+    border-top: 1px dashed var(--border);
+    padding-top: 8px;
+    gap: 6px;
+  }
+  .signal-stats strong { color: var(--text); font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+
   footer {
     border-top: 1px solid var(--border);
     padding: 32px 0;
@@ -263,6 +322,118 @@
 </section>
 
 <div class="container">
+
+  <section class="block">
+    <h2>Today's top BUY signals</h2>
+    <p style="color:var(--text-dim); margin-bottom:8px; font-size:14px;">Composite ≥ 70 from the live watchlist. Sorted by score. Refreshed weekly off eBay sold-comps.</p>
+    <div class="signal-grid">
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">76.2</span>
+        </div>
+        <div class="signal-player">Bryce Underwood</div>
+        <div class="signal-meta">Football · 2025 Panini Prizm Draft Picks · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$95</strong></span>
+          <span style="color:#22c55e">30d <strong>+60%</strong></span>
+          <span>Pop <strong>300</strong></span>
+        </div>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">75.5</span>
+        </div>
+        <div class="signal-player">Konnor Griffin</div>
+        <div class="signal-meta">Baseball · 2024 Bowman Chrome Prospects · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$55</strong></span>
+          <span style="color:#22c55e">30d <strong>+50%</strong></span>
+          <span>Pop <strong>350</strong></span>
+        </div>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">72.2</span>
+        </div>
+        <div class="signal-player">Travis Bazzana</div>
+        <div class="signal-meta">Baseball · 2024 Bowman Chrome Prospects · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$95</strong></span>
+          <span style="color:#22c55e">30d <strong>+40%</strong></span>
+          <span>Pop <strong>500</strong></span>
+        </div>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">71.5</span>
+        </div>
+        <div class="signal-player">Malik Nabers</div>
+        <div class="signal-meta">Football · 2024 Panini Prizm · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$110</strong></span>
+          <span style="color:#22c55e">30d <strong>+30%</strong></span>
+          <span>Pop <strong>1,200</strong></span>
+        </div>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">71.5</span>
+        </div>
+        <div class="signal-player">Travis Hunter</div>
+        <div class="signal-meta">Football · 2023 Panini Prizm Draft Picks · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$110</strong></span>
+          <span style="color:#22c55e">30d <strong>+30%</strong></span>
+          <span>Pop <strong>1,100</strong></span>
+        </div>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">71.2</span>
+        </div>
+        <div class="signal-player">Brock Bowers</div>
+        <div class="signal-meta">Football · 2024 Panini Prizm · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$130</strong></span>
+          <span style="color:#22c55e">30d <strong>+40%</strong></span>
+          <span>Pop <strong>1,100</strong></span>
+        </div>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">71.2</span>
+        </div>
+        <div class="signal-player">Cooper Flagg</div>
+        <div class="signal-meta">Basketball · 2024 Bowman University Chrome · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$480</strong></span>
+          <span style="color:#22c55e">30d <strong>+60%</strong></span>
+          <span>Pop <strong>800</strong></span>
+        </div>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:#86efac;">BUY</span>
+          <span class="signal-score">71.1</span>
+        </div>
+        <div class="signal-player">Roman Anthony</div>
+        <div class="signal-meta">Baseball · 2023 Bowman Chrome Prospects · PSA 10</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>$90</strong></span>
+          <span style="color:#22c55e">30d <strong>+25%</strong></span>
+          <span>Pop <strong>1,100</strong></span>
+        </div>
+      </div>
+    </div>
+    <p style="color:var(--text-dim); margin-top:14px; font-size:12px; font-style:italic;">Pre-live-price baseline. Once eBay refresh runs from a non-data-center IP, scores adjust based on real sold-comp medians vs anchor.</p>
+  </section>
 
   <div class="cta-row">
     <div class="pitch">
