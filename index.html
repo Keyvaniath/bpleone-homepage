@@ -1009,14 +1009,14 @@
   <div class="container">
     <div class="hero-eyebrow">
       <span class="live-pulse" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle;animation:pulse 1.6s infinite;"></span>
-      Quant Trading Desk · Live Data Below
+      Brandon P. Leone · Personal Trading Operation
     </div>
-    <h1>Trade Pokémon TCG<br><span class="accent">like a quant.</span></h1>
-    <p>774 cards tracked. Prices refresh every 4 hours from TCGPlayer, eBay sold-comps, and PriceCharting. Composite quant score blending momentum, value, scarcity, and liquidity flags every <strong style="color:var(--green);">STRONG BUY</strong> the moment the data turns.</p>
+    <h1>One operator.<br><span class="accent">Seven trading desks.</span></h1>
+    <p>An IB-style quant lab built from scratch — Pokémon TCG, sports cards, equity factor models, options pricing, and IB peer-comps tools. Each desk runs its own data pipeline, signals, and tooling. Live data, transparent scoring, no chartcraft.</p>
     <div class="subscribe-cta-row" style="justify-content: flex-start; margin-bottom: 24px;">
-      <a href="https://pokemon.bpleone.com" class="btn-primary" target="_blank">Open Full Dashboard →</a>
-      <a href="#live" class="btn-secondary" style="border-color: var(--green); color: var(--green);">📊 See Live Data</a>
-      <a href="#pricing" class="btn-secondary">See Pricing</a>
+      <a href="#desks" class="btn-primary">🧰 Browse All Desks</a>
+      <a href="https://pokemon.bpleone.com" class="btn-secondary" target="_blank" style="border-color: var(--green); color: var(--green);">🃏 Pokémon TCG (Live)</a>
+      <a href="https://sports-cards.bpleone.com" class="btn-secondary" target="_blank">🏀 Sports Cards (Live)</a>
     </div>
   </div>
 </header>
@@ -1081,137 +1081,6 @@
         </span>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ LIVE TICKER TAPE ============ -->
-<div class="tape-wrap">
-  <div class="tape-track" id="tape-track">
-    <span class="tape-item skeleton">⏳ Loading live tape…</span>
-  </div>
-</div>
-
-<!-- ============ LIVE DATA TERMINAL ============ -->
-<section id="live" class="terminal">
-  <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px;">
-      <span class="live-eyebrow"><span class="live-pulse"></span> Live · auto-refreshes every 60s</span>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <span id="data-freshness" style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);">checking feed…</span>
-        <button id="refresh-now-btn" type="button" style="background:transparent;border:1px solid var(--border);color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:11px;padding:5px 12px;border-radius:6px;cursor:pointer;letter-spacing:0.05em;text-transform:uppercase;transition:all 0.2s;">↻ Refresh Now</button>
-      </div>
-    </div>
-    <h2 class="live-headline">The market <span class="accent">right now.</span></h2>
-    <p class="live-sub">
-      No fluff. The same data feed that powers Brandon's dashboard, surfaced in plain English:
-      what to buy today, what's running, what's bleeding, and what the algo says you should do
-      in the next 24 hours.
-    </p>
-
-    <!-- KPI strip -->
-    <div class="stat-row">
-      <div class="stat-box">
-        <div class="label">Cards Tracked</div>
-        <div class="value gold" id="kpi-cards">—</div>
-        <div class="delta" id="kpi-cards-sub">in 5 budget brackets</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Live-Priced</div>
-        <div class="value green" id="kpi-matched">—</div>
-        <div class="delta" id="kpi-matched-sub">verified comps</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Market Cap</div>
-        <div class="value gold" id="kpi-mcap">—</div>
-        <div class="delta">tracked universe</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">STRONG BUYs</div>
-        <div class="value green" id="kpi-buys">—</div>
-        <div class="delta">score ≥ 75 today</div>
-      </div>
-      <div class="stat-box">
-        <div class="label">Avg 30D Move</div>
-        <div class="value" id="kpi-d30">—</div>
-        <div class="delta" id="kpi-updated">checking feed…</div>
-      </div>
-    </div>
-
-    <!-- Trade of the Day -->
-    <div class="totd" id="totd-card">
-      <div>
-        <span class="badge-hot">🎯 Trade of the Day</span>
-        <div class="totd-name" id="totd-name">⏳ Loading…</div>
-        <div class="totd-meta" id="totd-meta">—</div>
-        <div class="totd-thesis" id="totd-thesis">
-          Today's auto-selected pick: highest composite quant score under $1k.
-          Algorithm rebalances daily based on the same momentum + scarcity + value model
-          used by the Pro dashboard.
-        </div>
-      </div>
-      <div class="totd-stats">
-        <div class="totd-stat"><div class="l">Live Price</div><div class="v" id="totd-price">—</div></div>
-        <div class="totd-stat"><div class="l">30-Day %</div><div class="v green" id="totd-d30">—</div></div>
-        <div class="totd-stat"><div class="l">Quant Score</div><div class="v" id="totd-score">—</div></div>
-        <div class="totd-stat"><div class="l">Signal</div><div class="v green" id="totd-signal">—</div></div>
-      </div>
-    </div>
-
-    <!-- Movers + Strong Buys grid -->
-    <div class="data-grid">
-      <div class="data-panel">
-        <div class="data-panel-header">
-          <span class="title" id="movers-up-title">▲ Top by Score</span>
-          <span class="sub" id="movers-up-sub">algo picks · live 30D % activates after 5 days of tracking</span>
-        </div>
-        <table class="data-table">
-          <thead><tr><th>Card</th><th style="text-align:right;">Live $</th><th style="text-align:right;">Algo</th></tr></thead>
-          <tbody id="movers-up"><tr><td colspan="3" class="skeleton">⏳ Loading…</td></tr></tbody>
-        </table>
-      </div>
-      <div class="data-panel">
-        <div class="data-panel-header">
-          <span class="title" id="movers-down-title">▼ Bottom by Score</span>
-          <span class="sub" id="movers-down-sub">algo flags · cards to trim or skip</span>
-        </div>
-        <table class="data-table">
-          <thead><tr><th>Card</th><th style="text-align:right;">Live $</th><th style="text-align:right;">Algo</th></tr></thead>
-          <tbody id="movers-down"><tr><td colspan="3" class="skeleton">⏳ Loading…</td></tr></tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Strong Buys table (full-width) -->
-    <div class="data-panel" style="margin-bottom: 32px;">
-      <div class="data-panel-header">
-        <span class="title">🟢 STRONG BUYs · Algo Picks</span>
-        <span class="sub">Score ≥ 75 · under $5k · ranked by score</span>
-      </div>
-      <table class="data-table">
-        <thead><tr>
-          <th>Card</th>
-          <th style="text-align:right;">Live $</th>
-          <th style="text-align:right;">7D %</th>
-          <th style="text-align:right;">30D %</th>
-          <th style="text-align:right;">Score</th>
-          <th style="text-align:right;">Signal</th>
-        </tr></thead>
-        <tbody id="strong-buys"><tr><td colspan="6" class="skeleton">⏳ Loading…</td></tr></tbody>
-      </table>
-    </div>
-
-    <!-- What to do today -->
-    <div class="what-todo">
-      <h3>📋 What to do in the next 24 hours</h3>
-      <ol>
-        <li><strong id="action-buy">Pull the trigger on today's pick.</strong> Algo flagged it overnight after a +<span id="action-buy-pct">—</span>% 30-day run with score ≥ 75. <a href="https://pokemon.bpleone.com" target="_blank">See full thesis →</a></li>
-        <li><strong>Re-check your watchlist gainers.</strong> When a card prints +20% in 30 days, eBay listings catch up within a week — buy now or pay through the nose later.</li>
-        <li><strong>Trim the losers before they bleed more.</strong> Cards on the Top Losers list dropped for a reason: rotation out of meta, sealed product reprints, or pop report inflation. Set a stop or rotate the capital.</li>
-        <li><strong>Verify before you wire.</strong> If a deal looks too good, check the PSA cert at <a href="https://pokemon.bpleone.com/?tab=cert" target="_blank">our cert verifier</a> before paying — counterfeit slabs are the #1 way you lose money in this hobby.</li>
-        <li><strong>Crack or hold sealed?</strong> Plug your box into the <a href="https://pokemon.bpleone.com/?tab=crackit" target="_blank">Crack-It Calculator</a> — it runs full EV math on opening vs holding 3 years.</li>
-      </ol>
-    </div>
-
   </div>
 </section>
 
@@ -1322,6 +1191,136 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+
+<!-- ============ LIVE TICKER TAPE ============ -->
+<div class="tape-wrap">
+  <div class="tape-track" id="tape-track">
+    <span class="tape-item skeleton">⏳ Loading live tape…</span>
+  </div>
+</div>
+
+<!-- ============ LIVE DATA TERMINAL ============ -->
+<section id="live" class="terminal">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px;">
+      <span class="live-eyebrow"><span class="live-pulse"></span> Live · auto-refreshes every 60s</span>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span id="data-freshness" style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);">checking feed…</span>
+        <button id="refresh-now-btn" type="button" style="background:transparent;border:1px solid var(--border);color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:11px;padding:5px 12px;border-radius:6px;cursor:pointer;letter-spacing:0.05em;text-transform:uppercase;transition:all 0.2s;">↻ Refresh Now</button>
+      </div>
+    </div>
+    <h2 class="live-headline">🃏 Pokémon TCG · <span class="accent">live market.</span></h2>
+    <p class="live-sub">
+      Featured desk: live data from the Pokémon TCG trading operation. What to buy today, what's running, what's bleeding, and what the algo says you should do in the next 24 hours.
+    </p>
+
+    <!-- KPI strip -->
+    <div class="stat-row">
+      <div class="stat-box">
+        <div class="label">Cards Tracked</div>
+        <div class="value gold" id="kpi-cards">—</div>
+        <div class="delta" id="kpi-cards-sub">in 5 budget brackets</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Live-Priced</div>
+        <div class="value green" id="kpi-matched">—</div>
+        <div class="delta" id="kpi-matched-sub">verified comps</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Market Cap</div>
+        <div class="value gold" id="kpi-mcap">—</div>
+        <div class="delta">tracked universe</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">STRONG BUYs</div>
+        <div class="value green" id="kpi-buys">—</div>
+        <div class="delta">score ≥ 75 today</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Avg 30D Move</div>
+        <div class="value" id="kpi-d30">—</div>
+        <div class="delta" id="kpi-updated">checking feed…</div>
+      </div>
+    </div>
+
+    <!-- Trade of the Day -->
+    <div class="totd" id="totd-card">
+      <div>
+        <span class="badge-hot">🎯 Trade of the Day</span>
+        <div class="totd-name" id="totd-name">⏳ Loading…</div>
+        <div class="totd-meta" id="totd-meta">—</div>
+        <div class="totd-thesis" id="totd-thesis">
+          Today's auto-selected pick: highest composite quant score under $1k.
+          Algorithm rebalances daily based on the same momentum + scarcity + value model
+          used by the Pro dashboard.
+        </div>
+      </div>
+      <div class="totd-stats">
+        <div class="totd-stat"><div class="l">Live Price</div><div class="v" id="totd-price">—</div></div>
+        <div class="totd-stat"><div class="l">30-Day %</div><div class="v green" id="totd-d30">—</div></div>
+        <div class="totd-stat"><div class="l">Quant Score</div><div class="v" id="totd-score">—</div></div>
+        <div class="totd-stat"><div class="l">Signal</div><div class="v green" id="totd-signal">—</div></div>
+      </div>
+    </div>
+
+    <!-- Movers + Strong Buys grid -->
+    <div class="data-grid">
+      <div class="data-panel">
+        <div class="data-panel-header">
+          <span class="title" id="movers-up-title">▲ Top by Score</span>
+          <span class="sub" id="movers-up-sub">algo picks · live 30D % activates after 5 days of tracking</span>
+        </div>
+        <table class="data-table">
+          <thead><tr><th>Card</th><th style="text-align:right;">Live $</th><th style="text-align:right;">Algo</th></tr></thead>
+          <tbody id="movers-up"><tr><td colspan="3" class="skeleton">⏳ Loading…</td></tr></tbody>
+        </table>
+      </div>
+      <div class="data-panel">
+        <div class="data-panel-header">
+          <span class="title" id="movers-down-title">▼ Bottom by Score</span>
+          <span class="sub" id="movers-down-sub">algo flags · cards to trim or skip</span>
+        </div>
+        <table class="data-table">
+          <thead><tr><th>Card</th><th style="text-align:right;">Live $</th><th style="text-align:right;">Algo</th></tr></thead>
+          <tbody id="movers-down"><tr><td colspan="3" class="skeleton">⏳ Loading…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Strong Buys table (full-width) -->
+    <div class="data-panel" style="margin-bottom: 32px;">
+      <div class="data-panel-header">
+        <span class="title">🟢 STRONG BUYs · Algo Picks</span>
+        <span class="sub">Score ≥ 75 · under $5k · ranked by score</span>
+      </div>
+      <table class="data-table">
+        <thead><tr>
+          <th>Card</th>
+          <th style="text-align:right;">Live $</th>
+          <th style="text-align:right;">7D %</th>
+          <th style="text-align:right;">30D %</th>
+          <th style="text-align:right;">Score</th>
+          <th style="text-align:right;">Signal</th>
+        </tr></thead>
+        <tbody id="strong-buys"><tr><td colspan="6" class="skeleton">⏳ Loading…</td></tr></tbody>
+      </table>
+    </div>
+
+    <!-- What to do today -->
+    <div class="what-todo">
+      <h3>📋 What to do in the next 24 hours</h3>
+      <ol>
+        <li><strong id="action-buy">Pull the trigger on today's pick.</strong> Algo flagged it overnight after a +<span id="action-buy-pct">—</span>% 30-day run with score ≥ 75. <a href="https://pokemon.bpleone.com" target="_blank">See full thesis →</a></li>
+        <li><strong>Re-check your watchlist gainers.</strong> When a card prints +20% in 30 days, eBay listings catch up within a week — buy now or pay through the nose later.</li>
+        <li><strong>Trim the losers before they bleed more.</strong> Cards on the Top Losers list dropped for a reason: rotation out of meta, sealed product reprints, or pop report inflation. Set a stop or rotate the capital.</li>
+        <li><strong>Verify before you wire.</strong> If a deal looks too good, check the PSA cert at <a href="https://pokemon.bpleone.com/?tab=cert" target="_blank">our cert verifier</a> before paying — counterfeit slabs are the #1 way you lose money in this hobby.</li>
+        <li><strong>Crack or hold sealed?</strong> Plug your box into the <a href="https://pokemon.bpleone.com/?tab=crackit" target="_blank">Crack-It Calculator</a> — it runs full EV math on opening vs holding 3 years.</li>
+      </ol>
+    </div>
+
   </div>
 </section>
 
