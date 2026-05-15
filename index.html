@@ -1323,6 +1323,14 @@
   </div>
 </nav>
 
+<!-- Top-of-page data-freshness banner. Hidden when fresh; orange when stale (>6h); red when very stale (>24h). -->
+<div id="freshness-banner" style="display:none;border-bottom:1px solid var(--border);padding:8px 0;font-family:'JetBrains Mono',monospace;font-size:12px;">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+    <span id="freshness-msg">Data freshness check…</span>
+    <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk/actions/workflows/live_refresh.yml" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">↻ Trigger refresh →</a>
+  </div>
+</div>
+
 <header class="hero" style="padding-bottom: 24px;">
   <div class="container">
     <div class="hero-eyebrow">
@@ -2260,6 +2268,26 @@
       d30El.style.color = d30 > 0 ? 'var(--green)' : (d30 < 0 ? 'var(--red)' : 'var(--text)');
     }
     setText('kpi-updated', 'updated ' + relTime(feed.live_updated_at));
+
+    // Freshness banner: warn if data is older than 6h, scream if older than 24h
+    try {
+      const banner = document.getElementById('freshness-banner');
+      if (banner && feed.live_updated_at) {
+        const t = new Date(feed.live_updated_at);
+        const hrs = (Date.now() - t.getTime()) / 3600000;
+        if (hrs < 6) {
+          banner.style.display = 'none';
+        } else {
+          banner.style.display = '';
+          let icon = '⚠️', color = '#fb923c', bg = 'rgba(251,146,60,0.08)', border = 'rgba(251,146,60,0.25)';
+          if (hrs > 24) { icon = '🚨'; color = '#f87171'; bg = 'rgba(248,113,113,0.1)'; border = 'rgba(248,113,113,0.3)'; }
+          banner.style.background = bg;
+          banner.style.borderColor = border;
+          banner.style.color = color;
+          setText('freshness-msg', icon + ' Data is ' + Math.round(hrs) + 'h old (target: 4h). Cron may have missed its slot.');
+        }
+      }
+    } catch (e) {}
 
     // Live-tracking freshness pill: shows how long we have history + how stale the scrape is
     const histDays = s.history_age_days || 0;
