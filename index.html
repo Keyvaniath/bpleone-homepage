@@ -1745,6 +1745,10 @@
     '/market_brief.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/market_brief.json'
   ];
+  const SETS_URLS = [
+    '/featured_sets.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/featured_sets.json'
+  ];
   const REFRESH_MS = 60 * 1000;
 
   function mdInline(s) {
@@ -1772,6 +1776,36 @@
         console.warn('Brief load failed:', err);
         const body = document.getElementById('brief-body');
         if (body) body.innerHTML = '<p style="color:var(--text-mute);">Market brief unavailable. Try refreshing in 60s.</p>';
+      });
+  }
+
+  function renderFeaturedSets(sets) {
+    const grid = document.getElementById('featured-sets-grid');
+    if (!grid || !Array.isArray(sets)) return;
+    grid.innerHTML = sets.map(s => {
+      const drillUrl = 'https://pokemon.bpleone.com/?tab=universe&set=' + encodeURIComponent(s.id);
+      const chase = s.chase || {};
+      const chaseImg = chase.image ? '<img src="' + chase.image + '" alt="">' : '<div style="width:32px;height:44px;background:var(--bg);border-radius:3px;"></div>';
+      const chasePrice = chase.market ? '$' + Math.round(chase.market).toLocaleString() : '—';
+      const totalMcap = s.total_market ? '$' + (s.total_market >= 1000 ? (s.total_market/1000).toFixed(0) + 'k' : Math.round(s.total_market)) : '';
+      return '<a class="set-card" href="' + drillUrl + '" target="_blank" rel="noopener">' +
+        '<div class="set-logo">' + (s.logo ? '<img src="' + s.logo + '" alt="' + s.name + '">' : '<div style="color:var(--text-mute);font-size:12px;">no logo</div>') + '</div>' +
+        '<div class="set-name">' + s.name + '</div>' +
+        '<div class="set-meta"><span>' + (s.release_date || '').slice(0,10) + '</span><span>' + (s.total || '?') + ' cards · ' + (s.chase_count || 0) + ' chase</span></div>' +
+        '<div class="set-chase">' + chaseImg +
+          '<div class="info"><div class="label">Chase</div><div class="name">' + (chase.name || '—') + '</div></div>' +
+          '<div class="price">' + chasePrice + '</div>' +
+        '</div></a>';
+    }).join('');
+  }
+
+  function loadFeaturedSets() {
+    tryFetch(SETS_URLS, 0)
+      .then(renderFeaturedSets)
+      .catch(err => {
+        console.warn('Featured sets load failed:', err);
+        const grid = document.getElementById('featured-sets-grid');
+        if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); text-align:center; padding: 20px;">Featured sets unavailable.</p>';
       });
   }
 
@@ -1975,8 +2009,10 @@
   document.addEventListener('DOMContentLoaded', function() {
     load();
     loadBrief();
+    loadFeaturedSets();
     setInterval(load, REFRESH_MS);
     setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
+    setInterval(loadFeaturedSets, REFRESH_MS * 30);  // refresh sets hourly
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
     if (btn) {
