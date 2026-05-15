@@ -575,9 +575,17 @@
   function saveRecent(list) {
     try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch {}
   }
-  function pushRecent(c) {
+  function pushRecent(c, sticker) {
+    const existing = loadRecent().find(x => x.id === c.id) || {};
     const list = loadRecent().filter(x => x.id !== c.id);
-    list.unshift({ id: c.id, name: c.name, set: c.set, variant: c.variant, ts: Date.now() });
+    list.unshift({
+      id: c.id,
+      name: c.name,
+      set: c.set,
+      variant: c.variant,
+      ts: Date.now(),
+      sticker: sticker == null ? existing.sticker : sticker,
+    });
     saveRecent(list.slice(0, 5));
     renderRecent();
   }
@@ -590,18 +598,29 @@
       return;
     }
     box.style.display = 'block';
-    chips.innerHTML = list.map(r => (
-      '<button type="button" data-id="' + escapeHtml(r.id) + '" ' +
-      'style="background:var(--bg-card);border:1px solid var(--border);color:var(--text-dim);' +
-      'padding:6px 12px;border-radius:14px;font-size:12px;cursor:pointer;font-family:Inter,sans-serif;' +
-      'max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' +
-      escapeHtml(r.name) + '</button>'
-    )).join('');
+    chips.innerHTML = list.map(r => {
+      const stickerNote = (r.sticker != null && r.sticker > 0)
+        ? ' <span style="color:var(--gold);font-weight:600;">@ $' + Math.round(r.sticker).toLocaleString() + '</span>'
+        : '';
+      return '<button type="button" data-id="' + escapeHtml(r.id) + '" ' +
+        'style="background:var(--bg-card);border:1px solid var(--border);color:var(--text-dim);' +
+        'padding:6px 12px;border-radius:14px;font-size:12px;cursor:pointer;font-family:Inter,sans-serif;' +
+        'max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' +
+        escapeHtml(r.name) + stickerNote + '</button>';
+    }).join('');
     chips.querySelectorAll('button').forEach(b => {
       b.addEventListener('click', () => {
         const id = b.getAttribute('data-id');
         const card = CARDS.find(c => c.id === id);
-        if (card) selectCard(card);
+        if (!card) return;
+        selectCard(card);
+        // Restore previously-entered sticker price for this card if we have one
+        const past = loadRecent().find(x => x.id === id);
+        if (past && past.sticker != null) {
+          const st = document.getElementById('sticker');
+          st.value = past.sticker;
+          renderVerdict(card, past.sticker);
+        }
       });
     });
   }
@@ -709,7 +728,11 @@
   document.getElementById('sticker').addEventListener('input', (e) => {
     if (!selectedCard) return;
     const v = parseFloat(e.target.value);
-    renderVerdict(selectedCard, isNaN(v) ? null : v);
+    const sticker = isNaN(v) ? null : v;
+    renderVerdict(selectedCard, sticker);
+    // Persist the sticker price on the recent-lookups entry so the chip
+    // restores it when tapped later in the show.
+    pushRecent(selectedCard, sticker);
   });
 
   // ----- PWA: register service worker for offline + install -----
