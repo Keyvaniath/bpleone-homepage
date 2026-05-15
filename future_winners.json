@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-15T19:57:29.099281Z",
+  "generated_at": "2026-05-15T20:30:06.091813Z",
   "methodology": "Future Winners is a forward-looking model. Score = 0.25*momentum_rising + 0.20*scarcity + 0.15*accessibility + 0.15*hidden_alpha + 0.15*tier_premium + 0.10*liquidity. Candidates capped at $5,000 live price for accessibility.",
   "count": 30,
   "winners": [
@@ -389,6 +389,30 @@
       "image": "https://images.pokemontcg.io/swshp/SWSH262.png"
     },
     {
+      "id": "M024",
+      "name": "Lugia VSTAR Alt Art",
+      "set": "Silver Tempest",
+      "number": "TG30/TG30",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 3800,
+      "live_price": 113.25,
+      "wb_price": 820.0,
+      "target_buy": 90.6,
+      "target_sell": 107.59,
+      "fw_score": 73.4,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 35.6,
+        "accessibility": 70,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/swsh12/202.png"
+    },
+    {
       "id": "M043",
       "name": "Alakazam ex SIR",
       "set": "Scarlet & Violet 151",
@@ -699,30 +723,6 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/me2/56.png"
-    },
-    {
-      "id": "M012",
-      "name": "Rayquaza V Alt Art",
-      "set": "Evolving Skies",
-      "number": "194/203",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 3200,
-      "live_price": 620.0,
-      "wb_price": 620.0,
-      "target_buy": 496.0,
-      "target_sell": 589.0,
-      "fw_score": 69.9,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 36.9,
-        "accessibility": 45,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh7/194.png"
     }
   ]
 }
