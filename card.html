@@ -206,6 +206,20 @@
 
   function signalClass(s) { return (s || '').toLowerCase().replace(' ', '-'); }
 
+  // Data-confidence badge for the detail page
+  function confidenceBadge(c) {
+    const conf = (c.confidence || 'UNKNOWN').toUpperCase();
+    const colors = {
+      HIGH:     ['#4ade80', 'rgba(74,222,128,0.18)', 'rgba(74,222,128,0.4)', '✓ HIGH · all sources agree'],
+      OVERRIDE: ['#f5c842', 'rgba(245,200,66,0.15)', 'rgba(245,200,66,0.4)', '🔒 MANUAL · user-set price'],
+      MEDIUM:   ['#fbbf24', 'rgba(251,191,36,0.12)', 'rgba(251,191,36,0.3)', '~ MEDIUM · partial cross-check'],
+      LOW:      ['#f87171', 'rgba(248,113,113,0.12)', 'rgba(248,113,113,0.35)', '⚠ LOW · sources disagree'],
+      UNKNOWN:  ['#8b94a8', 'rgba(139,148,168,0.12)', 'var(--border)', '? UNKNOWN · needs scrape'],
+    };
+    const [fg, bg, br, lbl] = colors[conf] || colors.UNKNOWN;
+    return '<span style="display:inline-block;padding:5px 12px;border-radius:6px;font-family:monospace;font-size:11px;font-weight:700;letter-spacing:0.1em;color:' + fg + ';background:' + bg + ';border:1px solid ' + br + ';margin-right:8px;">' + lbl + '</span>';
+  }
+
   // Variant badge class — color-coded so PSA 10 vs Raw NM is unambiguous
   function variantClass(v) {
     v = (v || '').toUpperCase();
@@ -369,6 +383,7 @@
             '<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 4px;">' +
               '<span class="variant-pill ' + variantClass(card.variant) + '">' + variantLabel(card.variant) + '</span>' +
               '<span class="signal-pill ' + signalClass(card.signal) + '">' + card.signal + ' · Score ' + card.score + '/100</span>' +
+              confidenceBadge(card) +
             '</div>' +
           '</div>' +
 
