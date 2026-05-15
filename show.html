@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Card-show buying mode — instant fair-value check for Pokemon cards.">
+<meta name="theme-color" content="#0a0e1a">
+<title>🃏 Show Mode — Card-show buying tool</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-card: #131826;
+    --bg-card-hover: #1a2034;
+    --border: #232a3e;
+    --gold: #f5c842;
+    --gold-dim: #c9a73c;
+    --text: #e8ecf4;
+    --text-dim: #8b94a8;
+    --text-mute: #5a6378;
+    --green: #4ade80;
+    --orange: #fb923c;
+    --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html { font-size: 16px; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  header {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(10,14,26,0.9);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .brand {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .brand a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .brand .accent { color: var(--gold); }
+  .status-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+  }
+  .status-pill.live { color: var(--green); border-color: var(--green); }
+
+  h1.title {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 24px 0 4px;
+    letter-spacing: -0.01em;
+  }
+  h1.title .accent { color: var(--gold); }
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  /* The big search input */
+  .search-wrap {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 18px 18px 18px 50px;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    color: var(--text);
+    outline: none;
+    transition: border 0.2s;
+  }
+  .search-input:focus { border-color: var(--gold); }
+  .search-input::placeholder { color: var(--text-mute); }
+  .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-mute);
+    font-size: 22px;
+    pointer-events: none;
+  }
+  .search-clear {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-card-hover);
+    color: var(--text-dim);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+  }
+  .search-clear.visible { display: block; }
+
+  /* Sticker price input (shown after selecting a card) */
+  .sticker-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 12px;
+    display: none;
+  }
+  .sticker-section.visible { display: block; }
+  .sticker-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-mute);
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+  .sticker-input-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dollar-sign {
+    font-size: 24px;
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .sticker-input {
+    flex: 1;
+    padding: 14px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    outline: none;
+    text-align: center;
+  }
+  .sticker-input:focus { border-color: var(--gold); }
+
+  /* Verdict card — the headline answer */
+  .verdict-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+    display: none;
+  }
+  .verdict-card.visible { display: block; }
+  .verdict-pill {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .verdict-great { background: var(--green); color: var(--bg); }
+  .verdict-fair  { background: var(--gold); color: var(--bg); }
+  .verdict-bad   { background: var(--red); color: var(--bg); }
+  .verdict-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .verdict-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+  }
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .price-stat {
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .price-stat .l {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .price-stat .v {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .price-stat .v.green { color: var(--green); }
+  .price-stat .v.gold  { color: var(--gold); }
+  .price-stat .v.red   { color: var(--red); }
+  .verdict-thesis {
+    text-align: left;
+    font-size: 14px;
+    color: var(--text-dim);
+    background: var(--bg);
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 14px;
+    line-height: 1.5;
+  }
+  .verdict-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .verdict-actions a {
+    flex: 1;
+    padding: 12px;
+    background: var(--bg);
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid var(--border);
+  }
+  .verdict-actions a:hover { background: var(--bg-card-hover); }
+
+  /* Results list (shown while typing) */
+  .results-list {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    display: none;
+  }
+  .results-list.visible { display: block; }
+  .result-row {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .result-row:last-child { border-bottom: none; }
+  .result-row:active { background: var(--bg-card-hover); }
+  .result-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .result-meta {
+    font-size: 12px;
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .result-meta .price { color: var(--gold); font-weight: 600; }
+  .result-empty {
+    padding: 24px;
+    text-align: center;
+    color: var(--text-mute);
+    font-size: 14px;
+  }
+
+  /* Tips strip */
+  .tips {
+    background: var(--bg-card);
+    border-radius: 14px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    margin-top: 16px;
+  }
+  .tips h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--gold);
+  }
+  .tips ul {
+    list-style: none;
+  }
+  .tips li {
+    font-size: 13px;
+    color: var(--text-dim);
+    padding: 6px 0 6px 22px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .tips li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 32px;
+    padding: 20px 16px;
+    text-align: center;
+    color: var(--text-mute);
+    font-size: 12px;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-row">
+    <span class="brand"><a href="/">bpleone<span class="accent">.</span>com</a> · 🃏 Show Mode</span>
+    <span class="status-pill" id="status">⏳ Loading feed…</span>
+  </div>
+</header>
+
+<div class="container">
+  <h1 class="title">Card show? <span class="accent">Check the price first.</span></h1>
+  <p class="subtitle">Type a card name to see live fair value · enter the sticker price for an instant BUY / PASS verdict.</p>
+
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search" class="search-input" placeholder="Type card name (e.g. Moonbreon, Charizard, Iono)" autocomplete="off" autofocus inputmode="search">
+    <button type="button" class="search-clear" id="search-clear">×</button>
+  </div>
+
+  <div class="results-list" id="results"></div>
+
+  <div class="sticker-section" id="sticker-section">
+    <div class="sticker-label">Dealer's sticker price ($)</div>
+    <div class="sticker-input-row">
+      <span class="dollar-sign">$</span>
+      <input type="number" id="sticker" class="sticker-input" placeholder="0" inputmode="decimal" min="0" step="0.01">
+    </div>
+  </div>
+
+  <div class="verdict-card" id="verdict">
+    <span class="verdict-pill" id="verdict-pill">⏳</span>
+    <div class="verdict-name" id="verdict-name">—</div>
+    <div class="verdict-meta" id="verdict-meta">—</div>
+    <div class="price-grid">
+      <div class="price-stat">
+        <div class="l">Fair Value</div>
+        <div class="v gold" id="v-fair">—</div>
+      </div>
+      <div class="price-stat">
+        <div class="l">Target Buy</div>
+        <div class="v green" id="v-target-buy">—</div>
+      </div>
+      <div class="price-stat">
+        <div class="l">Target Sell</div>
+        <div class="v" id="v-target-sell">—</div>
+      </div>
+    </div>
+    <div class="verdict-thesis" id="verdict-thesis">—</div>
+    <div class="verdict-actions">
+      <a href="#" id="ebay-search" target="_blank" rel="noopener">📊 eBay sold</a>
+      <a href="#" id="tcgp-search" target="_blank" rel="noopener">🛒 TCGPlayer</a>
+    </div>
+  </div>
+
+  <div class="tips">
+    <h3>💡 Card-show tips</h3>
+    <ul>
+      <li><strong>Target buy = fair value × 0.80.</strong> 20% margin covers shipping, eBay fees, and risk.</li>
+      <li><strong>Counter at target buy.</strong> Dealers expect haggling — start 10–15% below sticker.</li>
+      <li><strong>Walk if the sticker is above fair value.</strong> Plenty of dealers, plenty of cards.</li>
+      <li><strong>Check the card in-hand before paying.</strong> Centering, surface, edges. NM is worth 2× MP.</li>
+      <li><strong>Sealed product? Open the Crack-It calc.</strong> Pokemon.bpleone.com → Crack-It Calculator.</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>🃏 <a href="https://pokemon.bpleone.com">pokemon.bpleone.com</a> · Personal trading desk · Not financial advice</p>
+</footer>
+
+<script>
+  // ============================================================
+  // Card-show mode
+  // ============================================================
+  // Loads homepage_feed.json (deployed alongside this page) and gives instant
+  // BUY / FAIR / PASS verdicts for any card you type, against an optional
+  // dealer sticker price.
+  //
+  // Fair value math:
+  //   target_buy  = fair_value * 0.80     (20% margin = ~13% eBay fees + ~7% buffer)
+  //   target_sell = fair_value * 1.10     (10% above market = list-and-wait)
+  //
+  // Verdict thresholds (sticker $ vs fair value):
+  //   ratio <= 0.80    GREAT BUY    (at/below target buy)
+  //   ratio <= 0.95    OK BUY       (slight margin)
+  //   ratio <= 1.10    FAIR         (paying retail — pass unless you want it)
+  //   ratio >  1.10    PASS         (overpriced — walk)
+  // ============================================================
+
+  const FEED_URLS = [
+    './homepage_feed.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/homepage_feed.json',
+  ];
+
+  let CARDS = [];
+
+  const fmt$ = v => v == null || isNaN(v) ? '—' : '$' + Math.round(v).toLocaleString();
+  const fmt$2 = v => v == null || isNaN(v) ? '—' : '$' + Number(v).toLocaleString(undefined, {maximumFractionDigits: 2});
+
+  function setText(id, val) { const el = document.getElementById(id); if (el) el.textContent = val; }
+
+  function loadFeed() {
+    return (function tryFetch(idx) {
+      if (idx >= FEED_URLS.length) return Promise.reject('no feed reachable');
+      return fetch(FEED_URLS[idx] + '?t=' + Date.now())
+        .then(r => r.ok ? r.json() : Promise.reject(r.status))
+        .catch(() => tryFetch(idx + 1));
+    })(0);
+  }
+
+  loadFeed().then(feed => {
+    CARDS = feed.card_index || [];
+    const status = document.getElementById('status');
+    if (CARDS.length) {
+      status.textContent = '● ' + CARDS.length + ' cards · live';
+      status.classList.add('live');
+    } else {
+      status.textContent = '⚠ feed empty';
+    }
+  }).catch(err => {
+    document.getElementById('status').textContent = '⚠ feed unreachable';
+    console.warn('feed load failed', err);
+  });
+
+  // ----- Search behavior -----
+  const searchEl = document.getElementById('search');
+  const clearBtn = document.getElementById('search-clear');
+  const resultsEl = document.getElementById('results');
+
+  let selectedCard = null;
+
+  function search(q) {
+    q = (q || '').trim().toLowerCase();
+    if (!q) {
+      resultsEl.classList.remove('visible');
+      resultsEl.innerHTML = '';
+      return;
+    }
+    // Tokenize and require ALL tokens to match somewhere in name/set/variant
+    const toks = q.split(/\s+/).filter(t => t.length >= 2);
+    if (toks.length === 0) {
+      resultsEl.classList.remove('visible');
+      return;
+    }
+    const hits = CARDS.filter(c => {
+      const blob = ((c.name || '') + ' ' + (c.set || '') + ' ' + (c.variant || '')).toLowerCase();
+      return toks.every(t => blob.includes(t));
+    }).slice(0, 12);
+
+    if (hits.length === 0) {
+      resultsEl.innerHTML = '<div class="result-empty">No matches in the 774-card watchlist. Try a different spelling.</div>';
+      resultsEl.classList.add('visible');
+      return;
+    }
+    resultsEl.innerHTML = hits.map(c => (
+      '<div class="result-row" data-id="' + c.id + '">' +
+        '<div class="result-name">' + escapeHtml(c.name) + '</div>' +
+        '<div class="result-meta">' + escapeHtml(c.set) + ' · ' + escapeHtml(c.variant) + ' · <span class="price">' + fmt$(c.price) + '</span></div>' +
+      '</div>'
+    )).join('');
+    resultsEl.classList.add('visible');
+
+    // Wire row taps
+    resultsEl.querySelectorAll('.result-row').forEach(row => {
+      row.addEventListener('click', () => {
+        const id = row.getAttribute('data-id');
+        const card = CARDS.find(c => c.id === id);
+        if (card) selectCard(card);
+      });
+    });
+  }
+
+  function selectCard(c) {
+    selectedCard = c;
+    searchEl.value = c.name;
+    resultsEl.classList.remove('visible');
+    document.getElementById('sticker-section').classList.add('visible');
+    document.getElementById('verdict').classList.add('visible');
+
+    // Pre-fill verdict with no sticker (just shows fair value + targets)
+    renderVerdict(c, null);
+
+    // Focus the sticker input
+    const st = document.getElementById('sticker');
+    st.value = '';
+    setTimeout(() => st.focus(), 50);
+  }
+
+  function renderVerdict(c, sticker) {
+    const fair = c.price || 0;
+    const targetBuy = fair * 0.80;
+    const targetSell = fair * 1.10;
+
+    setText('verdict-name', c.name);
+    setText('verdict-meta', c.set + ' · ' + c.variant);
+    setText('v-fair', fmt$(fair));
+    setText('v-target-buy', fmt$(targetBuy));
+    setText('v-target-sell', fmt$(targetSell));
+
+    let pill, pillCls, thesis;
+    if (sticker == null || sticker <= 0) {
+      pill = '— Enter sticker price';
+      pillCls = 'verdict-fair';
+      thesis = 'Type the dealer\'s sticker price above for an instant BUY / FAIR / PASS verdict. Live fair value is ' + fmt$(fair) + ' (sold-comp median + PriceCharting blend).';
+    } else {
+      const ratio = sticker / fair;
+      if (ratio <= 0.80) {
+        pill = '🚀 GREAT BUY';
+        pillCls = 'verdict-great';
+        const margin = ((fair - sticker) / sticker * 100).toFixed(0);
+        thesis = 'At ' + fmt$(sticker) + ' you\'re paying ' + (ratio * 100).toFixed(0) + '% of fair value. ' +
+                 'Resale upside ~' + margin + '% before fees. Lock it in.';
+      } else if (ratio <= 0.95) {
+        pill = '✅ OK BUY';
+        pillCls = 'verdict-great';
+        thesis = fmt$(sticker) + ' is ' + (ratio * 100).toFixed(0) + '% of fair. Counter at ' + fmt$(targetBuy) + ' first — most dealers will move 10–15%.';
+      } else if (ratio <= 1.10) {
+        pill = '⚖️ FAIR — but pass';
+        pillCls = 'verdict-fair';
+        thesis = fmt$(sticker) + ' is ' + (ratio * 100).toFixed(0) + '% of fair value. No margin after fees. Pass unless you want the card for the collection.';
+      } else {
+        pill = '🛑 PASS — overpriced';
+        pillCls = 'verdict-bad';
+        thesis = fmt$(sticker) + ' is ' + (ratio * 100).toFixed(0) + '% of fair value. You\'d lose ' + fmt$(sticker - fair * 0.87) + ' instantly if flipped. Walk.';
+      }
+    }
+    const pillEl = document.getElementById('verdict-pill');
+    pillEl.textContent = pill;
+    pillEl.className = 'verdict-pill ' + pillCls;
+    setText('verdict-thesis', thesis);
+
+    // Deep links — eBay sold + TCGPlayer search for the exact card
+    const q = encodeURIComponent(c.name + ' ' + (c.variant.startsWith('Raw') ? 'raw' : c.variant));
+    document.getElementById('ebay-search').href = 'https://www.ebay.com/sch/i.html?_nkw=' + q + '&LH_Sold=1&LH_Complete=1&_sop=13';
+    document.getElementById('tcgp-search').href = 'https://www.tcgplayer.com/search/pokemon/product?q=' + q;
+  }
+
+  function escapeHtml(s) {
+    return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  // Wire input events
+  let debounce;
+  searchEl.addEventListener('input', () => {
+    clearBtn.classList.toggle('visible', !!searchEl.value);
+    clearTimeout(debounce);
+    debounce = setTimeout(() => search(searchEl.value), 80);
+  });
+  clearBtn.addEventListener('click', () => {
+    searchEl.value = '';
+    clearBtn.classList.remove('visible');
+    resultsEl.classList.remove('visible');
+    document.getElementById('sticker-section').classList.remove('visible');
+    document.getElementById('verdict').classList.remove('visible');
+    selectedCard = null;
+    searchEl.focus();
+  });
+
+  document.getElementById('sticker').addEventListener('input', (e) => {
+    if (!selectedCard) return;
+    const v = parseFloat(e.target.value);
+    renderVerdict(selectedCard, isNaN(v) ? null : v);
+  });
+</script>
+
+</body>
+</html>
