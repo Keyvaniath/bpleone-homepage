@@ -1,12 +1,15 @@
 {
-  "generated_at": "2026-05-15T02:02:51.456250Z",
+  "generated_at": "2026-05-15T02:27:21.764838Z",
   "live_updated_at": "2026-05-15T00:19:57.554954Z",
   "stats": {
     "total_cards": 774,
     "live_matched": 493,
     "total_mcap": 4382118.0,
     "avg_d30_pct": 0.1709,
-    "strong_buys": 84
+    "strong_buys": 84,
+    "history_snapshots": 1,
+    "history_age_days": 0.1,
+    "history_overlay_count": 0
   },
   "trade_of_day": {
     "id": "M023",
