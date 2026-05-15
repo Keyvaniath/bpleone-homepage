@@ -1,0 +1,1288 @@
+{
+  "generated_at": "2026-05-15T20:45:57.623499+00:00",
+  "data_age_hours": 15.8,
+  "score": 30,
+  "grade": "F",
+  "total_cards": 555,
+  "stats": {
+    "stale_data": 1,
+    "grade_ladder_violation": 25,
+    "wb_fallback_highvalue": 53,
+    "graded_no_data": 58,
+    "duplicate_entries": 14
+  },
+  "alert_counts": {
+    "high": 18,
+    "warn": 112
+  },
+  "alerts": [
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$421295 is 5.2x grade_9_5=$80990 (wrong page?)",
+      "cid": "X510",
+      "name": "Charizard 1st Ed Shadowless PSA 10",
+      "variant": "PSA 10",
+      "wb": 200000,
+      "live": 200000
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$71000 is 5.6x grade_9_5=$12700 (wrong page?)",
+      "cid": "X503",
+      "name": "Lugia Neo Genesis 1st Ed PSA 10",
+      "variant": "PSA 10",
+      "wb": 22000,
+      "live": 22000
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$19651 is 8.3x grade_9_5=$2362 (wrong page?)",
+      "cid": "Z001",
+      "name": "Lugia",
+      "variant": "PSA 10",
+      "wb": 12500,
+      "live": 12500
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$16385 is 6.4x grade_9_5=$2575 (wrong page?)",
+      "cid": "V040",
+      "name": "Dark Charizard",
+      "variant": "PSA 10",
+      "wb": 4800,
+      "live": 4800
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$9600 is 3.9x grade_9_5=$2468 (wrong page?)",
+      "cid": "Z033",
+      "name": "Shining Tyranitar",
+      "variant": "PSA 10",
+      "wb": 2900,
+      "live": 2900
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$2981 is 3.7x grade_9_5=$797 (wrong page?)",
+      "cid": "Z010",
+      "name": "Espeon",
+      "variant": "PSA 10",
+      "wb": 1900,
+      "live": 1900
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$7987 is 7.6x grade_9_5=$1054 (wrong page?)",
+      "cid": "V270",
+      "name": "Blastoise PSA 10",
+      "variant": "PSA 10",
+      "wb": 1850,
+      "live": 1850
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$3267 is 4.4x grade_9_5=$736 (wrong page?)",
+      "cid": "V271",
+      "name": "Venusaur PSA 10",
+      "variant": "PSA 10",
+      "wb": 1550,
+      "live": 1550
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$1650 is 3.7x grade_9_5=$441 (wrong page?)",
+      "cid": "M071",
+      "name": "Sylveon ex SIR",
+      "variant": "PSA 10",
+      "wb": 1500,
+      "live": 1500
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$3722 is 10.1x grade_9_5=$370 (wrong page?)",
+      "cid": "V272",
+      "name": "Mewtwo PSA 10",
+      "variant": "PSA 10",
+      "wb": 1450,
+      "live": 1450
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$27187 is 27.6x grade_9_5=$985 (wrong page?)",
+      "cid": "Z125",
+      "name": "Rayquaza C LV.X",
+      "variant": "PSA 10",
+      "wb": 1450,
+      "live": 1450
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_9=$4844 is 4.1x grade_8=$1182 (wrong page?)",
+      "cid": "V008",
+      "name": "Chansey",
+      "variant": "PSA 9",
+      "wb": 1100,
+      "live": 1100
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$1096 is 6.3x grade_9_5=$174 (wrong page?)",
+      "cid": "V036",
+      "name": "Pikachu",
+      "variant": "PSA 10",
+      "wb": 950,
+      "live": 950
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$2340 is 6.3x grade_9_5=$374 (wrong page?)",
+      "cid": "V273",
+      "name": "Alakazam PSA 10",
+      "variant": "PSA 10",
+      "wb": 950,
+      "live": 950
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$2256 is 9.1x grade_9_5=$247 (wrong page?)",
+      "cid": "V274",
+      "name": "Gyarados PSA 10",
+      "variant": "PSA 10",
+      "wb": 850,
+      "live": 850
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$17500 is 11.4x grade_9_5=$1536 (wrong page?)",
+      "cid": "Z120",
+      "name": "Charizard G LV.X",
+      "variant": "PSA 10",
+      "wb": 750,
+      "live": 750
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$8200 is 9.0x grade_9_5=$911 (wrong page?)",
+      "cid": "Z180",
+      "name": "Charizard EX Gold (Full Art)",
+      "variant": "PSA 10",
+      "wb": 650,
+      "live": 650
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$5936 is 3.7x grade_9_5=$1597 (wrong page?)",
+      "cid": "Z200",
+      "name": "Charizard GX Rainbow Rare",
+      "variant": "PSA 10",
+      "wb": 550,
+      "live": 550
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "V031",
+      "name": "Pikachu Illustrator",
+      "variant": "PSA 4",
+      "wb": 850000,
+      "live": 850000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "D102",
+      "name": "Pokemon Base Set 1st Ed Booster Box",
+      "variant": "Sealed",
+      "wb": 425000,
+      "live": 425000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "X510",
+      "name": "Charizard 1st Ed Shadowless PSA 10",
+      "variant": "PSA 10",
+      "wb": 200000,
+      "live": 200000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "V101",
+      "name": "Trainer No. 3 Trophy",
+      "variant": "PSA 9",
+      "wb": 65000,
+      "live": 65000
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 9 but neither PC nor PPT have grade_9 data",
+      "cid": "V101",
+      "name": "Trainer No. 3 Trophy",
+      "variant": "PSA 9",
+      "wb": 65000,
+      "live": 65000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "X504",
+      "name": "Crystal Charizard Skyridge PSA 10",
+      "variant": "PSA 10",
+      "wb": 38000,
+      "live": 38000
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "X504",
+      "name": "Crystal Charizard Skyridge PSA 10",
+      "variant": "PSA 10",
+      "wb": 38000,
+      "live": 38000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "X503",
+      "name": "Lugia Neo Genesis 1st Ed PSA 10",
+      "variant": "PSA 10",
+      "wb": 22000,
+      "live": 22000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb": 22000,
+      "live": 22000
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb": 22000,
+      "live": 22000
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z050",
+      "name": "Charizard Crystal",
+      "variant": "PSA 10",
+      "wb": 18500,
+      "live": 16330.5
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb": 18000,
+      "live": 18000
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb": 18000,
+      "live": 18000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb": 16000,
+      "live": 16000
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb": 16000,
+      "live": 16000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "D101",
+      "name": "Pokemon Base Set Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb": 15000,
+      "live": 15000
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z001",
+      "name": "Lugia",
+      "variant": "PSA 10",
+      "wb": 12500,
+      "live": 12500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 9 but neither PC nor PPT have grade_9 data",
+      "cid": "V104",
+      "name": "Master Key Promo",
+      "variant": "PSA 9",
+      "wb": 12500,
+      "live": 19850.31
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_disagree_rejected_vs_wb)",
+      "cid": "D107",
+      "name": "Pokemon Neo Genesis Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb": 11500,
+      "live": 11500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "V032",
+      "name": "Tropical Wind",
+      "variant": "PSA 9",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 9 but neither PC nor PPT have grade_9 data",
+      "cid": "V032",
+      "name": "Tropical Wind",
+      "variant": "PSA 9",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "Z102",
+      "name": "Gold Star Charizard",
+      "variant": "PSA 10",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "X526",
+      "name": "Champion's Path Booster Box (case)",
+      "variant": "Sealed",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z012",
+      "name": "Espeon 1st Ed",
+      "variant": "PSA 10",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z012",
+      "name": "Espeon 1st Ed",
+      "variant": "PSA 10",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z052",
+      "name": "Crystal Lugia",
+      "variant": "PSA 10",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z052",
+      "name": "Crystal Lugia",
+      "variant": "PSA 10",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "D105",
+      "name": "Pokemon Team Rocket Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb": 6500,
+      "live": 6500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "V019",
+      "name": "Pikachu Trophy (Bronze)",
+      "variant": "PSA 8",
+      "wb": 5500,
+      "live": 5500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z013",
+      "name": "Umbreon 1st Ed",
+      "variant": "PSA 10",
+      "wb": 5500,
+      "live": 5500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z013",
+      "name": "Umbreon 1st Ed",
+      "variant": "PSA 10",
+      "wb": 5500,
+      "live": 5500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "D103",
+      "name": "Pokemon Jungle Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb": 5500,
+      "live": 5500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "D106",
+      "name": "Pokemon Gym Heroes Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb": 5200,
+      "live": 5200
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "V040",
+      "name": "Dark Charizard",
+      "variant": "PSA 10",
+      "wb": 4800,
+      "live": 4800
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "D104",
+      "name": "Pokemon Fossil Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb": 4800,
+      "live": 4800
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "J007",
+      "name": "Trainer's Card (Pokemon Day JP)",
+      "variant": "PSA 9",
+      "wb": 4500,
+      "live": 4500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "V102",
+      "name": "Snap Pikachu Mountain Promo",
+      "variant": "PSA 10",
+      "wb": 4500,
+      "live": 4500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "V102",
+      "name": "Snap Pikachu Mountain Promo",
+      "variant": "PSA 10",
+      "wb": 4500,
+      "live": 4500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "V027",
+      "name": "Rayquaza Gold Star",
+      "variant": "PSA 9",
+      "wb": 4200,
+      "live": 4200
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z020",
+      "name": "Shining Charizard",
+      "variant": "PSA 10",
+      "wb": 4200,
+      "live": 2500.0
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "X512",
+      "name": "Charizard EX Dragon Frontiers 105 PSA 10",
+      "variant": "PSA 10",
+      "wb": 4200,
+      "live": 4200
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "X512",
+      "name": "Charizard EX Dragon Frontiers 105 PSA 10",
+      "variant": "PSA 10",
+      "wb": 4200,
+      "live": 4200
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z046",
+      "name": "Rocket's Mewtwo 1st Ed",
+      "variant": "PSA 10",
+      "wb": 4200,
+      "live": 4200
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z046",
+      "name": "Rocket's Mewtwo 1st Ed",
+      "variant": "PSA 10",
+      "wb": 4200,
+      "live": 4200
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "Z044",
+      "name": "Blaine's Charizard",
+      "variant": "PSA 10",
+      "wb": 3500,
+      "live": 3500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z044",
+      "name": "Blaine's Charizard",
+      "variant": "PSA 10",
+      "wb": 3500,
+      "live": 3500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "X521",
+      "name": "Evolving Skies Booster Box (case)",
+      "variant": "Sealed",
+      "wb": 3400,
+      "live": 3400
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M093",
+      "name": "Tropical Wind Trainer",
+      "variant": "PSA 10",
+      "wb": 3200,
+      "live": 1986.32
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z033",
+      "name": "Shining Tyranitar",
+      "variant": "PSA 10",
+      "wb": 2900,
+      "live": 2900
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "M089",
+      "name": "Van Gogh Pikachu",
+      "variant": "PSA 10",
+      "wb": 2800,
+      "live": 2800
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M089",
+      "name": "Van Gogh Pikachu",
+      "variant": "PSA 10",
+      "wb": 2800,
+      "live": 2800
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "V013",
+      "name": "Pikachu Red Cheeks",
+      "variant": "PSA 10",
+      "wb": 2400,
+      "live": 2400
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "V013",
+      "name": "Pikachu Red Cheeks",
+      "variant": "PSA 10",
+      "wb": 2400,
+      "live": 2400
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "V814",
+      "name": "Crystal Charizard Skyridge",
+      "variant": "PSA 8",
+      "wb": 2200,
+      "live": 2200
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z031",
+      "name": "Dark Charizard",
+      "variant": "PSA 10",
+      "wb": 2200,
+      "live": 2200
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z031",
+      "name": "Dark Charizard",
+      "variant": "PSA 10",
+      "wb": 2200,
+      "live": 2200
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "Z141",
+      "name": "Umbreon Prime",
+      "variant": "PSA 10",
+      "wb": 1950,
+      "live": 1950
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z141",
+      "name": "Umbreon Prime",
+      "variant": "PSA 10",
+      "wb": 1950,
+      "live": 1950
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "Z010",
+      "name": "Espeon",
+      "variant": "PSA 10",
+      "wb": 1900,
+      "live": 1900
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "V270",
+      "name": "Blastoise PSA 10",
+      "variant": "PSA 10",
+      "wb": 1850,
+      "live": 1850
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "Z140",
+      "name": "Charizard Prime",
+      "variant": "PSA 10",
+      "wb": 1850,
+      "live": 1850
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z140",
+      "name": "Charizard Prime",
+      "variant": "PSA 10",
+      "wb": 1850,
+      "live": 1850
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "Z005",
+      "name": "Typhlosion 1st Ed",
+      "variant": "PSA 10",
+      "wb": 1800,
+      "live": 1800
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z005",
+      "name": "Typhlosion 1st Ed",
+      "variant": "PSA 10",
+      "wb": 1800,
+      "live": 1800
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "Z103",
+      "name": "Gold Star Mew",
+      "variant": "PSA 10",
+      "wb": 1800,
+      "live": 1800
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "J008",
+      "name": "Mewtwo Star (JP Promo)",
+      "variant": "PSA 9",
+      "wb": 1800,
+      "live": 1800
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z053",
+      "name": "Crystal Charizard",
+      "variant": "PSA 10",
+      "wb": 1800,
+      "live": 1352.3
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "M088",
+      "name": "Mega Charizard Y ex SIR",
+      "variant": "PSA 10",
+      "wb": 1700,
+      "live": 1700
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "Z042",
+      "name": "Rocket's Zapdos",
+      "variant": "PSA 10",
+      "wb": 1700,
+      "live": 1700
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "V271",
+      "name": "Venusaur PSA 10",
+      "variant": "PSA 10",
+      "wb": 1550,
+      "live": 1550
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "M071",
+      "name": "Sylveon ex SIR",
+      "variant": "PSA 10",
+      "wb": 1500,
+      "live": 1500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "Z043",
+      "name": "Giovanni's Gyarados",
+      "variant": "PSA 10",
+      "wb": 1500,
+      "live": 1500
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z043",
+      "name": "Giovanni's Gyarados",
+      "variant": "PSA 10",
+      "wb": 1500,
+      "live": 1500
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "V272",
+      "name": "Mewtwo PSA 10",
+      "variant": "PSA 10",
+      "wb": 1450,
+      "live": 1450
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "Z125",
+      "name": "Rayquaza C LV.X",
+      "variant": "PSA 10",
+      "wb": 1450,
+      "live": 1450
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "J005",
+      "name": "Umbreon VMAX Alt (Japanese)",
+      "variant": "PSA 10",
+      "wb": 1300,
+      "live": 1480.0
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
+      "cid": "M004",
+      "name": "Sylveon VMAX Alt Art",
+      "variant": "PSA 10",
+      "wb": 1200,
+      "live": 1200
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "V008",
+      "name": "Chansey",
+      "variant": "PSA 9",
+      "wb": 1100,
+      "live": 1100
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
+      "cid": "Z106",
+      "name": "Mew Star",
+      "variant": "PSA 10",
+      "wb": 1100,
+      "live": 1100
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z106",
+      "name": "Mew Star",
+      "variant": "PSA 10",
+      "wb": 1100,
+      "live": 1100
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z145",
+      "name": "Ho-Oh Legend (Top)",
+      "variant": "PSA 10",
+      "wb": 950,
+      "live": 950
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M242",
+      "name": "Giratina V Alt Art PSA 10",
+      "variant": "PSA 10",
+      "wb": 850,
+      "live": 524.1
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M244",
+      "name": "Rayquaza VMAX Alt Art PSA 10",
+      "variant": "PSA 10",
+      "wb": 850,
+      "live": 520.0
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z143",
+      "name": "Tyranitar Prime",
+      "variant": "PSA 10",
+      "wb": 850,
+      "live": 799.99
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z162",
+      "name": "Hilbert Full Art",
+      "variant": "PSA 10",
+      "wb": 850,
+      "live": 850
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M243",
+      "name": "Lugia V Alt Art PSA 10",
+      "variant": "PSA 10",
+      "wb": 750,
+      "live": 750
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M240",
+      "name": "Charizard VMAX Rainbow Rare PSA 10",
+      "variant": "PSA 10",
+      "wb": 685,
+      "live": 685
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "J004",
+      "name": "Rayquaza V Alt Art (Japanese)",
+      "variant": "PSA 10",
+      "wb": 580,
+      "live": 580
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M241",
+      "name": "Charizard VSTAR Rainbow Rare PSA 10",
+      "variant": "PSA 10",
+      "wb": 545,
+      "live": 545
+    },
+    {
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z124",
+      "name": "Giratina LV.X",
+      "variant": "PSA 10",
+      "wb": 525,
+      "live": 654.85
+    },
+    {
+      "severity": "warn",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$180 is 3.5x grade_9_5=$51 (wrong page?)",
+      "cid": "M220",
+      "name": "Charizard ex SIR PSA 10",
+      "variant": "PSA 10",
+      "wb": 425,
+      "live": 425
+    },
+    {
+      "severity": "warn",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$7300 is 26.5x grade_9_5=$275 (wrong page?)",
+      "cid": "Z122",
+      "name": "Dialga G LV.X",
+      "variant": "PSA 10",
+      "wb": 425,
+      "live": 425
+    },
+    {
+      "severity": "warn",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$8550 is 26.0x grade_9_5=$329 (wrong page?)",
+      "cid": "Z123",
+      "name": "Palkia G LV.X",
+      "variant": "PSA 10",
+      "wb": 425,
+      "live": 425
+    },
+    {
+      "severity": "warn",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$444 is 3.7x grade_9_5=$120 (wrong page?)",
+      "cid": "X018",
+      "name": "Latias and Latios GX",
+      "variant": "PSA 10",
+      "wb": 360,
+      "live": 360
+    },
+    {
+      "severity": "warn",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$700 is 17.1x grade_9_5=$41 (wrong page?)",
+      "cid": "M091",
+      "name": "Pokemon Day 2026 Pikachu Promo",
+      "variant": "PSA 10",
+      "wb": 240,
+      "live": 240
+    },
+    {
+      "severity": "warn",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$2845 is 9.5x grade_9_5=$301 (wrong page?)",
+      "cid": "X008",
+      "name": "Ancient Mew",
+      "variant": "PSA 10",
+      "wb": 180,
+      "live": 180
+    },
+    {
+      "severity": "warn",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$1650 is 3.7x grade_9_5=$441 (wrong page?)",
+      "cid": "M208",
+      "name": "Sylveon ex Special Art PSA 10",
+      "variant": "PSA 10",
+      "wb": 165,
+      "live": 165
+    },
+    {
+      "severity": "warn",
+      "category": "stale_data",
+      "message": "Live prices last updated 15.8h ago",
+      "cid": null
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 3 entries for charizard (psa 9): V001, V005, V252",
+      "cid": "V001",
+      "name": "charizard",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for blastoise (psa 9): V006, V250",
+      "cid": "V006",
+      "name": "blastoise",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for venusaur (psa 9): V007, V251",
+      "cid": "V007",
+      "name": "venusaur",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 3 entries for mewtwo (psa 9): V009, V015, V254",
+      "cid": "V009",
+      "name": "mewtwo",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for alakazam (psa 9): V010, V255",
+      "cid": "V010",
+      "name": "alakazam",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for ninetales (psa 9): V011, V257",
+      "cid": "V011",
+      "name": "ninetales",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for shining charizard (psa 9): V017, Z021",
+      "cid": "V017",
+      "name": "shining charizard",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for evolving skies booster box (sealed (36 packs)): S001, X431",
+      "cid": "S001",
+      "name": "evolving skies booster box",
+      "variant": "sealed (36 packs)"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for iono sir (raw nm): X001, Q010",
+      "cid": "X001",
+      "name": "iono sir",
+      "variant": "raw nm"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for dark charizard (psa 10): V040, Z031",
+      "cid": "V040",
+      "name": "dark charizard",
+      "variant": "psa 10"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for shining fates booster box (sealed): X224, X435",
+      "cid": "X224",
+      "name": "shining fates booster box",
+      "variant": "sealed"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for charizard base unlimited psa 9 (psa 9): X231, X411",
+      "cid": "X231",
+      "name": "charizard base unlimited psa 9",
+      "variant": "psa 9"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for hidden fates booster box (sealed): X315, X525",
+      "cid": "X315",
+      "name": "hidden fates booster box",
+      "variant": "sealed"
+    },
+    {
+      "severity": "warn",
+      "category": "duplicate_entries",
+      "message": "duplicate: 2 entries for greninja v alt art (fs) (psa 10): M107, X160",
+      "cid": "M107",
+      "name": "greninja v alt art (fs)",
+      "variant": "psa 10"
+    }
+  ]
+}
