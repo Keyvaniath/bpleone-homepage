@@ -1305,7 +1305,13 @@
 <script>
 /* HOMEPAGE_FEED_JS */
 (function() {
-  const FEED_URL = '/homepage_feed.json';
+  // Try the same-origin file first (deployed alongside index.html on Cloudflare
+  // Pages), then fall back to raw GitHub for the trading-desk repo — that's the
+  // copy that gets refreshed every 4h by the GH Actions cron.
+  const FEED_URLS = [
+    '/homepage_feed.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/homepage_feed.json'
+  ];
   const REFRESH_MS = 60 * 1000;
 
   function fmtMoney(n) {
@@ -1435,9 +1441,17 @@
     setHTML('tape-track', buildTape(tapeItems));
   }
 
-  function load() {
-    fetch(FEED_URL + '?t=' + Date.now())
+  function tryFetch(urls, idx) {
+    if (idx >= urls.length) {
+      return Promise.reject('all feed URLs failed');
+    }
+    return fetch(urls[idx] + '?t=' + Date.now())
       .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .catch(err => tryFetch(urls, idx + 1));
+  }
+
+  function load() {
+    tryFetch(FEED_URLS, 0)
       .then(render)
       .catch(err => {
         console.warn('Feed load failed:', err);
