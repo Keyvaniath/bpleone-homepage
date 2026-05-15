@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T07:35:37.065183Z",
+  "generated_at": "2026-05-15T17:59:31.378399Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -14713,12 +14713,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1450,
       "wb_price": 220.0,
-      "live_price": 55.0,
-      "live_source": "manual_override",
-      "target_buy": 44.0,
-      "target_sell": 52.25,
-      "score": 65,
-      "signal": "BUY",
+      "live_price": 220.0,
+      "live_source": "reverted_pc_sweep_wrong_ungraded",
+      "target_buy": 176.0,
+      "target_sell": 209.0,
+      "score": 54,
+      "signal": "HOLD",
       "d7_workbook": 2.37,
       "d30_workbook": 15.0,
       "history": [
