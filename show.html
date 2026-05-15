@@ -686,9 +686,12 @@
     setText('v-target-buy', fmt$(targetBuy));
     setText('v-target-sell', fmt$(targetSell));
 
-    // Card image — quick visual confirm it's the right card before paying
+    // Card image — quick visual confirm it's the right card before paying.
+    // Robust fallback: hide on 404/loaderror so a broken icon doesn't ship.
     const img = document.getElementById('card-image');
     if (c.image) {
+      img.onload = () => { img.style.display = 'block'; };
+      img.onerror = () => { img.style.display = 'none'; };
       img.src = c.image;
       img.alt = c.name;
       img.style.display = 'block';
