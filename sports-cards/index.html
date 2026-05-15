@@ -342,9 +342,10 @@
 <div class="container">
 
   <section class="block">
-    <h2>Today's top BUY signals</h2>
-    <p style="color:var(--text-dim); margin-bottom:8px; font-size:14px;">Composite ≥ 70 from the live watchlist. Sorted by score. Refreshed weekly off eBay sold-comps.</p>
-    <div class="signal-grid">
+    <h2>Today's top BUY signals <span id="sc-live-dot" style="display:inline-block; width:8px; height:8px; background:#4ade80; border-radius:50%; margin-left:8px; animation:pulse 2s infinite;"></span></h2>
+    <p style="color:var(--text-dim); margin-bottom:8px; font-size:14px;">Composite ≥ 70 from the live watchlist. Sorted by score. <span id="sc-meta">Loading...</span></p>
+    <style>@keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: 0.4 } }</style>
+    <div class="signal-grid" id="sc-signal-grid">
       <div class="signal-card">
         <div class="signal-head">
           <span class="signal-verdict" style="background:#86efac;">BUY</span>
@@ -645,5 +646,90 @@
   </div>
 </footer>
 
+<script>
+// Live BUY signals fetcher — pulls top signals from the desk repo's signals.json
+// (refreshed weekly off the eBay refresh GitHub Action). Falls back to static
+// content if the fetch fails.
+(function() {
+  const SIGNALS_URL = "https://raw.githubusercontent.com/Keyvaniath/bpleone-sports-cards-desk/main/docs/signals.json";
+
+  function trendColor(pct) {
+    return pct >= 0 ? "#22c55e" : "#fb923c";
+  }
+  function verdictBg(v) {
+    return v === "STRONG BUY" ? "#22c55e" : (v === "BUY" ? "#86efac" : "#8b94a8");
+  }
+  function fmt$(n) {
+    if (n == null) return "—";
+    return "$" + n.toLocaleString();
+  }
+  function fmtPct(n) {
+    if (n == null) return "—";
+    const s = n >= 0 ? "+" : "";
+    return s + n.toFixed(0) + "%";
+  }
+  function timeAgo(iso) {
+    try {
+      const d = new Date(iso);
+      const min = Math.floor((Date.now() - d.getTime()) / 60000);
+      if (min < 60) return min + "m ago";
+      const hr = Math.floor(min / 60);
+      if (hr < 24) return hr + "h ago";
+      return Math.floor(hr / 24) + "d ago";
+    } catch (e) { return iso; }
+  }
+
+  async function refresh() {
+    try {
+      const r = await fetch(SIGNALS_URL + "?cb=" + Date.now());
+      if (!r.ok) throw new Error("fetch failed " + r.status);
+      const data = await r.json();
+      renderCards(data);
+      renderMeta(data);
+    } catch (e) {
+      const meta = document.getElementById("sc-meta");
+      if (meta) meta.textContent = "Showing baseline. Live refresh pending eBay GitHub Action.";
+    }
+  }
+
+  function renderMeta(d) {
+    const meta = document.getElementById("sc-meta");
+    if (!meta) return;
+    const vc = d.verdict_counts || {};
+    meta.innerHTML = "Refreshed " + timeAgo(d.generated_at) +
+      " · " + d.card_count + " cards · " +
+      (vc["STRONG BUY"]||0) + " strong, " + (vc["BUY"]||0) + " buy, " +
+      (vc["HOLD"]||0) + " hold, " + (vc["TRIM"]||0) + " trim, " + (vc["SELL"]||0) + " sell";
+  }
+
+  function renderCards(d) {
+    const grid = document.getElementById("sc-signal-grid");
+    if (!grid) return;
+    const buys = d.top_buys || [];
+    if (!buys.length) {
+      grid.innerHTML = '<p style="color:#8b94a8; padding:18px; grid-column:1/-1;">No active BUY signals right now.</p>';
+      return;
+    }
+    grid.innerHTML = buys.map(s => `
+      <div class="signal-card">
+        <div class="signal-head">
+          <span class="signal-verdict" style="background:${verdictBg(s.verdict)};">${s.verdict}</span>
+          <span class="signal-score">${(s.composite||0).toFixed(1)}</span>
+        </div>
+        <div class="signal-player">${s.player}</div>
+        <div class="signal-meta">${s.sport} · ${s.set_year} · ${s.grade}</div>
+        <div class="signal-stats">
+          <span>Anchor <strong>${fmt$(s.anchor)}</strong></span>
+          <span style="color:${trendColor(s.trend30d)}">30d <strong>${fmtPct(s.trend30d)}</strong></span>
+          <span>Pop <strong>${s.pop?.toLocaleString() || '—'}</strong></span>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  refresh();
+  setInterval(refresh, 5 * 60 * 1000);
+})();
+</script>
 </body>
 </html>
