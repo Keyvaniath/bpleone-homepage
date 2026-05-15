@@ -193,6 +193,25 @@
 
   function signalClass(s) { return (s || '').toLowerCase().replace(' ', '-'); }
 
+  // Marketplace search shortcuts — open eBay sold-listings / TCGPlayer / PriceCharting / PPT
+  function ebayLink(c) {
+    const grade = (c.variant || '').match(/PSA \d+(\.\d)?/);
+    const q = encodeURIComponent(((grade ? grade[0] + ' ' : '') + c.name + ' ' + c.set + ' ' + c.number).replace(/\s+/g, ' ').trim());
+    return '<a href="https://www.ebay.com/sch/i.html?_nkw=' + q + '&LH_Sold=1&LH_Complete=1" target="_blank" rel="noopener">🔗 eBay sold comps</a>';
+  }
+  function tcgLink(c) {
+    const q = encodeURIComponent((c.name + ' ' + c.set).replace(/\s+/g, ' ').trim());
+    return '<a href="https://www.tcgplayer.com/search/pokemon/product?q=' + q + '" target="_blank" rel="noopener">🛒 TCGPlayer</a>';
+  }
+  function pcLink(c) {
+    const q = encodeURIComponent((c.name + ' ' + c.set).replace(/\s+/g, ' ').trim());
+    return '<a href="https://www.pricecharting.com/search-products?q=' + q + '&type=prices" target="_blank" rel="noopener">📊 PriceCharting</a>';
+  }
+  function ppLink(c) {
+    const q = encodeURIComponent((c.name + ' ' + c.set).replace(/\s+/g, ' ').trim());
+    return '<a href="https://www.pokemonpricetracker.com/search?q=' + q + '" target="_blank" rel="noopener">🎴 PPT</a>';
+  }
+
   function svgLineChart(history, width, height) {
     if (!history || history.length < 2) return '';
     const points = history.map(h => h.p);
@@ -295,6 +314,14 @@
           chartBlock +
 
           (card.notes ? '<h2 class="section">Notes</h2><div class="body-card">' + card.notes + '</div>' : '') +
+
+          '<h2 class="section">Compare across marketplaces</h2>' +
+          '<div class="actions">' +
+            ebayLink(card) +
+            tcgLink(card) +
+            pcLink(card) +
+            ppLink(card) +
+          '</div>' +
 
           '<h2 class="section">Live data sources</h2>' +
           '<div class="body-card">' +
