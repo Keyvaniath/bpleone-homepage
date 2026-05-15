@@ -387,6 +387,7 @@
   </div>
 
   <div class="verdict-card" id="verdict">
+    <img id="card-image" alt="" style="display:none;width:120px;height:auto;margin:0 auto 14px;border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,0.5);">
     <span class="verdict-pill" id="verdict-pill">⏳</span>
     <div class="verdict-name" id="verdict-name">—</div>
     <div class="verdict-meta" id="verdict-meta">—</div>
@@ -405,6 +406,10 @@
       </div>
     </div>
     <div class="verdict-thesis" id="verdict-thesis">—</div>
+    <div id="recent-sales" style="display:none;background:var(--bg);border-radius:10px;padding:10px 12px;margin-top:10px;text-align:left;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;">Recent eBay sold · sanity check</div>
+      <ul id="sales-list" style="list-style:none;padding:0;margin:0;font-size:12px;color:var(--text-dim);"></ul>
+    </div>
     <div class="verdict-actions">
       <a href="#" id="ebay-search" target="_blank" rel="noopener">📊 eBay sold</a>
       <a href="#" id="tcgp-search" target="_blank" rel="noopener">🛒 TCGPlayer</a>
@@ -556,6 +561,32 @@
     setText('v-fair', fmt$(fair));
     setText('v-target-buy', fmt$(targetBuy));
     setText('v-target-sell', fmt$(targetSell));
+
+    // Card image — quick visual confirm it's the right card before paying
+    const img = document.getElementById('card-image');
+    if (c.image) {
+      img.src = c.image;
+      img.alt = c.name;
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+
+    // Recent eBay sold-comps — sanity check that fair value matches the market
+    const salesBox = document.getElementById('recent-sales');
+    const salesList = document.getElementById('sales-list');
+    if (c.last_sales && c.last_sales.length) {
+      salesList.innerHTML = c.last_sales.map(s => {
+        const date = s.date ? ' · ' + s.date : '';
+        return '<li style="padding:4px 0;border-bottom:1px solid var(--border);">' +
+          '<strong style="color:var(--gold);">' + fmt$(s.price) + '</strong>' + date +
+          '<div style="font-size:11px;color:var(--text-mute);margin-top:2px;">' + escapeHtml(s.title || '') + '</div>' +
+          '</li>';
+      }).join('');
+      salesBox.style.display = 'block';
+    } else {
+      salesBox.style.display = 'none';
+    }
 
     let pill, pillCls, thesis;
     if (sticker == null || sticker <= 0) {
