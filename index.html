@@ -997,6 +997,7 @@
       <a href="#live">📊 Live</a>
       <a href="/cards.html">📇 All Cards</a>
       <a href="#desks">🧰 Desks</a>
+      <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank">💸 Flip Bot</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="https://pokemon.bpleone.com/?tab=store" target="_blank">Shop</a>
@@ -1011,7 +1012,7 @@
       <span class="live-pulse" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle;animation:pulse 1.6s infinite;"></span>
       Brandon P. Leone · Personal Trading Operation
     </div>
-    <h1>One operator.<br><span class="accent">Seven trading desks.</span></h1>
+    <h1>One operator.<br><span class="accent">Eight trading desks.</span></h1>
     <p>An IB-style quant lab built from scratch — Pokémon TCG, sports cards, equity factor models, options pricing, and IB peer-comps tools. Each desk runs its own data pipeline, signals, and tooling. Live data, transparent scoring, no chartcraft.</p>
     <div class="subscribe-cta-row" style="justify-content: flex-start; margin-bottom: 24px;">
       <a href="#desks" class="btn-primary">🧰 Browse All Desks</a>
@@ -1035,6 +1036,14 @@
         <span class="info">
           <span class="name">Pokémon TCG</span>
           <span class="meta">LIVE · 774 cards</span>
+        </span>
+      </a>
+      <a href="https://pokemon.bpleone.com/?tab=flip" class="desk-chip" target="_blank" rel="noopener">
+        <span class="live-dot"></span>
+        <span class="icon">💸</span>
+        <span class="info">
+          <span class="name">Flip Bot</span>
+          <span class="meta">LIVE · TCGP arb scanner</span>
         </span>
       </a>
       <a href="https://sports-cards.bpleone.com" class="desk-chip" target="_blank" rel="noopener">
@@ -1088,7 +1097,7 @@
   <div class="container">
     <div class="section-header">
       <h2>Trading Desks</h2>
-      <span class="label">7 modules · 3 live · 3 tools · 1 soon</span>
+      <span class="label">8 modules · 4 live · 3 tools · 1 soon</span>
     </div>
     <div class="grid">
 
@@ -1102,6 +1111,20 @@
         <p>The flagship desk. From $2 penny stocks to $80K vintage grails. Composite quant score (momentum + value + scarcity + liquidity), 4-hour live refresh, Crack-It sealed-product EV calculator, PSA cert verifier, transparent Price Audit tab, IRS Form 8949 tax reports. <strong style="color: var(--gold);">Free beta — full Pro access while we test →</strong></p>
         <div class="card-footer">
           <span class="url">pokemon.bpleone.com</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a href="https://pokemon.bpleone.com/?tab=flip" class="card live" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-icon">💸</span>
+          <span class="badge live">● LIVE</span>
+        </div>
+        <h3>Flip Bot</h3>
+        <div class="tag">TCGPlayer arb scanner · eBay sold-comp anchored · Discord alerts · 20-min cron</div>
+        <p>Scans live TCGPlayer BIN listings every 20 minutes against eBay sold-comp medians for the 322-card watchlist. Computes net-of-fees profit + ROI for each candidate, flags qualified flips with confidence tiers (OK / VERIFY / SUSPECT) to gate false positives. Locale-aware JP-vs-EN matching, dedupe across runs so the same listing doesn't spam twice. Pushes Discord on hits; full results table on the dashboard's 💸 Flip Bot tab.</p>
+        <div class="card-footer">
+          <span class="url">pokemon.bpleone.com → 💸 Flip Bot tab</span>
           <span class="arrow">→</span>
         </div>
       </a>
@@ -1168,8 +1191,8 @@
           <span class="badge live">● LIVE</span>
         </div>
         <h3>Sports Betting / DFS</h3>
-        <div class="tag">Lines · models · parlays · DFS lineups · ML lab · pick'em · linemaker</div>
-        <p>Edge-finding system across DraftKings, FanDuel, BetMGM. Line shopping, model-driven backtests, parlays, MLB-specialized models, ML lab for projections, bankroll discipline, live tracking. Built for serious +EV play. <strong style="color: var(--gold);">Live at betting.bpleone.com →</strong></p>
+        <div class="tag">32 markets · Pinnacle-anchored EV · 1/2 Kelly sizer · PuLP DFS solver</div>
+        <p>EV-finder across DK / FanDuel / BetMGM / Caesars, anchored to Pinnacle's de-vigged true probabilities. Composite score (0.40·EV + 0.25·CLV + 0.20·Sharp + 0.15·Liquidity), STRONG BET / BET / PASS / FADE verdicts, hard 2% bankroll cap per ticket, daily stop-loss. DFS optimizer for DraftKings + FanDuel main slates. <strong style="color: var(--gold);">Now live →</strong></p>
         <div class="card-footer">
           <span class="url">betting.bpleone.com</span>
           <span class="arrow">→</span>
