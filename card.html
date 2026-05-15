@@ -281,6 +281,96 @@
       '</div>';
   }
 
+  // "Why this price?" — transparent explanation of where the live price came
+  // from, what was rejected, and how much to trust it. Crucial for Brandon who
+  // keeps finding errors and needs to see at-a-glance which prices to verify.
+  function whyThisPricePanel(card) {
+    const src = card.live_source || '';
+    const conf = (card.confidence || 'UNKNOWN').toUpperCase();
+    const flags = card.confidence_flags || [];
+    let title = 'Live price source';
+    let body = '';
+    let bgColor = 'rgba(74,222,128,0.05)';
+    let borderColor = '#4ade8040';
+
+    if (src === 'manual_override') {
+      title = '🔒 Manual override';
+      body = 'You set this price manually via the admin panel. Auto-scrapers will not touch it. Edit at /pricing-admin to change.';
+      bgColor = 'rgba(245,200,66,0.06)'; borderColor = '#f5c84260';
+    } else if (src.startsWith('consensus_')) {
+      const which = src.replace('consensus_', '').replace(/_/g, ' + ').toUpperCase();
+      title = '✓ Multi-source consensus';
+      body = 'Multiple sources (' + which + ') agreed on this price within 25%. This is the highest-confidence price tier.';
+      bgColor = 'rgba(74,222,128,0.05)'; borderColor = '#4ade8060';
+    } else if (src.startsWith('median_')) {
+      title = '~ Sources disagree — using median';
+      body = 'Sources varied by >25%. We took the median value as a compromise. Verify against eBay sold comps before trading.';
+      bgColor = 'rgba(251,191,36,0.06)'; borderColor = '#fbbf2460';
+    } else if (src.startsWith('wb_fallback_source_rejected') || src.startsWith('wb_consensus_rejected') || src.startsWith('wb_disagree_rejected')) {
+      title = '⚠ Live source REJECTED — using workbook';
+      body = 'A live source returned a price wildly off from your workbook value (probably matched the wrong product page). The reconciler reverted to your workbook value to prevent bad data from propagating.';
+      bgColor = 'rgba(248,113,113,0.05)'; borderColor = '#f8717160';
+    } else if (src === 'wb_no_sources' || src === 'wb_no_sources_prev_rejected') {
+      title = '⚠ No live sources — using workbook';
+      body = 'PC, PPT, TCGPlayer, and eBay all returned no usable data for this card. This is common for vintage grails, sealed product, and very recent releases. Using your workbook value as a transparent fallback.';
+      bgColor = 'rgba(248,113,113,0.05)'; borderColor = '#f8717160';
+    } else if (src.startsWith('single_')) {
+      const which = src.split('_')[1] || 'unknown';
+      title = 'Single source · ' + which.toUpperCase();
+      body = 'Only one source returned data for this card. Price is within sane range vs your workbook, but we recommend cross-checking eBay sold comps before trading.';
+      bgColor = 'rgba(251,191,36,0.05)'; borderColor = '#fbbf2460';
+    } else if (src.startsWith('closest_to_wb_')) {
+      const which = src.replace('closest_to_wb_', '').toUpperCase();
+      title = 'Closest-to-workbook · ' + which;
+      body = 'Sources disagreed. We picked the one closest to your workbook value as the safest choice.';
+      bgColor = 'rgba(251,191,36,0.05)'; borderColor = '#fbbf2460';
+    } else if (src.startsWith('reverted_')) {
+      title = '🔧 Manually corrected';
+      body = 'A previous bad PC match was manually reverted. Source: <code>' + src + '</code>';
+      bgColor = 'rgba(74,222,128,0.05)'; borderColor = '#4ade8060';
+    } else if (src.startsWith('pricecharting')) {
+      title = 'PriceCharting (book price)';
+      body = 'Sourced from PriceCharting\'s longer-window (3-6mo) aggregate. Most reliable for graded slabs.';
+    } else if (src === 'tcgplayer_api') {
+      title = 'TCGPlayer Market (live)';
+      body = 'Live TCGPlayer market price — the freshest signal for raw cards. Updates within hours of new listings.';
+      bgColor = 'rgba(96,165,250,0.05)'; borderColor = '#60a5fa60';
+    } else if (src.startsWith('pokeprice')) {
+      title = 'PokemonPriceTracker';
+      body = 'PPT eBay-sold median (premium $10/mo subscription). Best for recent graded sales.';
+      bgColor = 'rgba(74,222,128,0.05)'; borderColor = '#4ade8060';
+    } else if (src === 'ebay') {
+      title = 'eBay sold comps';
+      body = 'Median of recent eBay sold listings (last 5 transactions). Best signal but volatile on low-volume cards.';
+    } else if (src) {
+      body = 'Source: <code>' + src + '</code>';
+    }
+
+    let flagsHtml = '';
+    if (flags && flags.length) {
+      flagsHtml = '<div style="margin-top:10px;font-size:11px;color:var(--text-mute);">Flags: ' +
+        flags.map(f => '<code style="background:rgba(0,0,0,0.3);padding:1px 5px;border-radius:3px;margin-right:4px;">' + f + '</code>').join('') +
+        '</div>';
+    }
+
+    const reasonHtml = card.reconcile_reason ?
+      '<div style="margin-top:10px;font-size:12px;color:var(--text-dim);padding:8px 10px;background:rgba(0,0,0,0.25);border-radius:4px;font-family:monospace;">↪ reconciler: ' + card.reconcile_reason + '</div>' : '';
+
+    return '<h2 class="section">Why this price?</h2>' +
+      '<div class="body-card" style="background:' + bgColor + ';border:1px solid ' + borderColor + ';">' +
+      '<div style="display:flex;gap:10px;align-items:flex-start;">' +
+        confidenceBadge(card) +
+        '<div style="flex:1;">' +
+          '<div style="font-weight:700;font-size:14px;margin-bottom:6px;">' + title + '</div>' +
+          '<div style="font-size:13px;color:var(--text-dim);line-height:1.5;">' + body + '</div>' +
+          reasonHtml +
+          flagsHtml +
+          '<div style="margin-top:10px;font-size:11px;color:var(--text-mute);font-family:monospace;">source = <code>' + src + '</code></div>' +
+        '</div>' +
+      '</div>' +
+      '</div>';
+  }
+
   // Marketplace search shortcuts — open eBay sold-listings / TCGPlayer / PriceCharting / PPT
   function ebayLink(c) {
     const grade = (c.variant || '').match(/PSA \d+(\.\d)?/);
@@ -417,9 +507,10 @@
             ppLink(card) +
           '</div>' +
 
-          '<h2 class="section">Live data sources</h2>' +
+          whyThisPricePanel(card) +
+
+          '<h2 class="section">Card stats</h2>' +
           '<div class="body-card">' +
-          '<p>Source: <code>' + card.live_source + '</code></p>' +
           '<p>PSA 10 pop: <strong>' + (card.pop_psa10 || 'unknown') + '</strong> · Tier: <strong>' + (card.tier || 'unranked') + '</strong> · Category: <strong>' + (card.category || '—') + '</strong></p>' +
           '<p>Composite score breakdown is documented at <a href="/methodology.html">/methodology</a>. Every price passes bidirectional sanity guards.</p>' +
           '</div>' +
