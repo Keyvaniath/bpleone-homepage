@@ -1,81 +1,21 @@
 {
-  "generated_at": "2026-05-15T20:45:57.623499+00:00",
-  "data_age_hours": 15.8,
-  "score": 30,
+  "generated_at": "2026-05-16T18:57:57.956584+00:00",
+  "data_age_hours": 38.0,
+  "score": 32,
   "grade": "F",
   "total_cards": 555,
   "stats": {
     "stale_data": 1,
-    "grade_ladder_violation": 25,
-    "wb_fallback_highvalue": 53,
+    "wb_fallback_highvalue": 44,
     "graded_no_data": 58,
+    "grade_ladder_violation": 12,
     "duplicate_entries": 14
   },
   "alert_counts": {
-    "high": 18,
-    "warn": 112
+    "high": 9,
+    "warn": 99
   },
   "alerts": [
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$421295 is 5.2x grade_9_5=$80990 (wrong page?)",
-      "cid": "X510",
-      "name": "Charizard 1st Ed Shadowless PSA 10",
-      "variant": "PSA 10",
-      "wb": 200000,
-      "live": 200000
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$71000 is 5.6x grade_9_5=$12700 (wrong page?)",
-      "cid": "X503",
-      "name": "Lugia Neo Genesis 1st Ed PSA 10",
-      "variant": "PSA 10",
-      "wb": 22000,
-      "live": 22000
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$19651 is 8.3x grade_9_5=$2362 (wrong page?)",
-      "cid": "Z001",
-      "name": "Lugia",
-      "variant": "PSA 10",
-      "wb": 12500,
-      "live": 12500
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$16385 is 6.4x grade_9_5=$2575 (wrong page?)",
-      "cid": "V040",
-      "name": "Dark Charizard",
-      "variant": "PSA 10",
-      "wb": 4800,
-      "live": 4800
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$9600 is 3.9x grade_9_5=$2468 (wrong page?)",
-      "cid": "Z033",
-      "name": "Shining Tyranitar",
-      "variant": "PSA 10",
-      "wb": 2900,
-      "live": 2900
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$2981 is 3.7x grade_9_5=$797 (wrong page?)",
-      "cid": "Z010",
-      "name": "Espeon",
-      "variant": "PSA 10",
-      "wb": 1900,
-      "live": 1900
-    },
     {
       "severity": "high",
       "category": "grade_ladder_violation",
@@ -85,26 +25,6 @@
       "variant": "PSA 10",
       "wb": 1850,
       "live": 1850
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$3267 is 4.4x grade_9_5=$736 (wrong page?)",
-      "cid": "V271",
-      "name": "Venusaur PSA 10",
-      "variant": "PSA 10",
-      "wb": 1550,
-      "live": 1550
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$1650 is 3.7x grade_9_5=$441 (wrong page?)",
-      "cid": "M071",
-      "name": "Sylveon ex SIR",
-      "variant": "PSA 10",
-      "wb": 1500,
-      "live": 1500
     },
     {
       "severity": "high",
@@ -125,16 +45,6 @@
       "variant": "PSA 10",
       "wb": 1450,
       "live": 1450
-    },
-    {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_9=$4844 is 4.1x grade_8=$1182 (wrong page?)",
-      "cid": "V008",
-      "name": "Chansey",
-      "variant": "PSA 9",
-      "wb": 1100,
-      "live": 1100
     },
     {
       "severity": "high",
@@ -188,13 +98,9 @@
     },
     {
       "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$5936 is 3.7x grade_9_5=$1597 (wrong page?)",
-      "cid": "Z200",
-      "name": "Charizard GX Rainbow Rare",
-      "variant": "PSA 10",
-      "wb": 550,
-      "live": 550
+      "category": "stale_data",
+      "message": "Live prices last updated 38.0h ago",
+      "cid": null
     },
     {
       "severity": "warn",
@@ -215,16 +121,6 @@
       "variant": "Sealed",
       "wb": 425000,
       "live": 425000
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "X510",
-      "name": "Charizard 1st Ed Shadowless PSA 10",
-      "variant": "PSA 10",
-      "wb": 200000,
-      "live": 200000
     },
     {
       "severity": "warn",
@@ -265,16 +161,6 @@
       "variant": "PSA 10",
       "wb": 38000,
       "live": 38000
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "X503",
-      "name": "Lugia Neo Genesis 1st Ed PSA 10",
-      "variant": "PSA 10",
-      "wb": 22000,
-      "live": 22000
     },
     {
       "severity": "warn",
@@ -355,16 +241,6 @@
       "variant": "Sealed",
       "wb": 15000,
       "live": 15000
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "Z001",
-      "name": "Lugia",
-      "variant": "PSA 10",
-      "wb": 12500,
-      "live": 12500
     },
     {
       "severity": "warn",
@@ -529,16 +405,6 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "V040",
-      "name": "Dark Charizard",
-      "variant": "PSA 10",
-      "wb": 4800,
-      "live": 4800
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
       "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
       "cid": "D104",
       "name": "Pokemon Fossil Booster Box (Unlimited)",
@@ -679,16 +545,6 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "Z033",
-      "name": "Shining Tyranitar",
-      "variant": "PSA 10",
-      "wb": 2900,
-      "live": 2900
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
       "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
       "cid": "M089",
       "name": "Van Gogh Pikachu",
@@ -775,16 +631,6 @@
       "variant": "PSA 10",
       "wb": 1950,
       "live": 1950
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "Z010",
-      "name": "Espeon",
-      "variant": "PSA 10",
-      "wb": 1900,
-      "live": 1900
     },
     {
       "severity": "warn",
@@ -889,26 +735,6 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "V271",
-      "name": "Venusaur PSA 10",
-      "variant": "PSA 10",
-      "wb": 1550,
-      "live": 1550
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "M071",
-      "name": "Sylveon ex SIR",
-      "variant": "PSA 10",
-      "wb": 1500,
-      "live": 1500
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
       "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
       "cid": "Z043",
       "name": "Giovanni's Gyarados",
@@ -965,16 +791,6 @@
       "variant": "PSA 10",
       "wb": 1200,
       "live": 1200
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "V008",
-      "name": "Chansey",
-      "variant": "PSA 9",
-      "wb": 1100,
-      "live": 1100
     },
     {
       "severity": "warn",
@@ -1099,16 +915,6 @@
     {
       "severity": "warn",
       "category": "grade_ladder_violation",
-      "message": "PC grade_10=$180 is 3.5x grade_9_5=$51 (wrong page?)",
-      "cid": "M220",
-      "name": "Charizard ex SIR PSA 10",
-      "variant": "PSA 10",
-      "wb": 425,
-      "live": 425
-    },
-    {
-      "severity": "warn",
-      "category": "grade_ladder_violation",
       "message": "PC grade_10=$7300 is 26.5x grade_9_5=$275 (wrong page?)",
       "cid": "Z122",
       "name": "Dialga G LV.X",
@@ -1129,16 +935,6 @@
     {
       "severity": "warn",
       "category": "grade_ladder_violation",
-      "message": "PC grade_10=$444 is 3.7x grade_9_5=$120 (wrong page?)",
-      "cid": "X018",
-      "name": "Latias and Latios GX",
-      "variant": "PSA 10",
-      "wb": 360,
-      "live": 360
-    },
-    {
-      "severity": "warn",
-      "category": "grade_ladder_violation",
       "message": "PC grade_10=$700 is 17.1x grade_9_5=$41 (wrong page?)",
       "cid": "M091",
       "name": "Pokemon Day 2026 Pikachu Promo",
@@ -1155,22 +951,6 @@
       "variant": "PSA 10",
       "wb": 180,
       "live": 180
-    },
-    {
-      "severity": "warn",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$1650 is 3.7x grade_9_5=$441 (wrong page?)",
-      "cid": "M208",
-      "name": "Sylveon ex Special Art PSA 10",
-      "variant": "PSA 10",
-      "wb": 165,
-      "live": 165
-    },
-    {
-      "severity": "warn",
-      "category": "stale_data",
-      "message": "Live prices last updated 15.8h ago",
-      "cid": null
     },
     {
       "severity": "warn",
