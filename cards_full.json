@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T20:11:35.472540Z",
+  "generated_at": "2026-05-16T20:53:45.303265Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -96,7 +96,7 @@
           "grade_10": 421294.98
         },
         "pokeprice": null,
-        "ebay_recent_avg": 2947.51,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -145,7 +145,7 @@
           "grade_10": 30100.0
         },
         "pokeprice": null,
-        "ebay_recent_avg": 10750.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -186,15 +186,15 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 435.46,
-          "grade_7": 800.0,
-          "grade_8": 1382.5,
+          "ungraded": 387.5,
+          "grade_7": 768.0,
+          "grade_8": 1331.65,
           "grade_9": 2866.13,
           "grade_9_5": 3533.68,
-          "grade_10": 30100.0
+          "grade_10": 28272.5
         },
         "pokeprice": null,
-        "ebay_recent_avg": 2068.53,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -257,10 +257,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 280,
       "wb_price": 6500.0,
-      "live_price": 10940.54,
+      "live_price": 10948.56,
       "live_source": "pricecharting:psa9",
-      "target_buy": 8752.43,
-      "target_sell": 10393.51,
+      "target_buy": 8758.85,
+      "target_sell": 10401.13,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": -0.3,
@@ -284,12 +284,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1175.0,
+          "ungraded": 1038.75,
           "grade_7": 2355.69,
           "grade_8": 4880.0,
-          "grade_9": 10940.54,
-          "grade_9_5": 12035.0,
-          "grade_10": 29701.06
+          "grade_9": 10948.56,
+          "grade_9_5": 12043.0,
+          "grade_10": 38577.7
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -887,13 +887,13 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $982100 but workbook is $5500 (178.6x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $60478 but workbook is $5500 (11.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 20.32,
+          "ungraded": null,
           "grade_7": null,
-          "grade_8": 982100.0,
-          "grade_9": null,
+          "grade_8": 60478.19,
+          "grade_9": 50000.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -939,10 +939,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 3012.73,
-          "grade_7": 7231.98,
+          "ungraded": 3397.82,
+          "grade_7": 7250.0,
           "grade_8": 11188.09,
-          "grade_9": 12984.62,
+          "grade_9": 12525.0,
           "grade_9_5": 18099.0,
           "grade_10": 58723.0
         },
@@ -1010,10 +1010,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 60,
       "wb_price": 12000.0,
-      "live_price": 14705.92,
+      "live_price": 14659.91,
       "live_source": "pricecharting:psa9",
-      "target_buy": 11764.74,
-      "target_sell": 13970.62,
+      "target_buy": 11727.93,
+      "target_sell": 13926.91,
       "score": 56,
       "signal": "HOLD",
       "d7_workbook": 1.23,
@@ -1040,8 +1040,8 @@
           "ungraded": 5500.0,
           "grade_7": 9205.8,
           "grade_8": 9262.4,
-          "grade_9": 14705.92,
-          "grade_9_5": 32233.87,
+          "grade_9": 14659.91,
+          "grade_9_5": 32182.7,
           "grade_10": 63460.5
         },
         "pokeprice": null,
@@ -1091,10 +1091,10 @@
           "grade_8": 7999.0,
           "grade_9": 15875.6,
           "grade_9_5": 17463.0,
-          "grade_10": 32600.0
+          "grade_10": 33609.63
         },
         "pokeprice": null,
-        "ebay_recent_avg": 90.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -1421,7 +1421,7 @@
       "pop_psa10": 25,
       "wb_price": 850000.0,
       "live_price": 850000.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "wb_no_sources_prev_rejected",
       "target_buy": 680000.0,
       "target_sell": 807500.0,
       "score": 57,
@@ -1445,7 +1445,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ebay returned $169 but workbook is $850000 (0.0x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "no fresh source; previous live $197262 was 0.2x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": null,
@@ -1456,7 +1456,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 169.44,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -7618,11 +7618,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 80,
       "wb_price": 9500.0,
-      "live_price": 6499.99,
-      "live_source": "reverted_bad_pc_match",
-      "target_buy": 5199.99,
-      "target_sell": 6174.99,
-      "score": 59,
+      "live_price": 9500.0,
+      "live_source": "wb_fallback_source_rejected",
+      "target_buy": 7600.0,
+      "target_sell": 9025.0,
+      "score": 53,
       "signal": "HOLD",
       "d7_workbook": 1.06,
       "d30_workbook": 6.08,
@@ -7634,22 +7634,23 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg",
       "notes": "Skyridge era. Pop ~80 PSA 9. Sleeper vintage.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "pc returned $28 but workbook is $9500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 121.59,
+          "ungraded": 46.29,
           "grade_7": null,
-          "grade_8": 118.88,
-          "grade_9": 109.21,
+          "grade_8": 51.32,
+          "grade_9": 28.02,
           "grade_9_5": null,
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 6499.99,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -21364,7 +21365,7 @@
           "grade_10": 421294.98
         },
         "pokeprice": null,
-        "ebay_recent_avg": 995.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -21378,10 +21379,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 480,
       "wb_price": 16000.0,
-      "live_price": 29867.5,
-      "live_source": "median_ebay_pc",
-      "target_buy": 23894.0,
-      "target_sell": 28374.12,
+      "live_price": 55888.0,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 44710.4,
+      "target_sell": 53093.6,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.33,
@@ -21398,9 +21399,11 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
       "notes": "BGS 9 \u2014 institutional grade.",
-      "confidence": "LOW",
-      "confidence_flags": [],
-      "reconcile_reason": "sources disagree by 87%; took median (no usable wb anchor)",
+      "confidence": "MEDIUM",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
           "ungraded": 7199.99,
@@ -21411,7 +21414,7 @@
           "grade_10": 421294.98
         },
         "pokeprice": null,
-        "ebay_recent_avg": 3847.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -21425,10 +21428,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 65,
       "wb_price": 22000.0,
-      "live_price": 71000.32,
+      "live_price": 69034.8,
       "live_source": "pricecharting:psa10",
-      "target_buy": 56800.26,
-      "target_sell": 67450.3,
+      "target_buy": 55227.84,
+      "target_sell": 65583.06,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 0.06,
@@ -21445,17 +21448,19 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/b51a881854783a5337801f7b6640f4aa387a8df72537d1719719aadaf37237a1/240.jpg",
       "notes": "Neo Lugia PSA 10 \u2014 pop ~65.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [],
-      "reconcile_reason": "no live source available; using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1312.14,
-          "grade_7": 3544.0,
-          "grade_8": 4573.8,
-          "grade_9": 8720.15,
+          "ungraded": 1303.11,
+          "grade_7": 3608.41,
+          "grade_8": 4738.96,
+          "grade_9": 9475.24,
           "grade_9_5": 12700.0,
-          "grade_10": 71000.32
+          "grade_10": 69034.8
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -21490,10 +21495,10 @@
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 121.59,
+          "ungraded": 46.29,
           "grade_7": null,
-          "grade_8": 118.88,
-          "grade_9": 109.21,
+          "grade_8": 51.32,
+          "grade_9": 28.02,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -21537,13 +21542,13 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "no fresh source; previous live $7232 was 0.4x wb \u2014 REJECTED, using workbook",
+      "reconcile_reason": "no fresh source; previous live $7250 was 0.4x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 3012.73,
+          "ungraded": 3397.82,
           "grade_7": null,
           "grade_8": 11188.09,
-          "grade_9": 7231.98,
+          "grade_9": 7250.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -21563,7 +21568,7 @@
       "pop_psa10": 70,
       "wb_price": 16000.0,
       "live_price": 16000.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "wb_no_sources_prev_rejected",
       "target_buy": 12800.0,
       "target_sell": 15200.0,
       "score": 55,
@@ -21587,7 +21592,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ebay returned $385 but workbook is $16000 (0.0x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "no fresh source; previous live $7297 was 0.5x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 4125.0,
@@ -21598,7 +21603,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 385.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -21613,7 +21618,7 @@
       "pop_psa10": 60,
       "wb_price": 22000.0,
       "live_price": 22000.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "wb_no_sources_prev_rejected",
       "target_buy": 17600.0,
       "target_sell": 20900.0,
       "score": 58,
@@ -21637,7 +21642,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ebay returned $400 but workbook is $22000 (0.0x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "no fresh source; previous live $9206 was 0.4x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 5500.0,
@@ -21648,7 +21653,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 400.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -21697,7 +21702,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 260.88,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -21764,9 +21769,11 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
       "notes": "1st Ed Shadowless Char PSA 10 \u2014 grail.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [],
-      "reconcile_reason": "no live source available; using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
           "ungraded": 7199.99,
@@ -21791,10 +21798,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 200,
       "wb_price": 5800.0,
-      "live_price": 14777.77,
+      "live_price": 14476.83,
       "live_source": "pricecharting:psa10",
-      "target_buy": 11822.22,
-      "target_sell": 14038.88,
+      "target_buy": 11581.46,
+      "target_sell": 13752.99,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 2.29,
@@ -21818,12 +21825,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1216.82,
-          "grade_7": 2500.0,
+          "ungraded": 1207.73,
+          "grade_7": 2576.0,
           "grade_8": 3150.0,
           "grade_9": 3925.0,
-          "grade_9_5": 4635.37,
-          "grade_10": 14777.77
+          "grade_9_5": 4634.86,
+          "grade_10": 14476.83
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -22085,13 +22092,13 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $213 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $242 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 213.04,
+          "ungraded": 241.58,
           "grade_7": null,
-          "grade_8": 317.14,
-          "grade_9": 287.01,
+          "grade_8": null,
+          "grade_9": null,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -22145,7 +22152,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 300.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -22292,7 +22299,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 495.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -22341,7 +22348,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 290.81,
+        "ebay_recent_avg": 286.57,
         "tcgplayer_market": null
       }
     },
@@ -22375,16 +22382,18 @@
       ],
       "image": "https://images.pokemontcg.io/ecard2/149.png",
       "notes": "Iconic Neo grail. PSA 10 trending up; pop low.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [],
-      "reconcile_reason": "no live source available; using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 369.88,
+          "ungraded": 339.6,
           "grade_7": 711.28,
-          "grade_8": 867.42,
-          "grade_9": 2146.87,
-          "grade_9_5": 2362.0,
+          "grade_8": 902.21,
+          "grade_9": 2130.55,
+          "grade_9_5": 2344.0,
           "grade_10": 19651.0
         },
         "pokeprice": null,
@@ -22503,12 +22512,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 280,
       "wb_price": 8500.0,
-      "live_price": 570.64,
-      "live_source": "consensus_disagrees_wb_ebay_pc",
-      "target_buy": 456.51,
-      "target_sell": 542.11,
-      "score": 68,
-      "signal": "BUY",
+      "live_price": 8500.0,
+      "live_source": "wb_fallback_source_rejected",
+      "target_buy": 6800.0,
+      "target_sell": 8075.0,
+      "score": 56,
+      "signal": "HOLD",
       "d7_workbook": 2.19,
       "d30_workbook": 8.0,
       "history": [
@@ -22519,11 +22528,12 @@
       ],
       "image": "https://images.pokemontcg.io/ecard2/149.png",
       "notes": "1st Ed Lugia. Lower pop.",
-      "confidence": "LOW",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "consensus_disagrees_workbook"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "2 sources agree at $571 but wb=$8500 (0.1x) \u2014 verify variant",
+      "reconcile_reason": "pc returned $711 but workbook is $8500 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 369.88,
@@ -22534,7 +22544,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 430.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -23667,12 +23677,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 85,
       "wb_price": 18500.0,
-      "live_price": 16330.5,
-      "live_source": "ebay",
-      "target_buy": 13064.4,
-      "target_sell": 15513.97,
-      "score": 61,
-      "signal": "BUY",
+      "live_price": 18500.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 14800.0,
+      "target_sell": 17575.0,
+      "score": 59,
+      "signal": "HOLD",
       "d7_workbook": 4.07,
       "d30_workbook": 11.0,
       "history": [
@@ -23683,22 +23693,22 @@
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
       "notes": "Crystal Charizard - Skyridge crown jewel.",
-      "confidence": "LOW",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "no_source_data"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 121.59,
+          "ungraded": 46.29,
           "grade_7": null,
-          "grade_8": 118.88,
-          "grade_9": 109.21,
+          "grade_8": 51.32,
+          "grade_9": 28.02,
           "grade_9_5": null,
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 16330.5,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -23775,7 +23785,7 @@
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 422.5,
+          "ungraded": 445.0,
           "grade_7": null,
           "grade_8": 380.0,
           "grade_9": 298.36,
@@ -25661,7 +25671,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 244.5,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -26090,7 +26100,7 @@
       "pop_psa10": null,
       "wb_price": 11500.0,
       "live_price": 11500.0,
-      "live_source": "wb_disagree_rejected_vs_wb",
+      "live_source": "wb_fallback_source_rejected",
       "target_buy": 9200.0,
       "target_sell": 10925.0,
       "score": 56,
@@ -26105,11 +26115,12 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg",
       "notes": "Neo Genesis sealed - rare to find.",
-      "confidence": "LOW",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
+        "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "sources disagree by 71% AND median $266 is 0.0x wb \u2014 likely wrong variant, using wb",
+      "reconcile_reason": "pc returned $78 but workbook is $11500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 77.51,
@@ -26120,7 +26131,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 455.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null
       }
     },
@@ -28345,10 +28356,10 @@
       "reconcile_reason": "pc returned $58723 but workbook is $6500 (9.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 3012.73,
-          "grade_7": 7231.98,
+          "ungraded": 3397.82,
+          "grade_7": 7250.0,
           "grade_8": 11188.09,
-          "grade_9": 12984.62,
+          "grade_9": 12525.0,
           "grade_9_5": 18099.0,
           "grade_10": 58723.0
         },
