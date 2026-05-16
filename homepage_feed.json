@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T18:58:16.364712Z",
+  "generated_at": "2026-05-16T20:11:34.686058Z",
   "live_updated_at": "2026-05-15T05:00:28.531494Z",
   "stats": {
     "total_cards": 774,
@@ -9663,7 +9663,7 @@
   "data_quality": {
     "score": 32,
     "grade": "F",
-    "data_age_hours": 38.0,
+    "data_age_hours": 39.2,
     "alert_counts": {
       "high": 9,
       "warn": 99
