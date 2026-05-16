@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T20:45:59.002609Z",
+  "generated_at": "2026-05-16T18:58:17.100193Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -355,10 +355,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 850,
       "wb_price": 1100.0,
-      "live_price": 1100.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 880.0,
-      "target_sell": 1045.0,
+      "live_price": 4844.32,
+      "live_source": "pricecharting:psa9",
+      "target_buy": 3875.46,
+      "target_sell": 4602.1,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 2.58,
@@ -372,9 +372,7 @@
       "image": "https://images.pokemontcg.io/ex10/20.png",
       "notes": "Trophy run-up potential. Cheap 1st Ed PSA 9.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -4595,10 +4593,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1200,
       "wb_price": 1500.0,
-      "live_price": 1500.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 1200.0,
-      "target_sell": 1425.0,
+      "live_price": 1650.0,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 1320.0,
+      "target_sell": 1567.5,
       "score": 77,
       "signal": "STRONG BUY",
       "d7_workbook": 26.64,
@@ -4612,9 +4610,7 @@
       "image": "https://images.pokemontcg.io/sv8pt5/156.png",
       "notes": "PE Sylveon SIR. 30-40% discount to Umbreon.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -8261,10 +8257,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 110,
       "wb_price": 4800.0,
-      "live_price": 4800.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 3840.0,
-      "target_sell": 4560.0,
+      "live_price": 16385.17,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 13108.14,
+      "target_sell": 15565.91,
       "score": 56,
       "signal": "HOLD",
       "d7_workbook": 2.85,
@@ -8282,9 +8278,7 @@
       "image": "https://images.pokemontcg.io/base5/4.png",
       "notes": "PSA 10 version. Pop ~110.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -8524,10 +8518,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 950,
       "wb_price": 360.0,
-      "live_price": 360.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 288.0,
-      "target_sell": 342.0,
+      "live_price": 444.35,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 355.48,
+      "target_sell": 422.13,
       "score": 73,
       "signal": "BUY",
       "d7_workbook": 32.49,
@@ -8541,9 +8535,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/l3qqpmgaj3myh646/240.jpg",
       "notes": "Hidden Fates Tag Team. Eon duo.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -21433,10 +21425,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 65,
       "wb_price": 22000.0,
-      "live_price": 22000.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 17600.0,
-      "target_sell": 20900.0,
+      "live_price": 71000.32,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 56800.26,
+      "target_sell": 67450.3,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 0.06,
@@ -21454,9 +21446,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/b51a881854783a5337801f7b6640f4aa387a8df72537d1719719aadaf37237a1/240.jpg",
       "notes": "Neo Lugia PSA 10 \u2014 pop ~65.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -21754,11 +21744,11 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 120,
       "wb_price": 200000.0,
-      "live_price": 200000.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 160000.0,
-      "target_sell": 190000.0,
-      "score": 54,
+      "live_price": 421294.98,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 337035.98,
+      "target_sell": 400230.23,
+      "score": 53,
       "signal": "HOLD",
       "d7_workbook": 1.36,
       "d30_workbook": 4.0,
@@ -21775,9 +21765,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
       "notes": "1st Ed Shadowless Char PSA 10 \u2014 grail.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -22367,10 +22355,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 215,
       "wb_price": 12500.0,
-      "live_price": 12500.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 10000.0,
-      "target_sell": 11875.0,
+      "live_price": 19651.0,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 15720.8,
+      "target_sell": 18668.45,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 2.97,
@@ -22388,9 +22376,7 @@
       "image": "https://images.pokemontcg.io/ecard2/149.png",
       "notes": "Iconic Neo grail. PSA 10 trending up; pop low.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -22678,10 +22664,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 225,
       "wb_price": 1900.0,
-      "live_price": 1900.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 1520.0,
-      "target_sell": 1805.0,
+      "live_price": 2980.97,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 2384.78,
+      "target_sell": 2831.92,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 3.3,
@@ -22699,9 +22685,7 @@
       "image": "https://images.pokemontcg.io/neo2/1.png",
       "notes": "First Espeon card. Eeveelution premium.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -23235,10 +23219,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 175,
       "wb_price": 2900.0,
-      "live_price": 2900.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 2320.0,
-      "target_sell": 2755.0,
+      "live_price": 9600.0,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 7680.0,
+      "target_sell": 9120.0,
       "score": 58,
       "signal": "HOLD",
       "d7_workbook": 2.26,
@@ -23256,9 +23240,7 @@
       "image": "https://images.pokemontcg.io/neo4/113.png",
       "notes": "Shining Tyranitar grail.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -25131,7 +25113,7 @@
       "pop_psa10": 1250,
       "wb_price": 165.0,
       "live_price": 165.0,
-      "live_source": "wb_no_sources",
+      "live_source": "wb_fallback_source_rejected",
       "target_buy": 132.0,
       "target_sell": 156.75,
       "score": 52,
@@ -25148,9 +25130,10 @@
       "notes": "PE Sylveon ex SA.",
       "confidence": "UNKNOWN",
       "confidence_flags": [
-        "workbook_fallback"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "no live source available; using workbook",
+      "reconcile_reason": "pc returned $1650 but workbook is $165 (10.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 364.84,
@@ -25261,12 +25244,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 545,
       "wb_price": 425.0,
-      "live_price": 425.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 340.0,
-      "target_sell": 403.75,
-      "score": 51,
-      "signal": "HOLD",
+      "live_price": 180.0,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 144.0,
+      "target_sell": 171.0,
+      "score": 63,
+      "signal": "BUY",
       "d7_workbook": 2.28,
       "d30_workbook": 8.0,
       "history": [
@@ -25278,9 +25261,7 @@
       "image": "https://images.pokemontcg.io/ex6/105.png",
       "notes": "Charizard ex SIR PSA 10.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -28092,10 +28073,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 385,
       "wb_price": 1550.0,
-      "live_price": 1550.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 1240.0,
-      "target_sell": 1472.5,
+      "live_price": 3267.32,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 2613.86,
+      "target_sell": 3103.95,
       "score": 55,
       "signal": "HOLD",
       "d7_workbook": 2.48,
@@ -28109,9 +28090,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/jw45qdlqbx652hmf/240.jpg",
       "notes": "Base Unlimited Venusaur PSA 10.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
@@ -29505,10 +29484,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 685,
       "wb_price": 550.0,
-      "live_price": 550.0,
-      "live_source": "wb_fallback_source_rejected",
-      "target_buy": 440.0,
-      "target_sell": 522.5,
+      "live_price": 5229.42,
+      "live_source": "consensus_disagrees_wb_pc_ppt",
+      "target_buy": 4183.54,
+      "target_sell": 4967.95,
       "score": 51,
       "signal": "HOLD",
       "d7_workbook": 2.59,
@@ -29521,12 +29500,11 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/527754e6c8e1d55202af70e15358d6f355bf40f00d10ddb1c892458ed8a94d6b/240.jpg",
       "notes": "Burning Shadows Charizard GX Rainbow.",
-      "confidence": "UNKNOWN",
+      "confidence": "LOW",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "consensus_disagrees_workbook"
       ],
-      "reconcile_reason": "ppt returned $4522 but workbook is $550 (8.2x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "2 sources agree at $5229 but wb=$550 (9.5x) \u2014 verify variant",
       "sources": {
         "pricecharting": {
           "ungraded": 249.25,
