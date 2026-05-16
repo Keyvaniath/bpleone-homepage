@@ -1,5 +1,23 @@
 {
-  "deployed_at": "2026-05-16T22:25:12.168795+00:00",
-  "version": "2026.5.16-r6",
-  "queue_drained": true
+  "deployed_at": "2026-05-16T22:55:53.763632+00:00",
+  "version": "2026.5.16-r9-final",
+  "features": [
+    "hero-stats-strip",
+    "data-quality-banner",
+    "why-this-price-panel",
+    "cross-source-consensus-table",
+    "report-wrong-price-button",
+    "ppt-ebay-sold-meta-panel",
+    "pricecharting-direct-url-link",
+    "reconcile-prices-engine",
+    "auto-data-quality-check",
+    "price-diff-todays-moves",
+    "morning-brief-actionable-picks",
+    "duplicate-flagger",
+    "stylized-image-placeholders",
+    "card-tile-confidence-dots",
+    "card-tile-reconcile-badges"
+  ],
+  "data_quality_score": 46,
+  "reconciler_caught": 82
 }
