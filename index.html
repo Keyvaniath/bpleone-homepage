@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- bpleone.com v2026.5.16-r3 — Research Center w/ Data Quality auto-audit -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -301,35 +302,46 @@
   }
   /* Hero */
   .hero {
-    padding: 100px 0 60px;
+    padding: 80px 0 50px;
     text-align: left;
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 600px 300px at 20% 30%, rgba(245,200,66,0.06) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: -1;
   }
   .hero-eyebrow {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--gold);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    font-weight: 600;
   }
   .hero h1 {
-    font-size: clamp(36px, 6vw, 64px);
+    font-size: clamp(40px, 7vw, 72px);
     font-weight: 800;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    margin-bottom: 22px;
   }
   .hero h1 .accent {
-    background: linear-gradient(135deg, #f5c842 0%, #fb923c 100%);
+    background: linear-gradient(135deg, #f5c842 0%, #fb923c 50%, #f87171 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 12px rgba(245,200,66,0.15));
   }
   .hero p {
-    font-size: 18px;
+    font-size: 17px;
     color: var(--text-dim);
     max-width: 640px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+    line-height: 1.65;
   }
   .hero-meta {
     display: flex;
@@ -340,6 +352,44 @@
     font-family: 'JetBrains Mono', monospace;
   }
   .hero-meta span::before { content: "▸ "; color: var(--gold); }
+
+  /* Hero stats strip — live numbers right under the headline */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+    margin: 30px 0 8px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(19,24,38,0.6) 0%, rgba(19,24,38,0.3) 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+  }
+  .hero-stat {
+    display: flex; flex-direction: column; gap: 4px;
+    padding: 8px 14px;
+    border-left: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .hero-stat:hover { border-left-color: var(--gold); }
+  .hero-stat .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--text-mute);
+  }
+  .hero-stat .value {
+    font-size: 26px; font-weight: 800;
+    letter-spacing: -0.02em; line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-stat .value.green { color: #4ade80; }
+  .hero-stat .value.gold { color: var(--gold); }
+  .hero-stat .value.orange { color: var(--orange); }
+  .hero-stat .value.red { color: var(--red); }
+  .hero-stat .sub {
+    font-size: 11px; color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
   /* Section */
   .section {
     padding: 80px 0;
@@ -1421,7 +1471,36 @@
       <span id="hero-status">Pokémon TCG Research Center · Live Since 2026</span>
     </div>
     <h1>Find the next moonshot<br><span class="accent">before it moves.</span></h1>
-    <p>774 cards · 4-hour refresh · AI-driven Future Winners model · transparent quant score · cross-checked across PriceCharting + PokemonPriceTracker + TCGPlayer. No hype, no chartcraft — just signals that survive a sanity guard.</p>
+    <p>An AI-driven Pokémon TCG research center. 774 cards tracked live across PriceCharting · PokemonPriceTracker · TCGPlayer · eBay. Every price runs through a multi-source sanity reconciler before going live. No chartcraft, no hype — just signals that survive an auto-audit.</p>
+
+    <!-- Live stats strip — populated from /homepage_feed.json -->
+    <div class="hero-stats" id="hero-stats">
+      <div class="hero-stat">
+        <span class="label">Cards live</span>
+        <span class="value gold" id="hs-live">—</span>
+        <span class="sub" id="hs-live-sub">of 774 tracked</span>
+      </div>
+      <div class="hero-stat">
+        <span class="label">STRONG BUYs</span>
+        <span class="value green" id="hs-buys">—</span>
+        <span class="sub" id="hs-buys-sub">today</span>
+      </div>
+      <div class="hero-stat">
+        <span class="label">Total Mcap</span>
+        <span class="value" id="hs-mcap">—</span>
+        <span class="sub" id="hs-mcap-sub">tracked book</span>
+      </div>
+      <div class="hero-stat">
+        <span class="label">Data Quality</span>
+        <span class="value" id="hs-dq">—</span>
+        <span class="sub" id="hs-dq-sub">auto-audited</span>
+      </div>
+      <div class="hero-stat">
+        <span class="label">Last refresh</span>
+        <span class="value" id="hs-fresh" style="font-size:20px;">—</span>
+        <span class="sub">4h cron · cross-source</span>
+      </div>
+    </div>
 
     <!-- Flip Bot live counter — populated by JS from feed.flip_bot (hidden until feed loads). -->
     <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank" rel="noopener" id="flip-hero-pill" style="display:none;text-decoration:none;align-items:center;gap:10px;background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.3);padding:10px 16px;border-radius:24px;margin-bottom:18px;font-size:13px;font-family:'JetBrains Mono',monospace;color:var(--text);">
@@ -2304,6 +2383,25 @@
 
   function render(feed) {
     const s = feed.stats || {};
+
+    // Populate hero stats strip — the live numbers Brandon wants front and center
+    try {
+      setText('hs-live', (s.live_matched || 0).toLocaleString());
+      setText('hs-live-sub', 'of ' + (s.total_cards || 0).toLocaleString() + ' tracked · ' +
+        (s.total_cards ? Math.round(100*s.live_matched/s.total_cards) : 0) + '% coverage');
+      setText('hs-buys', (s.strong_buys || 0).toLocaleString());
+      setText('hs-mcap', fmtMoney(s.total_mcap));
+      const dq = feed.data_quality || {};
+      const dqEl = document.getElementById('hs-dq');
+      if (dqEl) {
+        const grade = dq.grade || '—';
+        dqEl.textContent = grade + ' · ' + (dq.score || '—');
+        dqEl.className = 'value ' + (grade === 'A' || grade === 'B' ? 'green' : grade === 'C' ? 'gold' : 'red');
+      }
+      setText('hs-dq-sub', dq.alert_counts ? (dq.alert_counts.high || 0) + ' high · ' + (dq.alert_counts.warn || 0) + ' warn' : 'auto-audited');
+      setText('hs-fresh', relTime(feed.live_updated_at));
+    } catch (e) { console.error('hero stats render', e); }
+
     setText('kpi-cards', (s.total_cards || 0).toLocaleString());
     setText('kpi-matched', (s.live_matched || 0).toLocaleString());
     const coveragePct = s.total_cards ? Math.round(100 * s.live_matched / s.total_cards) : 0;
