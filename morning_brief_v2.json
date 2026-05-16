@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-05-16T22:42:56.637692+00:00",
+  "data_age_hours": 1.8,
+  "data_quality_score": 46,
+  "data_quality_grade": "F",
+  "summary": {
+    "strong_buys_count": 86,
+    "trim_count": 0,
+    "sell_count": 0,
+    "needs_override_count": 15,
+    "reconciler_fixes_count": 10
+  },
+  "top_strong_buys": [
+    {
+      "cid": "M084",
+      "name": "Mega Rayquaza ex SIR",
+      "variant": "PSA 10",
+      "set": "Ascended Heroes",
+      "price": 560.0,
+      "score": 89,
+      "d30": 47.13,
+      "confidence": "MEDIUM"
+    },
+    {
+      "cid": "M063",
+      "name": "Fezandipiti ex Alt Art",
+      "variant": "PSA 10",
+      "set": "Shrouded Fable",
+      "price": 90.0,
+      "score": 89,
+      "d30": 72.79,
+      "confidence": "MEDIUM"
+    },
+    {
+      "cid": "M085",
+      "name": "Mega Lucario ex SIR",
+      "variant": "PSA 10",
+      "set": "Ascended Heroes",
+      "price": 350.0,
+      "score": 88,
+      "d30": 44.38,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M046",
+      "name": "Charizard ex SIR",
+      "variant": "PSA 10",
+      "set": "Obsidian Flames",
+      "price": 322.5,
+      "score": 88,
+      "d30": 76.31,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M054",
+      "name": "Roaring Moon ex SIR",
+      "variant": "PSA 10",
+      "set": "Paradox Rift",
+      "price": 211.21,
+      "score": 88,
+      "d30": 81.08,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M060",
+      "name": "Carmine SIR",
+      "variant": "PSA 10",
+      "set": "Twilight Masquerade",
+      "price": 178.22,
+      "score": 88,
+      "d30": 83.05,
+      "confidence": "OVERRIDE"
+    }
+  ],
+  "top_trim_targets": [],
+  "reconciler_fixes": [
+    {
+      "cid": "V031",
+      "name": "Pikachu Illustrator",
+      "variant": "PSA 4",
+      "wb_price": 850000,
+      "rejected_source": "pricecharting:fallback_grade_7",
+      "rejected_value": 197261.51,
+      "reason": "no fresh source; previous live $197262 was 0.2x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "D102",
+      "name": "Pokemon Base Set 1st Ed Booster Box",
+      "variant": "Sealed",
+      "wb_price": 425000,
+      "rejected_source": "rejected_sanity_pricecharting:raw_$11150_vs_wb_$425000",
+      "rejected_value": 0,
+      "reason": "pc returned $11150 but workbook is $425000 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "V101",
+      "name": "Trainer No. 3 Trophy",
+      "variant": "PSA 9",
+      "wb_price": 65000,
+      "rejected_source": "ebay",
+      "rejected_value": 46.0,
+      "reason": "ebay returned $46 but workbook is $65000 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb_price": 22000,
+      "rejected_source": "pricecharting:fallback_grade_9",
+      "rejected_value": 9205.8,
+      "reason": "no fresh source; previous live $9206 was 0.4x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb_price": 18000,
+      "rejected_source": "pricecharting:fallback_grade_9",
+      "rejected_value": 7250.0,
+      "reason": "no fresh source; previous live $7250 was 0.4x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb_price": 16000,
+      "rejected_source": "pricecharting:fallback_grade_9",
+      "rejected_value": 7296.73,
+      "reason": "no fresh source; previous live $7297 was 0.5x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "D101",
+      "name": "Pokemon Base Set Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb_price": 15000,
+      "rejected_source": "rejected_sanity_pricecharting:raw_$78_vs_wb_$15000",
+      "rejected_value": 0,
+      "reason": "pc returned $78 but workbook is $15000 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "D107",
+      "name": "Pokemon Neo Genesis Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb_price": 11500,
+      "rejected_source": "rejected_sanity_pricecharting:raw_$78_vs_wb_$11500",
+      "rejected_value": 0,
+      "reason": "pc returned $78 but workbook is $11500 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X015",
+      "name": "Crystal Charizard",
+      "variant": "PSA 9",
+      "wb_price": 9500,
+      "rejected_source": "rejected_sanity_pricecharting:psa9_$28_vs_wb_$9500",
+      "rejected_value": 0,
+      "reason": "pc returned $28 but workbook is $9500 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "Z004",
+      "name": "Lugia 1st Ed",
+      "variant": "PSA 9",
+      "wb_price": 8500,
+      "rejected_source": "rejected_sanity_pricecharting:psa9_$711_vs_wb_$8500",
+      "rejected_value": 0,
+      "reason": "pc returned $711 but workbook is $8500 (0.1x) \u2014 REJECTED, using workbook"
+    }
+  ],
+  "needs_manual_override": [
+    {
+      "cid": "V031",
+      "name": "Pikachu Illustrator",
+      "variant": "PSA 4",
+      "wb_price": 850000,
+      "current_source": "wb_no_sources_prev_rejected",
+      "reason": "no fresh source; previous live $197262 was 0.2x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "D102",
+      "name": "Pokemon Base Set 1st Ed Booster Box",
+      "variant": "Sealed",
+      "wb_price": 425000,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $11150 but workbook is $425000 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "V101",
+      "name": "Trainer No. 3 Trophy",
+      "variant": "PSA 9",
+      "wb_price": 65000,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "ebay returned $46 but workbook is $65000 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X504",
+      "name": "Crystal Charizard Skyridge PSA 10",
+      "variant": "PSA 10",
+      "wb_price": 38000,
+      "current_source": "wb_no_sources",
+      "reason": "no live source available; using workbook"
+    },
+    {
+      "cid": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb_price": 22000,
+      "current_source": "wb_no_sources_prev_rejected",
+      "reason": "no fresh source; previous live $9206 was 0.4x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "Z050",
+      "name": "Charizard Crystal",
+      "variant": "PSA 10",
+      "wb_price": 18500,
+      "current_source": "wb_no_sources",
+      "reason": "no live source available; using workbook"
+    },
+    {
+      "cid": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb_price": 18000,
+      "current_source": "wb_no_sources_prev_rejected",
+      "reason": "no fresh source; previous live $7250 was 0.4x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "wb_price": 16000,
+      "current_source": "wb_no_sources_prev_rejected",
+      "reason": "no fresh source; previous live $7297 was 0.5x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "D101",
+      "name": "Pokemon Base Set Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb_price": 15000,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $78 but workbook is $15000 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "D107",
+      "name": "Pokemon Neo Genesis Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb_price": 11500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $78 but workbook is $11500 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X015",
+      "name": "Crystal Charizard",
+      "variant": "PSA 9",
+      "wb_price": 9500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $28 but workbook is $9500 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "Z004",
+      "name": "Lugia 1st Ed",
+      "variant": "PSA 9",
+      "wb_price": 8500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $711 but workbook is $8500 (0.1x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "V032",
+      "name": "Tropical Wind",
+      "variant": "PSA 9",
+      "wb_price": 6500,
+      "current_source": "wb_no_sources_prev_rejected",
+      "reason": "no fresh source; previous live $1986 was 0.3x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "Z102",
+      "name": "Gold Star Charizard",
+      "variant": "PSA 10",
+      "wb_price": 6500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $58723 but workbook is $6500 (9.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X526",
+      "name": "Champion's Path Booster Box (case)",
+      "variant": "Sealed",
+      "wb_price": 6500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $242 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook"
+    }
+  ],
+  "future_winners": [],
+  "data_quality_alerts": [
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$7987 is 7.6x grade_9_5=$1054 (wrong page?)",
+      "cid": "V270",
+      "name": "Blastoise PSA 10",
+      "variant": "PSA 10",
+      "wb": 1850,
+      "live": 1850
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$3722 is 10.1x grade_9_5=$370 (wrong page?)",
+      "cid": "V272",
+      "name": "Mewtwo PSA 10",
+      "variant": "PSA 10",
+      "wb": 1450,
+      "live": 1450
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$27187 is 27.6x grade_9_5=$985 (wrong page?)",
+      "cid": "Z125",
+      "name": "Rayquaza C LV.X",
+      "variant": "PSA 10",
+      "wb": 1450,
+      "live": 1450
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$1096 is 6.3x grade_9_5=$174 (wrong page?)",
+      "cid": "V036",
+      "name": "Pikachu",
+      "variant": "PSA 10",
+      "wb": 950,
+      "live": 950
+    },
+    {
+      "severity": "high",
+      "category": "grade_ladder_violation",
+      "message": "PC grade_10=$2340 is 6.3x grade_9_5=$374 (wrong page?)",
+      "cid": "V273",
+      "name": "Alakazam PSA 10",
+      "variant": "PSA 10",
+      "wb": 950,
+      "live": 950
+    }
+  ]
+}
