@@ -315,6 +315,48 @@
   // "Why this price?" — transparent explanation of where the live price came
   // from, what was rejected, and how much to trust it. Crucial for Brandon who
   // keeps finding errors and needs to see at-a-glance which prices to verify.
+  // PPT eBay-sold meta panel — actual transaction counts + min/max from
+  // PokemonPriceTracker's $10/mo Pro data. Shows for graded cards w/ meta.
+  function pptMetaPanel(card) {
+    const m = (card.sources || {}).ppt_meta;
+    if (!m) return '';
+    function row(label, data, color) {
+      if (!data || !data.count) return '';
+      const min = data.min ? '$' + Math.round(data.min).toLocaleString() : '—';
+      const max = data.max ? '$' + Math.round(data.max).toLocaleString() : '—';
+      const trend = data.trend === 'up' ? '<span style="color:#4ade80;">↑ up</span>' :
+                    data.trend === 'down' ? '<span style="color:#f87171;">↓ down</span>' :
+                    data.trend === 'stable' ? '<span style="color:var(--text-mute);">→ stable</span>' :
+                    '<span style="color:var(--text-mute);">—</span>';
+      const vol7d = data.volume_7d ? (data.volume_7d).toFixed(1) + ' / day' : 'low';
+      return '<tr>' +
+        '<td style="padding:8px 12px;border-bottom:1px solid var(--border);color:' + color + ';font-weight:700;">' + label + '</td>' +
+        '<td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:right;font-family:monospace;color:var(--gold);">' + (data.count || 0) + '</td>' +
+        '<td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:right;font-family:monospace;font-size:12px;">' + min + ' – ' + max + '</td>' +
+        '<td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:center;font-size:11px;">' + trend + '</td>' +
+        '<td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:right;font-family:monospace;font-size:11px;color:var(--text-mute);">' + vol7d + '</td>' +
+      '</tr>';
+    }
+    const body = row('PSA 10', m.psa10, '#4ade80') +
+                 row('PSA 9.5', m.psa9_5, '#a3e635') +
+                 row('PSA 9',  m.psa9,  '#a3e635') +
+                 row('PSA 8',  m.psa8,  '#fbbf24') +
+                 row('PSA 7',  m.psa7,  '#fb923c');
+    if (!body) return '';
+    return '<h2 class="section">eBay sold history · PokemonPriceTracker</h2>' +
+      '<div class="body-card" style="padding:0;overflow-x:auto;">' +
+      '<table style="width:100%;border-collapse:collapse;font-size:13px;">' +
+        '<thead><tr style="background:rgba(0,0,0,0.2);">' +
+          '<th style="padding:10px 12px;text-align:left;font-family:monospace;font-size:10px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;">Grade</th>' +
+          '<th style="padding:10px 12px;text-align:right;font-family:monospace;font-size:10px;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;">Sales (n)</th>' +
+          '<th style="padding:10px 12px;text-align:right;font-family:monospace;font-size:10px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;">Range</th>' +
+          '<th style="padding:10px 12px;text-align:center;font-family:monospace;font-size:10px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;">Trend</th>' +
+          '<th style="padding:10px 12px;text-align:right;font-family:monospace;font-size:10px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;">7D Vol</th>' +
+        '</tr></thead><tbody>' + body + '</tbody></table>' +
+        '<p style="padding:10px 14px;font-size:11px;color:var(--text-mute);">Actual eBay sold-transaction data from PokemonPriceTracker (Brandon\'s Pro subscription). High sale count + steady trend = liquid market.</p>' +
+      '</div>';
+  }
+
   function whyThisPricePanel(card) {
     const src = card.live_source || '';
     const conf = (card.confidence || 'UNKNOWN').toUpperCase();
@@ -457,6 +499,12 @@
     return '<a href="https://www.tcgplayer.com/search/pokemon/product?q=' + q + '" target="_blank" rel="noopener">🛒 TCGPlayer</a>';
   }
   function pcLink(c) {
+    // Prefer the actual stored PC URL (what our scraper used) — that's the
+    // exact page our price came from. Falls back to search if not stored.
+    const stored = (c.sources || {}).pricecharting_url;
+    if (stored) {
+      return '<a href="' + stored + '" target="_blank" rel="noopener" title="The exact PriceCharting page our scraper used">📊 PriceCharting (this scrape\'s page)</a>';
+    }
     const q = encodeURIComponent((c.name + ' ' + c.set).replace(/\s+/g, ' ').trim());
     return '<a href="https://www.pricecharting.com/search-products?q=' + q + '&type=prices" target="_blank" rel="noopener">📊 PriceCharting</a>';
   }
@@ -571,6 +619,8 @@
           chartBlock +
 
           sourceTable(card) +
+
+          pptMetaPanel(card) +
 
           (card.notes ? '<h2 class="section">Notes</h2><div class="body-card">' + card.notes + '</div>' : '') +
 
