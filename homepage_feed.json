@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T20:53:43.803653Z",
+  "generated_at": "2026-05-16T22:44:06.148871Z",
   "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
@@ -7,7 +7,7 @@
     "total_mcap": 3826377.0,
     "avg_d30_pct": 0.1709,
     "strong_buys": 84,
-    "history_snapshots": 2,
+    "history_snapshots": 3,
     "history_age_days": 1.9,
     "history_overlay_count": 0
   },
@@ -9420,10 +9420,204 @@
       "last_sales": []
     }
   ],
+  "price_diff": {
+    "current_snapshot_at": "2026-05-16T20:51:34.239708Z",
+    "prior_snapshot_at": "2026-05-15T05:00:28.531494Z",
+    "gainers_count": 10,
+    "losers_count": 10,
+    "reconciler_fixes_count": 12,
+    "top_gainers": [
+      {
+        "cid": "V100",
+        "name": "Pikachu Illustrator Promo",
+        "variant": "PSA 7",
+        "set": "",
+        "prior_price": 244.5,
+        "current_price": 197261.51,
+        "delta_usd": 197017.01,
+        "delta_pct": 80579.55,
+        "source": "pricecharting:psa7",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "X508",
+        "name": "Pikachu Illustrator PSA 7",
+        "variant": "PSA 7",
+        "set": "",
+        "prior_price": 260.88,
+        "current_price": 197261.51,
+        "delta_usd": 197000.63,
+        "delta_pct": 75513.89,
+        "source": "pricecharting:psa7",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "V023",
+        "name": "Espeon Gold Star",
+        "variant": "PSA 9",
+        "set": "",
+        "prior_price": 90.0,
+        "current_price": 15875.6,
+        "delta_usd": 15785.6,
+        "delta_pct": 17539.56,
+        "source": "pricecharting:psa9",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "X535",
+        "name": "Team Rocket Booster Box Unlimited (sealed)",
+        "variant": "Sealed",
+        "set": "",
+        "prior_price": 290.81,
+        "current_price": 15035.97,
+        "delta_usd": 14745.16,
+        "delta_pct": 5070.38,
+        "source": "pricecharting:raw",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "X501",
+        "name": "Charizard 1st Ed Shadowless PSA 8",
+        "variant": "PSA 8",
+        "set": "",
+        "prior_price": 995.0,
+        "current_price": 31392.6,
+        "delta_usd": 30397.6,
+        "delta_pct": 3055.04,
+        "source": "pricecharting:psa8",
+        "confidence": "UNKNOWN"
+      }
+    ],
+    "top_losers": [
+      {
+        "cid": "V019",
+        "name": "Pikachu Trophy (Bronze)",
+        "variant": "PSA 8",
+        "set": "",
+        "prior_price": 982100.0,
+        "current_price": 5500.0,
+        "delta_usd": -976600.0,
+        "delta_pct": -99.44,
+        "source": "wb_fallback_source_rejected",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "Z103",
+        "name": "Gold Star Mew",
+        "variant": "PSA 10",
+        "set": "",
+        "prior_price": 26839.27,
+        "current_price": 1800.0,
+        "delta_usd": -25039.27,
+        "delta_pct": -93.29,
+        "source": "wb_fallback_source_rejected",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "Z102",
+        "name": "Gold Star Charizard",
+        "variant": "PSA 10",
+        "set": "",
+        "prior_price": 58723.0,
+        "current_price": 6500.0,
+        "delta_usd": -52223.0,
+        "delta_pct": -88.93,
+        "source": "wb_fallback_source_rejected",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "V027",
+        "name": "Rayquaza Gold Star",
+        "variant": "PSA 9",
+        "set": "",
+        "prior_price": 25980.41,
+        "current_price": 4200.0,
+        "delta_usd": -21780.41,
+        "delta_pct": -83.83,
+        "source": "wb_fallback_source_rejected",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "cid": "V270",
+        "name": "Blastoise PSA 10",
+        "variant": "PSA 10",
+        "set": "",
+        "prior_price": 7987.42,
+        "current_price": 1850.0,
+        "delta_usd": -6137.42,
+        "delta_pct": -76.84,
+        "source": "wb_no_sources",
+        "confidence": "UNKNOWN"
+      }
+    ]
+  },
+  "morning_brief": {
+    "summary": {
+      "strong_buys_count": 86,
+      "trim_count": 0,
+      "sell_count": 0,
+      "needs_override_count": 15,
+      "reconciler_fixes_count": 10
+    },
+    "top_strong_buys": [
+      {
+        "cid": "M084",
+        "name": "Mega Rayquaza ex SIR",
+        "variant": "PSA 10",
+        "set": "Ascended Heroes",
+        "price": 560.0,
+        "score": 89,
+        "d30": 47.13,
+        "confidence": "MEDIUM"
+      },
+      {
+        "cid": "M063",
+        "name": "Fezandipiti ex Alt Art",
+        "variant": "PSA 10",
+        "set": "Shrouded Fable",
+        "price": 90.0,
+        "score": 89,
+        "d30": 72.79,
+        "confidence": "MEDIUM"
+      },
+      {
+        "cid": "M085",
+        "name": "Mega Lucario ex SIR",
+        "variant": "PSA 10",
+        "set": "Ascended Heroes",
+        "price": 350.0,
+        "score": 88,
+        "d30": 44.38,
+        "confidence": "OVERRIDE"
+      },
+      {
+        "cid": "M046",
+        "name": "Charizard ex SIR",
+        "variant": "PSA 10",
+        "set": "Obsidian Flames",
+        "price": 322.5,
+        "score": 88,
+        "d30": 76.31,
+        "confidence": "OVERRIDE"
+      },
+      {
+        "cid": "M054",
+        "name": "Roaring Moon ex SIR",
+        "variant": "PSA 10",
+        "set": "Paradox Rift",
+        "price": 211.21,
+        "score": 88,
+        "d30": 81.08,
+        "confidence": "OVERRIDE"
+      }
+    ],
+    "needs_manual_override_count": 15,
+    "reconciler_fixes_count": 10
+  },
   "data_quality": {
     "score": 46,
     "grade": "F",
-    "data_age_hours": 0.0,
+    "data_age_hours": 1.8,
     "alert_counts": {
       "high": 8,
       "warn": 102
