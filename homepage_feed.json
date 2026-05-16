@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-16T20:11:34.686058Z",
-  "live_updated_at": "2026-05-15T05:00:28.531494Z",
+  "generated_at": "2026-05-16T20:53:43.803653Z",
+  "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
     "live_matched": 555,
-    "total_mcap": 3789562.0,
+    "total_mcap": 3826377.0,
     "avg_d30_pct": 0.1709,
     "strong_buys": 84,
     "history_snapshots": 2,
-    "history_age_days": 1.8,
+    "history_age_days": 1.9,
     "history_overlay_count": 0
   },
   "trade_of_day": {
@@ -453,104 +453,6 @@
   ],
   "tape": [
     {
-      "id": "M102",
-      "name": "Drasna Trainer Gallery",
-      "set": "Silver Tempest",
-      "number": "TG28/TG30",
-      "variant": "PSA 10",
-      "price": 65.0,
-      "d7": 0.0,
-      "d30": 0.0,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 48,
-      "signal": "HOLD"
-    },
-    {
-      "id": "V017",
-      "name": "Shining Charizard",
-      "set": "Neo Destiny 1st Edition",
-      "number": "107/105",
-      "variant": "PSA 9",
-      "price": 10655.04,
-      "d7": 0.61,
-      "d30": 5.69,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 53,
-      "signal": "HOLD"
-    },
-    {
-      "id": "V013",
-      "name": "Pikachu Red Cheeks",
-      "set": "Base Set Shadowless",
-      "number": "58/102",
-      "variant": "PSA 10",
-      "price": 2400.0,
-      "d7": 0.76,
-      "d30": 7.25,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 54,
-      "signal": "HOLD"
-    },
-    {
-      "id": "V023",
-      "name": "Espeon Gold Star",
-      "set": "POP Series 5",
-      "number": "16/17",
-      "variant": "PSA 9",
-      "price": 15875.6,
-      "d7": 0.62,
-      "d30": 9.52,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 55,
-      "signal": "HOLD"
-    },
-    {
-      "id": "X113",
-      "name": "Hydreigon ex SIR (raw)",
-      "set": "Surging Sparks",
-      "number": "240/191",
-      "variant": "Raw NM",
-      "price": 1.1,
-      "d7": 1.14,
-      "d30": 10.04,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 52,
-      "signal": "HOLD"
-    },
-    {
-      "id": "V251",
-      "name": "Venusaur",
-      "set": "Base Set Unlimited",
-      "number": "15/102",
-      "variant": "PSA 9",
-      "price": 669.33,
-      "d7": 1.92,
-      "d30": 4.0,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 49,
-      "signal": "HOLD"
-    },
-    {
-      "id": "X504",
-      "name": "Crystal Charizard Skyridge PSA 10",
-      "set": "Skyridge",
-      "number": "146/144",
-      "variant": "PSA 10",
-      "price": 38000.0,
-      "d7": -0.07,
-      "d30": 5.0,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 54,
-      "signal": "HOLD"
-    },
-    {
       "id": "V015",
       "name": "Mewtwo",
       "set": "Fossil 1st Edition",
@@ -565,73 +467,31 @@
       "signal": "HOLD"
     },
     {
-      "id": "X322",
-      "name": "Blastoise Base Shadowless PSA 8",
-      "set": "Base Set Shadowless",
-      "number": "2/102",
+      "id": "V812",
+      "name": "Charizard Skyridge",
+      "set": "Skyridge",
+      "number": "146/144",
       "variant": "PSA 8",
-      "price": 1150.0,
-      "d7": 2.55,
-      "d30": 4.0,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 50,
-      "signal": "HOLD"
-    },
-    {
-      "id": "X303",
-      "name": "Charizard ex SIR (OF) PSA 10",
-      "set": "Obsidian Flames",
-      "number": "228/197",
-      "variant": "PSA 10",
-      "price": 322.5,
-      "d7": 3.39,
-      "d30": 8.0,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 54,
-      "signal": "HOLD"
-    },
-    {
-      "id": "J001",
-      "name": "Pikachu Promo (Japanese)",
-      "set": "Pokemon Center Japan 25th",
-      "number": "JP Promo",
-      "variant": "PSA 10",
-      "price": 850.0,
-      "d7": 0.02,
-      "d30": 7.62,
+      "price": 11239.15,
+      "d7": 0.0,
+      "d30": 0.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
       "score": 49,
       "signal": "HOLD"
     },
     {
-      "id": "Z050",
-      "name": "Charizard Crystal",
-      "set": "Skyridge",
-      "number": "146/144",
-      "variant": "PSA 10",
-      "price": 16330.5,
-      "d7": 4.07,
-      "d30": 11.0,
+      "id": "D104",
+      "name": "Pokemon Fossil Booster Box (Unlimited)",
+      "set": "Fossil Unlimited",
+      "number": "\u2014",
+      "variant": "Sealed",
+      "price": 4800.0,
+      "d7": 2.15,
+      "d30": 5.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 58,
-      "signal": "HOLD"
-    },
-    {
-      "id": "V014",
-      "name": "Dragonite",
-      "set": "Fossil 1st Edition",
-      "number": "4/62",
-      "variant": "PSA 9",
-      "price": 2425.0,
-      "d7": 0.67,
-      "d30": 3.2,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 50,
+      "score": 54,
       "signal": "HOLD"
     },
     {
@@ -649,48 +509,6 @@
       "signal": "STRONG BUY"
     },
     {
-      "id": "X532",
-      "name": "Jungle Booster Box Unlimited (sealed)",
-      "set": "Jungle",
-      "number": "Box",
-      "variant": "Sealed",
-      "price": 13024.56,
-      "d7": 1.05,
-      "d30": 3.0,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 50,
-      "signal": "HOLD"
-    },
-    {
-      "id": "Z032",
-      "name": "Light Dragonite",
-      "set": "Neo Destiny",
-      "number": "21/105",
-      "variant": "PSA 10",
-      "price": 688.0,
-      "d7": 1.78,
-      "d30": 8.0,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 56,
-      "signal": "HOLD"
-    },
-    {
-      "id": "V039",
-      "name": "Gengar",
-      "set": "Fossil 1st Edition",
-      "number": "5/62",
-      "variant": "PSA 9",
-      "price": 2146.0,
-      "d7": 0.55,
-      "d30": 7.29,
-      "d7_source": "workbook_formula",
-      "d30_source": "workbook_formula",
-      "score": 52,
-      "signal": "HOLD"
-    },
-    {
       "id": "X319",
       "name": "Champion's Path ETB",
       "set": "Champion's Path",
@@ -705,17 +523,87 @@
       "signal": "HOLD"
     },
     {
-      "id": "D103",
-      "name": "Pokemon Jungle Booster Box (Unlimited)",
-      "set": "Jungle Unlimited",
-      "number": "\u2014",
-      "variant": "Sealed",
-      "price": 5500.0,
-      "d7": 1.21,
-      "d30": 5.0,
+      "id": "V040",
+      "name": "Dark Charizard",
+      "set": "Team Rocket 1st Edition",
+      "number": "4/82",
+      "variant": "PSA 10",
+      "price": 16385.17,
+      "d7": 2.85,
+      "d30": 7.6,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X303",
+      "name": "Charizard ex SIR (OF) PSA 10",
+      "set": "Obsidian Flames",
+      "number": "228/197",
+      "variant": "PSA 10",
+      "price": 322.5,
+      "d7": 3.39,
+      "d30": 8.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
       "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "P003",
+      "name": "Munkidori ex Alt Art",
+      "set": "Shrouded Fable",
+      "number": "070/064",
+      "variant": "Raw NM",
+      "price": 2.5,
+      "d7": 0.0,
+      "d30": 0.0,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 47,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z051",
+      "name": "Charizard Crystal",
+      "set": "Skyridge",
+      "number": "146/144",
+      "variant": "PSA 9",
+      "price": 6500.0,
+      "d7": 1.18,
+      "d30": 8.0,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V014",
+      "name": "Dragonite",
+      "set": "Fossil 1st Edition",
+      "number": "4/62",
+      "variant": "PSA 9",
+      "price": 2425.0,
+      "d7": 0.67,
+      "d30": 3.2,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 50,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X114",
+      "name": "Greedent Trainer SIR (raw)",
+      "set": "Surging Sparks",
+      "number": "265/191",
+      "variant": "Raw NM",
+      "price": 1493.04,
+      "d7": 4.41,
+      "d30": 11.94,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 55,
       "signal": "HOLD"
     },
     {
@@ -733,18 +621,18 @@
       "signal": "STRONG BUY"
     },
     {
-      "id": "M010",
-      "name": "Dragonite V Alt Art",
-      "set": "Evolving Skies",
-      "number": "192/203",
-      "variant": "PSA 10",
-      "price": 350.0,
-      "d7": 92.14,
-      "d30": 101.37,
+      "id": "V006",
+      "name": "Blastoise",
+      "set": "Base Set 1st Edition Shadowless",
+      "number": "2/102",
+      "variant": "PSA 9",
+      "price": 10948.56,
+      "d7": -0.3,
+      "d30": 1.65,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 75,
-      "signal": "STRONG BUY"
+      "score": 49,
+      "signal": "HOLD"
     },
     {
       "id": "X135",
@@ -758,6 +646,48 @@
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
       "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V272",
+      "name": "Mewtwo PSA 10",
+      "set": "Base Set Unlimited",
+      "number": "10/102",
+      "variant": "PSA 10",
+      "price": 1450.0,
+      "d7": 2.6,
+      "d30": 5.0,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X504",
+      "name": "Crystal Charizard Skyridge PSA 10",
+      "set": "Skyridge",
+      "number": "146/144",
+      "variant": "PSA 10",
+      "price": 38000.0,
+      "d7": -0.07,
+      "d30": 5.0,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 54,
+      "signal": "HOLD"
+    },
+    {
+      "id": "X113",
+      "name": "Hydreigon ex SIR (raw)",
+      "set": "Surging Sparks",
+      "number": "240/191",
+      "variant": "Raw NM",
+      "price": 1.1,
+      "d7": 1.14,
+      "d30": 10.04,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 52,
       "signal": "HOLD"
     },
     {
@@ -775,26 +705,96 @@
       "signal": "HOLD"
     },
     {
-      "id": "V252",
+      "id": "V017",
+      "name": "Shining Charizard",
+      "set": "Neo Destiny 1st Edition",
+      "number": "107/105",
+      "variant": "PSA 9",
+      "price": 10655.04,
+      "d7": 0.61,
+      "d30": 5.69,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M102",
+      "name": "Drasna Trainer Gallery",
+      "set": "Silver Tempest",
+      "number": "TG28/TG30",
+      "variant": "PSA 10",
+      "price": 65.0,
+      "d7": 0.0,
+      "d30": 0.0,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 48,
+      "signal": "HOLD"
+    },
+    {
+      "id": "V003",
       "name": "Charizard",
-      "set": "Base Set Unlimited",
+      "set": "Base Set Shadowless",
       "number": "4/102",
       "variant": "PSA 9",
-      "price": 2866.13,
-      "d7": 0.97,
-      "d30": 6.0,
+      "price": 8500.0,
+      "d7": 0.09,
+      "d30": 3.91,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
       "score": 50,
       "signal": "HOLD"
     },
     {
-      "id": "P003",
-      "name": "Munkidori ex Alt Art",
-      "set": "Shrouded Fable",
-      "number": "070/064",
-      "variant": "Raw NM",
-      "price": 2.5,
+      "id": "Z046",
+      "name": "Rocket's Mewtwo 1st Ed",
+      "set": "Gym Challenge 1st Edition",
+      "number": "14/132",
+      "variant": "PSA 10",
+      "price": 4200.0,
+      "d7": 0.85,
+      "d30": 9.0,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 55,
+      "signal": "HOLD"
+    },
+    {
+      "id": "Z124",
+      "name": "Giratina LV.X",
+      "set": "Platinum",
+      "number": "125/127",
+      "variant": "PSA 10",
+      "price": 654.85,
+      "d7": 0.12,
+      "d30": 6.0,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 53,
+      "signal": "HOLD"
+    },
+    {
+      "id": "M010",
+      "name": "Dragonite V Alt Art",
+      "set": "Evolving Skies",
+      "number": "192/203",
+      "variant": "PSA 10",
+      "price": 350.0,
+      "d7": 92.14,
+      "d30": 101.37,
+      "d7_source": "workbook_formula",
+      "d30_source": "workbook_formula",
+      "score": 75,
+      "signal": "STRONG BUY"
+    },
+    {
+      "id": "V808",
+      "name": "Lugia Neo Genesis Unlimited",
+      "set": "Neo Genesis",
+      "number": "9/111",
+      "variant": "PSA 8",
+      "price": 867.42,
       "d7": 0.0,
       "d30": 0.0,
       "d7_source": "workbook_formula",
@@ -861,23 +861,7 @@
       "score": 48,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/146.png",
-      "last_sales": [
-        {
-          "price": 2500.0,
-          "date": "2026-04-18",
-          "title": "Glurak (Charizard) Holo PSA 8 1st Edition 1999 Pokemon German Base Set 4/102"
-        },
-        {
-          "price": 1800.0,
-          "date": "2026-03-29",
-          "title": "Charizard 4/102 Base Set Holo (German) 1st Edition PSA 8"
-        },
-        {
-          "price": 3395.02,
-          "date": "2026-03-22",
-          "title": "1999 Pokemon GERMAN 1st Edition Base Set Glurak-Charizard Holo 4/102 PSA 8 NM-MT"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "V003",
@@ -888,23 +872,7 @@
       "score": 50,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/146.png",
-      "last_sales": [
-        {
-          "price": 10000.0,
-          "date": "2025-11-02",
-          "title": "Pokemon Charizard Shadowless Base Set Holo #4/102 PSA 9 MINT 1999"
-        },
-        {
-          "price": 9999.0,
-          "date": "2026-04-14",
-          "title": "Pok\u00e9mon Charizard 4/102 Base Set Shadowless Holo Rare PSA 9 English 1999"
-        },
-        {
-          "price": 12358.88,
-          "date": "2026-05-04",
-          "title": "PSA 9 POKEMON CHARIZARD SHADOWLESS HOLO #4 1999  ENGLISH BASE SET CARD"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "V004",
@@ -915,23 +883,7 @@
       "score": 49,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/146.png",
-      "last_sales": [
-        {
-          "price": 650.0,
-          "date": "2026-05-07",
-          "title": "PSA 10 Charizard Celebrations Classic Coll. Holo Base Set Pok\u00e9mon 4/102 Gem Mint"
-        },
-        {
-          "price": 30100.0,
-          "date": "2026-05-03",
-          "title": "PSA 10 - Pokemon Charizard Holo #4/102 Base Set Unlimited Base Set"
-        },
-        {
-          "price": 7500.0,
-          "date": "2026-04-06",
-          "title": "BGS 9.5 Gem Mint. 1999 Pok\u00e9mon Base Unlimited Charizard Holo 4/102  Psa 10\u2026.."
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "V005",
@@ -949,7 +901,7 @@
       "name": "Blastoise",
       "set": "Base Set 1st Edition Shadowless",
       "variant": "PSA 9",
-      "price": 10940.54,
+      "price": 10948.56,
       "score": 49,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/bw8/137.png",
@@ -1141,7 +1093,7 @@
       "name": "Umbreon Gold Star",
       "set": "POP Series 5",
       "variant": "PSA 9",
-      "price": 14705.92,
+      "price": 14659.91,
       "score": 55,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
@@ -1156,23 +1108,7 @@
       "score": 55,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/neo2/1.png",
-      "last_sales": [
-        {
-          "price": 99.98,
-          "date": "2026-04-07",
-          "title": "PSA 9 Umbreon Gold Star 17/17 Celebrations Pop Series 5 2021 Pok\u00e9mon TCG"
-        },
-        {
-          "price": 91.95,
-          "date": "2026-02-19",
-          "title": "Umbreon Gold Star Pokemon Celebrations Classic Collection Pop Series 5 #17 PSA 9"
-        },
-        {
-          "price": 89.0,
-          "date": "2026-04-27",
-          "title": "2021 Pokemon Celebrations Classic Pop Series  #17 Umbreon Gold Star PSA 9"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "V024",
@@ -2840,27 +2776,11 @@
       "name": "Crystal Charizard",
       "set": "Skyridge",
       "variant": "PSA 9",
-      "price": 6499.99,
+      "price": 9500.0,
       "score": 52,
       "signal": "HOLD",
       "image": null,
-      "last_sales": [
-        {
-          "price": 7500.0,
-          "date": "2026-04-29",
-          "title": "2003 Pokemon Skyridge Crystal Charizard 146/144 Reverse Foil Rare PSA 9"
-        },
-        {
-          "price": 6499.99,
-          "date": "2026-03-30",
-          "title": "2003 Pokemon Skyridge Crystal Charizard 146/144 Reverse Foil Rare PSA 9 MINT"
-        },
-        {
-          "price": 4800.0,
-          "date": "2026-03-26",
-          "title": "Pokemon Charizard Skyridge Crystal Reverse Holo Secret Rare #146 PSA 9 Mint"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "J001",
@@ -6578,30 +6498,14 @@
       "score": 49,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/146.png",
-      "last_sales": [
-        {
-          "price": 6100.0,
-          "date": "2026-05-11",
-          "title": "1999 WOTC Pokemon 1st ED. SHADOWLESS Charizard Base Set foil Booster Pack PSA 8"
-        },
-        {
-          "price": 249.99,
-          "date": "2026-03-30",
-          "title": "PSA 8 NM-MT Ditto 17/102 Reverse Holo Rare Pokemon HGSS Triumphant POP 6 (Rare)"
-        },
-        {
-          "price": 2200.0,
-          "date": "2026-05-05",
-          "title": "1999 Pok\u00e9mon TCG- Charizard -Holo Rare- Shadowless  1st edition  4/102 PSA 8"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "X502",
       "name": "Charizard 1st Ed Shadowless BGS 9",
       "set": "Base Set 1st Edition",
       "variant": "BGS 9",
-      "price": 29867.5,
+      "price": 55888.0,
       "score": 50,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -6612,7 +6516,7 @@
       "name": "Lugia Neo Genesis 1st Ed PSA 10",
       "set": "Neo Genesis",
       "variant": "PSA 10",
-      "price": 71000.32,
+      "price": 69034.8,
       "score": 54,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard2/149.png",
@@ -6649,23 +6553,7 @@
       "score": 55,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/neo2/1.png",
-      "last_sales": [
-        {
-          "price": 399.99,
-          "date": "2026-04-23",
-          "title": "UMBREON Celebrations Gold Star Pop Series 5 #17 PSA 10 Pokemon"
-        },
-        {
-          "price": 385.0,
-          "date": "2026-04-28",
-          "title": "2021 Pokemon Celebrations POP Series 5 #17 Umbreon Gold Star PSA 10 GEM MINT"
-        },
-        {
-          "price": 302.89,
-          "date": "2026-02-15",
-          "title": "Pokemon Umbreon Gold Star Celebrations Classic Coll POP Series 5 Holo #17 PSA 10"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "X507",
@@ -6676,23 +6564,7 @@
       "score": 58,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
-      "last_sales": [
-        {
-          "price": 446.25,
-          "date": "2026-05-09",
-          "title": "PSA 10 Umbreon 17/17 Gold Star Celebrations Pop Series 5 GEM MINT"
-        },
-        {
-          "price": 399.0,
-          "date": "2026-04-30",
-          "title": "Pok\u00e9mon Umbreon Gold Star 17/17 Celebrations PSA 10 Pop Series 5 Holo"
-        },
-        {
-          "price": 400.0,
-          "date": "2026-04-24",
-          "title": "PSA 10 Umbreon Gold Star Pokemon SWSH Celebrations 17/17 Holo Rare Pop Series 5"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "X508",
@@ -6703,23 +6575,7 @@
       "score": 55,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ru1/7.png",
-      "last_sales": [
-        {
-          "price": 260.88,
-          "date": "2026-05-12",
-          "title": "Pikachu ex - 238/191 - Special Illustration - PSA 7 - NM - Pok\u00e9mon TGC"
-        },
-        {
-          "price": 269.0,
-          "date": "2026-05-05",
-          "title": "2024 POKEMON SSP EN-SURGING SPARKS SPECIAL ILLUSTRATION RARE PIKACHU EX PSA 7"
-        },
-        {
-          "price": 219.0,
-          "date": "2026-04-30",
-          "title": "Pok\u00e9mon Pikachu ex 238/191 Surging Sparks Special Illustration Holo PSA 7"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "X509",
@@ -6748,7 +6604,7 @@
       "name": "Shining Charizard Neo Destiny PSA 10",
       "set": "Neo Destiny",
       "variant": "PSA 10",
-      "price": 14777.77,
+      "price": 14476.83,
       "score": 54,
       "signal": "HOLD",
       "image": null,
@@ -6873,23 +6729,7 @@
       "score": 50,
       "signal": "HOLD",
       "image": null,
-      "last_sales": [
-        {
-          "price": 699.99,
-          "date": "2026-05-12",
-          "title": "Pokemon Lot 60+ Sealed Packs CHARIZARD Booster Box WOTC Ultra Rare 1800+ Cards"
-        },
-        {
-          "price": 500.0,
-          "date": "2026-05-07",
-          "title": "Pokemon WOTC Neo Genesis Unlimited Booster Pack Sealed Feraligatr PSA Graded 8"
-        },
-        {
-          "price": 469.99,
-          "date": "2026-03-30",
-          "title": "Pok\u00e9mon TCG Neo Genesis Unlimited Booster Pack Sealed Typhlosion Art WOTC"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "X535",
@@ -6900,23 +6740,7 @@
       "score": 50,
       "signal": "HOLD",
       "image": null,
-      "last_sales": [
-        {
-          "price": 311.16,
-          "date": "2026-05-13",
-          "title": "Pokemon TCG Team Rocket's Moltres EX Ultra Premium Collection (UPC) - NEW SEALED"
-        },
-        {
-          "price": 270.45,
-          "date": "2026-05-12",
-          "title": "Pokemon TCG Team Rocket Trouble Theme Deck Jessie &amp; James WOTC 1999 New Sealed"
-        },
-        {
-          "price": 324.15,
-          "date": "2026-05-10",
-          "title": "Pokemon Team Rocket Moltres UPC (Ultra Premium Collection) Brand New And Sealed"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "Z001",
@@ -6956,27 +6780,11 @@
       "name": "Lugia 1st Ed",
       "set": "Neo Genesis 1st Edition",
       "variant": "PSA 9",
-      "price": 570.64,
+      "price": 8500.0,
       "score": 56,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard2/149.png",
-      "last_sales": [
-        {
-          "price": 775.0,
-          "date": "2026-05-12",
-          "title": "Lugia Pokepark Blue Holo Japanese Pokemon 2005 #006 PSA 9"
-        },
-        {
-          "price": 398.76,
-          "date": "2026-05-11",
-          "title": "PSA 9 Pikachu SM162 + Mimikyu SM163 Pokemon Team Up Set"
-        },
-        {
-          "price": 430.0,
-          "date": "2026-05-11",
-          "title": "2001 POKEMON NEO REVELATION 1ST EDITION #20 LUGIA PSA 9"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "Z005",
@@ -7247,27 +7055,11 @@
       "name": "Charizard Crystal",
       "set": "Skyridge",
       "variant": "PSA 10",
-      "price": 16330.5,
+      "price": 18500.0,
       "score": 58,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/146.png",
-      "last_sales": [
-        {
-          "price": 5443.5,
-          "date": "2026-05-03",
-          "title": "2003 POKEMON SKYRIDGE BOX TOPPER #9 CRYSTAL CHARIZARD PSA 10 *POP 145*"
-        },
-        {
-          "price": 164900.0,
-          "date": "2026-05-04",
-          "title": "2003 Pokemon Skyridge Crystal Charizard - Holo Card #146 - PSA 10 Gem Mint"
-        },
-        {
-          "price": 16330.5,
-          "date": "2026-04-15",
-          "title": "The 2003 Pokemon Skyridge Crystal Charizard #146 (PSA 10 GEM MINT)"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "Z051",
@@ -7827,23 +7619,7 @@
       "score": 54,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ru1/7.png",
-      "last_sales": [
-        {
-          "price": 38.99,
-          "date": "2026-05-09",
-          "title": "2025 POKEMON SVP EN-SV BLACK STAR PROMO ILLUSTRATION CONTEST 2024 PIKACHU PSA 7"
-        },
-        {
-          "price": 15.0,
-          "date": "2026-04-24",
-          "title": "2025 POKEMON JAPANESE SV-P PROMO ILLUSTRATION CONTEST 2024 #242 PIKACHU PSA 7"
-        },
-        {
-          "price": 710.0,
-          "date": "2026-03-29",
-          "title": "2014 POKEMON JPN XY PROMO ILLUSTRATION COLLECTION #99 COSPLAY PIKACHU PSA 7"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "V101",
@@ -7980,23 +7756,7 @@
       "score": 56,
       "signal": "HOLD",
       "image": null,
-      "last_sales": [
-        {
-          "price": 699.99,
-          "date": "2026-05-12",
-          "title": "Pokemon Lot 60+ Sealed Packs CHARIZARD Booster Box WOTC Ultra Rare 1800+ Cards"
-        },
-        {
-          "price": 355.0,
-          "date": "2026-05-10",
-          "title": "\ud83d\udd25\ud83d\udd25 Pok\u00e9mon TCG Neo Genesis Unlimited Booster Pack \ud83d\udd25\ud83d\udd25\ud83d\udc0a Feraligatr Artwork"
-        },
-        {
-          "price": 455.0,
-          "date": "2026-04-27",
-          "title": "Pokemon TCG WOTC Neo Genesis Unlimited Booster Pack Feraligatr Art SEALED"
-        }
-      ]
+      "last_sales": []
     },
     {
       "id": "D108",
@@ -9661,16 +9421,15 @@
     }
   ],
   "data_quality": {
-    "score": 32,
+    "score": 46,
     "grade": "F",
-    "data_age_hours": 39.2,
+    "data_age_hours": 0.0,
     "alert_counts": {
-      "high": 9,
-      "warn": 99
+      "high": 8,
+      "warn": 102
     },
     "top_issues_by_category": {
-      "stale_data": 1,
-      "wb_fallback_highvalue": 44,
+      "wb_fallback_highvalue": 47,
       "graded_no_data": 58,
       "grade_ladder_violation": 12,
       "duplicate_entries": 14
