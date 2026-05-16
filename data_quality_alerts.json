@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-16T18:57:57.956584+00:00",
-  "data_age_hours": 38.0,
+  "generated_at": "2026-05-16T20:11:15.680975+00:00",
+  "data_age_hours": 39.2,
   "score": 32,
   "grade": "F",
   "total_cards": 555,
@@ -99,7 +99,7 @@
     {
       "severity": "high",
       "category": "stale_data",
-      "message": "Live prices last updated 38.0h ago",
+      "message": "Live prices last updated 39.2h ago",
       "cid": null
     },
     {
