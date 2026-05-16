@@ -387,6 +387,15 @@
     const reasonHtml = card.reconcile_reason ?
       '<div style="margin-top:10px;font-size:12px;color:var(--text-dim);padding:8px 10px;background:rgba(0,0,0,0.25);border-radius:4px;font-family:monospace;">↪ reconciler: ' + card.reconcile_reason + '</div>' : '';
 
+    // "Report wrong price" button — one click logs to localStorage and opens
+    // a prefilled GitHub issue so Brandon can fix mispriced cards in <10 sec.
+    const reportBtn =
+      '<button class="report-price-btn" onclick="window.__reportWrongPrice(this)" ' +
+      'data-cid="' + (card.id || '') + '" data-name="' + (card.name || '').replace(/"/g, '&quot;') + '" ' +
+      'data-variant="' + (card.variant || '') + '" data-live="' + (card.live_price || 0) + '" ' +
+      'style="margin-top:10px;display:inline-flex;gap:6px;align-items:center;padding:6px 12px;font-size:11px;font-family:monospace;background:rgba(248,113,113,0.08);color:#f87171;border:1px solid #f8717160;border-radius:4px;cursor:pointer;font-weight:700;letter-spacing:0.04em;">' +
+      '⚠ Report wrong price</button>';
+
     return '<h2 class="section">Why this price?</h2>' +
       '<div class="body-card" style="background:' + bgColor + ';border:1px solid ' + borderColor + ';">' +
       '<div style="display:flex;gap:10px;align-items:flex-start;">' +
@@ -397,10 +406,45 @@
           reasonHtml +
           flagsHtml +
           '<div style="margin-top:10px;font-size:11px;color:var(--text-mute);font-family:monospace;">source = <code>' + src + '</code></div>' +
+          reportBtn +
         '</div>' +
       '</div>' +
       '</div>';
   }
+
+  // Report-wrong-price flow: log to localStorage + open prefilled GH issue.
+  // Stores a queue Brandon can review and turn into price_overrides.json entries.
+  window.__reportWrongPrice = function(btn) {
+    const cid = btn.dataset.cid;
+    const name = btn.dataset.name;
+    const variant = btn.dataset.variant;
+    const live = btn.dataset.live;
+    const correct = prompt('What\'s the correct price for ' + name + ' (' + variant + ')?\n\nCurrent shown: $' + Number(live).toLocaleString() + '\n\nEnter the right number (USD):');
+    if (!correct) return;
+    const correctNum = parseFloat(correct.replace(/[^\d.]/g, ''));
+    if (!correctNum || correctNum <= 0) { alert('Invalid number — try again'); return; }
+    // Save to localStorage queue
+    let queue = [];
+    try { queue = JSON.parse(localStorage.getItem('price_corrections_queue') || '[]'); } catch(e) {}
+    queue.push({cid, name, variant, was_live: Number(live), correct: correctNum, reported_at: new Date().toISOString()});
+    localStorage.setItem('price_corrections_queue', JSON.stringify(queue));
+    btn.textContent = '✓ Reported · ' + queue.length + ' in queue';
+    btn.style.background = 'rgba(74,222,128,0.10)';
+    btn.style.color = '#4ade80';
+    btn.style.borderColor = '#4ade8060';
+    btn.disabled = true;
+    // Open prefilled GH issue
+    const body = encodeURIComponent(
+      '**Card:** ' + name + ' (' + variant + ')\n' +
+      '**Card ID:** ' + cid + '\n' +
+      '**Current shown price:** $' + Number(live).toLocaleString() + '\n' +
+      '**Correct price:** $' + correctNum.toLocaleString() + '\n' +
+      '**Reported via:** /card.html?id=' + cid + '\n\n' +
+      'Add to price_overrides.json:\n```json\n  "' + cid + '": {"live_price": ' + correctNum + ', "reason": "manual override — bad scrape"}\n```'
+    );
+    const title = encodeURIComponent('Bad price: ' + name + ' (' + variant + ') — $' + Number(live).toLocaleString() + ' should be $' + correctNum.toLocaleString());
+    window.open('https://github.com/Keyvaniath/pokemon-tcg-trading-desk/issues/new?title=' + title + '&body=' + body, '_blank');
+  };
 
   // Marketplace search shortcuts — open eBay sold-listings / TCGPlayer / PriceCharting / PPT
   function ebayLink(c) {
