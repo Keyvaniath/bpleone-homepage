@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-05-15T20:30:06.091813Z",
+  "generated_at": "2026-05-16T20:53:48.335969Z",
   "methodology": "Future Winners is a forward-looking model. Score = 0.25*momentum_rising + 0.20*scarcity + 0.15*accessibility + 0.15*hidden_alpha + 0.15*tier_premium + 0.10*liquidity. Candidates capped at $5,000 live price for accessibility.",
   "count": 30,
   "winners": [
