@@ -1,0 +1,8 @@
+/*
+  X-Bpleone-Version: 2026.5.16-r4
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Build-Trigger: cloudflare-rebuild
+/*.json
+  Cache-Control: public, max-age=60, must-revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
