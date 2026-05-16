@@ -204,6 +204,38 @@
     box-shadow: 0 0 8px currentColor;
     cursor: help;
   }
+  /* Placeholder for missing images — replace 300px white box with stylized card */
+  .card-tile-img-placeholder {
+    height: 180px; min-height: 180px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 12px; border-radius: 10px;
+    border: 1px dashed var(--border);
+    overflow: hidden;
+  }
+  .card-tile-img-placeholder .placeholder-initial {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px; font-weight: 800; letter-spacing: -0.04em;
+    color: var(--text-mute);
+    opacity: 0.55;
+  }
+  .card-tile-img-placeholder .placeholder-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.1em;
+    color: var(--text-mute); padding: 3px 9px;
+    border: 1px solid var(--border); border-radius: 12px;
+    background: rgba(0,0,0,0.2);
+  }
+  .card-tile-img {
+    height: 180px; min-height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,0.15);
+    border-radius: 10px; overflow: hidden;
+  }
+  .card-tile-img img {
+    max-height: 100%; max-width: 100%;
+    object-fit: contain;
+  }
   .reconcile-badge {
     position: absolute; top: 9px; left: 28px; z-index: 5;
     padding: 1px 5px; border-radius: 4px;
@@ -352,7 +384,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Rayquaza ex SIR</div>
@@ -1497,7 +1532,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">A</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Articuno V Alt Art</div>
@@ -1902,7 +1940,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pikachu Master Ball Pattern</div>
@@ -3565,7 +3606,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       <span class="reconcile-badge consensus" title="Multiple sources agreed on this price">2×</span>
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Charizard GX Hidden Fates Shiny</div>
@@ -3600,7 +3644,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       <span class="reconcile-badge wb-fallback" title="Live source was wildly off from workbook — using workbook price instead">WB</span>
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mewtwo and Mew GX Hidden Fates</div>
@@ -3672,7 +3719,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pokemon Mega Evolution ME01 Booster Box</div>
@@ -3707,7 +3757,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pokemon Mega Evolution ME01 ETB</div>
@@ -4075,7 +4128,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">G</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Greedent Pikachu Trainer</div>
@@ -5072,7 +5128,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">N</div>
+        <div class="placeholder-tag">PSA 8</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">No.2 Trainer</div>
@@ -5218,7 +5277,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Rayquaza ex SIR (raw)</div>
@@ -5697,7 +5759,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pikachu Poker Card (JP)</div>
@@ -6250,7 +6315,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pikachu Master Ball raw (151)</div>
@@ -7025,7 +7093,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Shiny Charizard ex SAR (JP)</div>
@@ -7060,7 +7131,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Shiny Mew ex SAR (JP)</div>
@@ -7391,7 +7465,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       <span class="reconcile-badge consensus" title="Multiple sources agreed on this price">2×</span>
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">G</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Greedent Trainer SIR (raw)</div>
@@ -7500,7 +7577,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Charizard X Common (raw)</div>
@@ -7572,7 +7652,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Marnie SIR raw (JT)</div>
@@ -7607,7 +7690,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mew Master Ball raw (151)</div>
@@ -8049,7 +8135,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Marnie SIR (JT) PSA 10</div>
@@ -8491,7 +8580,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Charizard VStar Universe SAR (JP)</div>
@@ -8563,7 +8655,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Lillie&#x27;s Poke Doll SR (JP)</div>
@@ -8931,7 +9026,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">I</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Iono&#x27;s Pikachu IR</div>
@@ -8966,7 +9064,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">H</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Hilbert&#x27;s Reshiram</div>
@@ -9001,7 +9102,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">I</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Iris&#x27;s Hydreigon IR</div>
@@ -9258,7 +9362,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Charizard Vstar UR (JP)</div>
@@ -9293,7 +9400,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">A</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Arceus Vstar UR (JP)</div>
@@ -9328,7 +9438,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Shiny Rayquaza ex SAR (JP)</div>
@@ -9696,7 +9809,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f5c842;" title="Data confidence: OVERRIDE — manually set"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">SV 151 Booster Bundle</div>
@@ -9805,7 +9921,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Prismatic Evolutions ETB</div>
@@ -9988,7 +10107,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">H</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Hilbert FA Trainer</div>
@@ -10023,7 +10145,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">I</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Iris&#x27;s Haxorus IR</div>
@@ -10132,7 +10257,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Charizard Y Common (raw)</div>
@@ -10241,7 +10369,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">J</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Journey Together ETB</div>
@@ -10276,7 +10407,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pokemon GO ETB</div>
@@ -11828,7 +11962,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">I</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Iono Holo Trainer</div>
@@ -12418,7 +12555,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Lugia Vstar UR (JP)</div>
@@ -12453,7 +12593,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Shiny Mewtwo ex SAR (JP)</div>
@@ -12673,7 +12816,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">I</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Iono Special Edition Trainer</div>
@@ -13337,7 +13483,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Charmander Master Ball raw (151)</div>
@@ -13520,7 +13669,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cynthia&#x27;s Power Trainer (raw)</div>
@@ -13740,7 +13892,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Sabrina FA Trainer (151)</div>
@@ -13775,7 +13930,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">B</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Brock FA Trainer (151)</div>
@@ -15882,7 +16040,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f5c842;" title="Data confidence: OVERRIDE — manually set"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cilan &amp; Chili &amp; Cress IR</div>
@@ -15917,7 +16078,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">B</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Bianca&#x27;s Roserade IR</div>
@@ -16137,7 +16301,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">D</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Drifloon V Alt Art (LO)</div>
@@ -16172,7 +16339,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cynthia Skla Trainer Gallery</div>
@@ -16244,7 +16414,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">G</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Giovanni FA Trainer (151)</div>
@@ -16279,7 +16452,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">1</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">151 Booster Bundle</div>
@@ -17276,7 +17452,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cynthia &amp; Garchomp GX SR (JP)</div>
@@ -17607,7 +17786,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">N</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">N&#x27;s Castform IR</div>
@@ -18160,7 +18342,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">H</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Hilbert Holo Trainer (raw)</div>
@@ -18195,7 +18380,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">B</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Bianca Holo Trainer (raw)</div>
@@ -18341,7 +18529,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Crown Zenith ETB</div>
@@ -18709,7 +18900,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Lt Surge FA Trainer (151)</div>
@@ -18966,7 +19160,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Champion&#x27;s Path ETB</div>
@@ -19112,7 +19309,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">H</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Hidden Fates ETB</div>
@@ -19295,7 +19495,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Lillie&#x27;s Poké Doll Trainer Promo (JP)</div>
@@ -19478,7 +19681,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cheren&#x27;s Watchog IR</div>
@@ -19994,7 +20200,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">I</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Iris Holo Trainer (raw)</div>
@@ -20029,7 +20238,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">N</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">N&#x27;s Holo Trainer (raw)</div>
@@ -20360,7 +20572,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Crown Zenith Tin</div>
@@ -20728,7 +20943,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cheren&#x27;s Stoutland IR</div>
@@ -21244,7 +21462,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">PSA 9</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Moonbreon Alt Art PSA 9</div>
@@ -22019,7 +22240,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Penny Holo Trainer</div>
@@ -22424,7 +22648,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">O</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Octillery V Alt Art</div>
@@ -22496,7 +22723,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cresselia V Alt Art</div>
@@ -23160,7 +23390,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pokemon Center Eevee 25th</div>
@@ -23269,7 +23502,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       <span class="reconcile-badge wb-fallback" title="Live source was wildly off from workbook — using workbook price instead">WB</span>
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">PSA 10</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mewtwo Wave Holo Promo</div>
@@ -23822,7 +24058,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">T</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Twilight Masquerade ETB</div>
@@ -24523,7 +24762,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Carmine Holo Trainer</div>
@@ -24558,7 +24800,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">H</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Hoothoot Illustration Rare</div>
@@ -24778,7 +25023,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Lance Holo Trainer</div>
@@ -24813,7 +25061,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Cynthia&#x27;s Power Trainer</div>
@@ -25181,7 +25432,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Lechonk Illustration Rare</div>
@@ -25216,7 +25470,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Magikarp Illustration Rare</div>
@@ -25251,7 +25508,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       <span class="reconcile-badge consensus" title="Multiple sources agreed on this price">2×</span>
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pikachu Common</div>
@@ -25286,7 +25546,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Charmander Common</div>
@@ -25321,7 +25584,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Squirtle Common</div>
@@ -25356,7 +25622,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">B</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Bulbasaur Common</div>
@@ -25391,7 +25660,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">E</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Eevee Common</div>
@@ -25500,7 +25772,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pikachu Half Art (Pokemon GO)</div>
@@ -25609,7 +25884,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">C</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Charmander Pokeball Pattern</div>
@@ -25644,7 +25922,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Squirtle Pokeball Pattern</div>
@@ -25679,7 +25960,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">B</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Bulbasaur Pokeball Pattern</div>
@@ -25714,7 +25998,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mew Pokeball Pattern</div>
@@ -25749,7 +26036,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pikachu Master Ball + others</div>
@@ -25821,7 +26111,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Marnie Holo Trainer</div>
@@ -25856,7 +26149,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">K</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Klara Trainer SIR</div>
@@ -25965,7 +26261,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Lillie Common Trainer</div>
@@ -26000,7 +26299,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Charizard X Common</div>
@@ -26035,7 +26337,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Charizard Y Common</div>
@@ -26144,7 +26449,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Rayquaza Common (AH)</div>
@@ -26660,7 +26968,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       <span class="reconcile-badge consensus" title="Multiple sources agreed on this price">2×</span>
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">G</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Greedent Trainer SIR</div>
@@ -26769,7 +27080,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">H</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Hop&#x27;s Zacian Trainer Gallery</div>
@@ -26878,7 +27192,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mela Trainer SIR raw</div>
@@ -26913,7 +27230,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">T</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Tyrunt ex Illustration</div>
@@ -27207,7 +27527,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pokémon Center Pikachu Promo 2026</div>
@@ -27390,7 +27713,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">H</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Hisuian Zoroark Alt Art Raw</div>
@@ -27906,7 +28232,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">O</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Ogerpon (Teal/Hearthflame/Wellspring/Cornerstone) Set</div>
@@ -27941,7 +28270,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">N</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Necrozma Trainer SIR (raw)</div>
@@ -28050,7 +28382,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#fbbf24;" title="Data confidence: MEDIUM — partial cross-check"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">L</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Latias / Latios Tag Team Cards</div>
@@ -28196,7 +28531,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Surging Sparks ETB</div>
@@ -28231,7 +28569,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Shrouded Fable ETB</div>
@@ -28266,7 +28607,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">S</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Stellar Crown ETB</div>
@@ -28301,7 +28645,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">M</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Mega Evolution ME01 ETB</div>
@@ -28336,7 +28683,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#5a6378;" title="Data confidence: UNKNOWN — no live data"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">A</div>
+        <div class="placeholder-tag">📦 SEALED</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Ascended Heroes ETB</div>
@@ -28482,7 +28832,10 @@
               onclick="event.preventDefault();event.stopPropagation();window.__toggleWatch(this)">☆</button>
       <span class="confidence-dot" style="background:#f87171;" title="Data confidence: LOW — sources disagree — verify"></span>
       
-      
+      <div class="card-tile-img card-tile-img-placeholder" style="background:linear-gradient(135deg, rgba(245,200,66,0.12) 0%, rgba(245,200,66,0.03) 100%);">
+        <div class="placeholder-initial">P</div>
+        <div class="placeholder-tag">🃏 RAW NM</div>
+      </div>
       <div class="card-tile-body">
       <div class="card-tile-head">
         <div class="card-tile-name" itemprop="name">Pokemon Center 25th Pikachu</div>
