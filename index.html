@@ -1710,6 +1710,93 @@
 
 
 
+<!-- ============ DASHBOARD WIDGETS (moved to top — actionable first) ============ -->
+
+<!-- ============ PRICE ALERTS — buy/sell triggers ============ -->
+<section id="alerts" style="padding:24px 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
+        🔔 Price Alerts · <span style="color:var(--gold);">Buy/Sell Triggers</span>
+      </h2>
+      <span id="alerts-meta" style="color:var(--text-mute);font-size:12px;">Cards trading below 80% wb (BUY) or above 110% wb (SELL)</span>
+    </div>
+    <div style="display:grid;gap:14px;grid-template-columns:1fr 1fr;">
+      <div style="border:1px solid #4ade8055;border-radius:8px;padding:16px;background:linear-gradient(180deg,rgba(74,222,128,0.08),transparent);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+          <div style="font-size:13px;color:#4ade80;font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">📥 BUY ALERTS</div>
+          <span id="alerts-buy-count" style="color:#4ade80;font-family:'JetBrains Mono',monospace;font-weight:700;">—</span>
+        </div>
+        <div id="alerts-buys" style="display:flex;flex-direction:column;gap:6px;"><p style="color:var(--text-mute);font-size:12px;">Loading…</p></div>
+      </div>
+      <div style="border:1px solid #f8717155;border-radius:8px;padding:16px;background:linear-gradient(180deg,rgba(248,113,113,0.06),transparent);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+          <div style="font-size:13px;color:#f87171;font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">📤 SELL ALERTS</div>
+          <span id="alerts-sell-count" style="color:#f87171;font-family:'JetBrains Mono',monospace;font-weight:700;">—</span>
+        </div>
+        <div id="alerts-sells" style="display:flex;flex-direction:column;gap:6px;"><p style="color:var(--text-mute);font-size:12px;">Loading…</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MORNING BRIEF — daily actionable picks (TOP) ============ -->
+<section id="morning-brief" style="padding:24px 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
+        ☕ Morning Brief · <span style="color:var(--gold);">Action Items</span>
+      </h2>
+      <span style="color:var(--text-mute);font-size:12px;">3 lists you should scan in 30 seconds</span>
+    </div>
+    <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(74,222,128,0.05);">
+        <div style="font-size:11px;color:#4ade80;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">⭐ Top STRONG BUYs (HIGH conf)</div>
+        <div id="brief-buys" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(251,191,36,0.05);">
+        <div style="font-size:11px;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">🔧 Reconciler caught</div>
+        <div id="brief-fixes" style="display:flex;flex-direction:column;gap:6px;font-size:12px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(248,113,113,0.05);">
+        <div style="font-size:11px;color:#f87171;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">⚠ Needs your override</div>
+        <div id="brief-overrides" style="display:flex;flex-direction:column;gap:6px;font-size:12px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TODAY'S MOVES — daily diff (TOP) ============ -->
+<section id="moves" style="padding:24px 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
+        📈 Today's Moves · <span style="color:var(--gold);">Live Diff</span>
+      </h2>
+      <span id="moves-meta" style="color:var(--text-mute);font-size:12px;">comparing vs prior snapshot</span>
+    </div>
+    <div id="moves-card" style="display:grid;gap:14px;grid-template-columns:1fr 1fr;">
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(74,222,128,0.05);">
+        <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">🚀 Top Gainers</div>
+        <div id="moves-gainers" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(248,113,113,0.05);">
+        <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">📉 Top Losers</div>
+        <div id="moves-losers" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DASHBOARD SEPARATOR ============ -->
+<div style="padding: 32px 0 0;">
+  <div class="container">
+    <div style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);letter-spacing:0.2em;text-transform:uppercase;padding:14px 0;border-top:1px dashed var(--border);">
+      ▾ Browse research below ▾
+    </div>
+  </div>
+</div>
+
 <!-- ============ FUTURE WINNERS — AI predictive hunt list ============ -->
 <section class="fw-section" id="future-winners">
   <div class="container">
@@ -1781,82 +1868,6 @@
       <div class="brief-tldr" id="brief-tldr"></div>
       <div class="brief-body" id="brief-body">
         <p style="color:var(--text-mute);">Loading today's market brief…</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PRICE ALERTS — buy/sell triggers ============ -->
-<section id="alerts" style="padding:24px 0;border-top:1px solid var(--border);">
-  <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
-      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
-        🔔 Price Alerts · <span style="color:var(--gold);">Buy/Sell Triggers</span>
-      </h2>
-      <span id="alerts-meta" style="color:var(--text-mute);font-size:12px;">Cards trading below 80% wb (BUY) or above 110% wb (SELL)</span>
-    </div>
-    <div style="display:grid;gap:14px;grid-template-columns:1fr 1fr;">
-      <div style="border:1px solid #4ade8055;border-radius:8px;padding:16px;background:linear-gradient(180deg,rgba(74,222,128,0.08),transparent);">
-        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
-          <div style="font-size:13px;color:#4ade80;font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">📥 BUY ALERTS</div>
-          <span id="alerts-buy-count" style="color:#4ade80;font-family:'JetBrains Mono',monospace;font-weight:700;">—</span>
-        </div>
-        <div id="alerts-buys" style="display:flex;flex-direction:column;gap:6px;"><p style="color:var(--text-mute);font-size:12px;">Loading…</p></div>
-      </div>
-      <div style="border:1px solid #f8717155;border-radius:8px;padding:16px;background:linear-gradient(180deg,rgba(248,113,113,0.06),transparent);">
-        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
-          <div style="font-size:13px;color:#f87171;font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">📤 SELL ALERTS</div>
-          <span id="alerts-sell-count" style="color:#f87171;font-family:'JetBrains Mono',monospace;font-weight:700;">—</span>
-        </div>
-        <div id="alerts-sells" style="display:flex;flex-direction:column;gap:6px;"><p style="color:var(--text-mute);font-size:12px;">Loading…</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TODAY'S MOVES — daily diff ============ -->
-<section id="moves" style="padding:24px 0;border-top:1px solid var(--border);">
-  <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
-      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
-        📈 Today's Moves · <span style="color:var(--gold);">Live Diff</span>
-      </h2>
-      <span id="moves-meta" style="color:var(--text-mute);font-size:12px;">comparing vs prior snapshot</span>
-    </div>
-    <div id="moves-card" style="display:grid;gap:14px;grid-template-columns:1fr 1fr;">
-      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(74,222,128,0.05);">
-        <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">🚀 Top Gainers</div>
-        <div id="moves-gainers" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
-      </div>
-      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(248,113,113,0.05);">
-        <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">📉 Top Losers</div>
-        <div id="moves-losers" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MORNING BRIEF — daily actionable picks ============ -->
-<section id="morning-brief" style="padding:24px 0;border-top:1px solid var(--border);">
-  <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
-      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
-        ☕ Morning Brief · <span style="color:var(--gold);">Action Items</span>
-      </h2>
-      <span style="color:var(--text-mute);font-size:12px;">3 lists you should scan in 30 seconds</span>
-    </div>
-    <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
-      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(74,222,128,0.05);">
-        <div style="font-size:11px;color:#4ade80;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">⭐ Top STRONG BUYs (HIGH conf)</div>
-        <div id="brief-buys" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
-      </div>
-      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(251,191,36,0.05);">
-        <div style="font-size:11px;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">🔧 Reconciler caught</div>
-        <div id="brief-fixes" style="display:flex;flex-direction:column;gap:6px;font-size:12px;"><p style="color:var(--text-mute);">Loading…</p></div>
-      </div>
-      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(248,113,113,0.05);">
-        <div style="font-size:11px;color:#f87171;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">⚠ Needs your override</div>
-        <div id="brief-overrides" style="display:flex;flex-direction:column;gap:6px;font-size:12px;"><p style="color:var(--text-mute);">Loading…</p></div>
       </div>
     </div>
   </div>
