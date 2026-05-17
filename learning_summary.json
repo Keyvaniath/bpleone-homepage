@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-05-17T06:00:42.155843+00:00",
+  "fw_weights": {
+    "current": {
+      "momentum_rising": 0.25,
+      "scarcity": 0.2,
+      "accessibility": 0.15,
+      "hidden_alpha": 0.15,
+      "tier_premium": 0.15,
+      "liquidity": 0.1
+    },
+    "source": "learned",
+    "n_retrains": 0,
+    "last_retrain_at": null,
+    "last_retrain_n_samples": 0,
+    "weight_changes": [
+      {
+        "component": "momentum_rising",
+        "current": 0.25,
+        "seed": 0.25,
+        "delta": 0.0,
+        "delta_pct": 0.0
+      },
+      {
+        "component": "scarcity",
+        "current": 0.2,
+        "seed": 0.2,
+        "delta": 0.0,
+        "delta_pct": 0.0
+      },
+      {
+        "component": "accessibility",
+        "current": 0.15,
+        "seed": 0.15,
+        "delta": 0.0,
+        "delta_pct": 0.0
+      },
+      {
+        "component": "hidden_alpha",
+        "current": 0.15,
+        "seed": 0.15,
+        "delta": 0.0,
+        "delta_pct": 0.0
+      },
+      {
+        "component": "tier_premium",
+        "current": 0.15,
+        "seed": 0.15,
+        "delta": 0.0,
+        "delta_pct": 0.0
+      },
+      {
+        "component": "liquidity",
+        "current": 0.1,
+        "seed": 0.1,
+        "delta": 0.0,
+        "delta_pct": 0.0
+      }
+    ],
+    "last_correlations": null
+  },
+  "signal_learning": {
+    "total_emissions": 555,
+    "fw_emissions": 30,
+    "outcomes_evaluated": 0,
+    "by_signal": {}
+  },
+  "next_milestones": {
+    "next_retrain_when": "30 mature samples (7-day-old emissions w/ price history)",
+    "current_mature_emissions": "computed at retrain time"
+  }
+}
