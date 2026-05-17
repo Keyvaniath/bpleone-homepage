@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-05-17T02:49:44.389837+00:00",
-  "data_age_hours": 6.0,
-  "score": 48,
+  "generated_at": "2026-05-17T03:10:34.099445+00:00",
+  "data_age_hours": 6.3,
+  "score": 43,
   "grade": "F",
   "total_cards": 555,
   "stats": {
+    "stale_data": 1,
     "wb_fallback_highvalue": 40,
     "graded_no_data": 49,
     "grade_ladder_violation": 12,
@@ -12,7 +13,7 @@
   },
   "alert_counts": {
     "high": 8,
-    "warn": 86
+    "warn": 87
   },
   "alerts": [
     {
@@ -814,6 +815,12 @@
       "variant": "PSA 10",
       "wb": 180,
       "live": 180
+    },
+    {
+      "severity": "warn",
+      "category": "stale_data",
+      "message": "Live prices last updated 6.3h ago",
+      "cid": null
     },
     {
       "severity": "warn",
