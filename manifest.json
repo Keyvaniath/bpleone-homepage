@@ -49,6 +49,20 @@
       "description": "Side-by-side card comparison",
       "url": "/compare.html",
       "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+    },
+    {
+      "name": "Activity Feed",
+      "short_name": "Activity",
+      "description": "Recent activity stream",
+      "url": "/activity.html",
+      "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+    },
+    {
+      "name": "Pipeline Status",
+      "short_name": "Status",
+      "description": "Cron pipeline health",
+      "url": "/status.html",
+      "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml"}]
     }
   ]
 }
