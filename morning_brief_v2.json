@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-17T02:37:49.215852+00:00",
-  "data_age_hours": 5.8,
-  "data_quality_score": 48,
-  "data_quality_grade": "F",
+  "generated_at": "2026-05-17T04:31:13.940903+00:00",
+  "data_age_hours": 7.7,
+  "data_quality_score": 67,
+  "data_quality_grade": "D",
   "summary": {
     "strong_buys_count": 86,
     "trim_count": 0,
@@ -290,54 +290,54 @@
   "future_winners": [],
   "data_quality_alerts": [
     {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$7987 is 7.6x grade_9_5=$1054 (wrong page?)",
-      "cid": "V270",
-      "name": "Blastoise PSA 10",
-      "variant": "PSA 10",
-      "wb": 1850,
-      "live": 1850
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 9 but neither PC nor PPT have grade_9 data",
+      "cid": "V104",
+      "name": "Master Key Promo",
+      "variant": "PSA 9",
+      "wb": 12500,
+      "live": 19850.31
     },
     {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$3722 is 10.1x grade_9_5=$370 (wrong page?)",
-      "cid": "V272",
-      "name": "Mewtwo PSA 10",
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z020",
+      "name": "Shining Charizard",
       "variant": "PSA 10",
-      "wb": 1450,
-      "live": 1450
+      "wb": 4200,
+      "live": 2500.0
     },
     {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$27187 is 27.6x grade_9_5=$985 (wrong page?)",
-      "cid": "Z125",
-      "name": "Rayquaza C LV.X",
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "M093",
+      "name": "Tropical Wind Trainer",
       "variant": "PSA 10",
-      "wb": 1450,
-      "live": 1450
+      "wb": 3200,
+      "live": 1986.32
     },
     {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$1096 is 6.3x grade_9_5=$174 (wrong page?)",
-      "cid": "V036",
-      "name": "Pikachu",
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "Z053",
+      "name": "Crystal Charizard",
       "variant": "PSA 10",
-      "wb": 950,
-      "live": 950
+      "wb": 1800,
+      "live": 1352.3
     },
     {
-      "severity": "high",
-      "category": "grade_ladder_violation",
-      "message": "PC grade_10=$2340 is 6.3x grade_9_5=$374 (wrong page?)",
-      "cid": "V273",
-      "name": "Alakazam PSA 10",
+      "severity": "warn",
+      "category": "graded_no_data",
+      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "cid": "J005",
+      "name": "Umbreon VMAX Alt (Japanese)",
       "variant": "PSA 10",
-      "wb": 950,
-      "live": 950
+      "wb": 1300,
+      "live": 1480.0
     }
   ]
 }
