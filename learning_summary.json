@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T06:00:42.155843+00:00",
+  "generated_at": "2026-05-17T06:37:47.212599+00:00",
   "fw_weights": {
     "current": {
       "momentum_rising": 0.25,
@@ -60,7 +60,7 @@
     "last_correlations": null
   },
   "signal_learning": {
-    "total_emissions": 555,
+    "total_emissions": 1110,
     "fw_emissions": 30,
     "outcomes_evaluated": 0,
     "by_signal": {}
