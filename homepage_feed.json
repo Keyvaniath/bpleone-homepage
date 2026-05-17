@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T04:31:14.953646Z",
+  "generated_at": "2026-05-17T06:38:00.077844Z",
   "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
@@ -8,7 +8,7 @@
     "avg_d30_pct": 0.1709,
     "strong_buys": 84,
     "history_snapshots": 3,
-    "history_age_days": 2.2,
+    "history_age_days": 2.3,
     "history_overlay_count": 0
   },
   "trade_of_day": {
@@ -9746,7 +9746,7 @@
   "data_quality": {
     "score": 67,
     "grade": "D",
-    "data_age_hours": 7.7,
+    "data_age_hours": 9.8,
     "alert_counts": {
       "high": 0,
       "warn": 26
