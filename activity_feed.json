@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-17T07:17:37.322389+00:00",
+  "generated_at": "2026-05-17T15:27:06.781518+00:00",
   "lookback_hours": 48,
   "n_events": 50,
   "events": [
     {
-      "ts": "2026-05-17T07:11:00.908242+00:00",
+      "ts": "2026-05-17T15:27:05.653692+00:00",
       "type": "arb_opportunity",
       "icon": "\ud83d\udcb0",
       "title": "Arb: Snorlax PSA 9",
@@ -12,7 +12,7 @@
       "cid": "V037"
     },
     {
-      "ts": "2026-05-17T07:11:00.908242+00:00",
+      "ts": "2026-05-17T15:27:05.653692+00:00",
       "type": "arb_opportunity",
       "icon": "\ud83d\udcb0",
       "title": "Arb: Chansey PSA 9",
@@ -20,7 +20,7 @@
       "cid": "V008"
     },
     {
-      "ts": "2026-05-17T07:11:00.908242+00:00",
+      "ts": "2026-05-17T15:27:05.653692+00:00",
       "type": "arb_opportunity",
       "icon": "\ud83d\udcb0",
       "title": "Arb: Charizard PSA 9",
@@ -28,7 +28,7 @@
       "cid": "V005"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Umbreon VMAX (Moonbreon) PSA 10",
@@ -36,7 +36,7 @@
       "cid": "M001"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Umbreon VMAX (Moonbreon) Raw NM",
@@ -44,7 +44,7 @@
       "cid": "M002"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Sylveon VMAX Alt Art PSA 10",
@@ -52,7 +52,7 @@
       "cid": "M004"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Dragonite V Alt Art PSA 10",
@@ -60,7 +60,7 @@
       "cid": "M010"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Duraludon VMAX Alt Art PSA 10",
@@ -68,7 +68,7 @@
       "cid": "M011"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Rayquaza V Alt Art PSA 10",
@@ -76,7 +76,7 @@
       "cid": "M012"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Charizard VMAX Rainbow PSA 10",
@@ -84,7 +84,7 @@
       "cid": "M013"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Charizard V Full Art PSA 10",
@@ -92,7 +92,7 @@
       "cid": "M014"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Charizard VSTAR Rainbow PSA 10",
@@ -100,7 +100,7 @@
       "cid": "M015"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Giratina VSTAR Alt Art PSA 10",
@@ -108,7 +108,7 @@
       "cid": "M021"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Aerodactyl V Alt Art PSA 10",
@@ -116,7 +116,7 @@
       "cid": "M022"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Magnezone V Alt Art PSA 10",
@@ -124,7 +124,7 @@
       "cid": "M023"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Lugia VSTAR Alt Art PSA 10",
@@ -132,7 +132,7 @@
       "cid": "M024"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Alakazam V Alt Art PSA 10",
@@ -140,7 +140,7 @@
       "cid": "M025"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Serperior V Alt Art PSA 10",
@@ -148,7 +148,7 @@
       "cid": "M026"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Giratina VSTAR Gold PSA 10",
@@ -156,7 +156,7 @@
       "cid": "M029"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Mewtwo VSTAR (GG) PSA 10",
@@ -164,7 +164,7 @@
       "cid": "M030"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Charizard V (GG) PSA 10",
@@ -172,7 +172,7 @@
       "cid": "M032"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Lugia V (GG) PSA 10",
@@ -180,7 +180,7 @@
       "cid": "M033"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Charizard ex SIR PSA 10",
@@ -188,7 +188,7 @@
       "cid": "M034"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Charizard ex Full Art PSA 10",
@@ -196,7 +196,7 @@
       "cid": "M036"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Mew ex SIR PSA 10",
@@ -204,7 +204,7 @@
       "cid": "M037"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Zapdos ex SIR PSA 10",
@@ -212,7 +212,7 @@
       "cid": "M038"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Venusaur ex SIR PSA 10",
@@ -220,7 +220,7 @@
       "cid": "M039"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Blastoise ex SIR PSA 10",
@@ -228,7 +228,7 @@
       "cid": "M040"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Mewtwo ex SIR PSA 10",
@@ -236,7 +236,7 @@
       "cid": "M041"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Alakazam ex SIR PSA 10",
@@ -244,7 +244,7 @@
       "cid": "M043"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Iono SIR PSA 10",
@@ -252,7 +252,7 @@
       "cid": "M044"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Charizard ex SIR PSA 10",
@@ -260,7 +260,7 @@
       "cid": "M046"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Tyranitar ex SIR PSA 10",
@@ -268,7 +268,7 @@
       "cid": "M048"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Iron Hands ex Alt Art PSA 10",
@@ -276,7 +276,7 @@
       "cid": "M050"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Garchomp ex Alt Art PSA 10",
@@ -284,7 +284,7 @@
       "cid": "M053"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Roaring Moon ex SIR PSA 10",
@@ -292,7 +292,7 @@
       "cid": "M054"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Garchomp ex SIR PSA 10",
@@ -300,7 +300,7 @@
       "cid": "M055"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Pikachu Shiny PSA 10",
@@ -308,7 +308,7 @@
       "cid": "M058"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Greninja ex SIR PSA 10",
@@ -316,7 +316,7 @@
       "cid": "M059"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Carmine SIR PSA 10",
@@ -324,7 +324,7 @@
       "cid": "M060"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Fezandipiti ex Alt Art PSA 10",
@@ -332,7 +332,7 @@
       "cid": "M063"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Umbreon ex SIR PSA 10",
@@ -340,7 +340,7 @@
       "cid": "M069"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Umbreon ex SIR Raw NM",
@@ -348,7 +348,7 @@
       "cid": "M070"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Sylveon ex SIR PSA 10",
@@ -356,7 +356,7 @@
       "cid": "M071"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Espeon ex SIR PSA 10",
@@ -364,7 +364,7 @@
       "cid": "M072"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Glaceon ex SIR PSA 10",
@@ -372,7 +372,7 @@
       "cid": "M074"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Leafeon ex SIR PSA 10",
@@ -380,7 +380,7 @@
       "cid": "M075"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Lillie's Determination SIR PSA 10",
@@ -388,7 +388,7 @@
       "cid": "M078"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Mega Gengar ex SIR PSA 10",
@@ -396,7 +396,7 @@
       "cid": "M081"
     },
     {
-      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "ts": "2026-05-17T15:27:05.386087+00:00",
       "type": "signal_strong_buy",
       "icon": "\ud83d\udd14",
       "title": "STRONG BUY: Mega Gengar ex SIR Raw NM",
