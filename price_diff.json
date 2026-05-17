@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-16T22:42:11.518587+00:00",
+  "generated_at": "2026-05-17T02:37:49.097154+00:00",
   "current_snapshot_at": "2026-05-16T20:51:34.239708Z",
   "prior_snapshot_at": "2026-05-15T05:00:28.531494Z",
   "total_compared": 72,
-  "reconciler_fixes_count": 12,
-  "real_moves_count": 20,
-  "gainers_count": 10,
+  "reconciler_fixes_count": 8,
+  "real_moves_count": 24,
+  "gainers_count": 14,
   "losers_count": 10,
   "top_gainers": [
     {
@@ -45,6 +45,30 @@
       "confidence": "UNKNOWN"
     },
     {
+      "cid": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "set": "",
+      "prior_price": 400.0,
+      "current_price": 63460.5,
+      "delta_usd": 63060.5,
+      "delta_pct": 15765.12,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
+    },
+    {
+      "cid": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "set": "",
+      "prior_price": 385.0,
+      "current_price": 33609.63,
+      "delta_usd": 33224.63,
+      "delta_pct": 8629.77,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
+    },
+    {
       "cid": "X535",
       "name": "Team Rocket Booster Box Unlimited (sealed)",
       "variant": "Sealed",
@@ -67,6 +91,18 @@
       "delta_pct": 3055.04,
       "source": "pricecharting:psa8",
       "confidence": "UNKNOWN"
+    },
+    {
+      "cid": "Z004",
+      "name": "Lugia 1st Ed",
+      "variant": "PSA 9",
+      "set": "",
+      "prior_price": 430.0,
+      "current_price": 9475.24,
+      "delta_usd": 9045.24,
+      "delta_pct": 2103.54,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
     },
     {
       "cid": "X534",
@@ -103,6 +139,18 @@
       "delta_pct": 965.05,
       "source": "pricecharting:psa8",
       "confidence": "UNKNOWN"
+    },
+    {
+      "cid": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "variant": "PSA 10",
+      "set": "",
+      "prior_price": 7231.98,
+      "current_price": 58723.0,
+      "delta_usd": 51491.02,
+      "delta_pct": 711.99,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
     },
     {
       "cid": "X015",
@@ -289,6 +337,18 @@
       "confidence": "UNKNOWN"
     },
     {
+      "cid": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "set": "",
+      "prior_price": 400.0,
+      "current_price": 63460.5,
+      "delta_usd": 63060.5,
+      "delta_pct": 15765.12,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
+    },
+    {
       "cid": "Z102",
       "name": "Gold Star Charizard",
       "variant": "PSA 10",
@@ -299,6 +359,30 @@
       "delta_pct": -88.93,
       "source": "wb_fallback_source_rejected",
       "confidence": "UNKNOWN"
+    },
+    {
+      "cid": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "variant": "PSA 10",
+      "set": "",
+      "prior_price": 7231.98,
+      "current_price": 58723.0,
+      "delta_usd": 51491.02,
+      "delta_pct": 711.99,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
+    },
+    {
+      "cid": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "set": "",
+      "prior_price": 385.0,
+      "current_price": 33609.63,
+      "delta_usd": 33224.63,
+      "delta_pct": 8629.77,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
     },
     {
       "cid": "X501",
@@ -385,6 +469,18 @@
       "confidence": "UNKNOWN"
     },
     {
+      "cid": "Z004",
+      "name": "Lugia 1st Ed",
+      "variant": "PSA 9",
+      "set": "",
+      "prior_price": 430.0,
+      "current_price": 9475.24,
+      "delta_usd": 9045.24,
+      "delta_pct": 2103.54,
+      "source": "single_pc",
+      "confidence": "MEDIUM"
+    },
+    {
       "cid": "X534",
       "name": "Neo Genesis Booster Box Unlimited (sealed)",
       "variant": "Sealed",
@@ -443,54 +539,6 @@
       "delta_pct": 46.15,
       "source": "wb_fallback_source_rejected",
       "confidence": "UNKNOWN"
-    },
-    {
-      "cid": "V003",
-      "name": "Charizard",
-      "variant": "PSA 9",
-      "set": "",
-      "prior_price": 10750.0,
-      "current_price": 8500.0,
-      "delta_usd": -2250.0,
-      "delta_pct": -20.93,
-      "source": "pricecharting:psa9",
-      "confidence": "UNKNOWN"
-    },
-    {
-      "cid": "Z050",
-      "name": "Charizard Crystal",
-      "variant": "PSA 10",
-      "set": "",
-      "prior_price": 16330.5,
-      "current_price": 18500.0,
-      "delta_usd": 2169.5,
-      "delta_pct": 13.28,
-      "source": "wb_no_sources",
-      "confidence": "UNKNOWN"
-    },
-    {
-      "cid": "X503",
-      "name": "Lugia Neo Genesis 1st Ed PSA 10",
-      "variant": "PSA 10",
-      "set": "",
-      "prior_price": 71000.32,
-      "current_price": 69034.8,
-      "delta_usd": -1965.52,
-      "delta_pct": -2.77,
-      "source": "pricecharting:psa10",
-      "confidence": "UNKNOWN"
-    },
-    {
-      "cid": "X511",
-      "name": "Shining Charizard Neo Destiny PSA 10",
-      "variant": "PSA 10",
-      "set": "",
-      "prior_price": 14777.77,
-      "current_price": 14476.83,
-      "delta_usd": -300.94,
-      "delta_pct": -2.04,
-      "source": "pricecharting:psa10",
-      "confidence": "UNKNOWN"
     }
   ],
   "reconciler_fixes": [
@@ -519,30 +567,6 @@
       "confidence": "UNKNOWN"
     },
     {
-      "cid": "X507",
-      "name": "Umbreon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "set": "",
-      "prior_price": 400.0,
-      "current_price": 22000.0,
-      "delta_usd": 21600.0,
-      "delta_pct": 5400.0,
-      "source": "wb_no_sources_prev_rejected",
-      "confidence": "UNKNOWN"
-    },
-    {
-      "cid": "X506",
-      "name": "Espeon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "set": "",
-      "prior_price": 385.0,
-      "current_price": 16000.0,
-      "delta_usd": 15615.0,
-      "delta_pct": 4055.84,
-      "source": "wb_no_sources_prev_rejected",
-      "confidence": "UNKNOWN"
-    },
-    {
       "cid": "D107",
       "name": "Pokemon Neo Genesis Booster Box (Unlimited)",
       "variant": "Sealed",
@@ -551,30 +575,6 @@
       "current_price": 11500.0,
       "delta_usd": 11045.0,
       "delta_pct": 2427.47,
-      "source": "wb_fallback_source_rejected",
-      "confidence": "UNKNOWN"
-    },
-    {
-      "cid": "X505",
-      "name": "Charizard Gold Star PSA 10",
-      "variant": "PSA 10",
-      "set": "",
-      "prior_price": 7231.98,
-      "current_price": 18000.0,
-      "delta_usd": 10768.02,
-      "delta_pct": 148.89,
-      "source": "wb_no_sources_prev_rejected",
-      "confidence": "UNKNOWN"
-    },
-    {
-      "cid": "Z004",
-      "name": "Lugia 1st Ed",
-      "variant": "PSA 9",
-      "set": "",
-      "prior_price": 430.0,
-      "current_price": 8500.0,
-      "delta_usd": 8070.0,
-      "delta_pct": 1876.74,
       "source": "wb_fallback_source_rejected",
       "confidence": "UNKNOWN"
     },
@@ -635,7 +635,7 @@
       "current_price": 1800.0,
       "delta_usd": 937.99,
       "delta_pct": 108.81,
-      "source": "wb_no_sources_prev_rejected",
+      "source": "wb_fallback_source_rejected",
       "confidence": "UNKNOWN"
     }
   ]
