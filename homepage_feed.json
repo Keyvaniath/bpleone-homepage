@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T02:40:03.550009Z",
+  "generated_at": "2026-05-17T02:44:17.787692Z",
   "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
@@ -9552,8 +9552,8 @@
     ]
   },
   "price_alerts": {
-    "buy_alerts_count": 75,
-    "sell_alerts_count": 259,
+    "buy_alerts_count": 61,
+    "sell_alerts_count": 240,
     "high_score_count": 14,
     "top_buy_alerts": [
       {
@@ -9564,7 +9564,9 @@
         "buy_target": 1120.0,
         "wb_price": 1400,
         "discount_pct": 60.0,
-        "just_crossed_today": false
+        "just_crossed_today": false,
+        "confidence": "MEDIUM",
+        "source": "pokeprice:psa10"
       },
       {
         "cid": "V813",
@@ -9574,7 +9576,9 @@
         "buy_target": 760.0,
         "wb_price": 950,
         "discount_pct": 60.0,
-        "just_crossed_today": false
+        "just_crossed_today": false,
+        "confidence": "MEDIUM",
+        "source": "pricecharting:psa8"
       },
       {
         "cid": "D109",
@@ -9584,7 +9588,9 @@
         "buy_target": 340.0,
         "wb_price": 425,
         "discount_pct": 60.0,
-        "just_crossed_today": false
+        "just_crossed_today": false,
+        "confidence": "MEDIUM",
+        "source": "pricecharting:raw"
       },
       {
         "cid": "X207",
@@ -9594,7 +9600,9 @@
         "buy_target": 136.0,
         "wb_price": 170,
         "discount_pct": 58.8,
-        "just_crossed_today": false
+        "just_crossed_today": false,
+        "confidence": "MEDIUM",
+        "source": "pokeprice:psa10"
       },
       {
         "cid": "W014",
@@ -9604,7 +9612,9 @@
         "buy_target": 100.0,
         "wb_price": 125,
         "discount_pct": 58.8,
-        "just_crossed_today": false
+        "just_crossed_today": false,
+        "confidence": "OVERRIDE",
+        "source": "pc_holdout_sweep_grade_10"
       }
     ],
     "top_sell_alerts": [
@@ -9616,7 +9626,9 @@
         "sell_target": 8800.0,
         "wb_price": 8000,
         "premium_pct": 253.4,
-        "just_crossed_today": true
+        "just_crossed_today": true,
+        "confidence": "OVERRIDE",
+        "source": "pricecharting:psa10"
       },
       {
         "cid": "V002",
@@ -9626,7 +9638,9 @@
         "sell_target": 10450.0,
         "wb_price": 9500,
         "premium_pct": 230.4,
-        "just_crossed_today": true
+        "just_crossed_today": true,
+        "confidence": "OVERRIDE",
+        "source": "pricecharting:psa8"
       },
       {
         "cid": "X501",
@@ -9636,7 +9650,9 @@
         "sell_target": 10450.0,
         "wb_price": 9500,
         "premium_pct": 230.4,
-        "just_crossed_today": true
+        "just_crossed_today": true,
+        "confidence": "OVERRIDE",
+        "source": "pricecharting:psa8"
       },
       {
         "cid": "X505",
@@ -9646,7 +9662,9 @@
         "sell_target": 19800.0,
         "wb_price": 18000,
         "premium_pct": 226.2,
-        "just_crossed_today": true
+        "just_crossed_today": true,
+        "confidence": "MEDIUM",
+        "source": "single_pc"
       },
       {
         "cid": "X507",
@@ -9656,7 +9674,9 @@
         "sell_target": 24200.0,
         "wb_price": 22000,
         "premium_pct": 188.5,
-        "just_crossed_today": true
+        "just_crossed_today": true,
+        "confidence": "MEDIUM",
+        "source": "single_pc"
       }
     ]
   },
