@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUY/SELL Alerts · bpleone.com</title>
+<meta name="description" content="Every active BUY and SELL alert across 774 Pokemon TCG cards. Live triggers updated every 4h.">
+<meta property="og:title" content="bpleone.com — live BUY/SELL alerts">
+<meta property="og:description" content="Every active price-target trigger in one place. 774 cards tracked.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bpleone.com/alerts.html">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/alerts.html">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+    background-image:
+      radial-gradient(circle at 10% 10%, rgba(74,222,128,0.04) 0, transparent 40%),
+      radial-gradient(circle at 90% 90%, rgba(248,113,113,0.03) 0, transparent 40%);
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+  header.page-hero { padding: 40px 0 16px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--green);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
+  h1 .accent { color: var(--green); }
+  .lead { color: var(--text-dim); font-size: 14px; margin-bottom: 18px; max-width: 720px; }
+
+  .filter-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0; }
+  .tab {
+    padding: 8px 16px; border-radius: 6px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    color: var(--text-dim); font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: all 0.15s ease;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .tab:hover { border-color: var(--gold-dim); color: var(--text); }
+  .tab.active { background: var(--gold); color: #0a0e1a; border-color: var(--gold); }
+  .tab .count { font-size: 11px; opacity: 0.75; margin-left: 6px; }
+
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .stat-pill {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 16px; text-align: center;
+  }
+  .stat-pill .lbl { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.05em; }
+  .stat-pill .v { font-size: 20px; font-weight: 700; margin-top: 4px; }
+  .stat-pill .v.green { color: var(--green); }
+  .stat-pill .v.red { color: var(--red); }
+  .stat-pill .v.gold { color: var(--gold); }
+
+  .alerts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 12px;
+    margin: 20px 0 40px;
+  }
+  .alert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--text-mute);
+    border-radius: 8px;
+    padding: 14px 16px;
+    transition: border-color 0.15s ease;
+  }
+  .alert-card:hover { border-color: var(--gold-dim); }
+  .alert-card.buy { border-left-color: var(--green); background: linear-gradient(135deg, var(--bg-card) 0%, rgba(74,222,128,0.04) 100%); }
+  .alert-card.sell { border-left-color: var(--red); background: linear-gradient(135deg, var(--bg-card) 0%, rgba(248,113,113,0.04) 100%); }
+  .alert-card.high { border-left-color: var(--gold); background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245,200,66,0.04) 100%); }
+  .alert-card .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 6px; margin-bottom: 6px; }
+  .alert-card .name { font-weight: 700; font-size: 14px; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .alert-card .cid { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); flex-shrink: 0; }
+  .alert-card .variant-line { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute); margin-bottom: 8px; }
+  .alert-card .price-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    margin: 10px 0 6px;
+  }
+  .alert-card .price-row .lbl { font-size: 9px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.05em; }
+  .alert-card .price-row .v { font-size: 13px; font-weight: 600; }
+  .alert-card .price-row .v.green { color: var(--green); }
+  .alert-card .price-row .v.red { color: var(--red); }
+  .alert-card .footer-row {
+    display: flex; justify-content: space-between;
+    margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border);
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute);
+  }
+  .conf-pill {
+    display: inline-block; padding: 2px 6px; border-radius: 3px;
+    font-size: 9px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .conf-pill.HIGH { background: rgba(74,222,128,0.15); color: var(--green); }
+  .conf-pill.MEDIUM { background: rgba(245,200,66,0.15); color: var(--gold); }
+  .conf-pill.LOW { background: rgba(248,113,113,0.10); color: var(--orange); }
+  .conf-pill.OVERRIDE { background: rgba(129,140,248,0.15); color: #818cf8; }
+
+  .crossed-badge {
+    display: inline-block; padding: 2px 6px; border-radius: 3px;
+    background: rgba(74,222,128,0.20); color: var(--green);
+    font-size: 9px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+    margin-left: 6px;
+  }
+  footer { padding: 36px 0 28px; color: var(--text-mute); font-size: 12px; text-align: center; border-top: 1px solid var(--border); margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/watchlist.html">⭐ Watchlist</a>
+      <a href="/alerts.html" class="active">🔔 Alerts</a>
+      <a href="/activity.html">📡 Activity</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">🔔 Live BUY / SELL Alerts</span>
+    <h1>Every active <span class="accent">price target</span> triggered.</h1>
+    <p class="lead">All 774 watchlist cards scanned every 4 hours against algorithmic buy / sell targets. Bands are computed from the composite quant score. When a live price crosses a band, it shows here.</p>
+
+    <div class="stats-row">
+      <div class="stat-pill"><div class="lbl">Buy Alerts</div><div class="v green" id="stat-buy">—</div></div>
+      <div class="stat-pill"><div class="lbl">Sell Alerts</div><div class="v red" id="stat-sell">—</div></div>
+      <div class="stat-pill"><div class="lbl">High Score</div><div class="v gold" id="stat-high">—</div></div>
+      <div class="stat-pill"><div class="lbl">Just Crossed</div><div class="v green" id="stat-crossed">—</div></div>
+    </div>
+
+    <div class="filter-row">
+      <button class="tab active" data-tab="buy">🟢 Buy Alerts <span class="count" id="t-buy">—</span></button>
+      <button class="tab" data-tab="sell">🔴 Sell Alerts <span class="count" id="t-sell">—</span></button>
+      <button class="tab" data-tab="high">⭐ High Score (STRONG BUY) <span class="count" id="t-high">—</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="alerts-grid" id="alerts-grid">
+      <p style="grid-column:1/-1; text-align:center; color:var(--text-mute); padding:30px 0;">⏳ Loading alerts…</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    bpleone.com · <a href="/" style="color:var(--text-mute);">back to live</a> · <a href="/methodology.html" style="color:var(--text-mute);">how alerts work</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const URLS = [
+    '/price_alerts.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/price_alerts.json'
+  ];
+  let data = null;
+  let activeTab = 'buy';
+
+  function tryFetch(urls, i) {
+    return fetch(urls[i], {cache: 'no-store'}).then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).catch(err => {
+      if (i + 1 < urls.length) return tryFetch(urls, i + 1);
+      throw err;
+    });
+  }
+
+  function renderAlertCard(a, kind) {
+    const sig = (a.signal || '').toUpperCase();
+    const name = (a.name || '') + (a.variant ? ' · ' + a.variant : '');
+    const conf = (a.confidence || '—').toUpperCase();
+    const cls = (kind === 'buy') ? 'buy' : (kind === 'sell') ? 'sell' : 'high';
+    const justCrossed = a.just_crossed_today ? '<span class="crossed-badge">JUST CROSSED</span>' : '';
+    const live = a.live_price || a.price || 0;
+    const target = a.buy_target || a.sell_target || 0;
+    const wb = a.wb_price || 0;
+    const discount = a.discount_pct || 0;
+    const dCls = kind === 'buy' ? 'green' : 'red';
+    const dStr = discount ? (kind === 'buy' ? '−' : '+') + Math.abs(discount).toFixed(0) + '%' : '—';
+    return '<div class="alert-card ' + cls + '">' +
+      '<div class="top"><div class="name">' + name + justCrossed + '</div><div class="cid">' + (a.cid || '') + '</div></div>' +
+      '<div class="variant-line">' + (a.set || '—') + ' · score ' + (a.score || '—') + '</div>' +
+      '<div class="price-row">' +
+        '<div><div class="lbl">Live</div><div class="v">$' + live.toLocaleString() + '</div></div>' +
+        '<div><div class="lbl">' + (kind === 'sell' ? 'Sell target' : 'Buy target') + '</div><div class="v">$' + target.toLocaleString() + '</div></div>' +
+        '<div><div class="lbl">Workbook</div><div class="v" style="color:var(--text-dim);">$' + wb.toLocaleString() + '</div></div>' +
+        '<div><div class="lbl">' + (kind === 'sell' ? 'Premium' : 'Discount') + '</div><div class="v ' + dCls + '">' + dStr + '</div></div>' +
+      '</div>' +
+      '<div class="footer-row">' +
+        '<span class="conf-pill ' + conf + '">' + conf + '</span>' +
+        '<span>' + (a.source || '—') + '</span>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function render() {
+    if (!data) return;
+    const grid = document.getElementById('alerts-grid');
+    let list = [];
+    if (activeTab === 'buy') list = data.buy_alerts || [];
+    else if (activeTab === 'sell') list = data.sell_alerts || [];
+    else list = data.high_score_signals || [];
+
+    if (!list.length) {
+      grid.innerHTML = '<p style="grid-column:1/-1; text-align:center; color:var(--text-mute); padding:30px 0;">No alerts in this category right now.</p>';
+      return;
+    }
+    grid.innerHTML = list.map(a => renderAlertCard(a, activeTab)).join('');
+
+    document.getElementById('stat-buy').textContent = (data.buy_alerts || []).length;
+    document.getElementById('stat-sell').textContent = (data.sell_alerts || []).length;
+    document.getElementById('stat-high').textContent = (data.high_score_signals || []).length;
+    let crossed = 0;
+    (data.buy_alerts || []).forEach(a => { if (a.just_crossed_today) crossed++; });
+    document.getElementById('stat-crossed').textContent = crossed;
+    document.getElementById('t-buy').textContent = '(' + ((data.buy_alerts || []).length) + ')';
+    document.getElementById('t-sell').textContent = '(' + ((data.sell_alerts || []).length) + ')';
+    document.getElementById('t-high').textContent = '(' + ((data.high_score_signals || []).length) + ')';
+  }
+
+  document.querySelectorAll('.tab').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      b.classList.add('active');
+      activeTab = b.getAttribute('data-tab');
+      render();
+    });
+  });
+
+  tryFetch(URLS, 0).then(d => { data = d; render(); }).catch(err => {
+    console.warn('alerts load failed:', err);
+    document.getElementById('alerts-grid').innerHTML = '<p style="grid-column:1/-1; text-align:center; color:var(--text-mute); padding:30px 0;">Could not load alerts. Try refreshing.</p>';
+  });
+})();
+</script>
+
+</body>
+</html>
