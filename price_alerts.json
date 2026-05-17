@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-17T02:38:35.464196+00:00",
-  "buy_alerts_count": 75,
-  "sell_alerts_count": 259,
+  "generated_at": "2026-05-17T02:44:05.554199+00:00",
+  "buy_alerts_count": 61,
+  "sell_alerts_count": 240,
   "high_score_count": 14,
   "buy_alerts": [
     {
@@ -12,7 +12,9 @@
       "buy_target": 1120.0,
       "wb_price": 1400,
       "discount_pct": 60.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pokeprice:psa10"
     },
     {
       "cid": "V813",
@@ -22,7 +24,9 @@
       "buy_target": 760.0,
       "wb_price": 950,
       "discount_pct": 60.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa8"
     },
     {
       "cid": "D109",
@@ -32,7 +36,9 @@
       "buy_target": 340.0,
       "wb_price": 425,
       "discount_pct": 60.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
     },
     {
       "cid": "X207",
@@ -42,7 +48,9 @@
       "buy_target": 136.0,
       "wb_price": 170,
       "discount_pct": 58.8,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pokeprice:psa10"
     },
     {
       "cid": "W014",
@@ -52,7 +60,9 @@
       "buy_target": 100.0,
       "wb_price": 125,
       "discount_pct": 58.8,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_holdout_sweep_grade_10"
     },
     {
       "cid": "W013",
@@ -62,7 +72,9 @@
       "buy_target": 116.0,
       "wb_price": 145,
       "discount_pct": 58.6,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "HIGH",
+      "source": "pokeprice:psa10"
     },
     {
       "cid": "X214",
@@ -72,17 +84,9 @@
       "buy_target": 88.0,
       "wb_price": 110,
       "discount_pct": 57.7,
-      "just_crossed_today": false
-    },
-    {
-      "cid": "M220",
-      "name": "Charizard ex SIR PSA 10",
-      "variant": "PSA 10",
-      "live_price": 180.0,
-      "buy_target": 340.0,
-      "wb_price": 425,
-      "discount_pct": 57.6,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M085",
@@ -92,7 +96,9 @@
       "buy_target": 656.0,
       "wb_price": 820,
       "discount_pct": 57.3,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "JB05",
@@ -102,7 +108,9 @@
       "buy_target": 11.0,
       "wb_price": 14,
       "discount_pct": 57.1,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
     },
     {
       "cid": "PC004",
@@ -112,7 +120,9 @@
       "buy_target": 388.0,
       "wb_price": 485,
       "discount_pct": 56.3,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
     },
     {
       "cid": "X508",
@@ -122,7 +132,9 @@
       "buy_target": 360000.0,
       "wb_price": 450000,
       "discount_pct": 56.2,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa7"
     },
     {
       "cid": "D112",
@@ -132,7 +144,9 @@
       "buy_target": 308.0,
       "wb_price": 385,
       "discount_pct": 55.8,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
     },
     {
       "cid": "M053",
@@ -142,7 +156,9 @@
       "buy_target": 192.0,
       "wb_price": 240,
       "discount_pct": 55.7,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "V811",
@@ -152,7 +168,9 @@
       "buy_target": 224.0,
       "wb_price": 280,
       "discount_pct": 55.4,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "HIGH",
+      "source": "pokeprice:psa8"
     },
     {
       "cid": "X213",
@@ -162,7 +180,9 @@
       "buy_target": 116.0,
       "wb_price": 145,
       "discount_pct": 55.2,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "X122",
@@ -172,7 +192,9 @@
       "buy_target": 13.0,
       "wb_price": 16,
       "discount_pct": 50.9,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "tcgplayer_api"
     },
     {
       "cid": "V038",
@@ -182,7 +204,9 @@
       "buy_target": 464.0,
       "wb_price": 580,
       "discount_pct": 50.8,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
     },
     {
       "cid": "M022",
@@ -192,7 +216,9 @@
       "buy_target": 128.0,
       "wb_price": 160,
       "discount_pct": 50.8,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "X125",
@@ -202,7 +228,9 @@
       "buy_target": 18.0,
       "wb_price": 22,
       "discount_pct": 50.6,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pokeprice:raw"
     },
     {
       "cid": "M109",
@@ -212,7 +240,9 @@
       "buy_target": 76.0,
       "wb_price": 95,
       "discount_pct": 50.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pokeprice:psa10"
     },
     {
       "cid": "X301",
@@ -222,27 +252,9 @@
       "buy_target": 384.0,
       "wb_price": 480,
       "discount_pct": 50.0,
-      "just_crossed_today": false
-    },
-    {
-      "cid": "W002",
-      "name": "Pikachu ex SAR (PSA 10)",
-      "variant": "PSA 10",
-      "live_price": 247.87,
-      "buy_target": 388.0,
-      "wb_price": 485,
-      "discount_pct": 48.9,
-      "just_crossed_today": false
-    },
-    {
-      "cid": "P010",
-      "name": "Allister Trainer Gallery",
-      "variant": "Raw NM",
-      "live_price": 2.56,
-      "buy_target": 4.0,
-      "wb_price": 5,
-      "discount_pct": 48.8,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M032",
@@ -252,7 +264,45 @@
       "buy_target": 272.0,
       "wb_price": 340,
       "discount_pct": 48.5,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pokeprice:psa10"
+    },
+    {
+      "cid": "X309",
+      "name": "Mew ex SIR (151) PSA 10",
+      "variant": "PSA 10",
+      "live_price": 175.0,
+      "buy_target": 272.0,
+      "wb_price": 340,
+      "discount_pct": 48.5,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pokeprice:psa10"
+    },
+    {
+      "cid": "Z024",
+      "name": "Ho-Oh",
+      "variant": "PSA 10",
+      "live_price": 839.0,
+      "buy_target": 1280.0,
+      "wb_price": 1600,
+      "discount_pct": 47.6,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
+    },
+    {
+      "cid": "X005",
+      "name": "Erika's Invitation SIR",
+      "variant": "PSA 10",
+      "live_price": 149.71,
+      "buy_target": 224.0,
+      "wb_price": 280,
+      "discount_pct": 46.5,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     }
   ],
   "sell_alerts": [
@@ -264,7 +314,9 @@
       "sell_target": 8800.0,
       "wb_price": 8000,
       "premium_pct": 253.4,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa10"
     },
     {
       "cid": "V002",
@@ -274,7 +326,9 @@
       "sell_target": 10450.0,
       "wb_price": 9500,
       "premium_pct": 230.4,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa8"
     },
     {
       "cid": "X501",
@@ -284,7 +338,9 @@
       "sell_target": 10450.0,
       "wb_price": 9500,
       "premium_pct": 230.4,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa8"
     },
     {
       "cid": "X505",
@@ -294,7 +350,9 @@
       "sell_target": 19800.0,
       "wb_price": 18000,
       "premium_pct": 226.2,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "X507",
@@ -304,7 +362,9 @@
       "sell_target": 24200.0,
       "wb_price": 22000,
       "premium_pct": 188.5,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "V100",
@@ -314,7 +374,9 @@
       "sell_target": 93500.0,
       "wb_price": 85000,
       "premium_pct": 132.1,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa7"
     },
     {
       "cid": "X506",
@@ -324,7 +386,9 @@
       "sell_target": 17600.0,
       "wb_price": 16000,
       "premium_pct": 110.1,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "V023",
@@ -334,7 +398,9 @@
       "sell_target": 9350.0,
       "wb_price": 8500,
       "premium_pct": 86.8,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa9"
     },
     {
       "cid": "Z004",
@@ -344,7 +410,9 @@
       "sell_target": 9350.0,
       "wb_price": 8500,
       "premium_pct": 11.5,
-      "just_crossed_today": true
+      "just_crossed_today": true,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "P060",
@@ -354,7 +422,9 @@
       "sell_target": 9.0,
       "wb_price": 8,
       "premium_pct": 18563.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "HIGH",
+      "source": "consensus_ppt_tcg"
     },
     {
       "cid": "X114",
@@ -364,7 +434,9 @@
       "sell_target": 10.0,
       "wb_price": 9,
       "premium_pct": 16489.3,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "HIGH",
+      "source": "consensus_ppt_tcg"
     },
     {
       "cid": "JB01",
@@ -374,7 +446,9 @@
       "sell_target": 20.0,
       "wb_price": 18,
       "premium_pct": 4769.3,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "JB02",
@@ -384,7 +458,9 @@
       "sell_target": 15.0,
       "wb_price": 14,
       "premium_pct": 2853.2,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "P020",
@@ -394,7 +470,9 @@
       "sell_target": 6.0,
       "wb_price": 5,
       "premium_pct": 2401.4,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_tcg"
     },
     {
       "cid": "P031",
@@ -404,7 +482,9 @@
       "sell_target": 9.0,
       "wb_price": 8,
       "premium_pct": 2400.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_tcg"
     },
     {
       "cid": "JB07",
@@ -414,7 +494,9 @@
       "sell_target": 20.0,
       "wb_price": 18,
       "premium_pct": 2247.2,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "B013",
@@ -424,7 +506,9 @@
       "sell_target": 24.0,
       "wb_price": 22,
       "premium_pct": 2167.7,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_tcg"
     },
     {
       "cid": "V213",
@@ -434,7 +518,9 @@
       "sell_target": 4.0,
       "wb_price": 4,
       "premium_pct": 1899.7,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_tcg"
     },
     {
       "cid": "JB08",
@@ -444,17 +530,9 @@
       "sell_target": 16.0,
       "wb_price": 15,
       "premium_pct": 1784.5,
-      "just_crossed_today": false
-    },
-    {
-      "cid": "B011",
-      "name": "Gengar VMAX Alt Art",
-      "variant": "Raw NM",
-      "live_price": 435.07,
-      "sell_target": 31.0,
-      "wb_price": 28,
-      "premium_pct": 1453.8,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "D04",
@@ -464,7 +542,9 @@
       "sell_target": 20.0,
       "wb_price": 18,
       "premium_pct": 1293.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "X145",
@@ -474,7 +554,9 @@
       "sell_target": 20.0,
       "wb_price": 18,
       "premium_pct": 1235.7,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "U004",
@@ -484,7 +566,9 @@
       "sell_target": 7.0,
       "wb_price": 6,
       "premium_pct": 1233.2,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_tcg"
     },
     {
       "cid": "JB06",
@@ -494,7 +578,9 @@
       "sell_target": 9.0,
       "wb_price": 8,
       "premium_pct": 1065.0,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_pc"
     },
     {
       "cid": "P005",
@@ -504,7 +590,21 @@
       "sell_target": 8.0,
       "wb_price": 7,
       "premium_pct": 1042.7,
-      "just_crossed_today": false
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_tcg"
+    },
+    {
+      "cid": "P040",
+      "name": "Iono Trainer Gallery (NM raw)",
+      "variant": "Raw NM",
+      "live_price": 61.79,
+      "sell_target": 7.0,
+      "wb_price": 6,
+      "premium_pct": 929.8,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "single_ppt"
     }
   ],
   "high_score_signals": [
