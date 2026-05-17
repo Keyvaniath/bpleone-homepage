@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T07:11:01.941857+00:00",
+  "generated_at": "2026-05-17T15:27:06.661492+00:00",
   "snapshot_date": "2026-05-17",
   "history_days": 1,
   "n_sets_tracked": 30,
@@ -55,7 +55,7 @@
     {
       "set": "Evolving Skies",
       "n_cards": 29,
-      "heat_now": 117.3,
+      "heat_now": 117.2,
       "heat_1d_ago": null,
       "heat_7d_ago": null,
       "heat_30d_ago": null,
@@ -277,7 +277,7 @@
     {
       "set": "Evolving Skies",
       "n_cards": 29,
-      "heat_now": 117.3,
+      "heat_now": 117.2,
       "heat_1d_ago": null,
       "heat_7d_ago": null,
       "heat_30d_ago": null,
@@ -583,6 +583,28 @@
       }
     },
     {
+      "set": "Surging Sparks",
+      "n_cards": 24,
+      "heat_now": 70.0,
+      "heat_1d_ago": null,
+      "heat_7d_ago": null,
+      "heat_30d_ago": null,
+      "delta_1d": null,
+      "delta_7d": null,
+      "delta_30d": null,
+      "status": "STABLE",
+      "buy_density_pct": 41.7,
+      "avg_d30_pct": 17.28,
+      "top_card": {
+        "cid": "M066",
+        "name": "Pikachu ex Alt Art",
+        "variant": "PSA 10",
+        "score": 76.0,
+        "signal": "STRONG BUY",
+        "live_price": null
+      }
+    },
+    {
       "set": "Generations",
       "n_cards": 1,
       "heat_now": 69.1,
@@ -624,28 +646,6 @@
         "score": 88.0,
         "signal": "STRONG BUY",
         "live_price": 35.025
-      }
-    },
-    {
-      "set": "Surging Sparks",
-      "n_cards": 24,
-      "heat_now": 68.5,
-      "heat_1d_ago": null,
-      "heat_7d_ago": null,
-      "heat_30d_ago": null,
-      "delta_1d": null,
-      "delta_7d": null,
-      "delta_30d": null,
-      "status": "STABLE",
-      "buy_density_pct": 37.5,
-      "avg_d30_pct": 17.28,
-      "top_card": {
-        "cid": "M066",
-        "name": "Pikachu ex Alt Art",
-        "variant": "PSA 10",
-        "score": 76.0,
-        "signal": "STRONG BUY",
-        "live_price": null
       }
     },
     {
@@ -761,7 +761,7 @@
     {
       "set": "Twilight Masquerade",
       "n_cards": 33,
-      "heat_now": 59.1,
+      "heat_now": 61.2,
       "heat_1d_ago": null,
       "heat_7d_ago": null,
       "heat_30d_ago": null,
@@ -769,7 +769,7 @@
       "delta_7d": null,
       "delta_30d": null,
       "status": "STABLE",
-      "buy_density_pct": 33.3,
+      "buy_density_pct": 39.4,
       "avg_d30_pct": 13.78,
       "top_card": {
         "cid": "M060",
@@ -783,7 +783,7 @@
     {
       "set": "Prismatic Evolutions",
       "n_cards": 41,
-      "heat_now": 54.6,
+      "heat_now": 56.3,
       "heat_1d_ago": null,
       "heat_7d_ago": null,
       "heat_30d_ago": null,
@@ -791,7 +791,7 @@
       "delta_7d": null,
       "delta_30d": null,
       "status": "STABLE",
-      "buy_density_pct": 26.8,
+      "buy_density_pct": 31.7,
       "avg_d30_pct": 13.16,
       "top_card": {
         "cid": "M072",
