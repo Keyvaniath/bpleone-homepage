@@ -1870,11 +1870,12 @@
   </div>
 </nav>
 
-<!-- Top-of-page data-freshness banner. Hidden when fresh; orange when stale (>6h); red when very stale (>24h). -->
-<div id="freshness-banner" style="display:none;border-bottom:1px solid var(--border);padding:8px 0;font-family:'JetBrains Mono',monospace;font-size:12px;">
-  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
-    <span id="freshness-msg">Data freshness check…</span>
-    <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk/actions/workflows/live_refresh.yml" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">↻ Trigger refresh →</a>
+<!-- Top-of-page data-freshness banner. Hidden when fresh; ORANGE when stale (>6h); RED when very stale (>24h).
+     Made deliberately prominent so Brandon (and any visitor) can't miss when prices are stale. -->
+<div id="freshness-banner" style="display:none;border-bottom:2px solid var(--border);padding:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+    <span id="freshness-msg" style="font-size:14px;">Data freshness check…</span>
+    <a id="freshness-trigger" href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk/actions/workflows/live_refresh.yml" target="_blank" rel="noopener" style="background:var(--gold);color:#0a0e1a;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;white-space:nowrap;">↻ Click to trigger refresh →</a>
   </div>
 </div>
 
@@ -3574,7 +3575,9 @@
     setText('snk-buys', (s.strong_buys || 0).toLocaleString());
     setText('snk-age', relTime(feed.live_updated_at));
 
-    // Freshness banner: warn if data is older than 6h, scream if older than 24h
+    // Freshness banner: warn if data is older than 6h, scream if older than 24h.
+    // Be very explicit + actionable — visitors should know prices may not reflect
+    // the actual market when the scrape is broken.
     try {
       const banner = document.getElementById('freshness-banner');
       if (banner && feed.live_updated_at) {
@@ -3584,12 +3587,24 @@
           banner.style.display = 'none';
         } else {
           banner.style.display = '';
-          let icon = '⚠️', color = '#fb923c', bg = 'rgba(251,146,60,0.08)', border = 'rgba(251,146,60,0.25)';
-          if (hrs > 24) { icon = '🚨'; color = '#f87171'; bg = 'rgba(248,113,113,0.1)'; border = 'rgba(248,113,113,0.3)'; }
+          let icon, color, bg, border, severity;
+          if (hrs > 24) {
+            icon = '🚨'; severity = 'STALE'; color = '#f87171';
+            bg = 'rgba(248,113,113,0.12)'; border = 'rgba(248,113,113,0.4)';
+          } else if (hrs > 12) {
+            icon = '⚠️'; severity = 'AGING'; color = '#fb923c';
+            bg = 'rgba(251,146,60,0.12)'; border = 'rgba(251,146,60,0.35)';
+          } else {
+            icon = '⚠️'; severity = 'AGING'; color = '#f5c842';
+            bg = 'rgba(245,200,66,0.08)'; border = 'rgba(245,200,66,0.25)';
+          }
           banner.style.background = bg;
           banner.style.borderColor = border;
           banner.style.color = color;
-          setText('freshness-msg', icon + ' Data is ' + Math.round(hrs) + 'h old (target: 4h). Cron may have missed its slot.');
+          const msg = icon + '  ' + severity + ': prices last refreshed ' +
+            Math.round(hrs) + 'h ago (target: every 4h). ' +
+            'Scrape cron may need manual trigger — click button →';
+          setText('freshness-msg', msg);
         }
       }
     } catch (e) {}
