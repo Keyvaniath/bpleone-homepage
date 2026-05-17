@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T22:50:50.406356Z",
+  "generated_at": "2026-05-17T02:40:04.286170Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -699,10 +699,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 110,
       "wb_price": 2400.0,
-      "live_price": 2400.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 1920.0,
-      "target_sell": 2280.0,
+      "live_price": 6688.5,
+      "live_source": "single_pc",
+      "target_buy": 5350.8,
+      "target_sell": 6354.07,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 0.76,
@@ -719,28 +719,26 @@
       ],
       "image": "https://images.pokemontcg.io/ru1/7.png",
       "notes": "Red cheeks error variant. Tiny PSA 10 pop.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
-      "reconcile_reason": "no live source available; using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only pc source; within sane range of workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 40.0,
-          "grade_7": null,
-          "grade_8": 127.91,
-          "grade_9": 87.67,
-          "grade_9_5": null,
-          "grade_10": null
+          "ungraded": 642.05,
+          "grade_7": 204.5,
+          "grade_8": 1200.0,
+          "grade_9": 1320.0,
+          "grade_9_5": 2075.0,
+          "grade_10": 6688.5
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-base-set/pikachu-e3-red-cheeks-58",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$88_vs_wb_$2400"
     },
@@ -1557,7 +1555,7 @@
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-deoxys/rayquaza-gold-star-107?q=rayquaza+gold+star",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -11004,20 +11002,20 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $41 but workbook is $1800 (0.0x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $39 but workbook is $1800 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 51.2,
+          "ungraded": 63.78,
           "grade_7": null,
-          "grade_8": 46.0,
-          "grade_9": 41.0,
-          "grade_9_5": null,
-          "grade_10": null
+          "grade_8": null,
+          "grade_9": 39.0,
+          "grade_9_5": 43.0,
+          "grade_10": 179.16
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-chinese-promo/mewtwo-vstar-144s-p",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -29333,10 +29331,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 80,
       "wb_price": 18000.0,
-      "live_price": 18000.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 14400.0,
-      "target_sell": 17100.0,
+      "live_price": 58723.0,
+      "live_source": "single_pc",
+      "target_buy": 46978.4,
+      "target_sell": 55786.85,
       "score": 55,
       "signal": "HOLD",
       "d7_workbook": 0.59,
@@ -29357,29 +29355,26 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/60.jpg",
       "notes": "Char Gold Star PSA 10.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $7250 was 0.4x wb \u2014 REJECTED, using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only pc source; within sane range of workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 3397.82,
-          "grade_7": null,
+          "grade_7": 7250.0,
           "grade_8": 11188.09,
-          "grade_9": 7250.0,
-          "grade_9_5": null,
-          "grade_10": null
+          "grade_9": 12525.0,
+          "grade_9_5": 18099.0,
+          "grade_10": 58723.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=charizard+gold+star",
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-dragon-frontiers/charizard-gold-star-100",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 7250.0,
       "scrape_rejected_source": "pricecharting:fallback_grade_9"
     },
@@ -29393,10 +29388,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 70,
       "wb_price": 16000.0,
-      "live_price": 16000.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 12800.0,
-      "target_sell": 15200.0,
+      "live_price": 33609.63,
+      "live_source": "single_pc",
+      "target_buy": 26887.7,
+      "target_sell": 31929.15,
       "score": 55,
       "signal": "HOLD",
       "d7_workbook": 0.62,
@@ -29417,29 +29412,26 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/2ed0a8e8f070e2c9860e57a9d52d0f9627aa59aef90670f9b8b8f856a2231f30/60.jpg",
       "notes": "Espeon GS PSA 10.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $7297 was 0.5x wb \u2014 REJECTED, using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only pc source; within sane range of workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 4125.0,
-          "grade_7": null,
+          "grade_7": 7296.73,
           "grade_8": 7999.0,
-          "grade_9": 7296.73,
-          "grade_9_5": null,
-          "grade_10": null
+          "grade_9": 15875.6,
+          "grade_9_5": 17463.0,
+          "grade_10": 33609.63
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=espeon+gold+star",
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-pop-series-5/espeon-gold-star-16",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 7296.73,
       "scrape_rejected_source": "pricecharting:fallback_grade_9"
     },
@@ -29453,10 +29445,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 60,
       "wb_price": 22000.0,
-      "live_price": 22000.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 17600.0,
-      "target_sell": 20900.0,
+      "live_price": 63460.5,
+      "live_source": "single_pc",
+      "target_buy": 50768.4,
+      "target_sell": 60287.47,
       "score": 58,
       "signal": "HOLD",
       "d7_workbook": 3.81,
@@ -29477,29 +29469,26 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/18a487e2ef2a60bb7342532094af9d7656a6a2d1797bc10b848b37a64e6a5eb3/60.jpg",
       "notes": "Umbreon GS PSA 10.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $9206 was 0.4x wb \u2014 REJECTED, using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only pc source; within sane range of workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 5500.0,
-          "grade_7": null,
+          "grade_7": 9205.8,
           "grade_8": 9262.4,
-          "grade_9": 9205.8,
-          "grade_9_5": null,
-          "grade_10": null
+          "grade_9": 14659.91,
+          "grade_9_5": 32182.7,
+          "grade_10": 63460.5
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=umbreon+gold+star",
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-pop-series-5/umbreon-gold-star-17",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 9205.8,
       "scrape_rejected_source": "pricecharting:fallback_grade_9"
     },
@@ -29730,7 +29719,7 @@
       "pop_psa10": 350,
       "wb_price": 4200.0,
       "live_price": 4200.0,
-      "live_source": "wb_no_sources",
+      "live_source": "wb_fallback_source_rejected",
       "target_buy": 3360.0,
       "target_sell": 3990.0,
       "score": 54,
@@ -29747,22 +29736,23 @@
       "notes": "Delta Charizard PSA 10.",
       "confidence": "UNKNOWN",
       "confidence_flags": [
-        "workbook_fallback"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "no live source available; using workbook",
+      "reconcile_reason": "pc returned $58723 but workbook is $4200 (14.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 10.28,
-          "grade_7": null,
-          "grade_8": 16.5,
-          "grade_9": 13.0,
-          "grade_9_5": null,
-          "grade_10": null
+          "ungraded": 3397.82,
+          "grade_7": 7250.0,
+          "grade_8": 11188.09,
+          "grade_9": 12525.0,
+          "grade_9_5": 18099.0,
+          "grade_10": 58723.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-dragon-frontiers/charizard-gold-star-100",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -30559,10 +30549,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 280,
       "wb_price": 8500.0,
-      "live_price": 8500.0,
-      "live_source": "wb_fallback_source_rejected",
-      "target_buy": 6800.0,
-      "target_sell": 8075.0,
+      "live_price": 9475.24,
+      "live_source": "single_pc",
+      "target_buy": 7580.19,
+      "target_sell": 9001.48,
       "score": 56,
       "signal": "HOLD",
       "d7_workbook": 2.19,
@@ -30579,29 +30569,26 @@
       ],
       "image": "https://images.pokemontcg.io/ecard2/149.png",
       "notes": "1st Ed Lugia. Lower pop.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "pc returned $711 but workbook is $8500 (0.1x) \u2014 REJECTED, using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only pc source; within sane range of workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 369.88,
-          "grade_7": null,
-          "grade_8": 867.42,
-          "grade_9": 711.28,
-          "grade_9_5": null,
-          "grade_10": null
+          "ungraded": 1303.11,
+          "grade_7": 3608.41,
+          "grade_8": 4738.96,
+          "grade_9": 9475.24,
+          "grade_9_5": 12700.0,
+          "grade_10": 69034.8
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=lugia+9",
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-genesis/lugia-1st-edition-9",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "rejected_sanity_pricecharting:psa9_$711_vs_wb_$8500"
     },
@@ -30616,7 +30603,7 @@
       "pop_psa10": 165,
       "wb_price": 1800.0,
       "live_price": 1800.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "wb_fallback_source_rejected",
       "target_buy": 1440.0,
       "target_sell": 1710.0,
       "score": 59,
@@ -30644,20 +30631,20 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "no fresh source; previous live $862 was 0.5x wb \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $16113 but workbook is $1800 (9.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 334.76,
-          "grade_7": null,
+          "grade_7": 862.01,
           "grade_8": 1249.99,
-          "grade_9": 862.01,
-          "grade_9_5": null,
-          "grade_10": null
+          "grade_9": 3270.58,
+          "grade_9_5": 4766.44,
+          "grade_10": 16112.68
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-genesis/typhlosion-1st-edition-17",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -30869,10 +30856,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 95,
       "wb_price": 6500.0,
-      "live_price": 6500.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 5200.0,
-      "target_sell": 6175.0,
+      "live_price": 9488.0,
+      "live_source": "single_pc",
+      "target_buy": 7590.4,
+      "target_sell": 9013.6,
       "score": 60,
       "signal": "BUY",
       "d7_workbook": 3.22,
@@ -30885,28 +30872,26 @@
       ],
       "image": "https://images.pokemontcg.io/neo2/1.png",
       "notes": "1st Ed Espeon - low pop.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
-      "reconcile_reason": "no live source available; using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only pc source; within sane range of workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 157.4,
-          "grade_7": null,
-          "grade_8": 343.62,
-          "grade_9": 240.0,
-          "grade_9_5": null,
-          "grade_10": null
+          "ungraded": 379.98,
+          "grade_7": 553.33,
+          "grade_8": 986.0,
+          "grade_9": 1700.0,
+          "grade_9_5": 2611.45,
+          "grade_10": 9488.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=espeon+1",
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-discovery/espeon-1st-edition-1",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$240_vs_wb_$6500"
     },
@@ -30921,7 +30906,7 @@
       "pop_psa10": 110,
       "wb_price": 5500.0,
       "live_price": 5500.0,
-      "live_source": "wb_no_sources",
+      "live_source": "wb_fallback_source_rejected",
       "target_buy": 4400.0,
       "target_sell": 5225.0,
       "score": 60,
@@ -30938,22 +30923,23 @@
       "notes": "1st Ed Umbreon - the OG.",
       "confidence": "UNKNOWN",
       "confidence_flags": [
-        "workbook_fallback"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "no live source available; using workbook",
+      "reconcile_reason": "pc returned $31243 but workbook is $5500 (5.7x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 49.48,
-          "grade_7": null,
-          "grade_8": 131.24,
-          "grade_9": 75.0,
-          "grade_9_5": null,
-          "grade_10": null
+          "ungraded": 990.15,
+          "grade_7": 1987.06,
+          "grade_8": 3497.25,
+          "grade_9": 5429.99,
+          "grade_9_5": 5440.76,
+          "grade_10": 31243.33
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-discovery/umbreon-1st-edition-13",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -32142,11 +32128,11 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 95,
       "wb_price": 4200.0,
-      "live_price": 4200.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 3360.0,
-      "target_sell": 3990.0,
-      "score": 56,
+      "live_price": 6700.0,
+      "live_source": "single_pc",
+      "target_buy": 5360.0,
+      "target_sell": 6365.0,
+      "score": 55,
       "signal": "HOLD",
       "d7_workbook": 0.85,
       "d30_workbook": 9.0,
@@ -32158,28 +32144,26 @@
       ],
       "image": "https://images.pokemontcg.io/bp/8.png",
       "notes": "1st Ed Rocket's Mewtwo - low pop.",
-      "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback"
-      ],
-      "reconcile_reason": "no live source available; using workbook",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only pc source; within sane range of workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 179.24,
-          "grade_7": null,
-          "grade_8": 310.83,
-          "grade_9": 229.4,
-          "grade_9_5": null,
-          "grade_10": null
+          "ungraded": 374.74,
+          "grade_7": 399.99,
+          "grade_8": 651.43,
+          "grade_9": 1401.7,
+          "grade_9_5": 1542.0,
+          "grade_10": 6700.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-gym-challenge/rocket%27s-mewtwo-1st-edition-14",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$229_vs_wb_$4200"
     },
@@ -38333,20 +38317,20 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $26839 but workbook is $1800 (14.9x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $26978 but workbook is $1800 (15.0x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 1300.0,
-          "grade_7": 3574.14,
+          "ungraded": 1486.66,
+          "grade_7": 3573.29,
           "grade_8": 5441.63,
-          "grade_9": 8999.21,
-          "grade_9_5": 9899.0,
-          "grade_10": 26839.27
+          "grade_9": 9384.51,
+          "grade_9_5": 10323.0,
+          "grade_10": 26978.44
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-dragon-frontiers/mew-gold-star-101",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
