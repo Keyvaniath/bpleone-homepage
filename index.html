@@ -1699,6 +1699,63 @@
   }
   .flip-hero-pill .flip-dot { width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:pulse 1.6s infinite; }
   .flip-hero-pill strong { color: var(--green); }
+
+  /* Polish: animate count-up on hero stats when they appear */
+  @keyframes countUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hsc-value {
+    animation: countUp 0.5s ease-out forwards;
+    animation-delay: var(--anim-delay, 0s);
+  }
+
+  /* Polish: pulse glow on BUY counts when > 0 */
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 rgba(74,222,128,0.4); }
+    50% { box-shadow: 0 0 18px rgba(74,222,128,0.5); }
+  }
+  #alerts-buy-count:not(:empty)[data-alive="1"] {
+    animation: pulseGlow 2s ease-in-out infinite;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(74,222,128,0.12);
+  }
+
+  /* Polish: smooth hover on dashboard widget rows */
+  section a[href*="/card.html?id="] { transition: background 0.18s, transform 0.15s; }
+  section a[href*="/card.html?id="]:hover {
+    background: rgba(245,200,66,0.06) !important;
+    transform: translateX(2px);
+  }
+
+  /* Polish: section headings — glowing on hover for sub-nav */
+  .sub-nav a {
+    transition: color 0.2s, background 0.2s;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+  .sub-nav a:hover {
+    color: var(--gold);
+    background: rgba(245,200,66,0.08);
+    text-shadow: 0 0 12px rgba(245,200,66,0.4);
+  }
+
+  /* Polish: ticker tape — make it smoother + add subtle gradient fade on edges */
+  .tape-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .tape-wrap::before, .tape-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 80px;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .tape-wrap::before { left: 0; background: linear-gradient(90deg, var(--bg) 0%, transparent 100%); }
+  .tape-wrap::after { right: 0; background: linear-gradient(270deg, var(--bg) 0%, transparent 100%); }
 </style>
 
 <!-- ============ LIVE TICKER TAPE ============ -->
