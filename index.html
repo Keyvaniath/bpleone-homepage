@@ -2349,6 +2349,7 @@
         <div class="journal-kpi"><div class="lbl">Win Rate</div><div class="val" id="j-winrate">—</div></div>
         <div class="journal-kpi"><div class="lbl">Open Positions</div><div class="val" id="j-open">—</div></div>
       </div>
+      <div id="monthly-pl-chart" style="margin-bottom: 16px;"></div>
       <h3 style="font-size: 13px; font-family:'JetBrains Mono',monospace; color:var(--text-dim); letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 10px;">Recent Closes</h3>
       <div style="overflow-x:auto;">
         <table class="journal-table" id="journal-table">
@@ -3309,6 +3310,53 @@
     if (totL) totL.textContent = s.closed_trades + ' closed · $' + Math.round(s.total_volume_sold).toLocaleString() + ' lifetime volume · avg hold ' + (s.avg_hold_days||0).toFixed(0) + 'd';
     const totR = document.getElementById('j-tax');
     if (totR) totR.textContent = 'LT: ' + s.lt_count + ' ($' + Math.round(s.lt_pl).toLocaleString() + ') · ST: ' + s.st_count + ' ($' + Math.round(s.st_pl).toLocaleString() + ')';
+
+    // Monthly P/L sparkline chart (cumulative)
+    const monthly = data.monthly_pl || [];
+    const chartEl = document.getElementById('monthly-pl-chart');
+    if (chartEl) {
+      if (monthly.length === 0) {
+        chartEl.innerHTML = '';
+      } else {
+        // Build cumulative array
+        let cum = 0;
+        const cumData = monthly.map(m => { cum += m.pl; return { month: m.month, pl: m.pl, cum: cum, trades: m.trades }; });
+        const W = 720, H = 110, padL = 50, padR = 20, padT = 16, padB = 22;
+        const innerW = W - padL - padR, innerH = H - padT - padB;
+        const minC = Math.min(0, ...cumData.map(d => d.cum));
+        const maxC = Math.max(0, ...cumData.map(d => d.cum));
+        const range = (maxC - minC) || 1;
+        const x = i => padL + (cumData.length === 1 ? innerW / 2 : (i / (cumData.length - 1)) * innerW);
+        const y = v => padT + (1 - (v - minC) / range) * innerH;
+        // Bars
+        const bars = cumData.map((d, i) => {
+          const bx = x(i) - 12;
+          const bw = 24;
+          const baseY = y(0);
+          const valY = y(d.pl >= 0 ? d.pl : 0);
+          const bh = Math.abs(y(d.pl) - baseY);
+          const fill = d.pl >= 0 ? 'var(--green)' : 'var(--red)';
+          return `<rect x="${bx}" y="${Math.min(baseY, y(d.pl))}" width="${bw}" height="${bh}" fill="${fill}" opacity="0.7" rx="2"/>`;
+        }).join('');
+        // Cumulative line
+        const linePts = cumData.map((d, i) => `${x(i)},${y(d.cum)}`).join(' ');
+        // Labels
+        const labels = cumData.map((d, i) => `<text x="${x(i)}" y="${H - 6}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="middle">${d.month}</text>`).join('');
+        // Y-axis 0 line
+        const zeroLine = `<line x1="${padL}" y1="${y(0)}" x2="${W - padR}" y2="${y(0)}" stroke="var(--border)" stroke-dasharray="2,3"/>`;
+        const svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" style="width:100%;max-width:${W}px;height:auto;display:block;">
+          <text x="${padL - 8}" y="${y(maxC) + 4}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="end">$${Math.round(maxC).toLocaleString()}</text>
+          <text x="${padL - 8}" y="${y(minC) + 4}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="end">$${Math.round(minC).toLocaleString()}</text>
+          ${zeroLine}
+          ${bars}
+          <polyline points="${linePts}" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          ${cumData.map((d, i) => `<circle cx="${x(i)}" cy="${y(d.cum)}" r="3" fill="var(--gold)" stroke="var(--bg-card)" stroke-width="2"/>`).join('')}
+          ${labels}
+          <text x="${W - padR}" y="${padT - 4}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="end">cumulative P/L · bars=monthly</text>
+        </svg>`;
+        chartEl.innerHTML = svg;
+      }
+    }
 
     // Open positions table
     const openRows = data.open_positions_top10 || [];
