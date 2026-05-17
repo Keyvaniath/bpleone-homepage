@@ -1456,10 +1456,12 @@
 <div class="sub-nav">
   <div class="container">
     <a href="#future-winners">🔮 Future Winners</a>
+    <a href="#alerts">🔔 Buy/Sell</a>
     <a href="#top500">🏆 Top 500</a>
+    <a href="#moves">📈 Today</a>
+    <a href="#morning-brief">☕ Brief</a>
+    <a href="#data-quality">🔍 DQ</a>
     <a href="#live">📊 Movers</a>
-    <a href="#featured-sets-section">🔥 New Sets</a>
-    <a href="#brief">📰 Brief</a>
     <span class="stats" id="sub-nav-stats">774 tracked · <strong id="snk-buys">—</strong> STRONG BUYs · feed <strong id="snk-age">—</strong></span>
   </div>
 </div>
@@ -1598,6 +1600,82 @@
       <div class="brief-tldr" id="brief-tldr"></div>
       <div class="brief-body" id="brief-body">
         <p style="color:var(--text-mute);">Loading today's market brief…</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICE ALERTS — buy/sell triggers ============ -->
+<section id="alerts" style="padding:24px 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
+        🔔 Price Alerts · <span style="color:var(--gold);">Buy/Sell Triggers</span>
+      </h2>
+      <span id="alerts-meta" style="color:var(--text-mute);font-size:12px;">Cards trading below 80% wb (BUY) or above 110% wb (SELL)</span>
+    </div>
+    <div style="display:grid;gap:14px;grid-template-columns:1fr 1fr;">
+      <div style="border:1px solid #4ade8055;border-radius:8px;padding:16px;background:linear-gradient(180deg,rgba(74,222,128,0.08),transparent);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+          <div style="font-size:13px;color:#4ade80;font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">📥 BUY ALERTS</div>
+          <span id="alerts-buy-count" style="color:#4ade80;font-family:'JetBrains Mono',monospace;font-weight:700;">—</span>
+        </div>
+        <div id="alerts-buys" style="display:flex;flex-direction:column;gap:6px;"><p style="color:var(--text-mute);font-size:12px;">Loading…</p></div>
+      </div>
+      <div style="border:1px solid #f8717155;border-radius:8px;padding:16px;background:linear-gradient(180deg,rgba(248,113,113,0.06),transparent);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+          <div style="font-size:13px;color:#f87171;font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">📤 SELL ALERTS</div>
+          <span id="alerts-sell-count" style="color:#f87171;font-family:'JetBrains Mono',monospace;font-weight:700;">—</span>
+        </div>
+        <div id="alerts-sells" style="display:flex;flex-direction:column;gap:6px;"><p style="color:var(--text-mute);font-size:12px;">Loading…</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TODAY'S MOVES — daily diff ============ -->
+<section id="moves" style="padding:24px 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
+        📈 Today's Moves · <span style="color:var(--gold);">Live Diff</span>
+      </h2>
+      <span id="moves-meta" style="color:var(--text-mute);font-size:12px;">comparing vs prior snapshot</span>
+    </div>
+    <div id="moves-card" style="display:grid;gap:14px;grid-template-columns:1fr 1fr;">
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(74,222,128,0.05);">
+        <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">🚀 Top Gainers</div>
+        <div id="moves-gainers" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(248,113,113,0.05);">
+        <div style="font-size:11px;color:var(--text-mute);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">📉 Top Losers</div>
+        <div id="moves-losers" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MORNING BRIEF — daily actionable picks ============ -->
+<section id="morning-brief" style="padding:24px 0;border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:22px;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">
+        ☕ Morning Brief · <span style="color:var(--gold);">Action Items</span>
+      </h2>
+      <span style="color:var(--text-mute);font-size:12px;">3 lists you should scan in 30 seconds</span>
+    </div>
+    <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(74,222,128,0.05);">
+        <div style="font-size:11px;color:#4ade80;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">⭐ Top STRONG BUYs (HIGH conf)</div>
+        <div id="brief-buys" style="display:flex;flex-direction:column;gap:6px;font-size:13px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(251,191,36,0.05);">
+        <div style="font-size:11px;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">🔧 Reconciler caught</div>
+        <div id="brief-fixes" style="display:flex;flex-direction:column;gap:6px;font-size:12px;"><p style="color:var(--text-mute);">Loading…</p></div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:8px;padding:16px;background:rgba(248,113,113,0.05);">
+        <div style="font-size:11px;color:#f87171;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">⚠ Needs your override</div>
+        <div id="brief-overrides" style="display:flex;flex-direction:column;gap:6px;font-size:12px;"><p style="color:var(--text-mute);">Loading…</p></div>
       </div>
     </div>
   </div>
@@ -2497,6 +2575,71 @@
         }
       }
     } catch (e) { console.error('Data quality render failed:', e); }
+
+    // Price Alerts widget — from feed.price_alerts
+    try {
+      const pa = feed.price_alerts;
+      if (pa) {
+        setText('alerts-buy-count', (pa.buy_alerts_count || 0).toLocaleString());
+        setText('alerts-sell-count', (pa.sell_alerts_count || 0).toLocaleString());
+        function alertRow(a, kind) {
+          const pct = kind === 'buy' ? a.discount_pct : a.premium_pct;
+          const cls = kind === 'buy' ? '#4ade80' : '#f87171';
+          const sign = kind === 'buy' ? 'off' : 'premium';
+          const just = a.just_crossed_today ? ' <span style="color:var(--gold);font-size:9px;">⚡ today</span>' : '';
+          return '<a href="/card.html?id=' + a.cid + '" style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);">' +
+            '<span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;">' + (a.name || '?').substring(0,26) + ' <span style="color:var(--text-mute);font-size:10px;">' + (a.variant || '').substring(0,7) + '</span>' + just + '</span>' +
+            '<span style="font-family:monospace;color:' + cls + ';font-weight:700;margin-left:8px;font-size:12px;">' + fmtMoney(a.live_price) + ' <span style="color:var(--text-mute);font-size:10px;">' + Math.round(pct) + '% ' + sign + '</span></span>' +
+          '</a>';
+        }
+        const buysHtml = (pa.top_buy_alerts || []).slice(0,6).map(a => alertRow(a, 'buy')).join('');
+        const sellsHtml = (pa.top_sell_alerts || []).slice(0,6).map(a => alertRow(a, 'sell')).join('');
+        setHTML('alerts-buys', buysHtml || '<p style="color:var(--text-mute);font-size:12px;">No buy alerts</p>');
+        setHTML('alerts-sells', sellsHtml || '<p style="color:var(--text-mute);font-size:12px;">No sell alerts</p>');
+      }
+    } catch (e) { console.error('alerts render', e); }
+
+    // Today's Moves widget — from feed.price_diff
+    try {
+      const pd = feed.price_diff;
+      if (pd) {
+        function moveRow(m) {
+          const cls = m.delta_pct > 0 ? '#4ade80' : '#f87171';
+          const arrow = m.delta_pct > 0 ? '↑' : '↓';
+          return '<a href="/card.html?id=' + (m.cid||'') + '" style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);font-size:12px;">' +
+            '<span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + (m.name || m.cid || '?').substring(0,28) + ' <span style="color:var(--text-mute);font-size:10px;">' + (m.variant || '').substring(0,6) + '</span></span>' +
+            '<span style="font-family:monospace;color:' + cls + ';font-weight:700;margin-left:8px;">' + arrow + ' ' + Math.abs(m.delta_pct).toFixed(1) + '%</span>' +
+          '</a>';
+        }
+        const gainersHtml = (pd.top_gainers || []).slice(0,5).map(moveRow).join('') || '<p style="color:var(--text-mute);font-size:12px;">No real moves yet (need 2+ daily scrapes)</p>';
+        const losersHtml = (pd.top_losers || []).slice(0,5).map(moveRow).join('') || '<p style="color:var(--text-mute);font-size:12px;">No losses (or low data)</p>';
+        setHTML('moves-gainers', gainersHtml);
+        setHTML('moves-losers', losersHtml);
+        const ago = pd.prior_snapshot_at ? relTime(pd.prior_snapshot_at) : '—';
+        setText('moves-meta', 'vs snapshot from ' + ago + ' · ' + (pd.real_moves_count || 0) + ' real moves');
+      }
+    } catch (e) { console.error('moves render', e); }
+
+    // Morning Brief widget — from feed.morning_brief
+    try {
+      const mb = feed.morning_brief;
+      if (mb && mb.top_strong_buys) {
+        const buysHtml = (mb.top_strong_buys || []).slice(0,4).map(c => {
+          return '<a href="/card.html?id=' + c.cid + '" style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);">' +
+            '<span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;">' + (c.name || '?').substring(0,28) + '</span>' +
+            '<span style="font-family:monospace;color:var(--gold);font-weight:700;margin-left:8px;font-size:12px;">' + fmtMoney(c.price) + ' <span style="color:var(--text-mute);font-size:10px;">·' + (c.score||0) + '</span></span>' +
+          '</a>';
+        }).join('');
+        setHTML('brief-buys', buysHtml || '<p style="color:var(--text-mute);font-size:12px;">No HIGH-confidence STRONG BUYs</p>');
+        setHTML('brief-fixes',
+          '<p style="font-size:12px;line-height:1.5;color:var(--text-dim);">Reconciler caught <strong style="color:var(--gold);">' + (mb.summary?.reconciler_fixes_count || 0) + '</strong> bad scrapes this run. Each was reverted to a safe workbook value.</p>' +
+          '<a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk/blob/main/scrape_errors.json" target="_blank" rel="noopener" style="font-size:11px;color:var(--gold);text-decoration:none;">View log →</a>'
+        );
+        setHTML('brief-overrides',
+          '<p style="font-size:12px;line-height:1.5;color:var(--text-dim);"><strong style="color:#f87171;">' + (mb.summary?.needs_override_count || 0) + '</strong> high-value cards stuck on workbook fallback. Add overrides via the /pricing-admin tab on the Pro dashboard to set live prices.</p>'
+        );
+      }
+    } catch (e) { console.error('brief render', e); }
 
     // Live-tracking freshness pill: shows how long we have history + how stale the scrape is
     const histDays = s.history_age_days || 0;
