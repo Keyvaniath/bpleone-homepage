@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pipeline Status · bpleone.com</title>
+<meta name="description" content="Live operational health of the bpleone.com Pokemon TCG trading desk. 20-step cron pipeline transparency.">
+<meta property="og:title" content="bpleone.com pipeline status">
+<meta property="og:description" content="Real-time operational health of the trading desk's 20-step cron pipeline.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bpleone.com/status.html">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/status.html">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+    background-image: radial-gradient(circle at 20% 10%, rgba(74,222,128,0.04) 0, transparent 40%);
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+  header.page-hero { padding: 56px 0 24px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--green);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+  h1 .accent { color: var(--green); }
+  .lead { color: var(--text-dim); font-size: 16px; margin-bottom: 12px; }
+  .big-stat {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    padding: 22px 28px; border-radius: 10px; margin: 24px 0;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 14px;
+  }
+  .big-stat.yellow { border-left-color: var(--gold); }
+  .big-stat.red { border-left-color: var(--red); }
+  .big-stat .lbl { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; }
+  .big-stat .v { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; }
+  .big-stat .v.green { color: var(--green); }
+  .big-stat .v.yellow { color: var(--gold); }
+  .big-stat .v.red { color: var(--red); }
+  .big-stat .breakdown { display: flex; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim); }
+  .check-table {
+    width: 100%; border-collapse: collapse;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden;
+    margin-top: 32px;
+  }
+  .check-table th, .check-table td {
+    padding: 12px 16px; text-align: left;
+    border-bottom: 1px solid var(--border); font-size: 13px;
+  }
+  .check-table th {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--text-mute); letter-spacing: 0.08em; text-transform: uppercase;
+    font-weight: 500; background: rgba(10,14,26,0.4);
+  }
+  .check-table tr:last-child td { border-bottom: none; }
+  .check-table .num { font-family: 'JetBrains Mono', monospace; text-align: right; }
+  .check-table .status-pill {
+    display: inline-block; padding: 3px 10px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .check-table .status-pill.green { background: rgba(74,222,128,0.15); color: var(--green); }
+  .check-table .status-pill.yellow { background: rgba(245,200,66,0.15); color: var(--gold); }
+  .check-table .status-pill.red { background: rgba(248,113,113,0.15); color: var(--red); }
+  .check-table .reason { color: var(--text-mute); font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 40px 0 12px; }
+  h2::before { content: '▸ '; color: var(--green); }
+  .stale-note { color: var(--text-mute); font-size: 12px; margin-top: 16px; font-family: 'JetBrains Mono', monospace; }
+  footer { padding: 40px 0 30px; color: var(--text-mute); font-size: 12px; text-align: center; border-top: 1px solid var(--border); margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/status.html" class="active">⚙ Status</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">⚙ Operational Status</span>
+    <h1>Pipeline <span class="accent">Status</span></h1>
+    <p class="lead">Live operational health of the 20-step cron pipeline. Updated every 4 hours alongside the price scrape.</p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="big-stat" id="big-stat">
+      <div>
+        <div class="lbl" id="big-status-label">⏳ Loading overall status</div>
+        <div class="v" id="big-status-value">—</div>
+      </div>
+      <div class="breakdown" id="big-breakdown">
+        <span><span class="v green" id="g-count">—</span> green</span>
+        <span><span class="v yellow" id="y-count">—</span> yellow</span>
+        <span><span class="v red" id="r-count">—</span> red</span>
+      </div>
+    </div>
+
+    <h2>Per-file health</h2>
+    <p class="lead" style="font-size: 14px;">Every output file in the pipeline checked for existence, size, JSON validity, and freshness. Stale or missing files surface immediately.</p>
+
+    <table class="check-table">
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Status</th>
+          <th class="num">Size</th>
+          <th class="num">Age</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody id="check-rows">
+        <tr><td colspan="5" style="padding:30px;text-align:center;color:var(--text-mute);">⏳ Loading status…</td></tr>
+      </tbody>
+    </table>
+
+    <p class="stale-note" id="last-update">—</p>
+
+    <h2>Cron schedule</h2>
+    <p class="lead" style="font-size: 14px;">GitHub Actions cron: <code style="color:var(--gold)">0 */4 * * *</code> — every 4 hours at :00 UTC. Total runtime budget: 26 minutes (graceful exit before GH Actions 30min timeout).</p>
+
+    <h2>The 20-step pipeline</h2>
+    <ol style="margin-left: 28px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim); line-height: 1.8;">
+      <li><code>live_prices.py</code> — scrape PriceCharting + PokemonPriceTracker + TCGPlayer + eBay (~25 min)</li>
+      <li><code>reconcile_prices.py</code> — multi-rule price reconciler w/ grade-ladder sanity check</li>
+      <li><code>auto_data_quality_check.py</code> — DQ A-F grading across 5 issue categories</li>
+      <li><code>build_price_diff.py</code> — today's price moves</li>
+      <li><code>build_morning_brief.py</code> — daily curated picks</li>
+      <li><code>build_price_alerts.py</code> — BUY/SELL triggers at price targets</li>
+      <li><code>track_source_reliability.py</code> — per-source accuracy stats</li>
+      <li><code>build_daily_recap_v2.py</code> — email-ready daily recap</li>
+      <li><code>learn_signal_outcomes.py</code> — log every signal emission</li>
+      <li><code>optimize_fw_weights.py</code> — Pearson-correlation retune of FW weights</li>
+      <li><code>track_psa_pop_changes.py</code> — daily PSA pop snapshots + signal deltas</li>
+      <li><code>build_learning_summary.py</code> — surface weights for homepage</li>
+      <li><code>arbitrage_scanner_v2.py</code> — multi-path EV arb scanner</li>
+      <li><code>build_trading_journal.py</code> — workbook P/L → JSON</li>
+      <li><code>build_past_picks_scoreboard.py</code> — model batting average</li>
+      <li><code>build_set_heat.py</code> — per-set composite heat scores</li>
+      <li><code>build_sealed_market.py</code> — sealed product scanner</li>
+      <li><code>build_email_digest.py</code> — daily HTML email digest</li>
+      <li><code>build_weekly_recap.py</code> — weekly recap HTML</li>
+      <li><code>build_auto_tweet.py</code> — pre-formatted Twitter + LinkedIn posts</li>
+      <li><code>build_set_rotation_predictor.py</code> — momentum-of-momentum per set</li>
+      <li><code>build_risk_adjusted_tracker.py</code> — Sharpe-like risk metric</li>
+      <li><code>pipeline_self_audit.py</code> — RED/YELLOW/GREEN per output file</li>
+      <li><code>build_homepage_feed.py</code> + <code>build_card_data.py</code> + commit + push</li>
+    </ol>
+
+    <h2>Open source</h2>
+    <p class="lead" style="font-size: 14px;">Every script and every output is public. The Pokemon TCG repo is at <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk" target="_blank" style="color: var(--green);">Keyvaniath/pokemon-tcg-trading-desk</a>. Cron logs are visible in the Actions tab. Audit anything.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    bpleone.com · operational transparency · <a href="/" style="color:var(--text-mute);">back to live</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const HEALTH_URLS = [
+    '/pipeline_health.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/pipeline_health.json'
+  ];
+  function tryFetch(urls, i) {
+    return fetch(urls[i], {cache: 'no-store'}).then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).catch(err => {
+      if (i + 1 < urls.length) return tryFetch(urls, i + 1);
+      throw err;
+    });
+  }
+  function render(data) {
+    if (!data) return;
+    const o = (data.overall || 'GREEN').toLowerCase();
+    const counts = data.counts || {};
+    document.getElementById('big-stat').className = 'big-stat ' + o;
+    document.getElementById('big-status-label').textContent = (o === 'green' ? '✓ ALL SYSTEMS NORMAL' : o === 'yellow' ? '! SOME FILES AGING' : '✗ PIPELINE HEALTH DEGRADED');
+    document.getElementById('big-status-value').textContent = (data.overall || '—');
+    document.getElementById('big-status-value').className = 'v ' + o;
+    document.getElementById('g-count').textContent = counts.green || 0;
+    document.getElementById('y-count').textContent = counts.yellow || 0;
+    document.getElementById('r-count').textContent = counts.red || 0;
+
+    const rows = (data.checks || []).map(c => {
+      const st = (c.status || 'unknown').toLowerCase();
+      const size = c.size_bytes != null ? (c.size_bytes >= 1000 ? (c.size_bytes/1024).toFixed(1) + 'KB' : c.size_bytes + 'B') : '—';
+      const age = c.age_hours != null ? c.age_hours.toFixed(1) + 'h' : '—';
+      return '<tr>' +
+        '<td><code style="color:var(--text);">' + (c.file || '—') + '</code></td>' +
+        '<td><span class="status-pill ' + st + '">' + (c.status || '—') + '</span></td>' +
+        '<td class="num">' + size + '</td>' +
+        '<td class="num">' + age + '</td>' +
+        '<td class="reason">' + (c.reason || (st === 'green' ? 'OK' : '—')) + '</td>' +
+      '</tr>';
+    }).join('');
+    document.getElementById('check-rows').innerHTML = rows || '<tr><td colspan="5" style="padding:30px;text-align:center;color:var(--text-mute);">No checks yet.</td></tr>';
+    if (data.generated_at) {
+      const dt = new Date(data.generated_at);
+      const ago = Math.round((Date.now() - dt.getTime()) / (1000 * 60));
+      document.getElementById('last-update').textContent = 'Audit generated ' + ago + ' minutes ago · auto-refresh every 60s';
+    }
+  }
+  function load() {
+    tryFetch(HEALTH_URLS, 0).then(render).catch(err => {
+      console.warn('Health load failed:', err);
+      document.getElementById('check-rows').innerHTML = '<tr><td colspan="5" style="padding:30px;text-align:center;color:var(--text-mute);">Health data unavailable — first cron run will populate.</td></tr>';
+    });
+  }
+  load();
+  setInterval(load, 60000);
+})();
+</script>
+
+</body>
+</html>
