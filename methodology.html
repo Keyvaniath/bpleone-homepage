@@ -294,6 +294,125 @@ qualified       = (net_profit ≥ $15) AND (roi ≥ 0.20)
     <h2>Open data, audit-ready</h2>
     <p>Every artifact mentioned here is in the public <a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk" target="_blank" style="color: var(--gold);">trading-desk repo</a>. The scoring code is in <code>streamlit_app.py</code> (function <code>compute_score</code>). The scraper is <code>live_prices.py</code>. The sweep tools are <code>sweep_pc_now.py</code> and <code>sweep_ppt_holdouts.py</code>. Fork, validate, suggest changes.</p>
 
+    <hr style="margin: 60px 0 40px; border: 0; border-top: 1px dashed var(--border);">
+
+    <h1 style="font-size: 32px; margin-bottom: 8px;"><span class="accent">Layer 2:</span> Self-Learning + Forward Models</h1>
+    <p class="lead">The composite score above is the static foundation. Layer 2 is the adaptive layer — models that re-tune themselves, surface forward-looking opportunities, and prove their own batting average.</p>
+
+    <h2>🔮 Future Winners — 6-component predictive model</h2>
+    <p>The composite score is backward-looking (it summarizes what the price IS). The Future Winners model is forward-looking (what the price IS LIKELY TO BECOME in 30-90 days).</p>
+    <div class="formula">
+fw_score = w₁·momentum_rising + w₂·scarcity + w₃·accessibility
+         + w₄·hidden_alpha + w₅·tier_premium + w₆·liquidity
+    </div>
+    <p>Seed weights: <code>0.25 / 0.20 / 0.15 / 0.15 / 0.15 / 0.10</code> (re-tuned by the optimizer — see next).</p>
+    <ul>
+      <li><strong>momentum_rising:</strong> magnitude + acceleration of 7-day vs 30-day price change</li>
+      <li><strong>scarcity:</strong> PSA 10 population inverse-log scaled, gem-rate penalty</li>
+      <li><strong>accessibility:</strong> liquidity proxy — under-$5K cards score higher (broader buyer pool)</li>
+      <li><strong>hidden_alpha:</strong> chase-variant premium (SIR / Full Art / Gold Star multipliers)</li>
+      <li><strong>tier_premium:</strong> T1 / T2 designation weight</li>
+      <li><strong>liquidity:</strong> raw NM availability on TCGP, eBay sold cadence</li>
+    </ul>
+    <p>Output: <a href="https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/future_winners.json" target="_blank" style="color:var(--gold)"><code>future_winners.json</code></a>. Picks visible on the homepage's 🔮 Future Winners section.</p>
+
+    <h2>🧠 Self-Learning Engine — Pearson-correlation optimizer</h2>
+    <p>Static weights are a guess. The Self-Learning Engine retunes them empirically using realized 7-day returns. The process:</p>
+    <ol style="margin-left: 24px; margin-bottom: 20px;">
+      <li>Every Future Winners emission logs its 6 component scores to <code>fw_emissions.jsonl</code></li>
+      <li>After 7 days, the emission's 7-day-forward realized return is computed from <code>price_history.jsonl</code></li>
+      <li>Pearson correlation is computed between each component's score and realized return</li>
+      <li>New weights = <code>0.7 × old_weights + 0.3 × correlation-derived_weights</code> (Bayesian-style smoothing)</li>
+      <li>Weights clamped to <code>[0.05, 0.40]</code> per component, renormalized to sum to 1.0</li>
+      <li>Updated <code>fw_weights.json</code> is consumed by the next Future Winners build</li>
+    </ol>
+    <div class="formula">
+new_weight[c] = clamp(0.05, 0.40, 0.7·old + 0.3·correlation(c, realized_return))
+    </div>
+    <p><strong>Maturity threshold:</strong> minimum 30 mature samples (≥7 days old) before any retrain runs. Below threshold, system falls back to seed weights. Initial retrain ~ 7-10 days after launch as emissions accumulate.</p>
+    <p>Outputs: <code>fw_weights.json</code> (current), <code>fw_weights_history.jsonl</code> (every update with sample count + correlations for auditability). Visible on the homepage 🧠 Self-Learning Engine card.</p>
+
+    <h2>💰 Arbitrage Scanner v2 — multi-path EV model</h2>
+    <p>For every card, the scanner enumerates 4 profit paths and reports the one with highest expected value:</p>
+    <h3>Path A · RAW → PSA 10 (grade-and-flip)</h3>
+    <div class="formula">
+EV_rev = Σ probₖ × (priceₖ × (1 − ebay_fee) − ship_out)
+EV     = EV_rev − (raw_buy + grade_fee + ship_to_psa)
+    </div>
+    <p>Probabilities by era: Modern (SwSh+) = 25/45/20/10 for PSA 10/9/8/&lt;7. Mid (XY-SM) = 15/40/25/20. Vintage <strong>excluded</strong> from this path because PriceCharting "ungraded" prices reflect damaged copies — distorts the math.</p>
+    <h3>Path B · RAW → PSA 9 Floor</h3>
+    <p>Conservative variant: PSA 10 hits treated as PSA 9 (locks in lower upside, lower variance). Same probability table.</p>
+    <h3>Path C · PSA 9 → PSA 10 Cross-Grade</h3>
+    <p>Buy a PSA 9 slab, crack it, resubmit. Probabilities: 20% upgrade, 60% stays at 9, 20% downgrade. Only viable when <code>p10/p9 ≥ 3.0×</code> and PSA 9 entry &lt; $5,000.</p>
+    <h3>Path D · RAW Retail Flip</h3>
+    <p>Instant arbitrage: TCG-listed vs eBay-sold spread ≥ 15%. No grading required, ~7-day hold.</p>
+    <p><strong>Ceiling:</strong> 350% ROI cap — anything above is treated as data artifact, not opportunity. <strong>Fees modeled:</strong> 13.25% eBay FVF, $25 PSA grading, $5 inbound ship, $10 outbound. Output: <code>arbitrage_v2.json</code>, top 100 by EV-profit.</p>
+
+    <h2>📊 Past Picks Scoreboard — model batting average</h2>
+    <p>For every signal logged in <code>signal_log.jsonl</code>, compute realized return from emission-time price to current price:</p>
+    <div class="formula">
+realized_return = (current_price − emission_price) / emission_price
+is_win          = (BUY-signal AND return &gt; 0) OR (SELL-signal AND return &lt; 0)
+    </div>
+    <p>Bucketed by signal type and age (<1d / 1-7d / 7-30d / 30d+). Win rate + avg return reported per bucket. Anything &lt; 24h flagged as "pending" (too fresh to call). Visible in the 🧠 card as a strip beneath the weights.</p>
+
+    <h2>📒 Trading Journal — Brandon's real trades</h2>
+    <p>Reads two workbook sheets:</p>
+    <ul>
+      <li><strong>Realized P&L:</strong> closed trades (Sale ID, CardID, buy date, sell date, qty, total cost, gross sale, fees%, net proceeds, P&L, holding days)</li>
+      <li><strong>Inventory:</strong> open positions (Item ID, CardID, Acquired, Qty, Cost/Unit)</li>
+    </ul>
+    <p>Computes portfolio ROI, win rate, average hold days, LT vs ST tax split (LT = &gt;365 days, qualifies for capital gains rate). Output: <code>trading_journal.json</code>. Visible in the homepage 📒 Track Record section.</p>
+
+    <h2>🔥 Set Heat Tracker — macro-level signal</h2>
+    <div class="formula">
+heat_score = 0.4·avg_score + 0.3·(BUY_density·100) + 1.5·avg_d7 + 1.0·avg_d30
+    </div>
+    <p>Per-set composite. When a set's heat_score &gt; 100, the whole set is structurally heating up — individual card moves tend to correlate. Useful for "is this an Evolving Skies pump or just one card?" decisions.</p>
+
+    <h2>📦 Sealed Market Scanner</h2>
+    <p>Separate market from singles. Buckets products into Booster Box, ETB, Booster Bundle, Premium Collection, Collection Box, Theme Deck, Other. Surfaces:</p>
+    <ul>
+      <li>Top BUYs (composite-score &gt; 60 sealed products)</li>
+      <li>Undervalued (live &gt; 15% below workbook)</li>
+      <li>Cheapest / priciest per-pack (booster boxes apples-to-apples comparison)</li>
+    </ul>
+
+    <h2>🔍 Pipeline Health Self-Audit</h2>
+    <p>Every cron cycle ends with <code>pipeline_self_audit.py</code> checking 19 output files for:</p>
+    <ul>
+      <li><strong>Existence</strong> — file present on disk</li>
+      <li><strong>Min size</strong> — catches "wrote empty file" bugs</li>
+      <li><strong>JSON validity</strong> (where applicable)</li>
+      <li><strong>Freshness</strong> — modify-time and embedded <code>generated_at</code> within <code>max_age_hours</code></li>
+    </ul>
+    <p>Each file gets <span style="color:var(--green)">GREEN</span> / <span style="color:var(--gold)">YELLOW</span> / <span style="color:var(--red)">RED</span>. Overall pipeline health surfaces as a colored dot in the homepage sub-nav. Output: <code>pipeline_health.json</code>.</p>
+
+    <h2>Full automation cron pipeline</h2>
+    <p>Every 4 hours, GitHub Actions runs:</p>
+    <div class="formula" style="font-size: 11px; line-height: 1.7;">
+1. live_prices.py — scrape PC, PPT, TCGP, eBay (~25min)
+2. reconcile_prices.py — multi-rule price reconciler
+3. auto_data_quality_check.py — DQ A-F grading
+4. build_price_diff.py — today's moves
+5. build_morning_brief.py — daily picks
+6. build_price_alerts.py — BUY/SELL triggers
+7. track_source_reliability.py — per-source stats
+8. build_daily_recap_v2.py — email-ready recap
+9. learn_signal_outcomes.py — log signals
+10. optimize_fw_weights.py — Pearson retune
+11. track_psa_pop_changes.py — pop deltas
+12. build_learning_summary.py — surface weights
+13. arbitrage_scanner_v2.py — EV paths
+14. build_trading_journal.py — workbook P/L
+15. build_past_picks_scoreboard.py — batting avg
+16. build_set_heat.py — per-set composite
+17. build_sealed_market.py — sealed scanner
+18. build_email_digest.py — HTML email
+19. pipeline_self_audit.py — health check
+20. build_homepage_feed.py + cards + commit + push
+    </div>
+
   </div>
 </main>
 
