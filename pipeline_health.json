@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-17T14:20:56.280334+00:00",
+  "generated_at": "2026-05-17T15:27:40.478228+00:00",
   "overall": "YELLOW",
   "counts": {
-    "green": 9,
-    "yellow": 15,
+    "green": 23,
+    "yellow": 1,
     "red": 0,
     "total": 24
   },
@@ -13,7 +13,7 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 767639,
-      "age_hours": 0.0,
+      "age_hours": 0.2,
       "status": "GREEN"
     },
     {
@@ -56,97 +56,89 @@
       "file": "source_reliability.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 3532,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "size_bytes": 3585,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "daily_recap_v2.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 6175,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "daily_recap_v2.html",
       "kind": "html",
       "exists": true,
       "size_bytes": 13324,
-      "age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "signal_calibration.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 171,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "fw_weights.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 148,
-      "age_hours": 8.6,
+      "age_hours": 9.7,
       "status": "YELLOW",
-      "reason": "aging: 8.6h > 6h"
+      "reason": "aging: 9.7h > 6h"
     },
     {
       "file": "learning_summary.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 1687,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "arbitrage_v2.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 126011,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "trading_journal.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 3771,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "past_picks.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 1246,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "pop_changes.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 219,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
+      "age_hours": 8.3,
+      "generated_age_hours": 8.3,
       "status": "GREEN"
     },
     {
@@ -154,73 +146,68 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 236906,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 0.2,
+      "generated_age_hours": 0.2,
       "status": "GREEN"
     },
     {
       "file": "cards_full.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 1257181,
-      "age_hours": 7.7,
-      "generated_age_hours": 7.7,
-      "status": "YELLOW",
-      "reason": "aging: 7.7h > 6h"
+      "size_bytes": 1256715,
+      "age_hours": 0.2,
+      "generated_age_hours": 0.2,
+      "status": "GREEN"
     },
     {
       "file": "cards.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 1804287,
-      "age_hours": 7.7,
-      "status": "YELLOW",
-      "reason": "aging: 7.7h > 6h"
+      "size_bytes": 1804020,
+      "age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "future_winners.json",
       "kind": "json",
       "exists": true,
       "size_bytes": 20570,
-      "age_hours": 8.6,
-      "generated_age_hours": 8.6,
+      "age_hours": 9.7,
+      "generated_age_hours": 9.7,
       "status": "GREEN"
     },
     {
       "file": "set_heat.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 28671,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "size_bytes": 28673,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "sealed_market.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 25325,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "size_bytes": 25327,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "email_digest.html",
       "kind": "html",
       "exists": true,
       "size_bytes": 8729,
-      "age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "weekly_recap.html",
       "kind": "html",
       "exists": true,
       "size_bytes": 9330,
-      "age_hours": 7.2,
+      "age_hours": 0.0,
       "status": "GREEN"
     },
     {
@@ -228,10 +215,9 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 1517,
-      "age_hours": 7.2,
-      "generated_age_hours": 7.2,
-      "status": "YELLOW",
-      "reason": "aging: 7.2h > 6h"
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     }
   ]
 }
