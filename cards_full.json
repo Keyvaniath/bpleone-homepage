@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T03:10:35.735051Z",
+  "generated_at": "2026-05-17T04:31:15.728181Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -534,7 +534,7 @@
       "pop_psa10": 600,
       "wb_price": 950.0,
       "live_price": 950.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 49,
@@ -553,10 +553,9 @@
       ],
       "image": "https://images.pokemontcg.io/ecard1/1.png",
       "notes": "Card #1/102 collector premium. Cheap entry.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $5201 but workbook is $950 (5.5x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -808,7 +807,7 @@
       "pop_psa10": 580,
       "wb_price": 800.0,
       "live_price": 800.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 640.0,
       "target_sell": 760.0,
       "score": 50,
@@ -827,10 +826,9 @@
       ],
       "image": "https://images.pokemontcg.io/base6/29.png",
       "notes": "Alt Mewtwo art. Pairs with V009.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $6575 but workbook is $800 (8.2x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -1041,7 +1039,7 @@
       "pop_psa10": 80,
       "wb_price": 5500.0,
       "live_price": 5500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 4400.0,
       "target_sell": 5225.0,
       "score": 55,
@@ -1064,10 +1062,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/4114b3e6832bf8d39641c4d9594740579609bb71f30178678739b740f7f37154/60.jpg",
       "notes": "Trophy card. Tiny pop. Provenance critical.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $60478 but workbook is $5500 (11.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -1514,7 +1511,7 @@
       "pop_psa10": 140,
       "wb_price": 4200.0,
       "live_price": 4200.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 3360.0,
       "target_sell": 3990.0,
       "score": 55,
@@ -1537,10 +1534,9 @@
       ],
       "image": "https://images.pokemontcg.io/col1/SL10.png",
       "notes": "Iconic art. Mega Rayquaza tie-in.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $25980 but workbook is $4200 (6.2x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -1711,7 +1707,7 @@
       "pop_psa10": 25,
       "wb_price": 850000.0,
       "live_price": 850000.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 680000.0,
       "target_sell": 807500.0,
       "score": 57,
@@ -1734,10 +1730,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg",
       "notes": "Reference only. Logan Paul PSA 10 sold $16.5M Feb 2026.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $197262 was 0.2x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -1771,7 +1766,7 @@
       "pop_psa10": 90,
       "wb_price": 6500.0,
       "live_price": 6500.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 54,
@@ -1794,10 +1789,9 @@
       ],
       "image": "https://images.pokemontcg.io/dpp/DP05.png",
       "notes": "World Championships trainer. Tiny pop, deep collector tier.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $1986 was 0.3x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -2150,7 +2144,7 @@
       "pop_psa10": 2400,
       "wb_price": 1200.0,
       "live_price": 1200.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 960.0,
       "target_sell": 1140.0,
       "score": 76,
@@ -2169,10 +2163,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh7/212.png",
       "notes": "Eeveelution sister to Moonbreon. Tracks at 50% discount.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $130 but workbook is $1200 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -2510,7 +2503,7 @@
       "pop_psa10": 2100,
       "wb_price": 520.0,
       "live_price": 520.0,
-      "live_source": "wb_disagree_rejected_vs_wb",
+      "live_source": "manual_override",
       "target_buy": 416.0,
       "target_sell": 494.0,
       "score": 76,
@@ -2529,9 +2522,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh7/220.png",
       "notes": "Tower mode artwork. Underrated alt.",
-      "confidence": "LOW",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "sources disagree by 46% AND median $68 is 0.1x wb \u2014 likely wrong variant, using wb",
       "sources": {
@@ -2596,7 +2589,7 @@
       "pop_psa10": 3200,
       "wb_price": 620.0,
       "live_price": 620.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 496.0,
       "target_sell": 589.0,
       "score": 75,
@@ -2615,10 +2608,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh7/194.png",
       "notes": "V version of Rayquaza alt. Cheaper Rayquaza play.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $110 but workbook is $620 (0.2x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -3342,11 +3334,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 3800,
       "wb_price": 820.0,
-      "live_price": 113.25,
-      "live_source": "consensus_disagrees_wb_pc_ppt",
-      "target_buy": 90.6,
-      "target_sell": 107.59,
-      "score": 87,
+      "live_price": 820.0,
+      "live_source": "manual_override",
+      "target_buy": 656.0,
+      "target_sell": 779.0,
+      "score": 75,
       "signal": "STRONG BUY",
       "d7_workbook": 58.52,
       "d30_workbook": 68.78,
@@ -3362,9 +3354,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh12/202.png",
       "notes": "Silver Tempest chase. Lugia brand strength.",
-      "confidence": "LOW",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "consensus_disagrees_workbook"
+        "manual_override"
       ],
       "reconcile_reason": "2 sources agree at $113 but wb=$820 (0.1x) \u2014 verify variant",
       "sources": {
@@ -4603,7 +4595,7 @@
       "pop_psa10": 1400,
       "wb_price": 540.0,
       "live_price": 540.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 432.0,
       "target_sell": 513.0,
       "score": 76,
@@ -4622,10 +4614,9 @@
       ],
       "image": "https://images.pokemontcg.io/ex1/101.png",
       "notes": "Mewtwo + SIR. Liquid like Charizard.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $76 but workbook is $540 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -4813,7 +4804,7 @@
       "pop_psa10": 2500,
       "wb_price": 700.0,
       "live_price": 700.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 560.0,
       "target_sell": 665.0,
       "score": 76,
@@ -4832,10 +4823,9 @@
       ],
       "image": "https://images.pokemontcg.io/sv2/269.png",
       "notes": "Trainer waifu classic. Iono pattern follows Marnie.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $87 but workbook is $700 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -6668,7 +6658,7 @@
       "pop_psa10": 1500,
       "wb_price": 920.0,
       "live_price": 920.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 736.0,
       "target_sell": 874.0,
       "score": 76,
@@ -6687,10 +6677,9 @@
       ],
       "image": "https://images.pokemontcg.io/sv8pt5/150.png",
       "notes": "Ice Eeveelution PE SIR.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $110 but workbook is $920 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -7671,7 +7660,7 @@
       "pop_psa10": 700,
       "wb_price": 1700.0,
       "live_price": 1700.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 1360.0,
       "target_sell": 1615.0,
       "score": 77,
@@ -7690,10 +7679,9 @@
       ],
       "image": "https://images.scrydex.com/pokemon/me2pt5-22/small",
       "notes": "Mega Y Charizard. Pairs with Mega X. Both surging.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $270 but workbook is $1700 (0.2x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -7745,7 +7733,7 @@
       "pop_psa10": 1400,
       "wb_price": 2800.0,
       "live_price": 2800.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 2240.0,
       "target_sell": 2660.0,
       "score": 76,
@@ -7768,10 +7756,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/5e96704258cea7c698de7602006f71dfe88d868c0c9585a1e11055de7d488007/60.jpg",
       "notes": "Cultural crossover. Authenticate carefully - many fakes.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $579 was 0.2x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -10579,7 +10566,7 @@
       "pop_psa10": 80,
       "wb_price": 9500.0,
       "live_price": 9500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 7600.0,
       "target_sell": 9025.0,
       "score": 53,
@@ -10598,10 +10585,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg",
       "notes": "Skyridge era. Pop ~80 PSA 9. Sleeper vintage.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $28 but workbook is $9500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -10785,7 +10771,7 @@
       "pop_psa10": 720,
       "wb_price": 580.0,
       "live_price": 580.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 464.0,
       "target_sell": 551.0,
       "score": 48,
@@ -10800,9 +10786,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh7/194.png",
       "notes": "Eevee Heroes alt - JP version of Moonbreon set.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -10930,7 +10916,7 @@
       "pop_psa10": 150,
       "wb_price": 4500.0,
       "live_price": 4500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 3600.0,
       "target_sell": 4275.0,
       "score": 52,
@@ -10945,10 +10931,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/60.jpg",
       "notes": "JP Trophy trainer card. Tiny pop.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $20 but workbook is $4500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -10982,7 +10967,7 @@
       "pop_psa10": 280,
       "wb_price": 1800.0,
       "live_price": 1800.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 1440.0,
       "target_sell": 1710.0,
       "score": 51,
@@ -10997,10 +10982,9 @@
       ],
       "image": "https://images.pokemontcg.io/base6/29.png",
       "notes": "Old movie commemoration JP promo.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $39 but workbook is $1800 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -11144,7 +11128,7 @@
       "pop_psa10": 320,
       "wb_price": 950.0,
       "live_price": 950.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 50,
@@ -11163,9 +11147,9 @@
       ],
       "image": "https://images.pokemontcg.io/ru1/7.png",
       "notes": "1st Ed Jungle Pikachu. Iconic art.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -17365,7 +17349,7 @@
       "pop_psa10": 280,
       "wb_price": 2200.0,
       "live_price": 2200.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 1760.0,
       "target_sell": 2090.0,
       "score": 50,
@@ -17380,10 +17364,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg",
       "notes": "Skyridge Crystal Char PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $119 but workbook is $2200 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -17417,7 +17400,7 @@
       "pop_psa10": 320,
       "wb_price": 880.0,
       "live_price": 880.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 704.0,
       "target_sell": 836.0,
       "score": 50,
@@ -17436,10 +17419,9 @@
       ],
       "image": "https://images.pokemontcg.io/neo2/1.png",
       "notes": "Espeon GS PSA 8 entry.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $7999 but workbook is $880 (9.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -28426,7 +28408,7 @@
       "pop_psa10": 980,
       "wb_price": 920.0,
       "live_price": 920.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 736.0,
       "target_sell": 874.0,
       "score": 51,
@@ -28441,10 +28423,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
       "notes": "1st Ed Char PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $31393 but workbook is $920 (34.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -28478,7 +28459,7 @@
       "pop_psa10": 320,
       "wb_price": 720.0,
       "live_price": 720.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 576.0,
       "target_sell": 684.0,
       "score": 52,
@@ -28493,10 +28474,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/2ed0a8e8f070e2c9860e57a9d52d0f9627aa59aef90670f9b8b8f856a2231f30/60.jpg",
       "notes": "Espeon GS PSA 9 \u2014 cheaper grade than POP5.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $7297 but workbook is $720 (10.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -28530,7 +28510,7 @@
       "pop_psa10": 230,
       "wb_price": 940.0,
       "live_price": 940.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 752.0,
       "target_sell": 893.0,
       "score": 54,
@@ -28545,10 +28525,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/7bxilsmsywql2lf4/240.jpg",
       "notes": "Rayquaza GS PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $20224 but workbook is $940 (21.5x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -28582,7 +28561,7 @@
       "pop_psa10": 280,
       "wb_price": 580.0,
       "live_price": 580.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 464.0,
       "target_sell": 551.0,
       "score": 52,
@@ -28601,10 +28580,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/1177e9f8d40b16f6d16f44d8994f7aee74f5e9b75d82d49f81b43788c24acb20/60.jpg",
       "notes": "Mew GS PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $5442 but workbook is $580 (9.4x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -28677,7 +28655,7 @@
       "pop_psa10": 220,
       "wb_price": 520.0,
       "live_price": 520.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 416.0,
       "target_sell": 494.0,
       "score": 52,
@@ -28696,10 +28674,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/61debdc6f7850ae208ce17ef08638c1094d1da526b95579fdff4de58b5a5c368/60.jpg",
       "notes": "Leafeon GS PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $52 but workbook is $520 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -28733,7 +28710,7 @@
       "pop_psa10": 600,
       "wb_price": 750.0,
       "live_price": 750.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 600.0,
       "target_sell": 712.5,
       "score": 51,
@@ -28752,10 +28729,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/b51a881854783a5337801f7b6640f4aa387a8df72537d1719719aadaf37237a1/240.jpg",
       "notes": "Neo 1st Ed Lugia PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $4574 but workbook is $750 (6.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -28789,7 +28765,7 @@
       "pop_psa10": 230,
       "wb_price": 760.0,
       "live_price": 760.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 608.0,
       "target_sell": 722.0,
       "score": 52,
@@ -28808,10 +28784,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg",
       "notes": "Crystal Char PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $119 but workbook is $760 (0.2x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -29281,7 +29256,7 @@
       "pop_psa10": 25,
       "wb_price": 38000.0,
       "live_price": 38000.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 30400.0,
       "target_sell": 36100.0,
       "score": 55,
@@ -29296,9 +29271,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg",
       "notes": "Crystal Char PSA 10. Pop ~25.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -29719,7 +29694,7 @@
       "pop_psa10": 350,
       "wb_price": 4200.0,
       "live_price": 4200.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 3360.0,
       "target_sell": 3990.0,
       "score": 54,
@@ -29734,10 +29709,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/u5icajtukxa7poc7/60.jpg",
       "notes": "Delta Charizard PSA 10.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $58723 but workbook is $4200 (14.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -29771,7 +29745,7 @@
       "pop_psa10": null,
       "wb_price": 3400.0,
       "live_price": 3400.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 2720.0,
       "target_sell": 3230.0,
       "score": 52,
@@ -29786,10 +29760,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/56c641e238113f941bee25dc90e66ef5cf7e788c796e25df53a42a3da4d4cfca/60.jpg",
       "notes": "ES Case (6 boxes). Volume vintage modern.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $213 but workbook is $3400 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -29999,7 +29972,7 @@
       "pop_psa10": null,
       "wb_price": 6500.0,
       "live_price": 6500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 52,
@@ -30014,10 +29987,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/56c641e238113f941bee25dc90e66ef5cf7e788c796e25df53a42a3da4d4cfca/60.jpg",
       "notes": "CP Case. Institutional.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $242 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -30603,7 +30575,7 @@
       "pop_psa10": 165,
       "wb_price": 1800.0,
       "live_price": 1800.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 1440.0,
       "target_sell": 1710.0,
       "score": 59,
@@ -30626,10 +30598,9 @@
       ],
       "image": "https://images.pokemontcg.io/neo1/17.png",
       "notes": "Gen 2 starter holo 1st Ed.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $16113 but workbook is $1800 (9.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -30906,7 +30877,7 @@
       "pop_psa10": 110,
       "wb_price": 5500.0,
       "live_price": 5500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 4400.0,
       "target_sell": 5225.0,
       "score": 60,
@@ -30921,10 +30892,9 @@
       ],
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
       "notes": "1st Ed Umbreon - the OG.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $31243 but workbook is $5500 (5.7x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -31164,7 +31134,7 @@
       "pop_psa10": 350,
       "wb_price": 950.0,
       "live_price": 950.0,
-      "live_source": "wb_disagree_rejected_vs_wb",
+      "live_source": "manual_override",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 59,
@@ -31179,9 +31149,9 @@
       ],
       "image": "https://images.pokemontcg.io/neo3/65.png",
       "notes": "Magikarp evolution shining.",
-      "confidence": "LOW",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "sources disagree by 39% AND median $15560 is 16.4x wb \u2014 likely wrong variant, using wb",
       "sources": {
@@ -31366,7 +31336,7 @@
       "pop_psa10": 165,
       "wb_price": 2200.0,
       "live_price": 2200.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 1760.0,
       "target_sell": 2090.0,
       "score": 59,
@@ -31381,9 +31351,9 @@
       ],
       "image": "https://images.pokemontcg.io/base5/4.png",
       "notes": "Dark Charizard - rocket era Charizard.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -31803,7 +31773,7 @@
       "pop_psa10": 165,
       "wb_price": 1700.0,
       "live_price": 1700.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 1360.0,
       "target_sell": 1615.0,
       "score": 56,
@@ -31822,10 +31792,9 @@
       ],
       "image": "https://images.pokemontcg.io/gym2/15.png",
       "notes": "Rocket's Zapdos - legendary.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $250 but workbook is $1700 (0.1x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -31896,7 +31865,7 @@
       "pop_psa10": 185,
       "wb_price": 1500.0,
       "live_price": 1500.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 1200.0,
       "target_sell": 1425.0,
       "score": 55,
@@ -31915,10 +31884,9 @@
       ],
       "image": "https://images.pokemontcg.io/gym2/5.png",
       "notes": "Giovanni boss card.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $275 was 0.2x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -31983,7 +31951,7 @@
       "pop_psa10": 145,
       "wb_price": 3500.0,
       "live_price": 3500.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 2800.0,
       "target_sell": 3325.0,
       "score": 55,
@@ -32006,10 +31974,9 @@
       ],
       "image": "https://images.pokemontcg.io/gym2/2.png",
       "notes": "Blaine's Charizard - Gym era grail.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $490 was 0.1x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -32178,7 +32145,7 @@
       "pop_psa10": 85,
       "wb_price": 18500.0,
       "live_price": 18500.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 14800.0,
       "target_sell": 17575.0,
       "score": 59,
@@ -32197,9 +32164,9 @@
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
       "notes": "Crystal Charizard - Skyridge crown jewel.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -32288,7 +32255,7 @@
       "pop_psa10": 95,
       "wb_price": 6500.0,
       "live_price": 6500.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 56,
@@ -32303,9 +32270,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/qpo3i3mlmiezitvq/60.jpg",
       "notes": "Crystal Lugia from Aquapolis.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -34462,7 +34429,7 @@
       "pop_psa10": 845,
       "wb_price": 685.0,
       "live_price": 685.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 548.0,
       "target_sell": 650.75,
       "score": 52,
@@ -34481,10 +34448,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh35/74.png",
       "notes": "Charizard VMAX rainbow rare.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $109 was 0.2x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -34518,7 +34484,7 @@
       "pop_psa10": 925,
       "wb_price": 545.0,
       "live_price": 545.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 436.0,
       "target_sell": 517.75,
       "score": 50,
@@ -34537,10 +34503,9 @@
       ],
       "image": "https://images.pokemontcg.io/swshp/SWSH262.png",
       "notes": "Charizard VSTAR Rainbow.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $55 was 0.1x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -34629,7 +34594,7 @@
       "pop_psa10": 745,
       "wb_price": 750.0,
       "live_price": 750.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 600.0,
       "target_sell": 712.5,
       "score": 52,
@@ -34648,10 +34613,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh12/186.png",
       "notes": "Lugia V Alt Art.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $298 was 0.4x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -34799,7 +34763,7 @@
       "pop_psa10": 25,
       "wb_price": 65000.0,
       "live_price": 65000.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 52000.0,
       "target_sell": 61750.0,
       "score": 55,
@@ -34818,10 +34782,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/6n2ycfr6colaeld5/240.jpg",
       "notes": "Trainer No. 3 Trophy - top auction.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ebay returned $46 but workbook is $65000 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -34855,7 +34818,7 @@
       "pop_psa10": 65,
       "wb_price": 4500.0,
       "live_price": 4500.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 3600.0,
       "target_sell": 4275.0,
       "score": 55,
@@ -34870,9 +34833,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/AMIfv96kXFbfUXCno-tbRB2bLLlHpe2OnCjDrr005CNTMdH4IE6M00T-Gaik_tPtsaGQpxIpT7FwmYyn8OpXo4WL46RY8Nq03-mEnQnH8km2rZi-c0ETiswE1g00aWXgJcqk0NNNxwttBCyg90ljvTc0Q1y3GPZq5w/60.jpg",
       "notes": "Pokemon Snap promo Pikachu.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -35004,7 +34967,7 @@
       "pop_psa10": null,
       "wb_price": 15000.0,
       "live_price": 15000.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 12000.0,
       "target_sell": 14250.0,
       "score": 55,
@@ -35019,10 +34982,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg",
       "notes": "Unlimited base box - WoTC grail sealed.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $78 but workbook is $15000 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -35056,7 +35018,7 @@
       "pop_psa10": null,
       "wb_price": 425000.0,
       "live_price": 425000.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 340000.0,
       "target_sell": 403750.0,
       "score": 54,
@@ -35071,10 +35033,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/91749045dc974aaeaf9943a17290bb3affadda4fd4e245c1dc58f3de87a9fb10/60.jpg",
       "notes": "1st Ed Base Box - museum grade.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $11150 but workbook is $425000 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -35108,7 +35069,7 @@
       "pop_psa10": null,
       "wb_price": 5500.0,
       "live_price": 5500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 4400.0,
       "target_sell": 5225.0,
       "score": 54,
@@ -35123,10 +35084,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg",
       "notes": "Jungle sealed.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $78 but workbook is $5500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -35160,7 +35120,7 @@
       "pop_psa10": null,
       "wb_price": 4800.0,
       "live_price": 4800.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 3840.0,
       "target_sell": 4560.0,
       "score": 55,
@@ -35175,10 +35135,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg",
       "notes": "Fossil sealed.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $78 but workbook is $4800 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -35212,7 +35171,7 @@
       "pop_psa10": null,
       "wb_price": 6500.0,
       "live_price": 6500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 54,
@@ -35227,10 +35186,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg",
       "notes": "Team Rocket sealed.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $78 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -35264,7 +35222,7 @@
       "pop_psa10": null,
       "wb_price": 5200.0,
       "live_price": 5200.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 4160.0,
       "target_sell": 4940.0,
       "score": 54,
@@ -35279,10 +35237,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg",
       "notes": "Gym Heroes sealed.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $78 but workbook is $5200 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -35316,7 +35273,7 @@
       "pop_psa10": null,
       "wb_price": 11500.0,
       "live_price": 11500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 9200.0,
       "target_sell": 10925.0,
       "score": 56,
@@ -35335,10 +35292,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/45b6e6539d2150dba6197c7512c102a8ef8326a73daa0eeff50bce4fe17c46a3/60.jpg",
       "notes": "Neo Genesis sealed - rare to find.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $78 but workbook is $11500 (0.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -37874,7 +37830,7 @@
       "pop_psa10": 365,
       "wb_price": 1850.0,
       "live_price": 1850.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 1480.0,
       "target_sell": 1757.5,
       "score": 54,
@@ -37897,9 +37853,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg",
       "notes": "Base Unlimited Blastoise PSA 10.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -37986,7 +37942,7 @@
       "pop_psa10": 425,
       "wb_price": 1450.0,
       "live_price": 1450.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 1160.0,
       "target_sell": 1377.5,
       "score": 55,
@@ -38005,9 +37961,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/240.jpg",
       "notes": "Base Unlimited Mewtwo PSA 10.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -38041,7 +37997,7 @@
       "pop_psa10": 385,
       "wb_price": 950.0,
       "live_price": 950.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 54,
@@ -38060,9 +38016,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c377255c9193086af0d715d279d4fda50021ddd332977ac5974dd5bd004e695c/240.jpg",
       "notes": "Base Unlimited Alakazam PSA 10.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -38096,7 +38052,7 @@
       "pop_psa10": 425,
       "wb_price": 850.0,
       "live_price": 850.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 680.0,
       "target_sell": 807.5,
       "score": 54,
@@ -38115,9 +38071,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/416dd89a3567bdca9fbccd2a751c54557bd9cf2210351de3e8913949659c6be3/240.jpg",
       "notes": "Base Unlimited Gyarados PSA 10.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -38229,7 +38185,7 @@
       "pop_psa10": 285,
       "wb_price": 6500.0,
       "live_price": 6500.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 5200.0,
       "target_sell": 6175.0,
       "score": 58,
@@ -38252,10 +38208,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/240.jpg",
       "notes": "Gold Star Charizard - EX era grail.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $58723 but workbook is $6500 (9.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -38289,7 +38244,7 @@
       "pop_psa10": 425,
       "wb_price": 1800.0,
       "live_price": 1800.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 1440.0,
       "target_sell": 1710.0,
       "score": 56,
@@ -38312,10 +38267,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/1177e9f8d40b16f6d16f44d8994f7aee74f5e9b75d82d49f81b43788c24acb20/240.jpg",
       "notes": "Gold Star Mew.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "pc returned $26978 but workbook is $1800 (15.0x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -38427,7 +38381,7 @@
       "pop_psa10": 425,
       "wb_price": 1100.0,
       "live_price": 1100.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 880.0,
       "target_sell": 1045.0,
       "score": 56,
@@ -38446,10 +38400,9 @@
       ],
       "image": "https://images.pokemontcg.io/si1/1.png",
       "notes": "Holon Phantoms Mew Star.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $3574 was 3.2x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -38483,7 +38436,7 @@
       "pop_psa10": 425,
       "wb_price": 750.0,
       "live_price": 750.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 600.0,
       "target_sell": 712.5,
       "score": 54,
@@ -38498,10 +38451,9 @@
       ],
       "image": "https://images.pokemontcg.io/pl3/143.png",
       "notes": "DP-era Charizard LV.X.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $14000 but workbook is $750 (18.7x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -38572,7 +38524,7 @@
       "pop_psa10": 285,
       "wb_price": 950.0,
       "live_price": 950.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 56,
@@ -38591,10 +38543,9 @@
       ],
       "image": "https://images.pokemontcg.io/dp4/104.png",
       "notes": "Darkrai LV.X tin promo.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $7300 but workbook is $950 (7.7x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -38929,7 +38880,7 @@
       "pop_psa10": 285,
       "wb_price": 1450.0,
       "live_price": 1450.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 1160.0,
       "target_sell": 1377.5,
       "score": 56,
@@ -38948,10 +38899,9 @@
       ],
       "image": "https://images.pokemontcg.io/pl3/146.png",
       "notes": "Rayquaza C LV.X - DP grail.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $25109 but workbook is $1450 (17.3x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -39077,7 +39027,7 @@
       "pop_psa10": 285,
       "wb_price": 1850.0,
       "live_price": 1850.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 1480.0,
       "target_sell": 1757.5,
       "score": 57,
@@ -39100,10 +39050,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/60.jpg",
       "notes": "HGSS Charizard Prime.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $7232 was 3.9x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -39137,7 +39086,7 @@
       "pop_psa10": 285,
       "wb_price": 1950.0,
       "live_price": 1950.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 1560.0,
       "target_sell": 1852.5,
       "score": 58,
@@ -39160,10 +39109,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/5311cd4112f598235180016fa77f16d97535b114df0e8e99a9f8a1e4242ca967/60.jpg",
       "notes": "Umbreon Prime - HGSS grail.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $260 was 0.1x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -39197,7 +39145,7 @@
       "pop_psa10": 325,
       "wb_price": 950.0,
       "live_price": 950.0,
-      "live_source": "wb_fallback_source_rejected",
+      "live_source": "manual_override",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 57,
@@ -39212,10 +39160,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/2vlqindu7c3ewpuq/60.jpg",
       "notes": "Espeon Prime.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "ppt returned $13900 but workbook is $950 (14.6x) \u2014 REJECTED, using workbook",
       "sources": {
@@ -39464,7 +39411,7 @@
       "pop_psa10": 215,
       "wb_price": 950.0,
       "live_price": 950.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 56,
@@ -39483,10 +39430,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/qa24zph4ud2igr2l/60.jpg",
       "notes": "Ho-Oh Legend - HGSS.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $137 was 0.1x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -39702,7 +39648,7 @@
       "pop_psa10": 245,
       "wb_price": 850.0,
       "live_price": 850.0,
-      "live_source": "wb_no_sources_prev_rejected",
+      "live_source": "manual_override",
       "target_buy": 680.0,
       "target_sell": 807.5,
       "score": 57,
@@ -39721,10 +39667,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/1c632fbb26b49747017244d0ab79dfc796082f7c262d2418099f8f9993c120ac/60.jpg",
       "notes": "Hilbert FA - JP promo.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "manual_override"
       ],
       "reconcile_reason": "no fresh source; previous live $152 was 0.2x wb \u2014 REJECTED, using workbook",
       "sources": {
@@ -39797,7 +39742,7 @@
       "pop_psa10": 425,
       "wb_price": 650.0,
       "live_price": 650.0,
-      "live_source": "wb_no_sources",
+      "live_source": "manual_override",
       "target_buy": 520.0,
       "target_sell": 617.5,
       "score": 53,
@@ -39812,9 +39757,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/cf83ee46d7865a5b82edb57a4b20fe676b5f961bd12908cfc5aa7ab868a7f0bd/240.jpg",
       "notes": "XY Charizard EX gold variant.",
-      "confidence": "UNKNOWN",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "workbook_fallback"
+        "manual_override"
       ],
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
@@ -39957,10 +39902,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 685,
       "wb_price": 550.0,
-      "live_price": 5229.42,
-      "live_source": "consensus_disagrees_wb_pc_ppt",
-      "target_buy": 4183.54,
-      "target_sell": 4967.95,
+      "live_price": 550.0,
+      "live_source": "manual_override",
+      "target_buy": 440.0,
+      "target_sell": 522.5,
       "score": 51,
       "signal": "HOLD",
       "d7_workbook": 2.59,
@@ -39977,9 +39922,9 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/527754e6c8e1d55202af70e15358d6f355bf40f00d10ddb1c892458ed8a94d6b/240.jpg",
       "notes": "Burning Shadows Charizard GX Rainbow.",
-      "confidence": "LOW",
+      "confidence": "OVERRIDE",
       "confidence_flags": [
-        "consensus_disagrees_workbook"
+        "manual_override"
       ],
       "reconcile_reason": "2 sources agree at $5229 but wb=$550 (9.5x) \u2014 verify variant",
       "sources": {
