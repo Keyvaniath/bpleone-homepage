@@ -1861,19 +1861,10 @@
     <div class="nav-links">
       <a href="#live">📊 Live</a>
       <a href="/cards.html">📇 Cards</a>
-      <a href="/watchlist.html">⭐ My Watchlist</a>
-      <a href="/alerts.html">🔔 Alerts</a>
-      <a href="/show.html">📱 Show Mode</a>
-      <a href="#desks">🧰 Desks</a>
+      <a href="/models.html">🧰 Models</a>
+      <a href="/watchlist.html">⭐ Watchlist</a>
       <a href="/methodology.html">📐 Method</a>
-      <a href="/activity.html">📡 Activity</a>
-      <a href="/status.html">⚙ Status</a>
-      <a href="/changelog.html">📋 Changelog</a>
-      <a href="/press.html">📰 Press</a>
-      <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank">💸 Flip Bot</a>
       <a href="#pricing">Pricing</a>
-      <a href="#about">About</a>
-      <a href="https://pokemon.bpleone.com/?tab=store" target="_blank">Shop</a>
       <a href="#subscribe" class="nav-cta">Subscribe</a>
     </div>
   </div>
@@ -1910,14 +1901,8 @@
     <a href="#alerts">🔔 Buy/Sell</a>
     <a href="#morning-brief">☕ Brief</a>
     <a href="#moves">📈 Today</a>
-    <a href="#data-quality">🔍 DQ</a>
-    <a href="#setheat">🔥 Sets</a>
-    <a href="#sealed">📦 Sealed</a>
-    <a href="#journal">📒 Track Record</a>
-    <a href="#learning-engine">🧠 AI</a>
-    <a href="#arbitrage">💰 Arb</a>
-    <a href="#future-winners">🔮 Future Winners</a>
     <a href="#top500">🏆 Top 500</a>
+    <a href="/models.html">🧰 Models</a>
     <a href="#live">📊 Movers</a>
     <span class="stats" id="sub-nav-stats">774 tracked · <strong id="snk-buys">—</strong> STRONG BUYs · feed <strong id="snk-age">—</strong><span class="health-dot" id="health-dot" title="Pipeline health"></span></span>
   </div>
@@ -2302,158 +2287,7 @@
   </div>
 </section>
 
-<!-- ============ DASHBOARD SEPARATOR ============ -->
-<div style="padding: 32px 0 0;">
-  <div class="container">
-    <div style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-mute);letter-spacing:0.2em;text-transform:uppercase;padding:14px 0;border-top:1px dashed var(--border);">
-      ▾ Browse research below ▾
-    </div>
-  </div>
-</div>
-
-<!-- ============ SET HEAT TRACKER — macro trend per set ============ -->
-<section class="setheat-section" id="setheat">
-  <div class="container">
-    <div class="setheat-head">
-      <h2>🔥 <span class="accent">Set Heat</span> — which sets are running</h2>
-      <span class="sub">Per-set composite: avg score + BUY density + recent momentum</span>
-    </div>
-    <div class="setheat-grid" id="setheat-grid">
-      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">⏳ Loading set heat…</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SEALED MARKET — booster boxes, ETBs, bundles ============ -->
-<section class="sealed-section" id="sealed">
-  <div class="container">
-    <div class="sealed-head">
-      <h2>📦 <span class="accent">Sealed Market</span> — boxes / ETBs / bundles</h2>
-      <span class="sub">Separate market from singles · top buys + undervalued picks</span>
-    </div>
-    <div class="sealed-grid" id="sealed-grid">
-      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">⏳ Loading sealed market…</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TRADING JOURNAL — Brandon's actual track record ============ -->
-<section class="journal-section" id="journal">
-  <div class="container">
-    <div class="journal-card">
-      <div class="journal-head">
-        <h2>📒 <span class="accent">Trading Journal</span> — actual track record</h2>
-        <span class="sub">Real trades logged from the desk · realized P/L + open positions</span>
-      </div>
-      <div class="journal-kpis" id="journal-kpis">
-        <div class="journal-kpi"><div class="lbl">Realized P/L</div><div class="val" id="j-pl">—</div></div>
-        <div class="journal-kpi"><div class="lbl">Portfolio ROI</div><div class="val" id="j-roi">—</div></div>
-        <div class="journal-kpi"><div class="lbl">Win Rate</div><div class="val" id="j-winrate">—</div></div>
-        <div class="journal-kpi"><div class="lbl">Open Positions</div><div class="val" id="j-open">—</div></div>
-      </div>
-      <div id="monthly-pl-chart" style="margin-bottom: 16px;"></div>
-      <h3 style="font-size: 13px; font-family:'JetBrains Mono',monospace; color:var(--text-dim); letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 10px;">Recent Closes</h3>
-      <div style="overflow-x:auto;">
-        <table class="journal-table" id="journal-table">
-          <thead>
-            <tr>
-              <th>Sold</th>
-              <th>Card</th>
-              <th>Tax</th>
-              <th class="num">Cost</th>
-              <th class="num">Net Proceeds</th>
-              <th class="num">P/L</th>
-              <th class="num">ROI</th>
-              <th class="num">Days</th>
-            </tr>
-          </thead>
-          <tbody id="journal-rows">
-            <tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">⏳ Loading…</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div style="margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); display: flex; justify-content: space-between; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-mute);">
-        <span id="j-totals">—</span>
-        <span id="j-tax">—</span>
-      </div>
-
-      <h3 style="font-size: 13px; font-family:'JetBrains Mono',monospace; color:var(--text-dim); letter-spacing:0.08em; text-transform:uppercase; margin: 20px 0 10px;">Open Positions <span id="j-open-count" style="color: var(--text-mute);">—</span></h3>
-      <div style="overflow-x:auto;">
-        <table class="journal-table" id="open-pos-table">
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Card</th>
-              <th class="num">Qty</th>
-              <th class="num">Cost / Unit</th>
-              <th class="num">Total Cost</th>
-              <th class="num">Days Held</th>
-            </tr>
-          </thead>
-          <tbody id="open-pos-rows">
-            <tr><td colspan="6" style="text-align:center; color:var(--text-mute); padding:20px;">⏳ Loading…</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SELF-LEARNING ENGINE — shows the AI evolving ============ -->
-<section class="learn-section" id="learning-engine">
-  <div class="container">
-    <div class="learn-card">
-      <div class="learn-head">
-        <h2>🧠 <span class="accent">Self-Learning Engine</span> — the AI is evolving</h2>
-        <span class="sub">Weights re-tune from realized 7-day returns · Pearson-correlation optimizer</span>
-      </div>
-      <div class="learn-stats" id="learn-stats">
-        <div class="learn-stat"><div class="lbl">Weights Source</div><div class="val dim" id="learn-source">—</div></div>
-        <div class="learn-stat"><div class="lbl">Retrains</div><div class="val" id="learn-retrains">—</div></div>
-        <div class="learn-stat"><div class="lbl">FW Emissions</div><div class="val" id="learn-emissions">—</div></div>
-        <div class="learn-stat"><div class="lbl">Signals Tracked</div><div class="val" id="learn-signals">—</div></div>
-      </div>
-      <div class="learn-weights" id="learn-weights">
-        <p style="grid-column: 1/-1; color:var(--text-mute); font-size:12px; padding: 16px 0; text-align:center;">⏳ Loading model weights…</p>
-      </div>
-      <div class="scoreboard-strip" id="scoreboard-strip">
-        <div class="label">📊 Past Picks</div>
-        <div class="stats" id="scoreboard-stats">Loading scoreboard…</div>
-        <div class="pending" id="scoreboard-pending"></div>
-      </div>
-      <div class="learn-footer">
-        <span id="learn-footer-left">—</span>
-        <span id="learn-footer-right">—</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ARBITRAGE OPPORTUNITIES — multi-path EV scanner ============ -->
-<section class="arb-section" id="arbitrage">
-  <div class="container">
-    <div class="arb-head">
-      <h2>💰 <span class="accent">Arbitrage Opportunities</span> — expected-value plays</h2>
-      <span class="sub">Multi-path EV model: raw→PSA10, raw→PSA9 floor, PSA9→PSA10 cross-grade, retail flip. Fees + grading + ship modeled.</span>
-    </div>
-    <div class="arb-grid" id="arb-grid">
-      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">⏳ Loading arbitrage scanner…</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FUTURE WINNERS — AI predictive hunt list ============ -->
-<section class="fw-section" id="future-winners">
-  <div class="container">
-    <div class="fw-head">
-      <h2>🔮 <span class="accent">Future Winners</span> — the AI hunt list</h2>
-      <span class="sub">Predictive model: momentum + scarcity + accessibility + chase-variant signal + tier premium. Capped at $5,000 entry for accessibility.</span>
-    </div>
-    <div class="fw-grid" id="fw-grid">
-      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 40px 0; text-align:center;">⏳ Loading Future Winners…</p>
-    </div>
-  </div>
-</section>
+<!-- (Models moved to /models.html for clarity. Hero stays compact, dashboard above-fold.) -->
 
 <!-- ============ TOP 500 INLINE GRID — research center main feed ============ -->
 <section class="t500-section" id="top500">
@@ -2502,21 +2336,7 @@
   </div>
 </section>
 
-<!-- ============ MARKET BRIEF — auto-generated morning note ============ -->
-<section class="brief-section" id="brief">
-  <div class="container">
-    <div class="brief-card">
-      <div class="brief-header">
-        <h3>📰 Market Brief</h3>
-        <span class="brief-date" id="brief-date">loading…</span>
-      </div>
-      <div class="brief-tldr" id="brief-tldr"></div>
-      <div class="brief-body" id="brief-body">
-        <p style="color:var(--text-mute);">Loading today's market brief…</p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- (Long Market Brief removed — duplicated the compact ☕ Brief above. Was pulling from stale market_brief.json.) -->
 
 <!-- ============ DATA QUALITY ALERTS — auto-audit results ============ -->
 <section id="data-quality" style="padding:24px 0;border-top:1px solid var(--border);">
@@ -3975,30 +3795,15 @@
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    load();
-    loadBrief();
-    loadFeaturedSets();
-    loadFutureWinners();
-    loadLearning();
-    loadScoreboard();
-    loadArb();
-    loadJournal();
-    loadSetHeat();
-    loadSealed();
-    loadHealth();
-    loadTop500();
+    load();                  // homepage_feed (tape, movers, alerts, brief, stats)
+    loadFeaturedSets();      // small Featured Sets strip
+    loadHealth();            // pipeline health dot in sub-nav
+    loadTop500();            // Top 500 grid
     setInterval(load, REFRESH_MS);
-    setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
-    setInterval(loadFeaturedSets, REFRESH_MS * 30);  // refresh sets hourly
-    setInterval(loadFutureWinners, REFRESH_MS * 15);  // refresh winners every 15 min
-    setInterval(loadLearning, REFRESH_MS * 30);  // refresh learning summary hourly
-    setInterval(loadScoreboard, REFRESH_MS * 30);  // refresh scoreboard hourly
-    setInterval(loadArb, REFRESH_MS * 15);  // refresh arb every 15 min
-    setInterval(loadJournal, REFRESH_MS * 60);  // refresh journal every 2h (changes are user-driven)
-    setInterval(loadSetHeat, REFRESH_MS * 30);  // refresh set heat hourly
-    setInterval(loadSealed, REFRESH_MS * 15);  // refresh sealed every 15 min
-    setInterval(loadHealth, REFRESH_MS * 10);  // refresh health dot every 10 cycles
-    setInterval(loadTop500, REFRESH_MS * 5);  // refresh top500 every 5 min
+    setInterval(loadFeaturedSets, REFRESH_MS * 30);
+    setInterval(loadHealth, REFRESH_MS * 10);
+    setInterval(loadTop500, REFRESH_MS * 5);
+    // (Model widgets moved to /models.html — their loaders live there now.)
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
     if (btn) {
