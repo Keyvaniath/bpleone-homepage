@@ -1,0 +1,3047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Models · bpleone.com — Set Heat / Arbitrage / Self-Learning / Journal</title>
+<meta name="description" content="Layer 2 quant models for bpleone.com Pokemon TCG desk — Set Heat, Sealed Market, Trading Journal, Self-Learning Engine, Arbitrage v2 multi-path EV, Future Winners.">
+<meta property="og:title" content="bpleone.com · Models — Set Heat / Arb / Self-Learning / Future Winners">
+<meta property="og:description" content="Every quant model behind the desk, surfaced live. Updated every 4 hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bpleone.com/models.html">
+<meta property="og:image" content="https://bpleone.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/models.html">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --bg: #0a0e1a;
+    --bg-card: #131826;
+    --bg-card-hover: #1a2034;
+    --border: #232a3e;
+    --border-hover: #f5c842;
+    --gold: #f5c842;
+    --gold-dim: #c9a73c;
+    --text: #e8ecf4;
+    --text-dim: #8b94a8;
+    --text-mute: #5a6378;
+    --green: #4ade80;
+    --orange: #fb923c;
+    --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(245,200,66,0.04) 0, transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(74,222,128,0.03) 0, transparent 40%);
+    background-attachment: fixed;
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  /* Navbar */
+  nav {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(10, 14, 26, 0.85);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-brand {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a.nav-cta {
+    background: var(--gold);
+    color: var(--bg);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+  }
+  .nav-links a.nav-cta:hover { background: var(--gold-dim); color: var(--bg); }
+  .nav-links { flex-wrap: wrap; }
+  .nav-links a { white-space: nowrap; }
+  @media (max-width: 900px) {
+    nav .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .nav-links { gap: 14px; }
+    .nav-links a { font-size: 13px; }
+  }
+  @media (max-width: 600px) {
+    .nav-links { gap: 10px; }
+    .nav-links a:not(.nav-cta) { font-size: 12px; }
+    .hero h1 { font-size: 32px !important; }
+    .hero p { font-size: 15px; }
+    .container { padding: 0 16px; }
+    .stat-row { grid-template-columns: 1fr 1fr !important; }
+    .totd { padding: 16px !important; }
+    .data-grid { grid-template-columns: 1fr !important; }
+    .data-table th, .data-table td { padding: 8px 10px; font-size: 12px; }
+    .data-table td.name { max-width: 180px; }
+    .brief-card { padding: 18px 20px; }
+    .brief-body { font-size: 13px; }
+    .desks-row { grid-template-columns: 1fr 1fr !important; }
+  }
+  /* Pricing */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .price-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 28px;
+    position: relative;
+  }
+  .price-card.featured {
+    border-color: var(--gold);
+    background: linear-gradient(180deg, var(--bg-card) 0%, rgba(245,200,66,0.06) 100%);
+  }
+  .price-card.featured::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+  }
+  .price-tier {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .price-amount {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 4px;
+  }
+  .price-amount .per {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dim);
+    margin-left: 4px;
+  }
+  .price-tagline {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+  }
+  .price-features li {
+    font-size: 14px;
+    color: var(--text);
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+  }
+  .price-features li::before {
+    content: "✓";
+    color: var(--green);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+  }
+  .price-features li.no::before { content: "—"; color: var(--text-mute); }
+  .price-cta {
+    display: block;
+    text-align: center;
+    background: var(--gold);
+    color: var(--bg);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background 0.2s;
+  }
+  .price-cta:hover { background: var(--gold-dim); }
+  .price-cta.outline {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+  .price-cta.outline:hover { background: var(--gold); color: var(--bg); }
+  /* Subscribe form */
+  .subscribe-box {
+    background: var(--bg-card);
+    border: 1px solid var(--gold);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .subscribe-box h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+  }
+  .subscribe-box p {
+    color: var(--text-dim);
+    margin-bottom: 24px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscribe-cta-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--bg);
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .btn-primary:hover { background: var(--gold-dim); transform: translateY(-2px); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+    transition: border-color 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--gold); }
+  /* Social proof strip */
+  .proof-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+  .proof-item { text-align: center; }
+  .proof-item .num {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.02em;
+  }
+  .proof-item .label {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+  }
+  /* Hero */
+  .hero {
+    padding: 80px 0 50px;
+    text-align: left;
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 600px 300px at 20% 30%, rgba(245,200,66,0.06) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    margin-bottom: 22px;
+  }
+  .hero h1 .accent {
+    background: linear-gradient(135deg, #f5c842 0%, #fb923c 50%, #f87171 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 12px rgba(245,200,66,0.15));
+  }
+  .hero p {
+    font-size: 17px;
+    color: var(--text-dim);
+    max-width: 640px;
+    margin-bottom: 28px;
+    line-height: 1.65;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    color: var(--text-mute);
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .hero-meta span::before { content: "▸ "; color: var(--gold); }
+
+  /* Hero stats strip — live numbers right under the headline */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+    margin: 30px 0 8px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(19,24,38,0.6) 0%, rgba(19,24,38,0.3) 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+  }
+  .hero-stat {
+    display: flex; flex-direction: column; gap: 4px;
+    padding: 8px 14px;
+    border-left: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .hero-stat:hover { border-left-color: var(--gold); }
+  .hero-stat .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--text-mute);
+  }
+  .hero-stat .value {
+    font-size: 26px; font-weight: 800;
+    letter-spacing: -0.02em; line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-stat .value.green { color: #4ade80; }
+  .hero-stat .value.gold { color: var(--gold); }
+  .hero-stat .value.orange { color: var(--orange); }
+  .hero-stat .value.red { color: var(--red); }
+  .hero-stat .sub {
+    font-size: 11px; color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  /* Section */
+  .section {
+    padding: 80px 0;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+  }
+  .section-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .section-header .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-mute);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  /* Module cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+  .card.live:hover {
+    border-color: var(--border-hover);
+    background: var(--bg-card-hover);
+    transform: translateY(-4px);
+  }
+  .card.live:hover::before { transform: translateX(0); }
+  .card.coming { cursor: default; opacity: 0.7; }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .card-icon {
+    font-size: 28px;
+  }
+  .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .badge.live {
+    background: rgba(74, 222, 128, 0.12);
+    color: var(--green);
+    border: 1px solid rgba(74, 222, 128, 0.3);
+  }
+  .badge.coming {
+    background: rgba(139, 148, 168, 0.12);
+    color: var(--text-mute);
+    border: 1px solid var(--border);
+  }
+  .badge.beta {
+    background: rgba(251, 146, 60, 0.12);
+    color: var(--orange);
+    border: 1px solid rgba(251, 146, 60, 0.3);
+  }
+  .card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .card .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold-dim);
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+  .card p {
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-mute);
+  }
+  .card-footer .arrow {
+    color: var(--gold);
+    font-weight: 600;
+    transition: transform 0.2s;
+  }
+  .card.live:hover .card-footer .arrow {
+    transform: translateX(4px);
+  }
+  .card.live .card-footer .url { color: var(--text); }
+  /* About / Contact strip */
+  .about {
+    padding: 60px 0;
+    border-top: 1px solid var(--border);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  @media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+  .about h3 {
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .about p { color: var(--text-dim); font-size: 15px; margin-bottom: 12px; }
+  .about a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-mute);
+    transition: border-color 0.2s;
+  }
+  .about a:hover { border-color: var(--gold); }
+  .contact-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .contact-row a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    border: none;
+  }
+  /* Footer */
+  footer {
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+    color: var(--text-mute);
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer .legal { font-size: 11px; max-width: 480px; line-height: 1.5; }
+  /* ============ SELF-LEARNING ENGINE WIDGET ============ */
+  .learn-section { padding: 28px 0 8px; }
+  .learn-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(99,102,241,0.06) 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .learn-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #818cf8, #4ade80, #818cf8, transparent);
+    background-size: 200% 100%;
+    animation: learnPulse 4s ease-in-out infinite;
+  }
+  @keyframes learnPulse {
+    0%, 100% { background-position: 0% 50%; opacity: 0.6; }
+    50% { background-position: 100% 50%; opacity: 1; }
+  }
+  .learn-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 18px;
+  }
+  .learn-head h2 {
+    font-size: 22px; font-weight: 800; letter-spacing: -0.02em;
+  }
+  .learn-head h2 .accent { color: #818cf8; }
+  .learn-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .learn-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .learn-stat {
+    background: rgba(10,14,26,0.4);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .learn-stat .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .learn-stat .val {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .learn-stat .val.dim { color: var(--text-dim); }
+  .learn-weights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+  }
+  .learn-weight-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 64px;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .learn-weight-row .comp {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-dim);
+    font-size: 11px;
+  }
+  .learn-weight-row .bar {
+    height: 6px;
+    background: rgba(10,14,26,0.5);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  .learn-weight-row .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #818cf8 0%, #4ade80 100%);
+    border-radius: 3px;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .learn-weight-row .delta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-align: right;
+    font-weight: 600;
+  }
+  .learn-weight-row .delta.up { color: var(--green); }
+  .learn-weight-row .delta.dn { color: var(--red); }
+  .learn-weight-row .delta.zero { color: var(--text-mute); }
+  .learn-footer {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .learn-footer .ok { color: var(--green); }
+  @media (max-width: 768px) {
+    .learn-stats { grid-template-columns: repeat(2, 1fr); }
+    .learn-weights { grid-template-columns: 1fr; }
+    .learn-weight-row { grid-template-columns: 110px 1fr 56px; }
+  }
+  .scoreboard-strip {
+    margin-top: 18px; padding: 12px 14px;
+    background: rgba(10,14,26,0.6);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+  .scoreboard-strip .label {
+    color: #818cf8;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .scoreboard-strip .stats {
+    color: var(--text-dim);
+    font-size: 12px;
+  }
+  .scoreboard-strip .stats strong { color: var(--text); }
+  .scoreboard-strip .stats .win { color: var(--green); }
+  .scoreboard-strip .stats .loss { color: var(--red); }
+  .scoreboard-strip .pending {
+    color: var(--text-mute);
+    font-size: 10px;
+    font-style: italic;
+  }
+  @media (max-width: 640px) {
+    .scoreboard-strip { grid-template-columns: 1fr; gap: 6px; text-align: left; }
+  }
+  /* ============ SET HEAT TRACKER ============ */
+  .setheat-section { padding: 24px 0 8px; }
+  .setheat-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 14px;
+  }
+  .setheat-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .setheat-head h2 .accent { color: #fb923c; }
+  .setheat-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .setheat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .setheat-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(251,146,60,0.06) 100%);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .setheat-card:hover { border-color: #fb923c; transform: translateY(-1px); }
+  .setheat-card .set-name {
+    font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 6px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .setheat-card .heat-bar {
+    height: 4px; background: rgba(10,14,26,0.5); border-radius: 2px;
+    overflow: hidden; margin-bottom: 8px;
+  }
+  .setheat-card .heat-bar-fill {
+    height: 100%; background: linear-gradient(90deg, #fb923c, #f87171);
+    border-radius: 2px; transition: width 0.5s ease;
+  }
+  .setheat-card .meta {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); display: flex; justify-content: space-between;
+  }
+  .setheat-card .meta .v { color: var(--text-dim); font-weight: 600; }
+  .setheat-card .meta .v.up { color: var(--green); }
+  .setheat-card .meta .v.dn { color: var(--red); }
+
+  /* ============ SEALED MARKET ============ */
+  .sealed-section { padding: 24px 0 8px; }
+  .sealed-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 14px;
+  }
+  .sealed-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .sealed-head h2 .accent { color: #818cf8; }
+  .sealed-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .sealed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+  }
+  .sealed-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(129,140,248,0.05) 100%);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .sealed-card:hover { border-color: #818cf8; transform: translateY(-1px); }
+  .sealed-card .product-name {
+    font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 6px;
+    line-height: 1.3;
+    overflow: hidden; text-overflow: ellipsis;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .sealed-card .product-type {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 9px;
+    padding: 2px 7px; border-radius: 3px;
+    background: rgba(129,140,248,0.15); color: #818cf8;
+    margin-bottom: 8px; letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .sealed-card .stats {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4px 12px; font-size: 11px; font-family: 'JetBrains Mono', monospace;
+  }
+  .sealed-card .stats .l { color: var(--text-mute); font-size: 9px; text-transform: uppercase; }
+  .sealed-card .stats .v { color: var(--text); font-weight: 600; }
+  .sealed-card .stats .v.up { color: var(--green); }
+  .sealed-card .stats .v.dn { color: var(--red); }
+
+  @media (max-width: 640px) {
+    .setheat-grid { grid-template-columns: 1fr 1fr; }
+    .sealed-grid { grid-template-columns: 1fr; }
+    .setheat-section h2, .sealed-section h2, .arb-head h2,
+    .journal-head h2, .learn-head h2 { font-size: 19px; }
+    .setheat-head .sub, .sealed-head .sub, .arb-head .sub { display: none; }
+    .setheat-card .meta { flex-direction: column; gap: 4px; }
+  }
+  /* ============ PIPELINE HEALTH DOT ============ */
+  .health-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-left: 8px;
+    vertical-align: middle;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+  }
+  .health-dot.green {
+    background: var(--green);
+    box-shadow: 0 0 8px rgba(74,222,128,0.6);
+    animation: dotPulseGreen 3s ease-in-out infinite;
+  }
+  .health-dot.yellow {
+    background: var(--gold);
+    box-shadow: 0 0 8px rgba(245,200,66,0.6);
+  }
+  .health-dot.red {
+    background: var(--red);
+    box-shadow: 0 0 8px rgba(248,113,113,0.6);
+    animation: dotPulseRed 1s ease-in-out infinite;
+  }
+  @keyframes dotPulseGreen {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+  @keyframes dotPulseRed {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  /* ============ TRADING JOURNAL (TRACK RECORD) ============ */
+  .journal-section { padding: 28px 0 8px; }
+  .journal-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245,200,66,0.04) 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 24px;
+  }
+  .journal-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 18px;
+  }
+  .journal-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .journal-head h2 .accent { color: var(--gold); }
+  .journal-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .journal-kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .journal-kpi {
+    background: rgba(10,14,26,0.4);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .journal-kpi .lbl {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); letter-spacing: 0.08em; text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .journal-kpi .val { font-size: 20px; font-weight: 700; color: var(--text); }
+  .journal-kpi .val.green { color: var(--green); }
+  .journal-kpi .val.red { color: var(--red); }
+  .journal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .journal-table th, .journal-table td {
+    padding: 8px 10px; text-align: left;
+    border-bottom: 1px dashed var(--border);
+  }
+  .journal-table th {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); letter-spacing: 0.08em; text-transform: uppercase;
+    font-weight: 500;
+  }
+  .journal-table td.num {
+    font-family: 'JetBrains Mono', monospace; text-align: right;
+    font-weight: 600;
+  }
+  .journal-table td.green { color: var(--green); }
+  .journal-table td.red { color: var(--red); }
+  .journal-table .pill {
+    display: inline-block;
+    font-size: 9px; padding: 2px 6px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+  }
+  .journal-table .pill.lt { background: rgba(74,222,128,0.15); color: var(--green); }
+  .journal-table .pill.st { background: rgba(245,200,66,0.15); color: var(--gold); }
+  @media (max-width: 768px) {
+    .journal-kpis { grid-template-columns: repeat(2, 1fr); }
+    .journal-table th:nth-child(2), .journal-table td:nth-child(2),
+    .journal-table th:nth-child(6), .journal-table td:nth-child(6) { display: none; }
+  }
+  /* ============ ARBITRAGE OPPORTUNITIES ============ */
+  .arb-section { padding: 28px 0 8px; }
+  .arb-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 16px;
+  }
+  .arb-head h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }
+  .arb-head h2 .accent { color: var(--green); }
+  .arb-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+    max-width: 480px; text-align: right;
+  }
+  .arb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+  .arb-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(74,222,128,0.04) 100%);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .arb-card:hover {
+    border-color: var(--green);
+    transform: translateY(-2px);
+  }
+  .arb-card .top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 8px; margin-bottom: 8px;
+  }
+  .arb-card .name {
+    font-weight: 700; font-size: 14px;
+    line-height: 1.3;
+    overflow: hidden; text-overflow: ellipsis;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .arb-card .cid {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); flex-shrink: 0;
+  }
+  .arb-card .path-tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 9px;
+    padding: 3px 8px; border-radius: 4px;
+    letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .arb-card .path-tag.raw10 { background: rgba(74,222,128,0.15); color: var(--green); }
+  .arb-card .path-tag.raw9  { background: rgba(245,200,66,0.15); color: var(--gold); }
+  .arb-card .path-tag.cross { background: rgba(129,140,248,0.15); color: #818cf8; }
+  .arb-card .path-tag.retail { background: rgba(251,146,60,0.15); color: var(--orange); }
+  .arb-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .arb-stats .l { color: var(--text-mute); font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .arb-stats .v { color: var(--text); font-weight: 600; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .arb-stats .v.green { color: var(--green); }
+  .arb-stats .v.gold { color: var(--gold); }
+  .arb-card .footer {
+    margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border);
+    font-size: 10px; color: var(--text-mute); font-family: 'JetBrains Mono', monospace;
+    display: flex; justify-content: space-between;
+  }
+  /* ============ FUTURE WINNERS ============ */
+  .fw-section { padding: 32px 0 8px; }
+  .fw-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 16px;
+  }
+  .fw-head h2 {
+    font-size: 28px; font-weight: 800; letter-spacing: -0.02em;
+  }
+  .fw-head h2 .accent { color: var(--gold); }
+  .fw-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+    max-width: 480px; text-align: right;
+  }
+  .fw-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  @media (max-width: 600px) { .fw-grid { grid-template-columns: repeat(2, 1fr); } }
+  .fw-tile {
+    background: linear-gradient(180deg, var(--bg-card) 0%, rgba(245,200,66,0.02) 100%);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0; overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    display: flex; flex-direction: column;
+    position: relative;
+  }
+  .fw-tile:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+  .fw-tile .rank {
+    position: absolute; top: 6px; left: 6px; z-index: 2;
+    background: rgba(10,14,26,0.85); backdrop-filter: blur(4px);
+    color: var(--gold); padding: 2px 8px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+  }
+  .fw-tile .fw-score-pill {
+    position: absolute; top: 6px; right: 6px; z-index: 2;
+    background: rgba(74,222,128,0.18); color: #4ade80;
+    border: 1px solid rgba(74,222,128,0.4);
+    padding: 3px 8px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    box-shadow: 0 0 12px rgba(74,222,128,0.25);
+  }
+  /* Sticky sub-nav under main nav for in-page jumps */
+  .sub-nav {
+    position: sticky; top: 60px; z-index: 90;
+    background: rgba(10,14,26,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+  }
+  .sub-nav .container {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    align-items: center;
+    overflow-x: auto;
+  }
+  .sub-nav a {
+    color: var(--text-dim); text-decoration: none;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    padding: 6px 10px; border-radius: 6px;
+    transition: all 0.18s;
+  }
+  .sub-nav a:hover { color: var(--gold); background: rgba(245,200,66,0.06); }
+  .sub-nav .stats {
+    margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute);
+  }
+  .sub-nav .stats strong { color: var(--gold); }
+  @media (max-width: 700px) {
+    .sub-nav { top: auto; position: relative; }
+    .sub-nav a { font-size: 10px; padding: 5px 8px; }
+    .sub-nav .stats { display: none; }
+  }
+  /* Subtle glow on STRONG BUY pills inside data-tables */
+  .data-table .signal .strong-buy {
+    box-shadow: 0 0 14px rgba(74,222,128,0.35);
+    animation: pulse-glow 2.5s ease-in-out infinite;
+  }
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 14px rgba(74,222,128,0.35); }
+    50% { box-shadow: 0 0 22px rgba(74,222,128,0.55); }
+  }
+  /* Smooth fade-in for sections that load via JS */
+  .fw-grid > .fw-tile, .t500-grid > .t500-tile, .sets-grid > .set-card, .stat-box {
+    animation: fade-in 0.4s ease-out backwards;
+  }
+  @keyframes fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  /* Section divider — subtle gradient line */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 32px 0;
+  }
+  /* Improved section spacing on the homepage */
+  section { scroll-margin-top: 130px; }
+  .fw-tile .img {
+    aspect-ratio: 5/7;
+    background: rgba(0,0,0,0.2);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fw-tile .img img { width: 100%; height: 100%; object-fit: contain; }
+  .fw-tile .body { padding: 10px 12px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
+  .fw-tile .name {
+    font-size: 13px; font-weight: 700; line-height: 1.2;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .fw-tile .var {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute);
+  }
+  .fw-tile .price-row {
+    display: flex; justify-content: space-between; align-items: baseline; margin-top: auto;
+    padding-top: 6px; border-top: 1px dashed var(--border);
+  }
+  .fw-tile .price { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--gold); }
+  .fw-tile .target { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); }
+  .fw-tile .thesis {
+    font-size: 10px; color: var(--text-dim); margin-top: 4px;
+    line-height: 1.35;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  /* ============ TOP 500 INLINE GRID ============ */
+  .t500-section { padding: 32px 0 16px; }
+  .t500-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+  }
+  .t500-head h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+  .t500-head h2 .accent { color: var(--gold); }
+  .t500-controls {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px;
+  }
+  .t500-controls input, .t500-controls select {
+    background: var(--bg-card); border: 1px solid var(--border);
+    color: var(--text); padding: 8px 12px; border-radius: 6px;
+    font-family: 'Inter', sans-serif; font-size: 13px; outline: none;
+  }
+  .t500-controls input.search { flex: 1; min-width: 200px; }
+  .t500-controls .count {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-mute);
+    margin-left: auto; align-self: center;
+  }
+  .t500-grid {
+    display: grid; gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+  .t500-tile {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0; overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.15s;
+    display: flex; flex-direction: column;
+  }
+  .t500-tile:hover { border-color: var(--gold); transform: translateY(-1px); }
+  .t500-tile .img {
+    aspect-ratio: 5/7;
+    background: rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  .t500-tile .img img { width: 100%; height: 100%; object-fit: contain; }
+  .t500-tile .body { padding: 8px 10px; }
+  .t500-tile .name {
+    font-size: 12px; font-weight: 600;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    margin-bottom: 2px;
+  }
+  .t500-tile .row {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  }
+  .t500-tile .price { color: var(--gold); font-weight: 700; }
+  .t500-tile .score { color: var(--text-mute); }
+  .t500-load-more {
+    text-align: center; margin: 16px 0 0;
+  }
+  .t500-load-more button {
+    background: transparent; border: 1px solid var(--gold); color: var(--gold);
+    padding: 10px 28px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .t500-load-more button:hover { background: var(--gold); color: var(--bg); }
+  /* ============ FEATURED SETS ============ */
+  .featured-sets {
+    padding: 36px 0 16px;
+  }
+  .featured-sets .head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 16px;
+  }
+  .featured-sets h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+  }
+  .featured-sets .sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--text-mute);
+  }
+  .sets-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 1024px) { .sets-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .sets-grid { grid-template-columns: 1fr; } }
+  .set-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .set-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  .set-logo {
+    height: 60px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.02);
+    border-radius: 6px;
+    padding: 8px;
+  }
+  .set-logo img { max-height: 50px; max-width: 100%; }
+  .set-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--text-mute);
+    letter-spacing: 0.05em;
+    display: flex; justify-content: space-between; gap: 4px;
+  }
+  .set-name {
+    font-size: 14px; font-weight: 700; letter-spacing: -0.01em;
+    color: var(--text);
+  }
+  .set-chase {
+    border-top: 1px dashed var(--border);
+    padding-top: 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .set-chase img {
+    width: 32px; height: 44px; object-fit: cover;
+    border-radius: 3px; background: var(--bg);
+  }
+  .set-chase .info {
+    flex: 1; min-width: 0;
+  }
+  .set-chase .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px; color: var(--gold-dim);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .set-chase .name {
+    font-size: 12px; color: var(--text); font-weight: 600;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .set-chase .price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--gold); font-weight: 700;
+  }
+  /* ============ MARKET BRIEF ============ */
+  .brief-section {
+    padding: 24px 0 0;
+  }
+  .brief-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245,200,66,0.04) 100%);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: 12px;
+    padding: 24px 28px;
+  }
+  .brief-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .brief-header h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .brief-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+  }
+  .brief-tldr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .brief-tldr .pill {
+    background: rgba(245,200,66,0.06);
+    border: 1px solid rgba(245,200,66,0.2);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .brief-body {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .brief-body p { margin-bottom: 8px; }
+  .brief-body p:last-child { margin-bottom: 0; }
+  .brief-body strong { color: var(--text); font-weight: 700; }
+  /* ============ DESKS STRIP (compact dashboard) ============ */
+  .desks-strip {
+    padding: 16px 0 32px;
+    border-top: 1px solid var(--border);
+  }
+  .desks-strip .strip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+  }
+  .desks-strip .strip-header h3 {
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .desks-strip .strip-header a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .desks-strip .strip-header a:hover { color: var(--gold); }
+  .desks-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 1100px) { .desks-row { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 768px) { .desks-row { grid-template-columns: repeat(2, 1fr); } }
+  .desk-chip {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.18s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  .desk-chip:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    background: var(--bg-card-hover);
+  }
+  .desk-chip.coming { opacity: 0.55; cursor: default; }
+  .desk-chip.coming:hover { transform: none; border-color: var(--border); }
+  .desk-chip .icon { font-size: 22px; flex-shrink: 0; }
+  .desk-chip .info { display: flex; flex-direction: column; min-width: 0; }
+  .desk-chip .name {
+    font-size: 13px; font-weight: 700; letter-spacing: -0.01em;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .desk-chip .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    margin-top: 1px;
+  }
+  .desk-chip .live-dot {
+    position: absolute; top: 8px; right: 8px;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--green);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  /* ============ LIVE DATA TERMINAL ============ */
+  .terminal {
+    padding: 24px 0 80px;
+    border-top: 1px solid var(--border);
+    background:
+      radial-gradient(circle at 50% 0%, rgba(74,222,128,0.04) 0, transparent 60%);
+  }
+  /* Ticker tape */
+  .tape-wrap {
+    background: var(--bg-card);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  .tape-track {
+    display: inline-block;
+    padding: 12px 0;
+    animation: scroll-left 90s linear infinite;
+  }
+  .tape-track:hover { animation-play-state: paused; }
+  @keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .tape-item {
+    display: inline-block;
+    margin-right: 32px;
+    color: var(--text);
+  }
+  .tape-item .nm { color: var(--text); font-weight: 600; }
+  .tape-item .pr { color: var(--gold); margin-left: 8px; }
+  .tape-item .ch { margin-left: 8px; font-weight: 600; }
+  .tape-item .ch.up { color: var(--green); }
+  .tape-item .ch.down { color: var(--red); }
+  .tape-item .ch.flat { color: var(--text-mute); }
+  /* Live header */
+  .live-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: rgba(74,222,128,0.08);
+    border: 1px solid rgba(74,222,128,0.25);
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  .live-pulse {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--green);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.85); }
+  }
+  .live-headline {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+  .live-headline .accent { color: var(--gold); }
+  .live-sub {
+    color: var(--text-dim);
+    font-size: 16px;
+    max-width: 720px;
+    margin-bottom: 28px;
+  }
+  /* Stat row */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 768px) {
+    .stat-row { grid-template-columns: repeat(2, 1fr); }
+    .live-headline { font-size: 28px; }
+  }
+  .stat-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: border-color 0.2s;
+  }
+  .stat-box:hover { border-color: rgba(245,200,66,0.4); }
+  .stat-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .stat-box .value {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.01em;
+  }
+  .stat-box .value.gold { color: var(--gold); }
+  .stat-box .value.green { color: var(--green); }
+  .stat-box .delta {
+    font-size: 11px;
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 2px;
+  }
+  /* Trade of the day — hero card */
+  .totd {
+    background: linear-gradient(180deg, var(--bg-card) 0%, rgba(245,200,66,0.04) 100%);
+    border: 1px solid var(--gold);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .totd { grid-template-columns: 1fr; }
+  }
+  .totd .badge-hot {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .totd .totd-name {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+  .totd .totd-meta {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 14px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .totd .totd-thesis {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 580px;
+  }
+  .totd-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 180px;
+  }
+  .totd-stat {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    text-align: right;
+  }
+  .totd-stat .l { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; }
+  .totd-stat .v { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 700; color: var(--gold); }
+  .totd-stat .v.green { color: var(--green); }
+  /* Tables (movers, buys) */
+  .data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 900px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .data-panel-header {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .data-panel-header .title { color: var(--gold); font-weight: 700; }
+  .data-panel-header .sub { color: var(--text-mute); font-size: 10px; }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  .data-table th, .data-table td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table thead th {
+    font-size: 10px;
+    color: var(--text-mute);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: rgba(0,0,0,0.15);
+  }
+  .data-table tbody tr {
+    transition: background 0.15s;
+  }
+  .data-table tbody tr:hover { background: var(--bg-card-hover); }
+  .data-table td.name { color: var(--text); font-weight: 600; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .data-table td.name .var { color: var(--text-mute); font-weight: 400; font-size: 11px; display: block; margin-top: 2px; }
+  .data-table td.num { text-align: right; color: var(--text); }
+  .data-table td.delta { text-align: right; font-weight: 600; }
+  .data-table td.delta.up { color: var(--green); }
+  .data-table td.delta.down { color: var(--red); }
+  .data-table td.delta.flat { color: var(--text-mute); }
+  .data-table td.signal { text-align: right; font-size: 11px; }
+  .data-table td.signal .strong-buy { color: var(--green); background: rgba(74,222,128,0.1); padding: 2px 8px; border-radius: 4px; }
+  .data-table td.signal .buy { color: var(--green); }
+  .data-table td.signal .hold { color: var(--text-dim); }
+  .data-table td.signal .trim { color: var(--orange); }
+  .data-table td.signal .sell { color: var(--red); }
+  /* Loading skeleton */
+  .skeleton {
+    color: var(--text-mute);
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    padding: 32px;
+    font-size: 13px;
+  }
+  /* "What to do today" panel */
+  .what-todo {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  .what-todo h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .what-todo ol {
+    counter-reset: action;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .what-todo li {
+    counter-increment: action;
+    padding: 12px 0 12px 36px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .what-todo li:last-child { border-bottom: none; }
+  .what-todo li::before {
+    content: counter(action);
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .what-todo li strong { color: var(--text); }
+  .what-todo li a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); }
+  .what-todo li a:hover { color: var(--gold-dim); }
+  /* Shop section */
+  .shop-section {
+    padding: 40px 0 80px;
+    border-top: 1px solid var(--border);
+    background:
+      radial-gradient(circle at 50% 0%, rgba(245,200,66,0.05) 0, transparent 60%);
+  }
+  .shop-eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: rgba(245,200,66,0.08);
+    border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  .shop-headline {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+  .shop-headline .accent { color: var(--gold); }
+  .shop-sub {
+    color: var(--text-dim);
+    font-size: 16px;
+    max-width: 640px;
+    margin-bottom: 36px;
+  }
+  .shop-trust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    .shop-trust { grid-template-columns: repeat(2, 1fr); }
+    .shop-headline { font-size: 28px; }
+  }
+  .trust-tile {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .trust-tile:hover {
+    border-color: rgba(245,200,66,0.4);
+    transform: translateY(-2px);
+  }
+  .trust-tile .icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .trust-tile .title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .trust-tile .desc {
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .shop-cta-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .shop-cta-row .btn-primary {
+    background: var(--gold);
+    color: var(--bg);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .shop-cta-row .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(245,200,66,0.25);
+  }
+  .shop-cta-row .btn-ghost {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    border-bottom: 1px solid var(--text-mute);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .shop-cta-row .btn-ghost:hover { color: var(--gold); border-color: var(--gold); }
+  .shop-stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    border-top: 1px dashed var(--border);
+  }
+  .shop-stat .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    color: var(--gold);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .shop-stat .l {
+    font-size: 11px;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 6px;
+  }
+
+.models-hero {
+  padding: 56px 0 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.models-hero .eyebrow {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+  letter-spacing: 0.15em; text-transform: uppercase;
+  background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+  padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+}
+.models-hero h1 {
+  font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px;
+}
+.models-hero h1 .accent { color: var(--gold); }
+.models-hero .lead { color: var(--text-dim); font-size: 15px; max-width: 720px; }
+.models-toc {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px;
+}
+.models-toc a {
+  color: var(--text-dim); text-decoration: none;
+  padding: 6px 12px; border-radius: 999px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  font-size: 13px; transition: all 0.15s ease;
+}
+.models-toc a:hover {
+  color: var(--gold); border-color: var(--gold-dim);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/models.html" class="active">🧰 Models</a>
+      <a href="/watchlist.html">⭐ Watchlist</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#subscribe" class="nav-cta">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+<header class="models-hero">
+  <div class="container">
+    <span class="eyebrow">🧰 Layer 2 Models</span>
+    <h1>The <span class="accent">quant models</span> behind the desk.</h1>
+    <p class="lead">Forward-looking predictive models, the self-learning loop, multi-path expected-value arbitrage, real trade receipts, set-level heat, and the sealed-product market. All updated every 4 hours by the cron pipeline. Math published at <a href="/methodology.html" style="color:var(--gold-dim);">/methodology</a>.</p>
+    <div class="models-toc">
+      <a href="#future-winners">🔮 Future Winners</a>
+      <a href="#arbitrage">💰 Arbitrage v2</a>
+      <a href="#learning-engine">🧠 Self-Learning</a>
+      <a href="#journal">📒 Trading Journal</a>
+      <a href="#setheat">🔥 Set Heat</a>
+      <a href="#sealed">📦 Sealed Market</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SET HEAT TRACKER — macro trend per set ============ -->
+<section class="setheat-section" id="setheat">
+  <div class="container">
+    <div class="setheat-head">
+      <h2>🔥 <span class="accent">Set Heat</span> — which sets are running</h2>
+      <span class="sub">Per-set composite: avg score + BUY density + recent momentum</span>
+    </div>
+    <div class="setheat-grid" id="setheat-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">⏳ Loading set heat…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEALED MARKET — booster boxes, ETBs, bundles ============ -->
+<section class="sealed-section" id="sealed">
+  <div class="container">
+    <div class="sealed-head">
+      <h2>📦 <span class="accent">Sealed Market</span> — boxes / ETBs / bundles</h2>
+      <span class="sub">Separate market from singles · top buys + undervalued picks</span>
+    </div>
+    <div class="sealed-grid" id="sealed-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">⏳ Loading sealed market…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRADING JOURNAL — Brandon's actual track record ============ -->
+<section class="journal-section" id="journal">
+  <div class="container">
+    <div class="journal-card">
+      <div class="journal-head">
+        <h2>📒 <span class="accent">Trading Journal</span> — actual track record</h2>
+        <span class="sub">Real trades logged from the desk · realized P/L + open positions</span>
+      </div>
+      <div class="journal-kpis" id="journal-kpis">
+        <div class="journal-kpi"><div class="lbl">Realized P/L</div><div class="val" id="j-pl">—</div></div>
+        <div class="journal-kpi"><div class="lbl">Portfolio ROI</div><div class="val" id="j-roi">—</div></div>
+        <div class="journal-kpi"><div class="lbl">Win Rate</div><div class="val" id="j-winrate">—</div></div>
+        <div class="journal-kpi"><div class="lbl">Open Positions</div><div class="val" id="j-open">—</div></div>
+      </div>
+      <div id="monthly-pl-chart" style="margin-bottom: 16px;"></div>
+      <h3 style="font-size: 13px; font-family:'JetBrains Mono',monospace; color:var(--text-dim); letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 10px;">Recent Closes</h3>
+      <div style="overflow-x:auto;">
+        <table class="journal-table" id="journal-table">
+          <thead>
+            <tr>
+              <th>Sold</th>
+              <th>Card</th>
+              <th>Tax</th>
+              <th class="num">Cost</th>
+              <th class="num">Net Proceeds</th>
+              <th class="num">P/L</th>
+              <th class="num">ROI</th>
+              <th class="num">Days</th>
+            </tr>
+          </thead>
+          <tbody id="journal-rows">
+            <tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">⏳ Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); display: flex; justify-content: space-between; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-mute);">
+        <span id="j-totals">—</span>
+        <span id="j-tax">—</span>
+      </div>
+
+      <h3 style="font-size: 13px; font-family:'JetBrains Mono',monospace; color:var(--text-dim); letter-spacing:0.08em; text-transform:uppercase; margin: 20px 0 10px;">Open Positions <span id="j-open-count" style="color: var(--text-mute);">—</span></h3>
+      <div style="overflow-x:auto;">
+        <table class="journal-table" id="open-pos-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Card</th>
+              <th class="num">Qty</th>
+              <th class="num">Cost / Unit</th>
+              <th class="num">Total Cost</th>
+              <th class="num">Days Held</th>
+            </tr>
+          </thead>
+          <tbody id="open-pos-rows">
+            <tr><td colspan="6" style="text-align:center; color:var(--text-mute); padding:20px;">⏳ Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELF-LEARNING ENGINE — shows the AI evolving ============ -->
+<section class="learn-section" id="learning-engine">
+  <div class="container">
+    <div class="learn-card">
+      <div class="learn-head">
+        <h2>🧠 <span class="accent">Self-Learning Engine</span> — the AI is evolving</h2>
+        <span class="sub">Weights re-tune from realized 7-day returns · Pearson-correlation optimizer</span>
+      </div>
+      <div class="learn-stats" id="learn-stats">
+        <div class="learn-stat"><div class="lbl">Weights Source</div><div class="val dim" id="learn-source">—</div></div>
+        <div class="learn-stat"><div class="lbl">Retrains</div><div class="val" id="learn-retrains">—</div></div>
+        <div class="learn-stat"><div class="lbl">FW Emissions</div><div class="val" id="learn-emissions">—</div></div>
+        <div class="learn-stat"><div class="lbl">Signals Tracked</div><div class="val" id="learn-signals">—</div></div>
+      </div>
+      <div class="learn-weights" id="learn-weights">
+        <p style="grid-column: 1/-1; color:var(--text-mute); font-size:12px; padding: 16px 0; text-align:center;">⏳ Loading model weights…</p>
+      </div>
+      <div class="scoreboard-strip" id="scoreboard-strip">
+        <div class="label">📊 Past Picks</div>
+        <div class="stats" id="scoreboard-stats">Loading scoreboard…</div>
+        <div class="pending" id="scoreboard-pending"></div>
+      </div>
+      <div class="learn-footer">
+        <span id="learn-footer-left">—</span>
+        <span id="learn-footer-right">—</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARBITRAGE OPPORTUNITIES — multi-path EV scanner ============ -->
+<section class="arb-section" id="arbitrage">
+  <div class="container">
+    <div class="arb-head">
+      <h2>💰 <span class="accent">Arbitrage Opportunities</span> — expected-value plays</h2>
+      <span class="sub">Multi-path EV model: raw→PSA10, raw→PSA9 floor, PSA9→PSA10 cross-grade, retail flip. Fees + grading + ship modeled.</span>
+    </div>
+    <div class="arb-grid" id="arb-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">⏳ Loading arbitrage scanner…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUTURE WINNERS — AI predictive hunt list ============ -->
+<section class="fw-section" id="future-winners">
+  <div class="container">
+    <div class="fw-head">
+      <h2>🔮 <span class="accent">Future Winners</span> — the AI hunt list</h2>
+      <span class="sub">Predictive model: momentum + scarcity + accessibility + chase-variant signal + tier premium. Capped at $5,000 entry for accessibility.</span>
+    </div>
+    <div class="fw-grid" id="fw-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 40px 0; text-align:center;">⏳ Loading Future Winners…</p>
+    </div>
+  </div>
+</section>
+
+
+<footer style="padding:40px 0 30px;color:var(--text-mute);font-size:12px;text-align:center;border-top:1px solid var(--border);margin-top:60px;">
+  <div class="container">
+    bpleone.com · <a href="/" style="color:var(--text-mute);">back to live dashboard</a> · <a href="/methodology.html" style="color:var(--text-mute);">methodology</a> · <a href="/status.html" style="color:var(--text-mute);">pipeline status</a>
+  </div>
+</footer>
+
+<script>
+/* HOMEPAGE_FEED_JS */
+(function() {
+
+  // Try the same-origin file first (deployed alongside index.html on Cloudflare
+  // Pages), then fall back to raw GitHub for the trading-desk repo — that's the
+  // copy that gets refreshed every 4h by the GH Actions cron.
+  const FEED_URLS = [
+    '/homepage_feed.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/homepage_feed.json'
+  ];
+  const BRIEF_URLS = [
+    '/market_brief.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/market_brief.json'
+  ];
+  const SETS_URLS = [
+    '/featured_sets.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/featured_sets.json'
+  ];
+  const FW_URLS = [
+    '/future_winners.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/future_winners.json'
+  ];
+  const LEARN_URLS = [
+    '/learning_summary.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/learning_summary.json'
+  ];
+  const ARB_URLS = [
+    '/arbitrage_v2.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/arbitrage_v2.json'
+  ];
+  const JOURNAL_URLS = [
+    '/trading_journal.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/trading_journal.json'
+  ];
+  const SCOREBOARD_URLS = [
+    '/past_picks.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/past_picks.json'
+  ];
+  const SETHEAT_URLS = [
+    '/set_heat.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/set_heat.json'
+  ];
+  const SEALED_URLS = [
+    '/sealed_market.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/sealed_market.json'
+  ];
+  const HEALTH_URLS = [
+    '/pipeline_health.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/pipeline_health.json'
+  ];
+  const CARDS_FULL_URLS = [
+    '/cards_full.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
+  ];
+  const REFRESH_MS = 60 * 1000;
+
+  function mdInline(s) {
+    // Tiny markdown-to-HTML for **bold** only — keeps the brief safe
+    return (s || '').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  }
+
+  function renderBrief(brief) {
+    if (!brief) return;
+    setText('brief-date', brief.date_human || '');
+    const tldr = document.getElementById('brief-tldr');
+    if (tldr && Array.isArray(brief.tldr)) {
+      tldr.innerHTML = brief.tldr.map(t => '<span class="pill">' + t + '</span>').join('');
+    }
+    const body = document.getElementById('brief-body');
+    if (body && Array.isArray(brief.paragraphs)) {
+      body.innerHTML = brief.paragraphs.map(p => '<p>' + mdInline(p) + '</p>').join('');
+    }
+  }
+
+  function loadBrief() {
+    tryFetch(BRIEF_URLS, 0)
+      .then(renderBrief)
+      .catch(err => {
+        console.warn('Brief load failed:', err);
+        const body = document.getElementById('brief-body');
+        if (body) body.innerHTML = '<p style="color:var(--text-mute);">Market brief unavailable. Try refreshing in 60s.</p>';
+      });
+  }
+
+  function renderFeaturedSets(sets) {
+    const grid = document.getElementById('featured-sets-grid');
+    if (!grid || !Array.isArray(sets)) return;
+    grid.innerHTML = sets.map(s => {
+      const drillUrl = 'https://pokemon.bpleone.com/?tab=universe&set=' + encodeURIComponent(s.id);
+      const chase = s.chase || {};
+      const chaseImg = chase.image ? '<img src="' + chase.image + '" alt="">' : '<div style="width:32px;height:44px;background:var(--bg);border-radius:3px;"></div>';
+      const chasePrice = chase.market ? '$' + Math.round(chase.market).toLocaleString() : '—';
+      const totalMcap = s.total_market ? '$' + (s.total_market >= 1000 ? (s.total_market/1000).toFixed(0) + 'k' : Math.round(s.total_market)) : '';
+      return '<a class="set-card" href="' + drillUrl + '" target="_blank" rel="noopener">' +
+        '<div class="set-logo">' + (s.logo ? '<img src="' + s.logo + '" alt="' + s.name + '">' : '<div style="color:var(--text-mute);font-size:12px;">no logo</div>') + '</div>' +
+        '<div class="set-name">' + s.name + '</div>' +
+        '<div class="set-meta"><span>' + (s.release_date || '').slice(0,10) + '</span><span>' + (s.total || '?') + ' cards · ' + (s.chase_count || 0) + ' chase</span></div>' +
+        '<div class="set-chase">' + chaseImg +
+          '<div class="info"><div class="label">Chase</div><div class="name">' + (chase.name || '—') + '</div></div>' +
+          '<div class="price">' + chasePrice + '</div>' +
+        '</div></a>';
+    }).join('');
+  }
+
+  function loadFeaturedSets() {
+    tryFetch(SETS_URLS, 0)
+      .then(renderFeaturedSets)
+      .catch(err => {
+        console.warn('Featured sets load failed:', err);
+        const grid = document.getElementById('featured-sets-grid');
+        if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); text-align:center; padding: 20px;">Featured sets unavailable.</p>';
+      });
+  }
+
+  function renderFutureWinners(data) {
+    const grid = document.getElementById('fw-grid');
+    if (!grid || !data || !Array.isArray(data.winners)) return;
+    if (data.winners.length === 0) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">No Future Winners yet — needs at least one cron run.</p>';
+      return;
+    }
+    grid.innerHTML = data.winners.slice(0, 12).map((w, i) => {
+      const img = w.image ? '<img src="' + w.image + '" alt="' + w.name + '" loading="lazy">' :
+                            '<div style="color:var(--text-mute);font-family:monospace;font-size:10px;">no image</div>';
+      const price = '$' + (w.live_price >= 1000 ? Math.round(w.live_price).toLocaleString() : w.live_price.toFixed(0));
+      const target = '$' + Math.round(w.target_buy).toLocaleString();
+      return '<a class="fw-tile" href="/card.html?id=' + w.id + '">' +
+        '<span class="rank">#' + (i+1) + '</span>' +
+        '<span class="fw-score-pill">FW ' + Math.round(w.fw_score) + '</span>' +
+        '<div class="img">' + img + '</div>' +
+        '<div class="body">' +
+          '<div class="name">' + w.name + '</div>' +
+          '<div class="var">' + w.variant + ' · ' + (w.tier || '') + '</div>' +
+          '<div class="thesis">' + (w.thesis || '') + '</div>' +
+          '<div class="price-row">' +
+            '<span class="price">' + price + '</span>' +
+            '<span class="target">buy ≤ ' + target + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</a>';
+    }).join('');
+  }
+
+  function loadFutureWinners() {
+    tryFetch(FW_URLS, 0)
+      .then(renderFutureWinners)
+      .catch(err => {
+        console.warn('FW load failed:', err);
+        const grid = document.getElementById('fw-grid');
+        if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); text-align:center; padding: 30px 0;">Future Winners model output unavailable. Trigger the workflow at github.com/Keyvaniath/pokemon-tcg-trading-desk/actions to populate.</p>';
+      });
+  }
+
+  // ============ SELF-LEARNING ENGINE WIDGET ============
+  function renderLearning(data) {
+    if (!data || !data.fw_weights) return;
+    const fw = data.fw_weights || {};
+    const sl = data.signal_learning || {};
+    const sourceEl = document.getElementById('learn-source');
+    const retrainsEl = document.getElementById('learn-retrains');
+    const emissionsEl = document.getElementById('learn-emissions');
+    const signalsEl = document.getElementById('learn-signals');
+    if (sourceEl) {
+      const src = fw.source || 'seed';
+      sourceEl.textContent = src === 'learned' ? '🧠 LEARNED' : '🌱 SEED';
+      sourceEl.style.color = src === 'learned' ? '#818cf8' : 'var(--text-dim)';
+    }
+    if (retrainsEl) retrainsEl.textContent = fw.n_retrains || 0;
+    if (emissionsEl) emissionsEl.textContent = (sl.fw_emissions || 0).toLocaleString();
+    if (signalsEl) signalsEl.textContent = (sl.total_emissions || 0).toLocaleString();
+
+    // Weight bars
+    const weightsEl = document.getElementById('learn-weights');
+    if (weightsEl && Array.isArray(fw.weight_changes) && fw.weight_changes.length) {
+      const maxW = Math.max(...fw.weight_changes.map(w => w.current || 0), 0.4);
+      const niceName = {
+        momentum_rising: 'Momentum rising',
+        scarcity: 'Scarcity',
+        accessibility: 'Accessibility',
+        hidden_alpha: 'Hidden alpha',
+        tier_premium: 'Tier premium',
+        liquidity: 'Liquidity',
+      };
+      weightsEl.innerHTML = fw.weight_changes.map(w => {
+        const pct = ((w.current || 0) / maxW * 100).toFixed(1);
+        const dPct = w.delta_pct || 0;
+        const dCls = dPct > 0.5 ? 'up' : dPct < -0.5 ? 'dn' : 'zero';
+        const dSign = dPct > 0 ? '+' : '';
+        const label = niceName[w.component] || w.component;
+        return '<div class="learn-weight-row">' +
+          '<div class="comp">' + label + '</div>' +
+          '<div class="bar"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+          '<div class="delta ' + dCls + '">' + dSign + dPct.toFixed(0) + '%</div>' +
+          '</div>';
+      }).join('');
+    }
+
+    // Footer line
+    const footerL = document.getElementById('learn-footer-left');
+    const footerR = document.getElementById('learn-footer-right');
+    if (footerL) {
+      if (fw.source === 'learned' && fw.last_retrain_at) {
+        const dt = new Date(fw.last_retrain_at);
+        const ago = Math.round((Date.now() - dt.getTime()) / (1000 * 60 * 60));
+        footerL.innerHTML = '<span class="ok">✓ Last retrain:</span> ' + ago + 'h ago · ' + (fw.last_retrain_n_samples || 0) + ' samples';
+      } else {
+        footerL.textContent = 'Awaiting maturity: ' + (data.next_milestones && data.next_milestones.next_retrain_when || '30 mature samples');
+      }
+    }
+    if (footerR) {
+      const outcomes = sl.outcomes_evaluated || 0;
+      footerR.textContent = outcomes + ' signal outcomes evaluated · ' + Object.keys(sl.by_signal || {}).length + ' signal types tracked';
+    }
+  }
+
+  function loadLearning() {
+    tryFetch(LEARN_URLS, 0)
+      .then(renderLearning)
+      .catch(err => {
+        console.warn('Learning summary load failed:', err);
+        const w = document.getElementById('learn-weights');
+        if (w) w.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); font-size:12px; padding: 16px 0; text-align:center;">Learning telemetry unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ ARBITRAGE OPPORTUNITIES ============
+  function renderArb(data) {
+    const grid = document.getElementById('arb-grid');
+    if (!grid) return;
+    const opps = (data && data.top_100) || [];
+    if (!opps.length) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">No actionable arbitrage opportunities right now — scanner runs every 4h.</p>';
+      return;
+    }
+    // Show top 12 by EV
+    const top = opps.slice(0, 12);
+    const pathLabel = {
+      'RAW_TO_PSA10': { tag: 'raw10', label: 'RAW → PSA 10' },
+      'RAW_TO_PSA9_FLOOR': { tag: 'raw9', label: 'RAW → PSA 9' },
+      'PSA9_TO_PSA10_CROSSGRADE': { tag: 'cross', label: 'PSA 9 → PSA 10' },
+      'RAW_RETAIL_FLIP': { tag: 'retail', label: 'TCG → eBay' },
+    };
+    grid.innerHTML = top.map(o => {
+      const b = o.best_path || {};
+      const pl = pathLabel[b.path] || { tag: 'raw10', label: b.path || '—' };
+      const evColor = b.ev_profit >= 500 ? 'green' : 'gold';
+      return '<div class="arb-card">' +
+        '<div class="top">' +
+          '<div class="name">' + (o.name || '—') + (o.variant ? ' · ' + o.variant : '') + '</div>' +
+          '<div class="cid">' + (o.cid || '') + '</div>' +
+        '</div>' +
+        '<div class="path-tag ' + pl.tag + '">' + pl.label + '</div>' +
+        '<div class="arb-stats">' +
+          '<div><div class="l">Buy at</div><div class="v">$' + (b.buy_price || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">All-in cost</div><div class="v">$' + (b.all_in_cost || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">EV profit</div><div class="v ' + evColor + '">$' + (b.ev_profit || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">EV ROI</div><div class="v ' + evColor + '">' + (b.ev_roi_pct || 0).toFixed(0) + '%</div></div>' +
+        '</div>' +
+        '<div class="footer">' +
+          '<span>' + (b.hold_days || 0) + 'd hold</span>' +
+          '<span>conf ' + (o.confidence || 0) + '</span>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function loadArb() {
+    tryFetch(ARB_URLS, 0)
+      .then(renderArb)
+      .catch(err => {
+        console.warn('Arb v2 load failed:', err);
+        const g = document.getElementById('arb-grid');
+        if (g) g.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">Arb scanner output unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ TRADING JOURNAL ============
+  function renderJournal(data) {
+    if (!data || !data.summary) return;
+    const s = data.summary;
+    const fmtMoney = v => (v < 0 ? '-$' : '$') + Math.abs(Math.round(v)).toLocaleString();
+    const sign = v => v >= 0 ? '+' : '';
+    const pl = document.getElementById('j-pl');
+    if (pl) {
+      pl.textContent = sign(s.total_realized_pl) + fmtMoney(s.total_realized_pl);
+      pl.className = 'val ' + (s.total_realized_pl >= 0 ? 'green' : 'red');
+    }
+    const roi = document.getElementById('j-roi');
+    if (roi) {
+      roi.textContent = sign(s.portfolio_roi_pct) + (s.portfolio_roi_pct || 0).toFixed(1) + '%';
+      roi.className = 'val ' + (s.portfolio_roi_pct >= 0 ? 'green' : 'red');
+    }
+    const wr = document.getElementById('j-winrate');
+    if (wr) wr.textContent = (s.win_rate_pct || 0).toFixed(0) + '%';
+    const op = document.getElementById('j-open');
+    if (op) op.textContent = s.open_positions || 0;
+
+    // Recent trades table
+    const tbody = document.getElementById('journal-rows');
+    const recent = data.recent_closes || [];
+    if (tbody) {
+      if (!recent.length) {
+        tbody.innerHTML = '<tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">No closed trades yet — log via Workbook → Realized P&L sheet.</td></tr>';
+      } else {
+        tbody.innerHTML = recent.map(t => {
+          const plCls = t.net_pl >= 0 ? 'green' : 'red';
+          const desc = (t.description || t.cid || '').slice(0, 40);
+          const taxPill = '<span class="pill ' + (t.tax_status === 'LT' ? 'lt' : 'st') + '">' + t.tax_status + '</span>';
+          return '<tr>' +
+            '<td>' + (t.sell_date || '—') + '</td>' +
+            '<td>' + desc + '</td>' +
+            '<td>' + taxPill + '</td>' +
+            '<td class="num">$' + (t.total_cost || 0).toLocaleString() + '</td>' +
+            '<td class="num">$' + (t.net_proceeds || 0).toLocaleString() + '</td>' +
+            '<td class="num ' + plCls + '">' + sign(t.net_pl) + fmtMoney(t.net_pl) + '</td>' +
+            '<td class="num ' + plCls + '">' + sign(t.roi_pct) + (t.roi_pct || 0).toFixed(0) + '%</td>' +
+            '<td class="num">' + (t.hold_days || '—') + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+    }
+    // Footer totals
+    const totL = document.getElementById('j-totals');
+    if (totL) totL.textContent = s.closed_trades + ' closed · $' + Math.round(s.total_volume_sold).toLocaleString() + ' lifetime volume · avg hold ' + (s.avg_hold_days||0).toFixed(0) + 'd';
+    const totR = document.getElementById('j-tax');
+    if (totR) totR.textContent = 'LT: ' + s.lt_count + ' ($' + Math.round(s.lt_pl).toLocaleString() + ') · ST: ' + s.st_count + ' ($' + Math.round(s.st_pl).toLocaleString() + ')';
+
+    // Monthly P/L sparkline chart (cumulative)
+    const monthly = data.monthly_pl || [];
+    const chartEl = document.getElementById('monthly-pl-chart');
+    if (chartEl) {
+      if (monthly.length === 0) {
+        chartEl.innerHTML = '';
+      } else {
+        // Build cumulative array
+        let cum = 0;
+        const cumData = monthly.map(m => { cum += m.pl; return { month: m.month, pl: m.pl, cum: cum, trades: m.trades }; });
+        const W = 720, H = 110, padL = 50, padR = 20, padT = 16, padB = 22;
+        const innerW = W - padL - padR, innerH = H - padT - padB;
+        const minC = Math.min(0, ...cumData.map(d => d.cum));
+        const maxC = Math.max(0, ...cumData.map(d => d.cum));
+        const range = (maxC - minC) || 1;
+        const x = i => padL + (cumData.length === 1 ? innerW / 2 : (i / (cumData.length - 1)) * innerW);
+        const y = v => padT + (1 - (v - minC) / range) * innerH;
+        // Bars
+        const bars = cumData.map((d, i) => {
+          const bx = x(i) - 12;
+          const bw = 24;
+          const baseY = y(0);
+          const valY = y(d.pl >= 0 ? d.pl : 0);
+          const bh = Math.abs(y(d.pl) - baseY);
+          const fill = d.pl >= 0 ? 'var(--green)' : 'var(--red)';
+          return `<rect x="${bx}" y="${Math.min(baseY, y(d.pl))}" width="${bw}" height="${bh}" fill="${fill}" opacity="0.7" rx="2"/>`;
+        }).join('');
+        // Cumulative line
+        const linePts = cumData.map((d, i) => `${x(i)},${y(d.cum)}`).join(' ');
+        // Labels
+        const labels = cumData.map((d, i) => `<text x="${x(i)}" y="${H - 6}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="middle">${d.month}</text>`).join('');
+        // Y-axis 0 line
+        const zeroLine = `<line x1="${padL}" y1="${y(0)}" x2="${W - padR}" y2="${y(0)}" stroke="var(--border)" stroke-dasharray="2,3"/>`;
+        const svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" style="width:100%;max-width:${W}px;height:auto;display:block;">
+          <text x="${padL - 8}" y="${y(maxC) + 4}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="end">$${Math.round(maxC).toLocaleString()}</text>
+          <text x="${padL - 8}" y="${y(minC) + 4}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="end">$${Math.round(minC).toLocaleString()}</text>
+          ${zeroLine}
+          ${bars}
+          <polyline points="${linePts}" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          ${cumData.map((d, i) => `<circle cx="${x(i)}" cy="${y(d.cum)}" r="3" fill="var(--gold)" stroke="var(--bg-card)" stroke-width="2"/>`).join('')}
+          ${labels}
+          <text x="${W - padR}" y="${padT - 4}" font-family="JetBrains Mono,monospace" font-size="9" fill="var(--text-mute)" text-anchor="end">cumulative P/L · bars=monthly</text>
+        </svg>`;
+        chartEl.innerHTML = svg;
+      }
+    }
+
+    // Open positions table
+    const openRows = data.open_positions_top10 || [];
+    const openTbody = document.getElementById('open-pos-rows');
+    const openCount = document.getElementById('j-open-count');
+    if (openCount) openCount.textContent = '(' + s.open_positions + ' positions · $' + Math.round(s.open_cost_basis || 0).toLocaleString() + ' cost basis)';
+    if (openTbody) {
+      if (!openRows.length) {
+        openTbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-mute); padding:20px;">No open positions logged.</td></tr>';
+      } else {
+        openTbody.innerHTML = openRows.map(p => {
+          return '<tr>' +
+            '<td>' + (p.item_id || '—') + '</td>' +
+            '<td>' + (p.cid || '—') + (p.description ? ' · ' + p.description.slice(0, 35) : '') + '</td>' +
+            '<td class="num">' + (p.qty || 1) + '</td>' +
+            '<td class="num">$' + (p.cost_per_unit || 0).toLocaleString() + '</td>' +
+            '<td class="num">$' + (p.total_cost || 0).toLocaleString() + '</td>' +
+            '<td class="num">' + (p.days_held != null ? p.days_held + 'd' : '—') + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+    }
+  }
+
+  function loadJournal() {
+    tryFetch(JOURNAL_URLS, 0)
+      .then(renderJournal)
+      .catch(err => {
+        console.warn('Trading journal load failed:', err);
+        const tbody = document.getElementById('journal-rows');
+        if (tbody) tbody.innerHTML = '<tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">Journal data unavailable — first cron run will populate.</td></tr>';
+      });
+  }
+
+  // ============ PAST PICKS SCOREBOARD ============
+  function renderScoreboard(data) {
+    const statsEl = document.getElementById('scoreboard-stats');
+    const pendEl = document.getElementById('scoreboard-pending');
+    if (!data) return;
+    const n = data.n_signals_logged || 0;
+    const matured = data.n_matured || 0;
+    const o = data.overall || {};
+    if (statsEl) {
+      if (matured > 0 && o.buy_signals_matured) {
+        const wrCls = o.buy_win_rate_pct >= 60 ? 'win' : o.buy_win_rate_pct < 50 ? 'loss' : '';
+        const arCls = o.buy_avg_return_pct >= 0 ? 'win' : 'loss';
+        statsEl.innerHTML = '<strong>' + n.toLocaleString() + '</strong> signals tracked · ' +
+          '<strong>' + matured.toLocaleString() + '</strong> matured · ' +
+          'BUY win rate <strong class="' + wrCls + '">' + o.buy_win_rate_pct + '%</strong> · ' +
+          'avg return <strong class="' + arCls + '">' + (o.buy_avg_return_pct >= 0 ? '+' : '') + o.buy_avg_return_pct.toFixed(2) + '%</strong>';
+      } else {
+        statsEl.innerHTML = '<strong>' + n.toLocaleString() + '</strong> signals tracked · scoreboard maturing';
+      }
+    }
+    if (pendEl) {
+      if (matured > 0) {
+        pendEl.textContent = '';
+      } else {
+        pendEl.textContent = (data.n_fresh_pending || 0) + ' pending (<24h old)';
+      }
+    }
+  }
+
+  function loadScoreboard() {
+    tryFetch(SCOREBOARD_URLS, 0)
+      .then(renderScoreboard)
+      .catch(err => {
+        console.warn('Scoreboard load failed:', err);
+        const statsEl = document.getElementById('scoreboard-stats');
+        if (statsEl) statsEl.textContent = 'Scoreboard data unavailable — first cron run will populate.';
+      });
+  }
+
+  // ============ SET HEAT ============
+  function renderSetHeat(data) {
+    const grid = document.getElementById('setheat-grid');
+    if (!grid) return;
+    const hot = (data && data.hot_sets_top10) || [];
+    if (!hot.length) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">No set data yet — needs cards_full.json.</p>';
+      return;
+    }
+    const maxHeat = Math.max(...hot.map(s => s.heat_score), 100);
+    grid.innerHTML = hot.slice(0, 9).map(s => {
+      const pct = (s.heat_score / maxHeat * 100).toFixed(1);
+      const d30 = (s.avg_d30_pct || 0);
+      const d30Cls = d30 > 1 ? 'up' : d30 < -1 ? 'dn' : '';
+      const d30Str = (d30 >= 0 ? '+' : '') + d30.toFixed(1) + '%';
+      return '<div class="setheat-card">' +
+        '<div class="set-name" title="' + s.set + '">' + s.set + '</div>' +
+        '<div class="heat-bar"><div class="heat-bar-fill" style="width:' + pct + '%"></div></div>' +
+        '<div class="meta">' +
+          '<span>' + s.n_cards + ' cards · <span class="v">' + s.buy_density_pct.toFixed(0) + '% BUY</span></span>' +
+          '<span>d30 <span class="v ' + d30Cls + '">' + d30Str + '</span></span>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function loadSetHeat() {
+    tryFetch(SETHEAT_URLS, 0)
+      .then(renderSetHeat)
+      .catch(err => {
+        console.warn('Set heat load failed:', err);
+        const g = document.getElementById('setheat-grid');
+        if (g) g.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">Set heat data unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ SEALED MARKET ============
+  function renderSealed(data) {
+    const grid = document.getElementById('sealed-grid');
+    if (!grid) return;
+    const buys = (data && data.top_buys) || [];
+    if (!buys.length) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">No sealed BUY signals right now — scanner runs every 4h.</p>';
+      return;
+    }
+    grid.innerHTML = buys.slice(0, 12).map(s => {
+      const d30 = s.d30_pct || 0;
+      const d30Cls = d30 > 0.5 ? 'up' : d30 < -0.5 ? 'dn' : '';
+      const d30Str = (d30 >= 0 ? '+' : '') + d30.toFixed(1) + '%';
+      const ev = s.ev_per_pack ? '$' + s.ev_per_pack.toFixed(0) + '/pack' : '—';
+      return '<div class="sealed-card">' +
+        '<div class="product-name" title="' + (s.name || '') + '">' + (s.name || '') + '</div>' +
+        '<div class="product-type">' + (s.product_type || 'Sealed') + '</div>' +
+        '<div class="stats">' +
+          '<div><div class="l">Price</div><div class="v">$' + (s.live_price || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">Score</div><div class="v">' + (s.score || 0) + '</div></div>' +
+          '<div><div class="l">EV / pack</div><div class="v">' + ev + '</div></div>' +
+          '<div><div class="l">d30</div><div class="v ' + d30Cls + '">' + d30Str + '</div></div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function loadSealed() {
+    tryFetch(SEALED_URLS, 0)
+      .then(renderSealed)
+      .catch(err => {
+        console.warn('Sealed load failed:', err);
+        const g = document.getElementById('sealed-grid');
+        if (g) g.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">Sealed market data unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ PIPELINE HEALTH DOT ============
+  function renderHealth(data) {
+    const dot = document.getElementById('health-dot');
+    if (!dot || !data) return;
+    const o = (data.overall || 'GREEN').toLowerCase();
+    dot.className = 'health-dot ' + o;
+    const counts = data.counts || {};
+    dot.title = 'Pipeline: ' + (data.overall || 'unknown') +
+      ' · ' + (counts.green || 0) + 'G / ' + (counts.yellow || 0) + 'Y / ' + (counts.red || 0) + 'R';
+  }
+
+  function loadHealth() {
+    tryFetch(HEALTH_URLS, 0)
+      .then(renderHealth)
+      .catch(err => {
+        console.warn('Health load failed:', err);
+        const dot = document.getElementById('health-dot');
+        if (dot) {
+          dot.className = 'health-dot yellow';
+          dot.title = 'Pipeline health unknown';
+        }
+      });
+  }
+
+  // ============ INLINE TOP 500 ============
+  let allCards = null;
+  let t500Visible = 60;
+  let t500Filter = { q: '', sort: 'score', variant: 'all' };
+
+  function variantMatch(card, filter) {
+    if (filter === 'all') return true;
+    const v = (card.variant || '').toUpperCase();
+    if (filter === 'psa10') return v.includes('PSA 10');
+    if (filter === 'psa9')  return v.includes('PSA 9') && !v.includes('PSA 9.5');
+    if (filter === 'raw')   return v.includes('RAW') || v.includes('NM');
+    if (filter === 'sealed') return v.includes('SEALED') || v.includes('ETB') || v.includes('BOOSTER') || v.includes('BUNDLE');
+    return true;
+  }
+  function signalRank(s) {
+    return ({'STRONG BUY':0, 'BUY':1, 'HOLD':2, 'TRIM':3, 'SELL':4})[s] ?? 5;
+  }
+
+  function renderTop500() {
+    if (!allCards) return;
+    const arr = Object.values(allCards);
+    let f = arr.filter(c => c.live_price > 0 && variantMatch(c, t500Filter.variant));
+    if (t500Filter.q) {
+      const q = t500Filter.q.toLowerCase();
+      f = f.filter(c => (c.name || '').toLowerCase().includes(q) ||
+                         (c.set || '').toLowerCase().includes(q) ||
+                         (c.id || '').toLowerCase().includes(q) ||
+                         (c.variant || '').toLowerCase().includes(q));
+    }
+    const sortFns = {
+      score:      (a,b) => b.score - a.score,
+      signal:     (a,b) => signalRank(a.signal) - signalRank(b.signal) || b.score - a.score,
+      'price-desc': (a,b) => b.live_price - a.live_price,
+      'price-asc':  (a,b) => a.live_price - b.live_price,
+      name:        (a,b) => (a.name || '').localeCompare(b.name || ''),
+    };
+    f.sort(sortFns[t500Filter.sort] || sortFns.score);
+    setText('t500-count', f.length + ' / ' + arr.length + ' cards');
+    const slice = f.slice(0, t500Visible);
+    const grid = document.getElementById('t500-grid');
+    grid.innerHTML = slice.map(c => {
+      const img = c.image ? '<img src="' + c.image + '" alt="" loading="lazy">' :
+                            '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-mute);font-family:monospace;font-size:10px;">no img</div>';
+      const price = c.live_price >= 1000 ? '$' + Math.round(c.live_price).toLocaleString() : '$' + c.live_price.toFixed(0);
+      return '<a class="t500-tile" href="/card.html?id=' + c.id + '">' +
+        '<div class="img">' + img + '</div>' +
+        '<div class="body">' +
+          '<div class="name">' + c.name + '</div>' +
+          '<div class="row"><span class="price">' + price + '</span><span class="score">' + c.signal + ' ' + c.score + '</span></div>' +
+        '</div>' +
+      '</a>';
+    }).join('');
+    document.getElementById('t500-more').style.display = (slice.length < f.length) ? '' : 'none';
+  }
+
+  function loadTop500() {
+    tryFetch(CARDS_FULL_URLS, 0)
+      .then(data => {
+        allCards = data.cards || {};
+        renderTop500();
+        const searchEl = document.getElementById('t500-search');
+        const sortEl = document.getElementById('t500-sort');
+        const varEl = document.getElementById('t500-variant');
+        if (searchEl) searchEl.addEventListener('input', e => { t500Filter.q = e.target.value; t500Visible = 60; renderTop500(); });
+        if (sortEl) sortEl.addEventListener('change', e => { t500Filter.sort = e.target.value; renderTop500(); });
+        if (varEl) varEl.addEventListener('change', e => { t500Filter.variant = e.target.value; t500Visible = 60; renderTop500(); });
+        const moreBtn = document.getElementById('t500-more');
+        if (moreBtn) moreBtn.addEventListener('click', () => { t500Visible += 60; renderTop500(); });
+      })
+      .catch(err => {
+        console.warn('Top 500 load failed:', err);
+        const grid = document.getElementById('t500-grid');
+        if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">Top 500 data unavailable.</p>';
+      });
+  }
+
+  function fmtMoney(n) {
+    if (n == null || isNaN(n)) return '—';
+    if (n >= 1e6) return '$' + (n/1e6).toFixed(2) + 'M';
+    if (n >= 1e3) return '$' + Math.round(n).toLocaleString();
+    return '$' + (n.toFixed(n < 10 ? 2 : 0));
+  }
+  function fmtPct(p) {
+    if (p == null || isNaN(p)) return '—';
+    const sign = p >= 0 ? '+' : '';
+    return sign + p.toFixed(1) + '%';
+  }
+  function pctClass(p) {
+    if (p == null || isNaN(p) || Math.abs(p) < 0.5) return 'flat';
+    return p > 0 ? 'up' : 'down';
+  }
+  function signalClass(s) {
+    return (s || '').toLowerCase().replace(' ', '-');
+  }
+  function relTime(iso) {
+    if (!iso) return '—';
+    try {
+      const t = new Date(iso);
+      const diffMs = Date.now() - t.getTime();
+      const mins = Math.round(diffMs / 60000);
+      if (mins < 1) return 'just now';
+      if (mins < 60) return mins + 'm ago';
+      const hrs = Math.round(mins / 60);
+      if (hrs < 24) return hrs + 'h ago';
+      return Math.round(hrs / 24) + 'd ago';
+    } catch (e) { return iso.slice(0,16).replace('T',' '); }
+  }
+
+  // Trustworthy delta = computed from real price_history snapshots, not workbook
+  // formula. Until price_history has ≥5 days, suppress the % display so the
+  // ticker doesn't show nonsense like "Moonbreon +233%".
+  function deltaIsTrusted(item) {
+    return item.d30_source === 'live_history' || item.d7_source === 'live_history';
+  }
+
+  function signalPill(sig) {
+    const cls = signalClass(sig);
+    return '<span class="sig-' + cls + '">' + sig + '</span>';
+  }
+
+  function buildTape(items) {
+    if (!items || items.length === 0) return '';
+    const doubled = items.concat(items);
+    return doubled.map(c => {
+      // Live $ + signal pill is more honest than a stale workbook % delta
+      let chunk = '<span class="tape-item"><span class="nm">' + c.name + '</span>' +
+                  '<span class="pr">' + fmtMoney(c.price) + '</span>';
+      if (deltaIsTrusted(c)) {
+        const cls = pctClass(c.d30);
+        const arrow = c.d30 > 0 ? '▲' : (c.d30 < 0 ? '▼' : '·');
+        chunk += '<span class="ch ' + cls + '">' + arrow + ' ' + fmtPct(c.d30) + '</span>';
+      } else {
+        // Show signal badge instead — works without history
+        const sigCls = signalClass(c.signal);
+        chunk += '<span class="ch ' + (sigCls.includes('buy') ? 'up' : sigCls.includes('sell') || sigCls.includes('trim') ? 'down' : 'flat') + '">' + (c.signal || '—') + '</span>';
+      }
+      chunk += '</span>';
+      return chunk;
+    }).join('');
+  }
+
+  function buildMoverRows(rows) {
+    if (!rows || rows.length === 0) {
+      return '<tr><td colspan="3" class="skeleton">Real 30D % activates after 5 days of live tracking. Until then, ranked by quant Score.</td></tr>';
+    }
+    return rows.map(r => {
+      // When delta isn't trusted yet, show the Score in the third column instead
+      // of a misleading workbook % delta
+      if (deltaIsTrusted(r)) {
+        const cls = pctClass(r.d30);
+        return '<tr><td class="name">' + r.name + '<span class="var">' +
+               (r.set || '') + ' · ' + (r.variant || '') + '</span></td>' +
+               '<td class="num">' + fmtMoney(r.price) + '</td>' +
+               '<td class="delta ' + cls + '">' + fmtPct(r.d30) + '</td></tr>';
+      } else {
+        return '<tr><td class="name">' + r.name + '<span class="var">' +
+               (r.set || '') + ' · ' + (r.variant || '') + '</span></td>' +
+               '<td class="num">' + fmtMoney(r.price) + '</td>' +
+               '<td class="delta flat" title="Score (live % unlocks after 5d of price history)">Score ' + r.score + '</td></tr>';
+      }
+    }).join('');
+  }
+
+  function buildBuyRows(rows) {
+    if (!rows || rows.length === 0) {
+      return '<tr><td colspan="6" class="skeleton">No STRONG BUYs right now.</td></tr>';
+    }
+    return rows.map(r => {
+      const cls7 = pctClass(r.d7);
+      const cls30 = pctClass(r.d30);
+      const sigCls = signalClass(r.signal);
+      return '<tr>' +
+        '<td class="name">' + r.name + '<span class="var">' + (r.set || '') + ' · ' + (r.variant || '') + '</span></td>' +
+        '<td class="num">' + fmtMoney(r.price) + '</td>' +
+        '<td class="delta ' + cls7 + '">' + fmtPct(r.d7) + '</td>' +
+        '<td class="delta ' + cls30 + '">' + fmtPct(r.d30) + '</td>' +
+        '<td class="num">' + r.score + '</td>' +
+        '<td class="signal"><span class="' + sigCls + '">' + r.signal + '</span></td>' +
+      '</tr>';
+    }).join('');
+  }
+
+  function setText(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; }
+  function setHTML(id, val) { var el = document.getElementById(id); if (el) el.innerHTML = val; }
+
+  function render(feed) {
+    const s = feed.stats || {};
+
+    // Populate hero stats strip — the live numbers Brandon wants front and center
+    try {
+      setText('hs-live', (s.live_matched || 0).toLocaleString());
+      setText('hs-live-sub', 'of ' + (s.total_cards || 0).toLocaleString() + ' tracked · ' +
+        (s.total_cards ? Math.round(100*s.live_matched/s.total_cards) : 0) + '% coverage');
+      setText('hs-buys', (s.strong_buys || 0).toLocaleString());
+      setText('hs-mcap', fmtMoney(s.total_mcap));
+      const dq = feed.data_quality || {};
+      const dqEl = document.getElementById('hs-dq');
+      if (dqEl) {
+        const grade = dq.grade || '—';
+        dqEl.textContent = grade + ' · ' + (dq.score || '—');
+        dqEl.className = 'value ' + (grade === 'A' || grade === 'B' ? 'green' : grade === 'C' ? 'gold' : 'red');
+      }
+      setText('hs-dq-sub', dq.alert_counts ? (dq.alert_counts.high || 0) + ' high · ' + (dq.alert_counts.warn || 0) + ' warn' : 'auto-audited');
+      setText('hs-fresh', relTime(feed.live_updated_at));
+    } catch (e) { console.error('hero stats render', e); }
+
+    setText('kpi-cards', (s.total_cards || 0).toLocaleString());
+    setText('kpi-matched', (s.live_matched || 0).toLocaleString());
+    const coveragePct = s.total_cards ? Math.round(100 * s.live_matched / s.total_cards) : 0;
+    setText('kpi-matched-sub', coveragePct + '% coverage of ' + (s.total_cards || 0).toLocaleString());
+    setText('kpi-mcap', fmtMoney(s.total_mcap));
+    setText('kpi-buys', (s.strong_buys || 0).toLocaleString());
+
+    const d30 = (s.avg_d30_pct || 0) * 100;
+    const d30El = document.getElementById('kpi-d30');
+    if (d30El) {
+      d30El.textContent = fmtPct(d30);
+      d30El.style.color = d30 > 0 ? 'var(--green)' : (d30 < 0 ? 'var(--red)' : 'var(--text)');
+    }
+    setText('kpi-updated', 'updated ' + relTime(feed.live_updated_at));
+
+    // Sticky sub-nav live stats
+    setText('snk-buys', (s.strong_buys || 0).toLocaleString());
+    setText('snk-age', relTime(feed.live_updated_at));
+
+    // Freshness banner: warn if data is older than 6h, scream if older than 24h
+    try {
+      const banner = document.getElementById('freshness-banner');
+      if (banner && feed.live_updated_at) {
+        const t = new Date(feed.live_updated_at);
+        const hrs = (Date.now() - t.getTime()) / 3600000;
+        if (hrs < 6) {
+          banner.style.display = 'none';
+        } else {
+          banner.style.display = '';
+          let icon = '⚠️', color = '#fb923c', bg = 'rgba(251,146,60,0.08)', border = 'rgba(251,146,60,0.25)';
+          if (hrs > 24) { icon = '🚨'; color = '#f87171'; bg = 'rgba(248,113,113,0.1)'; border = 'rgba(248,113,113,0.3)'; }
+          banner.style.background = bg;
+          banner.style.borderColor = border;
+          banner.style.color = color;
+          setText('freshness-msg', icon + ' Data is ' + Math.round(hrs) + 'h old (target: 4h). Cron may have missed its slot.');
+        }
+      }
+    } catch (e) {}
+
+    // Data Quality auto-audit — surfaces grade-ladder violations, source
+    // disagreements, workbook fallbacks, etc. Cron writes feed.data_quality.
+    try {
+      const dq = feed.data_quality;
+      if (dq) {
+        const banner = document.getElementById('dq-banner');
+        const dqCard = document.getElementById('dq-card');
+        const score = dq.score ?? 0;
+        const grade = dq.grade || '—';
+        const counts = dq.alert_counts || {};
+        const stats = dq.top_issues_by_category || {};
+        // Color theming
+        let pillBg, pillFg, pillBr;
+        if (grade === 'A' || grade === 'B') { pillFg='#4ade80'; pillBg='rgba(74,222,128,0.13)'; pillBr='#4ade8055'; }
+        else if (grade === 'C') { pillFg='#fbbf24'; pillBg='rgba(251,191,36,0.13)'; pillBr='#fbbf2455'; }
+        else { pillFg='#f87171'; pillBg='rgba(248,113,113,0.13)'; pillBr='#f8717155'; }
+        if (banner) {
+          banner.style.display = '';
+          banner.style.background = pillBg;
+          banner.style.borderTop = '1px solid ' + pillBr;
+          const pill = document.getElementById('dq-grade-pill');
+          if (pill) { pill.style.background = pillBg; pill.style.color = pillFg; pill.style.border = '1px solid ' + pillBr; }
+          setText('dq-grade-letter', grade);
+          setText('dq-score', score + '/100');
+          const ageStr = dq.data_age_hours != null ? Math.round(dq.data_age_hours) + 'h old' : '';
+          setText('dq-counts', (counts.high || 0) + ' high · ' + (counts.warn || 0) + ' warn · ' + ageStr);
+        }
+        // Main card
+        const scoreBig = document.getElementById('dq-score-big');
+        if (scoreBig) { scoreBig.textContent = score; scoreBig.style.color = pillFg; }
+        setText('dq-grade-big', 'Grade ' + grade);
+        const issueLines = [];
+        if (stats.grade_ladder_violation) issueLines.push('<strong style="color:#f87171;">' + stats.grade_ladder_violation + '</strong> grade-ladder violations (PC matched wrong page)');
+        if (stats.cross_source_disagree) issueLines.push('<strong style="color:#fbbf24;">' + stats.cross_source_disagree + '</strong> cross-source disagreements');
+        if (stats.wb_fallback_highvalue) issueLines.push('<strong style="color:#fbbf24;">' + stats.wb_fallback_highvalue + '</strong> high-value cards on workbook fallback');
+        if (stats.graded_no_data) issueLines.push('<strong>' + stats.graded_no_data + '</strong> graded cards w/ no PC+PPT data');
+        if (stats.duplicate_entries) issueLines.push('<strong>' + stats.duplicate_entries + '</strong> duplicate name+variant entries');
+        if (stats.stale_data) issueLines.push('<strong style="color:#f87171;">⚠ data is stale</strong>');
+        if (!issueLines.length) issueLines.push('<strong style="color:#4ade80;">✓ No major issues detected</strong>');
+        setHTML('dq-summary', issueLines.join('<br>'));
+        // Top high-severity alerts
+        const alertsEl = document.getElementById('dq-alerts');
+        if (alertsEl) {
+          const html = (dq.top_alerts || []).map(a => {
+            const sev = a.severity === 'high' ? 'rgba(248,113,113,0.10)' : 'rgba(251,191,36,0.08)';
+            const sevBr = a.severity === 'high' ? '#f8717155' : '#fbbf2455';
+            return '<a href="/card.html?id=' + (a.cid||'') + '" style="display:block;padding:10px 12px;border-radius:6px;background:' + sev + ';border:1px solid ' + sevBr + ';text-decoration:none;color:var(--text);transition:transform 0.15s;">' +
+              '<div style="font-size:11px;color:var(--text-mute);font-family:monospace;text-transform:uppercase;letter-spacing:0.08em;">' + (a.category || '').replace(/_/g,' ') + '</div>' +
+              '<div style="font-weight:600;margin:2px 0;">' + (a.name || a.cid || '?') + ' <span style="color:var(--text-mute);font-weight:400;">· ' + (a.variant || '') + '</span></div>' +
+              '<div style="font-size:11px;color:var(--text-dim);">' + (a.message || '').slice(0,90) + '</div>' +
+            '</a>';
+          }).join('');
+          alertsEl.innerHTML = html || '<p style="color:var(--text-mute);">No high-severity alerts. ✓</p>';
+        }
+      }
+    } catch (e) { console.error('Data quality render failed:', e); }
+
+    // Price Alerts widget — from feed.price_alerts
+    try {
+      const pa = feed.price_alerts;
+      if (pa) {
+        setText('alerts-buy-count', (pa.buy_alerts_count || 0).toLocaleString());
+        setText('alerts-sell-count', (pa.sell_alerts_count || 0).toLocaleString());
+        function alertRow(a, kind) {
+          const pct = kind === 'buy' ? a.discount_pct : a.premium_pct;
+          const cls = kind === 'buy' ? '#4ade80' : '#f87171';
+          const sign = kind === 'buy' ? 'off' : 'premium';
+          const just = a.just_crossed_today ? ' <span style="color:var(--gold);font-size:9px;">⚡ today</span>' : '';
+          return '<a href="/card.html?id=' + a.cid + '" style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);">' +
+            '<span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;">' + (a.name || '?').substring(0,26) + ' <span style="color:var(--text-mute);font-size:10px;">' + (a.variant || '').substring(0,7) + '</span>' + just + '</span>' +
+            '<span style="font-family:monospace;color:' + cls + ';font-weight:700;margin-left:8px;font-size:12px;">' + fmtMoney(a.live_price) + ' <span style="color:var(--text-mute);font-size:10px;">' + Math.round(pct) + '% ' + sign + '</span></span>' +
+          '</a>';
+        }
+        const buysHtml = (pa.top_buy_alerts || []).slice(0,6).map(a => alertRow(a, 'buy')).join('');
+        const sellsHtml = (pa.top_sell_alerts || []).slice(0,6).map(a => alertRow(a, 'sell')).join('');
+        setHTML('alerts-buys', buysHtml || '<p style="color:var(--text-mute);font-size:12px;">No buy alerts</p>');
+        setHTML('alerts-sells', sellsHtml || '<p style="color:var(--text-mute);font-size:12px;">No sell alerts</p>');
+      }
+    } catch (e) { console.error('alerts render', e); }
+
+    // Today's Moves widget — from feed.price_diff
+    try {
+      const pd = feed.price_diff;
+      if (pd) {
+        function moveRow(m) {
+          const cls = m.delta_pct > 0 ? '#4ade80' : '#f87171';
+          const arrow = m.delta_pct > 0 ? '↑' : '↓';
+          return '<a href="/card.html?id=' + (m.cid||'') + '" style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);font-size:12px;">' +
+            '<span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + (m.name || m.cid || '?').substring(0,28) + ' <span style="color:var(--text-mute);font-size:10px;">' + (m.variant || '').substring(0,6) + '</span></span>' +
+            '<span style="font-family:monospace;color:' + cls + ';font-weight:700;margin-left:8px;">' + arrow + ' ' + Math.abs(m.delta_pct).toFixed(1) + '%</span>' +
+          '</a>';
+        }
+        const gainersHtml = (pd.top_gainers || []).slice(0,5).map(moveRow).join('') || '<p style="color:var(--text-mute);font-size:12px;">No real moves yet (need 2+ daily scrapes)</p>';
+        const losersHtml = (pd.top_losers || []).slice(0,5).map(moveRow).join('') || '<p style="color:var(--text-mute);font-size:12px;">No losses (or low data)</p>';
+        setHTML('moves-gainers', gainersHtml);
+        setHTML('moves-losers', losersHtml);
+        const ago = pd.prior_snapshot_at ? relTime(pd.prior_snapshot_at) : '—';
+        setText('moves-meta', 'vs snapshot from ' + ago + ' · ' + (pd.real_moves_count || 0) + ' real moves');
+      }
+    } catch (e) { console.error('moves render', e); }
+
+    // Morning Brief widget — from feed.morning_brief
+    try {
+      const mb = feed.morning_brief;
+      if (mb && mb.top_strong_buys) {
+        const buysHtml = (mb.top_strong_buys || []).slice(0,4).map(c => {
+          return '<a href="/card.html?id=' + c.cid + '" style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);">' +
+            '<span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;">' + (c.name || '?').substring(0,28) + '</span>' +
+            '<span style="font-family:monospace;color:var(--gold);font-weight:700;margin-left:8px;font-size:12px;">' + fmtMoney(c.price) + ' <span style="color:var(--text-mute);font-size:10px;">·' + (c.score||0) + '</span></span>' +
+          '</a>';
+        }).join('');
+        setHTML('brief-buys', buysHtml || '<p style="color:var(--text-mute);font-size:12px;">No HIGH-confidence STRONG BUYs</p>');
+        setHTML('brief-fixes',
+          '<p style="font-size:12px;line-height:1.5;color:var(--text-dim);">Reconciler caught <strong style="color:var(--gold);">' + (mb.summary?.reconciler_fixes_count || 0) + '</strong> bad scrapes this run. Each was reverted to a safe workbook value.</p>' +
+          '<a href="https://github.com/Keyvaniath/pokemon-tcg-trading-desk/blob/main/scrape_errors.json" target="_blank" rel="noopener" style="font-size:11px;color:var(--gold);text-decoration:none;">View log →</a>'
+        );
+        setHTML('brief-overrides',
+          '<p style="font-size:12px;line-height:1.5;color:var(--text-dim);"><strong style="color:#f87171;">' + (mb.summary?.needs_override_count || 0) + '</strong> high-value cards stuck on workbook fallback. Add overrides via the /pricing-admin tab on the Pro dashboard to set live prices.</p>'
+        );
+      }
+    } catch (e) { console.error('brief render', e); }
+
+    // Live-tracking freshness pill: shows how long we have history + how stale the scrape is
+    const histDays = s.history_age_days || 0;
+    const histN = s.history_snapshots || 0;
+    const histOverlay = s.history_overlay_count || 0;
+    let freshness = '📡 Scrape ' + relTime(feed.live_updated_at);
+    if (histN > 0) {
+      freshness += ' · 📊 Tracking ' + histDays.toFixed(1) + 'd';
+      if (histOverlay > 0) freshness += ' · ' + histOverlay + ' real-history deltas';
+    }
+    setText('data-freshness', freshness);
+
+    const t = feed.trade_of_day;
+    if (t) {
+      setText('totd-name', t.name);
+      setText('totd-meta', (t.set || '') + ' · ' + (t.number || '') + ' · ' + (t.variant || ''));
+      setText('totd-price', fmtMoney(t.price));
+      const totdD30 = document.getElementById('totd-d30');
+      if (totdD30) {
+        totdD30.textContent = fmtPct(t.d30);
+        totdD30.style.color = t.d30 > 0 ? 'var(--green)' : (t.d30 < 0 ? 'var(--red)' : 'var(--text)');
+      }
+      setText('totd-score', t.score);
+      setText('totd-signal', t.signal);
+      const buyTarget = fmtMoney(t.price * 0.80);
+      const sellTarget = fmtMoney(t.price * 1.15);
+      const d30Color = t.d30 >= 0 ? 'var(--green)' : 'var(--red)';
+      setHTML('totd-thesis',
+        'Algo flagged <strong>' + t.name + '</strong> (' + t.variant + ') overnight. ' +
+        '30D price action: <strong style="color:' + d30Color + ';">' + fmtPct(t.d30) + '</strong>. ' +
+        'Composite quant score ' + t.score + '/100 puts it in the <strong style="color:var(--green);">' +
+        t.signal + '</strong> zone. Buy target: ' + buyTarget + '. Take profit at ' + sellTarget + '.');
+      setText('action-buy', 'Pull the trigger on ' + t.name + '.');
+      setText('action-buy-pct', Math.round(t.d30));
+    }
+
+    // Swap panel titles based on whether we have real history yet
+    const histDaysCheck = (feed.stats || {}).history_age_days || 0;
+    const histReady = histDaysCheck >= 5;
+    if (histReady) {
+      setText('movers-up-title', '▲ Top Gainers · 30D');
+      setText('movers-up-sub', '10 biggest movers up · real history');
+      setText('movers-down-title', '▼ Top Losers · 30D');
+      setText('movers-down-sub', '10 biggest movers down · real history');
+    }
+    setHTML('movers-up', buildMoverRows(feed.movers_up));
+    setHTML('movers-down', buildMoverRows(feed.movers_down));
+    setHTML('strong-buys', buildBuyRows(feed.strong_buys));
+
+    const tapeItems = (feed.tape && feed.tape.length) ? feed.tape : (feed.movers_up || []).concat(feed.movers_down || []);
+    setHTML('tape-track', buildTape(tapeItems));
+  }
+
+  function tryFetch(urls, idx) {
+    if (idx >= urls.length) {
+      return Promise.reject('all feed URLs failed');
+    }
+    return fetch(urls[idx] + '?t=' + Date.now())
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .catch(err => tryFetch(urls, idx + 1));
+  }
+
+  function load() {
+    tryFetch(FEED_URLS, 0)
+      .then(render)
+      .catch(err => {
+        console.warn('Feed load failed:', err);
+        setHTML('tape-track',
+          '<span class="tape-item" style="color:var(--red);">Feed offline — data refreshes every 4h. Try reload in 60s.</span>');
+      });
+  }
+
+  // Register service worker for offline cache + faster repeat loads
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').catch(function() {});
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    load();                  // homepage_feed (tape, movers, alerts, brief, stats)
+    loadFeaturedSets();      // small Featured Sets strip
+    loadHealth();            // pipeline health dot in sub-nav
+    loadTop500();            // Top 500 grid
+    setInterval(load, REFRESH_MS);
+    setInterval(loadFeaturedSets, REFRESH_MS * 30);
+    setInterval(loadHealth, REFRESH_MS * 10);
+    setInterval(loadTop500, REFRESH_MS * 5);
+    // (Model widgets moved to /models.html — their loaders live there now.)
+    // Manual refresh button
+    var btn = document.getElementById('refresh-now-btn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        btn.textContent = '↻ Refreshing…';
+        btn.disabled = true;
+        load();
+        setTimeout(function() {
+          btn.textContent = '↻ Refresh Now';
+          btn.disabled = false;
+        }, 1500);
+      });
+    }
+  });
+
+})();
+</script>
+
+</body>
+</html>
