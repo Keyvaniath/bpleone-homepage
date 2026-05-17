@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity Feed · bpleone.com</title>
+<meta name="description" content="Live activity feed for the bpleone.com trading desk. New signals, reconciler fixes, arb opportunities, model retrains, trades.">
+<meta property="og:title" content="bpleone.com activity feed">
+<meta property="og:description" content="Real-time activity stream from the trading desk.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bpleone.com/activity.html">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="canonical" href="https://bpleone.com/activity.html">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e1a; --bg-card: #131826; --bg-card-hover: #1a2034;
+    --border: #232a3e; --gold: #f5c842; --gold-dim: #c9a73c;
+    --text: #e8ecf4; --text-dim: #8b94a8; --text-mute: #5a6378;
+    --green: #4ade80; --orange: #fb923c; --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text); line-height: 1.6; min-height: 100vh;
+    background-image:
+      radial-gradient(circle at 10% 10%, rgba(245,200,66,0.04) 0, transparent 40%),
+      radial-gradient(circle at 90% 90%, rgba(74,222,128,0.03) 0, transparent 40%);
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+  nav { border-bottom: 1px solid var(--border); padding: 18px 0; position: sticky; top: 0;
+        background: rgba(10,14,26,0.85); backdrop-filter: blur(12px); z-index: 100; }
+  nav .container { max-width: 1200px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+  .nav-brand .dot { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 14px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  header.page-hero { padding: 48px 0 16px; }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold);
+    letter-spacing: 0.15em; text-transform: uppercase;
+    background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.25);
+    padding: 6px 12px; border-radius: 999px; margin-bottom: 16px;
+  }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
+  h1 .accent { color: var(--gold); }
+  .lead { color: var(--text-dim); font-size: 15px; margin-bottom: 20px; }
+  .event-stream { margin: 32px 0 60px; }
+  .event-row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 14px;
+    padding: 16px 18px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .event-row:hover { border-color: var(--gold-dim); background: var(--bg-card-hover); }
+  .event-row .icon {
+    font-size: 28px;
+    text-align: center;
+    align-self: start;
+    padding-top: 2px;
+  }
+  .event-row .body { min-width: 0; }
+  .event-row .title {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.35;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .event-row .detail {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+  }
+  .event-row .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .event-row.type-signal_strong_buy { border-left: 3px solid var(--green); }
+  .event-row.type-arb_opportunity { border-left: 3px solid #818cf8; }
+  .event-row.type-reconciler_fix { border-left: 3px solid var(--gold); }
+  .event-row.type-model_retrain { border-left: 3px solid #818cf8; }
+  .event-row.type-pop_surge { border-left: 3px solid var(--orange); }
+  .event-row.type-scarcity_hardening { border-left: 3px solid var(--green); }
+  .event-row.type-trade_closed { border-left: 3px solid var(--gold); }
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 24px 0;
+  }
+  .stat-pill {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    text-align: center;
+  }
+  .stat-pill .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .stat-pill .val {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  footer { padding: 36px 0 28px; color: var(--text-mute); font-size: 12px; text-align: center; border-top: 1px solid var(--border); margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">📊 Live</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/activity.html" class="active">📡 Activity</a>
+      <a href="/methodology.html">📐 Method</a>
+      <a href="/status.html">⚙ Status</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">📡 Recent Activity</span>
+    <h1>Live <span class="accent">Activity Feed</span></h1>
+    <p class="lead">What's happened on the desk in the last 48 hours — new signals, reconciler fixes, arb opportunities, model retrains, closed trades. Updates every cron cycle.</p>
+
+    <div class="stats-bar" id="stats-bar">
+      <div class="stat-pill"><div class="lbl">Total Events</div><div class="val" id="stat-total">—</div></div>
+      <div class="stat-pill"><div class="lbl">STRONG BUYs</div><div class="val" id="stat-buys">—</div></div>
+      <div class="stat-pill"><div class="lbl">Arb Opps</div><div class="val" id="stat-arbs">—</div></div>
+      <div class="stat-pill"><div class="lbl">Fixes</div><div class="val" id="stat-fixes">—</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="event-stream" id="event-stream">
+      <p style="text-align:center; color:var(--text-mute); padding: 30px 0;">⏳ Loading activity feed…</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    bpleone.com · <a href="/" style="color:var(--text-mute);">back to live</a> · <a href="/status.html" style="color:var(--text-mute);">pipeline status</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const URLS = [
+    '/activity_feed.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/activity_feed.json'
+  ];
+  function tryFetch(urls, i) {
+    return fetch(urls[i], {cache: 'no-store'}).then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).catch(err => {
+      if (i + 1 < urls.length) return tryFetch(urls, i + 1);
+      throw err;
+    });
+  }
+  function timeAgo(ts) {
+    if (!ts) return '—';
+    const dt = new Date(ts);
+    const diffMin = Math.round((Date.now() - dt.getTime()) / 60000);
+    if (diffMin < 1) return 'just now';
+    if (diffMin < 60) return diffMin + 'm ago';
+    const h = Math.round(diffMin / 60);
+    if (h < 24) return h + 'h ago';
+    return Math.round(h / 24) + 'd ago';
+  }
+  function render(data) {
+    const events = (data && data.events) || [];
+    const stream = document.getElementById('event-stream');
+    if (!events.length) {
+      stream.innerHTML = '<p style="text-align:center; color:var(--text-mute); padding: 30px 0;">No activity in the last 48 hours.</p>';
+      return;
+    }
+    // Stats
+    const total = events.length;
+    let buys = 0, arbs = 0, fixes = 0;
+    events.forEach(e => {
+      if (e.type === 'signal_strong_buy') buys++;
+      else if (e.type === 'arb_opportunity') arbs++;
+      else if (e.type === 'reconciler_fix') fixes++;
+    });
+    document.getElementById('stat-total').textContent = total;
+    document.getElementById('stat-buys').textContent = buys;
+    document.getElementById('stat-arbs').textContent = arbs;
+    document.getElementById('stat-fixes').textContent = fixes;
+
+    stream.innerHTML = events.map(e => {
+      const cls = 'event-row type-' + (e.type || 'unknown');
+      return '<div class="' + cls + '">' +
+        '<div class="icon">' + (e.icon || '·') + '</div>' +
+        '<div class="body">' +
+          '<div class="title">' + (e.title || '—') + '</div>' +
+          '<div class="detail">' + (e.detail || '') + '</div>' +
+          '<div class="meta">' + (e.type || '').replace(/_/g, ' ') + ' · ' + timeAgo(e.ts) + (e.cid ? ' · ' + e.cid : '') + '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+  function load() {
+    tryFetch(URLS, 0).then(render).catch(err => {
+      console.warn('Activity feed load failed:', err);
+      document.getElementById('event-stream').innerHTML = '<p style="text-align:center; color:var(--text-mute); padding: 30px 0;">Activity feed unavailable — first cron run will populate.</p>';
+    });
+  }
+  load();
+  setInterval(load, 60000);
+})();
+</script>
+
+</body>
+</html>
