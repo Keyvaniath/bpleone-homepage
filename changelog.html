@@ -129,6 +129,52 @@
 
     <article class="release">
       <div class="release-head">
+        <span class="release-version">v0.24 — Activity feed + open positions + monthly P/L chart</span>
+        <span class="release-date">2026-05-17</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-ui">UI</span>
+          <span class="tag-pill tag-data">DATA</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>📡 Activity Feed</strong> at <a href="/activity.html">bpleone.com/activity</a> — chronological event stream of last 48h: new STRONG BUYs, reconciler fixes ($1k+), arb opportunities, model retrains, PSA pop surges, scarcity hardening, closed trades. Type-coded rows w/ emoji icons + smart timeAgo. Auto-refresh 60s.</li>
+        <li><strong>📒 Trading Journal now shows OPEN positions</strong> — current capital deployed alongside closed trades. 7 positions, $6,030 cost basis surfaced.</li>
+        <li><strong>📒 Monthly P/L sparkline chart</strong> — inline SVG (no external deps) showing cumulative P/L line + per-month bars. Grows naturally as Brandon logs more trades.</li>
+        <li><strong>trading_journal.csv</strong> — CSV export for Schedule D tax filing</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
+        <span class="release-version">v0.23 — Layer 2 Models + Status + Methodology</span>
+        <span class="release-date">2026-05-17</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-ui">UI</span>
+          <span class="tag-pill tag-data">DATA</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>🧠 Self-Learning Engine</strong> — Pearson-correlation optimizer retunes Future Winners weights from realized 7-day returns. 30 mature samples = first retrain. Homepage 🧠 card shows current weights vs seed.</li>
+        <li><strong>💰 Arbitrage Scanner v2</strong> — multi-path EV model: RAW→PSA10 grade-and-flip, RAW→PSA9 floor, PSA9→PSA10 cross-grade, RAW retail flip. Fees + grading + ship modeled. 108 actionable opportunities surfaced.</li>
+        <li><strong>📒 Trading Journal</strong> — reads workbook Realized P&L + Inventory. Portfolio ROI, win rate, LT/ST tax split, recent closes table.</li>
+        <li><strong>📊 Past Picks Scoreboard</strong> — per-signal batting average. 555 signals tracked. Maturity threshold 24h.</li>
+        <li><strong>🔥 Set Heat Tracker</strong> — per-set composite (avg_score + BUY density + momentum). 141 sets ranked. Top: Evolving Skies (heat 117).</li>
+        <li><strong>📦 Sealed Market Scanner</strong> — booster boxes / ETBs / bundles. 121 sealed products bucketed. Best buys, undervalued vs workbook, cheapest per pack.</li>
+        <li><strong>🔍 Pipeline Self-Audit</strong> — RED/YELLOW/GREEN per output file. 24/24 GREEN. Homepage health dot.</li>
+        <li><strong>⚙ /status.html</strong> — public pipeline transparency page</li>
+        <li><strong>📐 Methodology page</strong> — Layer 2 section added documenting all 9 new models (9K of new copy)</li>
+        <li><strong>Email Digest + Weekly Recap</strong> — auto-built HTML emails. Ready to forward to subscribers.</li>
+        <li><strong>Auto-Tweet generator</strong> — pre-formatted Twitter + LinkedIn posts. Brandon picks one, posts.</li>
+        <li><strong>Set Rotation Predictor</strong> — momentum-of-momentum. CRUSHING / EMERGING / HEATING / COOLING / PEAK statuses.</li>
+        <li><strong>Risk-Adjusted Return Tracker</strong> — Sharpe-like + Sortino-like + max drawdown per signal type.</li>
+        <li><strong>SEO upgrade</strong> — updated meta description, keywords, Twitter creator, JSON-LD structured data (Schema.org).</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
         <span class="release-version">v0.22 — Flip Bot + Show Mode</span>
         <span class="release-date">2026-05-15</span>
         <div class="release-tags">
