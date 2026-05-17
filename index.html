@@ -581,6 +581,123 @@
     gap: 12px;
   }
   footer .legal { font-size: 11px; max-width: 480px; line-height: 1.5; }
+  /* ============ SELF-LEARNING ENGINE WIDGET ============ */
+  .learn-section { padding: 28px 0 8px; }
+  .learn-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(99,102,241,0.06) 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .learn-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #818cf8, #4ade80, #818cf8, transparent);
+    background-size: 200% 100%;
+    animation: learnPulse 4s ease-in-out infinite;
+  }
+  @keyframes learnPulse {
+    0%, 100% { background-position: 0% 50%; opacity: 0.6; }
+    50% { background-position: 100% 50%; opacity: 1; }
+  }
+  .learn-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 18px;
+  }
+  .learn-head h2 {
+    font-size: 22px; font-weight: 800; letter-spacing: -0.02em;
+  }
+  .learn-head h2 .accent { color: #818cf8; }
+  .learn-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .learn-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .learn-stat {
+    background: rgba(10,14,26,0.4);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .learn-stat .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .learn-stat .val {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .learn-stat .val.dim { color: var(--text-dim); }
+  .learn-weights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+  }
+  .learn-weight-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 64px;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .learn-weight-row .comp {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-dim);
+    font-size: 11px;
+  }
+  .learn-weight-row .bar {
+    height: 6px;
+    background: rgba(10,14,26,0.5);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  .learn-weight-row .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #818cf8 0%, #4ade80 100%);
+    border-radius: 3px;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .learn-weight-row .delta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-align: right;
+    font-weight: 600;
+  }
+  .learn-weight-row .delta.up { color: var(--green); }
+  .learn-weight-row .delta.dn { color: var(--red); }
+  .learn-weight-row .delta.zero { color: var(--text-mute); }
+  .learn-footer {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .learn-footer .ok { color: var(--green); }
+  @media (max-width: 768px) {
+    .learn-stats { grid-template-columns: repeat(2, 1fr); }
+    .learn-weights { grid-template-columns: 1fr; }
+    .learn-weight-row { grid-template-columns: 110px 1fr 56px; }
+  }
   /* ============ FUTURE WINNERS ============ */
   .fw-section { padding: 32px 0 8px; }
   .fw-head {
@@ -1459,6 +1576,7 @@
     <a href="#morning-brief">☕ Brief</a>
     <a href="#moves">📈 Today</a>
     <a href="#data-quality">🔍 DQ</a>
+    <a href="#learning-engine">🧠 AI</a>
     <a href="#future-winners">🔮 Future Winners</a>
     <a href="#top500">🏆 Top 500</a>
     <a href="#live">📊 Movers</a>
@@ -1853,6 +1971,31 @@
     </div>
   </div>
 </div>
+
+<!-- ============ SELF-LEARNING ENGINE — shows the AI evolving ============ -->
+<section class="learn-section" id="learning-engine">
+  <div class="container">
+    <div class="learn-card">
+      <div class="learn-head">
+        <h2>🧠 <span class="accent">Self-Learning Engine</span> — the AI is evolving</h2>
+        <span class="sub">Weights re-tune from realized 7-day returns · Pearson-correlation optimizer</span>
+      </div>
+      <div class="learn-stats" id="learn-stats">
+        <div class="learn-stat"><div class="lbl">Weights Source</div><div class="val dim" id="learn-source">—</div></div>
+        <div class="learn-stat"><div class="lbl">Retrains</div><div class="val" id="learn-retrains">—</div></div>
+        <div class="learn-stat"><div class="lbl">FW Emissions</div><div class="val" id="learn-emissions">—</div></div>
+        <div class="learn-stat"><div class="lbl">Signals Tracked</div><div class="val" id="learn-signals">—</div></div>
+      </div>
+      <div class="learn-weights" id="learn-weights">
+        <p style="grid-column: 1/-1; color:var(--text-mute); font-size:12px; padding: 16px 0; text-align:center;">⏳ Loading model weights…</p>
+      </div>
+      <div class="learn-footer">
+        <span id="learn-footer-left">—</span>
+        <span id="learn-footer-right">—</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============ FUTURE WINNERS — AI predictive hunt list ============ -->
 <section class="fw-section" id="future-winners">
@@ -2420,6 +2563,10 @@
     '/future_winners.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/future_winners.json'
   ];
+  const LEARN_URLS = [
+    '/learning_summary.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/learning_summary.json'
+  ];
   const CARDS_FULL_URLS = [
     '/cards_full.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
@@ -2520,6 +2667,78 @@
         console.warn('FW load failed:', err);
         const grid = document.getElementById('fw-grid');
         if (grid) grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); text-align:center; padding: 30px 0;">Future Winners model output unavailable. Trigger the workflow at github.com/Keyvaniath/pokemon-tcg-trading-desk/actions to populate.</p>';
+      });
+  }
+
+  // ============ SELF-LEARNING ENGINE WIDGET ============
+  function renderLearning(data) {
+    if (!data || !data.fw_weights) return;
+    const fw = data.fw_weights || {};
+    const sl = data.signal_learning || {};
+    const sourceEl = document.getElementById('learn-source');
+    const retrainsEl = document.getElementById('learn-retrains');
+    const emissionsEl = document.getElementById('learn-emissions');
+    const signalsEl = document.getElementById('learn-signals');
+    if (sourceEl) {
+      const src = fw.source || 'seed';
+      sourceEl.textContent = src === 'learned' ? '🧠 LEARNED' : '🌱 SEED';
+      sourceEl.style.color = src === 'learned' ? '#818cf8' : 'var(--text-dim)';
+    }
+    if (retrainsEl) retrainsEl.textContent = fw.n_retrains || 0;
+    if (emissionsEl) emissionsEl.textContent = (sl.fw_emissions || 0).toLocaleString();
+    if (signalsEl) signalsEl.textContent = (sl.total_emissions || 0).toLocaleString();
+
+    // Weight bars
+    const weightsEl = document.getElementById('learn-weights');
+    if (weightsEl && Array.isArray(fw.weight_changes) && fw.weight_changes.length) {
+      const maxW = Math.max(...fw.weight_changes.map(w => w.current || 0), 0.4);
+      const niceName = {
+        momentum_rising: 'Momentum rising',
+        scarcity: 'Scarcity',
+        accessibility: 'Accessibility',
+        hidden_alpha: 'Hidden alpha',
+        tier_premium: 'Tier premium',
+        liquidity: 'Liquidity',
+      };
+      weightsEl.innerHTML = fw.weight_changes.map(w => {
+        const pct = ((w.current || 0) / maxW * 100).toFixed(1);
+        const dPct = w.delta_pct || 0;
+        const dCls = dPct > 0.5 ? 'up' : dPct < -0.5 ? 'dn' : 'zero';
+        const dSign = dPct > 0 ? '+' : '';
+        const label = niceName[w.component] || w.component;
+        return '<div class="learn-weight-row">' +
+          '<div class="comp">' + label + '</div>' +
+          '<div class="bar"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+          '<div class="delta ' + dCls + '">' + dSign + dPct.toFixed(0) + '%</div>' +
+          '</div>';
+      }).join('');
+    }
+
+    // Footer line
+    const footerL = document.getElementById('learn-footer-left');
+    const footerR = document.getElementById('learn-footer-right');
+    if (footerL) {
+      if (fw.source === 'learned' && fw.last_retrain_at) {
+        const dt = new Date(fw.last_retrain_at);
+        const ago = Math.round((Date.now() - dt.getTime()) / (1000 * 60 * 60));
+        footerL.innerHTML = '<span class="ok">✓ Last retrain:</span> ' + ago + 'h ago · ' + (fw.last_retrain_n_samples || 0) + ' samples';
+      } else {
+        footerL.textContent = 'Awaiting maturity: ' + (data.next_milestones && data.next_milestones.next_retrain_when || '30 mature samples');
+      }
+    }
+    if (footerR) {
+      const outcomes = sl.outcomes_evaluated || 0;
+      footerR.textContent = outcomes + ' signal outcomes evaluated · ' + Object.keys(sl.by_signal || {}).length + ' signal types tracked';
+    }
+  }
+
+  function loadLearning() {
+    tryFetch(LEARN_URLS, 0)
+      .then(renderLearning)
+      .catch(err => {
+        console.warn('Learning summary load failed:', err);
+        const w = document.getElementById('learn-weights');
+        if (w) w.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); font-size:12px; padding: 16px 0; text-align:center;">Learning telemetry unavailable — first cron run will populate.</p>';
       });
   }
 
@@ -2973,11 +3192,13 @@
     loadBrief();
     loadFeaturedSets();
     loadFutureWinners();
+    loadLearning();
     loadTop500();
     setInterval(load, REFRESH_MS);
     setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
     setInterval(loadFeaturedSets, REFRESH_MS * 30);  // refresh sets hourly
     setInterval(loadFutureWinners, REFRESH_MS * 15);  // refresh winners every 15 min
+    setInterval(loadLearning, REFRESH_MS * 30);  // refresh learning summary hourly
     setInterval(loadTop500, REFRESH_MS * 5);  // refresh top500 every 5 min
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
