@@ -1,0 +1,179 @@
+{
+  "generated_at": "2026-05-17T06:38:44.102858+00:00",
+  "overall": "GREEN",
+  "counts": {
+    "green": 19,
+    "yellow": 0,
+    "red": 0,
+    "total": 19
+  },
+  "checks": [
+    {
+      "file": "live_prices.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 767363,
+      "age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "data_quality_alerts.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 7230,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "price_diff.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 16802,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "morning_brief_v2.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 10828,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "price_alerts.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 19031,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "source_reliability.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 3532,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "daily_recap_v2.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 6175,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "daily_recap_v2.html",
+      "kind": "html",
+      "exists": true,
+      "size_bytes": 13324,
+      "age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "signal_calibration.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 171,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "fw_weights.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 148,
+      "age_hours": 0.9,
+      "status": "GREEN"
+    },
+    {
+      "file": "learning_summary.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 1687,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "arbitrage_v2.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 126011,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "trading_journal.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 3771,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "past_picks.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 1246,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "pop_changes.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 219,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "homepage_feed.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 236920,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "cards_full.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 1257181,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "cards.html",
+      "kind": "html",
+      "exists": true,
+      "size_bytes": 1804287,
+      "age_hours": 0.0,
+      "status": "GREEN"
+    },
+    {
+      "file": "future_winners.json",
+      "kind": "json",
+      "exists": true,
+      "size_bytes": 20570,
+      "age_hours": 0.9,
+      "generated_age_hours": 0.9,
+      "status": "GREEN"
+    }
+  ]
+}
