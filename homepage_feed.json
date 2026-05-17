@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T02:44:17.787692Z",
+  "generated_at": "2026-05-17T03:10:34.881389Z",
   "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
@@ -9744,14 +9744,15 @@
     "reconciler_fixes_count": 10
   },
   "data_quality": {
-    "score": 48,
+    "score": 43,
     "grade": "F",
-    "data_age_hours": 5.8,
+    "data_age_hours": 6.3,
     "alert_counts": {
       "high": 8,
-      "warn": 86
+      "warn": 87
     },
     "top_issues_by_category": {
+      "stale_data": 1,
       "wb_fallback_highvalue": 40,
       "graded_no_data": 49,
       "grade_ladder_violation": 12,
