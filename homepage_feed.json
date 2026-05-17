@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-05-16T22:50:51.893184Z",
+  "generated_at": "2026-05-17T02:40:03.550009Z",
   "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
     "live_matched": 555,
-    "total_mcap": 3826377.0,
+    "total_mcap": 3936921.0,
     "avg_d30_pct": 0.1709,
     "strong_buys": 84,
     "history_snapshots": 3,
-    "history_age_days": 1.9,
+    "history_age_days": 2.1,
     "history_overlay_count": 0
   },
   "trade_of_day": {
-    "id": "M014",
-    "name": "Charizard V Full Art",
-    "set": "Champion's Path",
-    "number": "79/73",
+    "id": "M011",
+    "name": "Duraludon VMAX Alt Art",
+    "set": "Evolving Skies",
+    "number": "217/203",
     "variant": "PSA 10",
-    "price": 553.38,
-    "d7": 56.41,
-    "d30": 55.55,
+    "price": 520.0,
+    "d7": 62.47,
+    "d30": 70.15,
     "d7_source": "workbook_formula",
     "d30_source": "workbook_formula",
     "score": 75,
@@ -467,17 +467,17 @@
       "signal": "HOLD"
     },
     {
-      "id": "V812",
-      "name": "Charizard Skyridge",
-      "set": "Skyridge",
-      "number": "146/144",
-      "variant": "PSA 8",
-      "price": 11239.15,
-      "d7": 0.0,
-      "d30": 0.0,
+      "id": "X531",
+      "name": "Base Set Booster Box Unlimited (sealed)",
+      "set": "Base Set",
+      "number": "Box",
+      "variant": "Sealed",
+      "price": 36251.0,
+      "d7": 1.34,
+      "d30": 3.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 49,
+      "score": 51,
       "signal": "HOLD"
     },
     {
@@ -523,17 +523,17 @@
       "signal": "HOLD"
     },
     {
-      "id": "V040",
-      "name": "Dark Charizard",
-      "set": "Team Rocket 1st Edition",
-      "number": "4/82",
+      "id": "Z001",
+      "name": "Lugia",
+      "set": "Neo Genesis",
+      "number": "9/111",
       "variant": "PSA 10",
-      "price": 16385.17,
-      "d7": 2.85,
-      "d30": 7.6,
+      "price": 19651.0,
+      "d7": 2.97,
+      "d30": 6.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 55,
+      "score": 54,
       "signal": "HOLD"
     },
     {
@@ -621,14 +621,14 @@
       "signal": "STRONG BUY"
     },
     {
-      "id": "V006",
-      "name": "Blastoise",
+      "id": "X501",
+      "name": "Charizard 1st Ed Shadowless PSA 8",
       "set": "Base Set 1st Edition Shadowless",
-      "number": "2/102",
-      "variant": "PSA 9",
-      "price": 10948.56,
-      "d7": -0.3,
-      "d30": 1.65,
+      "number": "4/102",
+      "variant": "PSA 8",
+      "price": 31392.6,
+      "d7": -0.4,
+      "d30": 4.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
       "score": 49,
@@ -663,17 +663,17 @@
       "signal": "HOLD"
     },
     {
-      "id": "X504",
-      "name": "Crystal Charizard Skyridge PSA 10",
+      "id": "V812",
+      "name": "Charizard Skyridge",
       "set": "Skyridge",
       "number": "146/144",
-      "variant": "PSA 10",
-      "price": 38000.0,
-      "d7": -0.07,
-      "d30": 5.0,
+      "variant": "PSA 8",
+      "price": 11239.15,
+      "d7": 0.0,
+      "d30": 0.0,
       "d7_source": "workbook_formula",
       "d30_source": "workbook_formula",
-      "score": 54,
+      "score": 49,
       "signal": "HOLD"
     },
     {
@@ -752,7 +752,7 @@
       "set": "Gym Challenge 1st Edition",
       "number": "14/132",
       "variant": "PSA 10",
-      "price": 4200.0,
+      "price": 6700.0,
       "d7": 0.85,
       "d30": 9.0,
       "d7_source": "workbook_formula",
@@ -978,7 +978,7 @@
       "name": "Pikachu Red Cheeks",
       "set": "Base Set Shadowless",
       "variant": "PSA 10",
-      "price": 2400.0,
+      "price": 6688.5,
       "score": 54,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ru1/7.png",
@@ -6538,7 +6538,7 @@
       "name": "Charizard Gold Star PSA 10",
       "set": "EX Dragon Frontiers",
       "variant": "PSA 10",
-      "price": 18000.0,
+      "price": 58723.0,
       "score": 55,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -6549,7 +6549,7 @@
       "name": "Espeon Gold Star PSA 10",
       "set": "POP Series 5",
       "variant": "PSA 10",
-      "price": 16000.0,
+      "price": 33609.63,
       "score": 55,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/neo2/1.png",
@@ -6560,7 +6560,7 @@
       "name": "Umbreon Gold Star PSA 10",
       "set": "POP Series 5",
       "variant": "PSA 10",
-      "price": 22000.0,
+      "price": 63460.5,
       "score": 58,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
@@ -6780,7 +6780,7 @@
       "name": "Lugia 1st Ed",
       "set": "Neo Genesis 1st Edition",
       "variant": "PSA 9",
-      "price": 8500.0,
+      "price": 9475.24,
       "score": 56,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/ecard2/149.png",
@@ -6846,7 +6846,7 @@
       "name": "Espeon 1st Ed",
       "set": "Neo Discovery 1st Edition",
       "variant": "PSA 10",
-      "price": 6500.0,
+      "price": 9488.0,
       "score": 59,
       "signal": "HOLD",
       "image": "https://images.pokemontcg.io/neo2/1.png",
@@ -7044,7 +7044,7 @@
       "name": "Rocket's Mewtwo 1st Ed",
       "set": "Gym Challenge 1st Edition",
       "variant": "PSA 10",
-      "price": 4200.0,
+      "price": 6700.0,
       "score": 55,
       "signal": "HOLD",
       "image": null,
@@ -9423,9 +9423,9 @@
   "price_diff": {
     "current_snapshot_at": "2026-05-16T20:51:34.239708Z",
     "prior_snapshot_at": "2026-05-15T05:00:28.531494Z",
-    "gainers_count": 10,
+    "gainers_count": 14,
     "losers_count": 10,
-    "reconciler_fixes_count": 12,
+    "reconciler_fixes_count": 8,
     "top_gainers": [
       {
         "cid": "V100",
@@ -9464,28 +9464,28 @@
         "confidence": "UNKNOWN"
       },
       {
-        "cid": "X535",
-        "name": "Team Rocket Booster Box Unlimited (sealed)",
-        "variant": "Sealed",
+        "cid": "X507",
+        "name": "Umbreon Gold Star PSA 10",
+        "variant": "PSA 10",
         "set": "",
-        "prior_price": 290.81,
-        "current_price": 15035.97,
-        "delta_usd": 14745.16,
-        "delta_pct": 5070.38,
-        "source": "pricecharting:raw",
-        "confidence": "UNKNOWN"
+        "prior_price": 400.0,
+        "current_price": 63460.5,
+        "delta_usd": 63060.5,
+        "delta_pct": 15765.12,
+        "source": "single_pc",
+        "confidence": "MEDIUM"
       },
       {
-        "cid": "X501",
-        "name": "Charizard 1st Ed Shadowless PSA 8",
-        "variant": "PSA 8",
+        "cid": "X506",
+        "name": "Espeon Gold Star PSA 10",
+        "variant": "PSA 10",
         "set": "",
-        "prior_price": 995.0,
-        "current_price": 31392.6,
-        "delta_usd": 30397.6,
-        "delta_pct": 3055.04,
-        "source": "pricecharting:psa8",
-        "confidence": "UNKNOWN"
+        "prior_price": 385.0,
+        "current_price": 33609.63,
+        "delta_usd": 33224.63,
+        "delta_pct": 8629.77,
+        "source": "single_pc",
+        "confidence": "MEDIUM"
       }
     ],
     "top_losers": [
@@ -9548,6 +9548,115 @@
         "delta_pct": -76.84,
         "source": "wb_no_sources",
         "confidence": "UNKNOWN"
+      }
+    ]
+  },
+  "price_alerts": {
+    "buy_alerts_count": 75,
+    "sell_alerts_count": 259,
+    "high_score_count": 14,
+    "top_buy_alerts": [
+      {
+        "cid": "M084",
+        "name": "Mega Rayquaza ex SIR",
+        "variant": "PSA 10",
+        "live_price": 560.0,
+        "buy_target": 1120.0,
+        "wb_price": 1400,
+        "discount_pct": 60.0,
+        "just_crossed_today": false
+      },
+      {
+        "cid": "V813",
+        "name": "Crystal Lugia Aquapolis",
+        "variant": "PSA 8",
+        "live_price": 380.0,
+        "buy_target": 760.0,
+        "wb_price": 950,
+        "discount_pct": 60.0,
+        "just_crossed_today": false
+      },
+      {
+        "cid": "D109",
+        "name": "Pokemon Hidden Fates ETB",
+        "variant": "Sealed",
+        "live_price": 170.0,
+        "buy_target": 340.0,
+        "wb_price": 425,
+        "discount_pct": 60.0,
+        "just_crossed_today": false
+      },
+      {
+        "cid": "X207",
+        "name": "Jolteon V Alt Art",
+        "variant": "PSA 10",
+        "live_price": 70.0,
+        "buy_target": 136.0,
+        "wb_price": 170,
+        "discount_pct": 58.8,
+        "just_crossed_today": false
+      },
+      {
+        "cid": "W014",
+        "name": "Ogerpon Cornerstone SAR",
+        "variant": "PSA 10",
+        "live_price": 51.5,
+        "buy_target": 100.0,
+        "wb_price": 125,
+        "discount_pct": 58.8,
+        "just_crossed_today": false
+      }
+    ],
+    "top_sell_alerts": [
+      {
+        "cid": "V004",
+        "name": "Charizard",
+        "variant": "PSA 10",
+        "live_price": 28272.5,
+        "sell_target": 8800.0,
+        "wb_price": 8000,
+        "premium_pct": 253.4,
+        "just_crossed_today": true
+      },
+      {
+        "cid": "V002",
+        "name": "Charizard",
+        "variant": "PSA 8",
+        "live_price": 31392.6,
+        "sell_target": 10450.0,
+        "wb_price": 9500,
+        "premium_pct": 230.4,
+        "just_crossed_today": true
+      },
+      {
+        "cid": "X501",
+        "name": "Charizard 1st Ed Shadowless PSA 8",
+        "variant": "PSA 8",
+        "live_price": 31392.6,
+        "sell_target": 10450.0,
+        "wb_price": 9500,
+        "premium_pct": 230.4,
+        "just_crossed_today": true
+      },
+      {
+        "cid": "X505",
+        "name": "Charizard Gold Star PSA 10",
+        "variant": "PSA 10",
+        "live_price": 58723.0,
+        "sell_target": 19800.0,
+        "wb_price": 18000,
+        "premium_pct": 226.2,
+        "just_crossed_today": true
+      },
+      {
+        "cid": "X507",
+        "name": "Umbreon Gold Star PSA 10",
+        "variant": "PSA 10",
+        "live_price": 63460.5,
+        "sell_target": 24200.0,
+        "wb_price": 22000,
+        "premium_pct": 188.5,
+        "just_crossed_today": true
       }
     ]
   },
@@ -9615,16 +9724,16 @@
     "reconciler_fixes_count": 10
   },
   "data_quality": {
-    "score": 46,
+    "score": 48,
     "grade": "F",
-    "data_age_hours": 1.8,
+    "data_age_hours": 5.8,
     "alert_counts": {
       "high": 8,
-      "warn": 102
+      "warn": 86
     },
     "top_issues_by_category": {
-      "wb_fallback_highvalue": 47,
-      "graded_no_data": 58,
+      "wb_fallback_highvalue": 40,
+      "graded_no_data": 49,
       "grade_ladder_violation": 12,
       "duplicate_entries": 14
     },
