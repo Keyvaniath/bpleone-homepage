@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T07:11:01.643282+00:00",
+  "generated_at": "2026-05-17T15:27:06.367332+00:00",
   "n_sets": 141,
   "n_cards_classified": 774,
   "hot_sets_top10": [
@@ -52,8 +52,8 @@
     {
       "set": "Evolving Skies",
       "n_cards": 29,
-      "avg_score": 64.3,
-      "heat_score": 117.3,
+      "avg_score": 64.2,
+      "heat_score": 117.2,
       "buy_density_pct": 55.2,
       "avg_d7_pct": 41.62,
       "avg_d30_pct": 44.62,
@@ -62,7 +62,7 @@
       "n_hold": 13,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 19451.0,
+      "total_universe_usd": 21722.0,
       "top_card": {
         "cid": "M010",
         "name": "Dragonite V Alt Art",
@@ -516,8 +516,8 @@
     {
       "set": "Evolving Skies",
       "n_cards": 29,
-      "avg_score": 64.3,
-      "heat_score": 117.3,
+      "avg_score": 64.2,
+      "heat_score": 117.2,
       "buy_density_pct": 55.2,
       "avg_d7_pct": 41.62,
       "avg_d30_pct": 44.62,
@@ -526,7 +526,7 @@
       "n_hold": 13,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 19451.0,
+      "total_universe_usd": 21722.0,
       "top_card": {
         "cid": "M010",
         "name": "Dragonite V Alt Art",
@@ -836,6 +836,29 @@
       }
     },
     {
+      "set": "Surging Sparks",
+      "n_cards": 24,
+      "avg_score": 59.6,
+      "heat_score": 70.0,
+      "buy_density_pct": 41.7,
+      "avg_d7_pct": 10.88,
+      "avg_d30_pct": 17.28,
+      "n_strong_buy": 3,
+      "n_buy": 7,
+      "n_hold": 14,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 6231.0,
+      "top_card": {
+        "cid": "M066",
+        "name": "Pikachu ex Alt Art",
+        "variant": "PSA 10",
+        "score": 76.0,
+        "signal": "STRONG BUY",
+        "live_price": null
+      }
+    },
+    {
       "set": "Generations",
       "n_cards": 1,
       "avg_score": 68.0,
@@ -879,29 +902,6 @@
         "score": 88.0,
         "signal": "STRONG BUY",
         "live_price": 35.025
-      }
-    },
-    {
-      "set": "Surging Sparks",
-      "n_cards": 24,
-      "avg_score": 59.1,
-      "heat_score": 68.5,
-      "buy_density_pct": 37.5,
-      "avg_d7_pct": 10.88,
-      "avg_d30_pct": 17.28,
-      "n_strong_buy": 3,
-      "n_buy": 6,
-      "n_hold": 15,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 6446.0,
-      "top_card": {
-        "cid": "M066",
-        "name": "Pikachu ex Alt Art",
-        "variant": "PSA 10",
-        "score": 76.0,
-        "signal": "STRONG BUY",
-        "live_price": null
       }
     },
     {
@@ -1022,17 +1022,17 @@
     {
       "set": "Twilight Masquerade",
       "n_cards": 33,
-      "avg_score": 56.5,
-      "heat_score": 59.1,
-      "buy_density_pct": 33.3,
+      "avg_score": 57.3,
+      "heat_score": 61.2,
+      "buy_density_pct": 39.4,
       "avg_d7_pct": 8.44,
       "avg_d30_pct": 13.78,
       "n_strong_buy": 3,
-      "n_buy": 8,
-      "n_hold": 22,
+      "n_buy": 10,
+      "n_hold": 20,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 6522.0,
+      "total_universe_usd": 6184.0,
       "top_card": {
         "cid": "M060",
         "name": "Carmine SIR",
@@ -1045,17 +1045,17 @@
     {
       "set": "Prismatic Evolutions",
       "n_cards": 41,
-      "avg_score": 58.0,
-      "heat_score": 54.6,
-      "buy_density_pct": 26.8,
+      "avg_score": 58.6,
+      "heat_score": 56.3,
+      "buy_density_pct": 31.7,
       "avg_d7_pct": 6.8,
       "avg_d30_pct": 13.16,
       "n_strong_buy": 7,
-      "n_buy": 4,
-      "n_hold": 30,
+      "n_buy": 6,
+      "n_hold": 28,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 17000.0,
+      "total_universe_usd": 16542.0,
       "top_card": {
         "cid": "M072",
         "name": "Espeon ex SIR",
@@ -1124,7 +1124,7 @@
       "n_hold": 1,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 707.0,
+      "total_universe_usd": 1762.0,
       "top_card": {
         "cid": "D108",
         "name": "Pokemon Evolutions Booster Box",
