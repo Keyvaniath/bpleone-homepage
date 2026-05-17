@@ -2373,6 +2373,25 @@
         <span id="j-totals">—</span>
         <span id="j-tax">—</span>
       </div>
+
+      <h3 style="font-size: 13px; font-family:'JetBrains Mono',monospace; color:var(--text-dim); letter-spacing:0.08em; text-transform:uppercase; margin: 20px 0 10px;">Open Positions <span id="j-open-count" style="color: var(--text-mute);">—</span></h3>
+      <div style="overflow-x:auto;">
+        <table class="journal-table" id="open-pos-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Card</th>
+              <th class="num">Qty</th>
+              <th class="num">Cost / Unit</th>
+              <th class="num">Total Cost</th>
+              <th class="num">Days Held</th>
+            </tr>
+          </thead>
+          <tbody id="open-pos-rows">
+            <tr><td colspan="6" style="text-align:center; color:var(--text-mute); padding:20px;">⏳ Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>
@@ -3290,6 +3309,28 @@
     if (totL) totL.textContent = s.closed_trades + ' closed · $' + Math.round(s.total_volume_sold).toLocaleString() + ' lifetime volume · avg hold ' + (s.avg_hold_days||0).toFixed(0) + 'd';
     const totR = document.getElementById('j-tax');
     if (totR) totR.textContent = 'LT: ' + s.lt_count + ' ($' + Math.round(s.lt_pl).toLocaleString() + ') · ST: ' + s.st_count + ' ($' + Math.round(s.st_pl).toLocaleString() + ')';
+
+    // Open positions table
+    const openRows = data.open_positions_top10 || [];
+    const openTbody = document.getElementById('open-pos-rows');
+    const openCount = document.getElementById('j-open-count');
+    if (openCount) openCount.textContent = '(' + s.open_positions + ' positions · $' + Math.round(s.open_cost_basis || 0).toLocaleString() + ' cost basis)';
+    if (openTbody) {
+      if (!openRows.length) {
+        openTbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-mute); padding:20px;">No open positions logged.</td></tr>';
+      } else {
+        openTbody.innerHTML = openRows.map(p => {
+          return '<tr>' +
+            '<td>' + (p.item_id || '—') + '</td>' +
+            '<td>' + (p.cid || '—') + (p.description ? ' · ' + p.description.slice(0, 35) : '') + '</td>' +
+            '<td class="num">' + (p.qty || 1) + '</td>' +
+            '<td class="num">$' + (p.cost_per_unit || 0).toLocaleString() + '</td>' +
+            '<td class="num">$' + (p.total_cost || 0).toLocaleString() + '</td>' +
+            '<td class="num">' + (p.days_held != null ? p.days_held + 'd' : '—') + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+    }
   }
 
   function loadJournal() {
