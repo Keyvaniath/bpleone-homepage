@@ -698,6 +698,75 @@
     .learn-weights { grid-template-columns: 1fr; }
     .learn-weight-row { grid-template-columns: 110px 1fr 56px; }
   }
+  /* ============ ARBITRAGE OPPORTUNITIES ============ */
+  .arb-section { padding: 28px 0 8px; }
+  .arb-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 16px;
+  }
+  .arb-head h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }
+  .arb-head h2 .accent { color: var(--green); }
+  .arb-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+    max-width: 480px; text-align: right;
+  }
+  .arb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+  .arb-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(74,222,128,0.04) 100%);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .arb-card:hover {
+    border-color: var(--green);
+    transform: translateY(-2px);
+  }
+  .arb-card .top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 8px; margin-bottom: 8px;
+  }
+  .arb-card .name {
+    font-weight: 700; font-size: 14px;
+    line-height: 1.3;
+    overflow: hidden; text-overflow: ellipsis;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .arb-card .cid {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); flex-shrink: 0;
+  }
+  .arb-card .path-tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 9px;
+    padding: 3px 8px; border-radius: 4px;
+    letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .arb-card .path-tag.raw10 { background: rgba(74,222,128,0.15); color: var(--green); }
+  .arb-card .path-tag.raw9  { background: rgba(245,200,66,0.15); color: var(--gold); }
+  .arb-card .path-tag.cross { background: rgba(129,140,248,0.15); color: #818cf8; }
+  .arb-card .path-tag.retail { background: rgba(251,146,60,0.15); color: var(--orange); }
+  .arb-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .arb-stats .l { color: var(--text-mute); font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .arb-stats .v { color: var(--text); font-weight: 600; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .arb-stats .v.green { color: var(--green); }
+  .arb-stats .v.gold { color: var(--gold); }
+  .arb-card .footer {
+    margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border);
+    font-size: 10px; color: var(--text-mute); font-family: 'JetBrains Mono', monospace;
+    display: flex; justify-content: space-between;
+  }
   /* ============ FUTURE WINNERS ============ */
   .fw-section { padding: 32px 0 8px; }
   .fw-head {
@@ -1577,6 +1646,7 @@
     <a href="#moves">📈 Today</a>
     <a href="#data-quality">🔍 DQ</a>
     <a href="#learning-engine">🧠 AI</a>
+    <a href="#arbitrage">💰 Arb</a>
     <a href="#future-winners">🔮 Future Winners</a>
     <a href="#top500">🏆 Top 500</a>
     <a href="#live">📊 Movers</a>
@@ -1993,6 +2063,19 @@
         <span id="learn-footer-left">—</span>
         <span id="learn-footer-right">—</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARBITRAGE OPPORTUNITIES — multi-path EV scanner ============ -->
+<section class="arb-section" id="arbitrage">
+  <div class="container">
+    <div class="arb-head">
+      <h2>💰 <span class="accent">Arbitrage Opportunities</span> — expected-value plays</h2>
+      <span class="sub">Multi-path EV model: raw→PSA10, raw→PSA9 floor, PSA9→PSA10 cross-grade, retail flip. Fees + grading + ship modeled.</span>
+    </div>
+    <div class="arb-grid" id="arb-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">⏳ Loading arbitrage scanner…</p>
     </div>
   </div>
 </section>
@@ -2567,6 +2650,10 @@
     '/learning_summary.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/learning_summary.json'
   ];
+  const ARB_URLS = [
+    '/arbitrage_v2.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/arbitrage_v2.json'
+  ];
   const CARDS_FULL_URLS = [
     '/cards_full.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
@@ -2739,6 +2826,57 @@
         console.warn('Learning summary load failed:', err);
         const w = document.getElementById('learn-weights');
         if (w) w.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); font-size:12px; padding: 16px 0; text-align:center;">Learning telemetry unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ ARBITRAGE OPPORTUNITIES ============
+  function renderArb(data) {
+    const grid = document.getElementById('arb-grid');
+    if (!grid) return;
+    const opps = (data && data.top_100) || [];
+    if (!opps.length) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">No actionable arbitrage opportunities right now — scanner runs every 4h.</p>';
+      return;
+    }
+    // Show top 12 by EV
+    const top = opps.slice(0, 12);
+    const pathLabel = {
+      'RAW_TO_PSA10': { tag: 'raw10', label: 'RAW → PSA 10' },
+      'RAW_TO_PSA9_FLOOR': { tag: 'raw9', label: 'RAW → PSA 9' },
+      'PSA9_TO_PSA10_CROSSGRADE': { tag: 'cross', label: 'PSA 9 → PSA 10' },
+      'RAW_RETAIL_FLIP': { tag: 'retail', label: 'TCG → eBay' },
+    };
+    grid.innerHTML = top.map(o => {
+      const b = o.best_path || {};
+      const pl = pathLabel[b.path] || { tag: 'raw10', label: b.path || '—' };
+      const evColor = b.ev_profit >= 500 ? 'green' : 'gold';
+      return '<div class="arb-card">' +
+        '<div class="top">' +
+          '<div class="name">' + (o.name || '—') + (o.variant ? ' · ' + o.variant : '') + '</div>' +
+          '<div class="cid">' + (o.cid || '') + '</div>' +
+        '</div>' +
+        '<div class="path-tag ' + pl.tag + '">' + pl.label + '</div>' +
+        '<div class="arb-stats">' +
+          '<div><div class="l">Buy at</div><div class="v">$' + (b.buy_price || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">All-in cost</div><div class="v">$' + (b.all_in_cost || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">EV profit</div><div class="v ' + evColor + '">$' + (b.ev_profit || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">EV ROI</div><div class="v ' + evColor + '">' + (b.ev_roi_pct || 0).toFixed(0) + '%</div></div>' +
+        '</div>' +
+        '<div class="footer">' +
+          '<span>' + (b.hold_days || 0) + 'd hold</span>' +
+          '<span>conf ' + (o.confidence || 0) + '</span>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function loadArb() {
+    tryFetch(ARB_URLS, 0)
+      .then(renderArb)
+      .catch(err => {
+        console.warn('Arb v2 load failed:', err);
+        const g = document.getElementById('arb-grid');
+        if (g) g.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">Arb scanner output unavailable — first cron run will populate.</p>';
       });
   }
 
@@ -3193,12 +3331,14 @@
     loadFeaturedSets();
     loadFutureWinners();
     loadLearning();
+    loadArb();
     loadTop500();
     setInterval(load, REFRESH_MS);
     setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
     setInterval(loadFeaturedSets, REFRESH_MS * 30);  // refresh sets hourly
     setInterval(loadFutureWinners, REFRESH_MS * 15);  // refresh winners every 15 min
     setInterval(loadLearning, REFRESH_MS * 30);  // refresh learning summary hourly
+    setInterval(loadArb, REFRESH_MS * 15);  // refresh arb every 15 min
     setInterval(loadTop500, REFRESH_MS * 5);  // refresh top500 every 5 min
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
