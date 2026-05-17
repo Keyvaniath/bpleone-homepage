@@ -1,7 +1,16 @@
 {
-  "version": 1,
-  "generated_at": "2026-05-16T20:53:48.335969Z",
-  "methodology": "Future Winners is a forward-looking model. Score = 0.25*momentum_rising + 0.20*scarcity + 0.15*accessibility + 0.15*hidden_alpha + 0.15*tier_premium + 0.10*liquidity. Candidates capped at $5,000 live price for accessibility.",
+  "version": 2,
+  "generated_at": "2026-05-17T05:44:45.883899Z",
+  "weights_used": {
+    "momentum_rising": 0.25,
+    "scarcity": 0.2,
+    "accessibility": 0.15,
+    "hidden_alpha": 0.15,
+    "tier_premium": 0.15,
+    "liquidity": 0.1
+  },
+  "weights_source": "seed",
+  "methodology": "Future Winners is a forward-looking model. Score = weighted sum of: momentum_rising \u00b7 scarcity \u00b7 accessibility \u00b7 hidden_alpha \u00b7 tier_premium \u00b7 liquidity. Weights are LEARNED from historical signal outcomes via optimize_fw_weights.py (falls back to seed weights until enough history accumulates).",
   "count": 30,
   "winners": [
     {
@@ -389,30 +398,6 @@
       "image": "https://images.pokemontcg.io/swshp/SWSH262.png"
     },
     {
-      "id": "M024",
-      "name": "Lugia VSTAR Alt Art",
-      "set": "Silver Tempest",
-      "number": "TG30/TG30",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 3800,
-      "live_price": 113.25,
-      "wb_price": 820.0,
-      "target_buy": 90.6,
-      "target_sell": 107.59,
-      "fw_score": 73.4,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 35.6,
-        "accessibility": 70,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh12/202.png"
-    },
-    {
       "id": "M043",
       "name": "Alakazam ex SIR",
       "set": "Scarlet & Violet 151",
@@ -701,28 +686,52 @@
       "image": "https://images.pokemontcg.io/sv2/269.png"
     },
     {
-      "id": "M081",
-      "name": "Mega Gengar ex SIR",
-      "set": "Ascended Heroes",
-      "number": "284/217",
+      "id": "M012",
+      "name": "Rayquaza V Alt Art",
+      "set": "Evolving Skies",
+      "number": "194/203",
       "variant": "PSA 10",
       "tier": "T2",
-      "pop": 400,
-      "live_price": 3704.6,
-      "wb_price": 3000.0,
-      "target_buy": 2963.68,
-      "target_sell": 3519.37,
-      "fw_score": 70.1,
+      "pop": 3200,
+      "live_price": 620.0,
+      "wb_price": 620.0,
+      "target_buy": 496.0,
+      "target_sell": 589.0,
+      "fw_score": 69.9,
       "components": {
         "momentum_rising": 100,
-        "scarcity": 53.2,
-        "accessibility": 25,
+        "scarcity": 36.9,
+        "accessibility": 45,
         "hidden_alpha": 75,
         "tier_premium": 70,
         "liquidity": 90
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/me2/56.png"
+      "image": "https://images.pokemontcg.io/swsh7/194.png"
+    },
+    {
+      "id": "M014",
+      "name": "Charizard V Full Art",
+      "set": "Champion's Path",
+      "number": "79/73",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 3500,
+      "live_price": 553.38,
+      "wb_price": 580.0,
+      "target_buy": 442.7,
+      "target_sell": 525.71,
+      "fw_score": 69.7,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 36.2,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/swsh9/154.png"
     }
   ]
 }
