@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-17T06:25:03.947972+00:00",
-  "n_signals_logged": 555,
+  "generated_at": "2026-05-17T06:37:48.025843+00:00",
+  "n_signals_logged": 1110,
   "n_matured": 0,
-  "n_fresh_pending": 151,
+  "n_fresh_pending": 302,
   "overall": {
     "buy_signals_matured": 0,
     "buy_win_rate_pct": 0,
@@ -10,15 +10,15 @@
   },
   "by_signal": {
     "BUY": {
-      "n_emissions": 96,
+      "n_emissions": 192,
       "wins": 0,
-      "losses": 96,
+      "losses": 192,
       "win_rate_pct": 0.0,
       "avg_return_pct": 0.0,
       "avg_abs_return_pct": 0.0,
       "by_age": {
         "<1d": {
-          "n": 96,
+          "n": 192,
           "wins": 0,
           "win_rate_pct": 0.0,
           "avg_return_pct": 0.0
@@ -26,16 +26,16 @@
       }
     },
     "STRONG BUY": {
-      "n_emissions": 55,
-      "wins": 1,
-      "losses": 54,
+      "n_emissions": 110,
+      "wins": 2,
+      "losses": 108,
       "win_rate_pct": 1.8,
       "avg_return_pct": -1.21,
       "avg_abs_return_pct": 1.92,
       "by_age": {
         "<1d": {
-          "n": 55,
-          "wins": 1,
+          "n": 110,
+          "wins": 2,
           "win_rate_pct": 1.8,
           "avg_return_pct": -1.21
         }
