@@ -3016,15 +3016,23 @@
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    load();                  // homepage_feed (tape, movers, alerts, brief, stats)
-    loadFeaturedSets();      // small Featured Sets strip
-    loadHealth();            // pipeline health dot in sub-nav
-    loadTop500();            // Top 500 grid
-    setInterval(load, REFRESH_MS);
-    setInterval(loadFeaturedSets, REFRESH_MS * 30);
+    // models.html init: ONLY model widgets (no Top 500/Movers — those are on /).
+    loadHealth();                  // pipeline health dot
+    loadFutureWinners();
+    loadLearning();
+    loadScoreboard();
+    loadArb();
+    loadJournal();
+    loadSetHeat();
+    loadSealed();
     setInterval(loadHealth, REFRESH_MS * 10);
-    setInterval(loadTop500, REFRESH_MS * 5);
-    // (Model widgets moved to /models.html — their loaders live there now.)
+    setInterval(loadFutureWinners, REFRESH_MS * 15);
+    setInterval(loadLearning, REFRESH_MS * 30);
+    setInterval(loadScoreboard, REFRESH_MS * 30);
+    setInterval(loadArb, REFRESH_MS * 15);
+    setInterval(loadJournal, REFRESH_MS * 60);
+    setInterval(loadSetHeat, REFRESH_MS * 30);
+    setInterval(loadSealed, REFRESH_MS * 15);
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
     if (btn) {
