@@ -1,0 +1,638 @@
+{
+  "generated_at": "2026-05-17T02:38:35.464196+00:00",
+  "buy_alerts_count": 75,
+  "sell_alerts_count": 259,
+  "high_score_count": 14,
+  "buy_alerts": [
+    {
+      "cid": "M084",
+      "name": "Mega Rayquaza ex SIR",
+      "variant": "PSA 10",
+      "live_price": 560.0,
+      "buy_target": 1120.0,
+      "wb_price": 1400,
+      "discount_pct": 60.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "V813",
+      "name": "Crystal Lugia Aquapolis",
+      "variant": "PSA 8",
+      "live_price": 380.0,
+      "buy_target": 760.0,
+      "wb_price": 950,
+      "discount_pct": 60.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "D109",
+      "name": "Pokemon Hidden Fates ETB",
+      "variant": "Sealed",
+      "live_price": 170.0,
+      "buy_target": 340.0,
+      "wb_price": 425,
+      "discount_pct": 60.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X207",
+      "name": "Jolteon V Alt Art",
+      "variant": "PSA 10",
+      "live_price": 70.0,
+      "buy_target": 136.0,
+      "wb_price": 170,
+      "discount_pct": 58.8,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "W014",
+      "name": "Ogerpon Cornerstone SAR",
+      "variant": "PSA 10",
+      "live_price": 51.5,
+      "buy_target": 100.0,
+      "wb_price": 125,
+      "discount_pct": 58.8,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "W013",
+      "name": "Ogerpon Hearthflame SAR",
+      "variant": "PSA 10",
+      "live_price": 60.0,
+      "buy_target": 116.0,
+      "wb_price": 145,
+      "discount_pct": 58.6,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X214",
+      "name": "Avery SIR (CR)",
+      "variant": "PSA 10",
+      "live_price": 46.49,
+      "buy_target": 88.0,
+      "wb_price": 110,
+      "discount_pct": 57.7,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "M220",
+      "name": "Charizard ex SIR PSA 10",
+      "variant": "PSA 10",
+      "live_price": 180.0,
+      "buy_target": 340.0,
+      "wb_price": 425,
+      "discount_pct": 57.6,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "M085",
+      "name": "Mega Lucario ex SIR",
+      "variant": "PSA 10",
+      "live_price": 350.0,
+      "buy_target": 656.0,
+      "wb_price": 820,
+      "discount_pct": 57.3,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "JB05",
+      "name": "VMAX Climax Pack (JP single)",
+      "variant": "Sealed",
+      "live_price": 6.0,
+      "buy_target": 11.0,
+      "wb_price": 14,
+      "discount_pct": 57.1,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "PC004",
+      "name": "Premium Collection PSA 10 Box (Champion's Path)",
+      "variant": "Sealed",
+      "live_price": 211.9,
+      "buy_target": 388.0,
+      "wb_price": 485,
+      "discount_pct": 56.3,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X508",
+      "name": "Pikachu Illustrator PSA 7",
+      "variant": "PSA 7",
+      "live_price": 197261.51,
+      "buy_target": 360000.0,
+      "wb_price": 450000,
+      "discount_pct": 56.2,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "D112",
+      "name": "Pokemon Champion's Path ETB",
+      "variant": "Sealed",
+      "live_price": 170.0,
+      "buy_target": 308.0,
+      "wb_price": 385,
+      "discount_pct": 55.8,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "M053",
+      "name": "Garchomp ex Alt Art",
+      "variant": "PSA 10",
+      "live_price": 106.39,
+      "buy_target": 192.0,
+      "wb_price": 240,
+      "discount_pct": 55.7,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "V811",
+      "name": "Umbreon Neo Discovery",
+      "variant": "PSA 8",
+      "live_price": 125.0,
+      "buy_target": 224.0,
+      "wb_price": 280,
+      "discount_pct": 55.4,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X213",
+      "name": "Klara SIR (CR)",
+      "variant": "PSA 10",
+      "live_price": 64.99,
+      "buy_target": 116.0,
+      "wb_price": 145,
+      "discount_pct": 55.2,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X122",
+      "name": "Fezandipiti ex SIR (raw)",
+      "variant": "Raw NM",
+      "live_price": 7.86,
+      "buy_target": 13.0,
+      "wb_price": 16,
+      "discount_pct": 50.9,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "V038",
+      "name": "Aerodactyl",
+      "variant": "PSA 9",
+      "live_price": 285.5,
+      "buy_target": 464.0,
+      "wb_price": 580,
+      "discount_pct": 50.8,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "M022",
+      "name": "Aerodactyl V Alt Art",
+      "variant": "PSA 10",
+      "live_price": 78.72,
+      "buy_target": 128.0,
+      "wb_price": 160,
+      "discount_pct": 50.8,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X125",
+      "name": "Terapagos ex SIR (raw)",
+      "variant": "Raw NM",
+      "live_price": 10.87,
+      "buy_target": 18.0,
+      "wb_price": 22,
+      "discount_pct": 50.6,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "M109",
+      "name": "Octillery V Alt Art",
+      "variant": "PSA 10",
+      "live_price": 47.47,
+      "buy_target": 76.0,
+      "wb_price": 95,
+      "discount_pct": 50.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X301",
+      "name": "Charizard VSTAR Rainbow (BRS) PSA 10",
+      "variant": "PSA 10",
+      "live_price": 240.0,
+      "buy_target": 384.0,
+      "wb_price": 480,
+      "discount_pct": 50.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "W002",
+      "name": "Pikachu ex SAR (PSA 10)",
+      "variant": "PSA 10",
+      "live_price": 247.87,
+      "buy_target": 388.0,
+      "wb_price": 485,
+      "discount_pct": 48.9,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "P010",
+      "name": "Allister Trainer Gallery",
+      "variant": "Raw NM",
+      "live_price": 2.56,
+      "buy_target": 4.0,
+      "wb_price": 5,
+      "discount_pct": 48.8,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "M032",
+      "name": "Charizard V (GG)",
+      "variant": "PSA 10",
+      "live_price": 175.0,
+      "buy_target": 272.0,
+      "wb_price": 340,
+      "discount_pct": 48.5,
+      "just_crossed_today": false
+    }
+  ],
+  "sell_alerts": [
+    {
+      "cid": "V004",
+      "name": "Charizard",
+      "variant": "PSA 10",
+      "live_price": 28272.5,
+      "sell_target": 8800.0,
+      "wb_price": 8000,
+      "premium_pct": 253.4,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "V002",
+      "name": "Charizard",
+      "variant": "PSA 8",
+      "live_price": 31392.6,
+      "sell_target": 10450.0,
+      "wb_price": 9500,
+      "premium_pct": 230.4,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "X501",
+      "name": "Charizard 1st Ed Shadowless PSA 8",
+      "variant": "PSA 8",
+      "live_price": 31392.6,
+      "sell_target": 10450.0,
+      "wb_price": 9500,
+      "premium_pct": 230.4,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "X505",
+      "name": "Charizard Gold Star PSA 10",
+      "variant": "PSA 10",
+      "live_price": 58723.0,
+      "sell_target": 19800.0,
+      "wb_price": 18000,
+      "premium_pct": 226.2,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "X507",
+      "name": "Umbreon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "live_price": 63460.5,
+      "sell_target": 24200.0,
+      "wb_price": 22000,
+      "premium_pct": 188.5,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "V100",
+      "name": "Pikachu Illustrator Promo",
+      "variant": "PSA 7",
+      "live_price": 197261.51,
+      "sell_target": 93500.0,
+      "wb_price": 85000,
+      "premium_pct": 132.1,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "X506",
+      "name": "Espeon Gold Star PSA 10",
+      "variant": "PSA 10",
+      "live_price": 33609.63,
+      "sell_target": 17600.0,
+      "wb_price": 16000,
+      "premium_pct": 110.1,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "V023",
+      "name": "Espeon Gold Star",
+      "variant": "PSA 9",
+      "live_price": 15875.6,
+      "sell_target": 9350.0,
+      "wb_price": 8500,
+      "premium_pct": 86.8,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "Z004",
+      "name": "Lugia 1st Ed",
+      "variant": "PSA 9",
+      "live_price": 9475.24,
+      "sell_target": 9350.0,
+      "wb_price": 8500,
+      "premium_pct": 11.5,
+      "just_crossed_today": true
+    },
+    {
+      "cid": "P060",
+      "name": "Greedent Trainer SIR",
+      "variant": "Raw NM",
+      "live_price": 1493.04,
+      "sell_target": 9.0,
+      "wb_price": 8,
+      "premium_pct": 18563.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X114",
+      "name": "Greedent Trainer SIR (raw)",
+      "variant": "Raw NM",
+      "live_price": 1493.04,
+      "sell_target": 10.0,
+      "wb_price": 9,
+      "premium_pct": 16489.3,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "JB01",
+      "name": "Charizard ex CHR (JP)",
+      "variant": "Raw NM",
+      "live_price": 876.48,
+      "sell_target": 20.0,
+      "wb_price": 18,
+      "premium_pct": 4769.3,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "JB02",
+      "name": "Mew ex CHR (JP)",
+      "variant": "Raw NM",
+      "live_price": 413.45,
+      "sell_target": 15.0,
+      "wb_price": 14,
+      "premium_pct": 2853.2,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "P020",
+      "name": "Magikarp Illustration Rare",
+      "variant": "Raw NM",
+      "live_price": 125.07,
+      "sell_target": 6.0,
+      "wb_price": 5,
+      "premium_pct": 2401.4,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "P031",
+      "name": "Charmander Pokeball Pattern",
+      "variant": "Raw NM",
+      "live_price": 200.0,
+      "sell_target": 9.0,
+      "wb_price": 8,
+      "premium_pct": 2400.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "JB07",
+      "name": "Lugia VSTAR HR (JP)",
+      "variant": "Raw NM",
+      "live_price": 422.5,
+      "sell_target": 20.0,
+      "wb_price": 18,
+      "premium_pct": 2247.2,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "B013",
+      "name": "Reshiram Trainer Gallery",
+      "variant": "Raw NM",
+      "live_price": 498.9,
+      "sell_target": 24.0,
+      "wb_price": 22,
+      "premium_pct": 2167.7,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "V213",
+      "name": "Hassel Full Art",
+      "variant": "Raw NM",
+      "live_price": 79.99,
+      "sell_target": 4.0,
+      "wb_price": 4,
+      "premium_pct": 1899.7,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "JB08",
+      "name": "Mewtwo VSTAR HR (JP)",
+      "variant": "Raw NM",
+      "live_price": 282.68,
+      "sell_target": 16.0,
+      "wb_price": 15,
+      "premium_pct": 1784.5,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "B011",
+      "name": "Gengar VMAX Alt Art",
+      "variant": "Raw NM",
+      "live_price": 435.07,
+      "sell_target": 31.0,
+      "wb_price": 28,
+      "premium_pct": 1453.8,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "D04",
+      "name": "Twin Pack 151 Charizard",
+      "variant": "Sealed",
+      "live_price": 250.74,
+      "sell_target": 20.0,
+      "wb_price": 18,
+      "premium_pct": 1293.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "X145",
+      "name": "Paldean Fates Mini Tin",
+      "variant": "Sealed",
+      "live_price": 240.43,
+      "sell_target": 20.0,
+      "wb_price": 18,
+      "premium_pct": 1235.7,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "U004",
+      "name": "Hassel Full Art (raw)",
+      "variant": "Raw NM",
+      "live_price": 79.99,
+      "sell_target": 7.0,
+      "wb_price": 6,
+      "premium_pct": 1233.2,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "JB06",
+      "name": "Eevee CHR (JP)",
+      "variant": "Raw NM",
+      "live_price": 93.2,
+      "sell_target": 9.0,
+      "wb_price": 8,
+      "premium_pct": 1065.0,
+      "just_crossed_today": false
+    },
+    {
+      "cid": "P005",
+      "name": "Cyrano SIR",
+      "variant": "Raw NM",
+      "live_price": 79.99,
+      "sell_target": 8.0,
+      "wb_price": 7,
+      "premium_pct": 1042.7,
+      "just_crossed_today": false
+    }
+  ],
+  "high_score_signals": [
+    {
+      "cid": "M085",
+      "name": "Mega Lucario ex SIR",
+      "variant": "PSA 10",
+      "score": 88,
+      "signal": "STRONG BUY",
+      "live_price": 350.0,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M046",
+      "name": "Charizard ex SIR",
+      "variant": "PSA 10",
+      "score": 88,
+      "signal": "STRONG BUY",
+      "live_price": 322.5,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M054",
+      "name": "Roaring Moon ex SIR",
+      "variant": "PSA 10",
+      "score": 88,
+      "signal": "STRONG BUY",
+      "live_price": 211.21,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M055",
+      "name": "Garchomp ex SIR",
+      "variant": "PSA 10",
+      "score": 88,
+      "signal": "STRONG BUY",
+      "live_price": 106.39,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M060",
+      "name": "Carmine SIR",
+      "variant": "PSA 10",
+      "score": 88,
+      "signal": "STRONG BUY",
+      "live_price": 178.22,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M048",
+      "name": "Tyranitar ex SIR",
+      "variant": "PSA 10",
+      "score": 88,
+      "signal": "STRONG BUY",
+      "live_price": 75.82,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M050",
+      "name": "Iron Hands ex Alt Art",
+      "variant": "PSA 10",
+      "score": 88,
+      "signal": "STRONG BUY",
+      "live_price": 69.13,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M013",
+      "name": "Charizard VMAX Rainbow",
+      "variant": "PSA 10",
+      "score": 87,
+      "signal": "STRONG BUY",
+      "live_price": 374.45,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M015",
+      "name": "Charizard VSTAR Rainbow",
+      "variant": "PSA 10",
+      "score": 87,
+      "signal": "STRONG BUY",
+      "live_price": 240.0,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M036",
+      "name": "Charizard ex Full Art",
+      "variant": "PSA 10",
+      "score": 87,
+      "signal": "STRONG BUY",
+      "live_price": 227.5,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M053",
+      "name": "Garchomp ex Alt Art",
+      "variant": "PSA 10",
+      "score": 87,
+      "signal": "STRONG BUY",
+      "live_price": 106.39,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M022",
+      "name": "Aerodactyl V Alt Art",
+      "variant": "PSA 10",
+      "score": 86,
+      "signal": "STRONG BUY",
+      "live_price": 78.72,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M078",
+      "name": "Lillie's Determination SIR",
+      "variant": "PSA 10",
+      "score": 84,
+      "signal": "STRONG BUY",
+      "live_price": 195.0,
+      "confidence": "OVERRIDE"
+    },
+    {
+      "cid": "M072",
+      "name": "Espeon ex SIR",
+      "variant": "PSA 10",
+      "score": 80,
+      "signal": "STRONG BUY",
+      "live_price": 1149.99,
+      "confidence": "OVERRIDE"
+    }
+  ]
+}
