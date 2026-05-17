@@ -698,6 +698,75 @@
     .learn-weights { grid-template-columns: 1fr; }
     .learn-weight-row { grid-template-columns: 110px 1fr 56px; }
   }
+  /* ============ TRADING JOURNAL (TRACK RECORD) ============ */
+  .journal-section { padding: 28px 0 8px; }
+  .journal-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245,200,66,0.04) 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 24px;
+  }
+  .journal-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 18px;
+  }
+  .journal-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .journal-head h2 .accent { color: var(--gold); }
+  .journal-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .journal-kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .journal-kpi {
+    background: rgba(10,14,26,0.4);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .journal-kpi .lbl {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); letter-spacing: 0.08em; text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .journal-kpi .val { font-size: 20px; font-weight: 700; color: var(--text); }
+  .journal-kpi .val.green { color: var(--green); }
+  .journal-kpi .val.red { color: var(--red); }
+  .journal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .journal-table th, .journal-table td {
+    padding: 8px 10px; text-align: left;
+    border-bottom: 1px dashed var(--border);
+  }
+  .journal-table th {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); letter-spacing: 0.08em; text-transform: uppercase;
+    font-weight: 500;
+  }
+  .journal-table td.num {
+    font-family: 'JetBrains Mono', monospace; text-align: right;
+    font-weight: 600;
+  }
+  .journal-table td.green { color: var(--green); }
+  .journal-table td.red { color: var(--red); }
+  .journal-table .pill {
+    display: inline-block;
+    font-size: 9px; padding: 2px 6px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+  }
+  .journal-table .pill.lt { background: rgba(74,222,128,0.15); color: var(--green); }
+  .journal-table .pill.st { background: rgba(245,200,66,0.15); color: var(--gold); }
+  @media (max-width: 768px) {
+    .journal-kpis { grid-template-columns: repeat(2, 1fr); }
+    .journal-table th:nth-child(2), .journal-table td:nth-child(2),
+    .journal-table th:nth-child(6), .journal-table td:nth-child(6) { display: none; }
+  }
   /* ============ ARBITRAGE OPPORTUNITIES ============ */
   .arb-section { padding: 28px 0 8px; }
   .arb-head {
@@ -1645,6 +1714,7 @@
     <a href="#morning-brief">☕ Brief</a>
     <a href="#moves">📈 Today</a>
     <a href="#data-quality">🔍 DQ</a>
+    <a href="#journal">📒 Track Record</a>
     <a href="#learning-engine">🧠 AI</a>
     <a href="#arbitrage">💰 Arb</a>
     <a href="#future-winners">🔮 Future Winners</a>
@@ -2041,6 +2111,48 @@
     </div>
   </div>
 </div>
+
+<!-- ============ TRADING JOURNAL — Brandon's actual track record ============ -->
+<section class="journal-section" id="journal">
+  <div class="container">
+    <div class="journal-card">
+      <div class="journal-head">
+        <h2>📒 <span class="accent">Trading Journal</span> — actual track record</h2>
+        <span class="sub">Real trades logged from the desk · realized P/L + open positions</span>
+      </div>
+      <div class="journal-kpis" id="journal-kpis">
+        <div class="journal-kpi"><div class="lbl">Realized P/L</div><div class="val" id="j-pl">—</div></div>
+        <div class="journal-kpi"><div class="lbl">Portfolio ROI</div><div class="val" id="j-roi">—</div></div>
+        <div class="journal-kpi"><div class="lbl">Win Rate</div><div class="val" id="j-winrate">—</div></div>
+        <div class="journal-kpi"><div class="lbl">Open Positions</div><div class="val" id="j-open">—</div></div>
+      </div>
+      <h3 style="font-size: 13px; font-family:'JetBrains Mono',monospace; color:var(--text-dim); letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 10px;">Recent Closes</h3>
+      <div style="overflow-x:auto;">
+        <table class="journal-table" id="journal-table">
+          <thead>
+            <tr>
+              <th>Sold</th>
+              <th>Card</th>
+              <th>Tax</th>
+              <th class="num">Cost</th>
+              <th class="num">Net Proceeds</th>
+              <th class="num">P/L</th>
+              <th class="num">ROI</th>
+              <th class="num">Days</th>
+            </tr>
+          </thead>
+          <tbody id="journal-rows">
+            <tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">⏳ Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); display: flex; justify-content: space-between; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-mute);">
+        <span id="j-totals">—</span>
+        <span id="j-tax">—</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============ SELF-LEARNING ENGINE — shows the AI evolving ============ -->
 <section class="learn-section" id="learning-engine">
@@ -2654,6 +2766,10 @@
     '/arbitrage_v2.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/arbitrage_v2.json'
   ];
+  const JOURNAL_URLS = [
+    '/trading_journal.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/trading_journal.json'
+  ];
   const CARDS_FULL_URLS = [
     '/cards_full.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
@@ -2877,6 +2993,68 @@
         console.warn('Arb v2 load failed:', err);
         const g = document.getElementById('arb-grid');
         if (g) g.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 30px 0; text-align:center;">Arb scanner output unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ TRADING JOURNAL ============
+  function renderJournal(data) {
+    if (!data || !data.summary) return;
+    const s = data.summary;
+    const fmtMoney = v => (v < 0 ? '-$' : '$') + Math.abs(Math.round(v)).toLocaleString();
+    const sign = v => v >= 0 ? '+' : '';
+    const pl = document.getElementById('j-pl');
+    if (pl) {
+      pl.textContent = sign(s.total_realized_pl) + fmtMoney(s.total_realized_pl);
+      pl.className = 'val ' + (s.total_realized_pl >= 0 ? 'green' : 'red');
+    }
+    const roi = document.getElementById('j-roi');
+    if (roi) {
+      roi.textContent = sign(s.portfolio_roi_pct) + (s.portfolio_roi_pct || 0).toFixed(1) + '%';
+      roi.className = 'val ' + (s.portfolio_roi_pct >= 0 ? 'green' : 'red');
+    }
+    const wr = document.getElementById('j-winrate');
+    if (wr) wr.textContent = (s.win_rate_pct || 0).toFixed(0) + '%';
+    const op = document.getElementById('j-open');
+    if (op) op.textContent = s.open_positions || 0;
+
+    // Recent trades table
+    const tbody = document.getElementById('journal-rows');
+    const recent = data.recent_closes || [];
+    if (tbody) {
+      if (!recent.length) {
+        tbody.innerHTML = '<tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">No closed trades yet — log via Workbook → Realized P&L sheet.</td></tr>';
+      } else {
+        tbody.innerHTML = recent.map(t => {
+          const plCls = t.net_pl >= 0 ? 'green' : 'red';
+          const desc = (t.description || t.cid || '').slice(0, 40);
+          const taxPill = '<span class="pill ' + (t.tax_status === 'LT' ? 'lt' : 'st') + '">' + t.tax_status + '</span>';
+          return '<tr>' +
+            '<td>' + (t.sell_date || '—') + '</td>' +
+            '<td>' + desc + '</td>' +
+            '<td>' + taxPill + '</td>' +
+            '<td class="num">$' + (t.total_cost || 0).toLocaleString() + '</td>' +
+            '<td class="num">$' + (t.net_proceeds || 0).toLocaleString() + '</td>' +
+            '<td class="num ' + plCls + '">' + sign(t.net_pl) + fmtMoney(t.net_pl) + '</td>' +
+            '<td class="num ' + plCls + '">' + sign(t.roi_pct) + (t.roi_pct || 0).toFixed(0) + '%</td>' +
+            '<td class="num">' + (t.hold_days || '—') + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+    }
+    // Footer totals
+    const totL = document.getElementById('j-totals');
+    if (totL) totL.textContent = s.closed_trades + ' closed · $' + Math.round(s.total_volume_sold).toLocaleString() + ' lifetime volume · avg hold ' + (s.avg_hold_days||0).toFixed(0) + 'd';
+    const totR = document.getElementById('j-tax');
+    if (totR) totR.textContent = 'LT: ' + s.lt_count + ' ($' + Math.round(s.lt_pl).toLocaleString() + ') · ST: ' + s.st_count + ' ($' + Math.round(s.st_pl).toLocaleString() + ')';
+  }
+
+  function loadJournal() {
+    tryFetch(JOURNAL_URLS, 0)
+      .then(renderJournal)
+      .catch(err => {
+        console.warn('Trading journal load failed:', err);
+        const tbody = document.getElementById('journal-rows');
+        if (tbody) tbody.innerHTML = '<tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">Journal data unavailable — first cron run will populate.</td></tr>';
       });
   }
 
@@ -3332,6 +3510,7 @@
     loadFutureWinners();
     loadLearning();
     loadArb();
+    loadJournal();
     loadTop500();
     setInterval(load, REFRESH_MS);
     setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
@@ -3339,6 +3518,7 @@
     setInterval(loadFutureWinners, REFRESH_MS * 15);  // refresh winners every 15 min
     setInterval(loadLearning, REFRESH_MS * 30);  // refresh learning summary hourly
     setInterval(loadArb, REFRESH_MS * 15);  // refresh arb every 15 min
+    setInterval(loadJournal, REFRESH_MS * 60);  // refresh journal every 2h (changes are user-driven)
     setInterval(loadTop500, REFRESH_MS * 5);  // refresh top500 every 5 min
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
