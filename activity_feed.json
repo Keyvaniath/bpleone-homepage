@@ -1,0 +1,407 @@
+{
+  "generated_at": "2026-05-17T07:17:37.322389+00:00",
+  "lookback_hours": 48,
+  "n_events": 50,
+  "events": [
+    {
+      "ts": "2026-05-17T07:11:00.908242+00:00",
+      "type": "arb_opportunity",
+      "icon": "\ud83d\udcb0",
+      "title": "Arb: Snorlax PSA 9",
+      "detail": "PSA9 TO PSA10 CROSSGRADE \u00b7 EV $6,381 (259% ROI)",
+      "cid": "V037"
+    },
+    {
+      "ts": "2026-05-17T07:11:00.908242+00:00",
+      "type": "arb_opportunity",
+      "icon": "\ud83d\udcb0",
+      "title": "Arb: Chansey PSA 9",
+      "detail": "PSA9 TO PSA10 CROSSGRADE \u00b7 EV $4,782 (98% ROI)",
+      "cid": "V008"
+    },
+    {
+      "ts": "2026-05-17T07:11:00.908242+00:00",
+      "type": "arb_opportunity",
+      "icon": "\ud83d\udcb0",
+      "title": "Arb: Charizard PSA 9",
+      "detail": "PSA9 TO PSA10 CROSSGRADE \u00b7 EV $4,048 (140% ROI)",
+      "cid": "V005"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Umbreon VMAX (Moonbreon) PSA 10",
+      "detail": "$4,480 \u00b7 score 75/100",
+      "cid": "M001"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Umbreon VMAX (Moonbreon) Raw NM",
+      "detail": "$1,856 \u00b7 score 79/100",
+      "cid": "M002"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Sylveon VMAX Alt Art PSA 10",
+      "detail": "$1,200 \u00b7 score 76/100",
+      "cid": "M004"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Dragonite V Alt Art PSA 10",
+      "detail": "$350 \u00b7 score 82/100",
+      "cid": "M010"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Duraludon VMAX Alt Art PSA 10",
+      "detail": "$520 \u00b7 score 76/100",
+      "cid": "M011"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Rayquaza V Alt Art PSA 10",
+      "detail": "$620 \u00b7 score 75/100",
+      "cid": "M012"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Charizard VMAX Rainbow PSA 10",
+      "detail": "$374 \u00b7 score 87/100",
+      "cid": "M013"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Charizard V Full Art PSA 10",
+      "detail": "$553 \u00b7 score 76/100",
+      "cid": "M014"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Charizard VSTAR Rainbow PSA 10",
+      "detail": "$240 \u00b7 score 87/100",
+      "cid": "M015"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Giratina VSTAR Alt Art PSA 10",
+      "detail": "$524 \u00b7 score 75/100",
+      "cid": "M021"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Aerodactyl V Alt Art PSA 10",
+      "detail": "$79 \u00b7 score 86/100",
+      "cid": "M022"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Magnezone V Alt Art PSA 10",
+      "detail": "$35 \u00b7 score 88/100",
+      "cid": "M023"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Lugia VSTAR Alt Art PSA 10",
+      "detail": "$820 \u00b7 score 75/100",
+      "cid": "M024"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Alakazam V Alt Art PSA 10",
+      "detail": "$56 \u00b7 score 88/100",
+      "cid": "M025"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Serperior V Alt Art PSA 10",
+      "detail": "$72 \u00b7 score 88/100",
+      "cid": "M026"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Giratina VSTAR Gold PSA 10",
+      "detail": "$150 \u00b7 score 88/100",
+      "cid": "M029"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Mewtwo VSTAR (GG) PSA 10",
+      "detail": "$499 \u00b7 score 76/100",
+      "cid": "M030"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Charizard V (GG) PSA 10",
+      "detail": "$175 \u00b7 score 85/100",
+      "cid": "M032"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Lugia V (GG) PSA 10",
+      "detail": "$68 \u00b7 score 88/100",
+      "cid": "M033"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Charizard ex SIR PSA 10",
+      "detail": "$1,755 \u00b7 score 77/100",
+      "cid": "M034"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Charizard ex Full Art PSA 10",
+      "detail": "$228 \u00b7 score 87/100",
+      "cid": "M036"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Mew ex SIR PSA 10",
+      "detail": "$175 \u00b7 score 88/100",
+      "cid": "M037"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Zapdos ex SIR PSA 10",
+      "detail": "$462 \u00b7 score 76/100",
+      "cid": "M038"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Venusaur ex SIR PSA 10",
+      "detail": "$499 \u00b7 score 76/100",
+      "cid": "M039"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Blastoise ex SIR PSA 10",
+      "detail": "$654 \u00b7 score 76/100",
+      "cid": "M040"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Mewtwo ex SIR PSA 10",
+      "detail": "$540 \u00b7 score 76/100",
+      "cid": "M041"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Alakazam ex SIR PSA 10",
+      "detail": "$360 \u00b7 score 76/100",
+      "cid": "M043"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Iono SIR PSA 10",
+      "detail": "$700 \u00b7 score 76/100",
+      "cid": "M044"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Charizard ex SIR PSA 10",
+      "detail": "$322 \u00b7 score 88/100",
+      "cid": "M046"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Tyranitar ex SIR PSA 10",
+      "detail": "$76 \u00b7 score 88/100",
+      "cid": "M048"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Iron Hands ex Alt Art PSA 10",
+      "detail": "$69 \u00b7 score 88/100",
+      "cid": "M050"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Garchomp ex Alt Art PSA 10",
+      "detail": "$106 \u00b7 score 87/100",
+      "cid": "M053"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Roaring Moon ex SIR PSA 10",
+      "detail": "$211 \u00b7 score 88/100",
+      "cid": "M054"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Garchomp ex SIR PSA 10",
+      "detail": "$106 \u00b7 score 88/100",
+      "cid": "M055"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Pikachu Shiny PSA 10",
+      "detail": "$682 \u00b7 score 76/100",
+      "cid": "M058"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Greninja ex SIR PSA 10",
+      "detail": "$975 \u00b7 score 76/100",
+      "cid": "M059"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Carmine SIR PSA 10",
+      "detail": "$178 \u00b7 score 88/100",
+      "cid": "M060"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Fezandipiti ex Alt Art PSA 10",
+      "detail": "$90 \u00b7 score 89/100",
+      "cid": "M063"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Umbreon ex SIR PSA 10",
+      "detail": "$5,150 \u00b7 score 77/100",
+      "cid": "M069"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Umbreon ex SIR Raw NM",
+      "detail": "$1,529 \u00b7 score 77/100",
+      "cid": "M070"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Sylveon ex SIR PSA 10",
+      "detail": "$1,650 \u00b7 score 77/100",
+      "cid": "M071"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Espeon ex SIR PSA 10",
+      "detail": "$1,150 \u00b7 score 80/100",
+      "cid": "M072"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Glaceon ex SIR PSA 10",
+      "detail": "$920 \u00b7 score 76/100",
+      "cid": "M074"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Leafeon ex SIR PSA 10",
+      "detail": "$899 \u00b7 score 76/100",
+      "cid": "M075"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Lillie's Determination SIR PSA 10",
+      "detail": "$195 \u00b7 score 84/100",
+      "cid": "M078"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Mega Gengar ex SIR PSA 10",
+      "detail": "$3,705 \u00b7 score 78/100",
+      "cid": "M081"
+    },
+    {
+      "ts": "2026-05-17T07:10:59.963151+00:00",
+      "type": "signal_strong_buy",
+      "icon": "\ud83d\udd14",
+      "title": "STRONG BUY: Mega Gengar ex SIR Raw NM",
+      "detail": "$1,391 \u00b7 score 78/100",
+      "cid": "M082"
+    }
+  ]
+}
