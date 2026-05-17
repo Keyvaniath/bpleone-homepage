@@ -851,6 +851,14 @@
   .sealed-card .stats .v.up { color: var(--green); }
   .sealed-card .stats .v.dn { color: var(--red); }
 
+  @media (max-width: 640px) {
+    .setheat-grid { grid-template-columns: 1fr 1fr; }
+    .sealed-grid { grid-template-columns: 1fr; }
+    .setheat-section h2, .sealed-section h2, .arb-head h2,
+    .journal-head h2, .learn-head h2 { font-size: 19px; }
+    .setheat-head .sub, .sealed-head .sub, .arb-head .sub { display: none; }
+    .setheat-card .meta { flex-direction: column; gap: 4px; }
+  }
   /* ============ PIPELINE HEALTH DOT ============ */
   .health-dot {
     display: inline-block;
