@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-16T22:42:56.637692+00:00",
-  "data_age_hours": 1.8,
-  "data_quality_score": 46,
+  "generated_at": "2026-05-17T02:37:49.215852+00:00",
+  "data_age_hours": 5.8,
+  "data_quality_score": 48,
   "data_quality_grade": "F",
   "summary": {
     "strong_buys_count": 86,
@@ -102,33 +102,6 @@
       "reason": "ebay returned $46 but workbook is $65000 (0.0x) \u2014 REJECTED, using workbook"
     },
     {
-      "cid": "X507",
-      "name": "Umbreon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb_price": 22000,
-      "rejected_source": "pricecharting:fallback_grade_9",
-      "rejected_value": 9205.8,
-      "reason": "no fresh source; previous live $9206 was 0.4x wb \u2014 REJECTED, using workbook"
-    },
-    {
-      "cid": "X505",
-      "name": "Charizard Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb_price": 18000,
-      "rejected_source": "pricecharting:fallback_grade_9",
-      "rejected_value": 7250.0,
-      "reason": "no fresh source; previous live $7250 was 0.4x wb \u2014 REJECTED, using workbook"
-    },
-    {
-      "cid": "X506",
-      "name": "Espeon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb_price": 16000,
-      "rejected_source": "pricecharting:fallback_grade_9",
-      "rejected_value": 7296.73,
-      "reason": "no fresh source; previous live $7297 was 0.5x wb \u2014 REJECTED, using workbook"
-    },
-    {
       "cid": "D101",
       "name": "Pokemon Base Set Booster Box (Unlimited)",
       "variant": "Sealed",
@@ -156,13 +129,40 @@
       "reason": "pc returned $28 but workbook is $9500 (0.0x) \u2014 REJECTED, using workbook"
     },
     {
-      "cid": "Z004",
-      "name": "Lugia 1st Ed",
+      "cid": "V032",
+      "name": "Tropical Wind",
       "variant": "PSA 9",
-      "wb_price": 8500,
-      "rejected_source": "rejected_sanity_pricecharting:psa9_$711_vs_wb_$8500",
+      "wb_price": 6500,
+      "rejected_source": "pricecharting:fallback_grade_8",
+      "rejected_value": 1986.32,
+      "reason": "no fresh source; previous live $1986 was 0.3x wb \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "Z102",
+      "name": "Gold Star Charizard",
+      "variant": "PSA 10",
+      "wb_price": 6500,
+      "rejected_source": "pricecharting:psa10",
+      "rejected_value": 58723.0,
+      "reason": "pc returned $58723 but workbook is $6500 (9.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "X526",
+      "name": "Champion's Path Booster Box (case)",
+      "variant": "Sealed",
+      "wb_price": 6500,
+      "rejected_source": "rejected_sanity_pricecharting:raw_$242_vs_wb_$6500",
       "rejected_value": 0,
-      "reason": "pc returned $711 but workbook is $8500 (0.1x) \u2014 REJECTED, using workbook"
+      "reason": "pc returned $242 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "D105",
+      "name": "Pokemon Team Rocket Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb_price": 6500,
+      "rejected_source": "rejected_sanity_pricecharting:raw_$78_vs_wb_$6500",
+      "rejected_value": 0,
+      "reason": "pc returned $78 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook"
     }
   ],
   "needs_manual_override": [
@@ -199,36 +199,12 @@
       "reason": "no live source available; using workbook"
     },
     {
-      "cid": "X507",
-      "name": "Umbreon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb_price": 22000,
-      "current_source": "wb_no_sources_prev_rejected",
-      "reason": "no fresh source; previous live $9206 was 0.4x wb \u2014 REJECTED, using workbook"
-    },
-    {
       "cid": "Z050",
       "name": "Charizard Crystal",
       "variant": "PSA 10",
       "wb_price": 18500,
       "current_source": "wb_no_sources",
       "reason": "no live source available; using workbook"
-    },
-    {
-      "cid": "X505",
-      "name": "Charizard Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb_price": 18000,
-      "current_source": "wb_no_sources_prev_rejected",
-      "reason": "no fresh source; previous live $7250 was 0.4x wb \u2014 REJECTED, using workbook"
-    },
-    {
-      "cid": "X506",
-      "name": "Espeon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb_price": 16000,
-      "current_source": "wb_no_sources_prev_rejected",
-      "reason": "no fresh source; previous live $7297 was 0.5x wb \u2014 REJECTED, using workbook"
     },
     {
       "cid": "D101",
@@ -255,14 +231,6 @@
       "reason": "pc returned $28 but workbook is $9500 (0.0x) \u2014 REJECTED, using workbook"
     },
     {
-      "cid": "Z004",
-      "name": "Lugia 1st Ed",
-      "variant": "PSA 9",
-      "wb_price": 8500,
-      "current_source": "wb_fallback_source_rejected",
-      "reason": "pc returned $711 but workbook is $8500 (0.1x) \u2014 REJECTED, using workbook"
-    },
-    {
       "cid": "V032",
       "name": "Tropical Wind",
       "variant": "PSA 9",
@@ -285,6 +253,38 @@
       "wb_price": 6500,
       "current_source": "wb_fallback_source_rejected",
       "reason": "pc returned $242 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "Z052",
+      "name": "Crystal Lugia",
+      "variant": "PSA 10",
+      "wb_price": 6500,
+      "current_source": "wb_no_sources",
+      "reason": "no live source available; using workbook"
+    },
+    {
+      "cid": "D105",
+      "name": "Pokemon Team Rocket Booster Box (Unlimited)",
+      "variant": "Sealed",
+      "wb_price": 6500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $78 but workbook is $6500 (0.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "V019",
+      "name": "Pikachu Trophy (Bronze)",
+      "variant": "PSA 8",
+      "wb_price": 5500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $60478 but workbook is $5500 (11.0x) \u2014 REJECTED, using workbook"
+    },
+    {
+      "cid": "Z013",
+      "name": "Umbreon 1st Ed",
+      "variant": "PSA 10",
+      "wb_price": 5500,
+      "current_source": "wb_fallback_source_rejected",
+      "reason": "pc returned $31243 but workbook is $5500 (5.7x) \u2014 REJECTED, using workbook"
     }
   ],
   "future_winners": [],
