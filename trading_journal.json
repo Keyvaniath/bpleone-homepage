@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-05-17T06:17:32.031935+00:00",
+  "summary": {
+    "closed_trades": 1,
+    "open_positions": 7,
+    "total_realized_pl": 72.25,
+    "total_volume_sold": 175.0,
+    "total_cost_basis_sold": 80.0,
+    "portfolio_roi_pct": 90.31,
+    "win_rate_pct": 100.0,
+    "avg_roi_per_trade_pct": 90.31,
+    "avg_hold_days": 21.0,
+    "open_cost_basis": 6030.0,
+    "lt_count": 0,
+    "lt_pl": 0,
+    "st_count": 1,
+    "st_pl": 72.25
+  },
+  "recent_closes": [
+    {
+      "sale_id": "SALE-001",
+      "cid": "S028",
+      "description": "",
+      "buy_date": "2026-02-12",
+      "sell_date": "2026-03-05",
+      "qty": 5,
+      "total_cost": 80.0,
+      "gross_sale": 175.0,
+      "fees_pct": 0.13,
+      "net_proceeds": 152.25,
+      "net_pl": 72.25,
+      "roi_pct": 90.31,
+      "hold_days": 21,
+      "tax_status": "ST",
+      "is_win": true
+    }
+  ],
+  "best_trades": [
+    {
+      "sale_id": "SALE-001",
+      "cid": "S028",
+      "description": "",
+      "buy_date": "2026-02-12",
+      "sell_date": "2026-03-05",
+      "qty": 5,
+      "total_cost": 80.0,
+      "gross_sale": 175.0,
+      "fees_pct": 0.13,
+      "net_proceeds": 152.25,
+      "net_pl": 72.25,
+      "roi_pct": 90.31,
+      "hold_days": 21,
+      "tax_status": "ST",
+      "is_win": true
+    }
+  ],
+  "worst_trades": [
+    {
+      "sale_id": "SALE-001",
+      "cid": "S028",
+      "description": "",
+      "buy_date": "2026-02-12",
+      "sell_date": "2026-03-05",
+      "qty": 5,
+      "total_cost": 80.0,
+      "gross_sale": 175.0,
+      "fees_pct": 0.13,
+      "net_proceeds": 152.25,
+      "net_pl": 72.25,
+      "roi_pct": 90.31,
+      "hold_days": 21,
+      "tax_status": "ST",
+      "is_win": true
+    }
+  ],
+  "monthly_pl": [
+    {
+      "month": "2026-03",
+      "pl": 72.25,
+      "trades": 1,
+      "wins": 1
+    }
+  ],
+  "open_positions_top10": [
+    {
+      "item_id": "P-002",
+      "cid": "PERSONAL",
+      "category": "",
+      "description": "1999 Unlimited Base Set Venusaur Pack",
+      "acquired": "2026-04-01",
+      "qty": 1,
+      "cost_per_unit": 1500.0,
+      "total_cost": 1500.0,
+      "days_held": 45
+    },
+    {
+      "item_id": "INV-002",
+      "cid": "M001",
+      "category": "",
+      "description": "",
+      "acquired": "2026-03-20",
+      "qty": 1,
+      "cost_per_unit": 1450.0,
+      "total_cost": 1450.0,
+      "days_held": 57
+    },
+    {
+      "item_id": "INV-004",
+      "cid": "M047",
+      "category": "",
+      "description": "",
+      "acquired": "2026-04-28",
+      "qty": 4,
+      "cost_per_unit": 265.0,
+      "total_cost": 1060.0,
+      "days_held": 18
+    },
+    {
+      "item_id": "P-003",
+      "cid": "PERSONAL",
+      "category": "",
+      "description": "Vintage Duo Packs \u2014 held",
+      "acquired": "2026-04-01",
+      "qty": 1,
+      "cost_per_unit": 600.0,
+      "total_cost": 600.0,
+      "days_held": 45
+    },
+    {
+      "item_id": "INV-001",
+      "cid": "S001",
+      "category": "",
+      "description": "",
+      "acquired": "2026-04-15",
+      "qty": 2,
+      "cost_per_unit": 275.0,
+      "total_cost": 550.0,
+      "days_held": 31
+    },
+    {
+      "item_id": "INV-003",
+      "cid": "S024",
+      "category": "",
+      "description": "",
+      "acquired": "2026-02-10",
+      "qty": 3,
+      "cost_per_unit": 165.0,
+      "total_cost": 495.0,
+      "days_held": 95
+    },
+    {
+      "item_id": "P-001",
+      "cid": "PERSONAL",
+      "category": "",
+      "description": "Pikachu VMAX Rainbow Rare PSA 10",
+      "acquired": "2026-04-01",
+      "qty": 1,
+      "cost_per_unit": 375.0,
+      "total_cost": 375.0,
+      "days_held": 45
+    }
+  ]
+}
