@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T06:38:00.786084Z",
+  "generated_at": "2026-05-17T15:18:14.924250Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -720,7 +720,7 @@
       "notes": "Red cheeks error variant. Tiny PSA 10 pop.",
       "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "only pc source; within sane range of workbook",
+      "reconcile_reason": "only pc source; ratio 2.8x wb within 0.15-8.0 band",
       "sources": {
         "pricecharting": {
           "ungraded": 642.05,
@@ -8015,11 +8015,11 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 290.0,
-      "live_price": 290.0,
-      "live_source": "wb_fallback_source_rejected",
-      "target_buy": 232.0,
-      "target_sell": 275.5,
-      "score": 54,
+      "live_price": 2560.86,
+      "live_source": "pricecharting:raw",
+      "target_buy": 2048.69,
+      "target_sell": 2432.82,
+      "score": 52,
       "signal": "HOLD",
       "d7_workbook": 2.53,
       "d30_workbook": 5.84,
@@ -8036,10 +8036,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/1d53b2174ffd9baeadc62527270258c117f0a5087894ecef387ff96810e4eaa2/240.jpg",
       "notes": "OOP. $143 MSRP -> $290. Verify weight 545g \u00b15g.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "pc returned $2561 but workbook is $290 (8.8x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
@@ -10325,7 +10322,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ppt returned $11900 but workbook is $420 (28.3x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "ppt returned $11900 but workbook is $420 (28.3x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 527.95,
@@ -10714,12 +10711,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 950,
       "wb_price": 380.0,
-      "live_price": 380.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 304.0,
-      "target_sell": 361.0,
-      "score": 51,
-      "signal": "HOLD",
+      "live_price": 109.21,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 87.37,
+      "target_sell": 103.75,
+      "score": 63,
+      "signal": "BUY",
       "d7_workbook": 1.83,
       "d30_workbook": 10.11,
       "history": [
@@ -10735,11 +10732,8 @@
       "image": "https://images.pokemontcg.io/swsh9/154.png",
       "notes": "VMAX Climax Char Special Rare.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $109 was 0.3x wb \u2014 REJECTED, using workbook",
+      "confidence_flags": [],
+      "reconcile_reason": "no fresh source; previous live $109 was 0.3x wb (outside 0.3-6.0) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 121.59,
@@ -11608,12 +11602,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 850,
       "wb_price": 380.0,
-      "live_price": 380.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 304.0,
-      "target_sell": 361.0,
-      "score": 52,
-      "signal": "HOLD",
+      "live_price": 124.09,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 99.27,
+      "target_sell": 117.89,
+      "score": 64,
+      "signal": "BUY",
       "d7_workbook": 3.83,
       "d30_workbook": 7.7,
       "history": [
@@ -11629,10 +11623,7 @@
       "image": "https://images.pokemontcg.io/gym2/118.png",
       "notes": "Misty trainer promo. Pre-Iono era waifu.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no fresh source; previous live $124 was 0.3x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
@@ -25808,7 +25799,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $2088 but workbook is $240 (8.7x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $2088 but workbook is $240 (8.7x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 924.73,
@@ -27470,7 +27461,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $22150 but workbook is $380 (58.3x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $22150 but workbook is $380 (58.3x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 5750.0,
@@ -27916,12 +27907,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 110,
       "wb_price": 380.0,
-      "live_price": 380.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 304.0,
-      "target_sell": 361.0,
-      "score": 54,
-      "signal": "HOLD",
+      "live_price": 118.88,
+      "live_source": "pricecharting:fallback_grade_8",
+      "target_buy": 95.1,
+      "target_sell": 112.94,
+      "score": 66,
+      "signal": "BUY",
       "d7_workbook": 2.36,
       "d30_workbook": 5.0,
       "history": [
@@ -27937,10 +27928,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/60.jpg",
       "notes": "Crystal Char PSA 7 entry.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no fresh source; previous live $119 was 0.3x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
@@ -29332,7 +29320,7 @@
       "notes": "Char Gold Star PSA 10.",
       "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "only pc source; within sane range of workbook",
+      "reconcile_reason": "only pc source; ratio 3.3x wb within 0.15-8.0 band",
       "sources": {
         "pricecharting": {
           "ungraded": 3397.82,
@@ -29389,7 +29377,7 @@
       "notes": "Espeon GS PSA 10.",
       "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "only pc source; within sane range of workbook",
+      "reconcile_reason": "only pc source; ratio 2.1x wb within 0.15-8.0 band",
       "sources": {
         "pricecharting": {
           "ungraded": 4125.0,
@@ -29446,7 +29434,7 @@
       "notes": "Umbreon GS PSA 10.",
       "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "only pc source; within sane range of workbook",
+      "reconcile_reason": "only pc source; ratio 2.9x wb within 0.15-8.0 band",
       "sources": {
         "pricecharting": {
           "ungraded": 5500.0,
@@ -30543,7 +30531,7 @@
       "notes": "1st Ed Lugia. Lower pop.",
       "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "only pc source; within sane range of workbook",
+      "reconcile_reason": "only pc source; ratio 1.1x wb within 0.15-8.0 band",
       "sources": {
         "pricecharting": {
           "ungraded": 1303.11,
@@ -30845,7 +30833,7 @@
       "notes": "1st Ed Espeon - low pop.",
       "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "only pc source; within sane range of workbook",
+      "reconcile_reason": "only pc source; ratio 1.5x wb within 0.15-8.0 band",
       "sources": {
         "pricecharting": {
           "ungraded": 379.98,
@@ -32113,7 +32101,7 @@
       "notes": "1st Ed Rocket's Mewtwo - low pop.",
       "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "only pc source; within sane range of workbook",
+      "reconcile_reason": "only pc source; ratio 1.6x wb within 0.15-8.0 band",
       "sources": {
         "pricecharting": {
           "ungraded": 374.74,
@@ -33837,12 +33825,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 645,
       "wb_price": 425.0,
-      "live_price": 425.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 340.0,
-      "target_sell": 403.75,
-      "score": 57,
-      "signal": "HOLD",
+      "live_price": 146.86,
+      "live_source": "pricecharting:fallback_grade_8",
+      "target_buy": 117.49,
+      "target_sell": 139.52,
+      "score": 69,
+      "signal": "BUY",
       "d7_workbook": 4.68,
       "d30_workbook": 18.0,
       "history": [
@@ -33858,10 +33846,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/ygcn2qzjwhia6ymb/60.jpg",
       "notes": "PE Eevee SA PSA 10.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no fresh source; previous live $147 was 0.3x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
@@ -34104,7 +34089,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $1650 but workbook is $165 (10.0x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $1650 but workbook is $165 (10.0x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 364.84,
@@ -34156,7 +34141,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $5150 but workbook is $285 (18.1x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "pc returned $5150 but workbook is $285 (18.1x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 1512.5,
@@ -38636,7 +38621,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ppt returned $6900 but workbook is $425 (16.2x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "ppt returned $6900 but workbook is $425 (16.2x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 17.25,
@@ -38725,7 +38710,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ppt returned $7000 but workbook is $425 (16.5x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "ppt returned $7000 but workbook is $425 (16.5x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 25.0,
@@ -39490,7 +39475,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ppt returned $3622 but workbook is $425 (8.5x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "ppt returned $3622 but workbook is $425 (8.5x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 15.82,
@@ -39579,7 +39564,7 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "ppt returned $6100 but workbook is $425 (14.4x) \u2014 REJECTED, using workbook",
+      "reconcile_reason": "ppt returned $6100 but workbook is $425 (14.4x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 6.52,
@@ -40468,11 +40453,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1450,
       "wb_price": 195.0,
-      "live_price": 195.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 156.0,
-      "target_sell": 185.25,
-      "score": 47,
+      "live_price": 42.43,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 33.94,
+      "target_sell": 40.31,
+      "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.63,
       "d30_workbook": 4.0,
@@ -40489,11 +40474,8 @@
       "image": "https://images.pokemontcg.io/swsh8/251.png",
       "notes": "Mew V-Union 4-card promo.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $42 was 0.2x wb \u2014 REJECTED, using workbook",
+      "confidence_flags": [],
+      "reconcile_reason": "no fresh source; previous live $42 was 0.2x wb (outside 0.3-6.0) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 93.82,
@@ -40618,12 +40600,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 685,
       "wb_price": 285.0,
-      "live_price": 285.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 228.0,
-      "target_sell": 270.75,
-      "score": 54,
-      "signal": "HOLD",
+      "live_price": 69.33,
+      "live_source": "pricecharting:fallback_grade_8",
+      "target_buy": 55.46,
+      "target_sell": 65.86,
+      "score": 66,
+      "signal": "BUY",
       "d7_workbook": 3.75,
       "d30_workbook": 12.0,
       "history": [
@@ -40639,11 +40621,8 @@
       "image": "https://images.pokemontcg.io/sv8/239.png",
       "notes": "Latias SAR PSA 10.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $69 was 0.2x wb \u2014 REJECTED, using workbook",
+      "confidence_flags": [],
+      "reconcile_reason": "no fresh source; previous live $69 was 0.2x wb (outside 0.3-6.0) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 81.9,
@@ -41143,12 +41122,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 685,
       "wb_price": 245.0,
-      "live_price": 245.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 196.0,
-      "target_sell": 232.75,
-      "score": 54,
-      "signal": "HOLD",
+      "live_price": 53.18,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 42.54,
+      "target_sell": 50.52,
+      "score": 66,
+      "signal": "BUY",
       "d7_workbook": 3.04,
       "d30_workbook": 13.0,
       "history": [
@@ -41164,11 +41143,8 @@
       "image": "https://images.pokemontcg.io/sv6/217.png",
       "notes": "Carmine SAR.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $53 was 0.2x wb \u2014 REJECTED, using workbook",
+      "confidence_flags": [],
+      "reconcile_reason": "no fresh source; previous live $53 was 0.2x wb (outside 0.3-6.0) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 66.04,
@@ -41199,12 +41175,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 825,
       "wb_price": 195.0,
-      "live_price": 195.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 156.0,
-      "target_sell": 185.25,
-      "score": 52,
-      "signal": "HOLD",
+      "live_price": 48.43,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 38.74,
+      "target_sell": 46.01,
+      "score": 64,
+      "signal": "BUY",
       "d7_workbook": 2.6,
       "d30_workbook": 10.0,
       "history": [
@@ -41220,11 +41196,8 @@
       "image": "https://images.pokemontcg.io/sv6/218.png",
       "notes": "Kieran SAR.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
-      "reconcile_reason": "no fresh source; previous live $48 was 0.2x wb \u2014 REJECTED, using workbook",
+      "confidence_flags": [],
+      "reconcile_reason": "no fresh source; previous live $48 was 0.2x wb (outside 0.3-6.0) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 93.06,
@@ -41621,12 +41594,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 685,
       "wb_price": 285.0,
-      "live_price": 285.0,
-      "live_source": "wb_no_sources_prev_rejected",
-      "target_buy": 228.0,
-      "target_sell": 270.75,
-      "score": 55,
-      "signal": "HOLD",
+      "live_price": 104.5,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 83.6,
+      "target_sell": 99.27,
+      "score": 67,
+      "signal": "BUY",
       "d7_workbook": 4.98,
       "d30_workbook": 14.0,
       "history": [
@@ -41642,10 +41615,7 @@
       "image": "https://images.pokemontcg.io/ex11/109.png",
       "notes": "Jolteon ex SAR.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "no fresh source; previous live $104 was 0.4x wb \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
@@ -42571,10 +42541,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 145.0,
-      "live_price": 145.0,
-      "live_source": "wb_fallback_source_rejected",
-      "target_buy": 116.0,
-      "target_sell": 137.75,
+      "live_price": 1200.0,
+      "live_source": "pricecharting:raw",
+      "target_buy": 960.0,
+      "target_sell": 1140.0,
       "score": 58,
       "signal": "HOLD",
       "d7_workbook": 3.48,
@@ -42592,10 +42562,7 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/46836f7c135e706c48208e9dcfd759397baed9a68a4dd6cc6c23335ca84f7610/60.jpg",
       "notes": "Evolutions single pack.",
       "confidence": "UNKNOWN",
-      "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "pc returned $1200 but workbook is $145 (8.3x) \u2014 REJECTED, using workbook",
       "sources": {
         "pricecharting": {
