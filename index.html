@@ -698,6 +698,39 @@
     .learn-weights { grid-template-columns: 1fr; }
     .learn-weight-row { grid-template-columns: 110px 1fr 56px; }
   }
+  .scoreboard-strip {
+    margin-top: 18px; padding: 12px 14px;
+    background: rgba(10,14,26,0.6);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+  .scoreboard-strip .label {
+    color: #818cf8;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .scoreboard-strip .stats {
+    color: var(--text-dim);
+    font-size: 12px;
+  }
+  .scoreboard-strip .stats strong { color: var(--text); }
+  .scoreboard-strip .stats .win { color: var(--green); }
+  .scoreboard-strip .stats .loss { color: var(--red); }
+  .scoreboard-strip .pending {
+    color: var(--text-mute);
+    font-size: 10px;
+    font-style: italic;
+  }
+  @media (max-width: 640px) {
+    .scoreboard-strip { grid-template-columns: 1fr; gap: 6px; text-align: left; }
+  }
   /* ============ TRADING JOURNAL (TRACK RECORD) ============ */
   .journal-section { padding: 28px 0 8px; }
   .journal-card {
@@ -2171,6 +2204,11 @@
       <div class="learn-weights" id="learn-weights">
         <p style="grid-column: 1/-1; color:var(--text-mute); font-size:12px; padding: 16px 0; text-align:center;">⏳ Loading model weights…</p>
       </div>
+      <div class="scoreboard-strip" id="scoreboard-strip">
+        <div class="label">📊 Past Picks</div>
+        <div class="stats" id="scoreboard-stats">Loading scoreboard…</div>
+        <div class="pending" id="scoreboard-pending"></div>
+      </div>
       <div class="learn-footer">
         <span id="learn-footer-left">—</span>
         <span id="learn-footer-right">—</span>
@@ -2770,6 +2808,10 @@
     '/trading_journal.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/trading_journal.json'
   ];
+  const SCOREBOARD_URLS = [
+    '/past_picks.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/past_picks.json'
+  ];
   const CARDS_FULL_URLS = [
     '/cards_full.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
@@ -3055,6 +3097,45 @@
         console.warn('Trading journal load failed:', err);
         const tbody = document.getElementById('journal-rows');
         if (tbody) tbody.innerHTML = '<tr><td colspan="8" style="text-align:center; color:var(--text-mute); padding:20px;">Journal data unavailable — first cron run will populate.</td></tr>';
+      });
+  }
+
+  // ============ PAST PICKS SCOREBOARD ============
+  function renderScoreboard(data) {
+    const statsEl = document.getElementById('scoreboard-stats');
+    const pendEl = document.getElementById('scoreboard-pending');
+    if (!data) return;
+    const n = data.n_signals_logged || 0;
+    const matured = data.n_matured || 0;
+    const o = data.overall || {};
+    if (statsEl) {
+      if (matured > 0 && o.buy_signals_matured) {
+        const wrCls = o.buy_win_rate_pct >= 60 ? 'win' : o.buy_win_rate_pct < 50 ? 'loss' : '';
+        const arCls = o.buy_avg_return_pct >= 0 ? 'win' : 'loss';
+        statsEl.innerHTML = '<strong>' + n.toLocaleString() + '</strong> signals tracked · ' +
+          '<strong>' + matured.toLocaleString() + '</strong> matured · ' +
+          'BUY win rate <strong class="' + wrCls + '">' + o.buy_win_rate_pct + '%</strong> · ' +
+          'avg return <strong class="' + arCls + '">' + (o.buy_avg_return_pct >= 0 ? '+' : '') + o.buy_avg_return_pct.toFixed(2) + '%</strong>';
+      } else {
+        statsEl.innerHTML = '<strong>' + n.toLocaleString() + '</strong> signals tracked · scoreboard maturing';
+      }
+    }
+    if (pendEl) {
+      if (matured > 0) {
+        pendEl.textContent = '';
+      } else {
+        pendEl.textContent = (data.n_fresh_pending || 0) + ' pending (<24h old)';
+      }
+    }
+  }
+
+  function loadScoreboard() {
+    tryFetch(SCOREBOARD_URLS, 0)
+      .then(renderScoreboard)
+      .catch(err => {
+        console.warn('Scoreboard load failed:', err);
+        const statsEl = document.getElementById('scoreboard-stats');
+        if (statsEl) statsEl.textContent = 'Scoreboard data unavailable — first cron run will populate.';
       });
   }
 
@@ -3509,6 +3590,7 @@
     loadFeaturedSets();
     loadFutureWinners();
     loadLearning();
+    loadScoreboard();
     loadArb();
     loadJournal();
     loadTop500();
@@ -3517,6 +3599,7 @@
     setInterval(loadFeaturedSets, REFRESH_MS * 30);  // refresh sets hourly
     setInterval(loadFutureWinners, REFRESH_MS * 15);  // refresh winners every 15 min
     setInterval(loadLearning, REFRESH_MS * 30);  // refresh learning summary hourly
+    setInterval(loadScoreboard, REFRESH_MS * 30);  // refresh scoreboard hourly
     setInterval(loadArb, REFRESH_MS * 15);  // refresh arb every 15 min
     setInterval(loadJournal, REFRESH_MS * 60);  // refresh journal every 2h (changes are user-driven)
     setInterval(loadTop500, REFRESH_MS * 5);  // refresh top500 every 5 min
