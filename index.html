@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<!-- bpleone.com v2026.5.16-r3 — Research Center w/ Data Quality auto-audit -->
+<!-- bpleone.com v2026.5.17-r4 — + Self-Learning + Arb + Journal + Set Heat + Sealed + Health -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Brandon P. Leone — personal trading desk for collectibles, sports, equities, and sports markets.">
+<meta name="description" content="Live Pokémon TCG quant desk by Brandon P. Leone — 774 cards tracked every 4h, self-learning model with weight evolution, multi-path arbitrage scanner (raw→PSA10), real trade journal, set heat tracker, sealed market scanner. Not financial advice.">
+<meta name="keywords" content="Pokemon TCG investing, Pokemon card prices, PSA 10 arbitrage, booster box prices, Pokemon trading model, quant card trading, bpleone, sealed Pokemon, raw to PSA 10, card show trading">
+<meta name="author" content="Brandon P. Leone">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <!-- Open Graph / Twitter Card / iMessage / Discord -->
-<meta property="og:title" content="Brandon P. Leone — One operator. Seven trading desks.">
-<meta property="og:description" content="IB-style quant lab — Pokémon TCG, Sports Cards, Options Pricing, Equity Factors, Trading Comps. 774 cards tracked live. 4-hour refresh.">
+<meta property="og:title" content="bpleone.com — Live Pokémon TCG quant desk · 774 cards tracked every 4h">
+<meta property="og:description" content="Self-learning quant model · multi-path arbitrage scanner · real trade journal · set heat tracker · sealed market scanner. Updated every 4 hours.">
 <meta property="og:url" content="https://bpleone.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="bpleone.com">
 <meta property="og:image" content="https://bpleone.com/og.svg">
-<meta property="og:image:alt" content="bpleone.com trading desks dashboard preview">
+<meta property="og:image:alt" content="bpleone.com — Pokémon TCG trading dashboard preview">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Brandon P. Leone — One operator. Seven trading desks.">
-<meta name="twitter:description" content="IB-style quant lab — Pokémon TCG, Sports Cards, Options, Equity Factors, Trading Comps. Live data.">
+<meta name="twitter:site" content="@brandonpleone">
+<meta name="twitter:creator" content="@brandonpleone">
+<meta name="twitter:title" content="bpleone.com — Live Pokémon TCG quant desk">
+<meta name="twitter:description" content="Self-learning model · arbitrage scanner · real trade journal · 774 cards tracked every 4h. By Brandon P. Leone.">
 <meta name="twitter:image" content="https://bpleone.com/og.svg">
 <meta name="theme-color" content="#0a0e1a">
 <link rel="canonical" href="https://bpleone.com/">
@@ -25,7 +30,32 @@
 <link rel="apple-touch-icon" href="/icon.svg">
 <link rel="manifest" href="/manifest.json">
 <link rel="alternate" type="application/rss+xml" title="bpleone.com RSS" href="/feed.xml">
-<title>Brandon P. Leone — Trading Desk</title>
+<link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+<title>bpleone.com — Live Pokémon TCG Quant Desk · 774 cards tracked every 4h</title>
+<!-- JSON-LD structured data for SERP rich previews -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://bpleone.com/",
+  "name": "bpleone.com",
+  "description": "Live Pokémon TCG quant desk — 774 cards tracked every 4h, self-learning model, arbitrage scanner, real trade journal.",
+  "author": {
+    "@type": "Person",
+    "name": "Brandon P. Leone",
+    "url": "https://bpleone.com/",
+    "sameAs": ["https://www.linkedin.com/in/brandonleone/"]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://bpleone.com/cards.html?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -731,6 +761,128 @@
   @media (max-width: 640px) {
     .scoreboard-strip { grid-template-columns: 1fr; gap: 6px; text-align: left; }
   }
+  /* ============ SET HEAT TRACKER ============ */
+  .setheat-section { padding: 24px 0 8px; }
+  .setheat-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 14px;
+  }
+  .setheat-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .setheat-head h2 .accent { color: #fb923c; }
+  .setheat-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .setheat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .setheat-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(251,146,60,0.06) 100%);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .setheat-card:hover { border-color: #fb923c; transform: translateY(-1px); }
+  .setheat-card .set-name {
+    font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 6px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .setheat-card .heat-bar {
+    height: 4px; background: rgba(10,14,26,0.5); border-radius: 2px;
+    overflow: hidden; margin-bottom: 8px;
+  }
+  .setheat-card .heat-bar-fill {
+    height: 100%; background: linear-gradient(90deg, #fb923c, #f87171);
+    border-radius: 2px; transition: width 0.5s ease;
+  }
+  .setheat-card .meta {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--text-mute); display: flex; justify-content: space-between;
+  }
+  .setheat-card .meta .v { color: var(--text-dim); font-weight: 600; }
+  .setheat-card .meta .v.up { color: var(--green); }
+  .setheat-card .meta .v.dn { color: var(--red); }
+
+  /* ============ SEALED MARKET ============ */
+  .sealed-section { padding: 24px 0 8px; }
+  .sealed-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 14px;
+  }
+  .sealed-head h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .sealed-head h2 .accent { color: #818cf8; }
+  .sealed-head .sub {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mute);
+  }
+  .sealed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+  }
+  .sealed-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(129,140,248,0.05) 100%);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .sealed-card:hover { border-color: #818cf8; transform: translateY(-1px); }
+  .sealed-card .product-name {
+    font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 6px;
+    line-height: 1.3;
+    overflow: hidden; text-overflow: ellipsis;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .sealed-card .product-type {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 9px;
+    padding: 2px 7px; border-radius: 3px;
+    background: rgba(129,140,248,0.15); color: #818cf8;
+    margin-bottom: 8px; letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .sealed-card .stats {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4px 12px; font-size: 11px; font-family: 'JetBrains Mono', monospace;
+  }
+  .sealed-card .stats .l { color: var(--text-mute); font-size: 9px; text-transform: uppercase; }
+  .sealed-card .stats .v { color: var(--text); font-weight: 600; }
+  .sealed-card .stats .v.up { color: var(--green); }
+  .sealed-card .stats .v.dn { color: var(--red); }
+
+  /* ============ PIPELINE HEALTH DOT ============ */
+  .health-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-left: 8px;
+    vertical-align: middle;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+  }
+  .health-dot.green {
+    background: var(--green);
+    box-shadow: 0 0 8px rgba(74,222,128,0.6);
+    animation: dotPulseGreen 3s ease-in-out infinite;
+  }
+  .health-dot.yellow {
+    background: var(--gold);
+    box-shadow: 0 0 8px rgba(245,200,66,0.6);
+  }
+  .health-dot.red {
+    background: var(--red);
+    box-shadow: 0 0 8px rgba(248,113,113,0.6);
+    animation: dotPulseRed 1s ease-in-out infinite;
+  }
+  @keyframes dotPulseGreen {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+  @keyframes dotPulseRed {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
   /* ============ TRADING JOURNAL (TRACK RECORD) ============ */
   .journal-section { padding: 28px 0 8px; }
   .journal-card {
@@ -1747,13 +1899,15 @@
     <a href="#morning-brief">☕ Brief</a>
     <a href="#moves">📈 Today</a>
     <a href="#data-quality">🔍 DQ</a>
+    <a href="#setheat">🔥 Sets</a>
+    <a href="#sealed">📦 Sealed</a>
     <a href="#journal">📒 Track Record</a>
     <a href="#learning-engine">🧠 AI</a>
     <a href="#arbitrage">💰 Arb</a>
     <a href="#future-winners">🔮 Future Winners</a>
     <a href="#top500">🏆 Top 500</a>
     <a href="#live">📊 Movers</a>
-    <span class="stats" id="sub-nav-stats">774 tracked · <strong id="snk-buys">—</strong> STRONG BUYs · feed <strong id="snk-age">—</strong></span>
+    <span class="stats" id="sub-nav-stats">774 tracked · <strong id="snk-buys">—</strong> STRONG BUYs · feed <strong id="snk-age">—</strong><span class="health-dot" id="health-dot" title="Pipeline health"></span></span>
   </div>
 </div>
 
@@ -2144,6 +2298,32 @@
     </div>
   </div>
 </div>
+
+<!-- ============ SET HEAT TRACKER — macro trend per set ============ -->
+<section class="setheat-section" id="setheat">
+  <div class="container">
+    <div class="setheat-head">
+      <h2>🔥 <span class="accent">Set Heat</span> — which sets are running</h2>
+      <span class="sub">Per-set composite: avg score + BUY density + recent momentum</span>
+    </div>
+    <div class="setheat-grid" id="setheat-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">⏳ Loading set heat…</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEALED MARKET — booster boxes, ETBs, bundles ============ -->
+<section class="sealed-section" id="sealed">
+  <div class="container">
+    <div class="sealed-head">
+      <h2>📦 <span class="accent">Sealed Market</span> — boxes / ETBs / bundles</h2>
+      <span class="sub">Separate market from singles · top buys + undervalued picks</span>
+    </div>
+    <div class="sealed-grid" id="sealed-grid">
+      <p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">⏳ Loading sealed market…</p>
+    </div>
+  </div>
+</section>
 
 <!-- ============ TRADING JOURNAL — Brandon's actual track record ============ -->
 <section class="journal-section" id="journal">
@@ -2812,6 +2992,18 @@
     '/past_picks.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/past_picks.json'
   ];
+  const SETHEAT_URLS = [
+    '/set_heat.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/set_heat.json'
+  ];
+  const SEALED_URLS = [
+    '/sealed_market.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/sealed_market.json'
+  ];
+  const HEALTH_URLS = [
+    '/pipeline_health.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/pipeline_health.json'
+  ];
   const CARDS_FULL_URLS = [
     '/cards_full.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
@@ -3136,6 +3328,103 @@
         console.warn('Scoreboard load failed:', err);
         const statsEl = document.getElementById('scoreboard-stats');
         if (statsEl) statsEl.textContent = 'Scoreboard data unavailable — first cron run will populate.';
+      });
+  }
+
+  // ============ SET HEAT ============
+  function renderSetHeat(data) {
+    const grid = document.getElementById('setheat-grid');
+    if (!grid) return;
+    const hot = (data && data.hot_sets_top10) || [];
+    if (!hot.length) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">No set data yet — needs cards_full.json.</p>';
+      return;
+    }
+    const maxHeat = Math.max(...hot.map(s => s.heat_score), 100);
+    grid.innerHTML = hot.slice(0, 9).map(s => {
+      const pct = (s.heat_score / maxHeat * 100).toFixed(1);
+      const d30 = (s.avg_d30_pct || 0);
+      const d30Cls = d30 > 1 ? 'up' : d30 < -1 ? 'dn' : '';
+      const d30Str = (d30 >= 0 ? '+' : '') + d30.toFixed(1) + '%';
+      return '<div class="setheat-card">' +
+        '<div class="set-name" title="' + s.set + '">' + s.set + '</div>' +
+        '<div class="heat-bar"><div class="heat-bar-fill" style="width:' + pct + '%"></div></div>' +
+        '<div class="meta">' +
+          '<span>' + s.n_cards + ' cards · <span class="v">' + s.buy_density_pct.toFixed(0) + '% BUY</span></span>' +
+          '<span>d30 <span class="v ' + d30Cls + '">' + d30Str + '</span></span>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function loadSetHeat() {
+    tryFetch(SETHEAT_URLS, 0)
+      .then(renderSetHeat)
+      .catch(err => {
+        console.warn('Set heat load failed:', err);
+        const g = document.getElementById('setheat-grid');
+        if (g) g.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">Set heat data unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ SEALED MARKET ============
+  function renderSealed(data) {
+    const grid = document.getElementById('sealed-grid');
+    if (!grid) return;
+    const buys = (data && data.top_buys) || [];
+    if (!buys.length) {
+      grid.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">No sealed BUY signals right now — scanner runs every 4h.</p>';
+      return;
+    }
+    grid.innerHTML = buys.slice(0, 12).map(s => {
+      const d30 = s.d30_pct || 0;
+      const d30Cls = d30 > 0.5 ? 'up' : d30 < -0.5 ? 'dn' : '';
+      const d30Str = (d30 >= 0 ? '+' : '') + d30.toFixed(1) + '%';
+      const ev = s.ev_per_pack ? '$' + s.ev_per_pack.toFixed(0) + '/pack' : '—';
+      return '<div class="sealed-card">' +
+        '<div class="product-name" title="' + (s.name || '') + '">' + (s.name || '') + '</div>' +
+        '<div class="product-type">' + (s.product_type || 'Sealed') + '</div>' +
+        '<div class="stats">' +
+          '<div><div class="l">Price</div><div class="v">$' + (s.live_price || 0).toLocaleString() + '</div></div>' +
+          '<div><div class="l">Score</div><div class="v">' + (s.score || 0) + '</div></div>' +
+          '<div><div class="l">EV / pack</div><div class="v">' + ev + '</div></div>' +
+          '<div><div class="l">d30</div><div class="v ' + d30Cls + '">' + d30Str + '</div></div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function loadSealed() {
+    tryFetch(SEALED_URLS, 0)
+      .then(renderSealed)
+      .catch(err => {
+        console.warn('Sealed load failed:', err);
+        const g = document.getElementById('sealed-grid');
+        if (g) g.innerHTML = '<p style="grid-column: 1/-1; color:var(--text-mute); padding: 24px 0; text-align:center;">Sealed market data unavailable — first cron run will populate.</p>';
+      });
+  }
+
+  // ============ PIPELINE HEALTH DOT ============
+  function renderHealth(data) {
+    const dot = document.getElementById('health-dot');
+    if (!dot || !data) return;
+    const o = (data.overall || 'GREEN').toLowerCase();
+    dot.className = 'health-dot ' + o;
+    const counts = data.counts || {};
+    dot.title = 'Pipeline: ' + (data.overall || 'unknown') +
+      ' · ' + (counts.green || 0) + 'G / ' + (counts.yellow || 0) + 'Y / ' + (counts.red || 0) + 'R';
+  }
+
+  function loadHealth() {
+    tryFetch(HEALTH_URLS, 0)
+      .then(renderHealth)
+      .catch(err => {
+        console.warn('Health load failed:', err);
+        const dot = document.getElementById('health-dot');
+        if (dot) {
+          dot.className = 'health-dot yellow';
+          dot.title = 'Pipeline health unknown';
+        }
       });
   }
 
@@ -3593,6 +3882,9 @@
     loadScoreboard();
     loadArb();
     loadJournal();
+    loadSetHeat();
+    loadSealed();
+    loadHealth();
     loadTop500();
     setInterval(load, REFRESH_MS);
     setInterval(loadBrief, REFRESH_MS * 5);  // refresh brief less often
@@ -3602,6 +3894,9 @@
     setInterval(loadScoreboard, REFRESH_MS * 30);  // refresh scoreboard hourly
     setInterval(loadArb, REFRESH_MS * 15);  // refresh arb every 15 min
     setInterval(loadJournal, REFRESH_MS * 60);  // refresh journal every 2h (changes are user-driven)
+    setInterval(loadSetHeat, REFRESH_MS * 30);  // refresh set heat hourly
+    setInterval(loadSealed, REFRESH_MS * 15);  // refresh sealed every 15 min
+    setInterval(loadHealth, REFRESH_MS * 10);  // refresh health dot every 10 cycles
     setInterval(loadTop500, REFRESH_MS * 5);  // refresh top500 every 5 min
     // Manual refresh button
     var btn = document.getElementById('refresh-now-btn');
