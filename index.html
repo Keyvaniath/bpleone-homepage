@@ -1466,59 +1466,240 @@
   </div>
 </div>
 
-<header class="hero" style="padding-bottom: 24px;">
+<!-- ============ COMPACT HERO — dashboard-first ============ -->
+<header class="hero hero-compact">
   <div class="container">
-    <div class="hero-eyebrow">
-      <span class="live-pulse" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle;animation:pulse 1.6s infinite;"></span>
-      <span id="hero-status">Pokémon TCG Research Center · Live Since 2026</span>
-    </div>
-    <h1>Find the next moonshot<br><span class="accent">before it moves.</span></h1>
-    <p>An AI-driven Pokémon TCG research center. 774 cards tracked live across PriceCharting · PokemonPriceTracker · TCGPlayer · eBay. Every price runs through a multi-source sanity reconciler before going live. No chartcraft, no hype — just signals that survive an auto-audit.</p>
-
-    <!-- Live stats strip — populated from /homepage_feed.json -->
-    <div class="hero-stats" id="hero-stats">
-      <div class="hero-stat">
-        <span class="label">Cards live</span>
-        <span class="value gold" id="hs-live">—</span>
-        <span class="sub" id="hs-live-sub">of 774 tracked</span>
+    <div class="hero-row">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="live-pulse"></span>
+          <span id="hero-status">Pokémon TCG Research Center · Live Since 2026</span>
+        </div>
+        <h1>Find the next moonshot<br><span class="accent">before it moves.</span></h1>
+        <p class="hero-tagline">774 cards · multi-source price reconciler · auto-audit data quality · cross-checked across PC · PPT · TCGPlayer · eBay.</p>
+        <div class="hero-cta-row">
+          <a href="https://pokemon-tcg-trading-desk.streamlit.app" target="_blank" rel="noopener" class="cta-primary">
+            <span class="cta-icon">🎴</span>
+            <span class="cta-text">
+              <span class="cta-title">Open Pokémon Dashboard</span>
+              <span class="cta-sub">Full Pro tool · 16 tabs · live prices · trade signals</span>
+            </span>
+            <span class="cta-arrow">→</span>
+          </a>
+        </div>
+        <div class="hero-secondary-row">
+          <a href="/cards.html" class="cta-secondary">🃏 Browse 774 Cards</a>
+          <a href="/show.html" class="cta-secondary">📱 Show Mode</a>
+          <a href="#alerts" class="cta-secondary">🔔 Alerts</a>
+          <a href="#morning-brief" class="cta-secondary">☕ Brief</a>
+        </div>
       </div>
-      <div class="hero-stat">
-        <span class="label">STRONG BUYs</span>
-        <span class="value green" id="hs-buys">—</span>
-        <span class="sub" id="hs-buys-sub">today</span>
+      <div class="hero-right">
+        <!-- Compact stats card — 5 KPIs at a glance -->
+        <div class="hero-stats-card">
+          <div class="hsc-title">Live snapshot</div>
+          <div class="hsc-grid">
+            <div class="hsc-stat">
+              <span class="hsc-label">Cards live</span>
+              <span class="hsc-value gold" id="hs-live">—</span>
+              <span class="hsc-sub" id="hs-live-sub">of 774 tracked</span>
+            </div>
+            <div class="hsc-stat">
+              <span class="hsc-label">STRONG BUYs</span>
+              <span class="hsc-value green" id="hs-buys">—</span>
+              <span class="hsc-sub" id="hs-buys-sub">today</span>
+            </div>
+            <div class="hsc-stat">
+              <span class="hsc-label">Total Mcap</span>
+              <span class="hsc-value" id="hs-mcap">—</span>
+              <span class="hsc-sub">tracked book</span>
+            </div>
+            <div class="hsc-stat">
+              <span class="hsc-label">Data Quality</span>
+              <span class="hsc-value" id="hs-dq">—</span>
+              <span class="hsc-sub" id="hs-dq-sub">auto-audited</span>
+            </div>
+            <div class="hsc-stat hsc-stat-wide">
+              <span class="hsc-label">Last refresh</span>
+              <span class="hsc-value" id="hs-fresh" style="font-size:20px;">—</span>
+              <span class="hsc-sub">4h cron · cross-source</span>
+            </div>
+          </div>
+          <a href="https://pokemon-tcg-trading-desk.streamlit.app/?tab=flip" target="_blank" rel="noopener" id="flip-hero-pill" class="flip-hero-pill" style="display:none;">
+            <span class="flip-dot"></span>
+            <strong>💸 Flip Bot live</strong> · <span id="flip-hero-count">—</span> flip<span id="flip-hero-plural"></span>
+            <span style="margin-left:auto;color:var(--text-mute);">view →</span>
+          </a>
+        </div>
       </div>
-      <div class="hero-stat">
-        <span class="label">Total Mcap</span>
-        <span class="value" id="hs-mcap">—</span>
-        <span class="sub" id="hs-mcap-sub">tracked book</span>
-      </div>
-      <div class="hero-stat">
-        <span class="label">Data Quality</span>
-        <span class="value" id="hs-dq">—</span>
-        <span class="sub" id="hs-dq-sub">auto-audited</span>
-      </div>
-      <div class="hero-stat">
-        <span class="label">Last refresh</span>
-        <span class="value" id="hs-fresh" style="font-size:20px;">—</span>
-        <span class="sub">4h cron · cross-source</span>
-      </div>
-    </div>
-
-    <!-- Flip Bot live counter — populated by JS from feed.flip_bot (hidden until feed loads). -->
-    <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank" rel="noopener" id="flip-hero-pill" style="display:none;text-decoration:none;align-items:center;gap:10px;background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.3);padding:10px 16px;border-radius:24px;margin-bottom:18px;font-size:13px;font-family:'JetBrains Mono',monospace;color:var(--text);">
-      <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.6s infinite;"></span>
-      <span><strong style="color:var(--green);">💸 Flip Bot live</strong> · <span id="flip-hero-count">—</span> qualified flip<span id="flip-hero-plural"></span> right now</span>
-      <span style="color:var(--text-mute);margin-left:auto;">view →</span>
-    </a>
-
-    <div class="subscribe-cta-row" style="justify-content: flex-start; margin-bottom: 16px;">
-      <a href="#future-winners" class="btn-primary">🔮 Future Winners</a>
-      <a href="#top500" class="btn-secondary" style="border-color: var(--gold); color: var(--gold);">🏆 Top 500</a>
-      <a href="https://pokemon.bpleone.com" class="btn-secondary" target="_blank" style="border-color: var(--green); color: var(--green);">📊 Pro Dashboard</a>
-      <a href="#desks" class="btn-secondary" style="font-size: 13px; opacity: 0.7;">🧰 Other Desks</a>
     </div>
   </div>
 </header>
+
+<style>
+  /* Compact hero — dashboard-first layout */
+  .hero-compact {
+    padding: 36px 0 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-compact::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 800px 400px at 15% 0%, rgba(245,200,66,0.10) 0%, transparent 60%),
+      radial-gradient(ellipse 500px 300px at 85% 100%, rgba(74,222,128,0.07) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .hero-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 36px;
+    align-items: center;
+  }
+  @media (max-width: 900px) { .hero-row { grid-template-columns: 1fr; gap: 22px; } }
+
+  .hero-compact .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .hero-compact .hero-eyebrow .live-pulse {
+    width:8px;height:8px;border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 12px var(--green);
+    animation:pulse 1.6s infinite;
+  }
+  .hero-compact h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    margin-bottom: 14px;
+  }
+  .hero-compact h1 .accent {
+    background: linear-gradient(135deg, #f5c842 0%, #fb923c 50%, #f87171 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 12px rgba(245,200,66,0.18));
+  }
+  .hero-tagline {
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-bottom: 22px;
+    max-width: 540px;
+    line-height: 1.55;
+  }
+
+  /* Big primary CTA — "Open Pokémon Dashboard" */
+  .hero-cta-row { margin-bottom: 14px; }
+  .cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 26px;
+    background: linear-gradient(135deg, rgba(74,222,128,0.18) 0%, rgba(74,222,128,0.06) 100%);
+    border: 1px solid rgba(74,222,128,0.45);
+    border-radius: 14px;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 32px rgba(74,222,128,0.08);
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-primary::before {
+    content:'';
+    position:absolute; inset:0;
+    background: linear-gradient(135deg, transparent 0%, rgba(74,222,128,0.12) 100%);
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .cta-primary:hover { transform: translateY(-2px); border-color: rgba(74,222,128,0.85); box-shadow: 0 10px 40px rgba(74,222,128,0.22); }
+  .cta-primary:hover::before { opacity: 1; }
+  .cta-icon { font-size: 28px; }
+  .cta-text { display: flex; flex-direction: column; gap: 2px; }
+  .cta-title { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+  .cta-sub { font-size: 11px; color: var(--text-dim); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.03em; }
+  .cta-arrow { font-size: 22px; color: var(--green); margin-left: 4px; transition: transform 0.2s; }
+  .cta-primary:hover .cta-arrow { transform: translateX(4px); }
+
+  /* Secondary CTAs row */
+  .hero-secondary-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cta-secondary {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.15s ease;
+  }
+  .cta-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(245,200,66,0.06);
+    transform: translateY(-1px);
+  }
+
+  /* Hero right side — stats card */
+  .hero-stats-card {
+    background: linear-gradient(180deg, rgba(19,24,38,0.85) 0%, rgba(19,24,38,0.55) 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    backdrop-filter: blur(12px);
+  }
+  .hsc-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-mute);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .hsc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 16px;
+  }
+  .hsc-stat-wide { grid-column: span 2; padding-top: 6px; border-top: 1px solid var(--border); }
+  .hsc-stat { display: flex; flex-direction: column; gap: 2px; padding: 4px 0; }
+  .hsc-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--text-mute);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .hsc-value {
+    font-size: 22px; font-weight: 800;
+    letter-spacing: -0.02em; line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .hsc-value.green { color: var(--green); }
+  .hsc-value.gold { color: var(--gold); }
+  .hsc-sub { font-size: 10px; color: var(--text-dim); font-family: 'JetBrains Mono', monospace; }
+  .flip-hero-pill {
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 14px;
+    padding: 10px 14px;
+    background: rgba(74,222,128,0.08);
+    border: 1px solid rgba(74,222,128,0.3);
+    border-radius: 10px;
+    text-decoration: none; color: var(--text);
+    font-size: 12px; font-family: 'JetBrains Mono', monospace;
+  }
+  .flip-hero-pill .flip-dot { width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:pulse 1.6s infinite; }
+  .flip-hero-pill strong { color: var(--green); }
+</style>
 
 <!-- ============ LIVE TICKER TAPE ============ -->
 <div class="tape-wrap">
