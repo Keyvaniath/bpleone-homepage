@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-16T22:39:14.892127+00:00",
-  "data_age_hours": 1.8,
-  "score": 46,
+  "generated_at": "2026-05-17T02:37:49.006721+00:00",
+  "data_age_hours": 5.8,
+  "score": 48,
   "grade": "F",
   "total_cards": 555,
   "stats": {
-    "wb_fallback_highvalue": 47,
-    "graded_no_data": 58,
+    "wb_fallback_highvalue": 40,
+    "graded_no_data": 49,
     "grade_ladder_violation": 12,
     "duplicate_entries": 14
   },
   "alert_counts": {
     "high": 8,
-    "warn": 102
+    "warn": 86
   },
   "alerts": [
     {
@@ -158,26 +158,6 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
-      "cid": "X507",
-      "name": "Umbreon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb": 22000,
-      "live": 22000
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
-      "cid": "X507",
-      "name": "Umbreon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb": 22000,
-      "live": 22000
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
       "message": "high-value card on workbook fallback (wb_no_sources)",
       "cid": "Z050",
       "name": "Charizard Crystal",
@@ -194,46 +174,6 @@
       "variant": "PSA 10",
       "wb": 18500,
       "live": 18500
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
-      "cid": "X505",
-      "name": "Charizard Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb": 18000,
-      "live": 18000
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
-      "cid": "X505",
-      "name": "Charizard Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb": 18000,
-      "live": 18000
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
-      "cid": "X506",
-      "name": "Espeon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb": 16000,
-      "live": 16000
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
-      "cid": "X506",
-      "name": "Espeon Gold Star PSA 10",
-      "variant": "PSA 10",
-      "wb": 16000,
-      "live": 16000
     },
     {
       "severity": "warn",
@@ -278,16 +218,6 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
-      "cid": "Z004",
-      "name": "Lugia 1st Ed",
-      "variant": "PSA 9",
-      "wb": 8500,
-      "live": 8500
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
       "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
       "cid": "V032",
       "name": "Tropical Wind",
@@ -322,26 +252,6 @@
       "cid": "X526",
       "name": "Champion's Path Booster Box (case)",
       "variant": "Sealed",
-      "wb": 6500,
-      "live": 6500
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "Z012",
-      "name": "Espeon 1st Ed",
-      "variant": "PSA 10",
-      "wb": 6500,
-      "live": 6500
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
-      "cid": "Z012",
-      "name": "Espeon 1st Ed",
-      "variant": "PSA 10",
       "wb": 6500,
       "live": 6500
     },
@@ -388,17 +298,7 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "Z013",
-      "name": "Umbreon 1st Ed",
-      "variant": "PSA 10",
-      "wb": 5500,
-      "live": 5500
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
       "cid": "Z013",
       "name": "Umbreon 1st Ed",
       "variant": "PSA 10",
@@ -488,39 +388,9 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
       "cid": "X512",
       "name": "Charizard EX Dragon Frontiers 105 PSA 10",
-      "variant": "PSA 10",
-      "wb": 4200,
-      "live": 4200
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
-      "cid": "X512",
-      "name": "Charizard EX Dragon Frontiers 105 PSA 10",
-      "variant": "PSA 10",
-      "wb": 4200,
-      "live": 4200
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "Z046",
-      "name": "Rocket's Mewtwo 1st Ed",
-      "variant": "PSA 10",
-      "wb": 4200,
-      "live": 4200
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
-      "cid": "Z046",
-      "name": "Rocket's Mewtwo 1st Ed",
       "variant": "PSA 10",
       "wb": 4200,
       "live": 4200
@@ -584,26 +454,6 @@
       "variant": "PSA 10",
       "wb": 2800,
       "live": 2800
-    },
-    {
-      "severity": "warn",
-      "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources)",
-      "cid": "V013",
-      "name": "Pikachu Red Cheeks",
-      "variant": "PSA 10",
-      "wb": 2400,
-      "live": 2400
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
-      "cid": "V013",
-      "name": "Pikachu Red Cheeks",
-      "variant": "PSA 10",
-      "wb": 2400,
-      "live": 2400
     },
     {
       "severity": "warn",
@@ -688,17 +538,7 @@
     {
       "severity": "warn",
       "category": "wb_fallback_highvalue",
-      "message": "high-value card on workbook fallback (wb_no_sources_prev_rejected)",
-      "cid": "Z005",
-      "name": "Typhlosion 1st Ed",
-      "variant": "PSA 10",
-      "wb": 1800,
-      "live": 1800
-    },
-    {
-      "severity": "warn",
-      "category": "graded_no_data",
-      "message": "graded PSA 10 but neither PC nor PPT have grade_10 data",
+      "message": "high-value card on workbook fallback (wb_fallback_source_rejected)",
       "cid": "Z005",
       "name": "Typhlosion 1st Ed",
       "variant": "PSA 10",
