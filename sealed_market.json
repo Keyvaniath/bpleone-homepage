@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-17T07:11:01.706393+00:00",
+  "generated_at": "2026-05-17T15:27:06.429914+00:00",
   "n_total": 121,
   "by_product_type_stats": {
     "Booster Box": {
       "n": 59,
-      "avg_live_price": 10092.04,
+      "avg_live_price": 10130.53,
       "avg_d30_pct": 6.41,
-      "total_universe_usd": 595430.0
+      "total_universe_usd": 597701.0
     },
     "ETB": {
       "n": 21,
@@ -34,9 +34,9 @@
     },
     "Other Sealed": {
       "n": 5,
-      "avg_live_price": 80.76,
+      "avg_live_price": 291.76,
       "avg_d30_pct": 4.8,
-      "total_universe_usd": 404.0
+      "total_universe_usd": 1459.0
     }
   },
   "top_buys": [
@@ -522,6 +522,40 @@
       "tier": "T3"
     },
     {
+      "cid": "S001",
+      "name": "Evolving Skies Booster Box",
+      "variant": "Sealed (36 packs)",
+      "set": "Evolving Skies",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 2560.86,
+      "wb_price": 290.0,
+      "ev_per_pack": 71.14,
+      "score": 52,
+      "signal": "HOLD",
+      "d7_pct": 2.53,
+      "d30_pct": 5.84,
+      "discount_to_wb_pct": -783.1,
+      "tier": "T3"
+    },
+    {
+      "cid": "DD002",
+      "name": "Pokemon Evolutions Booster Pack",
+      "variant": "Sealed",
+      "set": "Pokemon Evolutions Booster Pack",
+      "product_type": "Other Sealed",
+      "pack_count": null,
+      "live_price": 1200.0,
+      "wb_price": 145.0,
+      "ev_per_pack": null,
+      "score": 58,
+      "signal": "HOLD",
+      "d7_pct": 3.48,
+      "d30_pct": 10.0,
+      "discount_to_wb_pct": -727.6,
+      "tier": "T2"
+    },
+    {
       "cid": "X431",
       "name": "Evolving Skies Booster Box",
       "variant": "Sealed (36 packs)",
@@ -605,40 +639,6 @@
       "d30_pct": 7.0,
       "discount_to_wb_pct": -272.1,
       "tier": "T3"
-    },
-    {
-      "cid": "DD014",
-      "name": "Pokemon Paradox Rift Booster Box",
-      "variant": "Sealed",
-      "set": "Pokemon Paradox Rift",
-      "product_type": "Booster Box",
-      "pack_count": 36,
-      "live_price": 562.38,
-      "wb_price": 165.0,
-      "ev_per_pack": 15.62,
-      "score": 53,
-      "signal": "HOLD",
-      "d7_pct": 0.82,
-      "d30_pct": 4.0,
-      "discount_to_wb_pct": -240.8,
-      "tier": "T2"
-    },
-    {
-      "cid": "DD015",
-      "name": "Pokemon Temporal Forces Booster Box",
-      "variant": "Sealed",
-      "set": "Pokemon Temporal Forces",
-      "product_type": "Booster Box",
-      "pack_count": 36,
-      "live_price": 562.38,
-      "wb_price": 165.0,
-      "ev_per_pack": 15.62,
-      "score": 53,
-      "signal": "HOLD",
-      "d7_pct": -0.28,
-      "d30_pct": 4.0,
-      "discount_to_wb_pct": -240.8,
-      "tier": "T2"
     }
   ],
   "cheapest_per_pack_top10": [
@@ -691,23 +691,6 @@
       "d7_pct": -0.51,
       "d30_pct": 5.7,
       "discount_to_wb_pct": -86.9,
-      "tier": "T3"
-    },
-    {
-      "cid": "S001",
-      "name": "Evolving Skies Booster Box",
-      "variant": "Sealed (36 packs)",
-      "set": "Evolving Skies",
-      "product_type": "Booster Box",
-      "pack_count": 36,
-      "live_price": 290.0,
-      "wb_price": 290.0,
-      "ev_per_pack": 8.06,
-      "score": 54,
-      "signal": "HOLD",
-      "d7_pct": 2.53,
-      "d30_pct": 5.84,
-      "discount_to_wb_pct": 0.0,
       "tier": "T3"
     },
     {
@@ -810,6 +793,23 @@
       "d7_pct": 2.52,
       "d30_pct": 2.98,
       "discount_to_wb_pct": -188.1,
+      "tier": "T3"
+    },
+    {
+      "cid": "S009",
+      "name": "Silver Tempest BB",
+      "variant": "Sealed (36 packs)",
+      "set": "Silver Tempest",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 470.5,
+      "wb_price": 190.0,
+      "ev_per_pack": 13.07,
+      "score": 53,
+      "signal": "HOLD",
+      "d7_pct": 2.8,
+      "d30_pct": 6.46,
+      "discount_to_wb_pct": -147.6,
       "tier": "T3"
     }
   ],
