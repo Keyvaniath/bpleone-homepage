@@ -1,8 +1,27 @@
-/*
-  X-Bpleone-Version: 2026.5.16-r4
-  Cache-Control: public, max-age=0, must-revalidate
-  X-Build-Trigger: cloudflare-rebuild
+# Cloudflare Pages headers config.
+#
+# IMPORTANT: CF Pages CONCATENATES header values across matching rules.
+# Previously a /* wildcard + /*.json rule resulted in BOTH Cache-Control
+# values being sent (browser took the first = max-age=0 = no cache).
+# Use most-specific rules only; do NOT use /* unless you actually want it
+# to apply to everything additively.
+
 /*.json
   Cache-Control: public, max-age=60, must-revalidate
+  X-Bpleone-Version: 2026.5.18-r5
+
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
+  X-Bpleone-Version: 2026.5.18-r5
+
+/*.svg
+  Cache-Control: public, max-age=86400
+  X-Bpleone-Version: 2026.5.18-r5
+
+/*.css
+  Cache-Control: public, max-age=86400
+  X-Bpleone-Version: 2026.5.18-r5
+
+/*.js
+  Cache-Control: public, max-age=86400
+  X-Bpleone-Version: 2026.5.18-r5
