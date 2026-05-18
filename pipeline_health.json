@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T19:53:02.977463+00:00",
+  "generated_at": "2026-05-18T21:02:07.561775+00:00",
   "overall": "GREEN",
   "counts": {
     "green": 24,
@@ -13,7 +13,7 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 767639,
-      "age_hours": 0.0,
+      "age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -21,17 +21,17 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 7232,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
       "file": "price_diff.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 16802,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "size_bytes": 14065,
+      "age_hours": 0.9,
+      "generated_age_hours": 0.9,
       "status": "GREEN"
     },
     {
@@ -39,17 +39,17 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 10686,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
       "file": "price_alerts.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 19031,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "size_bytes": 20109,
+      "age_hours": 0.6,
+      "generated_age_hours": 0.6,
       "status": "GREEN"
     },
     {
@@ -57,8 +57,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 3585,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -66,16 +66,16 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 6175,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 0.1,
+      "generated_age_hours": 0.1,
       "status": "GREEN"
     },
     {
       "file": "daily_recap_v2.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 13324,
-      "age_hours": 0.0,
+      "size_bytes": 13364,
+      "age_hours": 0.1,
       "status": "GREEN"
     },
     {
@@ -83,8 +83,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 1644,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -92,7 +92,7 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 148,
-      "age_hours": 38.1,
+      "age_hours": 39.3,
       "status": "GREEN"
     },
     {
@@ -100,8 +100,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 2108,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -109,8 +109,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 126011,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -118,8 +118,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 3771,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -127,8 +127,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 10557,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -136,17 +136,17 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 219,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
       "file": "homepage_feed.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 237174,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "size_bytes": 233214,
+      "age_hours": 0.5,
+      "generated_age_hours": 0.5,
       "status": "GREEN"
     },
     {
@@ -154,8 +154,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 1256715,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -163,7 +163,7 @@
       "kind": "html",
       "exists": true,
       "size_bytes": 1804020,
-      "age_hours": 0.0,
+      "age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -171,8 +171,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 20573,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
@@ -180,33 +180,33 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 28673,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     },
     {
       "file": "sealed_market.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 25327,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "size_bytes": 25393,
+      "age_hours": 0.8,
+      "generated_age_hours": 0.8,
       "status": "GREEN"
     },
     {
       "file": "email_digest.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 8729,
-      "age_hours": 0.0,
+      "size_bytes": 8769,
+      "age_hours": 0.1,
       "status": "GREEN"
     },
     {
       "file": "weekly_recap.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 9330,
-      "age_hours": 0.0,
+      "size_bytes": 9375,
+      "age_hours": 0.1,
       "status": "GREEN"
     },
     {
@@ -214,8 +214,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 1724,
-      "age_hours": 0.0,
-      "generated_age_hours": 0.0,
+      "age_hours": 1.2,
+      "generated_age_hours": 1.2,
       "status": "GREEN"
     }
   ]
