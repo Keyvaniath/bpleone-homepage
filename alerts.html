@@ -210,20 +210,34 @@
     const cls = (kind === 'buy') ? 'buy' : (kind === 'sell') ? 'sell' : 'high';
     const justCrossed = a.just_crossed_today ? '<span class="crossed-badge">JUST CROSSED</span>' : '';
     const live = a.live_price || a.price || 0;
-    const target = a.buy_target || a.sell_target || 0;
     const wb = a.wb_price || 0;
-    const discount = a.discount_pct || 0;
-    const dCls = kind === 'buy' ? 'green' : 'red';
-    const dStr = discount ? (kind === 'buy' ? '−' : '+') + Math.abs(discount).toFixed(0) + '%' : '—';
-    return '<div class="alert-card ' + cls + '">' +
-      '<div class="top"><div class="name">' + name + justCrossed + '</div><div class="cid">' + (a.cid || '') + '</div></div>' +
-      '<div class="variant-line">' + (a.set || '—') + ' · score ' + (a.score || '—') + '</div>' +
-      '<div class="price-row">' +
+
+    // Different row shape per kind so we don't render '$0 Buy Target' on
+    // High Score cards (which have no buy/sell target — they're score-based).
+    let priceRowHTML;
+    if (kind === 'high') {
+      const signal = a.signal || '—';
+      const score = a.score || '—';
+      priceRowHTML =
+        '<div><div class="lbl">Live</div><div class="v">$' + live.toLocaleString() + '</div></div>' +
+        '<div><div class="lbl">Workbook</div><div class="v" style="color:var(--text-dim);">$' + wb.toLocaleString() + '</div></div>' +
+        '<div><div class="lbl">Signal</div><div class="v green">' + signal + '</div></div>' +
+        '<div><div class="lbl">Score</div><div class="v gold">' + score + '/100</div></div>';
+    } else {
+      const target = a.buy_target || a.sell_target || 0;
+      const discount = a.discount_pct || a.premium_pct || 0;
+      const dCls = kind === 'buy' ? 'green' : 'red';
+      const dStr = discount ? (kind === 'buy' ? '−' : '+') + Math.abs(discount).toFixed(0) + '%' : '—';
+      priceRowHTML =
         '<div><div class="lbl">Live</div><div class="v">$' + live.toLocaleString() + '</div></div>' +
         '<div><div class="lbl">' + (kind === 'sell' ? 'Sell target' : 'Buy target') + '</div><div class="v">$' + target.toLocaleString() + '</div></div>' +
         '<div><div class="lbl">Workbook</div><div class="v" style="color:var(--text-dim);">$' + wb.toLocaleString() + '</div></div>' +
-        '<div><div class="lbl">' + (kind === 'sell' ? 'Premium' : 'Discount') + '</div><div class="v ' + dCls + '">' + dStr + '</div></div>' +
-      '</div>' +
+        '<div><div class="lbl">' + (kind === 'sell' ? 'Premium' : 'Discount') + '</div><div class="v ' + dCls + '">' + dStr + '</div></div>';
+    }
+    return '<div class="alert-card ' + cls + '">' +
+      '<div class="top"><div class="name">' + name + justCrossed + '</div><div class="cid">' + (a.cid || '') + '</div></div>' +
+      '<div class="variant-line">' + (a.set || '—') + ' · score ' + (a.score || '—') + '</div>' +
+      '<div class="price-row">' + priceRowHTML + '</div>' +
       '<div class="footer-row">' +
         '<span class="conf-pill ' + conf + '">' + conf + '</span>' +
         '<span>' + (a.source || '—') + '</span>' +
