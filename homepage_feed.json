@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T15:18:15.531679Z",
+  "generated_at": "2026-05-18T19:52:11.185823Z",
   "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
@@ -8,18 +8,18 @@
     "avg_d30_pct": 0.1709,
     "strong_buys": 84,
     "history_snapshots": 3,
-    "history_age_days": 2.6,
+    "history_age_days": 3.8,
     "history_overlay_count": 0
   },
   "trade_of_day": {
-    "id": "M011",
-    "name": "Duraludon VMAX Alt Art",
-    "set": "Evolving Skies",
-    "number": "217/203",
+    "id": "M020",
+    "name": "Origin Forme Dialga VSTAR Alt",
+    "set": "Astral Radiance",
+    "number": "207/189",
     "variant": "PSA 10",
-    "price": 520.0,
-    "d7": 62.47,
-    "d30": 70.15,
+    "price": 380.0,
+    "d7": 67.26,
+    "d30": 75.98,
     "d7_source": "workbook_formula",
     "d30_source": "workbook_formula",
     "score": 75,
@@ -9746,10 +9746,10 @@
   "data_quality": {
     "score": 57,
     "grade": "F",
-    "data_age_hours": 17.5,
+    "data_age_hours": 47.0,
     "alert_counts": {
-      "high": 0,
-      "warn": 26
+      "high": 1,
+      "warn": 25
     },
     "top_issues_by_category": {
       "stale_data": 1,
@@ -9757,6 +9757,17 @@
       "grade_ladder_violation": 4,
       "duplicate_entries": 12
     },
-    "top_alerts": []
+    "top_alerts": [
+      {
+        "cid": null,
+        "name": null,
+        "variant": null,
+        "wb": null,
+        "live": null,
+        "category": "stale_data",
+        "message": "Live prices last updated 47.0h ago",
+        "severity": "high"
+      }
+    ]
   }
 }
