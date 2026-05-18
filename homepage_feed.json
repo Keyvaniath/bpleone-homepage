@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T20:06:00.411250Z",
+  "generated_at": "2026-05-18T20:33:13.138641Z",
   "live_updated_at": "2026-05-16T20:51:34.239708Z",
   "stats": {
     "total_cards": 774,
@@ -183,6 +183,8 @@
       "signal": "HOLD"
     }
   ],
+  "movers_up_is_fallback": false,
+  "movers_down_is_fallback": true,
   "strong_buys": [
     {
       "id": "M081",
@@ -9398,7 +9400,7 @@
   },
   "price_alerts": {
     "buy_alerts_count": 61,
-    "sell_alerts_count": 240,
+    "sell_alerts_count": 213,
     "high_score_count": 14,
     "top_buy_alerts": [
       {
@@ -9464,64 +9466,64 @@
     ],
     "top_sell_alerts": [
       {
-        "cid": "V004",
-        "name": "Charizard",
-        "variant": "PSA 10",
-        "live_price": 28272.5,
-        "sell_target": 8800.0,
-        "wb_price": 8000,
-        "premium_pct": 253.4,
-        "just_crossed_today": true,
+        "cid": "X132",
+        "name": "Mega Lucario ex SIR (raw)",
+        "variant": "Raw NM",
+        "live_price": 68.6,
+        "sell_target": 15.0,
+        "wb_price": 14,
+        "premium_pct": 390.0,
+        "just_crossed_today": false,
         "confidence": "OVERRIDE",
-        "source": "pricecharting:psa10"
+        "source": "pc_sweep_ungraded"
       },
       {
-        "cid": "V002",
-        "name": "Charizard",
-        "variant": "PSA 8",
-        "live_price": 31392.6,
-        "sell_target": 10450.0,
-        "wb_price": 9500,
-        "premium_pct": 230.4,
-        "just_crossed_today": true,
-        "confidence": "OVERRIDE",
-        "source": "pricecharting:psa8"
-      },
-      {
-        "cid": "X501",
-        "name": "Charizard 1st Ed Shadowless PSA 8",
-        "variant": "PSA 8",
-        "live_price": 31392.6,
-        "sell_target": 10450.0,
-        "wb_price": 9500,
-        "premium_pct": 230.4,
-        "just_crossed_today": true,
-        "confidence": "OVERRIDE",
-        "source": "pricecharting:psa8"
-      },
-      {
-        "cid": "X505",
-        "name": "Charizard Gold Star PSA 10",
-        "variant": "PSA 10",
-        "live_price": 58723.0,
-        "sell_target": 19800.0,
-        "wb_price": 18000,
-        "premium_pct": 226.2,
-        "just_crossed_today": true,
+        "cid": "J009",
+        "name": "VSTAR Universe High-Class Box",
+        "variant": "Sealed",
+        "live_price": 850.0,
+        "sell_target": 198.0,
+        "wb_price": 180,
+        "premium_pct": 372.2,
+        "just_crossed_today": false,
         "confidence": "MEDIUM",
-        "source": "single_pc"
+        "source": "pricecharting:raw"
       },
       {
-        "cid": "X507",
-        "name": "Umbreon Gold Star PSA 10",
-        "variant": "PSA 10",
-        "live_price": 63460.5,
-        "sell_target": 24200.0,
-        "wb_price": 22000,
-        "premium_pct": 188.5,
-        "just_crossed_today": true,
+        "cid": "S208",
+        "name": "Stellar Tera-Charizard Premium",
+        "variant": "Sealed",
+        "live_price": 211.9,
+        "sell_target": 50.0,
+        "wb_price": 45,
+        "premium_pct": 370.9,
+        "just_crossed_today": false,
         "confidence": "MEDIUM",
-        "source": "single_pc"
+        "source": "pricecharting:raw"
+      },
+      {
+        "cid": "V009",
+        "name": "Mewtwo",
+        "variant": "PSA 9",
+        "live_price": 6575.42,
+        "sell_target": 1540.0,
+        "wb_price": 1400,
+        "premium_pct": 369.7,
+        "just_crossed_today": false,
+        "confidence": "MEDIUM",
+        "source": "pricecharting:psa9"
+      },
+      {
+        "cid": "X325",
+        "name": "Charizard Base 2 PSA 9",
+        "variant": "PSA 9",
+        "live_price": 1525.0,
+        "sell_target": 374.0,
+        "wb_price": 340,
+        "premium_pct": 348.5,
+        "just_crossed_today": false,
+        "confidence": "OVERRIDE",
+        "source": "pc_sweep_grade_9"
       }
     ]
   },
