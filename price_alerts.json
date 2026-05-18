@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T20:13:47.399621+00:00",
+  "generated_at": "2026-05-18T20:23:24.261968+00:00",
   "buy_alerts_count": 61,
   "sell_alerts_count": 213,
   "high_score_count": 14,
@@ -615,7 +615,9 @@
       "score": 88,
       "signal": "STRONG BUY",
       "live_price": 350.0,
-      "confidence": "OVERRIDE"
+      "wb_price": 820,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M046",
@@ -624,7 +626,9 @@
       "score": 88,
       "signal": "STRONG BUY",
       "live_price": 322.5,
-      "confidence": "OVERRIDE"
+      "wb_price": 1500,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M054",
@@ -633,7 +637,9 @@
       "score": 88,
       "signal": "STRONG BUY",
       "live_price": 211.21,
-      "confidence": "OVERRIDE"
+      "wb_price": 640,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M055",
@@ -642,7 +648,9 @@
       "score": 88,
       "signal": "STRONG BUY",
       "live_price": 106.39,
-      "confidence": "OVERRIDE"
+      "wb_price": 480,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M060",
@@ -651,7 +659,9 @@
       "score": 88,
       "signal": "STRONG BUY",
       "live_price": 178.22,
-      "confidence": "OVERRIDE"
+      "wb_price": 480,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M048",
@@ -660,7 +670,9 @@
       "score": 88,
       "signal": "STRONG BUY",
       "live_price": 75.82,
-      "confidence": "OVERRIDE"
+      "wb_price": 320,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M050",
@@ -669,7 +681,9 @@
       "score": 88,
       "signal": "STRONG BUY",
       "live_price": 69.13,
-      "confidence": "OVERRIDE"
+      "wb_price": 280,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M013",
@@ -678,7 +692,9 @@
       "score": 87,
       "signal": "STRONG BUY",
       "live_price": 374.45,
-      "confidence": "OVERRIDE"
+      "wb_price": 1100,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M015",
@@ -687,7 +703,9 @@
       "score": 87,
       "signal": "STRONG BUY",
       "live_price": 240.0,
-      "confidence": "OVERRIDE"
+      "wb_price": 680,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M036",
@@ -696,7 +714,9 @@
       "score": 87,
       "signal": "STRONG BUY",
       "live_price": 227.5,
-      "confidence": "OVERRIDE"
+      "wb_price": 640,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M053",
@@ -705,7 +725,9 @@
       "score": 87,
       "signal": "STRONG BUY",
       "live_price": 106.39,
-      "confidence": "OVERRIDE"
+      "wb_price": 240,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M022",
@@ -714,7 +736,9 @@
       "score": 86,
       "signal": "STRONG BUY",
       "live_price": 78.72,
-      "confidence": "OVERRIDE"
+      "wb_price": 160,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M078",
@@ -723,7 +747,9 @@
       "score": 84,
       "signal": "STRONG BUY",
       "live_price": 195.0,
-      "confidence": "OVERRIDE"
+      "wb_price": 320,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     },
     {
       "cid": "M072",
@@ -732,7 +758,9 @@
       "score": 80,
       "signal": "STRONG BUY",
       "live_price": 1149.99,
-      "confidence": "OVERRIDE"
+      "wb_price": 1400,
+      "confidence": "OVERRIDE",
+      "source": "pc_sweep_grade_10"
     }
   ]
 }
