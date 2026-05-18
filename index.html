@@ -3766,7 +3766,10 @@
       setText('action-buy-pct', Math.round(t.d30));
     }
 
-    // Swap panel titles based on whether we have real history yet
+    // Swap panel titles based on what's ACTUALLY in movers_up/down. The build
+    // tags movers_*_is_fallback when no real moves exist (all flat/up) and it
+    // had to fall back to score-ranking; we label honestly in that case so the
+    // user doesn't see flat cards mislabeled as "losers."
     const histDaysCheck = (feed.stats || {}).history_age_days || 0;
     const histReady = histDaysCheck >= 5;
     if (histReady) {
@@ -3774,6 +3777,21 @@
       setText('movers-up-sub', '10 biggest movers up · real history');
       setText('movers-down-title', '▼ Top Losers · 30D');
       setText('movers-down-sub', '10 biggest movers down · real history');
+    } else {
+      if (feed.movers_up_is_fallback) {
+        setText('movers-up-title', '▲ Top by Score');
+        setText('movers-up-sub', 'No 30D gainers yet — ranked by composite');
+      } else {
+        setText('movers-up-title', '▲ Top Gainers · 30D (workbook)');
+        setText('movers-up-sub', 'real-history version activates at 5+ snapshots');
+      }
+      if (feed.movers_down_is_fallback) {
+        setText('movers-down-title', '▼ Lowest Score');
+        setText('movers-down-sub', 'No 30D losers yet — ranked by composite');
+      } else {
+        setText('movers-down-title', '▼ Top Losers · 30D (workbook)');
+        setText('movers-down-sub', 'real-history version activates at 5+ snapshots');
+      }
     }
     setHTML('movers-up', buildMoverRows(feed.movers_up));
     setHTML('movers-down', buildMoverRows(feed.movers_down));
