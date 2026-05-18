@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T15:27:05.588283+00:00",
+  "generated_at": "2026-05-18T19:52:08.273568+00:00",
   "fw_weights": {
     "current": {
       "momentum_rising": 0.25,
@@ -60,10 +60,26 @@
     "last_correlations": null
   },
   "signal_learning": {
-    "total_emissions": 2220,
+    "total_emissions": 2775,
     "fw_emissions": 30,
-    "outcomes_evaluated": 0,
-    "by_signal": {}
+    "outcomes_evaluated": 2220,
+    "by_signal": {
+      "BUY": {
+        "total_samples": 392,
+        "weighted_hit_rate_pct": 0.0,
+        "weighted_avg_pct_move": 0.0
+      },
+      "HOLD": {
+        "total_samples": 1608,
+        "weighted_hit_rate_pct": 98.0,
+        "weighted_avg_pct_move": 1.62
+      },
+      "STRONG BUY": {
+        "total_samples": 220,
+        "weighted_hit_rate_pct": 0.0,
+        "weighted_avg_pct_move": 0.0
+      }
+    }
   },
   "next_milestones": {
     "next_retrain_when": "30 mature samples (7-day-old emissions w/ price history)",
