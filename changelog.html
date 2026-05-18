@@ -129,6 +129,30 @@
 
     <article class="release">
       <div class="release-head">
+        <span class="release-version">v0.25 — Data sanity caps + honest UX labels + page aliases</span>
+        <span class="release-date">2026-05-18</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-fix">FIX</span>
+          <span class="tag-pill tag-ui">UI</span>
+          <span class="tag-pill tag-data">DATA</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>📈 Top Gainers</strong> — was showing <code>+80,579%</code> on cards where the previous snapshot was sparse. Now capped at ±75% magnitude; anything beyond is bucketed as <code>source_changes</code> (not a real market move).</li>
+        <li><strong>📉 Movers Down</strong> — was ranking by score when no real losers existed, surfacing flat 0.0% cards mislabeled as "Top Losers." Now requires actual negative d30 OR shows honest "▼ Lowest Score" label.</li>
+        <li><strong>🔔 Sell Alerts</strong> — was showing <code>+18,563%</code> premium on cards whose workbook is wildly stale. Capped at 500%; >500% bucketed as stale_workbook (Brandon-update-the-sheet).</li>
+        <li><strong>📦 Sealed Market</strong> — "Overheating" showed <code>-1,293%</code> discount (means 13× workbook). Capped at -200%; beyond is workbook-update territory, not heating.</li>
+        <li><strong>/alerts.html High Score tab</strong> — was rendering "$0 Buy Target" because that field doesn't exist for high-score signals. Now renders Signal + Score columns.</li>
+        <li><strong>/recap.html + /digest.html</strong> — DEPLOY comments promised these URLs but they 404'd. Added aliases so they now serve the daily-recap and email-digest HTML.</li>
+        <li><strong>noindex meta</strong> added to email-format pages (/recap, /digest, /weekly_recap, /email_digest) so they don't compete with the main site in search results.</li>
+        <li><strong>Dead "● LIVE" badges</strong> on sports-cards.bpleone.com and betting.bpleone.com (DNS-fail / SSL-fail subdomains) → relabeled "● COMING" with mailto: for early access.</li>
+        <li><strong>PWA install</strong> — manifest.json referenced /icon-192.png and /icon-512.png which 404'd. Removed dead refs; install now uses SVG icon (works on Android + iOS).</li>
+        <li><strong>pipeline_self_audit</strong> — fw_weights threshold relaxed 6h → 168h (file only updates on retrain, which needs 30+ mature samples).</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
         <span class="release-version">v0.24 — Activity feed + open positions + monthly P/L chart</span>
         <span class="release-date">2026-05-17</span>
         <div class="release-tags">
