@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-05-17T05:44:45.883899Z",
+  "generated_at": "2026-05-18T19:53:02.817193Z",
   "weights_used": {
     "momentum_rising": 0.25,
     "scarcity": 0.2,
@@ -9,7 +9,7 @@
     "tier_premium": 0.15,
     "liquidity": 0.1
   },
-  "weights_source": "seed",
+  "weights_source": "learned",
   "methodology": "Future Winners is a forward-looking model. Score = weighted sum of: momentum_rising \u00b7 scarcity \u00b7 accessibility \u00b7 hidden_alpha \u00b7 tier_premium \u00b7 liquidity. Weights are LEARNED from historical signal outcomes via optimize_fw_weights.py (falls back to seed weights until enough history accumulates).",
   "count": 30,
   "winners": [
