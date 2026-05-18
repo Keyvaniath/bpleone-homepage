@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-17T15:27:40.478228+00:00",
-  "overall": "YELLOW",
+  "generated_at": "2026-05-18T19:53:02.977463+00:00",
+  "overall": "GREEN",
   "counts": {
-    "green": 23,
-    "yellow": 1,
+    "green": 24,
+    "yellow": 0,
     "red": 0,
     "total": 24
   },
@@ -13,7 +13,7 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 767639,
-      "age_hours": 0.2,
+      "age_hours": 0.0,
       "status": "GREEN"
     },
     {
@@ -38,7 +38,7 @@
       "file": "morning_brief_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 10829,
+      "size_bytes": 10686,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -82,7 +82,7 @@
       "file": "signal_calibration.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 171,
+      "size_bytes": 1644,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -92,15 +92,14 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 148,
-      "age_hours": 9.7,
-      "status": "YELLOW",
-      "reason": "aging: 9.7h > 6h"
+      "age_hours": 38.1,
+      "status": "GREEN"
     },
     {
       "file": "learning_summary.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 1687,
+      "size_bytes": 2108,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -127,7 +126,7 @@
       "file": "past_picks.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 1246,
+      "size_bytes": 10557,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -137,17 +136,17 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 219,
-      "age_hours": 8.3,
-      "generated_age_hours": 8.3,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
       "status": "GREEN"
     },
     {
       "file": "homepage_feed.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 236906,
-      "age_hours": 0.2,
-      "generated_age_hours": 0.2,
+      "size_bytes": 237174,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
       "status": "GREEN"
     },
     {
@@ -155,8 +154,8 @@
       "kind": "json",
       "exists": true,
       "size_bytes": 1256715,
-      "age_hours": 0.2,
-      "generated_age_hours": 0.2,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
       "status": "GREEN"
     },
     {
@@ -171,9 +170,9 @@
       "file": "future_winners.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 20570,
-      "age_hours": 9.7,
-      "generated_age_hours": 9.7,
+      "size_bytes": 20573,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
       "status": "GREEN"
     },
     {
@@ -214,7 +213,7 @@
       "file": "auto_tweet.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 1517,
+      "size_bytes": 1724,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
