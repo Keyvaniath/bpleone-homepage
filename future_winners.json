@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-05-19T01:19:21.541552Z",
+  "generated_at": "2026-05-19T01:30:22.590383Z",
   "weights_used": {
     "momentum_rising": 0.2235,
     "scarcity": 0.1517,
@@ -326,30 +326,6 @@
       "image": "https://images.pokemontcg.io/sv6/217.png"
     },
     {
-      "id": "M029",
-      "name": "Giratina VSTAR Gold",
-      "set": "Crown Zenith",
-      "number": "GG70/GG70",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 2400,
-      "live_price": 150.0,
-      "wb_price": 450.0,
-      "target_buy": 120.0,
-      "target_sell": 142.5,
-      "fw_score": 75.7,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 39.2,
-        "accessibility": 70,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh12pt5gg/GG69.png"
-    },
-    {
       "id": "M036",
       "name": "Charizard ex Full Art",
       "set": "Scarlet & Violet 151",
@@ -494,28 +470,28 @@
       "image": "https://images.pokemontcg.io/ex6/105.png"
     },
     {
-      "id": "M010",
-      "name": "Dragonite V Alt Art",
-      "set": "Evolving Skies",
-      "number": "192/203",
+      "id": "M029",
+      "name": "Giratina VSTAR Gold",
+      "set": "Crown Zenith",
+      "number": "GG70/GG70",
       "variant": "PSA 10",
       "tier": "T2",
-      "pop": 3800,
-      "live_price": 350.0,
-      "wb_price": 540.0,
-      "target_buy": 280.0,
-      "target_sell": 332.5,
-      "fw_score": 73.5,
+      "pop": 2400,
+      "live_price": 450.0,
+      "wb_price": 450.0,
+      "target_buy": 360.0,
+      "target_sell": 427.5,
+      "fw_score": 74.1,
       "components": {
         "momentum_rising": 100,
-        "scarcity": 35.6,
+        "scarcity": 39.2,
         "accessibility": 60,
         "hidden_alpha": 75,
         "tier_premium": 70,
         "liquidity": 90
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh7/192.png"
+      "image": "https://images.pokemontcg.io/swsh12pt5gg/GG69.png"
     },
     {
       "id": "M041",
@@ -708,6 +684,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/swsh9/154.png"
+    },
+    {
+      "id": "M010",
+      "name": "Dragonite V Alt Art",
+      "set": "Evolving Skies",
+      "number": "192/203",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 3800,
+      "live_price": 540.0,
+      "wb_price": 540.0,
+      "target_buy": 432.0,
+      "target_sell": 513.0,
+      "fw_score": 71.1,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 35.6,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/swsh7/192.png"
     },
     {
       "id": "M024",
