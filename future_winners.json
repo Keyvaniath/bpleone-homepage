@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generated_at": "2026-05-19T02:08:17.140507Z",
+  "generated_at": "2026-05-19T02:24:48.119496Z",
   "weights_used": {
-    "momentum_rising": 0.2241,
-    "scarcity": 0.1481,
-    "accessibility": 0.1665,
-    "hidden_alpha": 0.1758,
-    "tier_premium": 0.1434,
-    "liquidity": 0.142
+    "momentum_rising": 0.2272,
+    "scarcity": 0.1455,
+    "accessibility": 0.1688,
+    "hidden_alpha": 0.1713,
+    "tier_premium": 0.1438,
+    "liquidity": 0.1434
   },
   "weights_source": "learned",
   "methodology": "Future Winners is a forward-looking model. Score = weighted sum of: momentum_rising \u00b7 scarcity \u00b7 accessibility \u00b7 hidden_alpha \u00b7 tier_premium \u00b7 liquidity. Weights are LEARNED from historical signal outcomes via optimize_fw_weights.py (falls back to seed weights until enough history accumulates).",
@@ -25,7 +25,7 @@
       "wb_price": 110.0,
       "target_buy": 28.02,
       "target_sell": 33.27,
-      "fw_score": 79.7,
+      "fw_score": 79.9,
       "components": {
         "momentum_rising": 100,
         "scarcity": 42.3,
@@ -49,7 +49,7 @@
       "wb_price": 300.0,
       "target_buy": 72.0,
       "target_sell": 85.5,
-      "fw_score": 78.2,
+      "fw_score": 78.4,
       "components": {
         "momentum_rising": 100,
         "scarcity": 43.9,
@@ -73,7 +73,7 @@
       "wb_price": 280.0,
       "target_buy": 55.3,
       "target_sell": 65.67,
-      "fw_score": 78.1,
+      "fw_score": 78.3,
       "components": {
         "momentum_rising": 100,
         "scarcity": 42.8,
@@ -97,7 +97,7 @@
       "wb_price": 190.0,
       "target_buy": 57.2,
       "target_sell": 67.92,
-      "fw_score": 77.9,
+      "fw_score": 78.1,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.4,
@@ -121,7 +121,7 @@
       "wb_price": 320.0,
       "target_buy": 60.66,
       "target_sell": 72.03,
-      "fw_score": 77.9,
+      "fw_score": 78.1,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.9,
@@ -145,7 +145,7 @@
       "wb_price": 160.0,
       "target_buy": 62.98,
       "target_sell": 74.78,
-      "fw_score": 77.8,
+      "fw_score": 78.0,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.0,
@@ -169,7 +169,7 @@
       "wb_price": 240.0,
       "target_buy": 44.8,
       "target_sell": 53.2,
-      "fw_score": 77.7,
+      "fw_score": 78.0,
       "components": {
         "momentum_rising": 100,
         "scarcity": 40.6,
@@ -193,7 +193,7 @@
       "wb_price": 320.0,
       "target_buy": 156.0,
       "target_sell": 185.25,
-      "fw_score": 76.8,
+      "fw_score": 76.9,
       "components": {
         "momentum_rising": 100,
         "scarcity": 45.3,
@@ -217,7 +217,7 @@
       "wb_price": 640.0,
       "target_buy": 168.97,
       "target_sell": 200.65,
-      "fw_score": 76.5,
+      "fw_score": 76.7,
       "components": {
         "momentum_rising": 100,
         "scarcity": 43.4,
@@ -241,7 +241,7 @@
       "wb_price": 480.0,
       "target_buy": 85.11,
       "target_sell": 101.07,
-      "fw_score": 76.4,
+      "fw_score": 76.6,
       "components": {
         "momentum_rising": 100,
         "scarcity": 42.8,
@@ -265,7 +265,7 @@
       "wb_price": 640.0,
       "target_buy": 140.0,
       "target_sell": 166.25,
-      "fw_score": 76.3,
+      "fw_score": 76.5,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.9,
@@ -289,7 +289,7 @@
       "wb_price": 240.0,
       "target_buy": 85.11,
       "target_sell": 101.07,
-      "fw_score": 76.3,
+      "fw_score": 76.5,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.9,
@@ -313,7 +313,7 @@
       "wb_price": 480.0,
       "target_buy": 142.58,
       "target_sell": 169.31,
-      "fw_score": 76.1,
+      "fw_score": 76.3,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.0,
@@ -337,7 +337,7 @@
       "wb_price": 640.0,
       "target_buy": 182.0,
       "target_sell": 216.12,
-      "fw_score": 75.7,
+      "fw_score": 75.9,
       "components": {
         "momentum_rising": 100,
         "scarcity": 38.0,
@@ -361,7 +361,7 @@
       "wb_price": 680.0,
       "target_buy": 192.0,
       "target_sell": 228.0,
-      "fw_score": 75.5,
+      "fw_score": 75.7,
       "components": {
         "momentum_rising": 100,
         "scarcity": 36.9,
@@ -385,7 +385,7 @@
       "wb_price": 340.0,
       "target_buy": 288.0,
       "target_sell": 342.0,
-      "fw_score": 74.8,
+      "fw_score": 75.0,
       "components": {
         "momentum_rising": 100,
         "scarcity": 43.4,
@@ -396,30 +396,6 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/sv3pt5/201.png"
-    },
-    {
-      "id": "M038",
-      "name": "Zapdos ex SIR",
-      "set": "Scarlet & Violet 151",
-      "number": "202/165",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 1600,
-      "live_price": 462.5,
-      "wb_price": 380.0,
-      "target_buy": 370.0,
-      "target_sell": 439.38,
-      "fw_score": 74.7,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 42.3,
-        "accessibility": 60,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/ex6/116.png"
     },
     {
       "id": "M039",
@@ -433,7 +409,7 @@
       "wb_price": 480.0,
       "target_buy": 399.31,
       "target_sell": 474.18,
-      "fw_score": 74.7,
+      "fw_score": 74.9,
       "components": {
         "momentum_rising": 100,
         "scarcity": 42.8,
@@ -444,6 +420,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/ex6/112.png"
+    },
+    {
+      "id": "M038",
+      "name": "Zapdos ex SIR",
+      "set": "Scarlet & Violet 151",
+      "number": "202/165",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 1600,
+      "live_price": 462.5,
+      "wb_price": 380.0,
+      "target_buy": 370.0,
+      "target_sell": 439.38,
+      "fw_score": 74.8,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 42.3,
+        "accessibility": 60,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/ex6/116.png"
     },
     {
       "id": "M046",
@@ -457,7 +457,7 @@
       "wb_price": 1500.0,
       "target_buy": 258.0,
       "target_sell": 306.38,
-      "fw_score": 74.3,
+      "fw_score": 74.5,
       "components": {
         "momentum_rising": 100,
         "scarcity": 39.8,
@@ -481,7 +481,7 @@
       "wb_price": 450.0,
       "target_buy": 360.0,
       "target_sell": 427.5,
-      "fw_score": 74.2,
+      "fw_score": 74.4,
       "components": {
         "momentum_rising": 100,
         "scarcity": 39.2,
@@ -492,30 +492,6 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/swsh12pt5gg/GG69.png"
-    },
-    {
-      "id": "M085",
-      "name": "Mega Lucario ex SIR",
-      "set": "Ascended Heroes",
-      "number": "285/217",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 800,
-      "live_price": 350.0,
-      "wb_price": 820.0,
-      "target_buy": 280.0,
-      "target_sell": 332.5,
-      "fw_score": 72.4,
-      "components": {
-        "momentum_rising": 86.2,
-        "scarcity": 47.7,
-        "accessibility": 60,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/me1/188.png"
     },
     {
       "id": "M041",
@@ -529,7 +505,7 @@
       "wb_price": 540.0,
       "target_buy": 432.0,
       "target_sell": 513.0,
-      "fw_score": 72.3,
+      "fw_score": 72.5,
       "components": {
         "momentum_rising": 100,
         "scarcity": 43.4,
@@ -540,6 +516,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/ex1/101.png"
+    },
+    {
+      "id": "M085",
+      "name": "Mega Lucario ex SIR",
+      "set": "Ascended Heroes",
+      "number": "285/217",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 800,
+      "live_price": 350.0,
+      "wb_price": 820.0,
+      "target_buy": 280.0,
+      "target_sell": 332.5,
+      "fw_score": 72.5,
+      "components": {
+        "momentum_rising": 86.2,
+        "scarcity": 47.7,
+        "accessibility": 60,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/me1/188.png"
     },
     {
       "id": "M040",
@@ -553,7 +553,7 @@
       "wb_price": 440.0,
       "target_buy": 522.92,
       "target_sell": 620.97,
-      "fw_score": 72.2,
+      "fw_score": 72.4,
       "components": {
         "momentum_rising": 100,
         "scarcity": 42.8,
@@ -577,7 +577,7 @@
       "wb_price": 540.0,
       "target_buy": 780.0,
       "target_sell": 926.25,
-      "fw_score": 72.0,
+      "fw_score": 72.2,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.4,
@@ -601,7 +601,7 @@
       "wb_price": 520.0,
       "target_buy": 416.0,
       "target_sell": 494.0,
-      "fw_score": 71.9,
+      "fw_score": 72.0,
       "components": {
         "momentum_rising": 100,
         "scarcity": 40.2,
@@ -625,7 +625,7 @@
       "wb_price": 700.0,
       "target_buy": 560.0,
       "target_sell": 665.0,
-      "fw_score": 71.7,
+      "fw_score": 71.8,
       "components": {
         "momentum_rising": 100,
         "scarcity": 38.8,
@@ -649,7 +649,7 @@
       "wb_price": 620.0,
       "target_buy": 496.0,
       "target_sell": 589.0,
-      "fw_score": 71.4,
+      "fw_score": 71.5,
       "components": {
         "momentum_rising": 100,
         "scarcity": 36.9,
@@ -673,7 +673,7 @@
       "wb_price": 580.0,
       "target_buy": 442.7,
       "target_sell": 525.71,
-      "fw_score": 71.3,
+      "fw_score": 71.4,
       "components": {
         "momentum_rising": 100,
         "scarcity": 36.2,
@@ -697,7 +697,7 @@
       "wb_price": 540.0,
       "target_buy": 432.0,
       "target_sell": 513.0,
-      "fw_score": 71.2,
+      "fw_score": 71.3,
       "components": {
         "momentum_rising": 100,
         "scarcity": 35.6,
@@ -721,7 +721,7 @@
       "wb_price": 820.0,
       "target_buy": 656.0,
       "target_sell": 779.0,
-      "fw_score": 71.2,
+      "fw_score": 71.3,
       "components": {
         "momentum_rising": 100,
         "scarcity": 35.6,
