@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T01:19:21.643152+00:00",
+  "generated_at": "2026-05-19T01:30:22.692747+00:00",
   "fw_weights": {
     "current": {
       "momentum_rising": 0.2235,
@@ -69,7 +69,7 @@
   },
   "signal_learning": {
     "total_emissions": 2775,
-    "fw_emissions": 270,
+    "fw_emissions": 300,
     "outcomes_evaluated": 2220,
     "by_signal": {
       "BUY": {
