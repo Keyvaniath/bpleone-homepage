@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-18T19:52:06.861258+00:00",
-  "data_age_hours": 47.0,
+  "generated_at": "2026-05-19T01:30:19.937778+00:00",
+  "data_age_hours": 52.6,
   "data_quality_score": 57,
   "data_quality_grade": "F",
   "summary": {
@@ -292,7 +292,7 @@
     {
       "severity": "high",
       "category": "stale_data",
-      "message": "Live prices last updated 47.0h ago",
+      "message": "Live prices last updated 52.6h ago",
       "cid": null
     },
     {
