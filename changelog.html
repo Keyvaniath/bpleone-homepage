@@ -129,6 +129,23 @@
 
     <article class="release">
       <div class="release-head">
+        <span class="release-version">v0.27 — Calibration honesty + dedup-by-set + 15 model retrains</span>
+        <span class="release-date">2026-05-19</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-fix">FIX</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>📊 Calibration honesty fix.</strong> When the cron is stalled (prices don't move between snapshots), <code>pct_move</code> is exactly 0 for every card — which made <strong>BUY signals look like 0% win rate</strong> (price didn't go up) and <strong>HOLD signals look like 100% win rate</strong> (price stayed flat). Both artifacts of stale data, not real signal quality. Fix: <code>learn_signal_outcomes.py</code> and <code>build_past_picks_scoreboard.py</code> now skip exactly-zero pct_move outcomes (real markets never have $0.00 movement). Past picks BUY win rate jumped from misleading 0.7% to honest 91.7% on 48 real-movement samples.</li>
+        <li><strong>🧠 15 model retrains.</strong> Weights now converged: liquidity +44%, hidden_alpha +14%, accessibility +13% (vs seed); scarcity -27%, momentum_rising -9%. Bayesian smoothing keeps the model stable between retrains.</li>
+        <li><strong>🔍 Dedup fix.</strong> <code>auto_data_quality_check.py</code> now keys duplicate detection on (name, variant, <strong>set</strong>) instead of (name, variant). This fixes false-positives like "Charizard PSA 9" being flagged as a duplicate across Base 1st Ed vs Base Unlimited (those are different cards). False alerts dropped 12→7 (real dupes remain — Brandon should fix in workbook).</li>
+        <li><strong>🚨 PPT name-match validation.</strong> PokemonPriceTracker auto-matched the WRONG product on 47 watchlist cards (M084 Mega Rayquaza ex SIR was showing N's Zoroark ex's $560 price; M087 Mega Charizard Y ex SIR was showing Fezandipiti ex's $270). Reconciler now compares <code>ppt.meta.card_name</code> against the watchlist name and rejects PPT entirely on mismatch. 47 cards corrected.</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
         <span class="release-version">v0.26 — Model is TRAINED + PPT name-match guard catches 47 wrong-product matches</span>
         <span class="release-date">2026-05-18</span>
         <div class="release-tags">
