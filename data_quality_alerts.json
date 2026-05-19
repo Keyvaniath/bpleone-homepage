@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-19T01:30:19.790767+00:00",
-  "data_age_hours": 52.6,
+  "generated_at": "2026-05-19T01:53:31.053046+00:00",
+  "data_age_hours": 53.0,
   "score": 57,
   "grade": "F",
   "total_cards": 555,
@@ -9,17 +9,17 @@
     "graded_no_data": 30,
     "wb_fallback_highvalue": 1,
     "grade_ladder_violation": 4,
-    "duplicate_entries": 12
+    "duplicate_entries": 7
   },
   "alert_counts": {
     "high": 1,
-    "warn": 26
+    "warn": 21
   },
   "alerts": [
     {
       "severity": "high",
       "category": "stale_data",
-      "message": "Live prices last updated 52.6h ago",
+      "message": "Live prices last updated 53.0h ago",
       "cid": null
     },
     {
@@ -165,98 +165,65 @@
     {
       "severity": "warn",
       "category": "duplicate_entries",
-      "message": "duplicate: 3 entries for charizard (psa 9): V001, V005, V252",
-      "cid": "V001",
+      "message": "duplicate: 2 entries for charizard (psa 9, set=base set unlimited): V005, V252",
+      "cid": "V005",
       "name": "charizard",
-      "variant": "psa 9"
+      "variant": "psa 9",
+      "set": "base set unlimited"
     },
     {
       "severity": "warn",
       "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for blastoise (psa 9): V006, V250",
-      "cid": "V006",
-      "name": "blastoise",
-      "variant": "psa 9"
-    },
-    {
-      "severity": "warn",
-      "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for venusaur (psa 9): V007, V251",
-      "cid": "V007",
-      "name": "venusaur",
-      "variant": "psa 9"
-    },
-    {
-      "severity": "warn",
-      "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for mewtwo (psa 9): V009, V254",
-      "cid": "V009",
-      "name": "mewtwo",
-      "variant": "psa 9"
-    },
-    {
-      "severity": "warn",
-      "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for ninetales (psa 9): V011, V257",
-      "cid": "V011",
-      "name": "ninetales",
-      "variant": "psa 9"
-    },
-    {
-      "severity": "warn",
-      "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for shining charizard (psa 9): V017, Z021",
-      "cid": "V017",
-      "name": "shining charizard",
-      "variant": "psa 9"
-    },
-    {
-      "severity": "warn",
-      "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for evolving skies booster box (sealed (36 packs)): S001, X431",
+      "message": "duplicate: 2 entries for evolving skies booster box (sealed (36 packs), set=evolving skies): S001, X431",
       "cid": "S001",
       "name": "evolving skies booster box",
-      "variant": "sealed (36 packs)"
+      "variant": "sealed (36 packs)",
+      "set": "evolving skies"
     },
     {
       "severity": "warn",
       "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for iono sir (raw nm): X001, Q010",
+      "message": "duplicate: 2 entries for iono sir (raw nm, set=paldea evolved): X001, Q010",
       "cid": "X001",
       "name": "iono sir",
-      "variant": "raw nm"
+      "variant": "raw nm",
+      "set": "paldea evolved"
     },
     {
       "severity": "warn",
       "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for shining fates booster box (sealed): X224, X435",
+      "message": "duplicate: 2 entries for shining fates booster box (sealed, set=shining fates): X224, X435",
       "cid": "X224",
       "name": "shining fates booster box",
-      "variant": "sealed"
+      "variant": "sealed",
+      "set": "shining fates"
     },
     {
       "severity": "warn",
       "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for charizard base unlimited psa 9 (psa 9): X231, X411",
+      "message": "duplicate: 2 entries for charizard base unlimited psa 9 (psa 9, set=base set): X231, X411",
       "cid": "X231",
       "name": "charizard base unlimited psa 9",
-      "variant": "psa 9"
+      "variant": "psa 9",
+      "set": "base set"
     },
     {
       "severity": "warn",
       "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for hidden fates booster box (sealed): X315, X525",
+      "message": "duplicate: 2 entries for hidden fates booster box (sealed, set=hidden fates): X315, X525",
       "cid": "X315",
       "name": "hidden fates booster box",
-      "variant": "sealed"
+      "variant": "sealed",
+      "set": "hidden fates"
     },
     {
       "severity": "warn",
       "category": "duplicate_entries",
-      "message": "duplicate: 2 entries for greninja v alt art (fs) (psa 10): M107, X160",
+      "message": "duplicate: 2 entries for greninja v alt art (fs) (psa 10, set=fusion strike): M107, X160",
       "cid": "M107",
       "name": "greninja v alt art (fs)",
-      "variant": "psa 10"
+      "variant": "psa 10",
+      "set": "fusion strike"
     }
   ]
 }
