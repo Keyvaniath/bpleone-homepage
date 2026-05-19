@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-05-18T19:52:06.721319+00:00",
-  "data_age_hours": 47.0,
+  "generated_at": "2026-05-19T01:30:19.790767+00:00",
+  "data_age_hours": 52.6,
   "score": 57,
   "grade": "F",
   "total_cards": 555,
   "stats": {
     "stale_data": 1,
     "graded_no_data": 30,
+    "wb_fallback_highvalue": 1,
     "grade_ladder_violation": 4,
     "duplicate_entries": 12
   },
   "alert_counts": {
     "high": 1,
-    "warn": 25
+    "warn": 26
   },
   "alerts": [
     {
       "severity": "high",
       "category": "stale_data",
-      "message": "Live prices last updated 47.0h ago",
+      "message": "Live prices last updated 52.6h ago",
       "cid": null
     },
     {
@@ -60,6 +61,16 @@
       "variant": "PSA 10",
       "wb": 1800,
       "live": 1352.3
+    },
+    {
+      "severity": "warn",
+      "category": "wb_fallback_highvalue",
+      "message": "high-value card on workbook fallback (wb_no_sources)",
+      "cid": "M084",
+      "name": "Mega Rayquaza ex SIR",
+      "variant": "PSA 10",
+      "wb": 1400,
+      "live": 1400
     },
     {
       "severity": "warn",
