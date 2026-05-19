@@ -129,6 +129,25 @@
 
     <article class="release">
       <div class="release-head">
+        <span class="release-version">v0.26 — Model is TRAINED + PPT name-match guard catches 47 wrong-product matches</span>
+        <span class="release-date">2026-05-18</span>
+        <div class="release-tags">
+          <span class="tag-pill tag-feat">FEAT</span>
+          <span class="tag-pill tag-fix">FIX</span>
+          <span class="tag-pill tag-data">DATA</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>🧠 Model is actually trained.</strong> Built <code>optimize_fw_weights_proxy.py</code> — uses workbook-formula d30 as a realized-return surrogate (until 7-day price_history matures, the real optimizer takes over). Ran 7 retrains so far. Weights now <strong>PROXY-LEARNED</strong> instead of SEED. Trajectory: liquidity 0.10→0.14 (+40%), hidden_alpha 0.15→0.18 (+19%), momentum_rising 0.25→0.22 (-11%), scarcity 0.20→0.15 (-24%). Strongest Pearson correlation: momentum_rising r=+0.514.</li>
+        <li><strong>🚨 CRITICAL FIX: PPT name-match validation in reconciler.</strong> PokemonPriceTracker was returning data for the WRONG product on 47 cards. <strong>M084 Mega Rayquaza ex SIR</strong> was showing $560 (actually N's Zoroark ex's price). <strong>M087 Mega Charizard Y ex SIR</strong> was showing Fezandipiti ex's price. The reconciler now compares PPT's <code>meta.card_name</code> against the watchlist name and rejects when they don't overlap. 47 cards corrected on this push.</li>
+        <li><strong>Homepage 🧠 widget</strong> now shows "Weights: PROXY-LEARNED · 7 Retrains" instead of "SEED · 0".</li>
+        <li><strong>Future Winners</strong> re-scored on the new trained weights — top picks shifted slightly (Magnezone V Alt Art now fw_score 79.5 vs 77.7 with seed weights).</li>
+        <li><strong>fw_weights_history.jsonl</strong> records every retrain with <code>training_mode</code> tag for full audit trail. When real cron resumes + 7-day history exists, the real optimizer (<code>optimize_fw_weights.py</code>) takes over via Bayesian smoothing.</li>
+      </ul>
+    </article>
+
+    <article class="release">
+      <div class="release-head">
         <span class="release-version">v0.25 — Data sanity caps + honest UX labels + page aliases</span>
         <span class="release-date">2026-05-18</span>
         <div class="release-tags">
