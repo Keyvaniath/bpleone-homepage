@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T19:52:09.217481+00:00",
+  "generated_at": "2026-05-19T01:30:21.722623+00:00",
   "n_sets": 141,
   "n_cards_classified": 774,
   "hot_sets_top10": [
@@ -50,29 +50,6 @@
       }
     },
     {
-      "set": "Evolving Skies",
-      "n_cards": 29,
-      "avg_score": 64.2,
-      "heat_score": 117.2,
-      "buy_density_pct": 55.2,
-      "avg_d7_pct": 41.62,
-      "avg_d30_pct": 44.62,
-      "n_strong_buy": 12,
-      "n_buy": 4,
-      "n_hold": 13,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 21722.0,
-      "top_card": {
-        "cid": "M010",
-        "name": "Dragonite V Alt Art",
-        "variant": "PSA 10",
-        "score": 82.0,
-        "signal": "STRONG BUY",
-        "live_price": 350.0
-      }
-    },
-    {
       "set": "Paldean Fates",
       "n_cards": 6,
       "avg_score": 65.0,
@@ -93,6 +70,29 @@
         "score": 76.0,
         "signal": "STRONG BUY",
         "live_price": null
+      }
+    },
+    {
+      "set": "Evolving Skies",
+      "n_cards": 29,
+      "avg_score": 62.6,
+      "heat_score": 114.5,
+      "buy_density_pct": 48.3,
+      "avg_d7_pct": 41.62,
+      "avg_d30_pct": 44.62,
+      "n_strong_buy": 12,
+      "n_buy": 2,
+      "n_hold": 15,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 21030.0,
+      "top_card": {
+        "cid": "M002",
+        "name": "Umbreon VMAX (Moonbreon)",
+        "variant": "Raw NM",
+        "score": 79.0,
+        "signal": "STRONG BUY",
+        "live_price": 1855.94
       }
     },
     {
@@ -165,29 +165,6 @@
       }
     },
     {
-      "set": "Ascended Heroes",
-      "n_cards": 18,
-      "avg_score": 64.5,
-      "heat_score": 86.9,
-      "buy_density_pct": 50.0,
-      "avg_d7_pct": 13.55,
-      "avg_d30_pct": 25.73,
-      "n_strong_buy": 7,
-      "n_buy": 2,
-      "n_hold": 9,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 9759.0,
-      "top_card": {
-        "cid": "M084",
-        "name": "Mega Rayquaza ex SIR",
-        "variant": "PSA 10",
-        "score": 89.0,
-        "signal": "STRONG BUY",
-        "live_price": 560.0
-      }
-    },
-    {
       "set": "Brilliant Stars",
       "n_cards": 15,
       "avg_score": 60.3,
@@ -208,6 +185,29 @@
         "score": 87.0,
         "signal": "STRONG BUY",
         "live_price": 240.0
+      }
+    },
+    {
+      "set": "Ascended Heroes",
+      "n_cards": 18,
+      "avg_score": 63.7,
+      "heat_score": 86.5,
+      "buy_density_pct": 50.0,
+      "avg_d7_pct": 13.55,
+      "avg_d30_pct": 25.73,
+      "n_strong_buy": 7,
+      "n_buy": 2,
+      "n_hold": 9,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 10680.0,
+      "top_card": {
+        "cid": "M085",
+        "name": "Mega Lucario ex SIR",
+        "variant": "PSA 10",
+        "score": 88.0,
+        "signal": "STRONG BUY",
+        "live_price": 350.0
       }
     },
     {
@@ -514,29 +514,6 @@
       }
     },
     {
-      "set": "Evolving Skies",
-      "n_cards": 29,
-      "avg_score": 64.2,
-      "heat_score": 117.2,
-      "buy_density_pct": 55.2,
-      "avg_d7_pct": 41.62,
-      "avg_d30_pct": 44.62,
-      "n_strong_buy": 12,
-      "n_buy": 4,
-      "n_hold": 13,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 21722.0,
-      "top_card": {
-        "cid": "M010",
-        "name": "Dragonite V Alt Art",
-        "variant": "PSA 10",
-        "score": 82.0,
-        "signal": "STRONG BUY",
-        "live_price": 350.0
-      }
-    },
-    {
       "set": "Paldean Fates",
       "n_cards": 6,
       "avg_score": 65.0,
@@ -557,6 +534,29 @@
         "score": 76.0,
         "signal": "STRONG BUY",
         "live_price": null
+      }
+    },
+    {
+      "set": "Evolving Skies",
+      "n_cards": 29,
+      "avg_score": 62.6,
+      "heat_score": 114.5,
+      "buy_density_pct": 48.3,
+      "avg_d7_pct": 41.62,
+      "avg_d30_pct": 44.62,
+      "n_strong_buy": 12,
+      "n_buy": 2,
+      "n_hold": 15,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 21030.0,
+      "top_card": {
+        "cid": "M002",
+        "name": "Umbreon VMAX (Moonbreon)",
+        "variant": "Raw NM",
+        "score": 79.0,
+        "signal": "STRONG BUY",
+        "live_price": 1855.94
       }
     },
     {
@@ -629,29 +629,6 @@
       }
     },
     {
-      "set": "Ascended Heroes",
-      "n_cards": 18,
-      "avg_score": 64.5,
-      "heat_score": 86.9,
-      "buy_density_pct": 50.0,
-      "avg_d7_pct": 13.55,
-      "avg_d30_pct": 25.73,
-      "n_strong_buy": 7,
-      "n_buy": 2,
-      "n_hold": 9,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 9759.0,
-      "top_card": {
-        "cid": "M084",
-        "name": "Mega Rayquaza ex SIR",
-        "variant": "PSA 10",
-        "score": 89.0,
-        "signal": "STRONG BUY",
-        "live_price": 560.0
-      }
-    },
-    {
       "set": "Brilliant Stars",
       "n_cards": 15,
       "avg_score": 60.3,
@@ -672,6 +649,29 @@
         "score": 87.0,
         "signal": "STRONG BUY",
         "live_price": 240.0
+      }
+    },
+    {
+      "set": "Ascended Heroes",
+      "n_cards": 18,
+      "avg_score": 63.7,
+      "heat_score": 86.5,
+      "buy_density_pct": 50.0,
+      "avg_d7_pct": 13.55,
+      "avg_d30_pct": 25.73,
+      "n_strong_buy": 7,
+      "n_buy": 2,
+      "n_hold": 9,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 10680.0,
+      "top_card": {
+        "cid": "M085",
+        "name": "Mega Lucario ex SIR",
+        "variant": "PSA 10",
+        "score": 88.0,
+        "signal": "STRONG BUY",
+        "live_price": 350.0
       }
     },
     {
@@ -700,17 +700,17 @@
     {
       "set": "151",
       "n_cards": 42,
-      "avg_score": 58.8,
-      "heat_score": 80.2,
-      "buy_density_pct": 33.3,
+      "avg_score": 58.5,
+      "heat_score": 79.4,
+      "buy_density_pct": 31.0,
       "avg_d7_pct": 16.29,
       "avg_d30_pct": 22.3,
       "n_strong_buy": 9,
-      "n_buy": 5,
-      "n_hold": 28,
+      "n_buy": 4,
+      "n_hold": 29,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 8746.0,
+      "total_universe_usd": 8911.0,
       "top_card": {
         "cid": "M037",
         "name": "Mew ex SIR",
@@ -718,29 +718,6 @@
         "score": 88.0,
         "signal": "STRONG BUY",
         "live_price": 175.0
-      }
-    },
-    {
-      "set": "Mega Evolution ME01",
-      "n_cards": 3,
-      "avg_score": 63.3,
-      "heat_score": 78.5,
-      "buy_density_pct": 100.0,
-      "avg_d7_pct": 4.47,
-      "avg_d30_pct": 16.5,
-      "n_strong_buy": 0,
-      "n_buy": 3,
-      "n_hold": 0,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 51.0,
-      "top_card": {
-        "cid": "X006",
-        "name": "Misty's Determination SIR",
-        "variant": "PSA 10",
-        "score": 64.0,
-        "signal": "BUY",
-        "live_price": 51.0
       }
     },
     {
@@ -769,8 +746,8 @@
     {
       "set": "Crown Zenith",
       "n_cards": 19,
-      "avg_score": 59.6,
-      "heat_score": 76.4,
+      "avg_score": 57.8,
+      "heat_score": 75.7,
       "buy_density_pct": 26.3,
       "avg_d7_pct": 16.04,
       "avg_d30_pct": 20.57,
@@ -779,14 +756,14 @@
       "n_hold": 14,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 3430.0,
+      "total_universe_usd": 4107.0,
       "top_card": {
         "cid": "M029",
         "name": "Giratina VSTAR Gold",
         "variant": "PSA 10",
-        "score": 88.0,
+        "score": 76.0,
         "signal": "STRONG BUY",
-        "live_price": 150.0
+        "live_price": 450.0
       }
     },
     {
@@ -848,7 +825,7 @@
       "n_hold": 14,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 6231.0,
+      "total_universe_usd": 6304.0,
       "top_card": {
         "cid": "M066",
         "name": "Pikachu ex Alt Art",
@@ -925,6 +902,29 @@
         "score": 64.0,
         "signal": "BUY",
         "live_price": 211.9
+      }
+    },
+    {
+      "set": "Mega Evolution ME01",
+      "n_cards": 3,
+      "avg_score": 59.7,
+      "heat_score": 67.1,
+      "buy_density_pct": 66.7,
+      "avg_d7_pct": 4.47,
+      "avg_d30_pct": 16.5,
+      "n_strong_buy": 0,
+      "n_buy": 2,
+      "n_hold": 1,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 140.0,
+      "top_card": {
+        "cid": "D118",
+        "name": "Pokemon Mega Evolution ME01 Booster Box",
+        "variant": "Sealed",
+        "score": 63.0,
+        "signal": "BUY",
+        "live_price": null
       }
     },
     {
@@ -1101,7 +1101,7 @@
       "n_hold": 12,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 2632.0,
+      "total_universe_usd": 2576.0,
       "top_card": {
         "cid": "M044",
         "name": "Iono SIR",
