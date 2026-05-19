@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T19:52:10.457599Z",
+  "generated_at": "2026-05-19T01:30:20.726653Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -2423,11 +2423,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 3800,
       "wb_price": 540.0,
-      "live_price": 350.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 280.0,
-      "target_sell": 332.5,
-      "score": 82,
+      "live_price": 540.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 432.0,
+      "target_sell": 513.0,
+      "score": 75,
       "signal": "STRONG BUY",
       "d7_workbook": 92.14,
       "d30_workbook": 101.37,
@@ -2443,11 +2443,11 @@
       ],
       "image": "https://images.pokemontcg.io/swsh7/192.png",
       "notes": "Pseudo-legendary V alt. Dragon collector cross-buy.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -2488,9 +2488,9 @@
           "last_updated": "2026-05-13T15:18:24.657Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 350.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M011": {
       "id": "M011",
@@ -3656,11 +3656,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2400,
       "wb_price": 450.0,
-      "live_price": 150.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 120.0,
-      "target_sell": 142.5,
-      "score": 88,
+      "live_price": 450.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 360.0,
+      "target_sell": 427.5,
+      "score": 76,
       "signal": "STRONG BUY",
       "d7_workbook": 62.38,
       "d30_workbook": 68.57,
@@ -3676,11 +3676,11 @@
       ],
       "image": "https://images.pokemontcg.io/swsh12pt5gg/GG69.png",
       "notes": "Galarian Gallery gold. Last card in set premium.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -3727,9 +3727,9 @@
           "last_updated": "2026-05-13T15:17:51.077Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 150.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M030": {
       "id": "M030",
@@ -3865,11 +3865,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 3100,
       "wb_price": 340.0,
-      "live_price": 175.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 140.0,
-      "target_sell": 166.25,
-      "score": 85,
+      "live_price": 340.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 272.0,
+      "target_sell": 323.0,
+      "score": 75,
       "signal": "STRONG BUY",
       "d7_workbook": 54.53,
       "d30_workbook": 63.72,
@@ -3885,11 +3885,11 @@
       ],
       "image": "https://images.pokemontcg.io/swsh9/154.png",
       "notes": "Galarian Gallery Charizard variant.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -3930,9 +3930,9 @@
           "last_updated": "2026-05-13T15:18:40.823Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 175.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M033": {
       "id": "M033",
@@ -3944,11 +3944,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2400,
       "wb_price": 280.0,
-      "live_price": 68.09,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 54.47,
-      "target_sell": 64.69,
-      "score": 88,
+      "live_price": 280.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 224.0,
+      "target_sell": 266.0,
+      "score": 76,
       "signal": "STRONG BUY",
       "d7_workbook": 56.19,
       "d30_workbook": 61.15,
@@ -3964,11 +3964,11 @@
       ],
       "image": "https://images.pokemontcg.io/swsh12/186.png",
       "notes": "Lugia GG variant. Consistent demand.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -4015,9 +4015,9 @@
           "last_updated": "2026-05-13T15:17:51.077Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 68.09,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M034": {
       "id": "M034",
@@ -7356,11 +7356,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 600,
       "wb_price": 1400.0,
-      "live_price": 560.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 448.0,
-      "target_sell": 532.0,
-      "score": 89,
+      "live_price": 1400.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 1120.0,
+      "target_sell": 1330.0,
+      "score": 78,
       "signal": "STRONG BUY",
       "d7_workbook": 28.76,
       "d30_workbook": 47.13,
@@ -7376,11 +7376,11 @@
       ],
       "image": null,
       "notes": "Mega Rayquaza in Ascended Heroes. Dragon collector pull.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -7421,9 +7421,9 @@
           "last_updated": "2026-05-13T15:17:19.325Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 560.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M085": {
       "id": "M085",
@@ -7509,11 +7509,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1000,
       "wb_price": 480.0,
-      "live_price": 399.475,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 319.58,
-      "target_sell": 379.5,
-      "score": 80,
+      "live_price": 480.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 384.0,
+      "target_sell": 456.0,
+      "score": 77,
       "signal": "STRONG BUY",
       "d7_workbook": 27.66,
       "d30_workbook": 39.27,
@@ -7529,11 +7529,11 @@
       ],
       "image": "https://images.pokemontcg.io/me2/128.png",
       "notes": "Sleeper Mega. Lopunny is uniquely popular in Japan.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -7574,9 +7574,9 @@
           "last_updated": "2026-05-13T15:17:19.325Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 399.475,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M087": {
       "id": "M087",
@@ -10077,12 +10077,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1300,
       "wb_price": 140.0,
-      "live_price": 51.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 40.8,
-      "target_sell": 48.45,
-      "score": 64,
-      "signal": "BUY",
+      "live_price": 140.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 112.0,
+      "target_sell": 133.0,
+      "score": 53,
+      "signal": "HOLD",
       "d7_workbook": 3.47,
       "d30_workbook": 11.5,
       "history": [
@@ -10097,11 +10097,11 @@
       ],
       "image": "https://images.pokemontcg.io/xy12/108.png",
       "notes": "Misty version of Lillie SIR. Up 12%/30D.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -10142,9 +10142,9 @@
           "last_updated": "2026-05-13T15:17:19.314Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 51.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "X007": {
       "id": "X007",
@@ -13158,11 +13158,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 5.0,
-      "live_price": 11.95,
-      "live_source": "median_ppt_tcg",
-      "target_buy": 9.56,
-      "target_sell": 11.35,
-      "score": 47,
+      "live_price": 0.24,
+      "live_source": "single_tcg",
+      "target_buy": 0.19,
+      "target_sell": 0.23,
+      "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": 0.0,
@@ -13174,9 +13174,9 @@
       ],
       "image": "https://images.pokemontcg.io/swsh45sv/SV118.png",
       "notes": "Ditto V transform mechanic. Cult.",
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "confidence_flags": [],
-      "reconcile_reason": "sources disagree by 98%; took median (no usable wb anchor)",
+      "reconcile_reason": "only tcg source; workbook < $100 so trusting source",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -13217,7 +13217,7 @@
           "last_updated": "2026-05-13T15:18:05.704Z"
         }
       },
-      "reconcile_confidence": "LOW",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "sanity_sweep_rejected_pokeprice:raw"
     },
@@ -13734,10 +13734,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 6.0,
-      "live_price": 61.79,
-      "live_source": "single_ppt",
-      "target_buy": 49.43,
-      "target_sell": 58.7,
+      "live_price": 6.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 4.8,
+      "target_sell": 5.7,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -13750,9 +13750,11 @@
       ],
       "image": "https://images.pokemontcg.io/sv2/269.png",
       "notes": "Iono base trainer. Different from SIR.",
-      "confidence": "MEDIUM",
-      "confidence_flags": [],
-      "reconcile_reason": "only ppt source; workbook < $100 so trusting source",
+      "confidence": "UNKNOWN",
+      "confidence_flags": [
+        "workbook_fallback"
+      ],
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -13799,7 +13801,7 @@
           "last_updated": "2026-05-13T15:17:42.338Z"
         }
       },
-      "reconcile_confidence": "MEDIUM",
+      "reconcile_confidence": "UNKNOWN",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "sanity_sweep_rejected_pokeprice:raw"
     },
@@ -14079,10 +14081,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 4.0,
-      "live_price": 0.68,
-      "live_source": "consensus_ppt_tcg",
-      "target_buy": 0.54,
-      "target_sell": 0.65,
+      "live_price": 0.64,
+      "live_source": "tcgplayer_api",
+      "target_buy": 0.51,
+      "target_sell": 0.61,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -14100,9 +14102,7 @@
       "image": "https://images.pokemontcg.io/bwp/BW97.png",
       "notes": "PE Eevee. Eeveelution set core.",
       "confidence": "HIGH",
-      "confidence_flags": [
-        "multi_source_consensus"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "2 sources agree within 6%",
       "sources": {
         "pricecharting": null,
@@ -14613,10 +14613,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 6.0,
-      "live_price": 0.49,
-      "live_source": "consensus_ppt_tcg",
-      "target_buy": 0.39,
-      "target_sell": 0.47,
+      "live_price": 0.53,
+      "live_source": "tcgplayer_api",
+      "target_buy": 0.42,
+      "target_sell": 0.5,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -14634,9 +14634,7 @@
       "image": "https://images.pokemontcg.io/sv8pt5/76.png",
       "notes": "Snorlax fan favorite.",
       "confidence": "HIGH",
-      "confidence_flags": [
-        "multi_source_consensus"
-      ],
+      "confidence_flags": [],
       "reconcile_reason": "2 sources agree within 7%",
       "sources": {
         "pricecharting": null,
@@ -14674,10 +14672,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 8.0,
-      "live_price": 1493.04,
-      "live_source": "consensus_ppt_tcg",
-      "target_buy": 1194.43,
-      "target_sell": 1418.39,
+      "live_price": 1529.42,
+      "live_source": "single_tcg",
+      "target_buy": 1223.54,
+      "target_sell": 1452.95,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -14690,11 +14688,9 @@
       ],
       "image": null,
       "notes": "Greedent + SIR. Sleeper.",
-      "confidence": "HIGH",
-      "confidence_flags": [
-        "multi_source_consensus"
-      ],
-      "reconcile_reason": "2 sources agree within 2%",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only tcg source; workbook < $100 so trusting source",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -14741,7 +14737,7 @@
           "last_updated": "2026-05-13T15:17:24.178Z"
         }
       },
-      "reconcile_confidence": "HIGH",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "sanity_sweep_rejected_tcgplayer_api"
     },
@@ -16180,11 +16176,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1900,
       "wb_price": 85.0,
-      "live_price": 46.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 36.8,
-      "target_sell": 43.7,
-      "score": 57,
+      "live_price": 85.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 68.0,
+      "target_sell": 80.75,
+      "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": 0.0,
@@ -16200,11 +16196,11 @@
       ],
       "image": "https://images.pokemontcg.io/swsh9tg/TG13.png",
       "notes": "ES sleeper alt.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -16239,9 +16235,9 @@
           "last_updated": "2026-05-13T15:18:24.657Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 46.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M109": {
       "id": "M109",
@@ -16253,11 +16249,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1700,
       "wb_price": 95.0,
-      "live_price": 47.47,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 37.98,
-      "target_sell": 45.1,
-      "score": 58,
+      "live_price": 95.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 76.0,
+      "target_sell": 90.25,
+      "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": 0.0,
@@ -16273,11 +16269,11 @@
       ],
       "image": null,
       "notes": "ES Octillery alt. Niche but real.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -16318,9 +16314,9 @@
           "last_updated": "2026-05-13T15:18:24.657Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 47.47,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "M110": {
       "id": "M110",
@@ -19594,10 +19590,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 9.0,
-      "live_price": 1493.04,
-      "live_source": "consensus_ppt_tcg",
-      "target_buy": 1194.43,
-      "target_sell": 1418.39,
+      "live_price": 1529.42,
+      "live_source": "single_tcg",
+      "target_buy": 1223.54,
+      "target_sell": 1452.95,
       "score": 55,
       "signal": "HOLD",
       "d7_workbook": 4.41,
@@ -19610,11 +19606,9 @@
       ],
       "image": null,
       "notes": "Greedent SIR raw.",
-      "confidence": "HIGH",
-      "confidence_flags": [
-        "multi_source_consensus"
-      ],
-      "reconcile_reason": "2 sources agree within 2%",
+      "confidence": "MEDIUM",
+      "confidence_flags": [],
+      "reconcile_reason": "only tcg source; workbook < $100 so trusting source",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -19661,7 +19655,7 @@
           "last_updated": "2026-05-13T15:17:24.178Z"
         }
       },
-      "reconcile_confidence": "HIGH",
+      "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
       "scrape_rejected_source": "sanity_sweep_rejected_tcgplayer_api"
     },
@@ -23658,10 +23652,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2900,
       "wb_price": 180.0,
-      "live_price": 289.935,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 231.95,
-      "target_sell": 275.44,
+      "live_price": 180.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 144.0,
+      "target_sell": 171.0,
       "score": 55,
       "signal": "HOLD",
       "d7_workbook": 3.47,
@@ -23678,11 +23672,11 @@
       ],
       "image": "https://images.pokemontcg.io/swsh7/180.png",
       "notes": "Espeon V alt graded.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -23723,9 +23717,9 @@
           "last_updated": "2026-05-13T15:18:24.657Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 289.935,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "X205": {
       "id": "X205",
@@ -23823,12 +23817,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2900,
       "wb_price": 165.0,
-      "live_price": 44.18,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 35.34,
-      "target_sell": 41.97,
-      "score": 65,
-      "signal": "BUY",
+      "live_price": 165.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 132.0,
+      "target_sell": 156.75,
+      "score": 54,
+      "signal": "HOLD",
       "d7_workbook": 2.39,
       "d30_workbook": 9.0,
       "history": [
@@ -23843,11 +23837,11 @@
       ],
       "image": "https://images.pokemontcg.io/swsh7/175.png",
       "notes": "Glaceon V alt.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -23894,9 +23888,9 @@
           "last_updated": "2026-05-13T15:18:24.656Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 44.18,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "X207": {
       "id": "X207",
@@ -23908,12 +23902,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2700,
       "wb_price": 170.0,
-      "live_price": 70.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 56.0,
-      "target_sell": 66.5,
-      "score": 65,
-      "signal": "BUY",
+      "live_price": 170.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 136.0,
+      "target_sell": 161.5,
+      "score": 53,
+      "signal": "HOLD",
       "d7_workbook": 1.6,
       "d30_workbook": 10.0,
       "history": [
@@ -23928,11 +23922,11 @@
       ],
       "image": "https://images.pokemontcg.io/swshp/SWSH183.png",
       "notes": "Jolteon V alt.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -23973,9 +23967,9 @@
           "last_updated": "2026-05-13T15:18:24.656Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 70.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "X208": {
       "id": "X208",
@@ -26527,12 +26521,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1700,
       "wb_price": 340.0,
-      "live_price": 175.0,
-      "live_source": "pokeprice:psa10",
-      "target_buy": 140.0,
-      "target_sell": 166.25,
-      "score": 63,
-      "signal": "BUY",
+      "live_price": 340.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 272.0,
+      "target_sell": 323.0,
+      "score": 54,
+      "signal": "HOLD",
       "d7_workbook": 1.52,
       "d30_workbook": 10.0,
       "history": [
@@ -26547,11 +26541,11 @@
       ],
       "image": "https://images.pokemontcg.io/sv4pt5/232.png",
       "notes": "151 Mew SIR.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -26592,9 +26586,9 @@
           "last_updated": "2026-05-13T15:17:37.223Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 175.0,
+      "scrape_rejected_source": "pokeprice:psa10"
     },
     "X310": {
       "id": "X310",
@@ -27960,10 +27954,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 6500,
       "wb_price": 720.0,
-      "live_price": 1800.0,
-      "live_source": "pokeprice:psa9",
-      "target_buy": 1440.0,
-      "target_sell": 1710.0,
+      "live_price": 720.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 576.0,
+      "target_sell": 684.0,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 1.86,
@@ -27980,11 +27974,11 @@
       ],
       "image": null,
       "notes": "PSA 9 Moonbreon \u2014 cheaper grade.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": {
@@ -28025,9 +28019,9 @@
           "last_updated": "2026-05-13T15:18:24.657Z"
         }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 1800.0,
+      "scrape_rejected_source": "pokeprice:psa9"
     },
     "X402": {
       "id": "X402",
