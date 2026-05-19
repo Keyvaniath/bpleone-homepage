@@ -1,21 +1,9 @@
 {
-  "generated_at": "2026-05-18T20:23:24.261968+00:00",
-  "buy_alerts_count": 61,
-  "sell_alerts_count": 213,
+  "generated_at": "2026-05-19T01:30:20.017503+00:00",
+  "buy_alerts_count": 54,
+  "sell_alerts_count": 211,
   "high_score_count": 14,
   "buy_alerts": [
-    {
-      "cid": "M084",
-      "name": "Mega Rayquaza ex SIR",
-      "variant": "PSA 10",
-      "live_price": 560.0,
-      "buy_target": 1120.0,
-      "wb_price": 1400,
-      "discount_pct": 60.0,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pokeprice:psa10"
-    },
     {
       "cid": "V813",
       "name": "Crystal Lugia Aquapolis",
@@ -39,18 +27,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
-    },
-    {
-      "cid": "X207",
-      "name": "Jolteon V Alt Art",
-      "variant": "PSA 10",
-      "live_price": 70.0,
-      "buy_target": 136.0,
-      "wb_price": 170,
-      "discount_pct": 58.8,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pokeprice:psa10"
     },
     {
       "cid": "W014",
@@ -233,18 +209,6 @@
       "source": "pokeprice:raw"
     },
     {
-      "cid": "M109",
-      "name": "Octillery V Alt Art",
-      "variant": "PSA 10",
-      "live_price": 47.47,
-      "buy_target": 76.0,
-      "wb_price": 95,
-      "discount_pct": 50.0,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pokeprice:psa10"
-    },
-    {
       "cid": "X301",
       "name": "Charizard VSTAR Rainbow (BRS) PSA 10",
       "variant": "PSA 10",
@@ -255,30 +219,6 @@
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pc_sweep_grade_10"
-    },
-    {
-      "cid": "M032",
-      "name": "Charizard V (GG)",
-      "variant": "PSA 10",
-      "live_price": 175.0,
-      "buy_target": 272.0,
-      "wb_price": 340,
-      "discount_pct": 48.5,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pokeprice:psa10"
-    },
-    {
-      "cid": "X309",
-      "name": "Mew ex SIR (151) PSA 10",
-      "variant": "PSA 10",
-      "live_price": 175.0,
-      "buy_target": 272.0,
-      "wb_price": 340,
-      "discount_pct": 48.5,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pokeprice:psa10"
     },
     {
       "cid": "Z024",
@@ -303,6 +243,66 @@
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pc_sweep_grade_10"
+    },
+    {
+      "cid": "X534",
+      "name": "Neo Genesis Booster Box Unlimited (sealed)",
+      "variant": "Sealed",
+      "live_price": 7600.0,
+      "buy_target": 11200.0,
+      "wb_price": 14000,
+      "discount_pct": 45.7,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X237",
+      "name": "Mewtwo Fossil Unlimited PSA 9",
+      "variant": "PSA 9",
+      "live_price": 92.5,
+      "buy_target": 136.0,
+      "wb_price": 170,
+      "discount_pct": 45.6,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
+    },
+    {
+      "cid": "W011",
+      "name": "Bloodmoon Ursaluna ex SAR",
+      "variant": "PSA 10",
+      "live_price": 133.43,
+      "buy_target": 196.0,
+      "wb_price": 245,
+      "discount_pct": 45.5,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
+    },
+    {
+      "cid": "Z011",
+      "name": "Umbreon",
+      "variant": "PSA 10",
+      "live_price": 940.83,
+      "buy_target": 1360.0,
+      "wb_price": 1700,
+      "discount_pct": 44.7,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
+    },
+    {
+      "cid": "JB04",
+      "name": "Eevee Heroes Booster (JP single)",
+      "variant": "Sealed",
+      "live_price": 13.9,
+      "buy_target": 20.0,
+      "wb_price": 25,
+      "discount_pct": 44.4,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
     }
   ],
   "sell_alerts": [
