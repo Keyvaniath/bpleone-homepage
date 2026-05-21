@@ -1859,16 +1859,63 @@
   <div class="container">
     <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
     <div class="nav-links">
-      <a href="#live">📊 Live</a>
-      <a href="/cards.html">📇 Cards</a>
+      <a href="#desks">🏛️ Desks</a>
+      <a href="#live">🃏 Pokémon</a>
+      <a href="/sports-cards.html">🏀 Sports Cards</a>
       <a href="/models.html">🧰 Models</a>
-      <a href="/watchlist.html">⭐ Watchlist</a>
       <a href="/methodology.html">📐 Method</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#subscribe" class="nav-cta">Subscribe</a>
+      <a href="#about">About</a>
     </div>
   </div>
 </nav>
+
+<!-- ============ MULTI-VERTICAL HUB BANNER ============ -->
+<!-- Brandon called out 2026-05-21: bpleone.com should be the multi-desk hub,
+     not let one vertical take over the front page. This compact banner
+     surfaces all the verticals immediately, so the homepage reads as a
+     trading-desk portfolio first, Pokémon-specific tools second. -->
+<div class="desks-hub-bar" style="background:linear-gradient(180deg,rgba(245,200,66,0.06),transparent);border-bottom:1px solid var(--border);padding:18px 0;">
+  <div class="container">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:var(--gold);text-transform:uppercase;font-weight:700;">⛰ Brandon's Trading Desks · Pick a vertical</div>
+      <a href="#desks" style="font-size:12px;color:var(--text-mute);text-decoration:none;">Full directory →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;">
+      <a href="#live" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(74,222,128,0.04);transition:transform .1s ease,border-color .1s ease;" onmouseover="this.style.borderColor='#4ade80'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">🃏</span><strong style="font-size:14px;">Pokémon TCG</strong><span style="margin-left:auto;font-size:9px;color:#4ade80;font-family:monospace;letter-spacing:0.08em;">● LIVE</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">774 cards · 4h refresh · BUY/SELL signals</span>
+      </a>
+      <a href="https://pokemon.bpleone.com/?tab=flip" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(245,200,66,0.04);" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">💸</span><strong style="font-size:14px;">Flip Bot</strong><span style="margin-left:auto;font-size:9px;color:#4ade80;font-family:monospace;letter-spacing:0.08em;">● LIVE</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">TCGPlayer arb · 20-min cron · Discord</span>
+      </a>
+      <a href="/sports-cards.html" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(56,189,248,0.04);" onmouseover="this.style.borderColor='#38bdf8'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">🏀</span><strong style="font-size:14px;">Sports Cards</strong><span style="margin-left:auto;font-size:9px;color:var(--text-mute);font-family:monospace;letter-spacing:0.08em;">BETA</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">PSA-graded · NBA/NFL/MLB · 98 cards</span>
+      </a>
+      <a href="https://sports.bpleone.com" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(168,85,247,0.04);" onmouseover="this.style.borderColor='#a855f7'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">🏟️</span><strong style="font-size:14px;">Sports Hub</strong><span style="margin-left:auto;font-size:9px;color:var(--text-mute);font-family:monospace;letter-spacing:0.08em;">LIVE</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">Lakers · Dodgers · Rams · USC</span>
+      </a>
+      <a href="https://betting.bpleone.com" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(248,113,113,0.04);" onmouseover="this.style.borderColor='#f87171'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">🎲</span><strong style="font-size:14px;">Sports Betting</strong><span style="margin-left:auto;font-size:9px;color:var(--text-mute);font-family:monospace;letter-spacing:0.08em;">BETA</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">EV-finder · Kelly sizing · DFS solver</span>
+      </a>
+      <a href="https://options.bpleone.com" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(96,165,250,0.04);" onmouseover="this.style.borderColor='#60a5fa'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">🧮</span><strong style="font-size:14px;">Options Desk</strong><span style="margin-left:auto;font-size:9px;color:var(--text-mute);font-family:monospace;letter-spacing:0.08em;">TOOL</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">Black-Scholes · Greeks · IV surface</span>
+      </a>
+      <a href="#desks" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(251,191,36,0.04);" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">📊</span><strong style="font-size:14px;">Trading Comps</strong><span style="margin-left:auto;font-size:9px;color:var(--text-mute);font-family:monospace;letter-spacing:0.08em;">TOOL</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">IB-style peer comps · DCF · 3 tiers</span>
+      </a>
+      <a href="#desks" style="display:flex;flex-direction:column;gap:4px;padding:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);background:rgba(74,222,128,0.04);" onmouseover="this.style.borderColor='#4ade80'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:20px;">📈</span><strong style="font-size:14px;">Equity Factor</strong><span style="margin-left:auto;font-size:9px;color:var(--text-mute);font-family:monospace;letter-spacing:0.08em;">TOOL</span></div>
+        <span style="font-size:11px;color:var(--text-mute);">multi-factor · momentum · value · quality</span>
+      </a>
+    </div>
+  </div>
+</div>
 
 <!-- Top-of-page data-freshness banner. Hidden when fresh; ORANGE when stale (>6h); RED when very stale (>24h).
      Made deliberately prominent so Brandon (and any visitor) can't miss when prices are stale. -->
@@ -2202,6 +2249,13 @@
 </style>
 
 <!-- ============ LIVE TICKER TAPE ============ -->
+<!-- NOTE 2026-05-21: ticker reads from homepage_feed.json which is committed
+     by pokemon-tcg-trading-desk live_refresh cron. That cron is PAUSED until
+     June 1 to fit GH Actions budget (was eating 4860 min/mo vs 2000 limit).
+     Cards on ticker may show 5-day-old prices and wrong-product matches
+     until either (a) manual workflow_dispatch on live_refresh, or
+     (b) June 1 reset + restored 2/day cron. Brandon: see pikachu-hunter
+     repo for the corrected price-reconciliation logic to port back. -->
 <div class="tape-wrap">
   <div class="tape-track" id="tape-track">
     <span class="tape-item skeleton">⏳ Loading live tape…</span>
@@ -2668,65 +2722,38 @@
       <div class="proof-item"><div class="num">28%</div><div class="label">LT Tax Modeling</div></div>
     </div>
 
-    <div class="pricing-grid">
-
-      <div class="price-card">
-        <div class="price-tier">Free Demo</div>
-        <div class="price-amount">$0<span class="per">/ forever</span></div>
-        <div class="price-tagline">Try before you buy. Watermarked prices.</div>
-        <ul class="price-features">
-          <li>Top-level watchlist preview</li>
-          <li>5 BUY signals visible</li>
-          <li>Quant scoring methodology</li>
-          <li class="no">Live prices</li>
-          <li class="no">All 774 cards</li>
-          <li class="no">Inventory P&L tracking</li>
-          <li class="no">Daily alerts</li>
-          <li class="no">Tax reports</li>
-        </ul>
-        <a href="https://pokemon.bpleone.com" class="price-cta outline" target="_blank">Try Demo →</a>
-      </div>
-
-      <div class="price-card featured">
-        <div class="price-tier">Pro Trader</div>
-        <div class="price-amount">$29<span class="per">/ month</span></div>
-        <div class="price-tagline">For serious flippers building a portfolio.</div>
-        <ul class="price-features">
-          <li>All 774 cards — live prices (4h refresh)</li>
-          <li>5 budget brackets ($0-100 → $1000+)</li>
-          <li>🔍 Buy/Sell Verdict engine (80/90/95 MV)</li>
-          <li>🎯 Trade of the Day (live on homepage)</li>
-          <li>🏆 Top 500 searchable price index</li>
-          <li>📦 Crack-It sealed product EV calculator</li>
-          <li>🛡️ PSA Cert Verifier (registry lookup)</li>
-          <li>🔬 Transparent Price Audit dashboard</li>
-          <li>Position sizer w/ capital allocation</li>
-          <li>Inventory P&L tracking</li>
-          <li>IRS Form 8949 / Schedule D tax reports</li>
-          <li>Cancel anytime</li>
-        </ul>
-        <a href="mailto:brandonpleone@gmail.com?subject=Pro%20Subscription%20Request" class="price-cta">Subscribe →</a>
-      </div>
-
-      <div class="price-card">
-        <div class="price-tier">Desk Elite</div>
-        <div class="price-amount">$99<span class="per">/ month</span></div>
-        <div class="price-tagline">For LCS owners, vault buyers, big bankrolls.</div>
-        <ul class="price-features">
-          <li>Everything in Pro</li>
-          <li>Cross-marketplace arbitrage scanner</li>
-          <li>PSA Population spike alerts</li>
-          <li>Reddit / Twitter buzz feed</li>
-          <li>1:1 onboarding call with Brandon</li>
-          <li>Direct Discord DM access</li>
-          <li>Multi-user seat (you + partner)</li>
-          <li>Priority feature requests</li>
-          <li>White-glove support</li>
-        </ul>
-        <a href="mailto:brandonpleone@gmail.com?subject=Elite%20Application" class="price-cta outline">Apply for Elite →</a>
-      </div>
-
+    <!-- BETA — paywall removed 2026-05-21. All features unlocked for every
+         visitor. Brandon: "make all the features free right now we have
+         nothing to go off of when i check". Future-tier copy preserved
+         under <details> so the original positioning isn't lost if you
+         want to flip the paywall back on later. -->
+    <div style="border:1px solid #4ade8055;border-radius:12px;padding:24px;background:linear-gradient(180deg,rgba(74,222,128,0.06),transparent);text-align:center;margin:0 auto;max-width:760px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#4ade80;font-weight:700;margin-bottom:10px;">🟢 BETA · EVERYTHING UNLOCKED · NO PAYWALL</div>
+      <h3 style="margin:0 0 12px;font-size:26px;">All features free during beta.</h3>
+      <p style="color:var(--text-mute);margin:0 0 20px;font-size:15px;line-height:1.5;">
+        Full 774-card live dataset · 4h refresh · BUY/SELL verdicts · Crack-It EV calculator · PSA cert verifier · Transparent Price Audit · Inventory P&L · IRS-ready tax exports · Discord alerts · cross-marketplace arbitrage · PSA pop spike alerts.<br>
+        <strong style="color:var(--text);">No tier locks. No watermarks. No "5 visible BUYs" cap.</strong> Use the full desk, give feedback, help shape pricing later.
+      </p>
+      <a href="https://pokemon-tcg-trading-desk.streamlit.app" target="_blank" rel="noopener" class="cta-primary" style="display:inline-flex;align-items:center;gap:10px;padding:14px 24px;background:var(--gold);color:#0a0e1a;font-weight:700;border-radius:8px;text-decoration:none;">
+        🎴 Open the Full Desk →
+      </a>
+      <p style="margin:18px 0 0;font-size:12px;color:var(--text-mute);">
+        Found something broken? <a href="mailto:brandonpleone@gmail.com?subject=bpleone.com%20feedback" style="color:var(--gold);">brandonpleone@gmail.com</a> · we read every email.
+      </p>
     </div>
+
+    <details style="margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto;border:1px solid var(--border);border-radius:8px;padding:14px 18px;">
+      <summary style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;color:var(--text-mute);text-transform:uppercase;">Future pricing reference (when beta ends) ↓</summary>
+      <div style="margin-top:18px;color:var(--text-mute);font-size:13px;line-height:1.6;">
+        Planned post-beta tiers (subject to change based on user feedback):
+        <ul style="margin:10px 0 0;padding-left:20px;">
+          <li><strong style="color:var(--text);">Free Demo</strong> $0/forever — preview tier, 5 BUYs visible, watermarked.</li>
+          <li><strong style="color:var(--gold);">Pro Trader</strong> $29/mo — all 774 cards live, Buy/Sell engine, Trade of the Day, Crack-It calc, PSA verifier, Price Audit, position sizer, P&L, tax reports.</li>
+          <li><strong style="color:#a855f7;">Desk Elite</strong> $99/mo — everything in Pro + arbitrage scanner, pop spike alerts, Reddit/Twitter buzz, 1:1 onboarding, Discord DM, multi-seat, priority requests.</li>
+        </ul>
+        <em>Final pricing TBD after beta — current users likely get a grandfathered discount.</em>
+      </div>
+    </details>
   </div>
 </section>
 
