@@ -225,8 +225,17 @@ function render() {
   (rows.length > 500 ? '<tr><td colspan="8" style="text-align:center;padding:14px;color:var(--text-mute);">Showing first 500 of ' + rows.length + '. Refine search to narrow down.</td></tr>' : '');
 }
 
-fetch('/catalog_audit.json?t=' + Date.now())
-  .then(r => r.json())
+const AUDIT_URLS = [
+  '/catalog_audit.json',
+  'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/data/catalog_audit.json',
+];
+function tryFetchAudit(i) {
+  if (i >= AUDIT_URLS.length) return Promise.reject('all sources failed');
+  return fetch(AUDIT_URLS[i] + '?t=' + Date.now())
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .catch(() => tryFetchAudit(i + 1));
+}
+tryFetchAudit(0)
   .then(d => {
     AUDIT_ROWS = d.rows || [];
     renderSummary(d.summary || {}, AUDIT_ROWS.length);

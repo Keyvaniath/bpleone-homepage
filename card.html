@@ -657,14 +657,21 @@
   // Brandon: "why is the data wrong if we have 3 APIs" — this verdict answers
   // that for every card in a single tag the user can see.
   window.__catalogAudit = {};
+  const AUDIT_URLS = [
+    '/catalog_audit.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/data/catalog_audit.json',
+  ];
+  function tryFetchAudit(i) {
+    if (i >= AUDIT_URLS.length) return Promise.resolve(null);
+    return fetch(AUDIT_URLS[i] + '?t=' + Date.now())
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .catch(() => tryFetchAudit(i + 1));
+  }
   function loadCatalogAudit() {
-    return fetch('/catalog_audit.json?t=' + Date.now())
-      .then(r => r.ok ? r.json() : null)
-      .then(d => {
-        if (!d || !d.rows) return;
-        d.rows.forEach(r => { window.__catalogAudit[r.card_id] = r; });
-      })
-      .catch(() => {});
+    return tryFetchAudit(0).then(d => {
+      if (!d || !d.rows) return;
+      d.rows.forEach(r => { window.__catalogAudit[r.card_id] = r; });
+    });
   }
 
   function catalogVerdictBanner(card) {
