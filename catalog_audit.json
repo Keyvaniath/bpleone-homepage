@@ -1,9 +1,9 @@
 {
   "summary": {
     "CATALOG_HIGH": 112,
-    "CATALOG_LOW": 189,
+    "CATALOG_LOW": 188,
     "NO_LIVE_DATA": 241,
-    "ALIGNED": 232
+    "ALIGNED": 233
   },
   "rows": [
     {
@@ -13,26 +13,12 @@
       "card_num": "Promo",
       "variant": "PSA 4",
       "wb_price": 850000.0,
-      "live_price": 197261.51,
+      "live_price": 197364.01,
       "source": "pricecharting:fallback_grade_7",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $850000 but market only $197262 (0.23\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $850000 but market only $197364 (0.23\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 652738.49
-    },
-    {
-      "card_id": "X510",
-      "name": "Charizard 1st Ed Shadowless PSA 10",
-      "set": "Base Set 1st Edition Shadowless",
-      "card_num": "4/102",
-      "variant": "PSA 10",
-      "wb_price": 200000.0,
-      "live_price": 534250.0,
-      "source": "pricecharting:psa10",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $534250 but workbook only $200000 (2.67\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 334250.0
+      "dollar_impact": 652635.99
     },
     {
       "card_id": "X508",
@@ -41,12 +27,26 @@
       "card_num": "Promo",
       "variant": "PSA 7",
       "wb_price": 450000.0,
-      "live_price": 197261.51,
+      "live_price": 197364.01,
       "source": "pricecharting:psa7",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $450000 but market only $197262 (0.44\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $450000 but market only $197364 (0.44\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 252738.49
+      "dollar_impact": 252635.99
+    },
+    {
+      "card_id": "X510",
+      "name": "Charizard 1st Ed Shadowless PSA 10",
+      "set": "Base Set 1st Edition Shadowless",
+      "card_num": "4/102",
+      "variant": "PSA 10",
+      "wb_price": 200000.0,
+      "live_price": 421925.16,
+      "source": "pricecharting:psa10",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $421925 but workbook only $200000 (2.11\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 221925.15999999997
     },
     {
       "card_id": "V100",
@@ -55,12 +55,12 @@
       "card_num": "\u2014",
       "variant": "PSA 7",
       "wb_price": 85000.0,
-      "live_price": 197261.51,
+      "live_price": 197364.01,
       "source": "pricecharting:psa7",
       "verdict": "CATALOG_LOW",
-      "reason": "market $197262 but workbook only $85000 (2.32\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $197364 but workbook only $85000 (2.32\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 112261.51000000001
+      "dollar_impact": 112364.01000000001
     },
     {
       "card_id": "V019",
@@ -97,12 +97,12 @@
       "card_num": "9/111",
       "variant": "PSA 10",
       "wb_price": 22000.0,
-      "live_price": 67580.84,
+      "live_price": 65493.94,
       "source": "pricecharting:psa10",
       "verdict": "CATALOG_LOW",
-      "reason": "market $67581 but workbook only $22000 (3.07\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $65494 but workbook only $22000 (2.98\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 45580.84
+      "dollar_impact": 43493.94
     },
     {
       "card_id": "V020",
@@ -125,12 +125,12 @@
       "card_num": "4/102",
       "variant": "BGS 9",
       "wb_price": 16000.0,
-      "live_price": 52000.0,
+      "live_price": 48123.3,
       "source": "pricecharting:fallback_grade_9",
       "verdict": "CATALOG_LOW",
-      "reason": "market $52000 but workbook only $16000 (3.25\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $48123 but workbook only $16000 (3.01\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 36000.0
+      "dollar_impact": 32123.300000000003
     },
     {
       "card_id": "Z103",
@@ -147,6 +147,20 @@
       "dollar_impact": 25330.26
     },
     {
+      "card_id": "V004",
+      "name": "Charizard",
+      "set": "Base Set Unlimited",
+      "card_num": "4/102",
+      "variant": "PSA 10",
+      "wb_price": 8000.0,
+      "live_price": 29643.13,
+      "source": "pricecharting:psa10",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $29643 but workbook only $8000 (3.71\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 21643.13
+    },
+    {
       "card_id": "V027",
       "name": "Rayquaza Gold Star",
       "set": "EX Deoxys",
@@ -161,46 +175,18 @@
       "dollar_impact": 21505.2
     },
     {
-      "card_id": "V004",
-      "name": "Charizard",
-      "set": "Base Set Unlimited",
-      "card_num": "4/102",
-      "variant": "PSA 10",
-      "wb_price": 8000.0,
-      "live_price": 28272.5,
-      "source": "pricecharting:psa10",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $28272 but workbook only $8000 (3.53\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 20272.5
-    },
-    {
-      "card_id": "V001",
-      "name": "Charizard",
-      "set": "Base Set 1st Edition Shadowless",
-      "card_num": "4/102",
-      "variant": "PSA 9",
-      "wb_price": 32000.0,
-      "live_price": 52000.0,
-      "source": "pricecharting:psa9",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $52000 but workbook only $32000 (1.62\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 20000.0
-    },
-    {
       "card_id": "V002",
       "name": "Charizard",
       "set": "Base Set 1st Edition Shadowless",
       "card_num": "4/102",
       "variant": "PSA 8",
       "wb_price": 9500.0,
-      "live_price": 28000.0,
+      "live_price": 28640.0,
       "source": "pricecharting:psa8",
       "verdict": "CATALOG_LOW",
-      "reason": "market $28000 but workbook only $9500 (2.95\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $28640 but workbook only $9500 (3.01\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 18500.0
+      "dollar_impact": 19140.0
     },
     {
       "card_id": "X501",
@@ -209,12 +195,26 @@
       "card_num": "4/102",
       "variant": "PSA 8",
       "wb_price": 9500.0,
-      "live_price": 28000.0,
+      "live_price": 28640.0,
       "source": "pricecharting:psa8",
       "verdict": "CATALOG_LOW",
-      "reason": "market $28000 but workbook only $9500 (2.95\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $28640 but workbook only $9500 (3.01\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 18500.0
+      "dollar_impact": 19140.0
+    },
+    {
+      "card_id": "V001",
+      "name": "Charizard",
+      "set": "Base Set 1st Edition Shadowless",
+      "card_num": "4/102",
+      "variant": "PSA 9",
+      "wb_price": 32000.0,
+      "live_price": 48123.3,
+      "source": "pricecharting:psa9",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $48123 but workbook only $32000 (1.50\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 16123.300000000003
     },
     {
       "card_id": "X507",
@@ -251,12 +251,12 @@
       "card_num": "100/101",
       "variant": "PSA 10",
       "wb_price": 18000.0,
-      "live_price": 7881.98,
+      "live_price": 8164.4,
       "source": "pricecharting:fallback_grade_9",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $18000 but market only $7882 (0.44\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $18000 but market only $8164 (0.45\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 10118.02
+      "dollar_impact": 9835.6
     },
     {
       "card_id": "X506",
@@ -335,26 +335,12 @@
       "card_num": "\u2014",
       "variant": "PSA 9",
       "wb_price": 12500.0,
-      "live_price": 19850.31,
+      "live_price": 19789.37,
       "source": "pricecharting:fallback_grade_8",
       "verdict": "CATALOG_LOW",
-      "reason": "market $19850 but workbook only $12500 (1.59\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $19789 but workbook only $12500 (1.58\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 7350.310000000001
-    },
-    {
-      "card_id": "Z001",
-      "name": "Lugia",
-      "set": "Neo Genesis",
-      "card_num": "9/111",
-      "variant": "PSA 10",
-      "wb_price": 12500.0,
-      "live_price": 19651.0,
-      "source": "pricecharting:psa10",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $19651 but workbook only $12500 (1.57\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 7151.0
+      "dollar_impact": 7289.369999999999
     },
     {
       "card_id": "V017",
@@ -531,12 +517,12 @@
       "card_num": "2/102",
       "variant": "PSA 9",
       "wb_price": 6500.0,
-      "live_price": 9814.27,
+      "live_price": 9814.43,
       "source": "pricecharting:psa9",
       "verdict": "CATALOG_LOW",
       "reason": "market $9814 but workbook only $6500 (1.51\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 3314.2700000000004
+      "dollar_impact": 3314.4300000000003
     },
     {
       "card_id": "Z044",
@@ -4228,7 +4214,7 @@
       "variant": "Sealed",
       "wb_price": 425000.0,
       "live_price": null,
-      "source": "rejected_sanity_pricecharting:raw_$11150_vs_wb_$425000",
+      "source": "rejected_sanity_pricecharting:raw_$11444_vs_wb_$425000",
       "verdict": "NO_LIVE_DATA",
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
@@ -4354,7 +4340,7 @@
       "variant": "Sealed",
       "wb_price": 6500.0,
       "live_price": null,
-      "source": "rejected_sanity_pricecharting:raw_$242_vs_wb_$6500",
+      "source": "rejected_sanity_pricecharting:raw_$256_vs_wb_$6500",
       "verdict": "NO_LIVE_DATA",
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
@@ -7601,10 +7587,10 @@
       "card_num": "4/102",
       "variant": "PSA 9",
       "wb_price": 9500.0,
-      "live_price": 9187.92,
+      "live_price": 8575.0,
       "source": "pricecharting:psa9",
       "verdict": "ALIGNED",
-      "reason": "live $9188 vs wb $9500 (ratio 0.97)",
+      "reason": "live $8575 vs wb $9500 (ratio 0.90)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9705,6 +9691,20 @@
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
       "reason": "live $14839 vs wb $15000 (ratio 0.99)",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
+      "card_id": "Z001",
+      "name": "Lugia",
+      "set": "Neo Genesis",
+      "card_num": "9/111",
+      "variant": "PSA 10",
+      "wb_price": 12500.0,
+      "live_price": 12500,
+      "source": "wb_no_sources",
+      "verdict": "ALIGNED",
+      "reason": "live $12500 vs wb $12500 (ratio 1.00)",
       "severity": 0,
       "dollar_impact": 0
     },
