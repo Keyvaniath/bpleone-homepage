@@ -632,6 +632,7 @@
             ppLink(card) +
           '</div>' +
 
+          catalogVerdictBanner(card) +
           whyThisPricePanel(card) +
 
           '<h2 class="section">Card stats</h2>' +
@@ -650,12 +651,56 @@
       .catch(() => tryFetch(urls, i + 1));
   }
 
+  // Catalog audit data — answers "why is THIS price what it is" with a
+  // verdict (ALIGNED / CATALOG_HIGH / CATALOG_LOW / WRONG_VARIANT / NO_LIVE_DATA).
+  // Built by pokemon-tcg-trading-desk/scripts/audit_catalog_vs_market.py.
+  // Brandon: "why is the data wrong if we have 3 APIs" — this verdict answers
+  // that for every card in a single tag the user can see.
+  window.__catalogAudit = {};
+  function loadCatalogAudit() {
+    return fetch('/catalog_audit.json?t=' + Date.now())
+      .then(r => r.ok ? r.json() : null)
+      .then(d => {
+        if (!d || !d.rows) return;
+        d.rows.forEach(r => { window.__catalogAudit[r.card_id] = r; });
+      })
+      .catch(() => {});
+  }
+
+  function catalogVerdictBanner(card) {
+    if (!card) return '';
+    const aud = window.__catalogAudit[card.id];
+    if (!aud) return '';
+    const v = aud.verdict;
+    if (v === 'ALIGNED') return '';  // no banner needed — data is right
+    const cfg = {
+      'CATALOG_HIGH':  {color:'#fbbf24', bg:'rgba(251,191,36,0.08)', label:'Workbook estimate too high', expl:'Your workbook value is more than 2× the current live market price. The catalog estimate was likely set during a hype peak. Live data is more accurate than the workbook for this card.'},
+      'CATALOG_LOW':   {color:'#4ade80', bg:'rgba(74,222,128,0.08)', label:'Market hotter than workbook', expl:'Live market is 50%+ above your workbook estimate. You may be underpricing your target — opportunity to raise the workbook value.'},
+      'WRONG_VARIANT': {color:'#f87171', bg:'rgba(248,113,113,0.08)', label:'Catalog label mismatch', expl:'Your catalog says one variant (e.g. SIR/Alt Art) but PPT\'s product rarity disagrees. Either rename the catalog entry or repoint to the correct PPT product via data/manual_ppt_ids.json.'},
+      'NO_LIVE_DATA':  {color:'#94a3b8', bg:'rgba(148,163,184,0.08)', label:'No live source — workbook fallback', expl:'PC, PPT, TCGPlayer, and eBay all returned no usable data for this card. Common for vintage grails, sealed product, and very recent releases (Shrouded Fable, Stellar Crown, Temporal Forces). Price shown is your workbook estimate, not a live market price.'},
+    }[v];
+    if (!cfg) return '';
+    return '<h2 class="section">Catalog audit</h2>' +
+      '<div class="body-card" style="background:' + cfg.bg + ';border:1px solid ' + cfg.color + '60;">' +
+        '<div style="display:flex;gap:10px;align-items:flex-start;">' +
+          '<div style="font-size:11px;font-family:monospace;letter-spacing:0.1em;padding:3px 8px;border:1px solid ' + cfg.color + ';color:' + cfg.color + ';border-radius:4px;font-weight:700;white-space:nowrap;">' + v + '</div>' +
+          '<div style="flex:1;">' +
+            '<div style="font-weight:700;font-size:14px;margin-bottom:6px;color:' + cfg.color + ';">' + cfg.label + '</div>' +
+            '<div style="font-size:13px;color:var(--text-dim);line-height:1.5;">' + cfg.expl + '</div>' +
+            (aud.reason ? '<div style="margin-top:8px;padding:6px 10px;background:rgba(0,0,0,0.25);border-radius:4px;font-size:11px;font-family:monospace;color:var(--text-mute);">' + aud.reason + '</div>' : '') +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
   function load() {
     const id = getParam('id') || getParam('card');
     if (!id) {
       renderCard(null);
       return;
     }
+    // Load catalog_audit.json + cards_full.json in parallel; render once cards arrive.
+    loadCatalogAudit();
     tryFetch(CARDS_URLS, 0)
       .then(data => {
         const card = (data && data.cards) ? data.cards[id] : null;
