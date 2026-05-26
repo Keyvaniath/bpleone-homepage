@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalog vs Market Audit · bpleone.com</title>
+<meta name="description" content="Per-card verdict on whether the live price or the workbook estimate is more accurate. Answers 'why is this price what it is' for all 774 cards.">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-card: #131826;
+    --text: #e7e9ee;
+    --text-dim: #a8aebd;
+    --text-mute: #6b7280;
+    --border: #1f2937;
+    --gold: #f5c842;
+    --green: #4ade80;
+    --red: #f87171;
+    --amber: #fbbf24;
+    --blue: #60a5fa;
+    --slate: #94a3b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 18px; }
+  nav { border-bottom: 1px solid var(--border); padding: 14px 0; background: var(--bg); position: sticky; top: 0; z-index: 10; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .nav-brand { font-weight: 800; font-size: 17px; letter-spacing: -0.01em; }
+  .dot { color: var(--gold); }
+  .nav-links a { color: var(--text-dim); text-decoration: none; margin-left: 18px; font-size: 13px; font-weight: 500; }
+  .nav-links a:hover { color: var(--gold); }
+  h1 { font-size: 28px; margin: 28px 0 8px; }
+  .lead { color: var(--text-dim); font-size: 15px; margin-bottom: 24px; max-width: 760px; }
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin: 22px 0; }
+  .summary-card { padding: 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-card); cursor: pointer; transition: border-color 0.1s, transform 0.1s; }
+  .summary-card:hover { border-color: var(--gold); transform: translateY(-1px); }
+  .summary-card.active { border-color: var(--gold); background: rgba(245,200,66,0.06); }
+  .sc-label { font-size: 11px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mute); font-weight: 700; }
+  .sc-count { font-size: 32px; font-weight: 800; margin: 6px 0 2px; }
+  .sc-pct { font-size: 12px; color: var(--text-mute); }
+  .verdict-aligned       { color: var(--green); }
+  .verdict-catalog_high  { color: var(--amber); }
+  .verdict-catalog_low   { color: var(--green); }
+  .verdict-wrong_variant { color: var(--red); }
+  .verdict-no_live_data  { color: var(--slate); }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0; }
+  .controls input, .controls select { background: var(--bg-card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 6px; font-family: inherit; font-size: 13px; min-width: 200px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 10px 8px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-mute); font-weight: 700; position: sticky; top: 58px; z-index: 1; }
+  td { padding: 10px 8px; border-bottom: 1px solid var(--border); }
+  tr:hover td { background: rgba(255,255,255,0.02); }
+  td.num { text-align: right; font-family: 'JetBrains Mono', monospace; }
+  td.verdict { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 10px; letter-spacing: 0.06em; white-space: nowrap; }
+  .v-pill { padding: 3px 8px; border-radius: 4px; border: 1px solid; display: inline-block; }
+  td .card-link { color: var(--gold); text-decoration: none; }
+  td .card-link:hover { text-decoration: underline; }
+  .footer { margin-top: 40px; color: var(--text-mute); font-size: 12px; padding: 30px 0; border-top: 1px solid var(--border); }
+  .footer a { color: var(--text-dim); }
+  @media (max-width: 720px) {
+    th, td { padding: 6px 4px; font-size: 11px; }
+    th:nth-child(3), td:nth-child(3) { display: none; }  /* hide set */
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="nav-brand">bpleone<span class="dot">.</span>com</div>
+    <div class="nav-links">
+      <a href="/">🏠 Home</a>
+      <a href="/cards.html">📇 Cards</a>
+      <a href="/audit.html" style="color:var(--gold);">🔬 Audit</a>
+      <a href="/methodology.html">📐 Method</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h1>🔬 Catalog vs Market Audit</h1>
+  <p class="lead">
+    Per-card verdict on whether the displayed price reflects market reality or a stale workbook estimate.
+    When a card looks "wrong," check here first — odds are the system is correct and the workbook is the
+    out-of-date party. <strong>Click any verdict tile to filter.</strong>
+  </p>
+
+  <div class="summary" id="summary">
+    <div class="summary-card" data-loading><div class="sc-label">Loading…</div></div>
+  </div>
+
+  <div class="controls">
+    <input id="search" type="text" placeholder="🔍 Filter by name, set, or CardID…">
+    <select id="sort">
+      <option value="impact">Sort: dollar impact (desc)</option>
+      <option value="name">Sort: name</option>
+      <option value="wb_desc">Sort: workbook $ (desc)</option>
+      <option value="live_desc">Sort: live $ (desc)</option>
+    </select>
+    <span style="color:var(--text-mute);font-size:12px;align-self:center;" id="result-count">—</span>
+  </div>
+
+  <div style="overflow-x:auto;">
+    <table id="audit-table">
+      <thead>
+        <tr>
+          <th>Card</th>
+          <th>Set</th>
+          <th>Variant</th>
+          <th class="num">Workbook</th>
+          <th class="num">Live</th>
+          <th class="num">Δ%</th>
+          <th>Verdict</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody id="audit-tbody">
+        <tr><td colspan="8" style="text-align:center;padding:24px;color:var(--text-mute);">Loading audit data…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    Audit refreshed by <code>scripts/audit_catalog_vs_market.py</code> after every <code>live_refresh</code> cron.
+    Verdict definitions: see <a href="/methodology.html#audit">methodology · audit</a>.
+    Direct JSON: <a href="/catalog_audit.json">catalog_audit.json</a>.
+  </div>
+</div>
+
+<script>
+let AUDIT_ROWS = [];
+let CURRENT_FILTER = null;
+const VERDICT_COLORS = {
+  ALIGNED:        {color: 'var(--green)',  bg: 'rgba(74,222,128,0.10)'},
+  CATALOG_HIGH:   {color: 'var(--amber)',  bg: 'rgba(251,191,36,0.12)'},
+  CATALOG_LOW:    {color: 'var(--green)',  bg: 'rgba(74,222,128,0.08)'},
+  WRONG_VARIANT:  {color: 'var(--red)',    bg: 'rgba(248,113,113,0.10)'},
+  NO_LIVE_DATA:   {color: 'var(--slate)',  bg: 'rgba(148,163,184,0.10)'},
+};
+
+function fmtMoney(n) {
+  if (!n) return '—';
+  return '$' + Math.round(n).toLocaleString();
+}
+
+function fmtPct(wb, live) {
+  if (!wb || !live) return '—';
+  const pct = ((live - wb) / wb) * 100;
+  const sign = pct > 0 ? '+' : '';
+  const cls = pct > 10 ? 'verdict-catalog_low' : (pct < -10 ? 'verdict-catalog_high' : '');
+  return '<span class="' + cls + '">' + sign + pct.toFixed(0) + '%</span>';
+}
+
+function renderSummary(summary, total) {
+  const order = ['ALIGNED', 'CATALOG_LOW', 'CATALOG_HIGH', 'WRONG_VARIANT', 'NO_LIVE_DATA'];
+  const el = document.getElementById('summary');
+  el.innerHTML = '';
+  // All-cards tile
+  const allTile = document.createElement('div');
+  allTile.className = 'summary-card' + (!CURRENT_FILTER ? ' active' : '');
+  allTile.innerHTML = '<div class="sc-label">ALL CARDS</div><div class="sc-count">' + total + '</div><div class="sc-pct">click to clear filter</div>';
+  allTile.onclick = () => { CURRENT_FILTER = null; render(); };
+  el.appendChild(allTile);
+  order.forEach(v => {
+    const n = summary[v] || 0;
+    if (n === 0) return;
+    const cfg = VERDICT_COLORS[v];
+    const tile = document.createElement('div');
+    tile.className = 'summary-card' + (CURRENT_FILTER === v ? ' active' : '');
+    tile.style.borderLeft = '3px solid ' + cfg.color;
+    tile.innerHTML =
+      '<div class="sc-label" style="color:' + cfg.color + '">' + v.replace(/_/g, ' ') + '</div>' +
+      '<div class="sc-count" style="color:' + cfg.color + '">' + n + '</div>' +
+      '<div class="sc-pct">' + (n / total * 100).toFixed(0) + '% of catalog</div>';
+    tile.onclick = () => { CURRENT_FILTER = v; render(); };
+    el.appendChild(tile);
+  });
+}
+
+function render() {
+  const q = (document.getElementById('search').value || '').toLowerCase().trim();
+  const sortMode = document.getElementById('sort').value;
+  let rows = AUDIT_ROWS.slice();
+  if (CURRENT_FILTER) rows = rows.filter(r => r.verdict === CURRENT_FILTER);
+  if (q) {
+    rows = rows.filter(r => (
+      (r.name || '').toLowerCase().includes(q) ||
+      (r.set || '').toLowerCase().includes(q) ||
+      (r.card_id || '').toLowerCase().includes(q)
+    ));
+  }
+  // Sort
+  if (sortMode === 'name') rows.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+  else if (sortMode === 'wb_desc') rows.sort((a, b) => (b.wb_price || 0) - (a.wb_price || 0));
+  else if (sortMode === 'live_desc') rows.sort((a, b) => (b.live_price || 0) - (a.live_price || 0));
+  else rows.sort((a, b) => (b.dollar_impact || 0) - (a.dollar_impact || 0));
+
+  document.getElementById('result-count').textContent =
+    rows.length + ' card' + (rows.length === 1 ? '' : 's') +
+    (CURRENT_FILTER ? ' · filtered: ' + CURRENT_FILTER : '');
+
+  const tbody = document.getElementById('audit-tbody');
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;padding:24px;color:var(--text-mute);">No cards match this filter.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.slice(0, 500).map(r => {
+    const cfg = VERDICT_COLORS[r.verdict] || {color: 'var(--text-mute)'};
+    return '<tr>' +
+      '<td><a class="card-link" href="/card.html?id=' + r.card_id + '">' + r.card_id + ' · ' + (r.name || '').substring(0, 40) + '</a></td>' +
+      '<td>' + (r.set || '').substring(0, 25) + '</td>' +
+      '<td>' + (r.variant || '') + '</td>' +
+      '<td class="num">' + fmtMoney(r.wb_price) + '</td>' +
+      '<td class="num">' + fmtMoney(r.live_price) + '</td>' +
+      '<td class="num">' + fmtPct(r.wb_price, r.live_price) + '</td>' +
+      '<td class="verdict"><span class="v-pill" style="color:' + cfg.color + ';border-color:' + cfg.color + '60;background:' + cfg.bg + ';">' + r.verdict + '</span></td>' +
+      '<td style="color:var(--text-mute);font-size:11px;">' + (r.reason || '').substring(0, 70) + '</td>' +
+      '</tr>';
+  }).join('') +
+  (rows.length > 500 ? '<tr><td colspan="8" style="text-align:center;padding:14px;color:var(--text-mute);">Showing first 500 of ' + rows.length + '. Refine search to narrow down.</td></tr>' : '');
+}
+
+fetch('/catalog_audit.json?t=' + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    AUDIT_ROWS = d.rows || [];
+    renderSummary(d.summary || {}, AUDIT_ROWS.length);
+    render();
+  })
+  .catch(e => {
+    document.getElementById('audit-tbody').innerHTML =
+      '<tr><td colspan="8" style="text-align:center;padding:24px;color:var(--red);">' +
+      'Audit data unavailable. Run <code>python scripts/audit_catalog_vs_market.py</code> in pokemon-tcg-trading-desk.' +
+      '</td></tr>';
+    console.error(e);
+  });
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('sort').addEventListener('change', render);
+</script>
+</body>
+</html>
