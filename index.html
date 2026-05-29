@@ -2838,27 +2838,25 @@
 <script>
 /* HOMEPAGE_FEED_JS */
 (function() {
-  // 2026-05-29 FIX: raw.github is PRIMARY, same-origin is fallback.
-  // ROOT CAUSE of "data not live for weeks": the bpleone-homepage repo has
-  // no sync workflow, so its same-origin JSON copies were frozen at a manual
-  // 2026-05-19 snapshot. The trading-desk cron refreshes the repo daily, but
-  // these feeds tried the STALE same-origin copy FIRST and never fell through
-  // (the file existed, just old). Flipping the order means the homepage always
-  // reads the freshest data committed by the daily cron. Same-origin stays as
-  // an offline fallback for when raw.github is rate-limited/unreachable.
+  // 2026-05-29: same-origin FIRST. The data pipeline now SYNCS fresh JSON into
+  // this public repo on every cron (scripts/sync_to_public_site.py), so the
+  // same-origin copy is current + Cloudflare-CDN-fast. The raw.github fallback
+  // points at the PRIVATE trading-desk repo which 404s for unauthenticated
+  // reads — it's a harmless dead fallback kept only for the (impossible-while-
+  // private) case; the real freshness guarantee is the sync step.
   const RAW = 'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/';
-  const FEED_URLS       = [RAW + 'homepage_feed.json',  '/homepage_feed.json'];
-  const BRIEF_URLS      = [RAW + 'market_brief.json',   '/market_brief.json'];
-  const SETS_URLS       = [RAW + 'featured_sets.json',  '/featured_sets.json'];
-  const FW_URLS         = [RAW + 'future_winners.json', '/future_winners.json'];
-  const LEARN_URLS      = [RAW + 'learning_summary.json', '/learning_summary.json'];
-  const ARB_URLS        = [RAW + 'arbitrage_v2.json',   '/arbitrage_v2.json'];
-  const JOURNAL_URLS    = [RAW + 'trading_journal.json', '/trading_journal.json'];
-  const SCOREBOARD_URLS = [RAW + 'past_picks.json',     '/past_picks.json'];
-  const SETHEAT_URLS    = [RAW + 'set_heat.json',       '/set_heat.json'];
-  const SEALED_URLS     = [RAW + 'sealed_market.json',  '/sealed_market.json'];
-  const HEALTH_URLS     = [RAW + 'pipeline_health.json', '/pipeline_health.json'];
-  const CARDS_FULL_URLS = [RAW + 'cards_full.json',     '/cards_full.json'];
+  const FEED_URLS       = ['/homepage_feed.json',  RAW + 'homepage_feed.json'];
+  const BRIEF_URLS      = ['/market_brief.json',   RAW + 'market_brief.json'];
+  const SETS_URLS       = ['/featured_sets.json',  RAW + 'featured_sets.json'];
+  const FW_URLS         = ['/future_winners.json', RAW + 'future_winners.json'];
+  const LEARN_URLS      = ['/learning_summary.json', RAW + 'learning_summary.json'];
+  const ARB_URLS        = ['/arbitrage_v2.json',   RAW + 'arbitrage_v2.json'];
+  const JOURNAL_URLS    = ['/trading_journal.json', RAW + 'trading_journal.json'];
+  const SCOREBOARD_URLS = ['/past_picks.json',     RAW + 'past_picks.json'];
+  const SETHEAT_URLS    = ['/set_heat.json',       RAW + 'set_heat.json'];
+  const SEALED_URLS     = ['/sealed_market.json',  RAW + 'sealed_market.json'];
+  const HEALTH_URLS     = ['/pipeline_health.json', RAW + 'pipeline_health.json'];
+  const CARDS_FULL_URLS = ['/cards_full.json',     RAW + 'cards_full.json'];
   const REFRESH_MS = 60 * 1000;
 
   function mdInline(s) {

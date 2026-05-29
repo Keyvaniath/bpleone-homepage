@@ -225,9 +225,11 @@ function render() {
   (rows.length > 500 ? '<tr><td colspan="8" style="text-align:center;padding:14px;color:var(--text-mute);">Showing first 500 of ' + rows.length + '. Refine search to narrow down.</td></tr>' : '');
 }
 
+// 2026-05-29: same-origin FIRST — sync_to_public_site.py copies catalog_audit.json
+// here every refresh, so it's current. raw.github points at the PRIVATE repo (404s).
 const AUDIT_URLS = [
-  'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/data/catalog_audit.json',
   '/catalog_audit.json',
+  'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/data/catalog_audit.json',
 ];
 function tryFetchAudit(i) {
   if (i >= AUDIT_URLS.length) return Promise.reject('all sources failed');

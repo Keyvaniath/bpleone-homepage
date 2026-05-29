@@ -183,11 +183,13 @@
 <script>
 (function() {
   // 2026-05-29: raw.github FIRST — same-origin copy is a stale manual snapshot
-  // (no sync workflow on this repo). Fresh data comes from the trading-desk
-  // cron commit, served via raw.github.
+  // 2026-05-29: same-origin FIRST — the pipeline now syncs fresh cards_full.json
+  // into this public repo every refresh (scripts/sync_to_public_site.py), so the
+  // same-origin copy is current. raw.github points at the PRIVATE repo (404s) and
+  // is just a dead fallback.
   const CARDS_URLS = [
-    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json',
-    '/cards_full.json'
+    '/cards_full.json',
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
   ];
 
   function getParam(name) {
