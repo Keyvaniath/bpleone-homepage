@@ -226,8 +226,8 @@ function render() {
 }
 
 const AUDIT_URLS = [
-  '/catalog_audit.json',
   'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/data/catalog_audit.json',
+  '/catalog_audit.json',
 ];
 function tryFetchAudit(i) {
   if (i >= AUDIT_URLS.length) return Promise.reject('all sources failed');

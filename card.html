@@ -182,9 +182,12 @@
 
 <script>
 (function() {
+  // 2026-05-29: raw.github FIRST — same-origin copy is a stale manual snapshot
+  // (no sync workflow on this repo). Fresh data comes from the trading-desk
+  // cron commit, served via raw.github.
   const CARDS_URLS = [
-    '/cards_full.json',
-    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json'
+    'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/cards_full.json',
+    '/cards_full.json'
   ];
 
   function getParam(name) {
@@ -658,8 +661,8 @@
   // that for every card in a single tag the user can see.
   window.__catalogAudit = {};
   const AUDIT_URLS = [
-    '/catalog_audit.json',
     'https://raw.githubusercontent.com/Keyvaniath/pokemon-tcg-trading-desk/main/data/catalog_audit.json',
+    '/catalog_audit.json',
   ];
   function tryFetchAudit(i) {
     if (i >= AUDIT_URLS.length) return Promise.resolve(null);
