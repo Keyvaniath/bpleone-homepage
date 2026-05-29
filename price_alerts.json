@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-19T01:30:20.017503+00:00",
-  "buy_alerts_count": 54,
-  "sell_alerts_count": 211,
-  "high_score_count": 14,
+  "generated_at": "2026-05-29T14:38:43.488117+00:00",
+  "buy_alerts_count": 57,
+  "sell_alerts_count": 203,
+  "high_score_count": 11,
   "buy_alerts": [
     {
       "cid": "V813",
@@ -104,10 +104,10 @@
       "cid": "X508",
       "name": "Pikachu Illustrator PSA 7",
       "variant": "PSA 7",
-      "live_price": 197261.51,
+      "live_price": 197448.76,
       "buy_target": 360000.0,
       "wb_price": 450000,
-      "discount_pct": 56.2,
+      "discount_pct": 56.1,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pricecharting:psa7"
@@ -281,18 +281,6 @@
       "source": "pricecharting:psa10"
     },
     {
-      "cid": "Z011",
-      "name": "Umbreon",
-      "variant": "PSA 10",
-      "live_price": 940.83,
-      "buy_target": 1360.0,
-      "wb_price": 1700,
-      "discount_pct": 44.7,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa10"
-    },
-    {
       "cid": "JB04",
       "name": "Eevee Heroes Booster (JP single)",
       "variant": "Sealed",
@@ -303,6 +291,18 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
+    },
+    {
+      "cid": "Z011",
+      "name": "Umbreon",
+      "variant": "PSA 10",
+      "live_price": 952.48,
+      "buy_target": 1360.0,
+      "wb_price": 1700,
+      "discount_pct": 44.0,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
     }
   ],
   "sell_alerts": [
@@ -377,6 +377,18 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
+    },
+    {
+      "cid": "V270",
+      "name": "Blastoise PSA 10",
+      "variant": "PSA 10",
+      "live_price": 8136.07,
+      "sell_target": 2035.0,
+      "wb_price": 1850,
+      "premium_pct": 339.8,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa10"
     },
     {
       "cid": "X412",
@@ -523,6 +535,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "V004",
+      "name": "Charizard",
+      "variant": "PSA 10",
+      "live_price": 29643.13,
+      "sell_target": 8800.0,
+      "wb_price": 8000,
+      "premium_pct": 270.5,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa10"
+    },
+    {
       "cid": "Z022",
       "name": "Shining Magikarp",
       "variant": "PSA 10",
@@ -571,65 +595,19 @@
       "source": "pricecharting:psa9"
     },
     {
-      "cid": "V004",
-      "name": "Charizard",
+      "cid": "V040",
+      "name": "Dark Charizard",
       "variant": "PSA 10",
-      "live_price": 28272.5,
-      "sell_target": 8800.0,
-      "wb_price": 8000,
-      "premium_pct": 253.4,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "Q006",
-      "name": "Greninja ex SIR",
-      "variant": "PSA 10",
-      "live_price": 975.0,
-      "sell_target": 314.0,
-      "wb_price": 285,
-      "premium_pct": 242.1,
+      "live_price": 16730.5,
+      "sell_target": 5280.0,
+      "wb_price": 4800,
+      "premium_pct": 248.6,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "DD014",
-      "name": "Pokemon Paradox Rift Booster Box",
-      "variant": "Sealed",
-      "live_price": 562.38,
-      "sell_target": 182.0,
-      "wb_price": 165,
-      "premium_pct": 240.8,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     }
   ],
   "high_score_signals": [
-    {
-      "cid": "M085",
-      "name": "Mega Lucario ex SIR",
-      "variant": "PSA 10",
-      "score": 88,
-      "signal": "STRONG BUY",
-      "live_price": 350.0,
-      "wb_price": 820,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_10"
-    },
-    {
-      "cid": "M046",
-      "name": "Charizard ex SIR",
-      "variant": "PSA 10",
-      "score": 88,
-      "signal": "STRONG BUY",
-      "live_price": 322.5,
-      "wb_price": 1500,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_10"
-    },
     {
       "cid": "M054",
       "name": "Roaring Moon ex SIR",
@@ -686,24 +664,13 @@
       "source": "pc_sweep_grade_10"
     },
     {
-      "cid": "M013",
-      "name": "Charizard VMAX Rainbow",
+      "cid": "M046",
+      "name": "Charizard ex SIR",
       "variant": "PSA 10",
       "score": 87,
       "signal": "STRONG BUY",
-      "live_price": 374.45,
-      "wb_price": 1100,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_10"
-    },
-    {
-      "cid": "M015",
-      "name": "Charizard VSTAR Rainbow",
-      "variant": "PSA 10",
-      "score": 87,
-      "signal": "STRONG BUY",
-      "live_price": 240.0,
-      "wb_price": 680,
+      "live_price": 322.5,
+      "wb_price": 1500,
       "confidence": "OVERRIDE",
       "source": "pc_sweep_grade_10"
     },
@@ -752,13 +719,13 @@
       "source": "pc_sweep_grade_10"
     },
     {
-      "cid": "M072",
-      "name": "Espeon ex SIR",
+      "cid": "M015",
+      "name": "Charizard VSTAR Rainbow",
       "variant": "PSA 10",
-      "score": 80,
+      "score": 83,
       "signal": "STRONG BUY",
-      "live_price": 1149.99,
-      "wb_price": 1400,
+      "live_price": 240.0,
+      "wb_price": 680,
       "confidence": "OVERRIDE",
       "source": "pc_sweep_grade_10"
     }

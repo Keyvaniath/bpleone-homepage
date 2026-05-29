@@ -1,29 +1,27 @@
 {
-  "generated_at": "2026-05-16T20:53:48.887649Z",
-  "date_human": "Saturday, May 16, 2026",
-  "headline": "Tracking **774 cards** \u00b7 **555** live-priced (72% coverage) \u00b7 84 STRONG BUYs flagged today.",
+  "generated_at": "2026-05-29T14:38:45.809367Z",
+  "date_human": "Friday, May 29, 2026",
+  "headline": "Tracking **774 cards** \u00b7 **534** live-priced (69% coverage) \u00b7 53 STRONG BUYs flagged today.",
   "paragraphs": [
-    "Tracking **774 cards** \u00b7 **555** live-priced (72% coverage) \u00b7 84 STRONG BUYs flagged today.",
-    "**Trade of the Day: Charizard V Full Art** (PSA 10) \u2014 $553 live, quant score **75/100**, signal **STRONG BUY**. Champion's Path.",
-    "Top algo picks right now: **Mega Gengar ex SIR**, **Birthday Pikachu Promo**, **Umbreon VMAX (Moonbreon)**. Each scoring 75+ and trading under $5K.",
-    "Algo flags to trim/skip: **Charizard Base Unlimited**, **Umbreon VMAX Alt (Japanese)**, **Mewtwo Base Unlimited**. Score-rank suggests caution.",
-    "Coverage is at **72%** \u2014 the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 219 cards. Real-time 30-day deltas activate after 5 days of live tracking.",
-    "Total tracked-universe market cap: **$3.8M** (~$7k avg per card)."
+    "Tracking **774 cards** \u00b7 **534** live-priced (69% coverage) \u00b7 53 STRONG BUYs flagged today.",
+    "**Trade of the Day: Charizard V Full Art** (PSA 10) \u2014 $553 live, quant score **72/100**, signal **BUY**. Champion's Path.",
+    "Coverage is at **69%** \u2014 the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 240 cards. Real-time 30-day deltas activate after 5 days of live tracking.",
+    "Total tracked-universe market cap: **$3.6M** (~$7k avg per card)."
   ],
   "tldr": [
-    "555 cards live-priced of 774",
-    "84 STRONG BUYs flagged today",
-    "Total mcap $3.8M",
+    "534 cards live-priced of 774",
+    "53 STRONG BUYs flagged today",
+    "Total mcap $3.6M",
     "Trade of the Day: Charizard V Full Art"
   ],
   "stats": {
     "total_cards": 774,
-    "live_matched": 555,
-    "total_mcap": 3826377.0,
-    "avg_d30_pct": 0.1709,
-    "strong_buys": 84,
-    "history_snapshots": 2,
-    "history_age_days": 1.9,
-    "history_overlay_count": 0
+    "live_matched": 534,
+    "total_mcap": 3550743.0,
+    "avg_d30_pct": 0.15,
+    "strong_buys": 53,
+    "history_snapshots": 25,
+    "history_age_days": 14.6,
+    "history_overlay_count": 50
   }
 }

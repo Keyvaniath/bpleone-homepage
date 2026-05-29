@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-19T02:08:43.534660+00:00",
-  "n_opportunities": 108,
-  "n_paths_computed": 170,
+  "generated_at": "2026-05-26T22:56:22.296652+00:00",
+  "n_opportunities": 105,
+  "n_paths_computed": 166,
   "by_path_count": {
-    "PSA9_TO_PSA10_CROSSGRADE": 78,
-    "RAW_TO_PSA10": 19,
-    "RAW_TO_PSA9_FLOOR": 11
+    "PSA9_TO_PSA10_CROSSGRADE": 75,
+    "RAW_TO_PSA9_FLOOR": 12,
+    "RAW_TO_PSA10": 18
   },
   "fees_assumed": {
     "ebay_fvf_pct": 13.25,
@@ -82,19 +82,19 @@
       ]
     },
     {
-      "cid": "V005",
+      "cid": "V004",
       "name": "Charizard",
-      "variant": "PSA 9",
+      "variant": "PSA 10",
       "set": null,
       "confidence": 80,
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 2866.13,
-        "all_in_cost": 2896.13,
-        "ev_revenue": 6944.03,
-        "ev_profit": 4047.9,
-        "ev_roi_pct": 139.8,
+        "buy_price": 2522.8,
+        "all_in_cost": 2552.8,
+        "ev_revenue": 6673.92,
+        "ev_profit": 4121.12,
+        "ev_roi_pct": 161.4,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -103,11 +103,11 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 2866.13,
-          "all_in_cost": 2896.13,
-          "ev_revenue": 6944.03,
-          "ev_profit": 4047.9,
-          "ev_roi_pct": 139.8,
+          "buy_price": 2522.8,
+          "all_in_cost": 2552.8,
+          "ev_revenue": 6673.92,
+          "ev_profit": 4121.12,
+          "ev_roi_pct": 161.4,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -181,74 +181,8 @@
       ]
     },
     {
-      "cid": "X231",
-      "name": "Charizard Base Unlimited PSA 9",
-      "variant": "PSA 9",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 2866.13,
-        "all_in_cost": 2896.13,
-        "ev_revenue": 6944.03,
-        "ev_profit": 4047.9,
-        "ev_roi_pct": 139.8,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 2866.13,
-          "all_in_cost": 2896.13,
-          "ev_revenue": 6944.03,
-          "ev_profit": 4047.9,
-          "ev_roi_pct": 139.8,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
       "cid": "X411",
       "name": "Charizard Base Unlimited PSA 9",
-      "variant": "PSA 9",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 2866.13,
-        "all_in_cost": 2896.13,
-        "ev_revenue": 6944.03,
-        "ev_profit": 4047.9,
-        "ev_roi_pct": 139.8,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 2866.13,
-          "all_in_cost": 2896.13,
-          "ev_revenue": 6944.03,
-          "ev_profit": 4047.9,
-          "ev_roi_pct": 139.8,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
-      "cid": "V252",
-      "name": "Charizard",
       "variant": "PSA 9",
       "set": null,
       "confidence": 80,
@@ -313,19 +247,19 @@
       ]
     },
     {
-      "cid": "V004",
+      "cid": "V005",
       "name": "Charizard",
-      "variant": "PSA 10",
+      "variant": "PSA 9",
       "set": null,
       "confidence": 80,
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 2866.13,
-        "all_in_cost": 2896.13,
-        "ev_revenue": 6618.14,
-        "ev_profit": 3722.01,
-        "ev_roi_pct": 128.5,
+        "buy_price": 2443.04,
+        "all_in_cost": 2473.04,
+        "ev_revenue": 6390.85,
+        "ev_profit": 3917.81,
+        "ev_roi_pct": 158.4,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -334,11 +268,11 @@
         {
           "path": "RAW_TO_PSA9_FLOOR",
           "buy_at": "raw_market",
-          "buy_price": 387.5,
-          "all_in_cost": 417.5,
-          "ev_revenue": 1784.93,
-          "ev_profit": 1367.43,
-          "ev_roi_pct": 327.5,
+          "buy_price": 347.16,
+          "all_in_cost": 377.16,
+          "ev_revenue": 1569.97,
+          "ev_profit": 1192.81,
+          "ev_roi_pct": 316.3,
           "hold_days": 60,
           "era": "mid",
           "note": "PSA 10 hits treated as PSA 9 (conservative)"
@@ -346,11 +280,101 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 2866.13,
-          "all_in_cost": 2896.13,
-          "ev_revenue": 6618.14,
-          "ev_profit": 3722.01,
-          "ev_roi_pct": 128.5,
+          "buy_price": 2443.04,
+          "all_in_cost": 2473.04,
+          "ev_revenue": 6390.85,
+          "ev_profit": 3917.81,
+          "ev_roi_pct": 158.4,
+          "hold_days": 60,
+          "risk_flag": "ADVANCED",
+          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
+      "cid": "X231",
+      "name": "Charizard Base Unlimited PSA 9",
+      "variant": "PSA 9",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "PSA9_TO_PSA10_CROSSGRADE",
+        "buy_at": "psa9_market",
+        "buy_price": 2443.04,
+        "all_in_cost": 2473.04,
+        "ev_revenue": 6390.85,
+        "ev_profit": 3917.81,
+        "ev_roi_pct": 158.4,
+        "hold_days": 60,
+        "risk_flag": "ADVANCED",
+        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 347.16,
+          "all_in_cost": 377.16,
+          "ev_revenue": 1569.97,
+          "ev_profit": 1192.81,
+          "ev_roi_pct": 316.3,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
+        },
+        {
+          "path": "PSA9_TO_PSA10_CROSSGRADE",
+          "buy_at": "psa9_market",
+          "buy_price": 2443.04,
+          "all_in_cost": 2473.04,
+          "ev_revenue": 6390.85,
+          "ev_profit": 3917.81,
+          "ev_roi_pct": 158.4,
+          "hold_days": 60,
+          "risk_flag": "ADVANCED",
+          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
+      "cid": "V252",
+      "name": "Charizard",
+      "variant": "PSA 9",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "PSA9_TO_PSA10_CROSSGRADE",
+        "buy_at": "psa9_market",
+        "buy_price": 2443.04,
+        "all_in_cost": 2473.04,
+        "ev_revenue": 6390.85,
+        "ev_profit": 3917.81,
+        "ev_roi_pct": 158.4,
+        "hold_days": 60,
+        "risk_flag": "ADVANCED",
+        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 347.16,
+          "all_in_cost": 377.16,
+          "ev_revenue": 1569.97,
+          "ev_profit": 1192.81,
+          "ev_roi_pct": 316.3,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
+        },
+        {
+          "path": "PSA9_TO_PSA10_CROSSGRADE",
+          "buy_at": "psa9_market",
+          "buy_price": 2443.04,
+          "all_in_cost": 2473.04,
+          "ev_revenue": 6390.85,
+          "ev_profit": 3917.81,
+          "ev_roi_pct": 158.4,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -411,11 +435,11 @@
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 2130.55,
-        "all_in_cost": 2160.55,
-        "ev_revenue": 4664.93,
-        "ev_profit": 2504.38,
-        "ev_roi_pct": 115.9,
+        "buy_price": 2070.93,
+        "all_in_cost": 2100.93,
+        "ev_revenue": 4671.32,
+        "ev_profit": 2570.39,
+        "ev_roi_pct": 122.3,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -424,11 +448,11 @@
         {
           "path": "RAW_TO_PSA9_FLOOR",
           "buy_at": "raw_market",
-          "buy_price": 339.6,
-          "all_in_cost": 369.6,
-          "ev_revenue": 1296.13,
-          "ev_profit": 926.53,
-          "ev_roi_pct": 250.7,
+          "buy_price": 360.0,
+          "all_in_cost": 390.0,
+          "ev_revenue": 1336.9,
+          "ev_profit": 946.9,
+          "ev_roi_pct": 242.8,
           "hold_days": 60,
           "era": "mid",
           "note": "PSA 10 hits treated as PSA 9 (conservative)"
@@ -436,11 +460,56 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 2130.55,
-          "all_in_cost": 2160.55,
-          "ev_revenue": 4664.93,
-          "ev_profit": 2504.38,
-          "ev_roi_pct": 115.9,
+          "buy_price": 2070.93,
+          "all_in_cost": 2100.93,
+          "ev_revenue": 4671.32,
+          "ev_profit": 2570.39,
+          "ev_roi_pct": 122.3,
+          "hold_days": 60,
+          "risk_flag": "ADVANCED",
+          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
+      "cid": "Z002",
+      "name": "Lugia",
+      "variant": "PSA 9",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "PSA9_TO_PSA10_CROSSGRADE",
+        "buy_at": "psa9_market",
+        "buy_price": 2130.02,
+        "all_in_cost": 2160.02,
+        "ev_revenue": 4671.41,
+        "ev_profit": 2511.39,
+        "ev_roi_pct": 116.3,
+        "hold_days": 60,
+        "risk_flag": "ADVANCED",
+        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 369.87,
+          "all_in_cost": 399.87,
+          "ev_revenue": 1308.36,
+          "ev_profit": 908.49,
+          "ev_roi_pct": 227.2,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
+        },
+        {
+          "path": "PSA9_TO_PSA10_CROSSGRADE",
+          "buy_at": "psa9_market",
+          "buy_price": 2130.02,
+          "all_in_cost": 2160.02,
+          "ev_revenue": 4671.41,
+          "ev_profit": 2511.39,
+          "ev_roi_pct": 116.3,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -495,51 +564,6 @@
     {
       "cid": "X239",
       "name": "Lugia Neo Genesis Unlimited PSA 9",
-      "variant": "PSA 9",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 2146.87,
-        "all_in_cost": 2176.87,
-        "ev_revenue": 4667.39,
-        "ev_profit": 2490.52,
-        "ev_roi_pct": 114.4,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "RAW_TO_PSA9_FLOOR",
-          "buy_at": "raw_market",
-          "buy_price": 369.88,
-          "all_in_cost": 399.88,
-          "ev_revenue": 1292.75,
-          "ev_profit": 892.87,
-          "ev_roi_pct": 223.3,
-          "hold_days": 60,
-          "era": "mid",
-          "note": "PSA 10 hits treated as PSA 9 (conservative)"
-        },
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 2146.87,
-          "all_in_cost": 2176.87,
-          "ev_revenue": 4667.39,
-          "ev_profit": 2490.52,
-          "ev_roi_pct": 114.4,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
-      "cid": "Z002",
-      "name": "Lugia",
       "variant": "PSA 9",
       "set": null,
       "confidence": 80,
@@ -735,11 +759,11 @@
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 2125.5,
-        "all_in_cost": 2155.5,
-        "ev_revenue": 4156.48,
-        "ev_profit": 2000.98,
-        "ev_roi_pct": 92.8,
+        "buy_price": 2565.1,
+        "all_in_cost": 2595.1,
+        "ev_revenue": 4390.74,
+        "ev_profit": 1795.64,
+        "ev_roi_pct": 69.2,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -748,11 +772,11 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 2125.5,
-          "all_in_cost": 2155.5,
-          "ev_revenue": 4156.48,
-          "ev_profit": 2000.98,
-          "ev_roi_pct": 92.8,
+          "buy_price": 2565.1,
+          "all_in_cost": 2595.1,
+          "ev_revenue": 4390.74,
+          "ev_profit": 1795.64,
+          "ev_roi_pct": 69.2,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -993,11 +1017,11 @@
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 4188.38,
-        "all_in_cost": 4218.38,
-        "ev_revenue": 5805.48,
-        "ev_profit": 1587.1,
-        "ev_roi_pct": 37.6,
+        "buy_price": 4180.35,
+        "all_in_cost": 4210.35,
+        "ev_revenue": 5800.29,
+        "ev_profit": 1589.94,
+        "ev_roi_pct": 37.8,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -1006,11 +1030,11 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 4188.38,
-          "all_in_cost": 4218.38,
-          "ev_revenue": 5805.48,
-          "ev_profit": 1587.1,
-          "ev_roi_pct": 37.6,
+          "buy_price": 4180.35,
+          "all_in_cost": 4210.35,
+          "ev_revenue": 5800.29,
+          "ev_profit": 1589.94,
+          "ev_roi_pct": 37.8,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -1056,39 +1080,6 @@
           "ev_revenue": 2982.88,
           "ev_profit": 1427.88,
           "ev_roi_pct": 91.8,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
-      "cid": "Z005",
-      "name": "Typhlosion 1st Ed",
-      "variant": "PSA 10",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 3270.58,
-        "all_in_cost": 3300.58,
-        "ev_revenue": 4704.76,
-        "ev_profit": 1404.18,
-        "ev_roi_pct": 42.5,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 3270.58,
-          "all_in_cost": 3300.58,
-          "ev_revenue": 4704.76,
-          "ev_profit": 1404.18,
-          "ev_roi_pct": 42.5,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -1207,110 +1198,6 @@
       ]
     },
     {
-      "cid": "Z046",
-      "name": "Rocket's Mewtwo 1st Ed",
-      "variant": "PSA 10",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "RAW_TO_PSA10",
-        "buy_at": "raw_market",
-        "buy_price": 374.74,
-        "all_in_cost": 404.74,
-        "ev_revenue": 1558.9,
-        "ev_profit": 1154.16,
-        "ev_roi_pct": 285.2,
-        "hold_days": 60,
-        "era": "mid",
-        "outcomes": {
-          "psa10_price": 6700.0,
-          "psa9_price": 1401.7,
-          "psa8_price": 651.43,
-          "psa7_price": 399.99,
-          "psa10_prob": 0.15,
-          "psa9_prob": 0.4
-        }
-      },
-      "all_paths": [
-        {
-          "path": "RAW_TO_PSA10",
-          "buy_at": "raw_market",
-          "buy_price": 374.74,
-          "all_in_cost": 404.74,
-          "ev_revenue": 1558.9,
-          "ev_profit": 1154.16,
-          "ev_roi_pct": 285.2,
-          "hold_days": 60,
-          "era": "mid",
-          "outcomes": {
-            "psa10_price": 6700.0,
-            "psa9_price": 1401.7,
-            "psa8_price": 651.43,
-            "psa7_price": 399.99,
-            "psa10_prob": 0.15,
-            "psa9_prob": 0.4
-          }
-        },
-        {
-          "path": "RAW_TO_PSA9_FLOOR",
-          "buy_at": "raw_market",
-          "buy_price": 374.74,
-          "all_in_cost": 404.74,
-          "ev_revenue": 867.88,
-          "ev_profit": 463.14,
-          "ev_roi_pct": 114.4,
-          "hold_days": 60,
-          "era": "mid",
-          "note": "PSA 10 hits treated as PSA 9 (conservative)"
-        },
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 1401.7,
-          "all_in_cost": 1431.7,
-          "ev_revenue": 1995.06,
-          "ev_profit": 563.36,
-          "ev_roi_pct": 39.3,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
-      "cid": "X511",
-      "name": "Shining Charizard Neo Destiny PSA 10",
-      "variant": "PSA 10",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 3925.0,
-        "all_in_cost": 3955.0,
-        "ev_revenue": 5091.22,
-        "ev_profit": 1136.22,
-        "ev_roi_pct": 28.7,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 3925.0,
-          "all_in_cost": 3955.0,
-          "ev_revenue": 5091.22,
-          "ev_profit": 1136.22,
-          "ev_roi_pct": 28.7,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
       "cid": "Z180",
       "name": "Charizard EX Gold (Full Art)",
       "variant": "PSA 10",
@@ -1349,6 +1236,39 @@
           "ev_revenue": 1805.11,
           "ev_profit": 1130.7,
           "ev_roi_pct": 167.7,
+          "hold_days": 60,
+          "risk_flag": "ADVANCED",
+          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
+      "cid": "X511",
+      "name": "Shining Charizard Neo Destiny PSA 10",
+      "variant": "PSA 10",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "PSA9_TO_PSA10_CROSSGRADE",
+        "buy_at": "psa9_market",
+        "buy_price": 4026.0,
+        "all_in_cost": 4056.0,
+        "ev_revenue": 5172.1,
+        "ev_profit": 1116.1,
+        "ev_roi_pct": 27.5,
+        "hold_days": 60,
+        "risk_flag": "ADVANCED",
+        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+      },
+      "all_paths": [
+        {
+          "path": "PSA9_TO_PSA10_CROSSGRADE",
+          "buy_at": "psa9_market",
+          "buy_price": 4026.0,
+          "all_in_cost": 4056.0,
+          "ev_revenue": 5172.1,
+          "ev_profit": 1116.1,
+          "ev_roi_pct": 27.5,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -1446,44 +1366,32 @@
       ]
     },
     {
-      "cid": "Z012",
-      "name": "Espeon 1st Ed",
+      "cid": "V270",
+      "name": "Blastoise PSA 10",
       "variant": "PSA 10",
       "set": null,
       "confidence": 80,
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 1700.0,
-        "all_in_cost": 1730.0,
-        "ev_revenue": 2692.09,
-        "ev_profit": 962.09,
-        "ev_roi_pct": 55.6,
+        "buy_price": 973.0,
+        "all_in_cost": 1003.0,
+        "ev_revenue": 1977.02,
+        "ev_profit": 974.02,
+        "ev_roi_pct": 97.1,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
       },
       "all_paths": [
         {
-          "path": "RAW_TO_PSA9_FLOOR",
-          "buy_at": "raw_market",
-          "buy_price": 379.98,
-          "all_in_cost": 409.98,
-          "ev_revenue": 1117.59,
-          "ev_profit": 707.61,
-          "ev_roi_pct": 172.6,
-          "hold_days": 60,
-          "era": "mid",
-          "note": "PSA 10 hits treated as PSA 9 (conservative)"
-        },
-        {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 1700.0,
-          "all_in_cost": 1730.0,
-          "ev_revenue": 2692.09,
-          "ev_profit": 962.09,
-          "ev_roi_pct": 55.6,
+          "buy_price": 973.0,
+          "all_in_cost": 1003.0,
+          "ev_revenue": 1977.02,
+          "ev_profit": 974.02,
+          "ev_roi_pct": 97.1,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -1560,39 +1468,6 @@
       "cid": "V250",
       "name": "Blastoise",
       "variant": "PSA 9",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 958.0,
-        "all_in_cost": 988.0,
-        "ev_revenue": 1935.86,
-        "ev_profit": 947.86,
-        "ev_roi_pct": 95.9,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 958.0,
-          "all_in_cost": 988.0,
-          "ev_revenue": 1935.86,
-          "ev_profit": 947.86,
-          "ev_roi_pct": 95.9,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
-      "cid": "V270",
-      "name": "Blastoise PSA 10",
-      "variant": "PSA 10",
       "set": null,
       "confidence": 80,
       "best_path": {
@@ -1747,11 +1622,11 @@
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 2244.0,
-        "all_in_cost": 2274.0,
-        "ev_revenue": 3107.58,
-        "ev_profit": 833.58,
-        "ev_roi_pct": 36.7,
+        "buy_price": 2235.01,
+        "all_in_cost": 2265.01,
+        "ev_revenue": 3098.08,
+        "ev_profit": 833.07,
+        "ev_roi_pct": 36.8,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -1760,11 +1635,11 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 2244.0,
-          "all_in_cost": 2274.0,
-          "ev_revenue": 3107.58,
-          "ev_profit": 833.58,
-          "ev_roi_pct": 36.7,
+          "buy_price": 2235.01,
+          "all_in_cost": 2265.01,
+          "ev_revenue": 3098.08,
+          "ev_profit": 833.07,
+          "ev_roi_pct": 36.8,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -1935,39 +1810,6 @@
       ]
     },
     {
-      "cid": "V013",
-      "name": "Pikachu Red Cheeks",
-      "variant": "PSA 10",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 1320.0,
-        "all_in_cost": 1350.0,
-        "ev_revenue": 2045.71,
-        "ev_profit": 695.71,
-        "ev_roi_pct": 51.5,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 1320.0,
-          "all_in_cost": 1350.0,
-          "ev_revenue": 2045.71,
-          "ev_profit": 695.71,
-          "ev_roi_pct": 51.5,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
       "cid": "V907",
       "name": "Clefairy Base Unlimited PSA 8",
       "variant": "PSA 8",
@@ -2087,18 +1929,18 @@
       "best_path": {
         "path": "RAW_TO_PSA10",
         "buy_at": "raw_market",
-        "buy_price": 157.4,
-        "all_in_cost": 187.4,
-        "ev_revenue": 745.4,
-        "ev_profit": 558.0,
-        "ev_roi_pct": 297.8,
+        "buy_price": 165.49,
+        "all_in_cost": 195.49,
+        "ev_revenue": 746.47,
+        "ev_profit": 550.98,
+        "ev_roi_pct": 281.8,
         "hold_days": 60,
         "era": "mid",
         "outcomes": {
           "psa10_price": 2980.97,
-          "psa9_price": 724.32,
-          "psa8_price": 343.62,
-          "psa7_price": 240.0,
+          "psa9_price": 724.66,
+          "psa8_price": 344.0,
+          "psa7_price": 245.0,
           "psa10_prob": 0.15,
           "psa9_prob": 0.4
         }
@@ -2107,18 +1949,18 @@
         {
           "path": "RAW_TO_PSA10",
           "buy_at": "raw_market",
-          "buy_price": 157.4,
-          "all_in_cost": 187.4,
-          "ev_revenue": 745.4,
-          "ev_profit": 558.0,
-          "ev_roi_pct": 297.8,
+          "buy_price": 165.49,
+          "all_in_cost": 195.49,
+          "ev_revenue": 746.47,
+          "ev_profit": 550.98,
+          "ev_roi_pct": 281.8,
           "hold_days": 60,
           "era": "mid",
           "outcomes": {
             "psa10_price": 2980.97,
-            "psa9_price": 724.32,
-            "psa8_price": 343.62,
-            "psa7_price": 240.0,
+            "psa9_price": 724.66,
+            "psa8_price": 344.0,
+            "psa7_price": 245.0,
             "psa10_prob": 0.15,
             "psa9_prob": 0.4
           }
@@ -2126,11 +1968,11 @@
         {
           "path": "RAW_TO_PSA9_FLOOR",
           "buy_at": "raw_market",
-          "buy_price": 157.4,
-          "all_in_cost": 187.4,
-          "ev_revenue": 445.88,
-          "ev_profit": 258.48,
-          "ev_roi_pct": 137.9,
+          "buy_price": 165.49,
+          "all_in_cost": 195.49,
+          "ev_revenue": 446.17,
+          "ev_profit": 250.68,
+          "ev_roi_pct": 128.2,
           "hold_days": 60,
           "era": "mid",
           "note": "PSA 10 hits treated as PSA 9 (conservative)"
@@ -2138,10 +1980,10 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 724.32,
-          "all_in_cost": 754.32,
-          "ev_revenue": 943.82,
-          "ev_profit": 189.5,
+          "buy_price": 724.66,
+          "all_in_cost": 754.66,
+          "ev_revenue": 944.07,
+          "ev_profit": 189.41,
           "ev_roi_pct": 25.1,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
@@ -2158,11 +2000,11 @@
       "best_path": {
         "path": "PSA9_TO_PSA10_CROSSGRADE",
         "buy_at": "psa9_market",
-        "buy_price": 2950.0,
-        "all_in_cost": 2980.0,
-        "ev_revenue": 3472.15,
-        "ev_profit": 492.15,
-        "ev_roi_pct": 16.5,
+        "buy_price": 3016.45,
+        "all_in_cost": 3046.45,
+        "ev_revenue": 3527.0,
+        "ev_profit": 480.55,
+        "ev_roi_pct": 15.8,
         "hold_days": 60,
         "risk_flag": "ADVANCED",
         "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -2171,11 +2013,11 @@
         {
           "path": "PSA9_TO_PSA10_CROSSGRADE",
           "buy_at": "psa9_market",
-          "buy_price": 2950.0,
-          "all_in_cost": 2980.0,
-          "ev_revenue": 3472.15,
-          "ev_profit": 492.15,
-          "ev_roi_pct": 16.5,
+          "buy_price": 3016.45,
+          "all_in_cost": 3046.45,
+          "ev_revenue": 3527.0,
+          "ev_profit": 480.55,
+          "ev_roi_pct": 15.8,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -2396,65 +2238,6 @@
       ]
     },
     {
-      "cid": "Z034",
-      "name": "Shining Steelix",
-      "variant": "PSA 10",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "RAW_TO_PSA10",
-        "buy_at": "raw_market",
-        "buy_price": 256.7,
-        "all_in_cost": 286.7,
-        "ev_revenue": 701.62,
-        "ev_profit": 414.92,
-        "ev_roi_pct": 144.7,
-        "hold_days": 60,
-        "era": "mid",
-        "outcomes": {
-          "psa10_price": 1726.35,
-          "psa9_price": 802.0,
-          "psa8_price": 600.0,
-          "psa7_price": 452.8,
-          "psa10_prob": 0.15,
-          "psa9_prob": 0.4
-        }
-      },
-      "all_paths": [
-        {
-          "path": "RAW_TO_PSA10",
-          "buy_at": "raw_market",
-          "buy_price": 256.7,
-          "all_in_cost": 286.7,
-          "ev_revenue": 701.62,
-          "ev_profit": 414.92,
-          "ev_roi_pct": 144.7,
-          "hold_days": 60,
-          "era": "mid",
-          "outcomes": {
-            "psa10_price": 1726.35,
-            "psa9_price": 802.0,
-            "psa8_price": 600.0,
-            "psa7_price": 452.8,
-            "psa10_prob": 0.15,
-            "psa9_prob": 0.4
-          }
-        },
-        {
-          "path": "RAW_TO_PSA9_FLOOR",
-          "buy_at": "raw_market",
-          "buy_price": 256.7,
-          "all_in_cost": 286.7,
-          "ev_revenue": 565.24,
-          "ev_profit": 278.54,
-          "ev_roi_pct": 97.2,
-          "hold_days": 60,
-          "era": "mid",
-          "note": "PSA 10 hits treated as PSA 9 (conservative)"
-        }
-      ]
-    },
-    {
       "cid": "Z125",
       "name": "Rayquaza C LV.X",
       "variant": "PSA 10",
@@ -2481,6 +2264,65 @@
           "ev_revenue": 581.62,
           "ev_profit": 408.61,
           "ev_roi_pct": 236.2,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
+        }
+      ]
+    },
+    {
+      "cid": "Z034",
+      "name": "Shining Steelix",
+      "variant": "PSA 10",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "RAW_TO_PSA10",
+        "buy_at": "raw_market",
+        "buy_price": 275.16,
+        "all_in_cost": 305.16,
+        "ev_revenue": 703.61,
+        "ev_profit": 398.45,
+        "ev_roi_pct": 130.6,
+        "hold_days": 60,
+        "era": "mid",
+        "outcomes": {
+          "psa10_price": 1726.35,
+          "psa9_price": 810.0,
+          "psa8_price": 600.0,
+          "psa7_price": 448.28,
+          "psa10_prob": 0.15,
+          "psa9_prob": 0.4
+        }
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA10",
+          "buy_at": "raw_market",
+          "buy_price": 275.16,
+          "all_in_cost": 305.16,
+          "ev_revenue": 703.61,
+          "ev_profit": 398.45,
+          "ev_roi_pct": 130.6,
+          "hold_days": 60,
+          "era": "mid",
+          "outcomes": {
+            "psa10_price": 1726.35,
+            "psa9_price": 810.0,
+            "psa8_price": 600.0,
+            "psa7_price": 448.28,
+            "psa10_prob": 0.15,
+            "psa9_prob": 0.4
+          }
+        },
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 275.16,
+          "all_in_cost": 305.16,
+          "ev_revenue": 569.06,
+          "ev_profit": 263.9,
+          "ev_roi_pct": 86.5,
           "hold_days": 60,
           "era": "mid",
           "note": "PSA 10 hits treated as PSA 9 (conservative)"
@@ -2592,6 +2434,39 @@
       ]
     },
     {
+      "cid": "M069",
+      "name": "Umbreon ex SIR",
+      "variant": "PSA 10",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "PSA9_TO_PSA10_CROSSGRADE",
+        "buy_at": "psa9_market",
+        "buy_price": 1602.5,
+        "all_in_cost": 1632.5,
+        "ev_revenue": 1956.36,
+        "ev_profit": 323.86,
+        "ev_roi_pct": 19.8,
+        "hold_days": 60,
+        "risk_flag": "ADVANCED",
+        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+      },
+      "all_paths": [
+        {
+          "path": "PSA9_TO_PSA10_CROSSGRADE",
+          "buy_at": "psa9_market",
+          "buy_price": 1602.5,
+          "all_in_cost": 1632.5,
+          "ev_revenue": 1956.36,
+          "ev_profit": 323.86,
+          "ev_roi_pct": 19.8,
+          "hold_days": 60,
+          "risk_flag": "ADVANCED",
+          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
       "cid": "V915",
       "name": "Raichu Base Unlimited PSA 8",
       "variant": "PSA 8",
@@ -2633,6 +2508,39 @@
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
+      "cid": "Z004",
+      "name": "Lugia 1st Ed",
+      "variant": "PSA 9",
+      "set": null,
+      "confidence": 40,
+      "best_path": {
+        "path": "RAW_TO_PSA9_FLOOR",
+        "buy_at": "raw_market",
+        "buy_price": 357.5,
+        "all_in_cost": 387.5,
+        "ev_revenue": 687.04,
+        "ev_profit": 299.54,
+        "ev_roi_pct": 77.3,
+        "hold_days": 60,
+        "era": "mid",
+        "note": "PSA 10 hits treated as PSA 9 (conservative)"
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 357.5,
+          "all_in_cost": 387.5,
+          "ev_revenue": 687.04,
+          "ev_profit": 299.54,
+          "ev_roi_pct": 77.3,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
         }
       ]
     },
@@ -2810,39 +2718,6 @@
           "ev_revenue": 956.45,
           "ev_profit": 257.12,
           "ev_roi_pct": 36.8,
-          "hold_days": 60,
-          "risk_flag": "ADVANCED",
-          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-        }
-      ]
-    },
-    {
-      "cid": "M069",
-      "name": "Umbreon ex SIR",
-      "variant": "PSA 10",
-      "set": null,
-      "confidence": 80,
-      "best_path": {
-        "path": "PSA9_TO_PSA10_CROSSGRADE",
-        "buy_at": "psa9_market",
-        "buy_price": 1614.29,
-        "all_in_cost": 1644.29,
-        "ev_revenue": 1933.26,
-        "ev_profit": 288.97,
-        "ev_roi_pct": 17.6,
-        "hold_days": 60,
-        "risk_flag": "ADVANCED",
-        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
-      },
-      "all_paths": [
-        {
-          "path": "PSA9_TO_PSA10_CROSSGRADE",
-          "buy_at": "psa9_market",
-          "buy_price": 1614.29,
-          "all_in_cost": 1644.29,
-          "ev_revenue": 1933.26,
-          "ev_profit": 288.97,
-          "ev_roi_pct": 17.6,
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
@@ -3337,26 +3212,26 @@
       ]
     },
     {
-      "cid": "V811",
-      "name": "Umbreon Neo Discovery",
-      "variant": "PSA 8",
+      "cid": "Z011",
+      "name": "Umbreon",
+      "variant": "PSA 10",
       "set": null,
       "confidence": 80,
       "best_path": {
         "path": "RAW_TO_PSA10",
         "buy_at": "raw_market",
-        "buy_price": 49.48,
-        "all_in_cost": 79.48,
-        "ev_revenue": 252.93,
-        "ev_profit": 173.45,
-        "ev_roi_pct": 218.2,
+        "buy_price": 49.74,
+        "all_in_cost": 79.74,
+        "ev_revenue": 257.97,
+        "ev_profit": 178.23,
+        "ev_roi_pct": 223.5,
         "hold_days": 60,
         "era": "mid",
         "outcomes": {
-          "psa10_price": 940.83,
-          "psa9_price": 285.39,
-          "psa8_price": 131.24,
-          "psa7_price": 75.0,
+          "psa10_price": 952.48,
+          "psa9_price": 285.2,
+          "psa8_price": 147.57,
+          "psa7_price": 75.25,
           "psa10_prob": 0.15,
           "psa9_prob": 0.4
         }
@@ -3365,18 +3240,18 @@
         {
           "path": "RAW_TO_PSA10",
           "buy_at": "raw_market",
-          "buy_price": 49.48,
-          "all_in_cost": 79.48,
-          "ev_revenue": 252.93,
-          "ev_profit": 173.45,
-          "ev_roi_pct": 218.2,
+          "buy_price": 49.74,
+          "all_in_cost": 79.74,
+          "ev_revenue": 257.97,
+          "ev_profit": 178.23,
+          "ev_roi_pct": 223.5,
           "hold_days": 60,
           "era": "mid",
           "outcomes": {
-            "psa10_price": 940.83,
-            "psa9_price": 285.39,
-            "psa8_price": 131.24,
-            "psa7_price": 75.0,
+            "psa10_price": 952.48,
+            "psa9_price": 285.2,
+            "psa8_price": 147.57,
+            "psa7_price": 75.25,
             "psa10_prob": 0.15,
             "psa9_prob": 0.4
           }
@@ -3384,11 +3259,11 @@
         {
           "path": "RAW_TO_PSA9_FLOOR",
           "buy_at": "raw_market",
-          "buy_price": 49.48,
-          "all_in_cost": 79.48,
-          "ev_revenue": 168.29,
-          "ev_profit": 88.81,
-          "ev_roi_pct": 111.7,
+          "buy_price": 49.74,
+          "all_in_cost": 79.74,
+          "ev_revenue": 173.44,
+          "ev_profit": 93.7,
+          "ev_roi_pct": 117.5,
           "hold_days": 60,
           "era": "mid",
           "note": "PSA 10 hits treated as PSA 9 (conservative)"
@@ -3396,9 +3271,9 @@
       ]
     },
     {
-      "cid": "Z011",
-      "name": "Umbreon",
-      "variant": "PSA 10",
+      "cid": "V811",
+      "name": "Umbreon Neo Discovery",
+      "variant": "PSA 8",
       "set": null,
       "confidence": 80,
       "best_path": {
@@ -4172,39 +4047,6 @@
       ]
     },
     {
-      "cid": "V102",
-      "name": "Snap Pikachu Mountain Promo",
-      "variant": "PSA 10",
-      "set": null,
-      "confidence": 40,
-      "best_path": {
-        "path": "RAW_TO_PSA9_FLOOR",
-        "buy_at": "raw_market",
-        "buy_price": 19.99,
-        "all_in_cost": 49.99,
-        "ev_revenue": 165.61,
-        "ev_profit": 115.62,
-        "ev_roi_pct": 231.3,
-        "hold_days": 60,
-        "era": "mid",
-        "note": "PSA 10 hits treated as PSA 9 (conservative)"
-      },
-      "all_paths": [
-        {
-          "path": "RAW_TO_PSA9_FLOOR",
-          "buy_at": "raw_market",
-          "buy_price": 19.99,
-          "all_in_cost": 49.99,
-          "ev_revenue": 165.61,
-          "ev_profit": 115.62,
-          "ev_roi_pct": 231.3,
-          "hold_days": 60,
-          "era": "mid",
-          "note": "PSA 10 hits treated as PSA 9 (conservative)"
-        }
-      ]
-    },
-    {
       "cid": "M034",
       "name": "Charizard ex SIR",
       "variant": "PSA 10",
@@ -4271,6 +4113,39 @@
       ]
     },
     {
+      "cid": "V102",
+      "name": "Snap Pikachu Mountain Promo",
+      "variant": "PSA 10",
+      "set": null,
+      "confidence": 40,
+      "best_path": {
+        "path": "RAW_TO_PSA9_FLOOR",
+        "buy_at": "raw_market",
+        "buy_price": 20.91,
+        "all_in_cost": 50.91,
+        "ev_revenue": 160.84,
+        "ev_profit": 109.93,
+        "ev_roi_pct": 215.9,
+        "hold_days": 60,
+        "era": "mid",
+        "note": "PSA 10 hits treated as PSA 9 (conservative)"
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 20.91,
+          "all_in_cost": 50.91,
+          "ev_revenue": 160.84,
+          "ev_profit": 109.93,
+          "ev_roi_pct": 215.9,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
+        }
+      ]
+    },
+    {
       "cid": "X234",
       "name": "Articuno Fossil Unlimited PSA 9",
       "variant": "PSA 9",
@@ -4312,6 +4187,117 @@
           "hold_days": 60,
           "risk_flag": "ADVANCED",
           "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
+      "cid": "V259",
+      "name": "Articuno",
+      "variant": "PSA 9",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "PSA9_TO_PSA10_CROSSGRADE",
+        "buy_at": "psa9_market",
+        "buy_price": 265.0,
+        "all_in_cost": 295.0,
+        "ev_revenue": 397.65,
+        "ev_profit": 102.65,
+        "ev_roi_pct": 34.8,
+        "hold_days": 60,
+        "risk_flag": "ADVANCED",
+        "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 29.29,
+          "all_in_cost": 59.29,
+          "ev_revenue": 146.26,
+          "ev_profit": 86.97,
+          "ev_roi_pct": 146.7,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
+        },
+        {
+          "path": "PSA9_TO_PSA10_CROSSGRADE",
+          "buy_at": "psa9_market",
+          "buy_price": 265.0,
+          "all_in_cost": 295.0,
+          "ev_revenue": 397.65,
+          "ev_profit": 102.65,
+          "ev_roi_pct": 34.8,
+          "hold_days": 60,
+          "risk_flag": "ADVANCED",
+          "note": "Requires cracking PSA 9 slab. 20% downgrade risk."
+        }
+      ]
+    },
+    {
+      "cid": "Z123",
+      "name": "Palkia G LV.X",
+      "variant": "PSA 10",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "RAW_TO_PSA9_FLOOR",
+        "buy_at": "raw_market",
+        "buy_price": 25.0,
+        "all_in_cost": 55.0,
+        "ev_revenue": 154.2,
+        "ev_profit": 99.2,
+        "ev_roi_pct": 180.4,
+        "hold_days": 60,
+        "era": "mid",
+        "note": "PSA 10 hits treated as PSA 9 (conservative)"
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 25.0,
+          "all_in_cost": 55.0,
+          "ev_revenue": 154.2,
+          "ev_profit": 99.2,
+          "ev_roi_pct": 180.4,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
+        }
+      ]
+    },
+    {
+      "cid": "Z122",
+      "name": "Dialga G LV.X",
+      "variant": "PSA 10",
+      "set": null,
+      "confidence": 80,
+      "best_path": {
+        "path": "RAW_TO_PSA9_FLOOR",
+        "buy_at": "raw_market",
+        "buy_price": 17.25,
+        "all_in_cost": 47.25,
+        "ev_revenue": 134.0,
+        "ev_profit": 86.75,
+        "ev_roi_pct": 183.6,
+        "hold_days": 60,
+        "era": "mid",
+        "note": "PSA 10 hits treated as PSA 9 (conservative)"
+      },
+      "all_paths": [
+        {
+          "path": "RAW_TO_PSA9_FLOOR",
+          "buy_at": "raw_market",
+          "buy_price": 17.25,
+          "all_in_cost": 47.25,
+          "ev_revenue": 134.0,
+          "ev_profit": 86.75,
+          "ev_roi_pct": 183.6,
+          "hold_days": 60,
+          "era": "mid",
+          "note": "PSA 10 hits treated as PSA 9 (conservative)"
         }
       ]
     }
