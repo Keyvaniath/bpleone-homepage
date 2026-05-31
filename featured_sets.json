@@ -43,11 +43,11 @@
       "name": "Mega Charizard X ex",
       "number": "125",
       "rarity": "Special Illustration Rare",
-      "market": 864.33,
+      "market": 885.24,
       "image": "https://images.pokemontcg.io/me2/125.png"
     },
-    "chase_count": 7,
-    "total_market": 1487.0
+    "chase_count": 8,
+    "total_market": 1512.0
   },
   {
     "id": "me1",
@@ -57,14 +57,14 @@
     "logo": "https://images.pokemontcg.io/me1/logo.png",
     "symbol": "https://images.pokemontcg.io/me1/symbol.png",
     "chase": {
-      "name": "Mega Gardevoir ex",
-      "number": "187",
+      "name": "Mega Lucario ex",
+      "number": "188",
       "rarity": "Mega Hyper Rare",
-      "market": 235.23,
-      "image": "https://images.pokemontcg.io/me1/187.png"
+      "market": 243.8,
+      "image": "https://images.pokemontcg.io/me1/188.png"
     },
-    "chase_count": 14,
-    "total_market": 1753.0
+    "chase_count": 15,
+    "total_market": 1768.0
   },
   {
     "id": "rsv10pt5",
@@ -77,11 +77,11 @@
       "name": "Victini",
       "number": "172",
       "rarity": "Rare",
-      "market": 445.98,
+      "market": 462.22,
       "image": "https://images.pokemontcg.io/rsv10pt5/172.png"
     },
-    "chase_count": 31,
-    "total_market": 2791.0
+    "chase_count": 33,
+    "total_market": 2890.0
   },
   {
     "id": "zsv10pt5",
@@ -94,11 +94,11 @@
       "name": "Victini",
       "number": "171",
       "rarity": "Rare",
-      "market": 548.01,
+      "market": 565.02,
       "image": "https://images.pokemontcg.io/zsv10pt5/171.png"
     },
-    "chase_count": 35,
-    "total_market": 3099.0
+    "chase_count": 37,
+    "total_market": 3234.0
   },
   {
     "id": "sv10",
@@ -111,10 +111,10 @@
       "name": "Team Rocket's Mewtwo ex",
       "number": "231",
       "rarity": "Special Illustration Rare",
-      "market": 557.76,
+      "market": 568.88,
       "image": "https://images.pokemontcg.io/sv10/231.png"
     },
     "chase_count": 19,
-    "total_market": 2197.0
+    "total_market": 2224.0
   }
 ]

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-29T14:38:43.488117+00:00",
-  "buy_alerts_count": 57,
-  "sell_alerts_count": 203,
+  "generated_at": "2026-05-31T15:04:41.746006+00:00",
+  "buy_alerts_count": 58,
+  "sell_alerts_count": 202,
   "high_score_count": 11,
   "buy_alerts": [
     {
@@ -50,6 +50,18 @@
       "discount_pct": 58.6,
       "just_crossed_today": false,
       "confidence": "HIGH",
+      "source": "pokeprice:psa10"
+    },
+    {
+      "cid": "V013",
+      "name": "Pikachu Red Cheeks",
+      "variant": "PSA 10",
+      "live_price": 999.99,
+      "buy_target": 1920.0,
+      "wb_price": 2400,
+      "discount_pct": 58.3,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
       "source": "pokeprice:psa10"
     },
     {
@@ -291,18 +303,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
-    },
-    {
-      "cid": "Z011",
-      "name": "Umbreon",
-      "variant": "PSA 10",
-      "live_price": 952.48,
-      "buy_target": 1360.0,
-      "wb_price": 1700,
-      "discount_pct": 44.0,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa10"
     }
   ],
   "sell_alerts": [
@@ -439,18 +439,6 @@
       "source": "pc_sweep_grade_10"
     },
     {
-      "cid": "V812",
-      "name": "Charizard Skyridge",
-      "variant": "PSA 8",
-      "live_price": 11239.15,
-      "sell_target": 3080.0,
-      "wb_price": 2800,
-      "premium_pct": 301.4,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa8"
-    },
-    {
       "cid": "X322",
       "name": "Blastoise Base Shadowless PSA 8",
       "variant": "PSA 8",
@@ -499,6 +487,18 @@
       "source": "pc_sweep_grade_9"
     },
     {
+      "cid": "V004",
+      "name": "Charizard",
+      "variant": "PSA 10",
+      "live_price": 29871.57,
+      "sell_target": 8800.0,
+      "wb_price": 8000,
+      "premium_pct": 273.4,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa10"
+    },
+    {
       "cid": "X130",
       "name": "Mega Gengar ex MAR (Ascended)",
       "variant": "Raw NM",
@@ -533,18 +533,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
-    },
-    {
-      "cid": "V004",
-      "name": "Charizard",
-      "variant": "PSA 10",
-      "live_price": 29643.13,
-      "sell_target": 8800.0,
-      "wb_price": 8000,
-      "premium_pct": 270.5,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pricecharting:psa10"
     },
     {
       "cid": "Z022",
@@ -602,6 +590,18 @@
       "sell_target": 5280.0,
       "wb_price": 4800,
       "premium_pct": 248.6,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
+    },
+    {
+      "cid": "Q006",
+      "name": "Greninja ex SIR",
+      "variant": "PSA 10",
+      "live_price": 975.0,
+      "sell_target": 314.0,
+      "wb_price": 285,
+      "premium_pct": 242.1,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa10"

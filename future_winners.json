@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generated_at": "2026-05-29T14:40:32.215054Z",
+  "generated_at": "2026-05-31T15:05:51.753068Z",
   "weights_used": {
-    "momentum_rising": 0.2416,
-    "scarcity": 0.1094,
-    "accessibility": 0.1608,
-    "hidden_alpha": 0.1811,
-    "tier_premium": 0.1012,
-    "liquidity": 0.2059
+    "momentum_rising": 0.2433,
+    "scarcity": 0.0978,
+    "accessibility": 0.1614,
+    "hidden_alpha": 0.1927,
+    "tier_premium": 0.0981,
+    "liquidity": 0.2067
   },
   "weights_source": "learned",
   "methodology": "Future Winners is a forward-looking model. Score = weighted sum of: momentum_rising \u00b7 scarcity \u00b7 accessibility \u00b7 hidden_alpha \u00b7 tier_premium \u00b7 liquidity. Weights are LEARNED from historical signal outcomes via optimize_fw_weights.py (falls back to seed weights until enough history accumulates).",
@@ -25,7 +25,7 @@
       "wb_price": 110.0,
       "target_buy": 28.02,
       "target_sell": 33.27,
-      "fw_score": 78.3,
+      "fw_score": 78.8,
       "components": {
         "momentum_rising": 83.0,
         "scarcity": 42.3,
@@ -49,7 +49,7 @@
       "wb_price": 320.0,
       "target_buy": 60.66,
       "target_sell": 72.03,
-      "fw_score": 76.7,
+      "fw_score": 77.2,
       "components": {
         "momentum_rising": 83.1,
         "scarcity": 41.9,
@@ -73,7 +73,7 @@
       "wb_price": 280.0,
       "target_buy": 55.3,
       "target_sell": 65.67,
-      "fw_score": 76.5,
+      "fw_score": 76.9,
       "components": {
         "momentum_rising": 81.9,
         "scarcity": 42.8,
@@ -97,7 +97,7 @@
       "wb_price": 160.0,
       "target_buy": 62.98,
       "target_sell": 74.78,
-      "fw_score": 76.4,
+      "fw_score": 76.8,
       "components": {
         "momentum_rising": 82.0,
         "scarcity": 41.0,
@@ -121,7 +121,7 @@
       "wb_price": 300.0,
       "target_buy": 72.0,
       "target_sell": 85.5,
-      "fw_score": 75.9,
+      "fw_score": 76.3,
       "components": {
         "momentum_rising": 78.6,
         "scarcity": 43.9,
@@ -145,7 +145,7 @@
       "wb_price": 190.0,
       "target_buy": 57.2,
       "target_sell": 67.92,
-      "fw_score": 75.7,
+      "fw_score": 76.1,
       "components": {
         "momentum_rising": 78.9,
         "scarcity": 41.4,
@@ -169,7 +169,7 @@
       "wb_price": 240.0,
       "target_buy": 44.8,
       "target_sell": 53.2,
-      "fw_score": 75.4,
+      "fw_score": 75.9,
       "components": {
         "momentum_rising": 78.3,
         "scarcity": 40.6,
@@ -193,7 +193,7 @@
       "wb_price": 240.0,
       "target_buy": 85.11,
       "target_sell": 101.07,
-      "fw_score": 74.3,
+      "fw_score": 74.8,
       "components": {
         "momentum_rising": 79.9,
         "scarcity": 41.9,
@@ -217,7 +217,7 @@
       "wb_price": 480.0,
       "target_buy": 142.58,
       "target_sell": 169.31,
-      "fw_score": 74.3,
+      "fw_score": 74.7,
       "components": {
         "momentum_rising": 80.1,
         "scarcity": 41.0,
@@ -241,7 +241,7 @@
       "wb_price": 640.0,
       "target_buy": 168.97,
       "target_sell": 200.65,
-      "fw_score": 74.2,
+      "fw_score": 74.6,
       "components": {
         "momentum_rising": 78.7,
         "scarcity": 43.4,
@@ -265,7 +265,7 @@
       "wb_price": 480.0,
       "target_buy": 85.11,
       "target_sell": 101.07,
-      "fw_score": 74.2,
+      "fw_score": 74.6,
       "components": {
         "momentum_rising": 78.8,
         "scarcity": 42.8,
@@ -289,7 +289,7 @@
       "wb_price": 320.0,
       "target_buy": 156.0,
       "target_sell": 185.25,
-      "fw_score": 74.2,
+      "fw_score": 74.5,
       "components": {
         "momentum_rising": 77.6,
         "scarcity": 45.3,
@@ -313,7 +313,7 @@
       "wb_price": 640.0,
       "target_buy": 182.0,
       "target_sell": 216.12,
-      "fw_score": 73.8,
+      "fw_score": 74.3,
       "components": {
         "momentum_rising": 79.6,
         "scarcity": 38.0,
@@ -337,7 +337,7 @@
       "wb_price": 640.0,
       "target_buy": 140.0,
       "target_sell": 166.25,
-      "fw_score": 73.7,
+      "fw_score": 74.1,
       "components": {
         "momentum_rising": 77.4,
         "scarcity": 41.9,
@@ -361,7 +361,7 @@
       "wb_price": 380.0,
       "target_buy": 370.0,
       "target_sell": 439.38,
-      "fw_score": 72.6,
+      "fw_score": 73.0,
       "components": {
         "momentum_rising": 79.1,
         "scarcity": 42.3,
@@ -385,7 +385,7 @@
       "wb_price": 340.0,
       "target_buy": 288.0,
       "target_sell": 342.0,
-      "fw_score": 72.6,
+      "fw_score": 73.0,
       "components": {
         "momentum_rising": 78.7,
         "scarcity": 43.4,
@@ -396,6 +396,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/sv3pt5/201.png"
+    },
+    {
+      "id": "V013",
+      "name": "Pikachu Red Cheeks",
+      "set": "Base Set Shadowless",
+      "number": "58/102",
+      "variant": "PSA 10",
+      "tier": "T1",
+      "pop": 110,
+      "live_price": 999.99,
+      "wb_price": 2400.0,
+      "target_buy": 799.99,
+      "target_sell": 949.99,
+      "fw_score": 72.9,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 63.3,
+        "accessibility": 45,
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 90
+      },
+      "thesis": "Live history up +150.0% \u00b7 Low PSA 10 pop (110) \u00b7 Vintage grail tier",
+      "image": "https://images.pokemontcg.io/ru1/7.png"
     },
     {
       "id": "M039",
@@ -409,7 +433,7 @@
       "wb_price": 480.0,
       "target_buy": 399.31,
       "target_sell": 474.18,
-      "fw_score": 72.5,
+      "fw_score": 72.9,
       "components": {
         "momentum_rising": 78.4,
         "scarcity": 42.8,
@@ -433,7 +457,7 @@
       "wb_price": 680.0,
       "target_buy": 192.0,
       "target_sell": 228.0,
-      "fw_score": 71.7,
+      "fw_score": 72.2,
       "components": {
         "momentum_rising": 71.2,
         "scarcity": 36.9,
@@ -457,7 +481,7 @@
       "wb_price": 50.0,
       "target_buy": 28.02,
       "target_sell": 33.27,
-      "fw_score": 71.6,
+      "fw_score": 72.0,
       "components": {
         "momentum_rising": 55.2,
         "scarcity": 42.3,
@@ -481,7 +505,7 @@
       "wb_price": 110.0,
       "target_buy": 37.19,
       "target_sell": 44.17,
-      "fw_score": 71.6,
+      "fw_score": 72.0,
       "components": {
         "momentum_rising": 55.0,
         "scarcity": 42.8,
@@ -505,7 +529,7 @@
       "wb_price": 540.0,
       "target_buy": 432.0,
       "target_sell": 513.0,
-      "fw_score": 71.3,
+      "fw_score": 71.8,
       "components": {
         "momentum_rising": 86.9,
         "scarcity": 35.6,
@@ -529,7 +553,7 @@
       "wb_price": 450.0,
       "target_buy": 360.0,
       "target_sell": 427.5,
-      "fw_score": 71.3,
+      "fw_score": 71.7,
       "components": {
         "momentum_rising": 75.0,
         "scarcity": 39.2,
@@ -553,7 +577,7 @@
       "wb_price": 1500.0,
       "target_buy": 258.0,
       "target_sell": 306.38,
-      "fw_score": 71.2,
+      "fw_score": 71.6,
       "components": {
         "momentum_rising": 74.6,
         "scarcity": 39.8,
@@ -577,7 +601,7 @@
       "wb_price": 620.0,
       "target_buy": 496.0,
       "target_sell": 589.0,
-      "fw_score": 70.3,
+      "fw_score": 70.8,
       "components": {
         "momentum_rising": 82.1,
         "scarcity": 36.9,
@@ -601,7 +625,7 @@
       "wb_price": 540.0,
       "target_buy": 780.0,
       "target_sell": 926.25,
-      "fw_score": 70.3,
+      "fw_score": 70.7,
       "components": {
         "momentum_rising": 80.2,
         "scarcity": 41.4,
@@ -625,7 +649,7 @@
       "wb_price": 520.0,
       "target_buy": 156.0,
       "target_sell": 185.25,
-      "fw_score": 70.3,
+      "fw_score": 70.7,
       "components": {
         "momentum_rising": 61.7,
         "scarcity": 45.3,
@@ -649,7 +673,7 @@
       "wb_price": 540.0,
       "target_buy": 432.0,
       "target_sell": 513.0,
-      "fw_score": 70.2,
+      "fw_score": 70.6,
       "components": {
         "momentum_rising": 78.7,
         "scarcity": 43.4,
@@ -660,6 +684,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/ex1/101.png"
+    },
+    {
+      "id": "M044",
+      "name": "Iono SIR",
+      "set": "Paldea Evolved",
+      "number": "269/193",
+      "variant": "PSA 10",
+      "tier": "T2",
+      "pop": 2500,
+      "live_price": 700.0,
+      "wb_price": 700.0,
+      "target_buy": 560.0,
+      "target_sell": 665.0,
+      "fw_score": 70.5,
+      "components": {
+        "momentum_rising": 80.1,
+        "scarcity": 38.8,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 70,
+        "liquidity": 90
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/sv2/269.png"
     },
     {
       "id": "X153",
@@ -673,7 +721,7 @@
       "wb_price": 75.0,
       "target_buy": 62.98,
       "target_sell": 74.78,
-      "fw_score": 70.1,
+      "fw_score": 70.5,
       "components": {
         "momentum_rising": 56.0,
         "scarcity": 41.0,
@@ -684,54 +732,6 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/swsh11/180.png"
-    },
-    {
-      "id": "V013",
-      "name": "Pikachu Red Cheeks",
-      "set": "Base Set Shadowless",
-      "number": "58/102",
-      "variant": "PSA 10",
-      "tier": "T1",
-      "pop": 110,
-      "live_price": 2400.0,
-      "wb_price": 2400.0,
-      "target_buy": 1920.0,
-      "target_sell": 2280.0,
-      "fw_score": 70.0,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 63.3,
-        "accessibility": 25,
-        "hidden_alpha": 40,
-        "tier_premium": 90,
-        "liquidity": 90
-      },
-      "thesis": "Live history up +656.4% \u00b7 Low PSA 10 pop (110) \u00b7 Vintage grail tier",
-      "image": "https://images.pokemontcg.io/ru1/7.png"
-    },
-    {
-      "id": "M040",
-      "name": "Blastoise ex SIR",
-      "set": "Scarlet & Violet 151",
-      "number": "200/165",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 1500,
-      "live_price": 653.65,
-      "wb_price": 440.0,
-      "target_buy": 522.92,
-      "target_sell": 620.97,
-      "fw_score": 70.0,
-      "components": {
-        "momentum_rising": 78.2,
-        "scarcity": 42.8,
-        "accessibility": 45,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/ex6/104.png"
     }
   ]
 }

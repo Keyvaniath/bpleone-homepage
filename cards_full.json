@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T14:38:46.277400Z",
+  "generated_at": "2026-05-31T15:04:44.411820Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -12,10 +12,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 121,
       "wb_price": 32000.0,
-      "live_price": 48123.3,
+      "live_price": 48233.04,
       "live_source": "pricecharting:psa9",
-      "target_buy": 38498.64,
-      "target_sell": 45717.14,
+      "target_buy": 38586.43,
+      "target_sell": 45821.39,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -120,6 +120,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 48123.3
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 48233.04
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 48233.04
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 48233.04
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -131,12 +143,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 7103.57,
-          "grade_7": 22676.43,
+          "ungraded": 7397.74,
+          "grade_7": 23425.11,
           "grade_8": 28640.0,
-          "grade_9": 48123.3,
+          "grade_9": 48233.04,
           "grade_9_5": 77076.43,
-          "grade_10": 421925.16
+          "grade_10": 350439.63
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -267,6 +279,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 28640.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 28640.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 28640.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 28640.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -278,12 +302,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 7103.57,
-          "grade_7": 22676.43,
+          "ungraded": 7397.74,
+          "grade_7": 23425.11,
           "grade_8": 28640.0,
-          "grade_9": 48123.3,
+          "grade_9": 48233.04,
           "grade_9_5": 77076.43,
-          "grade_10": 421925.16
+          "grade_10": 350439.63
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -414,6 +438,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 9343.68
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 9343.68
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 9394.43
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 9394.43
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -425,10 +461,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 861.46,
-          "grade_7": 3169.0,
-          "grade_8": 4250.0,
-          "grade_9": 9343.68,
+          "ungraded": 929.53,
+          "grade_7": 3275.0,
+          "grade_8": 4936.0,
+          "grade_9": 9394.43,
           "grade_9_5": 10701.25,
           "grade_10": 30100.0
         },
@@ -473,7 +509,7 @@
             "trend": "down",
             "volume_7d": null
           },
-          "last_updated": "2026-05-27T14:43:43.021Z"
+          "last_updated": "2026-05-30T10:05:59.370Z"
         }
       },
       "reconcile_confidence": null,
@@ -598,6 +634,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 29643.13
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 29871.57
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 29871.57
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 29871.57
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -609,12 +657,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 296.62,
-          "grade_7": 721.47,
-          "grade_8": 1312.5,
-          "grade_9": 2522.8,
+          "ungraded": 292.27,
+          "grade_7": 710.0,
+          "grade_8": 1335.62,
+          "grade_9": 2199.0,
           "grade_9_5": 4680.18,
-          "grade_10": 29643.13
+          "grade_10": 29871.57
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -637,11 +685,11 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 4500,
       "wb_price": 3126.0,
-      "live_price": 2443.04,
+      "live_price": 2199.0,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1954.43,
-      "target_sell": 2320.89,
-      "score": 76,
+      "target_buy": 1759.2,
+      "target_sell": 2089.05,
+      "score": 78,
       "signal": "STRONG BUY",
       "d7_workbook": 0.0,
       "d30_workbook": 75.96,
@@ -717,6 +765,18 @@
         {
           "ts": "2026-05-21T18:25:43.461333Z",
           "p": 2443.04
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 2199.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 2199.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 2199.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -728,12 +788,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 347.16,
-          "grade_7": 760.39,
-          "grade_8": 1290.86,
-          "grade_9": 2443.04,
-          "grade_9_5": 4300.0,
-          "grade_10": 28272.5
+          "ungraded": 292.27,
+          "grade_7": 710.0,
+          "grade_8": 1335.62,
+          "grade_9": 2199.0,
+          "grade_9_5": 4680.18,
+          "grade_10": 29871.57
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -756,10 +816,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 280,
       "wb_price": 6500.0,
-      "live_price": 10444.0,
+      "live_price": 9817.61,
       "live_source": "pricecharting:psa9",
-      "target_buy": 8355.2,
-      "target_sell": 9921.8,
+      "target_buy": 7854.09,
+      "target_sell": 9326.73,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -864,6 +924,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 10444.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 10444.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 9817.61
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 9817.61
         }
       ],
       "image": "https://images.pokemontcg.io/bw8/137.png",
@@ -878,9 +950,9 @@
           "ungraded": 1025.0,
           "grade_7": 3350.0,
           "grade_8": 4991.92,
-          "grade_9": 10444.0,
-          "grade_9_5": 11488.0,
-          "grade_10": 39446.25
+          "grade_9": 9817.61,
+          "grade_9_5": 10373.66,
+          "grade_10": 40677.21
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -1002,6 +1074,18 @@
         },
         {
           "ts": "2026-05-29T14:38:43.282063Z",
+          "p": 5856.89
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 5856.89
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 5856.89
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
           "p": 5856.89
         }
       ],
@@ -1315,12 +1399,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 110,
       "wb_price": 2400.0,
-      "live_price": 2400.0,
-      "live_source": "wb_no_sources",
-      "target_buy": 1920.0,
-      "target_sell": 2280.0,
-      "score": 51,
-      "signal": "HOLD",
+      "live_price": 999.99,
+      "live_source": "pokeprice:psa10",
+      "target_buy": 799.99,
+      "target_sell": 949.99,
+      "score": 62,
+      "signal": "BUY",
       "d7_workbook": 0.0,
       "d30_workbook": 0.76,
       "history": [
@@ -1335,34 +1419,83 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 3025.5
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 999.99
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 999.99
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 999.99
         }
       ],
       "image": "https://images.pokemontcg.io/ru1/7.png",
       "notes": "Red cheeks error variant. Tiny PSA 10 pop.",
-      "confidence": "UNKNOWN",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "workbook_fallback"
+        "single_source"
       ],
-      "reconcile_reason": "no live source available; using workbook",
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 35.23,
+          "ungraded": 44.56,
           "grade_7": null,
-          "grade_8": 148.0,
-          "grade_9": 84.65,
+          "grade_8": 161.52,
+          "grade_9": 89.84,
           "grade_9_5": null,
           "grade_10": null
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 80.81,
+          "grade_7": 85.0,
+          "grade_8": 95.0,
+          "grade_9": 200.0,
+          "grade_9_5": null,
+          "grade_10": 999.99
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": null,
+        "tcgplayer_market": 453.32,
         "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=pikachu+red+cheeks+58",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/147229",
+        "ppt_meta": {
+          "psa10": {
+            "count": 7,
+            "min": 355,
+            "max": 3500,
+            "trend": "up",
+            "volume_7d": 0.14285714285714285
+          },
+          "psa9": {
+            "count": 13,
+            "min": 50,
+            "max": 1914,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa8": {
+            "count": 13,
+            "min": 39.99,
+            "max": 249.99,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa7": {
+            "count": 11,
+            "min": 46.52,
+            "max": 545,
+            "trend": "down",
+            "volume_7d": null
+          },
+          "last_updated": "2026-05-30T10:05:59.370Z"
+        }
       },
-      "reconcile_confidence": "UNKNOWN",
-      "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$85_vs_wb_$2400"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "V014": {
       "id": "V014",
@@ -1576,6 +1709,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 8496.25
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 8496.25
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 8547.5
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 8547.5
         }
       ],
       "image": "https://images.pokemontcg.io/ecard2/149.png",
@@ -1587,12 +1732,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1064.9,
-          "grade_7": 3937.75,
-          "grade_8": 5000.0,
-          "grade_9": 8496.25,
+          "ungraded": 1499.5,
+          "grade_7": 3950.0,
+          "grade_8": 5075.0,
+          "grade_9": 8547.5,
           "grade_9_5": 14800.0,
-          "grade_10": 63991.75
+          "grade_10": 63365.12
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -1615,10 +1760,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 180,
       "wb_price": 4200.0,
-      "live_price": 13172.69,
-      "live_source": "consensus_disagrees_wb_ebay_pc",
-      "target_buy": 10538.15,
-      "target_sell": 12514.06,
+      "live_price": 11345.38,
+      "live_source": "pricecharting:psa9",
+      "target_buy": 9076.3,
+      "target_sell": 10778.11,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -1711,15 +1856,27 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 15000.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 11345.38
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 11345.38
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 11345.38
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/107.png",
       "notes": "First Shining Charizard. Highly underprinted.",
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "consensus_disagrees_workbook"
+        "single_source"
       ],
-      "reconcile_reason": "2 sources agree at $13173 but wb=$4200 (3.1x) \u2014 verify variant",
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
           "ungraded": 2200.0,
@@ -1730,15 +1887,15 @@
           "grade_10": 35006.76
         },
         "pokeprice": null,
-        "ebay_recent_avg": 15000.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-destiny/shining-charizard-1st-edition-107",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "LOW",
-      "scrape_rejected_value": 15000.0,
-      "scrape_rejected_source": "ebay"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "V018": {
       "id": "V018",
@@ -1750,10 +1907,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 220,
       "wb_price": 1800.0,
-      "live_price": 4180.35,
+      "live_price": 4238.6,
       "live_source": "pricecharting:psa9",
-      "target_buy": 3344.28,
-      "target_sell": 3971.33,
+      "target_buy": 3390.88,
+      "target_sell": 4026.67,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -1774,6 +1931,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 4180.35
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 4217.75
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 4238.6
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 4238.6
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/113.png",
@@ -1785,10 +1954,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1256.2,
+          "ungraded": 1576.19,
           "grade_7": 1352.5,
           "grade_8": 3100.0,
-          "grade_9": 4180.35,
+          "grade_9": 4238.6,
           "grade_9_5": 8500.0,
           "grade_10": 17847.66
         },
@@ -1913,6 +2082,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 59859.1
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 59859.1
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 59549.55
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 59549.55
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/4114b3e6832bf8d39641c4d9594740579609bb71f30178678739b740f7f37154/60.jpg",
@@ -1926,8 +2107,8 @@
         "pricecharting": {
           "ungraded": null,
           "grade_7": null,
-          "grade_8": 59859.1,
-          "grade_9": 50000.0,
+          "grade_8": 59549.55,
+          "grade_9": 54250.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -2060,6 +2241,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 58723.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 58723.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 58723.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 58723.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -2071,10 +2264,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 3065.53,
-          "grade_7": 8164.4,
-          "grade_8": 11287.17,
-          "grade_9": 14179.21,
+          "ungraded": 3350.0,
+          "grade_7": 8249.5,
+          "grade_8": 12000.0,
+          "grade_9": 14179.91,
           "grade_9_5": 18099.0,
           "grade_10": 58723.0
         },
@@ -2099,10 +2292,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 200,
       "wb_price": 5000.0,
-      "live_price": 14179.21,
+      "live_price": 14179.91,
       "live_source": "pricecharting:psa9",
-      "target_buy": 11343.37,
-      "target_sell": 13470.25,
+      "target_buy": 11343.93,
+      "target_sell": 13470.91,
       "score": 51,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -2199,6 +2392,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 14179.21
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 14179.21
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 14179.91
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 14179.91
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -2210,10 +2415,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 3065.53,
-          "grade_7": 8164.4,
-          "grade_8": 11287.17,
-          "grade_9": 14179.21,
+          "ungraded": 3350.0,
+          "grade_7": 8249.5,
+          "grade_8": 12000.0,
+          "grade_9": 14179.91,
           "grade_9_5": 18099.0,
           "grade_10": 58723.0
         },
@@ -2346,6 +2551,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 20100.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 20100.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 20100.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 20100.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
@@ -2365,7 +2582,7 @@
           "grade_10": 63460.5
         },
         "pokeprice": null,
-        "ebay_recent_avg": 99.99,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-pop-series-5/umbreon-gold-star-17",
         "tcgplayer_url": null,
@@ -2493,6 +2710,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 13900.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 13900.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 13900.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 13900.0
         }
       ],
       "image": "https://images.pokemontcg.io/neo2/1.png",
@@ -2512,7 +2741,7 @@
           "grade_10": 33609.63
         },
         "pokeprice": null,
-        "ebay_recent_avg": 94.99,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-pop-series-5/espeon-gold-star-16",
         "tcgplayer_url": null,
@@ -2532,10 +2761,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 180,
       "wb_price": 2800.0,
-      "live_price": 1725.0,
+      "live_price": 1771.36,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1380.0,
-      "target_sell": 1638.75,
+      "target_buy": 1417.09,
+      "target_sell": 1682.79,
       "score": 58,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -2588,6 +2817,18 @@
         {
           "ts": "2026-05-21T18:25:43.461333Z",
           "p": 1725.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 1725.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 1771.36
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 1771.36
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H31.png",
@@ -2599,10 +2840,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 966.33,
+          "ungraded": 1189.54,
           "grade_7": null,
-          "grade_8": 2717.12,
-          "grade_9": 1725.0,
+          "grade_8": 2534.5,
+          "grade_9": 1771.36,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -2627,10 +2868,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 200,
       "wb_price": 2400.0,
-      "live_price": 1632.43,
+      "live_price": 1666.85,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1305.94,
-      "target_sell": 1550.81,
+      "target_buy": 1333.48,
+      "target_sell": 1583.51,
       "score": 56,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -2667,6 +2908,18 @@
         {
           "ts": "2026-05-20T18:44:34.599056Z",
           "p": 1632.43
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 1647.99
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 1666.85
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 1666.85
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H12.png",
@@ -2678,10 +2931,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 809.83,
+          "ungraded": 937.47,
           "grade_7": null,
-          "grade_8": 2095.89,
-          "grade_9": 1632.43,
+          "grade_8": 1979.33,
+          "grade_9": 1666.85,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -2706,10 +2959,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 175,
       "wb_price": 2600.0,
-      "live_price": 1658.26,
+      "live_price": 1652.31,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1326.61,
-      "target_sell": 1575.35,
+      "target_buy": 1321.85,
+      "target_sell": 1569.69,
       "score": 57,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -2754,6 +3007,18 @@
         {
           "ts": "2026-05-21T18:25:43.461333Z",
           "p": 1658.26
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 1652.31
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 1652.31
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 1652.31
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H7.png",
@@ -2765,10 +3030,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 650.25,
+          "ungraded": 692.38,
           "grade_7": null,
-          "grade_8": 2152.11,
-          "grade_9": 1658.26,
+          "grade_8": 2282.38,
+          "grade_9": 1652.31,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -2885,6 +3150,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 25784.82
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 25784.82
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 25797.77
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 25797.77
         }
       ],
       "image": "https://images.pokemontcg.io/col1/SL10.png",
@@ -2896,11 +3173,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 5602.79,
+          "ungraded": 5601.4,
           "grade_7": 14359.71,
           "grade_8": 25693.98,
-          "grade_9": 25784.82,
-          "grade_9_5": 27721.7,
+          "grade_9": 25797.77,
+          "grade_9_5": 27695.47,
           "grade_10": 48598.0
         },
         "pokeprice": null,
@@ -2924,10 +3201,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 240,
       "wb_price": 2200.0,
-      "live_price": 3572.96,
+      "live_price": 3569.08,
       "live_source": "pricecharting:psa9",
-      "target_buy": 2858.37,
-      "target_sell": 3394.31,
+      "target_buy": 2855.26,
+      "target_sell": 3390.63,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -2964,6 +3241,18 @@
         {
           "ts": "2026-05-20T18:44:34.599056Z",
           "p": 3572.96
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 3569.08
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 3569.08
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 3569.08
         }
       ],
       "image": "https://images.pokemontcg.io/si1/1.png",
@@ -2975,10 +3264,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1490.67,
+          "ungraded": 2293.15,
           "grade_7": null,
-          "grade_8": 5812.5,
-          "grade_9": 3572.96,
+          "grade_8": 6053.8,
+          "grade_9": 3569.08,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -3189,6 +3478,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 197448.76
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 197448.76
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg",
@@ -3335,6 +3636,18 @@
         },
         {
           "ts": "2026-05-29T14:38:43.282063Z",
+          "p": 1986.32
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 1986.32
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 1986.32
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
           "p": 1986.32
         }
       ],
@@ -3560,6 +3873,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 3251.07
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 3251.07
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 3251.07
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 3251.07
         }
       ],
       "image": "https://images.pokemontcg.io/swsh7/215.png",
@@ -3572,7 +3897,7 @@
       "sources": {
         "pricecharting": null,
         "pokeprice": {
-          "ungraded": 2089.84,
+          "ungraded": 2005.2,
           "grade_7": null,
           "grade_8": 1500.0,
           "grade_9": 1818.005,
@@ -3580,12 +3905,12 @@
           "grade_10": 3251.075
         },
         "ebay_recent_avg": null,
-        "tcgplayer_market": 2005.2,
+        "tcgplayer_market": 1954.94,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/246723",
         "ppt_meta": {
           "psa10": {
-            "count": 154,
+            "count": 156,
             "min": 20,
             "max": 24120.17,
             "trend": "stable",
@@ -3606,7 +3931,7 @@
             "volume_7d": null
           },
           "psa7": null,
-          "last_updated": "2026-05-27T14:41:13.191Z"
+          "last_updated": "2026-05-30T10:03:11.080Z"
         }
       },
       "reconcile_confidence": null,
@@ -3647,6 +3972,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 2004.36
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 2005.2
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 2026.35
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 1954.94
         }
       ],
       "image": "https://images.pokemontcg.io/swsh7/215.png",
@@ -3658,12 +3995,43 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": null,
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 2005.2,
+          "grade_7": null,
+          "grade_8": 1500.0,
+          "grade_9": 1818.005,
+          "grade_9_5": null,
+          "grade_10": 3251.075
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": 2004.36,
+        "tcgplayer_market": 1954.94,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/246723",
-        "ppt_meta": null
+        "ppt_meta": {
+          "psa10": {
+            "count": 156,
+            "min": 20,
+            "max": 24120.17,
+            "trend": "stable",
+            "volume_7d": 0.2857142857142857
+          },
+          "psa9": {
+            "count": 100,
+            "min": 1098.98,
+            "max": 2500,
+            "trend": "up",
+            "volume_7d": 0.14285714285714285
+          },
+          "psa8": {
+            "count": 11,
+            "min": 1125,
+            "max": 1899,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa7": null,
+          "last_updated": "2026-05-30T10:03:11.080Z"
+        }
       },
       "reconcile_confidence": null,
       "scrape_rejected_value": null,
@@ -7912,10 +8280,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 800,
       "wb_price": 5200.0,
-      "live_price": 5600.0,
+      "live_price": 5650.0,
       "live_source": "pricecharting:psa10",
-      "target_buy": 4480.0,
-      "target_sell": 5320.0,
+      "target_buy": 4520.0,
+      "target_sell": 5367.5,
       "score": 62,
       "signal": "BUY",
       "d7_workbook": 0.0,
@@ -8012,6 +8380,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 5600.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 5650.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 5650.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 5650.0
         }
       ],
       "image": "https://images.pokemontcg.io/sv8pt5/161.png",
@@ -8023,12 +8403,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1418.7,
-          "grade_7": 1175.0,
-          "grade_8": 1265.67,
-          "grade_9": 1681.23,
+          "ungraded": 1383.17,
+          "grade_7": 1200.0,
+          "grade_8": 1263.89,
+          "grade_9": 1651.15,
           "grade_9_5": 2975.0,
-          "grade_10": 5600.0
+          "grade_10": 5650.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -8790,10 +9170,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 400,
       "wb_price": 3000.0,
-      "live_price": 3469.47,
+      "live_price": 3200.0,
       "live_source": "pricecharting:psa10",
-      "target_buy": 2775.58,
-      "target_sell": 3296.0,
+      "target_buy": 2560.0,
+      "target_sell": 3040.0,
       "score": 69,
       "signal": "BUY",
       "d7_workbook": 0.0,
@@ -8866,6 +9246,18 @@
         {
           "ts": "2026-05-21T18:25:43.461333Z",
           "p": 3469.47
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 3299.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 3299.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 3200.0
         }
       ],
       "image": "https://images.pokemontcg.io/me2/56.png",
@@ -8877,12 +9269,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1385.5,
-          "grade_7": 1114.89,
+          "ungraded": 1305.13,
+          "grade_7": 1149.43,
           "grade_8": 1200.0,
-          "grade_9": 1354.6,
-          "grade_9_5": 2615.28,
-          "grade_10": 3469.47
+          "grade_9": 1305.5,
+          "grade_9_5": 2499.99,
+          "grade_10": 3200.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -9499,6 +9891,18 @@
         {
           "ts": "2026-05-21T18:25:43.461333Z",
           "p": 632.91
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 740.05
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 740.05
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 740.05
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/5e96704258cea7c698de7602006f71dfe88d868c0c9585a1e11055de7d488007/60.jpg",
@@ -9510,10 +9914,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 972.33,
+          "ungraded": 980.64,
           "grade_7": null,
-          "grade_8": 800.71,
-          "grade_9": 632.91,
+          "grade_8": 849.45,
+          "grade_9": 740.05,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -9786,6 +10190,18 @@
         },
         {
           "ts": "2026-05-27T21:16:42.791305Z",
+          "p": 1986.32
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 1986.32
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 1986.32
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
           "p": 1986.32
         }
       ],
@@ -12408,9 +12824,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.94,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 48.0,
+          "grade_8": 48.57,
           "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
@@ -12751,10 +13167,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 7.69,
+          "ungraded": 7.02,
           "grade_7": null,
-          "grade_8": 15.29,
-          "grade_9": 15.25,
+          "grade_8": 14.3,
+          "grade_9": 11.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -12802,9 +13218,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 286.48,
+          "ungraded": 280.0,
           "grade_7": null,
-          "grade_8": 216.35,
+          "grade_8": 236.74,
           "grade_9": 91.5,
           "grade_9_5": null,
           "grade_10": null
@@ -13259,6 +13675,18 @@
         },
         {
           "ts": "2026-05-29T14:38:43.282063Z",
+          "p": 16730.5
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 16730.5
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 16730.5
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
           "p": 16730.5
         }
       ],
@@ -19122,11 +19550,11 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 350,
       "wb_price": 2800.0,
-      "live_price": 11239.15,
-      "live_source": "pricecharting:psa8",
-      "target_buy": 8991.32,
-      "target_sell": 10677.19,
-      "score": 49,
+      "live_price": 2300.0,
+      "live_source": "closest_to_wb_ppt",
+      "target_buy": 1840.0,
+      "target_sell": 2185.0,
+      "score": 53,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": 0.0,
@@ -19174,34 +19602,81 @@
         {
           "ts": "2026-05-21T18:25:43.461333Z",
           "p": 11239.15
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 11239.15
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 11239.15
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 11569.84
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/bd96c0864982e5728f6865cb53b48cef4ff034eae52a496e594c40eca129a79a/240.jpg",
       "notes": "Skyridge Char PSA 8. Hard to find.",
       "confidence": "MEDIUM",
-      "confidence_flags": [
-        "single_source"
-      ],
-      "reconcile_reason": "",
+      "confidence_flags": [],
+      "reconcile_reason": "sources disagree by 67%; using ppt (closest to workbook)",
       "sources": {
         "pricecharting": {
-          "ungraded": 2647.84,
-          "grade_7": 8666.99,
-          "grade_8": 11239.15,
-          "grade_9": 16735.6,
+          "ungraded": 3774.25,
+          "grade_7": 8601.15,
+          "grade_8": 11569.84,
+          "grade_9": 23104.71,
           "grade_9_5": 32586.28,
-          "grade_10": 48360.0
+          "grade_10": 76388.42
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": null,
+          "grade_7": 1557.5,
+          "grade_8": 2300.0,
+          "grade_9": 2500.0,
+          "grade_9_5": null,
+          "grade_10": 14555.625
+        },
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-skyridge/charizard-146",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/84186",
+        "ppt_meta": {
+          "psa10": {
+            "count": 14,
+            "min": 2167.38,
+            "max": 149900,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa9": {
+            "count": 15,
+            "min": 500,
+            "max": 29000,
+            "trend": "down",
+            "volume_7d": null
+          },
+          "psa8": {
+            "count": 15,
+            "min": 690,
+            "max": 25000,
+            "trend": "up",
+            "volume_7d": 0.14285714285714285
+          },
+          "psa7": {
+            "count": 10,
+            "min": 535,
+            "max": 13340.99,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "last_updated": "2026-05-30T10:06:05.733Z"
+        }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "MEDIUM",
+      "scrape_rejected_value": 11569.84,
+      "scrape_rejected_source": "pricecharting:psa8"
     },
     "V813": {
       "id": "V813",
@@ -19291,10 +19766,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.29,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 51.32,
-          "grade_9": 27.52,
+          "grade_8": 48.57,
+          "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -27132,10 +27607,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 4500,
       "wb_price": 1800.0,
-      "live_price": 2443.04,
+      "live_price": 2199.0,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1954.43,
-      "target_sell": 2320.89,
+      "target_buy": 1759.2,
+      "target_sell": 2089.05,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 1.39,
@@ -27156,6 +27631,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 2443.04
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 2199.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 2199.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 2199.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hpgpcpsd42huitud/240.jpg",
@@ -27167,12 +27654,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 347.16,
-          "grade_7": 760.39,
-          "grade_8": 1290.86,
-          "grade_9": 2443.04,
-          "grade_9_5": 4300.0,
-          "grade_10": 28272.5
+          "ungraded": 292.27,
+          "grade_7": 710.0,
+          "grade_8": 1335.62,
+          "grade_9": 2199.0,
+          "grade_9_5": 4680.18,
+          "grade_10": 29871.57
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -31105,6 +31592,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 28640.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 28640.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 28640.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 28640.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
@@ -31116,15 +31615,15 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 7103.57,
-          "grade_7": 22676.43,
+          "ungraded": 7397.74,
+          "grade_7": 23425.11,
           "grade_8": 28640.0,
-          "grade_9": 48123.3,
+          "grade_9": 48233.04,
           "grade_9_5": 77076.43,
-          "grade_10": 421925.16
+          "grade_10": 350439.63
         },
         "pokeprice": null,
-        "ebay_recent_avg": 995.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-base-set/charizard-1st-edition-4",
         "tcgplayer_url": null,
@@ -31144,10 +31643,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 480,
       "wb_price": 16000.0,
-      "live_price": 48123.3,
+      "live_price": 48233.04,
       "live_source": "pricecharting:fallback_grade_9",
-      "target_buy": 38498.64,
-      "target_sell": 45717.14,
+      "target_buy": 38586.43,
+      "target_sell": 45821.39,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.33,
@@ -31252,6 +31751,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 48123.3
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 48233.04
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 48233.04
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 48233.04
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
@@ -31263,12 +31774,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 7103.57,
-          "grade_7": 22676.43,
+          "ungraded": 7397.74,
+          "grade_7": 23425.11,
           "grade_8": 28640.0,
-          "grade_9": 48123.3,
+          "grade_9": 48233.04,
           "grade_9_5": 77076.43,
-          "grade_10": 421925.16
+          "grade_10": 350439.63
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -31291,10 +31802,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 65,
       "wb_price": 22000.0,
-      "live_price": 33198.62,
-      "live_source": "median_ebay_pc",
-      "target_buy": 26558.9,
-      "target_sell": 31538.69,
+      "live_price": 63365.12,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 50692.1,
+      "target_sell": 60196.86,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 0.06,
@@ -31399,32 +31910,46 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 63991.75
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 63991.75
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 63365.12
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 63365.12
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/b51a881854783a5337801f7b6640f4aa387a8df72537d1719719aadaf37237a1/240.jpg",
       "notes": "Neo Lugia PSA 10 \u2014 pop ~65.",
-      "confidence": "LOW",
-      "confidence_flags": [],
-      "reconcile_reason": "sources disagree by 93%; took median (no usable wb anchor)",
+      "confidence": "MEDIUM",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1064.9,
-          "grade_7": 3937.75,
-          "grade_8": 5000.0,
-          "grade_9": 8496.25,
+          "ungraded": 1499.5,
+          "grade_7": 3950.0,
+          "grade_8": 5075.0,
+          "grade_9": 8547.5,
           "grade_9_5": 14800.0,
-          "grade_10": 63991.75
+          "grade_10": 63365.12
         },
         "pokeprice": null,
-        "ebay_recent_avg": 2405.49,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-genesis/lugia-1st-edition-9",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "LOW",
-      "scrape_rejected_value": 63991.75,
-      "scrape_rejected_source": "pricecharting:psa10"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "X504": {
       "id": "X504",
@@ -31459,9 +31984,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.94,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 48.0,
+          "grade_8": 48.57,
           "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
@@ -31487,12 +32012,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 80,
       "wb_price": 18000.0,
-      "live_price": 18000.0,
-      "live_source": "wb_fallback_source_rejected",
-      "target_buy": 14400.0,
-      "target_sell": 17100.0,
-      "score": 55,
-      "signal": "HOLD",
+      "live_price": 8249.5,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 6599.6,
+      "target_sell": 7837.02,
+      "score": 65,
+      "signal": "BUY",
       "d7_workbook": 0.59,
       "d30_workbook": 8.0,
       "history": [
@@ -31595,35 +32120,46 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 8164.4
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 8164.4
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 8249.5
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 8249.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/60.jpg",
       "notes": "Char Gold Star PSA 10.",
-      "confidence": "UNKNOWN",
+      "confidence": "LOW",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "no_source_data"
       ],
-      "reconcile_reason": "ebay returned $344 but workbook is $18000 (0.0x) \u2014 outside 0.15-8.0 band, using workbook",
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 3065.53,
+          "ungraded": 3350.0,
           "grade_7": null,
-          "grade_8": 11287.17,
-          "grade_9": 8164.4,
+          "grade_8": 12000.0,
+          "grade_9": 8249.5,
           "grade_9_5": null,
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 343.82,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=charizard+gold+star",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
-      "scrape_rejected_value": 8164.4,
-      "scrape_rejected_source": "pricecharting:fallback_grade_9"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "X506": {
       "id": "X506",
@@ -31743,6 +32279,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 7137.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 7137.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 7137.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 7137.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/2ed0a8e8f070e2c9860e57a9d52d0f9627aa59aef90670f9b8b8f856a2231f30/60.jpg",
@@ -31782,12 +32330,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 60,
       "wb_price": 22000.0,
-      "live_price": 22000.0,
-      "live_source": "wb_fallback_source_rejected",
-      "target_buy": 17600.0,
-      "target_sell": 20900.0,
-      "score": 58,
-      "signal": "HOLD",
+      "live_price": 7300.0,
+      "live_source": "pricecharting:fallback_grade_9",
+      "target_buy": 5840.0,
+      "target_sell": 6935.0,
+      "score": 70,
+      "signal": "BUY",
       "d7_workbook": 3.81,
       "d30_workbook": 10.0,
       "history": [
@@ -31890,16 +32438,27 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 7300.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 7300.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 7300.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 7300.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/18a487e2ef2a60bb7342532094af9d7656a6a2d1797bc10b848b37a64e6a5eb3/60.jpg",
       "notes": "Umbreon GS PSA 10.",
-      "confidence": "UNKNOWN",
+      "confidence": "LOW",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "no_source_data"
       ],
-      "reconcile_reason": "ebay returned $400 but workbook is $22000 (0.0x) \u2014 outside 0.15-8.0 band, using workbook",
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
           "ungraded": 4563.95,
@@ -31910,15 +32469,15 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 400.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=umbreon+gold+star",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
-      "scrape_rejected_value": 7300.0,
-      "scrape_rejected_source": "pricecharting:fallback_grade_9"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "X508": {
       "id": "X508",
@@ -32038,6 +32597,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 197448.76
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 197448.76
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg",
@@ -32057,7 +32628,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 16.5,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-japanese-promo/illustrator-pikachu?q=pikachu+illustrator",
         "tcgplayer_url": null,
@@ -32116,10 +32687,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 120,
       "wb_price": 200000.0,
-      "live_price": 211200.08,
-      "live_source": "median_ebay_pc",
-      "target_buy": 168960.06,
-      "target_sell": 200640.08,
+      "live_price": 350439.63,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 280351.7,
+      "target_sell": 332917.65,
       "score": 53,
       "signal": "HOLD",
       "d7_workbook": 1.36,
@@ -32224,32 +32795,46 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 421925.16
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 350439.63
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 350439.63
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 350439.63
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
       "notes": "1st Ed Shadowless Char PSA 10 \u2014 grail.",
-      "confidence": "LOW",
-      "confidence_flags": [],
-      "reconcile_reason": "sources disagree by 100%; took median (no usable wb anchor)",
+      "confidence": "MEDIUM",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 7103.57,
-          "grade_7": 22676.43,
+          "ungraded": 7397.74,
+          "grade_7": 23425.11,
           "grade_8": 28640.0,
-          "grade_9": 48123.3,
+          "grade_9": 48233.04,
           "grade_9_5": 77076.43,
-          "grade_10": 421925.16
+          "grade_10": 350439.63
         },
         "pokeprice": null,
-        "ebay_recent_avg": 475.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-base-set/charizard-1st-edition-4",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "LOW",
-      "scrape_rejected_value": 421925.16,
-      "scrape_rejected_source": "pricecharting:psa10"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "X511": {
       "id": "X511",
@@ -32361,6 +32946,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 14640.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 14640.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 14640.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 14640.0
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/107.png",
@@ -32370,7 +32967,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1573.12,
+          "ungraded": 1356.74,
           "grade_7": 2721.24,
           "grade_8": 3163.62,
           "grade_9": 4026.0,
@@ -32380,7 +32977,7 @@
         "pokeprice": {
           "ungraded": 335.0,
           "grade_7": 2800.0,
-          "grade_8": 2988.0,
+          "grade_8": 2999.0,
           "grade_9": 3925.0,
           "grade_9_5": null,
           "grade_10": 14738.885
@@ -32405,20 +33002,20 @@
             "volume_7d": null
           },
           "psa8": {
-            "count": 53,
+            "count": 55,
             "min": 1850,
             "max": 12500,
             "trend": "up",
-            "volume_7d": 0.2857142857142857
+            "volume_7d": 0.5714285714285714
           },
           "psa7": {
-            "count": 25,
+            "count": 26,
             "min": 1814.27,
             "max": 6878.57,
-            "trend": "up",
+            "trend": "down",
             "volume_7d": 0.14285714285714285
           },
-          "last_updated": "2026-05-27T14:43:31.739Z"
+          "last_updated": "2026-05-30T10:05:37.681Z"
         }
       },
       "reconcile_confidence": null,
@@ -32462,10 +33059,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.94,
+          "ungraded": 11.0,
           "grade_7": null,
-          "grade_8": 48.0,
-          "grade_9": 27.29,
+          "grade_8": 17.5,
+          "grade_9": 14.5,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -32513,7 +33110,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 256.13,
+          "ungraded": 178.75,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -32658,12 +33255,12 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 2400.0,
-      "live_price": 257.49,
-      "live_source": "pricecharting:raw",
-      "target_buy": 205.99,
-      "target_sell": 244.62,
-      "score": 64,
-      "signal": "BUY",
+      "live_price": 2400.0,
+      "live_source": "wb_fallback_source_rejected",
+      "target_buy": 1920.0,
+      "target_sell": 2280.0,
+      "score": 53,
+      "signal": "HOLD",
       "d7_workbook": 2.1,
       "d30_workbook": 6.0,
       "history": [
@@ -32702,14 +33299,15 @@
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg",
       "notes": "HF BB. Hard sealed vintage modern.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "pc returned $233 but workbook is $2400 (0.1x) \u2014 outside 0.1-15.0 band, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 257.49,
+          "ungraded": 233.19,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -32723,9 +33321,9 @@
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 0,
+      "scrape_rejected_source": "rejected_sanity_pricecharting:raw_$233_vs_wb_$2400"
     },
     "X526": {
       "id": "X526",
@@ -32760,7 +33358,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 140.75,
+          "ungraded": 178.75,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -32895,6 +33493,18 @@
         },
         {
           "ts": "2026-05-29T14:38:43.282063Z",
+          "p": 39379.63
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 39379.63
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 39379.63
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
           "p": 39379.63
         }
       ],
@@ -33043,6 +33653,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 13312.89
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 13312.89
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 13312.89
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 13312.89
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/y4tmxstxkimjis4u/240.jpg",
@@ -33062,7 +33684,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 549.99,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-jungle/booster-box",
         "tcgplayer_url": null,
@@ -33189,6 +33811,18 @@
         },
         {
           "ts": "2026-05-29T14:38:43.282063Z",
+          "p": 15438.43
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 15438.43
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 15438.43
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
           "p": 15438.43
         }
       ],
@@ -33337,6 +33971,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 7600.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 7600.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 7600.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 7600.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/f4d9b697991cbf388e275605cd7be4961b8bba69eef1808e52c158c8125f839b/240.jpg",
@@ -33356,7 +34002,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 599.99,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-genesis/booster-box",
         "tcgplayer_url": null,
@@ -33484,6 +34130,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 9675.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 9675.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 9675.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 9675.0
         }
       ],
       "image": "https://images.pokemontcg.io/base5/15.png",
@@ -33503,7 +34161,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 322.49,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-team-rocket/booster-box",
         "tcgplayer_url": null,
@@ -33631,6 +34289,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 19651.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 19651.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 19651.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 19651.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard2/149.png",
@@ -33684,7 +34354,7 @@
             "trend": "up",
             "volume_7d": null
           },
-          "last_updated": "2026-05-27T14:43:35.380Z"
+          "last_updated": "2026-05-30T10:05:42.529Z"
         }
       },
       "reconcile_confidence": "UNKNOWN",
@@ -33701,11 +34371,11 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 1450,
       "wb_price": 2200.0,
-      "live_price": 2130.02,
+      "live_price": 2030.04,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1704.02,
-      "target_sell": 2023.52,
-      "score": 51,
+      "target_buy": 1624.03,
+      "target_sell": 1928.54,
+      "score": 52,
       "signal": "HOLD",
       "d7_workbook": 2.11,
       "d30_workbook": 4.0,
@@ -33733,30 +34403,71 @@
         {
           "ts": "2026-05-20T04:02:46.904558Z",
           "p": 2130.02
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 2030.04
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 2030.04
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 2030.04
         }
       ],
       "image": "https://images.pokemontcg.io/ecard2/149.png",
       "notes": "More liquid Lugia entry.",
-      "confidence": "MEDIUM",
-      "confidence_flags": [
-        "single_source"
-      ],
+      "confidence": "HIGH",
+      "confidence_flags": [],
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 369.87,
-          "grade_7": 744.03,
-          "grade_8": 941.13,
-          "grade_9": 2130.02,
-          "grade_9_5": 2343.0,
+          "ungraded": 395.0,
+          "grade_7": 730.57,
+          "grade_8": 1117.87,
+          "grade_9": 2030.04,
+          "grade_9_5": 2095.38,
           "grade_10": 19651.0
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 1299.96,
+          "grade_7": 301.25,
+          "grade_8": 689.0,
+          "grade_9": 1999.495,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": null,
+        "tcgplayer_market": 1299.96,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-genesis/lugia-9",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/86903",
+        "ppt_meta": {
+          "psa10": null,
+          "psa9": {
+            "count": 8,
+            "min": 66.66,
+            "max": 6900,
+            "trend": "down",
+            "volume_7d": null
+          },
+          "psa8": {
+            "count": 11,
+            "min": 520,
+            "max": 3359.75,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa7": {
+            "count": 4,
+            "min": 156,
+            "max": 499.99,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "last_updated": "2026-05-30T10:05:42.529Z"
+        }
       },
       "reconcile_confidence": null,
       "scrape_rejected_value": null,
@@ -33883,13 +34594,13 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $709 but workbook is $8500 (0.1x) \u2014 outside 0.15-8.0 band, using workbook",
+      "reconcile_reason": "pc returned $731 but workbook is $8500 (0.1x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 360.0,
+          "ungraded": 395.0,
           "grade_7": null,
           "grade_8": 1117.87,
-          "grade_9": 708.9,
+          "grade_9": 730.57,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -33902,7 +34613,7 @@
       },
       "reconcile_confidence": "UNKNOWN",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_sanity_pricecharting:psa9_$709_vs_wb_$8500"
+      "scrape_rejected_source": "rejected_sanity_pricecharting:psa9_$731_vs_wb_$8500"
     },
     "Z005": {
       "id": "Z005",
@@ -33938,6 +34649,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 188.78
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 181.69
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 180.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 180.0
         }
       ],
       "image": "https://images.pokemontcg.io/neo1/17.png",
@@ -33949,10 +34672,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 151.7,
+          "ungraded": 142.24,
           "grade_7": null,
-          "grade_8": 296.99,
-          "grade_9": 188.78,
+          "grade_8": 322.33,
+          "grade_9": 180.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -34079,30 +34802,79 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 2980.97
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 2980.97
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 2980.97
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 2980.97
         }
       ],
       "image": "https://images.pokemontcg.io/neo2/1.png",
       "notes": "First Espeon card. Eeveelution premium.",
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "confidence_flags": [
-        "single_source"
+        "sources_disagree_157pct"
       ],
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 165.49,
-          "grade_7": 245.0,
-          "grade_8": 344.0,
-          "grade_9": 724.66,
-          "grade_9_5": 797.0,
+          "ungraded": 183.38,
+          "grade_7": 243.72,
+          "grade_8": 342.39,
+          "grade_9": 714.05,
+          "grade_9_5": 785.0,
           "grade_10": 2980.97
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 26.47,
+          "grade_7": 29.99,
+          "grade_8": 26.994999999999997,
+          "grade_9": 49.0,
+          "grade_9_5": null,
+          "grade_10": 355.12
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": null,
+        "tcgplayer_market": 81.03,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-discovery/espeon-1",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/85320",
+        "ppt_meta": {
+          "psa10": {
+            "count": 10,
+            "min": 227.5,
+            "max": 749.99,
+            "trend": "down",
+            "volume_7d": null
+          },
+          "psa9": {
+            "count": 15,
+            "min": 29.99,
+            "max": 105,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa8": {
+            "count": 10,
+            "min": 20.5,
+            "max": 120,
+            "trend": "down",
+            "volume_7d": null
+          },
+          "psa7": {
+            "count": 7,
+            "min": 20,
+            "max": 75,
+            "trend": "down",
+            "volume_7d": null
+          },
+          "last_updated": "2026-05-30T10:05:40.957Z"
+        }
       },
       "reconcile_confidence": null,
       "scrape_rejected_value": null,
@@ -34118,10 +34890,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 245,
       "wb_price": 1700.0,
-      "live_price": 952.48,
+      "live_price": 951.41,
       "live_source": "pricecharting:psa10",
-      "target_buy": 761.98,
-      "target_sell": 904.86,
+      "target_buy": 761.13,
+      "target_sell": 903.84,
       "score": 67,
       "signal": "BUY",
       "d7_workbook": 2.25,
@@ -34142,30 +34914,77 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 952.48
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 951.41
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 951.41
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 951.41
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
       "notes": "First Umbreon card. Hot.",
-      "confidence": "MEDIUM",
-      "confidence_flags": [
-        "single_source"
-      ],
+      "confidence": "HIGH",
+      "confidence_flags": [],
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 49.74,
-          "grade_7": 75.25,
-          "grade_8": 147.57,
-          "grade_9": 285.2,
-          "grade_9_5": 314.0,
-          "grade_10": 952.48
+          "ungraded": 50.14,
+          "grade_7": 80.0,
+          "grade_8": 180.0,
+          "grade_9": 288.62,
+          "grade_9_5": 317.0,
+          "grade_10": 951.41
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 68.97,
+          "grade_7": 107.53,
+          "grade_8": 125.26,
+          "grade_9": 249.995,
+          "grade_9_5": null,
+          "grade_10": 948.84
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": null,
+        "tcgplayer_market": 48.0,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-discovery/umbreon-32",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/90142",
+        "ppt_meta": {
+          "psa10": {
+            "count": 23,
+            "min": 405,
+            "max": 3150,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa9": {
+            "count": 38,
+            "min": 86.5,
+            "max": 500,
+            "trend": "up",
+            "volume_7d": 0.2857142857142857
+          },
+          "psa8": {
+            "count": 35,
+            "min": 60,
+            "max": 500,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa7": {
+            "count": 17,
+            "min": 60,
+            "max": 175,
+            "trend": "down",
+            "volume_7d": 0.2857142857142857
+          },
+          "last_updated": "2026-05-30T10:05:40.958Z"
+        }
       },
       "reconcile_confidence": null,
       "scrape_rejected_value": null,
@@ -34208,9 +35027,9 @@
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 180.14,
+          "ungraded": 183.38,
           "grade_7": null,
-          "grade_8": 340.14,
+          "grade_8": 342.39,
           "grade_9": 243.72,
           "grade_9_5": null,
           "grade_10": null
@@ -34259,9 +35078,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.22,
+          "ungraded": 50.14,
           "grade_7": null,
-          "grade_8": 168.46,
+          "grade_8": 180.0,
           "grade_9": 80.0,
           "grade_9_5": null,
           "grade_10": null
@@ -34379,6 +35198,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 2721.24
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 2721.24
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 2721.24
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 2721.24
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/107.png",
@@ -34390,7 +35221,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1573.12,
+          "ungraded": 1356.74,
           "grade_7": null,
           "grade_8": 3163.62,
           "grade_9": 2721.24,
@@ -34708,10 +35539,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 295,
       "wb_price": 3800.0,
-      "live_price": 10000.0,
-      "live_source": "ebay",
-      "target_buy": 8000.0,
-      "target_sell": 9500.0,
+      "live_price": 9350.48,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 7480.38,
+      "target_sell": 8882.96,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 1.1,
@@ -34800,6 +35631,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 10000.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 9350.48
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 9350.48
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 9350.48
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/109.png",
@@ -34824,7 +35667,7 @@
           "grade_9_5": null,
           "grade_10": 9850.0
         },
-        "ebay_recent_avg": 10000.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": 3000.0,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-destiny/shining-mewtwo-109",
         "tcgplayer_url": "https://www.tcgplayer.com/product/89167",
@@ -34848,7 +35691,7 @@
             "min": 850,
             "max": 7951,
             "trend": "up",
-            "volume_7d": 0.2857142857142857
+            "volume_7d": 0.14285714285714285
           },
           "psa7": {
             "count": 16,
@@ -34857,7 +35700,7 @@
             "trend": "up",
             "volume_7d": 0.14285714285714285
           },
-          "last_updated": "2026-05-27T14:43:31.739Z"
+          "last_updated": "2026-05-30T10:05:37.681Z"
         }
       },
       "reconcile_confidence": null,
@@ -34897,9 +35740,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 41.0,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 46.74,
+          "grade_8": 48.57,
           "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
@@ -35017,10 +35860,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 175,
       "wb_price": 2900.0,
-      "live_price": 9600.0,
-      "live_source": "pricecharting:psa10",
-      "target_buy": 7680.0,
-      "target_sell": 9120.0,
+      "live_price": 9473.25,
+      "live_source": "consensus_disagrees_wb_pc_ppt",
+      "target_buy": 7578.6,
+      "target_sell": 8999.59,
       "score": 58,
       "signal": "HOLD",
       "d7_workbook": 2.26,
@@ -35081,34 +35924,83 @@
         {
           "ts": "2026-05-21T18:25:43.461333Z",
           "p": 9600.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 9999.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 9999.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 9999.0
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/113.png",
       "notes": "Shining Tyranitar grail.",
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "confidence_flags": [
-        "single_source"
+        "consensus_disagrees_workbook"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "2 sources agree at $9473 but wb=$2900 (3.3x) \u2014 verify variant",
       "sources": {
         "pricecharting": {
-          "ungraded": 499.99,
-          "grade_7": 1113.52,
-          "grade_8": 1609.0,
-          "grade_9": 2235.01,
-          "grade_9_5": 2459.0,
-          "grade_10": 9600.0
+          "ungraded": 540.0,
+          "grade_7": 1119.26,
+          "grade_8": 1645.0,
+          "grade_9": 2440.98,
+          "grade_9_5": 2685.0,
+          "grade_10": 9999.0
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 4249.99,
+          "grade_7": 1150.0,
+          "grade_8": 1300.0,
+          "grade_9": 2500.0,
+          "grade_9_5": null,
+          "grade_10": 8947.5
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": null,
+        "tcgplayer_market": 4249.99,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-destiny/shining-tyranitar-113",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/89171",
+        "ppt_meta": {
+          "psa10": {
+            "count": 24,
+            "min": 4400,
+            "max": 30000,
+            "trend": "up",
+            "volume_7d": 0.14285714285714285
+          },
+          "psa9": {
+            "count": 66,
+            "min": 850,
+            "max": 24277.07,
+            "trend": "up",
+            "volume_7d": 0.14285714285714285
+          },
+          "psa8": {
+            "count": 46,
+            "min": 775,
+            "max": 4395,
+            "trend": "up",
+            "volume_7d": 0.14285714285714285
+          },
+          "psa7": {
+            "count": 23,
+            "min": 618,
+            "max": 2600,
+            "trend": "up",
+            "volume_7d": 0.2857142857142857
+          },
+          "last_updated": "2026-05-30T10:05:37.681Z"
+        }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "LOW",
+      "scrape_rejected_value": 9999.0,
+      "scrape_rejected_source": "pricecharting:psa10"
     },
     "Z034": {
       "id": "Z034",
@@ -35120,11 +36012,11 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 155,
       "wb_price": 1800.0,
-      "live_price": 1726.35,
-      "live_source": "pricecharting:psa10",
-      "target_buy": 1381.08,
-      "target_sell": 1640.03,
-      "score": 58,
+      "live_price": 1625.67,
+      "live_source": "consensus_pc_ppt",
+      "target_buy": 1300.54,
+      "target_sell": 1544.39,
+      "score": 59,
       "signal": "HOLD",
       "d7_workbook": 1.92,
       "d30_workbook": 9.0,
@@ -35144,34 +36036,83 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 1726.35
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 1726.35
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 1726.35
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 1726.35
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/112.png",
       "notes": "Shining Steelix.",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "confidence_flags": [
-        "single_source"
+        "multi_source_consensus"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "2 sources agree within 6%",
       "sources": {
         "pricecharting": {
-          "ungraded": 275.16,
-          "grade_7": 448.28,
-          "grade_8": 600.0,
-          "grade_9": 810.0,
-          "grade_9_5": 891.0,
+          "ungraded": 255.0,
+          "grade_7": 511.0,
+          "grade_8": 610.0,
+          "grade_9": 842.5,
+          "grade_9_5": 927.0,
           "grade_10": 1726.35
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 189.01,
+          "grade_7": 477.45,
+          "grade_8": 536.0,
+          "grade_9": 810.0,
+          "grade_9_5": null,
+          "grade_10": 1525.0
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": null,
+        "tcgplayer_market": 189.01,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-neo-destiny/shining-steelix-112",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/89170",
+        "ppt_meta": {
+          "psa10": {
+            "count": 23,
+            "min": 775,
+            "max": 4258,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "psa9": {
+            "count": 61,
+            "min": 415.51,
+            "max": 1691.5,
+            "trend": "up",
+            "volume_7d": 0.42857142857142855
+          },
+          "psa8": {
+            "count": 37,
+            "min": 365,
+            "max": 3159.74,
+            "trend": "down",
+            "volume_7d": 0.2857142857142857
+          },
+          "psa7": {
+            "count": 14,
+            "min": 306,
+            "max": 1000,
+            "trend": "up",
+            "volume_7d": 0.2857142857142857
+          },
+          "last_updated": "2026-05-30T10:05:37.681Z"
+        }
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "HIGH",
+      "scrape_rejected_value": 1726.35,
+      "scrape_rejected_source": "pricecharting:psa10"
     },
     "Z040": {
       "id": "Z040",
@@ -35627,6 +36568,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 725.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 725.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 725.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 725.0
         }
       ],
       "image": "https://images.pokemontcg.io/gym2/2.png",
@@ -35638,10 +36591,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 433.28,
+          "ungraded": 357.5,
           "grade_7": null,
-          "grade_8": 821.61,
-          "grade_9": 546.22,
+          "grade_8": 800.0,
+          "grade_9": 531.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -35680,7 +36633,7 @@
             "trend": "up",
             "volume_7d": null
           },
-          "last_updated": "2026-05-27T14:43:36.029Z"
+          "last_updated": "2026-05-30T10:05:45.288Z"
         }
       },
       "reconcile_confidence": null,
@@ -35806,10 +36759,10 @@
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 160.81,
+          "ungraded": 173.73,
           "grade_7": null,
-          "grade_8": 323.73,
-          "grade_9": 224.09,
+          "grade_8": 321.16,
+          "grade_9": 224.67,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -35822,7 +36775,7 @@
       },
       "reconcile_confidence": "UNKNOWN",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$224_vs_wb_$4200"
+      "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$225_vs_wb_$4200"
     },
     "Z050": {
       "id": "Z050",
@@ -35913,15 +36866,15 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.94,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 48.0,
+          "grade_8": 48.57,
           "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 16116.75,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=charizard+crystal+146",
         "tcgplayer_url": null,
@@ -35993,9 +36946,9 @@
       "reconcile_reason": "pc returned $27 but workbook is $5500 (0.0x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.94,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 48.0,
+          "grade_8": 48.57,
           "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
@@ -36046,7 +36999,7 @@
         "pricecharting": {
           "ungraded": 450.0,
           "grade_7": null,
-          "grade_8": 404.89,
+          "grade_8": 410.0,
           "grade_9": 298.36,
           "grade_9_5": null,
           "grade_10": null
@@ -36099,10 +37052,10 @@
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 46.29,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 51.32,
-          "grade_9": 27.52,
+          "grade_8": 48.57,
+          "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -36115,7 +37068,7 @@
       },
       "reconcile_confidence": "UNKNOWN",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$28_vs_wb_$1800"
+      "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_9_$27_vs_wb_$1800"
     },
     "Z054": {
       "id": "Z054",
@@ -38575,6 +39528,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 197448.76
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 197448.76
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg",
@@ -38594,7 +39559,7 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 675.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/game/pokemon-japanese-promo/illustrator-pikachu?q=pikachu+illustrator",
         "tcgplayer_url": null,
@@ -38700,10 +39665,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 20.99,
+          "ungraded": 19.99,
           "grade_7": null,
           "grade_8": 368.74,
-          "grade_9": 100.0,
+          "grade_9": 90.62,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -38767,10 +39732,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 45,
       "wb_price": 12500.0,
-      "live_price": 12500.0,
-      "live_source": "wb_fallback_source_rejected",
-      "target_buy": 10000.0,
-      "target_sell": 11875.0,
+      "live_price": 19789.37,
+      "live_source": "pricecharting:fallback_grade_8",
+      "target_buy": 15831.5,
+      "target_sell": 18799.9,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 0.01,
@@ -38875,16 +39840,27 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 19789.37
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 19789.37
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 19789.37
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 19789.37
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/4gn2t3ofzq3giq6w/60.jpg",
       "notes": "Master Key trophy promo.",
-      "confidence": "UNKNOWN",
+      "confidence": "LOW",
       "confidence_flags": [
-        "workbook_fallback",
-        "source_rejected"
+        "no_source_data"
       ],
-      "reconcile_reason": "ebay returned $285 but workbook is $12500 (0.0x) \u2014 outside 0.15-8.0 band, using workbook",
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
           "ungraded": null,
@@ -38895,15 +39871,15 @@
           "grade_10": null
         },
         "pokeprice": null,
-        "ebay_recent_avg": 285.0,
+        "ebay_recent_avg": null,
         "tcgplayer_market": null,
         "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=master+key",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "UNKNOWN",
-      "scrape_rejected_value": 19789.37,
-      "scrape_rejected_source": "pricecharting:fallback_grade_8"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "D101": {
       "id": "D101",
@@ -39386,10 +40362,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 1850.0,
-      "live_price": 257.49,
+      "live_price": 242.96,
       "live_source": "pricecharting:raw",
-      "target_buy": 205.99,
-      "target_sell": 244.62,
+      "target_buy": 194.37,
+      "target_sell": 230.81,
       "score": 67,
       "signal": "BUY",
       "d7_workbook": 0.8,
@@ -39410,6 +40386,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 257.49
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 233.19
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 242.96
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 242.96
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -39421,7 +40409,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 257.49,
+          "ungraded": 242.96,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -41094,10 +42082,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 1850,
       "wb_price": 1850.0,
-      "live_price": 2443.04,
+      "live_price": 2199.0,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1954.43,
-      "target_sell": 2320.89,
+      "target_buy": 1759.2,
+      "target_sell": 2089.05,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.97,
@@ -41118,6 +42106,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 2443.04
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 2199.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 2199.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 2199.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -41129,12 +42129,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 347.16,
-          "grade_7": 760.39,
-          "grade_8": 1290.86,
-          "grade_9": 2443.04,
-          "grade_9_5": 4300.0,
-          "grade_10": 28272.5
+          "ungraded": 292.27,
+          "grade_7": 710.0,
+          "grade_8": 1335.62,
+          "grade_9": 2199.0,
+          "grade_9_5": 4680.18,
+          "grade_10": 29871.57
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -41810,6 +42810,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 8136.07
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 8136.07
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 8136.07
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 8136.07
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg",
@@ -41821,11 +42833,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 89.3,
-          "grade_7": 235.0,
-          "grade_8": 397.5,
-          "grade_9": 973.0,
-          "grade_9_5": 1070.0,
+          "ungraded": 85.26,
+          "grade_7": 241.64,
+          "grade_8": 385.29,
+          "grade_9": 949.37,
+          "grade_9_5": 1050.16,
           "grade_10": 8136.07
         },
         "pokeprice": null,
@@ -42249,6 +43261,18 @@
         {
           "ts": "2026-05-29T14:38:43.282063Z",
           "p": 58723.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 58723.0
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 58723.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 58723.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/240.jpg",
@@ -42260,10 +43284,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 3065.53,
-          "grade_7": 8164.4,
-          "grade_8": 11287.17,
-          "grade_9": 14179.21,
+          "ungraded": 3350.0,
+          "grade_7": 8249.5,
+          "grade_8": 12000.0,
+          "grade_9": 14179.91,
           "grade_9_5": 18099.0,
           "grade_10": 58723.0
         },
@@ -42312,6 +43336,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 27130.26
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 27117.61
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 27117.61
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 27117.61
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/1177e9f8d40b16f6d16f44d8994f7aee74f5e9b75d82d49f81b43788c24acb20/240.jpg",
@@ -42323,12 +43359,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1490.67,
-          "grade_7": 3572.96,
-          "grade_8": 5812.5,
-          "grade_9": 9427.97,
-          "grade_9_5": 10371.0,
-          "grade_10": 27130.26
+          "ungraded": 2112.95,
+          "grade_7": 3685.08,
+          "grade_8": 6053.8,
+          "grade_9": 8850.03,
+          "grade_9_5": 9735.0,
+          "grade_10": 27117.61
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -43106,9 +44142,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 41.0,
+          "ungraded": 45.5,
           "grade_7": null,
-          "grade_8": 46.74,
+          "grade_8": 48.57,
           "grade_9": 27.29,
           "grade_9_5": null,
           "grade_10": null
@@ -43154,6 +44190,18 @@
         {
           "ts": "2026-05-16T20:51:34.239708Z",
           "p": 1950.0
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 18999.99
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 19000.0
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 19000.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/5311cd4112f598235180016fa77f16d97535b114df0e8e99a9f8a1e4242ca967/60.jpg",
@@ -43165,19 +44213,56 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 183.97,
+          "ungraded": 179.9,
           "grade_7": null,
-          "grade_8": 222.5,
-          "grade_9": 147.82,
+          "grade_8": 247.5,
+          "grade_9": 182.5,
           "grade_9_5": null,
           "grade_10": null
         },
-        "pokeprice": null,
+        "pokeprice": {
+          "ungraded": 513.08,
+          "grade_7": 397.5,
+          "grade_8": 517.5,
+          "grade_9": 1237.0,
+          "grade_9_5": null,
+          "grade_10": 18999.995000000003
+        },
         "ebay_recent_avg": null,
-        "tcgplayer_market": null,
+        "tcgplayer_market": 513.08,
         "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=umbreon+prime+86",
-        "tcgplayer_url": null,
-        "ppt_meta": null
+        "tcgplayer_url": "https://www.tcgplayer.com/product/90146",
+        "ppt_meta": {
+          "psa10": {
+            "count": 10,
+            "min": 6601,
+            "max": 30000,
+            "trend": "up",
+            "volume_7d": 0.14285714285714285
+          },
+          "psa9": {
+            "count": 64,
+            "min": 750,
+            "max": 4000,
+            "trend": "up",
+            "volume_7d": 0.42857142857142855
+          },
+          "psa8": {
+            "count": 106,
+            "min": 345,
+            "max": 2025,
+            "trend": "up",
+            "volume_7d": 0.42857142857142855
+          },
+          "psa7": {
+            "count": 34,
+            "min": 218.26,
+            "max": 733.76,
+            "trend": "up",
+            "volume_7d": null
+          },
+          "last_updated": "2026-05-30T10:04:53.790Z"
+        }
       },
       "reconcile_confidence": null,
       "scrape_rejected_value": null,
@@ -46546,10 +47631,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 1850.0,
-      "live_price": 257.49,
+      "live_price": 242.96,
       "live_source": "pricecharting:raw",
-      "target_buy": 205.99,
-      "target_sell": 244.62,
+      "target_buy": 194.37,
+      "target_sell": 230.81,
       "score": 68,
       "signal": "BUY",
       "d7_workbook": 2.63,
@@ -46570,6 +47655,18 @@
         {
           "ts": "2026-05-19T15:46:47.988215Z",
           "p": 257.49
+        },
+        {
+          "ts": "2026-05-30T12:10:12.888418Z",
+          "p": 233.19
+        },
+        {
+          "ts": "2026-05-31T12:17:50.495079Z",
+          "p": 242.96
+        },
+        {
+          "ts": "2026-05-31T15:04:41.552853Z",
+          "p": 242.96
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -46581,7 +47678,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 257.49,
+          "ungraded": 242.96,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
