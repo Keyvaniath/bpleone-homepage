@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generated_at": "2026-05-31T15:05:51.753068Z",
+  "generated_at": "2026-06-01T16:49:38.297222Z",
   "weights_used": {
-    "momentum_rising": 0.2433,
-    "scarcity": 0.0978,
-    "accessibility": 0.1614,
-    "hidden_alpha": 0.1927,
-    "tier_premium": 0.0981,
-    "liquidity": 0.2067
+    "momentum_rising": 0.2436,
+    "scarcity": 0.0957,
+    "accessibility": 0.1609,
+    "hidden_alpha": 0.1959,
+    "tier_premium": 0.0974,
+    "liquidity": 0.2064
   },
   "weights_source": "learned",
   "methodology": "Future Winners is a forward-looking model. Score = weighted sum of: momentum_rising \u00b7 scarcity \u00b7 accessibility \u00b7 hidden_alpha \u00b7 tier_premium \u00b7 liquidity. Weights are LEARNED from historical signal outcomes via optimize_fw_weights.py (falls back to seed weights until enough history accumulates).",
@@ -73,7 +73,7 @@
       "wb_price": 280.0,
       "target_buy": 55.3,
       "target_sell": 65.67,
-      "fw_score": 76.9,
+      "fw_score": 77.0,
       "components": {
         "momentum_rising": 81.9,
         "scarcity": 42.8,
@@ -97,7 +97,7 @@
       "wb_price": 160.0,
       "target_buy": 62.98,
       "target_sell": 74.78,
-      "fw_score": 76.8,
+      "fw_score": 76.9,
       "components": {
         "momentum_rising": 82.0,
         "scarcity": 41.0,
@@ -132,6 +132,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/sv6pt5/92.png"
+    },
+    {
+      "id": "M202",
+      "name": "Hydreigon ex SIR",
+      "set": "Surging Sparks",
+      "number": "240/191",
+      "variant": "PSA 10",
+      "tier": "T5",
+      "pop": 925,
+      "live_price": 134.5,
+      "wb_price": 175.0,
+      "target_buy": 107.6,
+      "target_sell": 127.77,
+      "fw_score": 76.3,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 46.6,
+        "accessibility": 70,
+        "hidden_alpha": 75,
+        "tier_premium": 30,
+        "liquidity": 90
+      },
+      "thesis": "Live history up +13.6% \u00b7 Chase variant (alt art / SIR / SAR)",
+      "image": "https://images.pokemontcg.io/rsv10pt5/169.png"
     },
     {
       "id": "M026",
@@ -217,7 +241,7 @@
       "wb_price": 480.0,
       "target_buy": 142.58,
       "target_sell": 169.31,
-      "fw_score": 74.7,
+      "fw_score": 74.8,
       "components": {
         "momentum_rising": 80.1,
         "scarcity": 41.0,
@@ -241,7 +265,7 @@
       "wb_price": 640.0,
       "target_buy": 168.97,
       "target_sell": 200.65,
-      "fw_score": 74.6,
+      "fw_score": 74.7,
       "components": {
         "momentum_rising": 78.7,
         "scarcity": 43.4,
@@ -289,7 +313,7 @@
       "wb_price": 320.0,
       "target_buy": 156.0,
       "target_sell": 185.25,
-      "fw_score": 74.5,
+      "fw_score": 74.6,
       "components": {
         "momentum_rising": 77.6,
         "scarcity": 45.3,
@@ -313,7 +337,7 @@
       "wb_price": 640.0,
       "target_buy": 182.0,
       "target_sell": 216.12,
-      "fw_score": 74.3,
+      "fw_score": 74.4,
       "components": {
         "momentum_rising": 79.6,
         "scarcity": 38.0,
@@ -337,7 +361,7 @@
       "wb_price": 640.0,
       "target_buy": 140.0,
       "target_sell": 166.25,
-      "fw_score": 74.1,
+      "fw_score": 74.2,
       "components": {
         "momentum_rising": 77.4,
         "scarcity": 41.9,
@@ -348,6 +372,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/sv4pt5/232.png"
+    },
+    {
+      "id": "V810",
+      "name": "Espeon Neo Discovery",
+      "set": "Neo Discovery",
+      "number": "20/75",
+      "variant": "PSA 8",
+      "tier": "T1",
+      "pop": 900,
+      "live_price": 32.59,
+      "wb_price": 110.0,
+      "target_buy": 26.07,
+      "target_sell": 30.96,
+      "fw_score": 73.3,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 46.8,
+        "accessibility": 90,
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 65
+      },
+      "thesis": "Live history up +20.7% \u00b7 Vintage grail tier",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/09616703aa9076bf12794ceae4f79c2a754c1d73404e0d074d6d88f5927fb6b0/240.jpg"
     },
     {
       "id": "M038",
@@ -361,7 +409,7 @@
       "wb_price": 380.0,
       "target_buy": 370.0,
       "target_sell": 439.38,
-      "fw_score": 73.0,
+      "fw_score": 73.1,
       "components": {
         "momentum_rising": 79.1,
         "scarcity": 42.3,
@@ -385,7 +433,7 @@
       "wb_price": 340.0,
       "target_buy": 288.0,
       "target_sell": 342.0,
-      "fw_score": 73.0,
+      "fw_score": 73.1,
       "components": {
         "momentum_rising": 78.7,
         "scarcity": 43.4,
@@ -398,28 +446,28 @@
       "image": "https://images.pokemontcg.io/sv3pt5/201.png"
     },
     {
-      "id": "V013",
-      "name": "Pikachu Red Cheeks",
-      "set": "Base Set Shadowless",
-      "number": "58/102",
-      "variant": "PSA 10",
+      "id": "X236",
+      "name": "Zapdos Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "number": "15/62",
+      "variant": "PSA 9",
       "tier": "T1",
-      "pop": 110,
-      "live_price": 999.99,
-      "wb_price": 2400.0,
-      "target_buy": 799.99,
-      "target_sell": 949.99,
-      "fw_score": 72.9,
+      "pop": 1200,
+      "live_price": 199.99,
+      "wb_price": 130.0,
+      "target_buy": 159.99,
+      "target_sell": 189.99,
+      "fw_score": 73.0,
       "components": {
         "momentum_rising": 100,
-        "scarcity": 63.3,
-        "accessibility": 45,
+        "scarcity": 44.6,
+        "accessibility": 70,
         "hidden_alpha": 40,
         "tier_premium": 90,
-        "liquidity": 90
+        "liquidity": 80
       },
-      "thesis": "Live history up +150.0% \u00b7 Low PSA 10 pop (110) \u00b7 Vintage grail tier",
-      "image": "https://images.pokemontcg.io/ru1/7.png"
+      "thesis": "Live history up +32.3% \u00b7 Vintage grail tier",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/0d1bace55eaa0d61426fb31faadc85b9d9a595a5a6b0fd2b9f469e242c01e5a8/240.jpg"
     },
     {
       "id": "M039",
@@ -444,6 +492,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/ex6/112.png"
+    },
+    {
+      "id": "V013",
+      "name": "Pikachu Red Cheeks",
+      "set": "Base Set Shadowless",
+      "number": "58/102",
+      "variant": "PSA 10",
+      "tier": "T1",
+      "pop": 110,
+      "live_price": 999.99,
+      "wb_price": 2400.0,
+      "target_buy": 799.99,
+      "target_sell": 949.99,
+      "fw_score": 72.8,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 63.3,
+        "accessibility": 45,
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 90
+      },
+      "thesis": "Live history up +150.0% \u00b7 Low PSA 10 pop (110) \u00b7 Vintage grail tier",
+      "image": "https://images.pokemontcg.io/ru1/7.png"
     },
     {
       "id": "M015",
@@ -481,7 +553,7 @@
       "wb_price": 50.0,
       "target_buy": 28.02,
       "target_sell": 33.27,
-      "fw_score": 72.0,
+      "fw_score": 72.1,
       "components": {
         "momentum_rising": 55.2,
         "scarcity": 42.3,
@@ -505,7 +577,7 @@
       "wb_price": 110.0,
       "target_buy": 37.19,
       "target_sell": 44.17,
-      "fw_score": 72.0,
+      "fw_score": 72.1,
       "components": {
         "momentum_rising": 55.0,
         "scarcity": 42.8,
@@ -529,7 +601,7 @@
       "wb_price": 540.0,
       "target_buy": 432.0,
       "target_sell": 513.0,
-      "fw_score": 71.8,
+      "fw_score": 71.9,
       "components": {
         "momentum_rising": 86.9,
         "scarcity": 35.6,
@@ -553,7 +625,7 @@
       "wb_price": 450.0,
       "target_buy": 360.0,
       "target_sell": 427.5,
-      "fw_score": 71.7,
+      "fw_score": 71.8,
       "components": {
         "momentum_rising": 75.0,
         "scarcity": 39.2,
@@ -577,7 +649,7 @@
       "wb_price": 1500.0,
       "target_buy": 258.0,
       "target_sell": 306.38,
-      "fw_score": 71.6,
+      "fw_score": 71.7,
       "components": {
         "momentum_rising": 74.6,
         "scarcity": 39.8,
@@ -588,6 +660,30 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR)",
       "image": "https://images.pokemontcg.io/ex6/105.png"
+    },
+    {
+      "id": "X234",
+      "name": "Articuno Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "number": "2/62",
+      "variant": "PSA 9",
+      "tier": "T1",
+      "pop": 1300,
+      "live_price": 295.0,
+      "wb_price": 130.0,
+      "target_buy": 236.0,
+      "target_sell": 280.25,
+      "fw_score": 71.3,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 43.9,
+        "accessibility": 60,
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 80
+      },
+      "thesis": "Live history up +11.3% \u00b7 Vintage grail tier",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/snmsijxrd25ytvhh/240.jpg"
     },
     {
       "id": "M012",
@@ -601,7 +697,7 @@
       "wb_price": 620.0,
       "target_buy": 496.0,
       "target_sell": 589.0,
-      "fw_score": 70.8,
+      "fw_score": 70.9,
       "components": {
         "momentum_rising": 82.1,
         "scarcity": 36.9,
@@ -614,124 +710,28 @@
       "image": "https://images.pokemontcg.io/swsh7/194.png"
     },
     {
-      "id": "M059",
-      "name": "Greninja ex SIR",
-      "set": "Twilight Masquerade",
-      "number": "232/167",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 1800,
-      "live_price": 975.0,
-      "wb_price": 540.0,
-      "target_buy": 780.0,
-      "target_sell": 926.25,
-      "fw_score": 70.7,
+      "id": "V907",
+      "name": "Clefairy Base Unlimited PSA 8",
+      "set": "Base Set",
+      "number": "5/102",
+      "variant": "PSA 8",
+      "tier": "T1",
+      "pop": 2800,
+      "live_price": 67.28,
+      "wb_price": 65.0,
+      "target_buy": 53.82,
+      "target_sell": 63.92,
+      "fw_score": 70.9,
       "components": {
-        "momentum_rising": 80.2,
-        "scarcity": 41.4,
-        "accessibility": 45,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/sv6/214.png"
-    },
-    {
-      "id": "X404",
-      "name": "Lillie's Determination SIR (ME01) PSA 10",
-      "set": "Mega Evolution",
-      "number": "184/132",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 1100,
-      "live_price": 195.0,
-      "wb_price": 520.0,
-      "target_buy": 156.0,
-      "target_sell": 185.25,
-      "fw_score": 70.7,
-      "components": {
-        "momentum_rising": 61.7,
-        "scarcity": 45.3,
-        "accessibility": 70,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/me1/184.png"
-    },
-    {
-      "id": "M041",
-      "name": "Mewtwo ex SIR",
-      "set": "Scarlet & Violet 151",
-      "number": "201/165",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 1400,
-      "live_price": 540.0,
-      "wb_price": 540.0,
-      "target_buy": 432.0,
-      "target_sell": 513.0,
-      "fw_score": 70.6,
-      "components": {
-        "momentum_rising": 78.7,
-        "scarcity": 43.4,
-        "accessibility": 45,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/ex1/101.png"
-    },
-    {
-      "id": "M044",
-      "name": "Iono SIR",
-      "set": "Paldea Evolved",
-      "number": "269/193",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 2500,
-      "live_price": 700.0,
-      "wb_price": 700.0,
-      "target_buy": 560.0,
-      "target_sell": 665.0,
-      "fw_score": 70.5,
-      "components": {
-        "momentum_rising": 80.1,
-        "scarcity": 38.8,
-        "accessibility": 45,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/sv2/269.png"
-    },
-    {
-      "id": "X153",
-      "name": "Aerodactyl V Alt Art (LO)",
-      "set": "Lost Origin",
-      "number": "TG21/TG30",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 1900,
-      "live_price": 78.72,
-      "wb_price": 75.0,
-      "target_buy": 62.98,
-      "target_sell": 74.78,
-      "fw_score": 70.5,
-      "components": {
-        "momentum_rising": 56.0,
-        "scarcity": 41.0,
+        "momentum_rising": 100,
+        "scarcity": 38.0,
         "accessibility": 80,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 65
       },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/swsh11/180.png"
+      "thesis": "Live history up +11.2% \u00b7 Vintage grail tier",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/47d59467ece3bf922c56e3d649493160dd86c45252e7895a78693de79d34b72d/240.jpg"
     }
   ]
 }

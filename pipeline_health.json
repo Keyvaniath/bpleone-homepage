@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-31T15:04:43.158679+00:00",
-  "overall": "GREEN",
+  "generated_at": "2026-06-01T16:49:02.714981+00:00",
+  "overall": "RED",
   "counts": {
-    "green": 24,
-    "yellow": 0,
-    "red": 0,
+    "green": 21,
+    "yellow": 1,
+    "red": 2,
     "total": 24
   },
   "checks": [
@@ -12,7 +12,7 @@
       "file": "live_prices.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 765270,
+      "size_bytes": 700029,
       "age_hours": 0.0,
       "status": "GREEN"
     },
@@ -29,7 +29,7 @@
       "file": "price_diff.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 3378,
+      "size_bytes": 4646,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -47,7 +47,7 @@
       "file": "price_alerts.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 18604,
+      "size_bytes": 18593,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -56,7 +56,7 @@
       "file": "source_reliability.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 3242,
+      "size_bytes": 3248,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -99,7 +99,7 @@
       "file": "learning_summary.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 2426,
+      "size_bytes": 2428,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -108,7 +108,7 @@
       "file": "arbitrage_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 120093,
+      "size_bytes": 120160,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -126,7 +126,7 @@
       "file": "past_picks.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 10547,
+      "size_bytes": 10553,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -144,25 +144,27 @@
       "file": "homepage_feed.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 219129,
+      "size_bytes": 217703,
       "age_hours": 0.1,
-      "generated_age_hours": 2.8,
-      "status": "GREEN"
+      "generated_age_hours": 25.7,
+      "status": "RED",
+      "reason": "stale: 25.7h > 12h"
     },
     {
       "file": "cards_full.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 1326192,
+      "size_bytes": 1332107,
       "age_hours": 0.1,
-      "generated_age_hours": 2.8,
-      "status": "GREEN"
+      "generated_age_hours": 25.7,
+      "status": "RED",
+      "reason": "stale: 25.7h > 12h"
     },
     {
       "file": "cards.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 1786247,
+      "size_bytes": 1786480,
       "age_hours": 0.1,
       "status": "GREEN"
     },
@@ -170,10 +172,11 @@
       "file": "future_winners.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 19914,
+      "size_bytes": 19915,
       "age_hours": 0.1,
-      "generated_age_hours": 2.8,
-      "status": "GREEN"
+      "generated_age_hours": 25.7,
+      "status": "YELLOW",
+      "reason": "aging: 25.7h > 24h"
     },
     {
       "file": "set_heat.json",

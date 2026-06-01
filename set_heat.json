@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T15:04:42.835473+00:00",
+  "generated_at": "2026-06-01T16:49:02.394730+00:00",
   "n_sets": 141,
   "n_cards_classified": 774,
   "hot_sets_top10": [
@@ -802,7 +802,7 @@
       "n_hold": 9,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 10274.0,
+      "total_universe_usd": 10175.0,
       "top_card": {
         "cid": "M085",
         "name": "Mega Lucario ex SIR",

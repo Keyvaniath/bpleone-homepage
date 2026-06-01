@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-31T15:04:41.746006+00:00",
-  "buy_alerts_count": 58,
-  "sell_alerts_count": 202,
+  "generated_at": "2026-06-01T16:49:01.311204+00:00",
+  "buy_alerts_count": 57,
+  "sell_alerts_count": 195,
   "high_score_count": 11,
   "buy_alerts": [
     {
@@ -149,16 +149,16 @@
       "source": "pc_sweep_grade_10"
     },
     {
-      "cid": "V811",
-      "name": "Umbreon Neo Discovery",
-      "variant": "PSA 8",
-      "live_price": 125.0,
-      "buy_target": 224.0,
-      "wb_price": 280,
+      "cid": "X106",
+      "name": "Cilan & Chili & Cress IR",
+      "variant": "Raw NM",
+      "live_price": 3.12,
+      "buy_target": 6.0,
+      "wb_price": 7,
       "discount_pct": 55.4,
       "just_crossed_today": false,
-      "confidence": "HIGH",
-      "source": "pokeprice:psa8"
+      "confidence": "OVERRIDE",
+      "source": "tcgplayer_api"
     },
     {
       "cid": "X213",
@@ -173,13 +173,13 @@
       "source": "pc_sweep_grade_10"
     },
     {
-      "cid": "X122",
-      "name": "Fezandipiti ex SIR (raw)",
+      "cid": "X104",
+      "name": "N's Zekrom Full Art",
       "variant": "Raw NM",
-      "live_price": 7.86,
-      "buy_target": 13.0,
-      "wb_price": 16,
-      "discount_pct": 50.9,
+      "live_price": 5.54,
+      "buy_target": 10.0,
+      "wb_price": 12,
+      "discount_pct": 53.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
@@ -219,6 +219,18 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pokeprice:raw"
+    },
+    {
+      "cid": "X122",
+      "name": "Fezandipiti ex SIR (raw)",
+      "variant": "Raw NM",
+      "live_price": 7.99,
+      "buy_target": 13.0,
+      "wb_price": 16,
+      "discount_pct": 50.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "tcgplayer_api"
     },
     {
       "cid": "X301",
@@ -291,18 +303,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "JB04",
-      "name": "Eevee Heroes Booster (JP single)",
-      "variant": "Sealed",
-      "live_price": 13.9,
-      "buy_target": 20.0,
-      "wb_price": 25,
-      "discount_pct": 44.4,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     }
   ],
   "sell_alerts": [
@@ -310,13 +310,25 @@
       "cid": "X132",
       "name": "Mega Lucario ex SIR (raw)",
       "variant": "Raw NM",
-      "live_price": 68.6,
+      "live_price": 74.53,
       "sell_target": 15.0,
       "wb_price": 14,
-      "premium_pct": 390.0,
+      "premium_pct": 432.4,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
-      "source": "pc_sweep_ungraded"
+      "source": "tcgplayer_api"
+    },
+    {
+      "cid": "X412",
+      "name": "Charizard Base Shadowless PSA 8",
+      "variant": "PSA 8",
+      "live_price": 4936.0,
+      "sell_target": 1078.0,
+      "wb_price": 980,
+      "premium_pct": 403.7,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa8"
     },
     {
       "cid": "J009",
@@ -391,18 +403,6 @@
       "source": "pricecharting:psa10"
     },
     {
-      "cid": "X412",
-      "name": "Charizard Base Shadowless PSA 8",
-      "variant": "PSA 8",
-      "live_price": 4300.0,
-      "sell_target": 1078.0,
-      "wb_price": 980,
-      "premium_pct": 338.8,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_8"
-    },
-    {
       "cid": "S016",
       "name": "Paldean Fates ETB",
       "variant": "Sealed",
@@ -439,30 +439,6 @@
       "source": "pc_sweep_grade_10"
     },
     {
-      "cid": "X322",
-      "name": "Blastoise Base Shadowless PSA 8",
-      "variant": "PSA 8",
-      "live_price": 1150.0,
-      "sell_target": 319.0,
-      "wb_price": 290,
-      "premium_pct": 296.6,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_8"
-    },
-    {
-      "cid": "P030",
-      "name": "Charizard Full Art (Pokemon GO)",
-      "variant": "Raw NM",
-      "live_price": 35.06,
-      "sell_target": 10.0,
-      "wb_price": 9,
-      "premium_pct": 289.6,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_ungraded"
-    },
-    {
       "cid": "Q005",
       "name": "Greninja ex SIR",
       "variant": "Raw NM",
@@ -478,37 +454,25 @@
       "cid": "X327",
       "name": "Shining Magikarp Neo Revelation",
       "variant": "PSA 9",
-      "live_price": 1203.34,
+      "live_price": 1200.0,
       "sell_target": 352.0,
       "wb_price": 320,
-      "premium_pct": 276.0,
+      "premium_pct": 275.0,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_9"
+      "source": "pricecharting:psa9"
     },
     {
       "cid": "V004",
       "name": "Charizard",
       "variant": "PSA 10",
-      "live_price": 29871.57,
+      "live_price": 29985.79,
       "sell_target": 8800.0,
       "wb_price": 8000,
-      "premium_pct": 273.4,
+      "premium_pct": 274.8,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "X130",
-      "name": "Mega Gengar ex MAR (Ascended)",
-      "variant": "Raw NM",
-      "live_price": 93.32,
-      "sell_target": 28.0,
-      "wb_price": 25,
-      "premium_pct": 273.3,
-      "just_crossed_today": false,
-      "confidence": "HIGH",
-      "source": "tcgplayer_api"
     },
     {
       "cid": "S008",
@@ -535,6 +499,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "X322",
+      "name": "Blastoise Base Shadowless PSA 8",
+      "variant": "PSA 8",
+      "live_price": 1074.5,
+      "sell_target": 319.0,
+      "wb_price": 290,
+      "premium_pct": 270.5,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa8"
+    },
+    {
       "cid": "Z022",
       "name": "Shining Magikarp",
       "variant": "PSA 10",
@@ -557,6 +533,18 @@
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pc_sweep_grade_10"
+    },
+    {
+      "cid": "P046",
+      "name": "Mega Rayquaza Common (AH)",
+      "variant": "Raw NM",
+      "live_price": 18.15,
+      "sell_target": 6.0,
+      "wb_price": 5,
+      "premium_pct": 263.0,
+      "just_crossed_today": false,
+      "confidence": "HIGH",
+      "source": "tcgplayer_api"
     },
     {
       "cid": "W031",
@@ -583,6 +571,18 @@
       "source": "pricecharting:psa9"
     },
     {
+      "cid": "X130",
+      "name": "Mega Gengar ex MAR (Ascended)",
+      "variant": "Raw NM",
+      "live_price": 88.95,
+      "sell_target": 28.0,
+      "wb_price": 25,
+      "premium_pct": 255.8,
+      "just_crossed_today": false,
+      "confidence": "HIGH",
+      "source": "tcgplayer_api"
+    },
+    {
       "cid": "V040",
       "name": "Dark Charizard",
       "variant": "PSA 10",
@@ -595,16 +595,16 @@
       "source": "pricecharting:psa10"
     },
     {
-      "cid": "Q006",
-      "name": "Greninja ex SIR",
-      "variant": "PSA 10",
-      "live_price": 975.0,
-      "sell_target": 314.0,
-      "wb_price": 285,
-      "premium_pct": 242.1,
+      "cid": "DD014",
+      "name": "Pokemon Paradox Rift Booster Box",
+      "variant": "Sealed",
+      "live_price": 562.38,
+      "sell_target": 182.0,
+      "wb_price": 165,
+      "premium_pct": 240.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
-      "source": "pricecharting:psa10"
+      "source": "pricecharting:raw"
     }
   ],
   "high_score_signals": [
