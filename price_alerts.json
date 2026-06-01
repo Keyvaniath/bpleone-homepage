@@ -1,33 +1,9 @@
 {
-  "generated_at": "2026-06-01T16:49:01.311204+00:00",
-  "buy_alerts_count": 57,
-  "sell_alerts_count": 195,
+  "generated_at": "2026-06-01T07:29:50.043669+00:00",
+  "buy_alerts_count": 59,
+  "sell_alerts_count": 192,
   "high_score_count": 11,
   "buy_alerts": [
-    {
-      "cid": "V813",
-      "name": "Crystal Lugia Aquapolis",
-      "variant": "PSA 8",
-      "live_price": 380.0,
-      "buy_target": 760.0,
-      "wb_price": 950,
-      "discount_pct": 60.0,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa8"
-    },
-    {
-      "cid": "D109",
-      "name": "Pokemon Hidden Fates ETB",
-      "variant": "Sealed",
-      "live_price": 170.0,
-      "buy_target": 340.0,
-      "wb_price": 425,
-      "discount_pct": 60.0,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
     {
       "cid": "W014",
       "name": "Ogerpon Cornerstone SAR",
@@ -39,18 +15,6 @@
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pc_holdout_sweep_grade_10"
-    },
-    {
-      "cid": "W013",
-      "name": "Ogerpon Hearthflame SAR",
-      "variant": "PSA 10",
-      "live_price": 60.0,
-      "buy_target": 116.0,
-      "wb_price": 145,
-      "discount_pct": 58.6,
-      "just_crossed_today": false,
-      "confidence": "HIGH",
-      "source": "pokeprice:psa10"
     },
     {
       "cid": "V013",
@@ -77,6 +41,18 @@
       "source": "pc_sweep_grade_10"
     },
     {
+      "cid": "W012",
+      "name": "Ogerpon Teal SAR (PSA 10)",
+      "variant": "PSA 10",
+      "live_price": 70.0,
+      "buy_target": 132.0,
+      "wb_price": 165,
+      "discount_pct": 57.6,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa10"
+    },
+    {
       "cid": "M085",
       "name": "Mega Lucario ex SIR",
       "variant": "PSA 10",
@@ -101,16 +77,16 @@
       "source": "pricecharting:raw"
     },
     {
-      "cid": "PC004",
-      "name": "Premium Collection PSA 10 Box (Champion's Path)",
-      "variant": "Sealed",
-      "live_price": 211.9,
-      "buy_target": 388.0,
-      "wb_price": 485,
-      "discount_pct": 56.3,
+      "cid": "V813",
+      "name": "Crystal Lugia Aquapolis",
+      "variant": "PSA 8",
+      "live_price": 410.0,
+      "buy_target": 760.0,
+      "wb_price": 950,
+      "discount_pct": 56.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
+      "source": "pricecharting:psa8"
     },
     {
       "cid": "X508",
@@ -125,13 +101,25 @@
       "source": "pricecharting:psa7"
     },
     {
+      "cid": "PC004",
+      "name": "Premium Collection PSA 10 Box (Champion's Path)",
+      "variant": "Sealed",
+      "live_price": 213.51,
+      "buy_target": 388.0,
+      "wb_price": 485,
+      "discount_pct": 56.0,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
       "cid": "D112",
       "name": "Pokemon Champion's Path ETB",
       "variant": "Sealed",
-      "live_price": 170.0,
+      "live_price": 169.92,
       "buy_target": 308.0,
       "wb_price": 385,
-      "discount_pct": 55.8,
+      "discount_pct": 55.9,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -185,16 +173,28 @@
       "source": "tcgplayer_api"
     },
     {
-      "cid": "V038",
-      "name": "Aerodactyl",
-      "variant": "PSA 9",
-      "live_price": 285.5,
-      "buy_target": 464.0,
-      "wb_price": 580,
-      "discount_pct": 50.8,
+      "cid": "DD007",
+      "name": "Pokemon Vivid Voltage Booster Box",
+      "variant": "Sealed",
+      "live_price": 242.96,
+      "buy_target": 420.0,
+      "wb_price": 525,
+      "discount_pct": 53.7,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
-      "source": "pricecharting:psa9"
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X242",
+      "name": "Crystal Kingdra Aquapolis PSA 8",
+      "variant": "PSA 8",
+      "live_price": 84.41,
+      "buy_target": 144.0,
+      "wb_price": 180,
+      "discount_pct": 53.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa8"
     },
     {
       "cid": "M022",
@@ -245,16 +245,28 @@
       "source": "pc_sweep_grade_10"
     },
     {
-      "cid": "Z024",
-      "name": "Ho-Oh",
-      "variant": "PSA 10",
-      "live_price": 839.0,
-      "buy_target": 1280.0,
-      "wb_price": 1600,
-      "discount_pct": 47.6,
+      "cid": "V038",
+      "name": "Aerodactyl",
+      "variant": "PSA 9",
+      "live_price": 292.76,
+      "buy_target": 464.0,
+      "wb_price": 580,
+      "discount_pct": 49.5,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
-      "source": "pricecharting:psa10"
+      "source": "pricecharting:psa9"
+    },
+    {
+      "cid": "X237",
+      "name": "Mewtwo Fossil Unlimited PSA 9",
+      "variant": "PSA 9",
+      "live_price": 87.0,
+      "buy_target": 136.0,
+      "wb_price": 170,
+      "discount_pct": 48.8,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
     },
     {
       "cid": "X005",
@@ -281,25 +293,13 @@
       "source": "pricecharting:raw"
     },
     {
-      "cid": "X237",
-      "name": "Mewtwo Fossil Unlimited PSA 9",
-      "variant": "PSA 9",
-      "live_price": 92.5,
-      "buy_target": 136.0,
-      "wb_price": 170,
-      "discount_pct": 45.6,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa9"
-    },
-    {
-      "cid": "W011",
-      "name": "Bloodmoon Ursaluna ex SAR",
+      "cid": "Z024",
+      "name": "Ho-Oh",
       "variant": "PSA 10",
-      "live_price": 133.43,
-      "buy_target": 196.0,
-      "wb_price": 245,
-      "discount_pct": 45.5,
+      "live_price": 875.99,
+      "buy_target": 1280.0,
+      "wb_price": 1600,
+      "discount_pct": 45.3,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa10"
@@ -307,13 +307,25 @@
   ],
   "sell_alerts": [
     {
+      "cid": "V010",
+      "name": "Alakazam",
+      "variant": "PSA 9",
+      "live_price": 5135.98,
+      "sell_target": 1045.0,
+      "wb_price": 950,
+      "premium_pct": 440.6,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa9"
+    },
+    {
       "cid": "X132",
       "name": "Mega Lucario ex SIR (raw)",
       "variant": "Raw NM",
-      "live_price": 74.53,
+      "live_price": 74.42,
       "sell_target": 15.0,
       "wb_price": 14,
-      "premium_pct": 432.4,
+      "premium_pct": 431.6,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "tcgplayer_api"
@@ -334,58 +346,46 @@
       "cid": "J009",
       "name": "VSTAR Universe High-Class Box",
       "variant": "Sealed",
-      "live_price": 850.0,
+      "live_price": 894.74,
       "sell_target": 198.0,
       "wb_price": 180,
-      "premium_pct": 372.2,
+      "premium_pct": 397.1,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
     },
     {
-      "cid": "S208",
-      "name": "Stellar Tera-Charizard Premium",
-      "variant": "Sealed",
-      "live_price": 211.9,
-      "sell_target": 50.0,
-      "wb_price": 45,
-      "premium_pct": 370.9,
+      "cid": "Z204",
+      "name": "Mewtwo & Mew GX RR",
+      "variant": "PSA 10",
+      "live_price": 2087.5,
+      "sell_target": 468.0,
+      "wb_price": 425,
+      "premium_pct": 391.2,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
+      "source": "pricecharting:psa10"
     },
     {
       "cid": "V009",
       "name": "Mewtwo",
       "variant": "PSA 9",
-      "live_price": 6575.42,
+      "live_price": 6658.15,
       "sell_target": 1540.0,
       "wb_price": 1400,
-      "premium_pct": 369.7,
+      "premium_pct": 375.6,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa9"
     },
     {
-      "cid": "X325",
-      "name": "Charizard Base 2 PSA 9",
-      "variant": "PSA 9",
-      "live_price": 1525.0,
-      "sell_target": 374.0,
-      "wb_price": 340,
-      "premium_pct": 348.5,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_9"
-    },
-    {
       "cid": "X431",
       "name": "Evolving Skies Booster Box",
       "variant": "Sealed (36 packs)",
-      "live_price": 2560.86,
+      "live_price": 2625.46,
       "sell_target": 638.0,
       "wb_price": 580,
-      "premium_pct": 341.5,
+      "premium_pct": 352.7,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -406,10 +406,10 @@
       "cid": "S016",
       "name": "Paldean Fates ETB",
       "variant": "Sealed",
-      "live_price": 473.13,
+      "live_price": 465.59,
       "sell_target": 121.0,
       "wb_price": 110,
-      "premium_pct": 330.1,
+      "premium_pct": 323.3,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -418,10 +418,10 @@
       "cid": "S004",
       "name": "Crown Zenith ETB",
       "variant": "Sealed",
-      "live_price": 307.67,
+      "live_price": 315.5,
       "sell_target": 82.0,
       "wb_price": 75,
-      "premium_pct": 310.2,
+      "premium_pct": 320.7,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -439,6 +439,42 @@
       "source": "pc_sweep_grade_10"
     },
     {
+      "cid": "X325",
+      "name": "Charizard Base 2 PSA 9",
+      "variant": "PSA 9",
+      "live_price": 1338.42,
+      "sell_target": 374.0,
+      "wb_price": 340,
+      "premium_pct": 293.7,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa9"
+    },
+    {
+      "cid": "S008",
+      "name": "Lost Origin BB",
+      "variant": "Sealed (36 packs)",
+      "live_price": 782.88,
+      "sell_target": 220.0,
+      "wb_price": 200,
+      "premium_pct": 291.4,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X228",
+      "name": "Lost Origin Booster Box",
+      "variant": "Sealed",
+      "live_price": 782.88,
+      "sell_target": 220.0,
+      "wb_price": 200,
+      "premium_pct": 291.4,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
       "cid": "Q005",
       "name": "Greninja ex SIR",
       "variant": "Raw NM",
@@ -449,6 +485,18 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "single_ppt"
+    },
+    {
+      "cid": "V037",
+      "name": "Snorlax",
+      "variant": "PSA 9",
+      "live_price": 2550.3,
+      "sell_target": 748.0,
+      "wb_price": 680,
+      "premium_pct": 275.0,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
     },
     {
       "cid": "X327",
@@ -466,37 +514,13 @@
       "cid": "V004",
       "name": "Charizard",
       "variant": "PSA 10",
-      "live_price": 29985.79,
+      "live_price": 29871.57,
       "sell_target": 8800.0,
       "wb_price": 8000,
-      "premium_pct": 274.8,
+      "premium_pct": 273.4,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "S008",
-      "name": "Lost Origin BB",
-      "variant": "Sealed (36 packs)",
-      "live_price": 744.23,
-      "sell_target": 220.0,
-      "wb_price": 200,
-      "premium_pct": 272.1,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
-      "cid": "X228",
-      "name": "Lost Origin Booster Box",
-      "variant": "Sealed",
-      "live_price": 744.23,
-      "sell_target": 220.0,
-      "wb_price": 200,
-      "premium_pct": 272.1,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     },
     {
       "cid": "X322",
@@ -511,18 +535,6 @@
       "source": "pricecharting:psa8"
     },
     {
-      "cid": "Z022",
-      "name": "Shining Magikarp",
-      "variant": "PSA 10",
-      "live_price": 3300.0,
-      "sell_target": 990.0,
-      "wb_price": 900,
-      "premium_pct": 266.7,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pc_sweep_grade_10"
-    },
-    {
       "cid": "X307",
       "name": "Charizard ex SIR (151) PSA 10",
       "variant": "PSA 10",
@@ -535,13 +547,25 @@
       "source": "pc_sweep_grade_10"
     },
     {
+      "cid": "Z022",
+      "name": "Shining Magikarp",
+      "variant": "PSA 10",
+      "live_price": 3262.5,
+      "sell_target": 990.0,
+      "wb_price": 900,
+      "premium_pct": 262.5,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa10"
+    },
+    {
       "cid": "P046",
       "name": "Mega Rayquaza Common (AH)",
       "variant": "Raw NM",
-      "live_price": 18.15,
+      "live_price": 18.05,
       "sell_target": 6.0,
       "wb_price": 5,
-      "premium_pct": 263.0,
+      "premium_pct": 261.0,
       "just_crossed_today": false,
       "confidence": "HIGH",
       "source": "tcgplayer_api"
@@ -559,25 +583,13 @@
       "source": "pc_holdout_sweep_grade_10"
     },
     {
-      "cid": "V037",
-      "name": "Snorlax",
-      "variant": "PSA 9",
-      "live_price": 2437.71,
-      "sell_target": 748.0,
-      "wb_price": 680,
-      "premium_pct": 258.5,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa9"
-    },
-    {
       "cid": "X130",
       "name": "Mega Gengar ex MAR (Ascended)",
       "variant": "Raw NM",
-      "live_price": 88.95,
+      "live_price": 88.79,
       "sell_target": 28.0,
       "wb_price": 25,
-      "premium_pct": 255.8,
+      "premium_pct": 255.2,
       "just_crossed_today": false,
       "confidence": "HIGH",
       "source": "tcgplayer_api"
@@ -593,18 +605,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "DD014",
-      "name": "Pokemon Paradox Rift Booster Box",
-      "variant": "Sealed",
-      "live_price": 562.38,
-      "sell_target": 182.0,
-      "wb_price": 165,
-      "premium_pct": 240.8,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     }
   ],
   "high_score_signals": [
