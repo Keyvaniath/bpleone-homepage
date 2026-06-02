@@ -1,7 +1,13 @@
 {
+<<<<<<< Updated upstream
+  "generated_at": "2026-06-01T16:49:01.311204+00:00",
+  "buy_alerts_count": 57,
+  "sell_alerts_count": 195,
+=======
   "generated_at": "2026-06-01T07:29:50.043669+00:00",
   "buy_alerts_count": 59,
   "sell_alerts_count": 192,
+>>>>>>> Stashed changes
   "high_score_count": 11,
   "buy_alerts": [
     {
@@ -322,10 +328,17 @@
       "cid": "X132",
       "name": "Mega Lucario ex SIR (raw)",
       "variant": "Raw NM",
+<<<<<<< Updated upstream
+      "live_price": 74.53,
+      "sell_target": 15.0,
+      "wb_price": 14,
+      "premium_pct": 432.4,
+=======
       "live_price": 74.42,
       "sell_target": 15.0,
       "wb_price": 14,
       "premium_pct": 431.6,
+>>>>>>> Stashed changes
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "tcgplayer_api"
@@ -439,6 +452,8 @@
       "source": "pc_sweep_grade_10"
     },
     {
+<<<<<<< Updated upstream
+=======
       "cid": "X325",
       "name": "Charizard Base 2 PSA 9",
       "variant": "PSA 9",
@@ -475,6 +490,7 @@
       "source": "pricecharting:raw"
     },
     {
+>>>>>>> Stashed changes
       "cid": "Q005",
       "name": "Greninja ex SIR",
       "variant": "Raw NM",
@@ -514,15 +530,42 @@
       "cid": "V004",
       "name": "Charizard",
       "variant": "PSA 10",
-      "live_price": 29871.57,
+      "live_price": 29985.79,
       "sell_target": 8800.0,
       "wb_price": 8000,
-      "premium_pct": 273.4,
+      "premium_pct": 274.8,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pricecharting:psa10"
     },
     {
+<<<<<<< Updated upstream
+      "cid": "S008",
+      "name": "Lost Origin BB",
+      "variant": "Sealed (36 packs)",
+      "live_price": 744.23,
+      "sell_target": 220.0,
+      "wb_price": 200,
+      "premium_pct": 272.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X228",
+      "name": "Lost Origin Booster Box",
+      "variant": "Sealed",
+      "live_price": 744.23,
+      "sell_target": 220.0,
+      "wb_price": 200,
+      "premium_pct": 272.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+=======
+>>>>>>> Stashed changes
       "cid": "X322",
       "name": "Blastoise Base Shadowless PSA 8",
       "variant": "PSA 8",
@@ -530,6 +573,21 @@
       "sell_target": 319.0,
       "wb_price": 290,
       "premium_pct": 270.5,
+<<<<<<< Updated upstream
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa8"
+    },
+    {
+      "cid": "Z022",
+      "name": "Shining Magikarp",
+      "variant": "PSA 10",
+      "live_price": 3300.0,
+      "sell_target": 990.0,
+      "wb_price": 900,
+      "premium_pct": 266.7,
+=======
+>>>>>>> Stashed changes
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pricecharting:psa8"
@@ -547,6 +605,15 @@
       "source": "pc_sweep_grade_10"
     },
     {
+<<<<<<< Updated upstream
+      "cid": "P046",
+      "name": "Mega Rayquaza Common (AH)",
+      "variant": "Raw NM",
+      "live_price": 18.15,
+      "sell_target": 6.0,
+      "wb_price": 5,
+      "premium_pct": 263.0,
+=======
       "cid": "Z022",
       "name": "Shining Magikarp",
       "variant": "PSA 10",
@@ -566,6 +633,7 @@
       "sell_target": 6.0,
       "wb_price": 5,
       "premium_pct": 261.0,
+>>>>>>> Stashed changes
       "just_crossed_today": false,
       "confidence": "HIGH",
       "source": "tcgplayer_api"
@@ -595,6 +663,18 @@
       "source": "tcgplayer_api"
     },
     {
+      "cid": "X130",
+      "name": "Mega Gengar ex MAR (Ascended)",
+      "variant": "Raw NM",
+      "live_price": 88.95,
+      "sell_target": 28.0,
+      "wb_price": 25,
+      "premium_pct": 255.8,
+      "just_crossed_today": false,
+      "confidence": "HIGH",
+      "source": "tcgplayer_api"
+    },
+    {
       "cid": "V040",
       "name": "Dark Charizard",
       "variant": "PSA 10",
@@ -605,6 +685,21 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa10"
+<<<<<<< Updated upstream
+    },
+    {
+      "cid": "DD014",
+      "name": "Pokemon Paradox Rift Booster Box",
+      "variant": "Sealed",
+      "live_price": 562.38,
+      "sell_target": 182.0,
+      "wb_price": 165,
+      "premium_pct": 240.8,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+=======
+>>>>>>> Stashed changes
     }
   ],
   "high_score_signals": [
