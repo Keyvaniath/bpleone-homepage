@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-02T15:10:20.152129Z",
-  "date_human": "Tuesday, Jun 02, 2026",
-  "headline": "Tracking **774 cards** \u00b7 **270** live-priced (35% coverage) \u00b7 22 STRONG BUYs flagged today.",
+  "generated_at": "2026-06-03T15:56:45.133232Z",
+  "date_human": "Wednesday, Jun 03, 2026",
+  "headline": "Tracking **774 cards** \u00b7 **301** live-priced (39% coverage) \u00b7 22 STRONG BUYs flagged today.",
   "paragraphs": [
-    "Tracking **774 cards** \u00b7 **270** live-priced (35% coverage) \u00b7 22 STRONG BUYs flagged today.",
-    "**Trade of the Day: Whimsicott VSTAR Alt Art** (PSA 10) \u2014 $320 live, quant score **76/100**, signal **HOLD**. Brilliant Stars.",
-    "Coverage is at **35%** \u2014 the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 504 cards. Real-time 30-day deltas activate after 5 days of live tracking.",
-    "Total tracked-universe market cap: **$3.6M** (~$14k avg per card)."
+    "Tracking **774 cards** \u00b7 **301** live-priced (39% coverage) \u00b7 22 STRONG BUYs flagged today.",
+    "**Trade of the Day: Magnezone V Alt Art** (PSA 10) \u2014 $110 live, quant score **77/100**, signal **HOLD**. Lost Origin.",
+    "Coverage is at **39%** \u2014 the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 473 cards. Real-time 30-day deltas activate after 5 days of live tracking.",
+    "Total tracked-universe market cap: **$3.7M** (~$12k avg per card)."
   ],
   "tldr": [
-    "270 cards live-priced of 774",
+    "301 cards live-priced of 774",
     "22 STRONG BUYs flagged today",
-    "Total mcap $3.6M",
-    "Trade of the Day: Whimsicott VSTAR Alt Art"
+    "Total mcap $3.7M",
+    "Trade of the Day: Magnezone V Alt Art"
   ],
   "stats": {
     "total_cards": 774,
-    "live_matched": 270,
-    "total_mcap": 3645805.0,
+    "live_matched": 301,
+    "total_mcap": 3716438.0,
     "avg_d30_pct": 0.15,
     "strong_buys": 22,
-    "history_snapshots": 31,
-    "history_age_days": 18.6,
+    "history_snapshots": 32,
+    "history_age_days": 19.7,
     "history_overlay_count": 43
   }
 }

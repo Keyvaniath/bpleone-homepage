@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-02T15:10:19.242960+00:00",
+  "generated_at": "2026-06-03T15:56:44.226104+00:00",
   "overall": "RED",
   "counts": {
-    "green": 16,
-    "yellow": 0,
-    "red": 8,
+    "green": 21,
+    "yellow": 1,
+    "red": 2,
     "total": 24
   },
   "checks": [
@@ -12,7 +12,7 @@
       "file": "live_prices.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 195570,
+      "size_bytes": 220772,
       "age_hours": 0.0,
       "status": "GREEN"
     },
@@ -20,7 +20,7 @@
       "file": "data_quality_alerts.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 4161,
+      "size_bytes": 3436,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -29,7 +29,7 @@
       "file": "price_diff.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 10627,
+      "size_bytes": 12890,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -38,19 +38,19 @@
       "file": "morning_brief_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 9178,
-      "age_hours": 0.2,
-      "status": "RED",
-      "reason": "bad_json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
+      "size_bytes": 7959,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "price_alerts.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 20956,
-      "age_hours": 0.2,
-      "status": "RED",
-      "reason": "bad_json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
+      "size_bytes": 15614,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "source_reliability.json",
@@ -65,15 +65,16 @@
       "file": "daily_recap_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 225,
-      "status": "RED",
-      "reason": "too_small: 225b < 500b"
+      "size_bytes": 5744,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "daily_recap_v2.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 3253,
+      "size_bytes": 13345,
       "age_hours": 0.0,
       "status": "GREEN"
     },
@@ -81,7 +82,7 @@
       "file": "signal_calibration.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 2627,
+      "size_bytes": 2637,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -98,7 +99,7 @@
       "file": "learning_summary.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 2404,
+      "size_bytes": 2428,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -107,7 +108,7 @@
       "file": "arbitrage_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 79906,
+      "size_bytes": 100837,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -125,7 +126,7 @@
       "file": "past_picks.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 10514,
+      "size_bytes": 10516,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -143,62 +144,63 @@
       "file": "homepage_feed.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 238902,
-      "age_hours": 0.2,
+      "size_bytes": 213399,
+      "age_hours": 0.1,
+      "generated_age_hours": 24.8,
       "status": "RED",
-      "reason": "bad_json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
+      "reason": "stale: 24.8h > 12h"
     },
     {
       "file": "cards_full.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 1360223,
-      "age_hours": 0.2,
+      "size_bytes": 1191604,
+      "age_hours": 0.1,
+      "generated_age_hours": 24.8,
       "status": "RED",
-      "reason": "bad_json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
+      "reason": "stale: 24.8h > 12h"
     },
     {
       "file": "cards.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 1808577,
-      "age_hours": 0.2,
+      "size_bytes": 1786820,
+      "age_hours": 0.1,
       "status": "GREEN"
     },
     {
       "file": "future_winners.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 29359,
-      "age_hours": 0.2,
-      "status": "RED",
-      "reason": "bad_json: Expecting property name enclosed in double quotes: line 3 column 1 (char 18)"
+      "size_bytes": 20820,
+      "age_hours": 0.1,
+      "generated_age_hours": 24.8,
+      "status": "YELLOW",
+      "reason": "aging: 24.8h > 24h"
     },
     {
       "file": "set_heat.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 28615,
-      "age_hours": 0.2,
-      "generated_age_hours": 31.7,
-      "status": "RED",
-      "reason": "stale: 31.7h > 12h"
+      "size_bytes": 27429,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "sealed_market.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 25344,
-      "age_hours": 0.2,
-      "generated_age_hours": 31.7,
-      "status": "RED",
-      "reason": "stale: 31.7h > 12h"
+      "size_bytes": 24389,
+      "age_hours": 0.0,
+      "generated_age_hours": 0.0,
+      "status": "GREEN"
     },
     {
       "file": "email_digest.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 4987,
+      "size_bytes": 8703,
       "age_hours": 0.0,
       "status": "GREEN"
     },
@@ -206,7 +208,7 @@
       "file": "weekly_recap.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 9281,
+      "size_bytes": 9270,
       "age_hours": 0.0,
       "status": "GREEN"
     },
@@ -214,7 +216,7 @@
       "file": "auto_tweet.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 891,
+      "size_bytes": 1718,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
