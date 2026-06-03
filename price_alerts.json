@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-03T15:56:42.753241+00:00",
-  "buy_alerts_count": 27,
-  "sell_alerts_count": 120,
-  "high_score_count": 0,
+  "generated_at": "2026-06-03T18:59:43.007306+00:00",
+  "buy_alerts_count": 31,
+  "sell_alerts_count": 137,
+  "high_score_count": 1,
   "buy_alerts": [
     {
       "cid": "W012",
@@ -137,6 +137,18 @@
       "source": "tcgplayer_api"
     },
     {
+      "cid": "V038",
+      "name": "Aerodactyl",
+      "variant": "PSA 9",
+      "live_price": 302.13,
+      "buy_target": 464.0,
+      "wb_price": 580,
+      "discount_pct": 47.9,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
+    },
+    {
       "cid": "X534",
       "name": "Neo Genesis Booster Box Unlimited (sealed)",
       "variant": "Sealed",
@@ -233,6 +245,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "W011",
+      "name": "Bloodmoon Ursaluna ex SAR",
+      "variant": "PSA 10",
+      "live_price": 150.65,
+      "buy_target": 196.0,
+      "wb_price": 245,
+      "discount_pct": 38.5,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
+    },
+    {
       "cid": "Z045",
       "name": "Blaine's Charizard",
       "variant": "PSA 9",
@@ -257,6 +281,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "V024",
+      "name": "Vaporeon Gold Star",
+      "variant": "PSA 9",
+      "live_price": 1771.36,
+      "buy_target": 2240.0,
+      "wb_price": 2800,
+      "discount_pct": 36.7,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
+    },
+    {
       "cid": "V811",
       "name": "Umbreon Neo Discovery",
       "variant": "PSA 8",
@@ -267,42 +303,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa8"
-    },
-    {
-      "cid": "X164",
-      "name": "Drasna Trainer Gallery (raw)",
-      "variant": "Raw NM",
-      "live_price": 8.62,
-      "buy_target": 10.0,
-      "wb_price": 13,
-      "discount_pct": 33.7,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "tcgplayer_api"
-    },
-    {
-      "cid": "D111",
-      "name": "Pokemon Shining Fates ETB",
-      "variant": "Sealed",
-      "live_price": 165.63,
-      "buy_target": 196.0,
-      "wb_price": 245,
-      "discount_pct": 32.4,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
-      "cid": "X316",
-      "name": "Shining Fates Premium Collection",
-      "variant": "Sealed",
-      "live_price": 213.51,
-      "buy_target": 232.0,
-      "wb_price": 290,
-      "discount_pct": 26.4,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     }
   ],
   "sell_alerts": [
@@ -355,6 +355,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "V009",
+      "name": "Mewtwo",
+      "variant": "PSA 9",
+      "live_price": 6662.31,
+      "sell_target": 1540.0,
+      "wb_price": 1400,
+      "premium_pct": 375.9,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
+    },
+    {
       "cid": "Z204",
       "name": "Mewtwo & Mew GX RR",
       "variant": "PSA 10",
@@ -386,6 +398,18 @@
       "sell_target": 121.0,
       "wb_price": 110,
       "premium_pct": 328.4,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "S004",
+      "name": "Crown Zenith ETB",
+      "variant": "Sealed",
+      "live_price": 310.0,
+      "sell_target": 82.0,
+      "wb_price": 75,
+      "premium_pct": 313.3,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -547,6 +571,18 @@
       "source": "pricecharting:psa9"
     },
     {
+      "cid": "Z033",
+      "name": "Shining Tyranitar",
+      "variant": "PSA 10",
+      "live_price": 9999.0,
+      "sell_target": 3190.0,
+      "wb_price": 2900,
+      "premium_pct": 244.8,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
+    },
+    {
       "cid": "M203",
       "name": "Latias ex SIR",
       "variant": "PSA 10",
@@ -569,43 +605,19 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa9"
-    },
-    {
-      "cid": "V250",
-      "name": "Blastoise",
-      "variant": "PSA 9",
-      "live_price": 908.5,
-      "sell_target": 314.0,
-      "wb_price": 285,
-      "premium_pct": 218.8,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa9"
-    },
-    {
-      "cid": "V021",
-      "name": "Charizard Gold Star",
-      "variant": "PSA 9",
-      "live_price": 15861.22,
-      "sell_target": 5500.0,
-      "wb_price": 5000,
-      "premium_pct": 217.2,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa9"
-    },
-    {
-      "cid": "M047",
-      "name": "Charizard ex SIR",
-      "variant": "Raw NM",
-      "live_price": 870.0,
-      "sell_target": 308.0,
-      "wb_price": 280,
-      "premium_pct": 210.7,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     }
   ],
-  "high_score_signals": []
+  "high_score_signals": [
+    {
+      "cid": "V100",
+      "name": "Pikachu Illustrator Promo",
+      "variant": "PSA 7",
+      "score": 80,
+      "signal": "STRONG BUY",
+      "live_price": 197448.76,
+      "wb_price": 85000,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa7"
+    }
+  ]
 }
