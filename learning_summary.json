@@ -1,91 +1,91 @@
 {
-  "generated_at": "2026-06-01T07:29:51.036275+00:00",
+  "generated_at": "2026-06-04T19:45:08.689080+00:00",
   "fw_weights": {
     "current": {
-      "momentum_rising": 0.2151,
-      "scarcity": 0.138,
-      "accessibility": 0.1451,
-      "hidden_alpha": 0.1882,
-      "tier_premium": 0.1403,
-      "liquidity": 0.1732
+      "momentum_rising": 0.1738,
+      "scarcity": 0.2095,
+      "accessibility": 0.1081,
+      "hidden_alpha": 0.1697,
+      "tier_premium": 0.2149,
+      "liquidity": 0.1239
     },
     "source": "proxy-learned",
-    "n_retrains": 36,
-    "last_retrain_at": "2026-06-01T07:29:50.595523+00:00",
-    "last_retrain_n_samples": 1110,
+    "n_retrains": 47,
+    "last_retrain_at": "2026-06-04T19:45:08.414716+00:00",
+    "last_retrain_n_samples": 1290,
     "last_retrain_mode": "proxy_d30_workbook",
     "weight_changes": [
       {
-        "component": "momentum_rising",
-        "current": 0.2151,
-        "seed": 0.25,
-        "delta": -0.0349,
-        "delta_pct": -14.0
-      },
-      {
-        "component": "hidden_alpha",
-        "current": 0.1882,
-        "seed": 0.15,
-        "delta": 0.0382,
-        "delta_pct": 25.5
-      },
-      {
-        "component": "liquidity",
-        "current": 0.1732,
-        "seed": 0.1,
-        "delta": 0.0732,
-        "delta_pct": 73.2
-      },
-      {
-        "component": "accessibility",
-        "current": 0.1451,
-        "seed": 0.15,
-        "delta": -0.0049,
-        "delta_pct": -3.3
-      },
-      {
         "component": "tier_premium",
-        "current": 0.1403,
+        "current": 0.2149,
         "seed": 0.15,
-        "delta": -0.0097,
-        "delta_pct": -6.5
+        "delta": 0.0649,
+        "delta_pct": 43.3
       },
       {
         "component": "scarcity",
-        "current": 0.138,
+        "current": 0.2095,
         "seed": 0.2,
-        "delta": -0.062,
-        "delta_pct": -31.0
+        "delta": 0.0095,
+        "delta_pct": 4.7
+      },
+      {
+        "component": "momentum_rising",
+        "current": 0.1738,
+        "seed": 0.25,
+        "delta": -0.0762,
+        "delta_pct": -30.5
+      },
+      {
+        "component": "hidden_alpha",
+        "current": 0.1697,
+        "seed": 0.15,
+        "delta": 0.0197,
+        "delta_pct": 13.1
+      },
+      {
+        "component": "liquidity",
+        "current": 0.1239,
+        "seed": 0.1,
+        "delta": 0.0239,
+        "delta_pct": 23.9
+      },
+      {
+        "component": "accessibility",
+        "current": 0.1081,
+        "seed": 0.15,
+        "delta": -0.0419,
+        "delta_pct": -27.9
       }
     ],
     "last_correlations": {
-      "momentum_rising": 0.5061065729080051,
-      "scarcity": -0.4392043084004051,
-      "accessibility": -0.014690082603369823,
-      "hidden_alpha": 0.25444179958804763,
-      "tier_premium": -0.40957870870767477,
-      "liquidity": 0.2679670111454441
+      "momentum_rising": 0.23073484804251096,
+      "scarcity": -0.11503283781405796,
+      "accessibility": -0.34217441678171967,
+      "hidden_alpha": 0.029458695368021967,
+      "tier_premium": -0.04778670139189672,
+      "liquidity": 0.04885619106355122
     }
   },
   "signal_learning": {
-    "total_emissions": 14985,
-    "fw_emissions": 1110,
-    "outcomes_evaluated": 1202,
+    "total_emissions": 16790,
+    "fw_emissions": 1293,
+    "outcomes_evaluated": 2378,
     "by_signal": {
       "BUY": {
-        "total_samples": 262,
-        "weighted_hit_rate_pct": 54.2,
-        "weighted_avg_pct_move": 39.68
+        "total_samples": 480,
+        "weighted_hit_rate_pct": 48.6,
+        "weighted_avg_pct_move": 20.06
       },
       "HOLD": {
-        "total_samples": 849,
-        "weighted_hit_rate_pct": 31.2,
-        "weighted_avg_pct_move": 0.27
+        "total_samples": 1796,
+        "weighted_hit_rate_pct": 36.3,
+        "weighted_avg_pct_move": -2.69
       },
       "STRONG BUY": {
-        "total_samples": 91,
-        "weighted_hit_rate_pct": 69.2,
-        "weighted_avg_pct_move": 85.04
+        "total_samples": 102,
+        "weighted_hit_rate_pct": 69.6,
+        "weighted_avg_pct_move": 77.24
       }
     }
   },

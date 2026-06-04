@@ -1,9 +1,9 @@
 {
   "summary": {
-    "CATALOG_HIGH": 54,
-    "CATALOG_LOW": 97,
-    "NO_LIVE_DATA": 451,
-    "ALIGNED": 172
+    "CATALOG_HIGH": 55,
+    "CATALOG_LOW": 100,
+    "NO_LIVE_DATA": 439,
+    "ALIGNED": 180
   },
   "rows": [
     {
@@ -27,12 +27,12 @@
       "card_num": "4/102",
       "variant": "PSA 10",
       "wb_price": 200000.0,
-      "live_price": 350439.63,
+      "live_price": 413902.86,
       "source": "pricecharting:psa10",
       "verdict": "CATALOG_LOW",
-      "reason": "market $350440 but workbook only $200000 (1.75\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $413903 but workbook only $200000 (2.07\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 150439.63
+      "dollar_impact": 213902.86
     },
     {
       "card_id": "V019",
@@ -69,12 +69,12 @@
       "card_num": "4/102",
       "variant": "BGS 9",
       "wb_price": 16000.0,
-      "live_price": 48291.07,
+      "live_price": 48608.09,
       "source": "pricecharting:fallback_grade_9",
       "verdict": "CATALOG_LOW",
-      "reason": "market $48291 but workbook only $16000 (3.02\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $48608 but workbook only $16000 (3.04\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 32291.07
+      "dollar_impact": 32608.089999999997
     },
     {
       "card_id": "Z103",
@@ -111,12 +111,12 @@
       "card_num": "4/102",
       "variant": "PSA 9",
       "wb_price": 32000.0,
-      "live_price": 48291.07,
+      "live_price": 48608.09,
       "source": "pricecharting:psa9",
       "verdict": "CATALOG_LOW",
-      "reason": "market $48291 but workbook only $32000 (1.51\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $48608 but workbook only $32000 (1.52\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 16291.07
+      "dollar_impact": 16608.089999999997
     },
     {
       "card_id": "M092",
@@ -251,12 +251,12 @@
       "card_num": "10/62",
       "variant": "PSA 9",
       "wb_price": 800.0,
-      "live_price": 6662.31,
+      "live_price": 6664.39,
       "source": "pricecharting:psa9",
       "verdict": "CATALOG_LOW",
-      "reason": "market $6662 but workbook only $800 (8.33\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $6664 but workbook only $800 (8.33\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 5862.31
+      "dollar_impact": 5864.39
     },
     {
       "card_id": "V023",
@@ -293,12 +293,12 @@
       "card_num": "9/111",
       "variant": "PSA 8",
       "wb_price": 750.0,
-      "live_price": 5075.0,
+      "live_price": 5000.0,
       "source": "pricecharting:psa8",
       "verdict": "CATALOG_LOW",
-      "reason": "market $5075 but workbook only $750 (6.77\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $5000 but workbook only $750 (6.67\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 4325.0
+      "dollar_impact": 4250.0
     },
     {
       "card_id": "V010",
@@ -349,12 +349,12 @@
       "card_num": "Box",
       "variant": "Sealed (36 packs)",
       "wb_price": 290.0,
-      "live_price": 2625.46,
+      "live_price": 2549.23,
       "source": "pricecharting:raw",
       "verdict": "CATALOG_LOW",
-      "reason": "market $2625 but workbook only $290 (9.05\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $2549 but workbook only $290 (8.79\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 2335.46
+      "dollar_impact": 2259.23
     },
     {
       "card_id": "D110",
@@ -385,18 +385,18 @@
       "dollar_impact": 1618.19
     },
     {
-      "card_id": "X231",
-      "name": "Charizard Base Unlimited PSA 9",
-      "set": "Base Set",
-      "card_num": "4/102",
+      "card_id": "V014",
+      "name": "Dragonite",
+      "set": "Fossil 1st Edition",
+      "card_num": "4/62",
       "variant": "PSA 9",
-      "wb_price": 1800.0,
-      "live_price": 3296.56,
+      "wb_price": 950.0,
+      "live_price": 2445.0,
       "source": "pricecharting:psa9",
       "verdict": "CATALOG_LOW",
-      "reason": "market $3297 but workbook only $1800 (1.83\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $2445 but workbook only $950 (2.57\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 1496.56
+      "dollar_impact": 1495.0
     },
     {
       "card_id": "V028",
@@ -425,6 +425,34 @@
       "reason": "market $2326 but workbook only $950 (2.45\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
       "dollar_impact": 1376.5
+    },
+    {
+      "card_id": "X231",
+      "name": "Charizard Base Unlimited PSA 9",
+      "set": "Base Set",
+      "card_num": "4/102",
+      "variant": "PSA 9",
+      "wb_price": 1800.0,
+      "live_price": 3038.72,
+      "source": "pricecharting:psa9",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $3039 but workbook only $1800 (1.69\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 1238.7199999999998
+    },
+    {
+      "card_id": "V274",
+      "name": "Gyarados PSA 10",
+      "set": "Base Set Unlimited",
+      "card_num": "6/102",
+      "variant": "PSA 10",
+      "wb_price": 850.0,
+      "live_price": 2072.73,
+      "source": "pricecharting:psa10",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $2073 but workbook only $850 (2.44\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 1222.73
     },
     {
       "card_id": "V252",
@@ -503,12 +531,12 @@
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 950.0,
-      "live_price": 231.81,
+      "live_price": 235.87,
       "source": "pricecharting:raw",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $950 but market only $232 (0.24\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $950 but market only $236 (0.25\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 718.19
+      "dollar_impact": 714.13
     },
     {
       "card_id": "J009",
@@ -545,12 +573,12 @@
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 850.0,
-      "live_price": 230.36,
+      "live_price": 235.87,
       "source": "pricecharting:raw",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $850 but market only $230 (0.27\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $850 but market only $236 (0.28\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 619.64
+      "dollar_impact": 614.13
     },
     {
       "card_id": "M044",
@@ -657,12 +685,26 @@
       "card_num": "Box",
       "variant": "Sealed",
       "wb_price": 750.0,
-      "live_price": 240.0,
+      "live_price": 235.87,
       "source": "pricecharting:raw",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $750 but market only $240 (0.32\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $750 but market only $236 (0.31\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 510.0
+      "dollar_impact": 514.13
+    },
+    {
+      "card_id": "JB07",
+      "name": "Lugia VSTAR HR (JP)",
+      "set": "VSTAR Universe",
+      "card_num": "JP",
+      "variant": "Raw NM",
+      "wb_price": 18.0,
+      "live_price": 488.31,
+      "source": "single_pc",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $488 but workbook only $18 (27.13\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 470.31
     },
     {
       "card_id": "X418",
@@ -679,34 +721,6 @@
       "dollar_impact": 467.82
     },
     {
-      "card_id": "JB07",
-      "name": "Lugia VSTAR HR (JP)",
-      "set": "VSTAR Universe",
-      "card_num": "JP",
-      "variant": "Raw NM",
-      "wb_price": 18.0,
-      "live_price": 484.59,
-      "source": "single_pc",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $485 but workbook only $18 (26.92\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 466.59
-    },
-    {
-      "card_id": "JB02",
-      "name": "Mew ex CHR (JP)",
-      "set": "Pokemon Card 151 JP",
-      "card_num": "JP",
-      "variant": "Raw NM",
-      "wb_price": 14.0,
-      "live_price": 420.0,
-      "source": "single_pc",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $420 but workbook only $14 (30.00\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 406.0
-    },
-    {
       "card_id": "V902",
       "name": "Charizard Base Unlimited PSA 7",
       "set": "Base Set",
@@ -719,6 +733,20 @@
       "reason": "market $710 but workbook only $320 (2.22\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
       "dollar_impact": 390.0
+    },
+    {
+      "card_id": "JB02",
+      "name": "Mew ex CHR (JP)",
+      "set": "Pokemon Card 151 JP",
+      "card_num": "JP",
+      "variant": "Raw NM",
+      "wb_price": 14.0,
+      "live_price": 400.0,
+      "source": "single_pc",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $400 but workbook only $14 (28.57\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 386.0
     },
     {
       "card_id": "S006",
@@ -931,20 +959,6 @@
       "dollar_impact": 270.0
     },
     {
-      "card_id": "JB08",
-      "name": "Mewtwo VSTAR HR (JP)",
-      "set": "VSTAR Universe",
-      "card_num": "JP",
-      "variant": "Raw NM",
-      "wb_price": 15.0,
-      "live_price": 283.56,
-      "source": "single_pc",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $284 but workbook only $15 (18.90\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 268.56
-    },
-    {
       "card_id": "PC004",
       "name": "Premium Collection PSA 10 Box (Champion's Path)",
       "set": "Champion's Path PC",
@@ -959,18 +973,32 @@
       "dollar_impact": 263.45
     },
     {
+      "card_id": "JB08",
+      "name": "Mewtwo VSTAR HR (JP)",
+      "set": "VSTAR Universe",
+      "card_num": "JP",
+      "variant": "Raw NM",
+      "wb_price": 15.0,
+      "live_price": 276.05,
+      "source": "single_pc",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $276 but workbook only $15 (18.40\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 261.05
+    },
+    {
       "card_id": "D109",
       "name": "Pokemon Hidden Fates ETB",
       "set": "Hidden Fates",
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 425.0,
-      "live_price": 165.63,
+      "live_price": 170.63,
       "source": "pricecharting:raw",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $425 but market only $166 (0.39\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $425 but market only $171 (0.40\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 259.37
+      "dollar_impact": 254.37
     },
     {
       "card_id": "D04",
@@ -993,12 +1021,12 @@
       "card_num": "ETB",
       "variant": "Sealed",
       "wb_price": 75.0,
-      "live_price": 310.0,
+      "live_price": 318.0,
       "source": "pricecharting:raw",
       "verdict": "CATALOG_LOW",
-      "reason": "market $310 but workbook only $75 (4.13\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $318 but workbook only $75 (4.24\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 235.0
+      "dollar_impact": 243.0
     },
     {
       "card_id": "D112",
@@ -1141,6 +1169,20 @@
       "dollar_impact": 185.0
     },
     {
+      "card_id": "S022",
+      "name": "Stellar Crown BB",
+      "set": "Stellar Crown",
+      "card_num": "Box",
+      "variant": "Sealed (36 packs)",
+      "wb_price": 125.0,
+      "live_price": 309.95,
+      "source": "pricecharting:raw",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $310 but workbook only $125 (2.48\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 184.95
+    },
+    {
       "card_id": "X139",
       "name": "Charmander Master Ball raw (151)",
       "set": "151",
@@ -1161,12 +1203,12 @@
       "card_num": "286/217",
       "variant": "Raw NM",
       "wb_price": 22.0,
-      "live_price": 188.97,
+      "live_price": 189.43,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_LOW",
-      "reason": "market $189 but workbook only $22 (8.59\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $189 but workbook only $22 (8.61\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 166.97
+      "dollar_impact": 167.43
     },
     {
       "card_id": "S030",
@@ -1231,26 +1273,12 @@
       "card_num": "Bundle",
       "variant": "Sealed (6 packs)",
       "wb_price": 57.71,
-      "live_price": 181.79,
+      "live_price": 182.91,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_LOW",
-      "reason": "market $182 but workbook only $58 (3.15\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $183 but workbook only $58 (3.17\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 124.07999999999998
-    },
-    {
-      "card_id": "S018",
-      "name": "Paradox Rift BB",
-      "set": "Paradox Rift",
-      "card_num": "Box",
-      "variant": "Sealed (36 packs)",
-      "wb_price": 145.0,
-      "live_price": 268.59,
-      "source": "pricecharting:raw",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $269 but workbook only $145 (1.85\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 123.58999999999997
+      "dollar_impact": 125.19999999999999
     },
     {
       "card_id": "X118",
@@ -1265,6 +1293,20 @@
       "reason": "market $142 but workbook only $20 (7.11\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
       "dollar_impact": 122.11000000000001
+    },
+    {
+      "card_id": "S018",
+      "name": "Paradox Rift BB",
+      "set": "Paradox Rift",
+      "card_num": "Box",
+      "variant": "Sealed (36 packs)",
+      "wb_price": 145.0,
+      "live_price": 267.08,
+      "source": "pricecharting:raw",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $267 but workbook only $145 (1.84\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 122.07999999999998
     },
     {
       "card_id": "X222",
@@ -1365,20 +1407,6 @@
       "dollar_impact": 90.63
     },
     {
-      "card_id": "V256",
-      "name": "Gyarados",
-      "set": "Base Set Unlimited",
-      "card_num": "6/102",
-      "variant": "PSA 9",
-      "wb_price": 165.0,
-      "live_price": 255.38,
-      "source": "pricecharting:psa9",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $255 but workbook only $165 (1.55\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 90.38
-    },
-    {
       "card_id": "X237",
       "name": "Mewtwo Fossil Unlimited PSA 9",
       "set": "Fossil",
@@ -1413,12 +1441,12 @@
       "card_num": "Bundle",
       "variant": "Sealed (6 packs)",
       "wb_price": 80.0,
-      "live_price": 163.5,
+      "live_price": 163.74,
       "source": "pricecharting:raw",
       "verdict": "CATALOG_LOW",
-      "reason": "market $164 but workbook only $80 (2.04\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $164 but workbook only $80 (2.05\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 83.5
+      "dollar_impact": 83.74000000000001
     },
     {
       "card_id": "PC001",
@@ -1449,18 +1477,46 @@
       "dollar_impact": 74.44
     },
     {
+      "card_id": "X236",
+      "name": "Zapdos Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "card_num": "15/62",
+      "variant": "PSA 9",
+      "wb_price": 130.0,
+      "live_price": 200.0,
+      "source": "pricecharting:psa9",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $200 but workbook only $130 (1.54\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 70.0
+    },
+    {
       "card_id": "X133",
       "name": "Mega Lopunny ex SIR (raw)",
       "set": "Ascended Heroes",
       "card_num": "283/217",
       "variant": "Raw NM",
       "wb_price": 9.0,
-      "live_price": 75.7,
+      "live_price": 75.87,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_LOW",
-      "reason": "market $76 but workbook only $9 (8.41\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $76 but workbook only $9 (8.43\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 66.7
+      "dollar_impact": 66.87
+    },
+    {
+      "card_id": "V904",
+      "name": "Venusaur Base Unlimited PSA 7",
+      "set": "Base Set",
+      "card_num": "15/102",
+      "variant": "PSA 7",
+      "wb_price": 120.0,
+      "live_price": 183.75,
+      "source": "pricecharting:psa7",
+      "verdict": "CATALOG_LOW",
+      "reason": "market $184 but workbook only $120 (1.53\u00d7 \u2014 catalog underprices reality)",
+      "severity": 2,
+      "dollar_impact": 63.75
     },
     {
       "card_id": "V257",
@@ -1483,26 +1539,12 @@
       "card_num": "269/217",
       "variant": "Raw NM",
       "wb_price": 25.0,
-      "live_price": 87.83,
+      "live_price": 87.75,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_LOW",
       "reason": "market $88 but workbook only $25 (3.51\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 62.83
-    },
-    {
-      "card_id": "V904",
-      "name": "Venusaur Base Unlimited PSA 7",
-      "set": "Base Set",
-      "card_num": "15/102",
-      "variant": "PSA 7",
-      "wb_price": 120.0,
-      "live_price": 182.5,
-      "source": "pricecharting:psa7",
-      "verdict": "CATALOG_LOW",
-      "reason": "market $182 but workbook only $120 (1.52\u00d7 \u2014 catalog underprices reality)",
-      "severity": 2,
-      "dollar_impact": 62.5
+      "dollar_impact": 62.75
     },
     {
       "card_id": "V910",
@@ -1531,6 +1573,20 @@
       "reason": "market $71 but workbook only $25 (2.84\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
       "dollar_impact": 46.019999999999996
+    },
+    {
+      "card_id": "D08",
+      "name": "Pokemon Day 2026 Premium Collection",
+      "set": "30th Anniversary Promo",
+      "card_num": "Premium",
+      "variant": "Sealed",
+      "wb_price": 50.0,
+      "live_price": 6.5,
+      "source": "pricecharting:raw",
+      "verdict": "CATALOG_HIGH",
+      "reason": "workbook $50 but market only $6 (0.13\u00d7 \u2014 catalog estimate is too high)",
+      "severity": 2,
+      "dollar_impact": 43.5
     },
     {
       "card_id": "X134",
@@ -1707,12 +1763,12 @@
       "card_num": "Various",
       "variant": "Raw NM mixed",
       "wb_price": 18.0,
-      "live_price": 0.59,
+      "live_price": 0.64,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $18 but market only $1 (0.03\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $18 but market only $1 (0.04\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 17.41
+      "dollar_impact": 17.36
     },
     {
       "card_id": "X120",
@@ -1721,12 +1777,12 @@
       "card_num": "163/131",
       "variant": "Raw NM",
       "wb_price": 18.0,
-      "live_price": 33.77,
+      "live_price": 33.79,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_LOW",
       "reason": "market $34 but workbook only $18 (1.88\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 15.770000000000003
+      "dollar_impact": 15.79
     },
     {
       "card_id": "B012",
@@ -1749,12 +1805,12 @@
       "card_num": "238/191",
       "variant": "Raw NM",
       "wb_price": 15.0,
-      "live_price": 0.57,
+      "live_price": 0.64,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
       "reason": "workbook $15 but market only $1 (0.04\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 14.43
+      "dollar_impact": 14.36
     },
     {
       "card_id": "X111",
@@ -1763,12 +1819,12 @@
       "card_num": "238/191",
       "variant": "Raw NM",
       "wb_price": 14.0,
-      "live_price": 0.57,
+      "live_price": 0.64,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $14 but market only $1 (0.04\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $14 but market only $1 (0.05\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 13.43
+      "dollar_impact": 13.36
     },
     {
       "card_id": "V218",
@@ -1791,12 +1847,12 @@
       "card_num": "138/217",
       "variant": "Raw NM",
       "wb_price": 5.0,
-      "live_price": 17.47,
+      "live_price": 17.54,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_LOW",
-      "reason": "market $17 but workbook only $5 (3.49\u00d7 \u2014 catalog underprices reality)",
+      "reason": "market $18 but workbook only $5 (3.51\u00d7 \u2014 catalog underprices reality)",
       "severity": 2,
-      "dollar_impact": 12.469999999999999
+      "dollar_impact": 12.54
     },
     {
       "card_id": "V219",
@@ -1847,12 +1903,12 @@
       "card_num": "239/191",
       "variant": "Raw NM",
       "wb_price": 10.0,
-      "live_price": 0.59,
+      "live_price": 0.64,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
       "reason": "workbook $10 but market only $1 (0.06\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 9.41
+      "dollar_impact": 9.36
     },
     {
       "card_id": "X122",
@@ -1903,12 +1959,12 @@
       "card_num": "240/191",
       "variant": "Raw NM",
       "wb_price": 8.0,
-      "live_price": 0.99,
+      "live_price": 0.97,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
       "reason": "workbook $8 but market only $1 (0.12\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 7.01
+      "dollar_impact": 7.03
     },
     {
       "card_id": "X104",
@@ -2015,12 +2071,12 @@
       "card_num": "076/131",
       "variant": "Raw NM",
       "wb_price": 6.0,
-      "live_price": 1.35,
+      "live_price": 1.33,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $6 but market only $1 (0.23\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $6 but market only $1 (0.22\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 4.65
+      "dollar_impact": 4.67
     },
     {
       "card_id": "X128",
@@ -2029,12 +2085,12 @@
       "card_num": "012/132",
       "variant": "Raw NM",
       "wb_price": 5.0,
-      "live_price": 0.64,
+      "live_price": 0.62,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $5 but market only $1 (0.13\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $5 but market only $1 (0.12\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 4.36
+      "dollar_impact": 4.38
     },
     {
       "card_id": "X106",
@@ -2071,12 +2127,12 @@
       "card_num": "032/131",
       "variant": "Raw NM",
       "wb_price": 4.0,
-      "live_price": 0.9,
+      "live_price": 0.8,
       "source": "tcgplayer_api",
       "verdict": "CATALOG_HIGH",
-      "reason": "workbook $4 but market only $1 (0.23\u00d7 \u2014 catalog estimate is too high)",
+      "reason": "workbook $4 but market only $1 (0.20\u00d7 \u2014 catalog estimate is too high)",
       "severity": 2,
-      "dollar_impact": 3.1
+      "dollar_impact": 3.2
     },
     {
       "card_id": "P012",
@@ -2296,7 +2352,7 @@
       "variant": "Sealed",
       "wb_price": 15000.0,
       "live_price": null,
-      "source": "rejected_sanity_pricecharting:raw_$75_vs_wb_$15000",
+      "source": "rejected_sanity_pricecharting:raw_$70_vs_wb_$15000",
       "verdict": "NO_LIVE_DATA",
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
@@ -2483,20 +2539,6 @@
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
       "dollar_impact": 4480.0
-    },
-    {
-      "card_id": "X321",
-      "name": "Charizard Base Shadowless PSA 8",
-      "set": "Base Set Shadowless",
-      "card_num": "4/102",
-      "variant": "PSA 8",
-      "wb_price": 4300.0,
-      "live_price": null,
-      "source": "rejected_upper_pricecharting:psa8_$4904_vs_wb_$480",
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 4300.0
     },
     {
       "card_id": "X512",
@@ -3283,20 +3325,6 @@
       "dollar_impact": 975.0
     },
     {
-      "card_id": "V014",
-      "name": "Dragonite",
-      "set": "Fossil 1st Edition",
-      "card_num": "4/62",
-      "variant": "PSA 9",
-      "wb_price": 950.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 950.0
-    },
-    {
       "card_id": "V030",
       "name": "Leafeon Gold Star",
       "set": "Diamond & Pearl Promos",
@@ -3360,7 +3388,7 @@
       "variant": "PSA 10",
       "wb_price": 950.0,
       "live_price": null,
-      "source": null,
+      "source": "rejected_upper_pricecharting:psa10_$9894_vs_wb_$950",
       "verdict": "NO_LIVE_DATA",
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
@@ -3619,20 +3647,6 @@
       "dollar_impact": 850.0
     },
     {
-      "card_id": "V274",
-      "name": "Gyarados PSA 10",
-      "set": "Base Set Unlimited",
-      "card_num": "6/102",
-      "variant": "PSA 10",
-      "wb_price": 850.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 850.0
-    },
-    {
       "card_id": "Z100",
       "name": "Charizard ex",
       "set": "Crystal Guardians",
@@ -3665,20 +3679,6 @@
       "name": "Hilbert Full Art",
       "set": "Black Star Promo",
       "card_num": "BW79",
-      "variant": "PSA 10",
-      "wb_price": 850.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 850.0
-    },
-    {
-      "card_id": "Z181",
-      "name": "Mega Charizard EX (Y) Gold",
-      "set": "Flashfire",
-      "card_num": "101/106",
       "variant": "PSA 10",
       "wb_price": 850.0,
       "live_price": null,
@@ -3752,7 +3752,7 @@
       "variant": "PSA 8",
       "wb_price": 760.0,
       "live_price": null,
-      "source": "rejected_sanity_pricecharting:psa8_$49_vs_wb_$760",
+      "source": "rejected_sanity_pricecharting:psa8_$48_vs_wb_$760",
       "verdict": "NO_LIVE_DATA",
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
@@ -6125,20 +6125,6 @@
       "dollar_impact": 130.0
     },
     {
-      "card_id": "X236",
-      "name": "Zapdos Fossil Unlimited PSA 9",
-      "set": "Fossil",
-      "card_num": "15/62",
-      "variant": "PSA 9",
-      "wb_price": 130.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 130.0
-    },
-    {
       "card_id": "X302",
       "name": "Lugia VSTAR Alt Art (ST) PSA 10",
       "set": "Silver Tempest",
@@ -6151,20 +6137,6 @@
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
       "dollar_impact": 126.5
-    },
-    {
-      "card_id": "S022",
-      "name": "Stellar Crown BB",
-      "set": "Stellar Crown",
-      "card_num": "Box",
-      "variant": "Sealed (36 packs)",
-      "wb_price": 125.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 125.0
     },
     {
       "card_id": "M107",
@@ -6263,20 +6235,6 @@
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
       "dollar_impact": 95.68
-    },
-    {
-      "card_id": "S003",
-      "name": "Evolving Skies Booster Bundle",
-      "set": "Evolving Skies",
-      "card_num": "Bundle",
-      "variant": "Sealed (6 packs)",
-      "wb_price": 95.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 95.0
     },
     {
       "card_id": "X012",
@@ -6909,20 +6867,6 @@
       "dollar_impact": 50.0
     },
     {
-      "card_id": "D08",
-      "name": "Pokemon Day 2026 Premium Collection",
-      "set": "30th Anniversary Promo",
-      "card_num": "Premium",
-      "variant": "Sealed",
-      "wb_price": 50.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 50.0
-    },
-    {
       "card_id": "X154",
       "name": "Magnezone V Alt Art (LO)",
       "set": "Lost Origin",
@@ -6935,20 +6879,6 @@
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
       "dollar_impact": 50.0
-    },
-    {
-      "card_id": "X240",
-      "name": "Houndoom Neo Discovery PSA 9",
-      "set": "Neo Discovery",
-      "card_num": "12/75",
-      "variant": "PSA 9",
-      "wb_price": 47.5,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 47.5
     },
     {
       "card_id": "X214",
@@ -6965,20 +6895,6 @@
       "dollar_impact": 46.49
     },
     {
-      "card_id": "S208",
-      "name": "Stellar Tera-Charizard Premium",
-      "set": "Stellar Crown",
-      "card_num": "Premium Box",
-      "variant": "Sealed",
-      "wb_price": 45.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 45.0
-    },
-    {
       "card_id": "X156",
       "name": "Drifloon V Alt Art (LO)",
       "set": "Lost Origin",
@@ -6991,34 +6907,6 @@
       "reason": "no live source returned a price; stuck on workbook fallback",
       "severity": 1,
       "dollar_impact": 45.0
-    },
-    {
-      "card_id": "D02",
-      "name": "Surging Sparks Booster Bundle",
-      "set": "Surging Sparks",
-      "card_num": "Bundle",
-      "variant": "Sealed",
-      "wb_price": 38.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 38.0
-    },
-    {
-      "card_id": "X144",
-      "name": "Twilight Masquerade Booster Bundle",
-      "set": "Twilight Masquerade",
-      "card_num": "Bundle",
-      "variant": "Sealed",
-      "wb_price": 38.0,
-      "live_price": null,
-      "source": null,
-      "verdict": "NO_LIVE_DATA",
-      "reason": "no live source returned a price; stuck on workbook fallback",
-      "severity": 1,
-      "dollar_impact": 38.0
     },
     {
       "card_id": "S021",
@@ -8511,10 +8399,10 @@
       "card_num": "3/102",
       "variant": "PSA 9",
       "wb_price": 3752.0,
-      "live_price": 3752.0,
+      "live_price": 3137.16,
       "source": "pricecharting:psa9",
       "verdict": "ALIGNED",
-      "reason": "live $3752 vs wb $3752 (ratio 1.00)",
+      "reason": "live $3137 vs wb $3752 (ratio 0.84)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -8665,10 +8553,10 @@
       "card_num": "215/203",
       "variant": "Raw NM",
       "wb_price": 2100.0,
-      "live_price": 2261.15,
+      "live_price": 2181.59,
       "source": "tcgplayer_api",
       "verdict": "ALIGNED",
-      "reason": "live $2261 vs wb $2100 (ratio 1.08)",
+      "reason": "live $2182 vs wb $2100 (ratio 1.04)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -8693,10 +8581,10 @@
       "card_num": "161/131",
       "variant": "PSA 10",
       "wb_price": 5200.0,
-      "live_price": 5950.0,
+      "live_price": 5800.0,
       "source": "pricecharting:psa10",
       "verdict": "ALIGNED",
-      "reason": "live $5950 vs wb $5200 (ratio 1.14)",
+      "reason": "live $5800 vs wb $5200 (ratio 1.12)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -8721,10 +8609,10 @@
       "card_num": "184/132",
       "variant": "Raw NM",
       "wb_price": 65.0,
-      "live_price": 75.43,
+      "live_price": 75.5,
       "source": "tcgplayer_api",
       "verdict": "ALIGNED",
-      "reason": "live $75 vs wb $65 (ratio 1.16)",
+      "reason": "live $76 vs wb $65 (ratio 1.16)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -8749,10 +8637,10 @@
       "card_num": "284/217",
       "variant": "Raw NM",
       "wb_price": 1480.0,
-      "live_price": 1323.07,
+      "live_price": 1291.55,
       "source": "tcgplayer_api",
       "verdict": "ALIGNED",
-      "reason": "live $1323 vs wb $1480 (ratio 0.89)",
+      "reason": "live $1292 vs wb $1480 (ratio 0.87)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -8781,6 +8669,20 @@
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
       "reason": "live $166 vs wb $120",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
+      "card_id": "S003",
+      "name": "Evolving Skies Booster Bundle",
+      "set": "Evolving Skies",
+      "card_num": "Bundle",
+      "variant": "Sealed (6 packs)",
+      "wb_price": 95.0,
+      "live_price": 84.1,
+      "source": "pricecharting:raw",
+      "verdict": "ALIGNED",
+      "reason": "live $84 vs wb $95 (ratio 0.89)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -8847,7 +8749,7 @@
       "card_num": "Tin",
       "variant": "Sealed",
       "wb_price": 40.0,
-      "live_price": 25.13,
+      "live_price": 25.19,
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
       "reason": "live $25 vs wb $40",
@@ -9085,10 +8987,10 @@
       "card_num": "2/102",
       "variant": "PSA 8",
       "wb_price": 280.0,
-      "live_price": 385.29,
+      "live_price": 383.96,
       "source": "pricecharting:psa8",
       "verdict": "ALIGNED",
-      "reason": "live $385 vs wb $280",
+      "reason": "live $384 vs wb $280",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9141,10 +9043,10 @@
       "card_num": "4/62",
       "variant": "PSA 8",
       "wb_price": 294.61,
-      "live_price": 294.61,
+      "live_price": 302.0,
       "source": "pricecharting:psa8",
       "verdict": "ALIGNED",
-      "reason": "live $295 vs wb $295 (ratio 1.00)",
+      "reason": "live $302 vs wb $295 (ratio 1.03)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9219,6 +9121,20 @@
       "dollar_impact": 0
     },
     {
+      "card_id": "S208",
+      "name": "Stellar Tera-Charizard Premium",
+      "set": "Stellar Crown",
+      "card_num": "Premium Box",
+      "variant": "Sealed",
+      "wb_price": 45.0,
+      "live_price": 45.0,
+      "source": "pricecharting:raw",
+      "verdict": "ALIGNED",
+      "reason": "live $45 vs wb $45 (ratio 1.00)",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
       "card_id": "S215",
       "name": "Shrouded Fable Booster Bundle",
       "set": "Shrouded Fable",
@@ -9243,6 +9159,20 @@
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
       "reason": "live $54 vs wb $40",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
+      "card_id": "D02",
+      "name": "Surging Sparks Booster Bundle",
+      "set": "Surging Sparks",
+      "card_num": "Bundle",
+      "variant": "Sealed",
+      "wb_price": 38.0,
+      "live_price": 52.0,
+      "source": "pricecharting:raw",
+      "verdict": "ALIGNED",
+      "reason": "live $52 vs wb $38",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9341,6 +9271,20 @@
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
       "reason": "live $41 vs wb $38 (ratio 1.08)",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
+      "card_id": "X144",
+      "name": "Twilight Masquerade Booster Bundle",
+      "set": "Twilight Masquerade",
+      "card_num": "Bundle",
+      "variant": "Sealed",
+      "wb_price": 38.0,
+      "live_price": 45.99,
+      "source": "pricecharting:raw",
+      "verdict": "ALIGNED",
+      "reason": "live $46 vs wb $38 (ratio 1.21)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9491,10 +9435,10 @@
       "card_num": "12/102",
       "variant": "PSA 8",
       "wb_price": 90.0,
-      "live_price": 82.9,
+      "live_price": 83.62,
       "source": "pricecharting:psa8",
       "verdict": "ALIGNED",
-      "reason": "live $83 vs wb $90 (ratio 0.92)",
+      "reason": "live $84 vs wb $90 (ratio 0.93)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9547,10 +9491,10 @@
       "card_num": "Bundle",
       "variant": "Sealed (6 packs)",
       "wb_price": 175.0,
-      "live_price": 181.79,
+      "live_price": 182.91,
       "source": "tcgplayer_api",
       "verdict": "ALIGNED",
-      "reason": "live $182 vs wb $175 (ratio 1.04)",
+      "reason": "live $183 vs wb $175 (ratio 1.05)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9639,6 +9583,20 @@
       "dollar_impact": 0
     },
     {
+      "card_id": "X240",
+      "name": "Houndoom Neo Discovery PSA 9",
+      "set": "Neo Discovery",
+      "card_num": "12/75",
+      "variant": "PSA 9",
+      "wb_price": 47.5,
+      "live_price": 38.0,
+      "source": "pricecharting:psa9",
+      "verdict": "ALIGNED",
+      "reason": "live $38 vs wb $48 (ratio 0.80)",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
       "card_id": "X241",
       "name": "Jolteon Aquapolis Crystal",
       "set": "Aquapolis",
@@ -9659,10 +9617,10 @@
       "card_num": "ETB",
       "variant": "Sealed",
       "wb_price": 280.0,
-      "live_price": 169.92,
+      "live_price": 165.63,
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
-      "reason": "live $170 vs wb $280",
+      "reason": "live $166 vs wb $280",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -9733,6 +9691,20 @@
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
       "reason": "live $222 vs wb $360",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
+      "card_id": "X321",
+      "name": "Charizard Base Shadowless PSA 8",
+      "set": "Base Set Shadowless",
+      "card_num": "4/102",
+      "variant": "PSA 8",
+      "wb_price": 4300.0,
+      "live_price": 4903.5,
+      "source": "pricecharting:psa8",
+      "verdict": "ALIGNED",
+      "reason": "live $4904 vs wb $4300 (ratio 1.14)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -10261,10 +10233,10 @@
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 245.0,
-      "live_price": 165.63,
+      "live_price": 170.63,
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
-      "reason": "live $166 vs wb $245",
+      "reason": "live $171 vs wb $245",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -10317,10 +10289,10 @@
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 285.0,
-      "live_price": 165.63,
+      "live_price": 170.63,
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
-      "reason": "live $166 vs wb $285",
+      "reason": "live $171 vs wb $285",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -10331,10 +10303,10 @@
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 285.0,
-      "live_price": 230.36,
+      "live_price": 235.87,
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
-      "reason": "live $230 vs wb $285 (ratio 0.81)",
+      "reason": "live $236 vs wb $285 (ratio 0.83)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -10423,6 +10395,20 @@
       "dollar_impact": 0
     },
     {
+      "card_id": "V256",
+      "name": "Gyarados",
+      "set": "Base Set Unlimited",
+      "card_num": "6/102",
+      "variant": "PSA 9",
+      "wb_price": 165.0,
+      "live_price": 243.73,
+      "source": "pricecharting:psa9",
+      "verdict": "ALIGNED",
+      "reason": "live $244 vs wb $165",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
       "card_id": "V258",
       "name": "Zapdos",
       "set": "Fossil",
@@ -10475,6 +10461,20 @@
       "source": "wb_no_sources",
       "verdict": "ALIGNED",
       "reason": "live $425 vs wb $425 (ratio 1.00)",
+      "severity": 0,
+      "dollar_impact": 0
+    },
+    {
+      "card_id": "Z181",
+      "name": "Mega Charizard EX (Y) Gold",
+      "set": "Flashfire",
+      "card_num": "101/106",
+      "variant": "PSA 10",
+      "wb_price": 850.0,
+      "live_price": 778.71,
+      "source": "pricecharting:psa10",
+      "verdict": "ALIGNED",
+      "reason": "live $779 vs wb $850 (ratio 0.92)",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -10667,10 +10667,10 @@
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 425.0,
-      "live_price": 231.81,
+      "live_price": 235.87,
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
-      "reason": "live $232 vs wb $425",
+      "reason": "live $236 vs wb $425",
       "severity": 0,
       "dollar_impact": 0
     },
@@ -10709,10 +10709,10 @@
       "card_num": "\u2014",
       "variant": "Sealed",
       "wb_price": 245.0,
-      "live_price": 230.36,
+      "live_price": 235.87,
       "source": "pricecharting:raw",
       "verdict": "ALIGNED",
-      "reason": "live $230 vs wb $245 (ratio 0.94)",
+      "reason": "live $236 vs wb $245 (ratio 0.96)",
       "severity": 0,
       "dollar_impact": 0
     },

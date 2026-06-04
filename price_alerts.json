@@ -1,9 +1,21 @@
 {
-  "generated_at": "2026-06-04T14:14:49.083688+00:00",
-  "buy_alerts_count": 28,
-  "sell_alerts_count": 117,
+  "generated_at": "2026-06-04T19:45:08.208338+00:00",
+  "buy_alerts_count": 38,
+  "sell_alerts_count": 124,
   "high_score_count": 1,
   "buy_alerts": [
+    {
+      "cid": "D109",
+      "name": "Pokemon Hidden Fates ETB",
+      "variant": "Sealed",
+      "live_price": 170.63,
+      "buy_target": 340.0,
+      "wb_price": 425,
+      "discount_pct": 59.9,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
     {
       "cid": "W012",
       "name": "Ogerpon Teal SAR (PSA 10)",
@@ -24,6 +36,18 @@
       "buy_target": 11.0,
       "wb_price": 14,
       "discount_pct": 57.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "D112",
+      "name": "Pokemon Champion's Path ETB",
+      "variant": "Sealed",
+      "live_price": 165.63,
+      "buy_target": 308.0,
+      "wb_price": 385,
+      "discount_pct": 57.0,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -101,6 +125,18 @@
       "source": "tcgplayer_api"
     },
     {
+      "cid": "X237",
+      "name": "Mewtwo Fossil Unlimited PSA 9",
+      "variant": "PSA 9",
+      "live_price": 84.0,
+      "buy_target": 136.0,
+      "wb_price": 170,
+      "discount_pct": 50.6,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa9"
+    },
+    {
       "cid": "X122",
       "name": "Fezandipiti ex SIR (raw)",
       "variant": "Raw NM",
@@ -161,6 +197,18 @@
       "source": "pricecharting:psa10"
     },
     {
+      "cid": "DD004",
+      "name": "Pokemon Team Up Booster Box",
+      "variant": "Sealed",
+      "live_price": 235.87,
+      "buy_target": 340.0,
+      "wb_price": 425,
+      "discount_pct": 44.5,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
       "cid": "B006",
       "name": "Mela Trainer SIR raw",
       "variant": "Raw NM",
@@ -171,18 +219,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
-    },
-    {
-      "cid": "D116",
-      "name": "Pokemon Prismatic Evolutions ETB",
-      "variant": "Sealed",
-      "live_price": 165.63,
-      "buy_target": 228.0,
-      "wb_price": 285,
-      "discount_pct": 41.9,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     },
     {
       "cid": "S204",
@@ -200,10 +236,34 @@
       "cid": "X313",
       "name": "151 ETB",
       "variant": "Sealed",
-      "live_price": 169.92,
+      "live_price": 165.63,
       "buy_target": 224.0,
       "wb_price": 280,
-      "discount_pct": 39.3,
+      "discount_pct": 40.8,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "D116",
+      "name": "Pokemon Prismatic Evolutions ETB",
+      "variant": "Sealed",
+      "live_price": 170.63,
+      "buy_target": 228.0,
+      "wb_price": 285,
+      "discount_pct": 40.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "DD008",
+      "name": "Pokemon Brilliant Stars Booster Box",
+      "variant": "Sealed",
+      "live_price": 231.81,
+      "buy_target": 308.0,
+      "wb_price": 385,
+      "discount_pct": 39.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -233,73 +293,13 @@
       "source": "pricecharting:psa10"
     },
     {
-      "cid": "Z045",
-      "name": "Blaine's Charizard",
-      "variant": "PSA 9",
-      "live_price": 531.0,
-      "buy_target": 680.0,
-      "wb_price": 850,
-      "discount_pct": 37.5,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pricecharting:psa9"
-    },
-    {
-      "cid": "S032",
-      "name": "Crown Zenith Tin",
+      "cid": "X320",
+      "name": "Evolving Skies Premium Collection",
       "variant": "Sealed",
-      "live_price": 25.13,
-      "buy_target": 32.0,
-      "wb_price": 40,
-      "discount_pct": 37.2,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
-      "cid": "V024",
-      "name": "Vaporeon Gold Star",
-      "variant": "PSA 9",
-      "live_price": 1771.36,
-      "buy_target": 2240.0,
-      "wb_price": 2800,
-      "discount_pct": 36.7,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa9"
-    },
-    {
-      "cid": "V811",
-      "name": "Umbreon Neo Discovery",
-      "variant": "PSA 8",
-      "live_price": 180.0,
-      "buy_target": 224.0,
-      "wb_price": 280,
-      "discount_pct": 35.7,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa8"
-    },
-    {
-      "cid": "X164",
-      "name": "Drasna Trainer Gallery (raw)",
-      "variant": "Raw NM",
-      "live_price": 8.62,
-      "buy_target": 10.0,
-      "wb_price": 13,
-      "discount_pct": 33.7,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "tcgplayer_api"
-    },
-    {
-      "cid": "D111",
-      "name": "Pokemon Shining Fates ETB",
-      "variant": "Sealed",
-      "live_price": 165.63,
-      "buy_target": 196.0,
-      "wb_price": 245,
-      "discount_pct": 32.4,
+      "live_price": 221.55,
+      "buy_target": 288.0,
+      "wb_price": 360,
+      "discount_pct": 38.5,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -317,18 +317,6 @@
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pricecharting:psa9"
-    },
-    {
-      "cid": "X412",
-      "name": "Charizard Base Shadowless PSA 8",
-      "variant": "PSA 8",
-      "live_price": 4903.5,
-      "sell_target": 1078.0,
-      "wb_price": 980,
-      "premium_pct": 400.4,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pricecharting:psa8"
     },
     {
       "cid": "J009",
@@ -382,13 +370,25 @@
       "cid": "S004",
       "name": "Crown Zenith ETB",
       "variant": "Sealed",
-      "live_price": 310.0,
+      "live_price": 318.0,
       "sell_target": 82.0,
       "wb_price": 75,
-      "premium_pct": 313.3,
+      "premium_pct": 324.0,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
+    },
+    {
+      "cid": "V812",
+      "name": "Charizard Skyridge",
+      "variant": "PSA 8",
+      "live_price": 11569.84,
+      "sell_target": 3080.0,
+      "wb_price": 2800,
+      "premium_pct": 313.2,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa8"
     },
     {
       "cid": "X325",
@@ -427,18 +427,6 @@
       "source": "pricecharting:raw"
     },
     {
-      "cid": "X327",
-      "name": "Shining Magikarp Neo Revelation",
-      "variant": "PSA 9",
-      "live_price": 1205.88,
-      "sell_target": 352.0,
-      "wb_price": 320,
-      "premium_pct": 276.8,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pricecharting:psa9"
-    },
-    {
       "cid": "V004",
       "name": "Charizard",
       "variant": "PSA 10",
@@ -466,10 +454,10 @@
       "cid": "X130",
       "name": "Mega Gengar ex MAR (Ascended)",
       "variant": "Raw NM",
-      "live_price": 87.83,
+      "live_price": 87.75,
       "sell_target": 28.0,
       "wb_price": 25,
-      "premium_pct": 251.3,
+      "premium_pct": 251.0,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
@@ -478,37 +466,25 @@
       "cid": "P046",
       "name": "Mega Rayquaza Common (AH)",
       "variant": "Raw NM",
-      "live_price": 17.47,
+      "live_price": 17.54,
       "sell_target": 6.0,
       "wb_price": 5,
-      "premium_pct": 249.4,
+      "premium_pct": 250.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
     },
     {
-      "cid": "V040",
-      "name": "Dark Charizard",
-      "variant": "PSA 10",
-      "live_price": 16730.5,
-      "sell_target": 5280.0,
-      "wb_price": 4800,
-      "premium_pct": 248.6,
+      "cid": "S030",
+      "name": "Charizard ex Premium Collection",
+      "variant": "Sealed",
+      "live_price": 221.55,
+      "sell_target": 72.0,
+      "wb_price": 65,
+      "premium_pct": 240.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
-      "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "Q006",
-      "name": "Greninja ex SIR",
-      "variant": "PSA 10",
-      "live_price": 986.02,
-      "sell_target": 314.0,
-      "wb_price": 285,
-      "premium_pct": 246.0,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa10"
+      "source": "pricecharting:raw"
     },
     {
       "cid": "S015",
@@ -538,10 +514,10 @@
       "cid": "S010",
       "name": "SV 151 Booster Bundle",
       "variant": "Sealed (6 packs)",
-      "live_price": 181.79,
+      "live_price": 182.91,
       "sell_target": 63.0,
       "wb_price": 57.71,
-      "premium_pct": 215.0,
+      "premium_pct": 216.9,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "tcgplayer_api"
@@ -602,6 +578,30 @@
       "sell_target": 7.0,
       "wb_price": 6,
       "premium_pct": 184.2,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "tcgplayer_api"
+    },
+    {
+      "cid": "S013",
+      "name": "Paldea Evolved BB",
+      "variant": "Sealed (36 packs)",
+      "live_price": 454.58,
+      "sell_target": 176.0,
+      "wb_price": 160,
+      "premium_pct": 184.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X119",
+      "name": "Mewtwo Special Art (PE)",
+      "variant": "Raw NM",
+      "live_price": 71.02,
+      "sell_target": 28.0,
+      "wb_price": 25,
+      "premium_pct": 184.1,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
