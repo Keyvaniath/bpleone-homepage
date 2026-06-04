@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T17:50:43.465208Z",
+  "generated_at": "2026-06-04T17:53:45.908504Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -4516,14 +4516,14 @@
     },
     "M005": {
       "id": "M005",
-      "name": "Espeon VMAX Alt Art",
-      "set": "Evolving Skies",
-      "number": "208/203",
+      "name": "Espeon VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "270/264",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Secret Rare",
+      "tcgplayer_id": "253265",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/253265",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2200,
