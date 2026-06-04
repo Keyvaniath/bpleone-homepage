@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-06-03T15:56:43.913887+00:00",
+  "generated_at": "2026-06-04T14:14:50.312002+00:00",
   "n_total": 121,
   "by_product_type_stats": {
     "Booster Box": {
       "n": 59,
-      "avg_live_price": 9727.19,
+      "avg_live_price": 9734.26,
       "avg_d30_pct": 5.16,
-      "total_universe_usd": 573904.0
+      "total_universe_usd": 574321.0
     },
     "ETB": {
       "n": 21,
-      "avg_live_price": 96.37,
+      "avg_live_price": 124.46,
       "avg_d30_pct": 5.63,
-      "total_universe_usd": 2024.0
+      "total_universe_usd": 2614.0
     },
     "Booster Bundle": {
       "n": 13,
-      "avg_live_price": 57.82,
-      "avg_d30_pct": 3.84,
-      "total_universe_usd": 752.0
+      "avg_live_price": 61.55,
+      "avg_d30_pct": -1.42,
+      "total_universe_usd": 800.0
     },
     "Premium Collection": {
       "n": 15,
-      "avg_live_price": 231.45,
+      "avg_live_price": 232.39,
       "avg_d30_pct": 5.13,
-      "total_universe_usd": 3472.0
+      "total_universe_usd": 3486.0
     },
     "Collection Box": {
       "n": 8,
@@ -92,6 +92,23 @@
       "tier": "T2"
     },
     {
+      "cid": "DD001",
+      "name": "Pokemon Generations Booster Box",
+      "variant": "Sealed",
+      "set": "Pokemon Generations",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 231.81,
+      "wb_price": 1850.0,
+      "ev_per_pack": 6.44,
+      "score": 68,
+      "signal": "BUY",
+      "d7_pct": 2.63,
+      "d30_pct": 8.0,
+      "discount_to_wb_pct": 87.5,
+      "tier": "T2"
+    },
+    {
       "cid": "DD003",
       "name": "Pokemon Burning Shadows Booster Box",
       "variant": "Sealed",
@@ -115,14 +132,31 @@
       "set": "Pokemon Evolutions",
       "product_type": "Booster Box",
       "pack_count": 36,
-      "live_price": 230.36,
+      "live_price": 231.81,
       "wb_price": 950.0,
-      "ev_per_pack": 6.4,
+      "ev_per_pack": 6.44,
       "score": 67,
       "signal": "BUY",
       "d7_pct": 1.42,
       "d30_pct": 8.0,
-      "discount_to_wb_pct": 75.8,
+      "discount_to_wb_pct": 75.6,
+      "tier": "T2"
+    },
+    {
+      "cid": "D110",
+      "name": "Pokemon Hidden Fates Booster Box",
+      "variant": "Sealed",
+      "set": "Pokemon Hidden Fates",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 231.81,
+      "wb_price": 1850.0,
+      "ev_per_pack": 6.44,
+      "score": 67,
+      "signal": "BUY",
+      "d7_pct": 0.8,
+      "d30_pct": 9.0,
+      "discount_to_wb_pct": 87.5,
       "tier": "T2"
     },
     {
@@ -166,14 +200,14 @@
       "set": "Pokemon Vivid Voltage",
       "product_type": "Booster Box",
       "pack_count": 36,
-      "live_price": 230.36,
+      "live_price": 231.81,
       "wb_price": 525.0,
-      "ev_per_pack": 6.4,
+      "ev_per_pack": 6.44,
       "score": 65,
       "signal": "BUY",
       "d7_pct": 0.24,
       "d30_pct": 6.0,
-      "discount_to_wb_pct": 56.1,
+      "discount_to_wb_pct": 55.8,
       "tier": "T2"
     },
     {
@@ -228,23 +262,6 @@
       "tier": "T2"
     },
     {
-      "cid": "S010",
-      "name": "SV 151 Booster Bundle",
-      "variant": "Sealed (6 packs)",
-      "set": "SV 151",
-      "product_type": "Booster Bundle",
-      "pack_count": 6,
-      "live_price": 57.71,
-      "wb_price": 175.0,
-      "ev_per_pack": 9.62,
-      "score": 61,
-      "signal": "BUY",
-      "d7_pct": 0,
-      "d30_pct": 2.16,
-      "discount_to_wb_pct": 67.0,
-      "tier": "T3"
-    },
-    {
       "cid": "X222",
       "name": "Hidden Fates Premium Powers Collection",
       "variant": "Sealed",
@@ -277,23 +294,6 @@
       "d30_pct": 10.0,
       "discount_to_wb_pct": 39.3,
       "tier": "T3"
-    },
-    {
-      "cid": "D111",
-      "name": "Pokemon Shining Fates ETB",
-      "variant": "Sealed",
-      "set": "Pokemon Shining Fates",
-      "product_type": "ETB",
-      "pack_count": 8,
-      "live_price": 165.63,
-      "wb_price": 245.0,
-      "ev_per_pack": 20.7,
-      "score": 61,
-      "signal": "BUY",
-      "d7_pct": 0.81,
-      "d30_pct": 6.0,
-      "discount_to_wb_pct": 32.4,
-      "tier": "T2"
     }
   ],
   "top_sells": [],
@@ -333,23 +333,6 @@
       "tier": "T3"
     },
     {
-      "cid": "S004",
-      "name": "Crown Zenith ETB",
-      "variant": "Sealed",
-      "set": "Crown Zenith",
-      "product_type": "ETB",
-      "pack_count": 8,
-      "live_price": 0,
-      "wb_price": 75.0,
-      "ev_per_pack": null,
-      "score": 49,
-      "signal": "HOLD",
-      "d7_pct": 0,
-      "d30_pct": 1.53,
-      "discount_to_wb_pct": 100.0,
-      "tier": "T3"
-    },
-    {
       "cid": "S012",
       "name": "SV 151 Ultra-Premium Collection",
       "variant": "Sealed",
@@ -380,23 +363,6 @@
       "signal": "HOLD",
       "d7_pct": 0,
       "d30_pct": 1.65,
-      "discount_to_wb_pct": 100.0,
-      "tier": "T3"
-    },
-    {
-      "cid": "S015",
-      "name": "Obsidian Flames ETB",
-      "variant": "Sealed",
-      "set": "Obsidian Flames",
-      "product_type": "ETB",
-      "pack_count": 8,
-      "live_price": 0,
-      "wb_price": 85.0,
-      "ev_per_pack": null,
-      "score": 48,
-      "signal": "HOLD",
-      "d7_pct": 0,
-      "d30_pct": 0.79,
       "discount_to_wb_pct": 100.0,
       "tier": "T3"
     },
@@ -465,6 +431,40 @@
       "signal": "HOLD",
       "d7_pct": 0,
       "d30_pct": 1.2,
+      "discount_to_wb_pct": 100.0,
+      "tier": "T3"
+    },
+    {
+      "cid": "S026",
+      "name": "Mega Evolution (ME01) BB",
+      "variant": "Sealed",
+      "set": "Mega Evolution (ME01)",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 0,
+      "wb_price": 175.0,
+      "ev_per_pack": null,
+      "score": 50,
+      "signal": "HOLD",
+      "d7_pct": 0,
+      "d30_pct": 3.26,
+      "discount_to_wb_pct": 100.0,
+      "tier": "T3"
+    },
+    {
+      "cid": "S030",
+      "name": "Charizard ex Premium Collection",
+      "variant": "Sealed",
+      "set": "Charizard ex",
+      "product_type": "Premium Collection",
+      "pack_count": null,
+      "live_price": 0,
+      "wb_price": 65.0,
+      "ev_per_pack": null,
+      "score": 49,
+      "signal": "HOLD",
+      "d7_pct": 0,
+      "d30_pct": 1.59,
       "discount_to_wb_pct": 100.0,
       "tier": "T3"
     }
@@ -556,6 +556,23 @@
       "tier": "T3"
     },
     {
+      "cid": "S020",
+      "name": "Twilight Masquerade BB",
+      "variant": "Sealed (36 packs)",
+      "set": "Twilight Masquerade",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 347.5,
+      "wb_price": 130.0,
+      "ev_per_pack": 9.65,
+      "score": 49,
+      "signal": "HOLD",
+      "d7_pct": 0,
+      "d30_pct": 1.91,
+      "discount_to_wb_pct": -167.3,
+      "tier": "T3"
+    },
+    {
       "cid": "S009",
       "name": "Silver Tempest BB",
       "variant": "Sealed (36 packs)",
@@ -590,37 +607,20 @@
       "tier": "T3"
     },
     {
-      "cid": "S020",
-      "name": "Twilight Masquerade BB",
-      "variant": "Sealed (36 packs)",
-      "set": "Twilight Masquerade",
-      "product_type": "Booster Box",
-      "pack_count": 36,
-      "live_price": 340.0,
-      "wb_price": 130.0,
-      "ev_per_pack": 9.44,
-      "score": 49,
-      "signal": "HOLD",
-      "d7_pct": 0,
-      "d30_pct": 1.91,
-      "discount_to_wb_pct": -161.5,
-      "tier": "T3"
-    },
-    {
       "cid": "S031",
       "name": "Mew Ultra-Premium Collection",
       "variant": "Sealed",
       "set": "Mew Ultra-Premium",
       "product_type": "Premium Collection",
       "pack_count": null,
-      "live_price": 925.81,
+      "live_price": 940.0,
       "wb_price": 380.0,
       "ev_per_pack": null,
       "score": 49,
       "signal": "HOLD",
       "d7_pct": 0,
       "d30_pct": 3.13,
-      "discount_to_wb_pct": -143.6,
+      "discount_to_wb_pct": -147.4,
       "tier": "T3"
     },
     {
@@ -643,21 +643,38 @@
   ],
   "cheapest_per_pack_top10": [
     {
-      "cid": "D108",
-      "name": "Pokemon Evolutions Booster Box",
+      "cid": "S027",
+      "name": "Ascended Heroes (ME2.5) BB",
       "variant": "Sealed",
-      "set": "Pokemon Evolutions",
+      "set": "Ascended Heroes (ME2.5)",
       "product_type": "Booster Box",
       "pack_count": 36,
       "live_price": 230.36,
-      "wb_price": 950.0,
+      "wb_price": 200.0,
       "ev_per_pack": 6.4,
-      "score": 67,
+      "score": 49,
+      "signal": "HOLD",
+      "d7_pct": 0,
+      "d30_pct": 3.4,
+      "discount_to_wb_pct": -15.2,
+      "tier": "T3"
+    },
+    {
+      "cid": "X315",
+      "name": "Hidden Fates Booster Box",
+      "variant": "Sealed",
+      "set": "Hidden Fates",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 230.36,
+      "wb_price": 380.0,
+      "ev_per_pack": 6.4,
+      "score": 60,
       "signal": "BUY",
-      "d7_pct": 1.42,
-      "d30_pct": 8.0,
-      "discount_to_wb_pct": 75.8,
-      "tier": "T2"
+      "d7_pct": 2.75,
+      "d30_pct": 6.0,
+      "discount_to_wb_pct": 39.4,
+      "tier": "T3"
     },
     {
       "cid": "D117",
@@ -691,23 +708,6 @@
       "d7_pct": 2.76,
       "d30_pct": 7.0,
       "discount_to_wb_pct": 72.9,
-      "tier": "T2"
-    },
-    {
-      "cid": "DD007",
-      "name": "Pokemon Vivid Voltage Booster Box",
-      "variant": "Sealed",
-      "set": "Pokemon Vivid Voltage",
-      "product_type": "Booster Box",
-      "pack_count": 36,
-      "live_price": 230.36,
-      "wb_price": 525.0,
-      "ev_per_pack": 6.4,
-      "score": 65,
-      "signal": "BUY",
-      "d7_pct": 0.24,
-      "d30_pct": 6.0,
-      "discount_to_wb_pct": 56.1,
       "tier": "T2"
     },
     {
@@ -779,23 +779,6 @@
       "tier": "T2"
     },
     {
-      "cid": "DD013",
-      "name": "Pokemon Obsidian Flames Booster Box",
-      "variant": "Sealed",
-      "set": "Pokemon Obsidian Flames",
-      "product_type": "Booster Box",
-      "pack_count": 36,
-      "live_price": 230.36,
-      "wb_price": 185.0,
-      "ev_per_pack": 6.4,
-      "score": 55,
-      "signal": "HOLD",
-      "d7_pct": 2.78,
-      "d30_pct": 5.0,
-      "discount_to_wb_pct": -24.5,
-      "tier": "T2"
-    },
-    {
       "cid": "DD014",
       "name": "Pokemon Paradox Rift Booster Box",
       "variant": "Sealed",
@@ -808,6 +791,23 @@
       "score": 53,
       "signal": "HOLD",
       "d7_pct": 0.82,
+      "d30_pct": 4.0,
+      "discount_to_wb_pct": -39.6,
+      "tier": "T2"
+    },
+    {
+      "cid": "DD015",
+      "name": "Pokemon Temporal Forces Booster Box",
+      "variant": "Sealed",
+      "set": "Pokemon Temporal Forces",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 230.36,
+      "wb_price": 165.0,
+      "ev_per_pack": 6.4,
+      "score": 53,
+      "signal": "HOLD",
+      "d7_pct": -0.28,
       "d30_pct": 4.0,
       "discount_to_wb_pct": -39.6,
       "tier": "T2"

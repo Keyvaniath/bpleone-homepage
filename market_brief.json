@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-03T18:59:42.168968Z",
-  "date_human": "Wednesday, Jun 03, 2026",
-  "headline": "Tracking **774 cards** \u00b7 **301** live-priced (39% coverage) \u00b7 57 STRONG BUYs flagged today.",
+  "generated_at": "2026-06-04T14:14:51.547437Z",
+  "date_human": "Thursday, Jun 04, 2026",
+  "headline": "Tracking **774 cards** \u00b7 **323** live-priced (42% coverage) \u00b7 57 STRONG BUYs flagged today.",
   "paragraphs": [
-    "Tracking **774 cards** \u00b7 **301** live-priced (39% coverage) \u00b7 57 STRONG BUYs flagged today.",
-    "**Trade of the Day: Alakazam V Alt Art** (PSA 10) \u2014 $240 live, quant score **77/100**, signal **HOLD**. Silver Tempest.",
-    "Coverage is at **39%** \u2014 the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 473 cards. Real-time 30-day deltas activate after 5 days of live tracking.",
+    "Tracking **774 cards** \u00b7 **323** live-priced (42% coverage) \u00b7 57 STRONG BUYs flagged today.",
+    "**Trade of the Day: Jolteon VMAX Alt Art** (PSA 10) \u2014 $980 live, quant score **74/100**, signal **HOLD**. Evolving Skies.",
+    "Coverage is at **42%** \u2014 the next 4-hour cron run will auto-discover PriceCharting URLs for the remaining 451 cards. Real-time 30-day deltas activate after 5 days of live tracking.",
     "Total tracked-universe market cap: **$3.7M** (~$12k avg per card)."
   ],
   "tldr": [
-    "301 cards live-priced of 774",
+    "323 cards live-priced of 774",
     "57 STRONG BUYs flagged today",
     "Total mcap $3.7M",
-    "Trade of the Day: Alakazam V Alt Art"
+    "Trade of the Day: Jolteon VMAX Alt Art"
   ],
   "stats": {
     "total_cards": 774,
-    "live_matched": 301,
-    "total_mcap": 3716438.0,
+    "live_matched": 323,
+    "total_mcap": 3733582.0,
     "avg_d30_pct": 0.3388,
     "strong_buys": 57,
-    "history_snapshots": 32,
-    "history_age_days": 19.8,
+    "history_snapshots": 33,
+    "history_age_days": 20.6,
     "history_overlay_count": 43
   }
 }
