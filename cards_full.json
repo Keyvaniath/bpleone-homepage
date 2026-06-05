@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T19:45:10.452400Z",
+  "generated_at": "2026-06-05T13:58:28.307804Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -159,6 +159,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 48608.09
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 48608.09
         }
       ],
@@ -1070,10 +1074,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 320,
       "wb_price": 4800.0,
-      "live_price": 5668.86,
+      "live_price": 5661.79,
       "live_source": "pricecharting:psa9",
-      "target_buy": 4535.09,
-      "target_sell": 5385.42,
+      "target_buy": 4529.43,
+      "target_sell": 5378.7,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -1202,6 +1206,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 5668.86
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 5661.79
         }
       ],
       "image": "https://images.pokemontcg.io/ru1/1.png",
@@ -1214,11 +1222,11 @@
       "sources": {
         "pricecharting": {
           "ungraded": 1050.0,
-          "grade_7": 2232.25,
-          "grade_8": 3561.44,
-          "grade_9": 5668.86,
+          "grade_7": 2191.54,
+          "grade_8": 3652.5,
+          "grade_9": 5661.79,
           "grade_9_5": 7413.66,
-          "grade_10": 45390.64
+          "grade_10": 45708.18
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -1419,6 +1427,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 5027.43
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 5027.03
         }
       ],
       "image": "https://images.pokemontcg.io/ecard1/1.png",
@@ -1430,10 +1442,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 620.59,
-          "grade_7": 969.37,
-          "grade_8": 2000.0,
-          "grade_9": 5027.43,
+          "ungraded": 617.92,
+          "grade_7": 1174.74,
+          "grade_8": 1900.0,
+          "grade_9": 5027.03,
           "grade_9_5": 5200.0,
           "grade_10": 12576.33
         },
@@ -1533,10 +1545,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 540,
       "wb_price": 1050.0,
-      "live_price": 1938.15,
+      "live_price": 1941.28,
       "live_source": "pricecharting:psa9",
-      "target_buy": 1550.52,
-      "target_sell": 1841.24,
+      "target_buy": 1553.02,
+      "target_sell": 1844.22,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -1557,6 +1569,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 1938.15
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1941.28
         }
       ],
       "image": "https://images.pokemontcg.io/pl3/150.png",
@@ -1569,11 +1585,11 @@
       "sources": {
         "pricecharting": {
           "ungraded": 370.0,
-          "grade_7": 793.0,
+          "grade_7": 810.0,
           "grade_8": 1025.0,
-          "grade_9": 1938.15,
+          "grade_9": 1941.28,
           "grade_9_5": 3323.0,
-          "grade_10": 8605.33
+          "grade_10": 8646.24
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -1691,6 +1707,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 2445.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 2445.0
         }
       ],
@@ -2104,6 +2124,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 11345.38
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 11345.38
         }
       ],
@@ -2545,6 +2569,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 58723.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 58723.0
         }
       ],
@@ -3106,14 +3134,14 @@
     },
     "V024": {
       "id": "V024",
-      "name": "Vaporeon Gold Star",
-      "set": "EX Power Keepers",
-      "number": "Gold Star",
+      "name": "Vaporeon Star",
+      "set": "Power Keepers",
+      "number": "102/108",
       "variant": "PSA 9",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "90292",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/90292",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 180,
@@ -3225,14 +3253,14 @@
     },
     "V025": {
       "id": "V025",
-      "name": "Jolteon Gold Star",
-      "set": "EX Power Keepers",
-      "number": "Gold Star",
+      "name": "Jolteon Star",
+      "set": "Power Keepers",
+      "number": "101/108",
       "variant": "PSA 9",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "86351",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/86351",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 200,
@@ -3324,14 +3352,14 @@
     },
     "V026": {
       "id": "V026",
-      "name": "Flareon Gold Star",
-      "set": "EX Power Keepers",
-      "number": "Gold Star",
+      "name": "Flareon Star",
+      "set": "Power Keepers",
+      "number": "100/108",
       "variant": "PSA 9",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "85503",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/85503",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 175,
@@ -3594,14 +3622,14 @@
     },
     "V028": {
       "id": "V028",
-      "name": "Mew Gold Star",
-      "set": "EX Holon Phantoms",
-      "number": "Gold Star",
+      "name": "Mewtwo Star",
+      "set": "Holon Phantoms",
+      "number": "103/110",
       "variant": "PSA 9",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "87427",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/87427",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 240,
@@ -3760,8 +3788,8 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 195,
       "wb_price": 950.0,
-      "live_price": null,
-      "live_source": "workbook",
+      "live_price": 950.0,
+      "live_source": "wb_fallback_source_rejected",
       "target_buy": 760.0,
       "target_sell": 902.5,
       "score": 51,
@@ -3773,21 +3801,29 @@
       "notes": "Sister to V029. Grass Eeveelution.",
       "confidence": "UNKNOWN",
       "confidence_flags": [
-        "no_live_price"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "pc returned $16 but workbook is $950 (0.0x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 79.99,
+          "grade_7": null,
+          "grade_8": 52.18,
+          "grade_9": 16.06,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=leafeon+gold+star+dp37",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 0,
+      "scrape_rejected_source": "rejected_sanity_pricecharting:psa9_$16_vs_wb_$950"
     },
     "V031": {
       "id": "V031",
@@ -3946,6 +3982,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 197448.76
         }
       ],
@@ -4456,6 +4496,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 2181.59
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 2181.59
         }
       ],
       "image": "https://images.pokemontcg.io/swsh7/215.png",
@@ -4704,14 +4748,14 @@
     },
     "M008": {
       "id": "M008",
-      "name": "Jolteon VMAX Alt Art",
-      "set": "Evolving Skies",
-      "number": "203/203",
+      "name": "Rayquaza VMAX (Alternate Art Secret)",
+      "set": "SWSH07: Evolving Skies",
+      "number": "218/203",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Secret Rare",
+      "tcgplayer_id": "246733",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/246733",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1600,
@@ -5317,14 +5361,14 @@
     },
     "M021": {
       "id": "M021",
-      "name": "Giratina VSTAR Alt Art",
-      "set": "Lost Origin",
-      "number": "TG30/TG30",
+      "name": "Giratina V (Alternate Full Art)",
+      "set": "SWSH11: Lost Origin",
+      "number": "186/196",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "284137",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/284137",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 5500,
@@ -5421,14 +5465,14 @@
     },
     "M023": {
       "id": "M023",
-      "name": "Magnezone V Alt Art",
-      "set": "Lost Origin",
-      "number": "TG13/TG30",
+      "name": "Aerodactyl V (Alternate Full Art)",
+      "set": "SWSH11: Lost Origin",
+      "number": "180/196",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "284122",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/284122",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1600,
@@ -5473,14 +5517,14 @@
     },
     "M024": {
       "id": "M024",
-      "name": "Lugia VSTAR Alt Art",
-      "set": "Silver Tempest",
-      "number": "TG30/TG30",
+      "name": "Lugia V (Alternate Full Art)",
+      "set": "SWSH12: Silver Tempest",
+      "number": "186/195",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "451834",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/451834",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 3800,
@@ -5525,14 +5569,14 @@
     },
     "M025": {
       "id": "M025",
-      "name": "Alakazam V Alt Art",
-      "set": "Silver Tempest",
-      "number": "TG07/TG30",
+      "name": "Regidrago V (Alternate Full Art)",
+      "set": "SWSH12: Silver Tempest",
+      "number": "184/195",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "451832",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/451832",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2000,
@@ -5715,14 +5759,14 @@
     },
     "M029": {
       "id": "M029",
-      "name": "Giratina VSTAR Gold",
-      "set": "Crown Zenith",
+      "name": "Arceus VSTAR (Secret)",
+      "set": "SWSH: Crown Zenith: Galarian Gallery",
       "number": "GG70/GG70",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Secret Rare",
+      "tcgplayer_id": "478101",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/478101",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2400,
@@ -6321,14 +6365,14 @@
     },
     "M041": {
       "id": "M041",
-      "name": "Mewtwo ex SIR",
-      "set": "Scarlet & Violet 151",
+      "name": "Alakazam ex - 201/165",
+      "set": "SV: Scarlet & Violet 151",
       "number": "201/165",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "517047",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/517047",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1400,
@@ -6535,14 +6579,14 @@
     },
     "M045": {
       "id": "M045",
-      "name": "Tinkaton ex SIR",
-      "set": "Paldea Evolved",
-      "number": "265/193",
+      "name": "Tinkaton ex - 262/193",
+      "set": "SV02: Paldea Evolved",
+      "number": "262/193",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "497681",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/497681",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1400,
@@ -6710,14 +6754,14 @@
     },
     "M048": {
       "id": "M048",
-      "name": "Tyranitar ex SIR",
-      "set": "Obsidian Flames",
-      "number": "230/197",
+      "name": "Eiscue ex - 222/197",
+      "set": "SV03: Obsidian Flames",
+      "number": "222/197",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "509979",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/509979",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1700,
@@ -7185,14 +7229,14 @@
     },
     "M058": {
       "id": "M058",
-      "name": "Pikachu Shiny",
-      "set": "Paldean Fates",
-      "number": "232/091",
+      "name": "Pikachu - 131/091",
+      "set": "SV: Paldean Fates",
+      "number": "131/091",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Shiny Rare",
+      "tcgplayer_id": "534522",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/534522",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2500,
@@ -7917,6 +7961,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 1564.85
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1564.85
         }
       ],
       "image": "https://images.pokemontcg.io/sv8pt5/161.png",
@@ -8386,6 +8434,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 75.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 75.33
         }
       ],
       "image": "https://images.pokemontcg.io/me1/184.png",
@@ -8399,7 +8451,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 75.5,
+        "tcgplayer_market": 75.33,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/654523",
         "ppt_meta": null
@@ -8604,11 +8656,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 1480.0,
-      "live_price": 1291.55,
+      "live_price": 1398.44,
       "live_source": "tcgplayer_api",
-      "target_buy": 1033.24,
-      "target_sell": 1226.97,
-      "score": 66,
+      "target_buy": 1118.75,
+      "target_sell": 1328.52,
+      "score": 64,
       "signal": "BUY",
       "d7_workbook": 0.0,
       "d30_workbook": 31.86,
@@ -8644,6 +8696,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 1291.55
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1398.44
         }
       ],
       "image": "https://images.pokemontcg.io/me2/56.png",
@@ -8657,7 +8713,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 1291.55,
+        "tcgplayer_market": 1398.44,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/676096",
         "ppt_meta": null
@@ -8720,14 +8776,14 @@
     },
     "M084": {
       "id": "M084",
-      "name": "Mega Rayquaza ex SIR",
-      "set": "Ascended Heroes",
-      "number": "286/217",
+      "name": "Mega Emboar ex - 273/217",
+      "set": "ME: Ascended Heroes",
+      "number": "273/217",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "676085",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/676085",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 600,
@@ -8888,10 +8944,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 280.0,
-      "live_price": 74.25,
+      "live_price": 74.4,
       "live_source": "tcgplayer_api",
-      "target_buy": 59.4,
-      "target_sell": 70.54,
+      "target_buy": 59.52,
+      "target_sell": 70.68,
       "score": 63,
       "signal": "BUY",
       "d7_workbook": 0.0,
@@ -8928,6 +8984,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 74.25
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 74.4
         }
       ],
       "image": "https://images.scrydex.com/pokemon/me2pt5-22/small",
@@ -8941,7 +9001,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 74.25,
+        "tcgplayer_market": 74.4,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/676100",
         "ppt_meta": null
@@ -9242,14 +9302,14 @@
     },
     "M092": {
       "id": "M092",
-      "name": "Birthday Pikachu Promo",
-      "set": "Black Star Promo #24",
-      "number": "24",
+      "name": "______'s Pikachu",
+      "set": "WoTC Promo",
+      "number": "24/53",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Promo",
+      "tcgplayer_id": "90784",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/90784",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 350,
@@ -9694,6 +9754,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 318.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 318.0
         }
       ],
       "image": null,
@@ -9903,6 +9967,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 385.79
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 385.79
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ugsxjoig7mzehidq/240.jpg",
@@ -10021,10 +10089,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 190.0,
-      "live_price": 502.75,
+      "live_price": 493.14,
       "live_source": "pricecharting:raw",
-      "target_buy": 402.2,
-      "target_sell": 477.61,
+      "target_buy": 394.51,
+      "target_sell": 468.48,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -10057,6 +10125,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 502.75
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 493.14
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c1cd5f96c2f1776e6e5e8f549ffd3d066aff2439eac8fc4fdfc022abc27d6971/240.jpg",
@@ -10068,7 +10140,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 502.75,
+          "ungraded": 493.14,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -10140,6 +10212,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 182.91
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 189.14
         }
       ],
       "image": null,
@@ -10153,7 +10229,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 182.91,
+        "tcgplayer_market": 189.14,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/502000",
         "ppt_meta": null
@@ -10346,6 +10422,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 454.58
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 454.58
         }
       ],
@@ -10702,6 +10782,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 267.08
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 267.08
         }
       ],
@@ -11141,10 +11225,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 90.0,
-      "live_price": 79.07,
+      "live_price": 78.5,
       "live_source": "pricecharting:raw",
-      "target_buy": 63.26,
-      "target_sell": 75.12,
+      "target_buy": 62.8,
+      "target_sell": 74.58,
       "score": 53,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -11181,6 +11265,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 79.07
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 78.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/it2f4kt6owa3oucf/240.jpg",
@@ -11192,7 +11280,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 79.07,
+          "ungraded": 78.5,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -11390,6 +11478,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 30.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 30.0
         }
       ],
@@ -11973,14 +12065,14 @@
     },
     "X006": {
       "id": "X006",
-      "name": "Misty's Determination SIR",
-      "set": "Mega Evolution ME01",
-      "number": "Trainer SIR",
+      "name": "Lillie's Determination - 184/132",
+      "set": "ME01: Mega Evolution",
+      "number": "184/132",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "654523",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/654523",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1300,
@@ -13049,6 +13141,10 @@
         {
           "ts": "2026-06-01T07:29:49.893387Z",
           "p": 1099.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1101.58
         }
       ],
       "image": "https://images.pokemontcg.io/ru1/7.png",
@@ -13059,11 +13155,18 @@
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 19.38,
+          "grade_7": 40.0,
+          "grade_8": 58.0,
+          "grade_9": 145.23,
+          "grade_9_5": 149.09,
+          "grade_10": 1101.58
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-jungle/pikachu-1st-edition-60",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -13429,6 +13532,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 16730.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 16730.5
         }
       ],
@@ -14005,6 +14112,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 7.41
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 7.41
         }
       ],
       "image": null,
@@ -14081,14 +14192,14 @@
     },
     "P004": {
       "id": "P004",
-      "name": "Briar SIR",
-      "set": "Stellar Crown",
-      "number": "169/142",
+      "name": "Briar - 171/142",
+      "set": "SV07: Stellar Crown",
+      "number": "171/142",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567482",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567482",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -14132,6 +14243,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 11.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 11.0
         }
       ],
@@ -14256,6 +14371,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 12.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 12.0
         }
       ],
@@ -14471,14 +14590,14 @@
     },
     "P011": {
       "id": "P011",
-      "name": "Granbull V Alt Art",
-      "set": "Astral Radiance",
-      "number": "TG12/TG30",
+      "name": "Beedrill V (Alternate Full Art)",
+      "set": "SWSH10: Astral Radiance",
+      "number": "161/189",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "272413",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/272413",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -14566,6 +14685,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 1.3
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1.3
         }
       ],
       "image": "https://images.pokemontcg.io/sv4pt5/218.png",
@@ -14633,6 +14756,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 0.53
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 0.53
         }
       ],
@@ -14753,6 +14880,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.64
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.64
         }
       ],
       "image": "https://images.pokemontcg.io/sv3/222.png",
@@ -14828,6 +14959,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 10.21
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 10.21
         }
       ],
@@ -14905,6 +15040,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 10.19
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 10.19
         }
       ],
       "image": "https://images.pokemontcg.io/sv5/205.png",
@@ -14941,10 +15080,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 8.0,
-      "live_price": 2.52,
+      "live_price": 2.44,
       "live_source": "tcgplayer_api",
-      "target_buy": 2.02,
-      "target_sell": 2.39,
+      "target_buy": 1.95,
+      "target_sell": 2.32,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -14981,6 +15120,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 2.52
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 2.44
         }
       ],
       "image": "https://images.pokemontcg.io/sv5/203.png",
@@ -14994,7 +15137,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 2.52,
+        "tcgplayer_market": 2.44,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/553421",
         "ppt_meta": null
@@ -15147,6 +15290,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 0.98
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 0.98
         }
       ],
@@ -15396,6 +15543,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.74
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.74
         }
       ],
       "image": "https://images.pokemontcg.io/swsh8/251.png",
@@ -15614,6 +15765,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 6.78
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 6.78
         }
       ],
@@ -15868,6 +16023,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.8
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.8
         }
       ],
       "image": null,
@@ -15944,6 +16103,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 37.44
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 37.34
         }
       ],
       "image": "https://images.pokemontcg.io/me1/184.png",
@@ -15957,7 +16120,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 37.44,
+        "tcgplayer_market": 37.34,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/654522",
         "ppt_meta": null
@@ -16019,6 +16182,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 17.05
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 17.05
         }
       ],
@@ -16405,10 +16572,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 5.0,
-      "live_price": 17.54,
+      "live_price": 17.22,
       "live_source": "tcgplayer_api",
-      "target_buy": 14.03,
-      "target_sell": 16.66,
+      "target_buy": 13.78,
+      "target_sell": 16.36,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -16445,6 +16612,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 17.54
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 17.22
         }
       ],
       "image": null,
@@ -16458,7 +16629,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 17.54,
+        "tcgplayer_market": 17.22,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/676044",
         "ppt_meta": null
@@ -16481,10 +16652,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 4.0,
-      "live_price": 0.8,
+      "live_price": 0.77,
       "live_source": "tcgplayer_api",
-      "target_buy": 0.64,
-      "target_sell": 0.76,
+      "target_buy": 0.62,
+      "target_sell": 0.73,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -16521,6 +16692,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.8
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.77
         }
       ],
       "image": "https://images.pokemontcg.io/bwp/BW97.png",
@@ -16534,7 +16709,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.8,
+        "tcgplayer_market": 0.77,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610387",
         "ppt_meta": null
@@ -16686,10 +16861,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 6.0,
-      "live_price": 1.33,
+      "live_price": 1.39,
       "live_source": "tcgplayer_api",
-      "target_buy": 1.06,
-      "target_sell": 1.26,
+      "target_buy": 1.11,
+      "target_sell": 1.32,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -16726,6 +16901,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 1.33
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1.39
         }
       ],
       "image": "https://images.pokemontcg.io/neo2/1.png",
@@ -16739,7 +16918,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 1.33,
+        "tcgplayer_market": 1.39,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610431",
         "ppt_meta": null
@@ -17171,10 +17350,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 15.0,
-      "live_price": 0.64,
+      "live_price": 0.67,
       "live_source": "tcgplayer_api",
-      "target_buy": 0.51,
-      "target_sell": 0.61,
+      "target_buy": 0.54,
+      "target_sell": 0.64,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -17211,6 +17390,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.64
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.67
         }
       ],
       "image": "https://images.pokemontcg.io/sv8/238.png",
@@ -17224,7 +17407,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.64,
+        "tcgplayer_market": 0.67,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610489",
         "ppt_meta": null
@@ -17235,14 +17418,14 @@
     },
     "B002": {
       "id": "B002",
-      "name": "Greninja ex SIR raw",
-      "set": "Twilight Masquerade",
-      "number": "232/167",
+      "name": "Greninja ex - 214/167",
+      "set": "SV06: Twilight Masquerade",
+      "number": "214/167",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "550258",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/550258",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -17373,6 +17556,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 2.37
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 2.37
         }
       ],
       "image": "https://images.pokemontcg.io/sv4/124.png",
@@ -17491,6 +17678,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 12.75
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 12.75
         }
       ],
@@ -17759,14 +17950,14 @@
     },
     "B012": {
       "id": "B012",
-      "name": "Zekrom Trainer Gallery",
-      "set": "Lost Origin",
+      "name": "Enamorus V",
+      "set": "SWSH11: Lost Origin Trainer Gallery",
       "number": "TG18/TG30",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "284284",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/284284",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -17811,6 +18002,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 3.12
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 3.12
         }
       ],
       "image": "https://images.pokemontcg.io/bw11/115.png",
@@ -17835,14 +18030,14 @@
     },
     "B013": {
       "id": "B013",
-      "name": "Reshiram Trainer Gallery",
-      "set": "Brilliant Stars",
+      "name": "Dedenne",
+      "set": "SWSH09: Brilliant Stars Trainer Gallery",
       "number": "TG07/TG30",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "264215",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/264215",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -17978,14 +18173,14 @@
     },
     "B016": {
       "id": "B016",
-      "name": "Origin Forme Palkia Alt Art Raw",
-      "set": "Astral Radiance",
-      "number": "TG24/TG30",
+      "name": "Origin Forme Palkia V (Alternate Full Art)",
+      "set": "SWSH10: Astral Radiance",
+      "number": "167/189",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "272419",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/272419",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -18021,14 +18216,14 @@
     },
     "B017": {
       "id": "B017",
-      "name": "Origin Forme Dialga Alt Art Raw",
-      "set": "Astral Radiance",
-      "number": "TG23/TG30",
+      "name": "Origin Forme Dialga V (Alternate Full Art)",
+      "set": "SWSH10: Astral Radiance",
+      "number": "177/189",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "272427",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/272427",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -18116,6 +18311,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.96
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.96
         }
       ],
       "image": "https://images.pokemontcg.io/swsh9/175.png",
@@ -18191,6 +18390,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 24.72
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 24.72
         }
       ],
@@ -18363,14 +18566,14 @@
     },
     "M103": {
       "id": "M103",
-      "name": "Calyrex VMAX Alt Art",
-      "set": "Chilling Reign",
-      "number": "174/198",
+      "name": "Ice Rider Calyrex VMAX (Alternate Art Secret)",
+      "set": "SWSH06: Chilling Reign",
+      "number": "203/198",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Secret Rare",
+      "tcgplayer_id": "241703",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/241703",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2400,
@@ -18544,14 +18747,14 @@
     },
     "M107": {
       "id": "M107",
-      "name": "Greninja V Alt Art (FS)",
-      "set": "Fusion Strike",
-      "number": "271/264",
+      "name": "Sandaconda V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "252/264",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "253149",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/253149",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1800,
@@ -18648,14 +18851,14 @@
     },
     "M109": {
       "id": "M109",
-      "name": "Octillery V Alt Art",
-      "set": "Evolving Skies",
-      "number": "200/203",
+      "name": "Noivern V (Alternate Full Art)",
+      "set": "SWSH07: Evolving Skies",
+      "number": "196/203",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "246745",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/246745",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1700,
@@ -18786,14 +18989,14 @@
     },
     "M112": {
       "id": "M112",
-      "name": "Cresselia V Alt Art",
-      "set": "Lost Origin",
-      "number": "TG28/TG30",
+      "name": "Rotom V (Alternate Full Art)",
+      "set": "SWSH11: Lost Origin",
+      "number": "177/196",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "284119",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/284119",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1600,
@@ -18829,14 +19032,14 @@
     },
     "M113": {
       "id": "M113",
-      "name": "Spiritomb Trainer Gallery",
-      "set": "Astral Radiance",
+      "name": "Galarian Obstagoon",
+      "set": "SWSH10: Astral Radiance Trainer Gallery",
       "number": "TG10/TG30",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "272481",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/272481",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1700,
@@ -19227,6 +19430,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 151.25
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 151.25
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/240.jpg",
@@ -19492,6 +19699,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 1000.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1000.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/8f5089e3fdf8cbc1847df3bbc8d1a3ba1a3ac227a21c149e97cd0f642e252f34/240.jpg",
@@ -19503,11 +19714,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 396.25,
-          "grade_7": 734.39,
+          "ungraded": 423.42,
+          "grade_7": 766.26,
           "grade_8": 1000.5,
-          "grade_9": 2024.5,
-          "grade_9_5": 2093.72,
+          "grade_9": 2255.61,
+          "grade_9_5": 2481.0,
           "grade_10": 19651.0
         },
         "pokeprice": null,
@@ -19649,6 +19860,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 32.8
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 32.8
         }
       ],
@@ -19879,12 +20094,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 220,
       "wb_price": 950.0,
-      "live_price": null,
-      "live_source": "workbook",
-      "target_buy": 760.0,
-      "target_sell": 902.5,
-      "score": 50,
-      "signal": "HOLD",
+      "live_price": 407.5,
+      "live_source": "pricecharting:psa8",
+      "target_buy": 326.0,
+      "target_sell": 387.12,
+      "score": 61,
+      "signal": "BUY",
       "d7_workbook": 0.0,
       "d30_workbook": 0.0,
       "history": [
@@ -19899,21 +20114,32 @@
         {
           "ts": "2026-06-01T07:29:49.893387Z",
           "p": 410.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 407.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/qpo3i3mlmiezitvq/60.jpg",
       "notes": "Aquapolis Crystal Lugia PSA 8.",
-      "confidence": "UNKNOWN",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "no_live_price"
+        "single_source"
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 488.31,
+          "grade_7": null,
+          "grade_8": 407.5,
+          "grade_9": 298.36,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=crystal+lugia+148",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -19978,14 +20204,14 @@
     },
     "V815": {
       "id": "V815",
-      "name": "Espeon Gold Star (PP)",
-      "set": "EX Power Keepers",
-      "number": "Gold Star",
+      "name": "Flareon Star",
+      "set": "Power Keepers",
+      "number": "100/108",
       "variant": "PSA 8",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "85503",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/85503",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 320,
@@ -20207,6 +20433,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 10.35
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 10.35
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/e6cbcf4747f46d29824eecb3c2477ec37ca280e564b48b3e299f7f84dae2f2b6/60.jpg",
@@ -20250,10 +20480,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 25.0,
-      "live_price": 56.66,
+      "live_price": 71.75,
       "live_source": "pricecharting:raw",
-      "target_buy": 45.33,
-      "target_sell": 53.83,
+      "target_buy": 57.4,
+      "target_sell": 68.16,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -20290,6 +20520,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 56.66
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 71.75
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/2fu3e6vrasznpp3j/240.jpg",
@@ -20301,10 +20535,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 56.66,
+          "ungraded": 71.75,
           "grade_7": null,
           "grade_8": 24.5,
-          "grade_9": 61.25,
+          "grade_9": 61.49,
           "grade_9_5": 62.0,
           "grade_10": 62.85
         },
@@ -20372,6 +20606,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 6.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 6.0
         }
       ],
@@ -20658,6 +20896,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 45.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 45.0
         }
       ],
       "image": null,
@@ -20682,14 +20924,14 @@
     },
     "S203": {
       "id": "S203",
-      "name": "Hydrapple ex SIR (raw)",
-      "set": "Stellar Crown",
-      "number": "175/142",
+      "name": "Hydrapple ex - 167/142",
+      "set": "SV07: Stellar Crown",
+      "number": "167/142",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567472",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567472",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -20786,6 +21028,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 6.99
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 6.99
         }
       ],
       "image": "https://images.pokemontcg.io/sv7/168.png",
@@ -20822,10 +21068,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 18.0,
-      "live_price": 0.64,
+      "live_price": 0.61,
       "live_source": "tcgplayer_api",
-      "target_buy": 0.51,
-      "target_sell": 0.61,
+      "target_buy": 0.49,
+      "target_sell": 0.58,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -20858,6 +21104,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.64
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.61
         }
       ],
       "image": null,
@@ -20871,7 +21121,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.64,
+        "tcgplayer_market": 0.61,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610490",
         "ppt_meta": null
@@ -20882,14 +21132,14 @@
     },
     "S206": {
       "id": "S206",
-      "name": "Terapagos ex SIR raw",
-      "set": "Stellar Crown",
-      "number": "176/142",
+      "name": "Terapagos ex - 170/142",
+      "set": "SV07: Stellar Crown",
+      "number": "170/142",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567478",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567478",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -20976,6 +21226,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 2.52
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 2.52
         }
       ],
@@ -21334,6 +21588,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 347.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 347.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/3a276e35f46ccd9c8600887aa08763db0853a9a75dbf2ba4ea65d1159c10d49e/240.jpg",
@@ -21460,10 +21718,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 40.0,
-      "live_price": 53.99,
+      "live_price": 56.23,
       "live_source": "pricecharting:raw",
-      "target_buy": 43.19,
-      "target_sell": 51.29,
+      "target_buy": 44.98,
+      "target_sell": 53.42,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -21488,6 +21746,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 53.99
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 56.23
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/kl2i7msts33pdwbh/240.jpg",
@@ -21499,7 +21761,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 53.99,
+          "ungraded": 56.23,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -21773,10 +22035,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 55.0,
-      "live_price": 53.99,
+      "live_price": 57.21,
       "live_source": "pricecharting:raw",
-      "target_buy": 43.19,
-      "target_sell": 51.29,
+      "target_buy": 45.77,
+      "target_sell": 54.35,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -21797,6 +22059,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 53.99
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 57.21
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ykd7lfo7cur3mhh7/240.jpg",
@@ -21808,7 +22074,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 53.99,
+          "ungraded": 57.21,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -21840,10 +22106,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 65.0,
-      "live_price": 84.1,
+      "live_price": 84.0,
       "live_source": "pricecharting:raw",
-      "target_buy": 67.28,
-      "target_sell": 79.89,
+      "target_buy": 67.2,
+      "target_sell": 79.8,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -21868,6 +22134,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 84.1
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 84.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/aovdfqgyeftmekpl/240.jpg",
@@ -21879,7 +22149,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 84.1,
+          "ungraded": 84.0,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -22116,11 +22386,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 12.0,
-      "live_price": 5.54,
+      "live_price": 4.15,
       "live_source": "tcgplayer_api",
-      "target_buy": 4.43,
-      "target_sell": 5.26,
-      "score": 64,
+      "target_buy": 3.32,
+      "target_sell": 3.94,
+      "score": 66,
       "signal": "BUY",
       "d7_workbook": 2.39,
       "d30_workbook": 13.96,
@@ -22156,6 +22426,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 5.54
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 4.15
         }
       ],
       "image": "https://images.scrydex.com/pokemon/me2pt5-155/small",
@@ -22169,7 +22443,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 5.54,
+        "tcgplayer_market": 4.15,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/645320",
         "ppt_meta": null
@@ -22274,6 +22548,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 3.12
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 3.12
         }
       ],
@@ -22483,10 +22761,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 14.0,
-      "live_price": 0.64,
+      "live_price": 0.67,
       "live_source": "tcgplayer_api",
-      "target_buy": 0.51,
-      "target_sell": 0.61,
+      "target_buy": 0.54,
+      "target_sell": 0.64,
       "score": 69,
       "signal": "BUY",
       "d7_workbook": 3.7,
@@ -22523,6 +22801,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.64
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.67
         }
       ],
       "image": "https://images.pokemontcg.io/sv8/238.png",
@@ -22536,7 +22818,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.64,
+        "tcgplayer_market": 0.67,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610489",
         "ppt_meta": null
@@ -22559,10 +22841,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 10.0,
-      "live_price": 0.64,
+      "live_price": 0.61,
       "live_source": "tcgplayer_api",
-      "target_buy": 0.51,
-      "target_sell": 0.61,
+      "target_buy": 0.49,
+      "target_sell": 0.58,
       "score": 68,
       "signal": "BUY",
       "d7_workbook": 4.17,
@@ -22595,6 +22877,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.64
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.61
         }
       ],
       "image": "https://images.pokemontcg.io/sv8/239.png",
@@ -22608,7 +22894,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.64,
+        "tcgplayer_market": 0.61,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610490",
         "ppt_meta": null
@@ -22670,6 +22956,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 0.97
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 0.97
         }
       ],
@@ -22755,10 +23045,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 3.0,
-      "live_price": 0.71,
+      "live_price": 0.69,
       "live_source": "tcgplayer_api",
-      "target_buy": 0.57,
-      "target_sell": 0.67,
+      "target_buy": 0.55,
+      "target_sell": 0.66,
       "score": 63,
       "signal": "BUY",
       "d7_workbook": 1.01,
@@ -22795,6 +23085,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.71
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.69
         }
       ],
       "image": "https://images.pokemontcg.io/svp/136.png",
@@ -22808,7 +23102,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.71,
+        "tcgplayer_market": 0.69,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610372",
         "ppt_meta": null
@@ -22914,6 +23208,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 186.06
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 183.26
         }
       ],
       "image": "https://images.pokemontcg.io/bwp/BW97.png",
@@ -22927,7 +23225,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 186.06,
+        "tcgplayer_market": 183.26,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610522",
         "ppt_meta": null
@@ -22990,6 +23288,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 142.11
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 142.56
         }
       ],
       "image": "https://images.pokemontcg.io/ru1/7.png",
@@ -23003,7 +23305,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 142.11,
+        "tcgplayer_market": 142.56,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610520",
         "ppt_meta": null
@@ -23026,10 +23328,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 25.0,
-      "live_price": 71.02,
+      "live_price": 71.1,
       "live_source": "tcgplayer_api",
-      "target_buy": 56.82,
-      "target_sell": 67.47,
+      "target_buy": 56.88,
+      "target_sell": 67.54,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 4.17,
@@ -23066,6 +23368,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 71.02
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 71.1
         }
       ],
       "image": "https://images.pokemontcg.io/base6/29.png",
@@ -23079,7 +23385,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 71.02,
+        "tcgplayer_market": 71.1,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/610521",
         "ppt_meta": null
@@ -23141,6 +23447,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 33.79
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 33.79
         }
       ],
@@ -23218,14 +23528,14 @@
     },
     "X122": {
       "id": "X122",
-      "name": "Fezandipiti ex SIR (raw)",
-      "set": "Shrouded Fable",
-      "number": "088/064",
+      "name": "Fezandipiti ex - 092/064",
+      "set": "SV: Shrouded Fable",
+      "number": "092/064",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "560403",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/560403",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -23269,6 +23579,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 7.99
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 7.99
         }
       ],
@@ -23346,14 +23660,14 @@
     },
     "X124": {
       "id": "X124",
-      "name": "Lacey SIR (raw)",
-      "set": "Stellar Crown",
-      "number": "171/142",
+      "name": "Lacey - 172/142",
+      "set": "SV07: Stellar Crown",
+      "number": "172/142",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567484",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567484",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -23398,14 +23712,14 @@
     },
     "X125": {
       "id": "X125",
-      "name": "Terapagos ex SIR (raw)",
-      "set": "Stellar Crown",
-      "number": "176/142",
+      "name": "Terapagos ex - 170/142",
+      "set": "SV07: Stellar Crown",
+      "number": "170/142",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567478",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567478",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -23450,14 +23764,14 @@
     },
     "X126": {
       "id": "X126",
-      "name": "Briar SIR (raw)",
-      "set": "Stellar Crown",
-      "number": "169/142",
+      "name": "Briar - 171/142",
+      "set": "SV07: Stellar Crown",
+      "number": "171/142",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567482",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567482",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -23502,6 +23816,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 11.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 11.0
         }
       ],
       "image": "https://images.pokemontcg.io/sv7/171.png",
@@ -23526,14 +23844,14 @@
     },
     "X127": {
       "id": "X127",
-      "name": "Hydrapple ex SIR (raw)",
-      "set": "Stellar Crown",
-      "number": "175/142",
+      "name": "Hydrapple ex - 167/142",
+      "set": "SV07: Stellar Crown",
+      "number": "167/142",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567472",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567472",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -23590,10 +23908,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 5.0,
-      "live_price": 0.62,
+      "live_price": 0.66,
       "live_source": "tcgplayer_api",
-      "target_buy": 0.5,
-      "target_sell": 0.59,
+      "target_buy": 0.53,
+      "target_sell": 0.63,
       "score": 66,
       "signal": "BUY",
       "d7_workbook": 2.67,
@@ -23630,6 +23948,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.62
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.66
         }
       ],
       "image": null,
@@ -23643,7 +23965,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.62,
+        "tcgplayer_market": 0.66,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/654375",
         "ppt_meta": null
@@ -23709,10 +24031,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 25.0,
-      "live_price": 87.75,
+      "live_price": 87.44,
       "live_source": "tcgplayer_api",
-      "target_buy": 70.2,
-      "target_sell": 83.36,
+      "target_buy": 69.95,
+      "target_sell": 83.07,
       "score": 60,
       "signal": "BUY",
       "d7_workbook": 6.38,
@@ -23749,6 +24071,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 87.75
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 87.44
         }
       ],
       "image": "https://images.pokemontcg.io/me2/56.png",
@@ -23762,7 +24088,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 87.75,
+        "tcgplayer_market": 87.44,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/676081",
         "ppt_meta": null
@@ -23773,22 +24099,22 @@
     },
     "X131": {
       "id": "X131",
-      "name": "Mega Rayquaza ex SIR (raw)",
-      "set": "Ascended Heroes",
-      "number": "286/217",
+      "name": "Mega Froslass ex - 275/217",
+      "set": "ME: Ascended Heroes",
+      "number": "275/217",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "676087",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/676087",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 22.0,
-      "live_price": 189.43,
+      "live_price": 189.53,
       "live_source": "tcgplayer_api",
-      "target_buy": 151.54,
-      "target_sell": 179.96,
+      "target_buy": 151.62,
+      "target_sell": 180.05,
       "score": 57,
       "signal": "HOLD",
       "d7_workbook": 3.14,
@@ -23825,6 +24151,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 189.43
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 189.53
         }
       ],
       "image": null,
@@ -23838,7 +24168,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 189.43,
+        "tcgplayer_market": 189.53,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/676098",
         "ppt_meta": null
@@ -23901,6 +24231,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 75.59
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 75.97
         }
       ],
       "image": "https://images.pokemontcg.io/me1/188.png",
@@ -23914,7 +24248,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 75.59,
+        "tcgplayer_market": 75.97,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/676097",
         "ppt_meta": null
@@ -23925,22 +24259,22 @@
     },
     "X133": {
       "id": "X133",
-      "name": "Mega Lopunny ex SIR (raw)",
-      "set": "Ascended Heroes",
-      "number": "283/217",
+      "name": "Mega Emboar ex - 273/217",
+      "set": "ME: Ascended Heroes",
+      "number": "273/217",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "676085",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/676085",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 9.0,
-      "live_price": 75.87,
+      "live_price": 76.01,
       "live_source": "tcgplayer_api",
-      "target_buy": 60.7,
-      "target_sell": 72.08,
+      "target_buy": 60.81,
+      "target_sell": 72.21,
       "score": 54,
       "signal": "HOLD",
       "d7_workbook": 2.04,
@@ -23977,6 +24311,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 75.87
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 76.01
         }
       ],
       "image": "https://images.pokemontcg.io/me2/128.png",
@@ -23990,7 +24328,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 75.87,
+        "tcgplayer_market": 76.01,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/676095",
         "ppt_meta": null
@@ -24048,6 +24386,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 2.34
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 2.34
         }
       ],
@@ -24319,6 +24661,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 200.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 200.0
         }
       ],
       "image": null,
@@ -24480,6 +24826,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 40.95
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 40.95
         }
       ],
@@ -24923,10 +25273,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 32.0,
-      "live_price": 7.13,
+      "live_price": 6.5,
       "live_source": "pricecharting:raw",
-      "target_buy": 5.7,
-      "target_sell": 6.77,
+      "target_buy": 5.2,
+      "target_sell": 6.17,
       "score": 65,
       "signal": "BUY",
       "d7_workbook": 1.11,
@@ -24963,6 +25313,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 7.13
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 6.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/pszbkolvsc6hmgko/60.jpg",
@@ -24974,9 +25328,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 7.13,
+          "ungraded": 6.5,
           "grade_7": null,
-          "grade_8": 14.15,
+          "grade_8": 14.09,
           "grade_9": 11.0,
           "grade_9_5": null,
           "grade_10": null
@@ -25132,14 +25486,14 @@
     },
     "X154": {
       "id": "X154",
-      "name": "Magnezone V Alt Art (LO)",
-      "set": "Lost Origin",
-      "number": "TG13/TG30",
+      "name": "Aerodactyl V (Alternate Full Art)",
+      "set": "SWSH11: Lost Origin",
+      "number": "180/196",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "284122",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/284122",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1600,
@@ -25227,14 +25581,14 @@
     },
     "X156": {
       "id": "X156",
-      "name": "Drifloon V Alt Art (LO)",
-      "set": "Lost Origin",
-      "number": "TG14/TG30",
+      "name": "Rotom V (Alternate Full Art)",
+      "set": "SWSH11: Lost Origin",
+      "number": "177/196",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "284119",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/284119",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1700,
@@ -25270,14 +25624,14 @@
     },
     "X157": {
       "id": "X157",
-      "name": "Volcanion V Alt Art (LO)",
-      "set": "Lost Origin",
-      "number": "TG09/TG30",
+      "name": "Aerodactyl V (Alternate Full Art)",
+      "set": "SWSH11: Lost Origin",
+      "number": "180/196",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "284122",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/284122",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1600,
@@ -25417,14 +25771,14 @@
     },
     "X160": {
       "id": "X160",
-      "name": "Greninja V Alt Art (FS)",
-      "set": "Fusion Strike",
-      "number": "271/264",
+      "name": "Celebi V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "245/264",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "253138",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/253138",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1900,
@@ -25469,14 +25823,14 @@
     },
     "X161": {
       "id": "X161",
-      "name": "Cynthia's Power Trainer (raw)",
-      "set": "Astral Radiance",
+      "name": "Ice Rider Calyrex V",
+      "set": "SWSH10: Astral Radiance Trainer Gallery",
       "number": "TG14/TG30",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "272485",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/272485",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -25564,14 +25918,14 @@
     },
     "X163": {
       "id": "X163",
-      "name": "Avery Trainer Gallery (raw)",
-      "set": "Astral Radiance",
+      "name": "Bea",
+      "set": "SWSH10: Astral Radiance Trainer Gallery",
       "number": "TG25/TG30",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "272497",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/272497",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -25607,14 +25961,14 @@
     },
     "X164": {
       "id": "X164",
-      "name": "Drasna Trainer Gallery (raw)",
-      "set": "Silver Tempest",
+      "name": "Sordward & Shielbert",
+      "set": "SWSH12: Silver Tempest Trainer Gallery",
       "number": "TG28/TG30",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "452047",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/452047",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -25658,6 +26012,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 8.62
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 8.62
         }
       ],
@@ -25777,6 +26135,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 84.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 84.0
         }
       ],
@@ -25916,6 +26278,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 236.17
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 236.17
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg",
@@ -25990,6 +26356,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 183.75
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 183.75
         }
       ],
@@ -26938,14 +27308,14 @@
     },
     "X201": {
       "id": "X201",
-      "name": "Calyrex VMAX Alt Art (CR)",
-      "set": "Chilling Reign",
-      "number": "174/198",
+      "name": "Shadow Rider Calyrex VMAX (Alternate Art Secret)",
+      "set": "SWSH06: Chilling Reign",
+      "number": "205/198",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Secret Rare",
+      "tcgplayer_id": "241740",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/241740",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 2300,
@@ -27128,14 +27498,14 @@
     },
     "X205": {
       "id": "X205",
-      "name": "Leafeon V Alt Art",
-      "set": "Evolving Skies",
-      "number": "175/203",
+      "name": "Leafeon V (Alternate Full Art)",
+      "set": "SWSH07: Evolving Skies",
+      "number": "167/203",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "246688",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/246688",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 3000,
@@ -27891,10 +28261,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 175.0,
-      "live_price": 182.91,
+      "live_price": 189.14,
       "live_source": "tcgplayer_api",
-      "target_buy": 146.33,
-      "target_sell": 173.76,
+      "target_buy": 151.31,
+      "target_sell": 179.68,
       "score": 52,
       "signal": "HOLD",
       "d7_workbook": 0.96,
@@ -27931,6 +28301,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 182.91
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 189.14
         }
       ],
       "image": null,
@@ -27944,7 +28318,7 @@
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 182.91,
+        "tcgplayer_market": 189.14,
         "pricecharting_url": null,
         "tcgplayer_url": "https://www.tcgplayer.com/product/502000",
         "ppt_meta": null
@@ -28409,6 +28783,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 764.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 764.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gd6mivft4qcajxyo/240.jpg",
@@ -28693,10 +29071,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 1100,
       "wb_price": 651.99,
-      "live_price": 651.99,
+      "live_price": 676.31,
       "live_source": "pricecharting:psa9",
-      "target_buy": 521.59,
-      "target_sell": 619.39,
+      "target_buy": 541.05,
+      "target_sell": 642.49,
       "score": 75,
       "signal": "STRONG BUY",
       "d7_workbook": 179.57,
@@ -28721,6 +29099,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 651.99
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 676.31
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/589d190e6f58444390da3104132dad3ab64fc5d70ecb9da2922a10732c192c34/240.jpg",
@@ -28732,11 +29114,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 73.75,
+          "ungraded": 71.0,
           "grade_7": 175.0,
-          "grade_8": 294.61,
-          "grade_9": 651.99,
-          "grade_9_5": 717.0,
+          "grade_8": 302.0,
+          "grade_9": 676.31,
+          "grade_9_5": 744.0,
           "grade_10": 12000.0
         },
         "pokeprice": null,
@@ -28874,6 +29256,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 281.83
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 281.83
         }
       ],
@@ -29127,14 +29513,14 @@
     },
     "X238": {
       "id": "X238",
-      "name": "Mew Holo Promo PSA 9",
-      "set": "Black Star Promo",
+      "name": "Mew - 8 (Glossy Finish)",
+      "set": "WoTC Promo",
       "number": "8",
       "variant": "PSA 9",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Promo",
+      "tcgplayer_id": "607818",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/607818",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 800,
@@ -29280,6 +29666,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 38.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 38.0
         }
       ],
@@ -29544,14 +29934,14 @@
     },
     "X302": {
       "id": "X302",
-      "name": "Lugia VSTAR Alt Art (ST) PSA 10",
-      "set": "Silver Tempest",
-      "number": "TG30/TG30",
+      "name": "Lugia V (Alternate Full Art)",
+      "set": "SWSH12: Silver Tempest",
+      "number": "186/195",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "451834",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/451834",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 3800,
@@ -30665,6 +31055,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 4903.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 4903.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ym4hvnapxhl5iuny/240.jpg",
@@ -30767,14 +31161,14 @@
     },
     "X323": {
       "id": "X323",
-      "name": "Charizard 1st Edition PSA 7",
-      "set": "Base Set 1st Edition",
+      "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
+      "set": "Base Set (Shadowless)",
       "number": "4/102",
       "variant": "PSA 7",
       "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "tcgplayer_id": "138132",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/138132",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 1800,
@@ -30823,14 +31217,14 @@
     },
     "X324": {
       "id": "X324",
-      "name": "Pikachu Promo Birthday PSA 8",
-      "set": "Black Star Promo",
-      "number": "24",
+      "name": "______'s Pikachu",
+      "set": "WoTC Promo",
+      "number": "24/53",
       "variant": "PSA 8",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Promo",
+      "tcgplayer_id": "90784",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/90784",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 700,
@@ -31629,14 +32023,14 @@
     },
     "X413": {
       "id": "X413",
-      "name": "Charizard 1st Edition PSA 8",
-      "set": "Base Set 1st Edition",
+      "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
+      "set": "Base Set (Shadowless)",
       "number": "4/102",
       "variant": "PSA 8",
       "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "tcgplayer_id": "138132",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/138132",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 980,
@@ -31664,12 +32058,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 8351.85,
-          "grade_7": 23380.48,
-          "grade_8": 28640.0,
-          "grade_9": 48291.07,
-          "grade_9_5": 77076.43,
-          "grade_10": 350439.63
+          "ungraded": 6854.64,
+          "grade_7": 24199.5,
+          "grade_8": 29784.12,
+          "grade_9": 48608.09,
+          "grade_9_5": 71699.2,
+          "grade_10": 413902.86
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -32616,14 +33010,14 @@
     },
     "X502": {
       "id": "X502",
-      "name": "Charizard 1st Ed Shadowless BGS 9",
-      "set": "Base Set 1st Edition",
+      "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
+      "set": "Base Set (Shadowless)",
       "number": "4/102",
       "variant": "BGS 9",
       "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "tcgplayer_id": "138132",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/138132",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T1",
       "category": "Vintage Graded Singles",
       "pop_psa10": 480,
@@ -32767,6 +33161,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 48608.09
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 48608.09
         }
       ],
@@ -32954,6 +33352,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 62508.04
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 62508.04
         }
       ],
@@ -33658,6 +34060,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 197448.76
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 197448.76
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg",
@@ -33888,6 +34294,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 413902.86
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 413902.86
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gmkd37jg7haprczl/240.jpg",
@@ -34058,6 +34468,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 14674.45
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 14674.45
         }
       ],
@@ -34615,6 +35029,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 39995.95
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 39995.95
         }
       ],
@@ -35489,6 +35907,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 19651.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 19651.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard2/149.png",
@@ -36019,10 +36441,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 245,
       "wb_price": 1700.0,
-      "live_price": 933.25,
+      "live_price": 925.0,
       "live_source": "pricecharting:psa10",
-      "target_buy": 746.6,
-      "target_sell": 886.59,
+      "target_buy": 740.0,
+      "target_sell": 878.75,
       "score": 67,
       "signal": "BUY",
       "d7_workbook": 2.25,
@@ -36063,6 +36485,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 933.25
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 925.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
@@ -36074,12 +36500,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 55.0,
-          "grade_7": 80.0,
+          "ungraded": 51.76,
+          "grade_7": 91.8,
           "grade_8": 180.0,
           "grade_9": 288.62,
           "grade_9_5": 317.0,
-          "grade_10": 933.25
+          "grade_10": 925.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -37945,10 +38371,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 425,
       "wb_price": 986.02,
-      "live_price": 986.02,
+      "live_price": 970.0,
       "live_source": "pricecharting:psa10",
-      "target_buy": 788.82,
-      "target_sell": 936.72,
+      "target_buy": 776.0,
+      "target_sell": 921.5,
       "score": 74,
       "signal": "BUY",
       "d7_workbook": 260.53,
@@ -37977,6 +38403,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 986.02
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 970.0
         }
       ],
       "image": "https://images.pokemontcg.io/sv6/214.png",
@@ -37988,12 +38418,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 345.0,
+          "ungraded": 351.49,
           "grade_7": 290.9,
           "grade_8": 323.91,
-          "grade_9": 355.0,
-          "grade_9_5": 543.4,
-          "grade_10": 986.02
+          "grade_9": 354.37,
+          "grade_9_5": 495.0,
+          "grade_10": 970.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -38060,14 +38490,14 @@
     },
     "Q008": {
       "id": "Q008",
-      "name": "Pecharunt ex SIR",
-      "set": "Shrouded Fable",
-      "number": "086/064",
+      "name": "Pecharunt ex - 093/064",
+      "set": "SV: Shrouded Fable",
+      "number": "093/064",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "560404",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/560404",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1850,
@@ -38111,6 +38541,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 9.75
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 9.75
         }
       ],
@@ -38188,14 +38622,14 @@
     },
     "Q010": {
       "id": "Q010",
-      "name": "Iono SIR",
-      "set": "Paldea Evolved",
-      "number": "266/193",
+      "name": "Iono - 269/193",
+      "set": "SV02: Paldea Evolved",
+      "number": "269/193",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "497689",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/497689",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 1450,
@@ -39077,14 +39511,14 @@
     },
     "M201": {
       "id": "M201",
-      "name": "Garchomp ex SIR",
-      "set": "Stellar Crown",
-      "number": "175/142",
+      "name": "Dachsbun ex - 169/142",
+      "set": "SV07: Stellar Crown",
+      "number": "169/142",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567476",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567476",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 985,
@@ -39527,15 +39961,15 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $1675 but workbook is $165 (10.2x) \u2014 outside 0.15-8.0 band, using workbook",
+      "reconcile_reason": "pc returned $1700 but workbook is $165 (10.3x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 399.5,
-          "grade_7": 302.99,
+          "ungraded": 403.08,
+          "grade_7": 304.6,
           "grade_8": 352.11,
           "grade_9": 429.65,
           "grade_9_5": 720.0,
-          "grade_10": 1675.0
+          "grade_10": 1700.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -39546,7 +39980,7 @@
       },
       "reconcile_confidence": "UNKNOWN",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_upper_pricecharting:psa10_$1675_vs_wb_$165"
+      "scrape_rejected_source": "rejected_upper_pricecharting:psa10_$1700_vs_wb_$165"
     },
     "M209": {
       "id": "M209",
@@ -39670,10 +40104,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 545,
       "wb_price": 201.75,
-      "live_price": 201.75,
+      "live_price": 210.11,
       "live_source": "pricecharting:psa10",
-      "target_buy": 161.4,
-      "target_sell": 191.66,
+      "target_buy": 168.09,
+      "target_sell": 199.6,
       "score": 29,
       "signal": "TRIM",
       "d7_workbook": -51.45,
@@ -39706,6 +40140,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 201.75
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 210.11
         }
       ],
       "image": "https://images.pokemontcg.io/ex6/105.png",
@@ -39717,12 +40155,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 19.75,
+          "ungraded": 20.0,
           "grade_7": 25.0,
-          "grade_8": 36.17,
+          "grade_8": 37.13,
           "grade_9": 43.66,
           "grade_9_5": 48.0,
-          "grade_10": 201.75
+          "grade_10": 210.11
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -40313,6 +40751,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 197448.76
         }
       ],
@@ -41108,6 +41550,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 235.87
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 235.87
         }
       ],
@@ -42019,6 +42465,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 8.23
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 8.23
         }
       ],
       "image": null,
@@ -42129,14 +42579,14 @@
     },
     "V205": {
       "id": "V205",
-      "name": "Latios ex SIR (raw)",
-      "set": "Temporal Forces",
-      "number": "207/162",
+      "name": "Walking Wake ex - 205/162",
+      "set": "SV05: Temporal Forces",
+      "number": "205/162",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "542926",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/542926",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -42181,14 +42631,14 @@
     },
     "V206": {
       "id": "V206",
-      "name": "Latias ex SIR (raw)",
-      "set": "Temporal Forces",
-      "number": "208/162",
+      "name": "Walking Wake ex - 205/162",
+      "set": "SV05: Temporal Forces",
+      "number": "205/162",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "542926",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/542926",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -42224,14 +42674,14 @@
     },
     "V207": {
       "id": "V207",
-      "name": "Iron Hands ex SIR (raw)",
-      "set": "Paradox Rift",
-      "number": "265/182",
+      "name": "Iron Hands ex - 248/182",
+      "set": "SV04: Paradox Rift",
+      "number": "248/182",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "523929",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/523929",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -42276,14 +42726,14 @@
     },
     "V208": {
       "id": "V208",
-      "name": "Gholdengo ex SIR (raw)",
-      "set": "Paradox Rift",
-      "number": "267/182",
+      "name": "Gholdengo ex - 252/182",
+      "set": "SV04: Paradox Rift",
+      "number": "252/182",
       "variant": "Raw NM",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "523933",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/523933",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
@@ -42709,6 +43159,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 12.25
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 12.25
         }
       ],
       "image": "https://images.pokemontcg.io/sv6/218.png",
@@ -42784,6 +43238,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 3.32
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 3.32
         }
       ],
@@ -42861,6 +43319,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.66
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.66
         }
       ],
       "image": "https://images.pokemontcg.io/sv6/25.png",
@@ -42936,6 +43398,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 0.66
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 0.66
         }
       ],
@@ -43013,6 +43479,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 2.99
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 2.99
         }
       ],
       "image": "https://images.pokemontcg.io/sv6/25.png",
@@ -43076,6 +43546,10 @@
         },
         {
           "ts": "2026-06-03T15:56:42.617862Z",
+          "p": 908.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 908.5
         }
       ],
@@ -43298,10 +43772,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 5450,
       "wb_price": 1061.89,
-      "live_price": 1061.89,
+      "live_price": 1008.0,
       "live_source": "pricecharting:psa8",
-      "target_buy": 849.51,
-      "target_sell": 1008.8,
+      "target_buy": 806.4,
+      "target_sell": 957.6,
       "score": 73,
       "signal": "BUY",
       "d7_workbook": 104.43,
@@ -43322,6 +43796,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 1061.89
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1008.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -43333,12 +43811,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 368.38,
+          "ungraded": 385.25,
           "grade_7": 710.0,
-          "grade_8": 1061.89,
-          "grade_9": 3296.56,
-          "grade_9_5": 4035.14,
-          "grade_10": 29985.79
+          "grade_8": 1008.0,
+          "grade_9": 3038.72,
+          "grade_9_5": 4051.0,
+          "grade_10": 30085.73
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -43396,6 +43874,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 388.42
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 388.42
         }
       ],
@@ -43543,6 +44025,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 243.73
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 243.73
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H10.png",
@@ -43614,6 +44100,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 188.01
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 188.01
         }
       ],
       "image": "https://images.pokemontcg.io/ecard2/H19.png",
@@ -43684,6 +44174,10 @@
         },
         {
           "ts": "2026-06-04T14:14:48.953916Z",
+          "p": 200.0
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 200.0
         }
       ],
@@ -43909,14 +44403,14 @@
     },
     "V262": {
       "id": "V262",
-      "name": "Pikachu Yellow Cheeks",
-      "set": "Base Set Unlimited",
-      "number": "58/102",
+      "name": "Pikachu (Red Cheeks)",
+      "set": "Base Set (Shadowless)",
+      "number": "058/102",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Common",
+      "tcgplayer_id": "147229",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/147229",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
       "pop_psa10": 1850,
@@ -44207,6 +44701,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 2326.5
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 2326.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c377255c9193086af0d715d279d4fda50021ddd332977ac5974dd5bd004e695c/240.jpg",
@@ -44238,14 +44736,14 @@
     },
     "V274": {
       "id": "V274",
-      "name": "Gyarados PSA 10",
-      "set": "Base Set Unlimited",
-      "number": "6/102",
+      "name": "Gyarados",
+      "set": "Base Set (Shadowless)",
+      "number": "006/102",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Holo Rare",
+      "tcgplayer_id": "107000",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/107000",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
       "pop_psa10": 425,
@@ -44352,14 +44850,14 @@
     },
     "Z101": {
       "id": "Z101",
-      "name": "Mewtwo ex",
+      "name": "Mew ex",
       "set": "Holon Phantoms",
       "number": "100/110",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "87410",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/87410",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
       "pop_psa10": 525,
@@ -44653,13 +45151,13 @@
     },
     "Z104": {
       "id": "Z104",
-      "name": "Jolteon Star",
-      "set": "Power Keepers",
-      "number": "101/108",
+      "name": "Espeon Star",
+      "set": "POP Series 5",
+      "number": "016/017",
       "variant": "PSA 10",
       "rarity": "Ultra Rare",
-      "tcgplayer_id": "86351",
-      "tcgplayer_url": "https://www.tcgplayer.com/product/86351",
+      "tcgplayer_id": "85329",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/85329",
       "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
@@ -44696,13 +45194,13 @@
     },
     "Z105": {
       "id": "Z105",
-      "name": "Vaporeon Star",
-      "set": "Power Keepers",
-      "number": "102/108",
+      "name": "Umbreon Star",
+      "set": "POP Series 5",
+      "number": "017/017",
       "variant": "PSA 10",
       "rarity": "Ultra Rare",
-      "tcgplayer_id": "90292",
-      "tcgplayer_url": "https://www.tcgplayer.com/product/90292",
+      "tcgplayer_id": "90153",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/90153",
       "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
@@ -45008,14 +45506,14 @@
     },
     "Z124": {
       "id": "Z124",
-      "name": "Giratina LV.X",
+      "name": "Palkia G Lv.X",
       "set": "Platinum",
       "number": "125/127",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Ultra Rare",
+      "tcgplayer_id": "87918",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/87918",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
       "pop_psa10": 555,
@@ -45151,6 +45649,10 @@
         },
         {
           "ts": "2026-06-03T15:56:42.617862Z",
+          "p": 11153.77
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 11153.77
         }
       ],
@@ -45511,14 +46013,14 @@
     },
     "Z160": {
       "id": "Z160",
-      "name": "Reshiram Full Art",
+      "name": "Reshiram (114 Full Art Secret Rare)",
       "set": "Legendary Treasures",
-      "number": "RC4/RC25",
+      "number": "114/113",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Secret Rare",
+      "tcgplayer_id": "88711",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/88711",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
       "pop_psa10": 525,
@@ -45563,14 +46065,14 @@
     },
     "Z161": {
       "id": "Z161",
-      "name": "Zekrom Full Art",
+      "name": "Zekrom (115 Full Art Secret Rare)",
       "set": "Legendary Treasures",
-      "number": "RC5/RC25",
+      "number": "115/113",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Secret Rare",
+      "tcgplayer_id": "90739",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/90739",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T2",
       "category": "Vintage Graded Singles",
       "pop_psa10": 545,
@@ -45988,14 +46490,14 @@
     },
     "Z202": {
       "id": "Z202",
-      "name": "Pikachu GX Rainbow Rare",
-      "set": "Burning Shadows",
-      "number": "151/147",
+      "name": "Marshadow GX (Secret)",
+      "set": "SM - Burning Shadows",
+      "number": "156/147",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Rainbow Rare",
+      "tcgplayer_id": "138568",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/138568",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T3",
       "category": "Vintage Graded Singles",
       "pop_psa10": 685,
@@ -47101,14 +47603,14 @@
     },
     "W021": {
       "id": "W021",
-      "name": "Garchomp ex SAR (PSA 10)",
-      "set": "Stellar Crown",
-      "number": "175/142",
+      "name": "Dachsbun ex - 169/142",
+      "set": "SV07: Stellar Crown",
+      "number": "169/142",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "567476",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/567476",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 745,
@@ -47248,14 +47750,14 @@
     },
     "W030": {
       "id": "W030",
-      "name": "Eevee SAR (PSA 10)",
-      "set": "Prismatic Evolutions",
-      "number": "182/131",
+      "name": "Eevee ex - 167/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "167/131",
       "variant": "PSA 10",
-      "rarity": null,
-      "tcgplayer_id": null,
-      "tcgplayer_url": null,
-      "identity_source": "workbook",
+      "rarity": "Special Illustration Rare",
+      "tcgplayer_id": "610522",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/610522",
+      "identity_source": "tcgplayer_resolved",
       "tier": "T5",
       "category": "Modern Chase PSA 10",
       "pop_psa10": 425,
@@ -48042,6 +48544,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 1.62
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 1.62
         }
       ],
       "image": null,
@@ -48117,6 +48623,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 164.98
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
           "p": 164.98
         }
       ],
@@ -48194,6 +48704,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 0.77
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 0.77
         }
       ],
       "image": "https://images.pokemontcg.io/swsh8/73.png",
@@ -48230,11 +48744,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 485.0,
-      "live_price": 221.55,
+      "live_price": 278.43,
       "live_source": "pricecharting:raw",
-      "target_buy": 177.24,
-      "target_sell": 210.47,
-      "score": 63,
+      "target_buy": 222.74,
+      "target_sell": 264.51,
+      "score": 61,
       "signal": "BUY",
       "d7_workbook": 1.82,
       "d30_workbook": 10.0,
@@ -48258,6 +48772,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 221.55
+        },
+        {
+          "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 278.43
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg",
@@ -48269,7 +48787,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 221.55,
+          "ungraded": 278.43,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,

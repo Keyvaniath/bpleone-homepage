@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generated_at": "2026-06-04T19:46:08.833472Z",
+  "generated_at": "2026-06-05T13:58:34.035556Z",
   "weights_used": {
-    "momentum_rising": 0.1738,
-    "scarcity": 0.2095,
-    "accessibility": 0.1081,
-    "hidden_alpha": 0.1697,
-    "tier_premium": 0.2149,
-    "liquidity": 0.1239
+    "momentum_rising": 0.1715,
+    "scarcity": 0.2117,
+    "accessibility": 0.105,
+    "hidden_alpha": 0.1694,
+    "tier_premium": 0.2171,
+    "liquidity": 0.1253
   },
   "weights_source": "learned",
   "methodology": "Future Winners is a forward-looking model. Score = weighted sum of: momentum_rising \u00b7 scarcity \u00b7 accessibility \u00b7 hidden_alpha \u00b7 tier_premium \u00b7 liquidity. Weights are LEARNED from historical signal outcomes via optimize_fw_weights.py (falls back to seed weights until enough history accumulates).",
@@ -25,7 +25,7 @@
       "wb_price": 720.0,
       "target_buy": 576.0,
       "target_sell": 684.0,
-      "fw_score": 75.7,
+      "fw_score": 75.8,
       "components": {
         "momentum_rising": 100,
         "scarcity": 54.9,
@@ -49,7 +49,7 @@
       "wb_price": 4200.0,
       "target_buy": 3360.0,
       "target_sell": 3990.0,
-      "fw_score": 73.9,
+      "fw_score": 74.0,
       "components": {
         "momentum_rising": 93.9,
         "scarcity": 61.4,
@@ -73,7 +73,7 @@
       "wb_price": 224.5,
       "target_buy": 179.6,
       "target_sell": 213.27,
-      "fw_score": 72.1,
+      "fw_score": 72.0,
       "components": {
         "momentum_rising": 100,
         "scarcity": 39.2,
@@ -97,7 +97,7 @@
       "wb_price": 32.59,
       "target_buy": 26.24,
       "target_sell": 31.16,
-      "fw_score": 71.1,
+      "fw_score": 71.0,
       "components": {
         "momentum_rising": 100,
         "scarcity": 46.8,
@@ -145,7 +145,7 @@
       "wb_price": 65.0,
       "target_buy": 67.28,
       "target_sell": 79.89,
-      "fw_score": 70.7,
+      "fw_score": 70.5,
       "components": {
         "momentum_rising": 89.1,
         "scarcity": 60,
@@ -193,7 +193,7 @@
       "wb_price": 975.0,
       "target_buy": 780.0,
       "target_sell": 926.25,
-      "fw_score": 69.8,
+      "fw_score": 69.7,
       "components": {
         "momentum_rising": 100,
         "scarcity": 41.0,
@@ -217,7 +217,7 @@
       "wb_price": 320.0,
       "target_buy": 156.0,
       "target_sell": 185.25,
-      "fw_score": 69.5,
+      "fw_score": 69.4,
       "components": {
         "momentum_rising": 77.6,
         "scarcity": 45.3,
@@ -326,6 +326,30 @@
       "image": "https://storage.googleapis.com/images.pricecharting.com/39dd6f72a724d7107d1ba02ff7272cb42f3ace9bb9037c39d2b491ab69f632e9/240.jpg"
     },
     {
+      "id": "V026",
+      "name": "Flareon Gold Star",
+      "set": "EX Power Keepers",
+      "number": "Gold Star",
+      "variant": "PSA 9",
+      "tier": "T1",
+      "pop": 175,
+      "live_price": 1716.66,
+      "wb_price": 2600.0,
+      "target_buy": 1373.33,
+      "target_sell": 1630.83,
+      "fw_score": 68.4,
+      "components": {
+        "momentum_rising": 63.7,
+        "scarcity": 59.6,
+        "accessibility": 25,
+        "hidden_alpha": 75,
+        "tier_premium": 90,
+        "liquidity": 80
+      },
+      "thesis": "Low PSA 10 pop (175) \u00b7 Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
+      "image": "https://images.pokemontcg.io/ecard3/H7.png"
+    },
+    {
       "id": "V912",
       "name": "Nidoking Base Unlimited PSA 8",
       "set": "Base Set",
@@ -337,7 +361,7 @@
       "wb_price": 65.0,
       "target_buy": 72.25,
       "target_sell": 85.79,
-      "fw_score": 68.5,
+      "fw_score": 68.4,
       "components": {
         "momentum_rising": 100,
         "scarcity": 39.5,
@@ -348,6 +372,30 @@
       },
       "thesis": "Live history up +23.0% \u00b7 Vintage grail tier",
       "image": "https://storage.googleapis.com/images.pricecharting.com/ub7hurj6g3mqkl5f/240.jpg"
+    },
+    {
+      "id": "V024",
+      "name": "Vaporeon Gold Star",
+      "set": "EX Power Keepers",
+      "number": "Gold Star",
+      "variant": "PSA 9",
+      "tier": "T1",
+      "pop": 180,
+      "live_price": 1771.36,
+      "wb_price": 2800.0,
+      "target_buy": 1417.09,
+      "target_sell": 1682.79,
+      "fw_score": 68.3,
+      "components": {
+        "momentum_rising": 63.3,
+        "scarcity": 59.4,
+        "accessibility": 25,
+        "hidden_alpha": 75,
+        "tier_premium": 90,
+        "liquidity": 80
+      },
+      "thesis": "Low PSA 10 pop (180) \u00b7 Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
+      "image": "https://images.pokemontcg.io/ecard3/H31.png"
     },
     {
       "id": "V911",
@@ -361,7 +409,7 @@
       "wb_price": 60.0,
       "target_buy": 55.2,
       "target_sell": 65.55,
-      "fw_score": 68.4,
+      "fw_score": 68.3,
       "components": {
         "momentum_rising": 100,
         "scarcity": 39.2,
@@ -385,7 +433,7 @@
       "wb_price": 60.0,
       "target_buy": 62.4,
       "target_sell": 74.1,
-      "fw_score": 68.4,
+      "fw_score": 68.3,
       "components": {
         "momentum_rising": 100,
         "scarcity": 39.2,
@@ -396,102 +444,6 @@
       },
       "thesis": "Live history up +11.4% \u00b7 Vintage grail tier",
       "image": "https://storage.googleapis.com/images.pricecharting.com/548a35b585a2a50ad54d63bc2f5af5582d72f5bb53015b910299d38c50d7f68c/240.jpg"
-    },
-    {
-      "id": "V026",
-      "name": "Flareon Gold Star",
-      "set": "EX Power Keepers",
-      "number": "Gold Star",
-      "variant": "PSA 9",
-      "tier": "T1",
-      "pop": 175,
-      "live_price": 1716.66,
-      "wb_price": 2600.0,
-      "target_buy": 1373.33,
-      "target_sell": 1630.83,
-      "fw_score": 68.2,
-      "components": {
-        "momentum_rising": 63.7,
-        "scarcity": 59.6,
-        "accessibility": 25,
-        "hidden_alpha": 75,
-        "tier_premium": 90,
-        "liquidity": 80
-      },
-      "thesis": "Low PSA 10 pop (175) \u00b7 Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
-      "image": "https://images.pokemontcg.io/ecard3/H7.png"
-    },
-    {
-      "id": "V907",
-      "name": "Clefairy Base Unlimited PSA 8",
-      "set": "Base Set",
-      "number": "5/102",
-      "variant": "PSA 8",
-      "tier": "T1",
-      "pop": 2800,
-      "live_price": 69.94,
-      "wb_price": 65.0,
-      "target_buy": 55.95,
-      "target_sell": 66.44,
-      "fw_score": 68.2,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 38.0,
-        "accessibility": 80,
-        "hidden_alpha": 40,
-        "tier_premium": 90,
-        "liquidity": 65
-      },
-      "thesis": "Live history up +15.6% \u00b7 Vintage grail tier",
-      "image": "https://storage.googleapis.com/images.pricecharting.com/47d59467ece3bf922c56e3d649493160dd86c45252e7895a78693de79d34b72d/240.jpg"
-    },
-    {
-      "id": "V024",
-      "name": "Vaporeon Gold Star",
-      "set": "EX Power Keepers",
-      "number": "Gold Star",
-      "variant": "PSA 9",
-      "tier": "T1",
-      "pop": 180,
-      "live_price": 1771.36,
-      "wb_price": 2800.0,
-      "target_buy": 1417.09,
-      "target_sell": 1682.79,
-      "fw_score": 68.1,
-      "components": {
-        "momentum_rising": 63.3,
-        "scarcity": 59.4,
-        "accessibility": 25,
-        "hidden_alpha": 75,
-        "tier_premium": 90,
-        "liquidity": 80
-      },
-      "thesis": "Low PSA 10 pop (180) \u00b7 Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
-      "image": "https://images.pokemontcg.io/ecard3/H31.png"
-    },
-    {
-      "id": "V028",
-      "name": "Mew Gold Star",
-      "set": "EX Holon Phantoms",
-      "number": "Gold Star",
-      "variant": "PSA 9",
-      "tier": "T1",
-      "pop": 240,
-      "live_price": 3685.08,
-      "wb_price": 2200.0,
-      "target_buy": 2948.06,
-      "target_sell": 3500.83,
-      "fw_score": 68.1,
-      "components": {
-        "momentum_rising": 65.5,
-        "scarcity": 57.2,
-        "accessibility": 25,
-        "hidden_alpha": 75,
-        "tier_premium": 90,
-        "liquidity": 80
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
-      "image": "https://images.pokemontcg.io/si1/1.png"
     },
     {
       "id": "V025",
@@ -505,7 +457,7 @@
       "wb_price": 2400.0,
       "target_buy": 1341.02,
       "target_sell": 1592.47,
-      "fw_score": 68.0,
+      "fw_score": 68.2,
       "components": {
         "momentum_rising": 63.4,
         "scarcity": 58.6,
@@ -516,6 +468,102 @@
       },
       "thesis": "Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
       "image": "https://images.pokemontcg.io/ecard3/H12.png"
+    },
+    {
+      "id": "V028",
+      "name": "Mew Gold Star",
+      "set": "EX Holon Phantoms",
+      "number": "Gold Star",
+      "variant": "PSA 9",
+      "tier": "T1",
+      "pop": 240,
+      "live_price": 3685.08,
+      "wb_price": 2200.0,
+      "target_buy": 2948.06,
+      "target_sell": 3500.83,
+      "fw_score": 68.2,
+      "components": {
+        "momentum_rising": 65.5,
+        "scarcity": 57.2,
+        "accessibility": 25,
+        "hidden_alpha": 75,
+        "tier_premium": 90,
+        "liquidity": 80
+      },
+      "thesis": "Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
+      "image": "https://images.pokemontcg.io/si1/1.png"
+    },
+    {
+      "id": "V030",
+      "name": "Leafeon Gold Star",
+      "set": "Diamond & Pearl Promos",
+      "number": "DP37",
+      "variant": "PSA 9",
+      "tier": "T1",
+      "pop": 195,
+      "live_price": 950.0,
+      "wb_price": 950.0,
+      "target_buy": 760.0,
+      "target_sell": 902.5,
+      "fw_score": 68.1,
+      "components": {
+        "momentum_rising": 50.7,
+        "scarcity": 58.8,
+        "accessibility": 45,
+        "hidden_alpha": 75,
+        "tier_premium": 90,
+        "liquidity": 80
+      },
+      "thesis": "Low PSA 10 pop (195) \u00b7 Chase variant (alt art / SIR / SAR) \u00b7 Vintage grail tier",
+      "image": "https://images.pokemontcg.io/dp5/7.png"
+    },
+    {
+      "id": "D01",
+      "name": "Stellar Crown Booster Bundle",
+      "set": "Stellar Crown",
+      "number": "Bundle",
+      "variant": "Sealed",
+      "tier": "T3",
+      "pop": null,
+      "live_price": 56.23,
+      "wb_price": 40.0,
+      "target_buy": 44.98,
+      "target_sell": 53.42,
+      "fw_score": 68.1,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 60,
+        "accessibility": 80,
+        "hidden_alpha": 75,
+        "tier_premium": 50,
+        "liquidity": 50
+      },
+      "thesis": "Live history up +12.5% \u00b7 Chase variant (alt art / SIR / SAR)",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/kl2i7msts33pdwbh/240.jpg"
+    },
+    {
+      "id": "V907",
+      "name": "Clefairy Base Unlimited PSA 8",
+      "set": "Base Set",
+      "number": "5/102",
+      "variant": "PSA 8",
+      "tier": "T1",
+      "pop": 2800,
+      "live_price": 69.94,
+      "wb_price": 65.0,
+      "target_buy": 55.95,
+      "target_sell": 66.44,
+      "fw_score": 68.1,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 38.0,
+        "accessibility": 80,
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 65
+      },
+      "thesis": "Live history up +15.6% \u00b7 Vintage grail tier",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/47d59467ece3bf922c56e3d649493160dd86c45252e7895a78693de79d34b72d/240.jpg"
     },
     {
       "id": "M039",
@@ -553,7 +601,7 @@
       "wb_price": 2212.5,
       "target_buy": 1906.22,
       "target_sell": 2263.63,
-      "fw_score": 67.9,
+      "fw_score": 68.0,
       "components": {
         "momentum_rising": 100,
         "scarcity": 56.0,
@@ -590,6 +638,54 @@
       "image": "https://images.pokemontcg.io/ecard3/1.png"
     },
     {
+      "id": "V813",
+      "name": "Crystal Lugia Aquapolis",
+      "set": "Aquapolis",
+      "number": "148/147",
+      "variant": "PSA 8",
+      "tier": "T1",
+      "pop": 220,
+      "live_price": 407.5,
+      "wb_price": 950.0,
+      "target_buy": 326.0,
+      "target_sell": 387.12,
+      "fw_score": 67.8,
+      "components": {
+        "momentum_rising": 86.2,
+        "scarcity": 57.8,
+        "accessibility": 60,
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 65
+      },
+      "thesis": "Live history up +7.2% \u00b7 Vintage grail tier",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/qpo3i3mlmiezitvq/60.jpg"
+    },
+    {
+      "id": "X232",
+      "name": "Dragonite Fossil Unlimited PSA 9",
+      "set": "Fossil",
+      "number": "4/62",
+      "variant": "PSA 9",
+      "tier": "T1",
+      "pop": 1100,
+      "live_price": 676.31,
+      "wb_price": 651.99,
+      "target_buy": 541.05,
+      "target_sell": 642.49,
+      "fw_score": 67.8,
+      "components": {
+        "momentum_rising": 100,
+        "scarcity": 45.3,
+        "accessibility": 45,
+        "hidden_alpha": 40,
+        "tier_premium": 90,
+        "liquidity": 80
+      },
+      "thesis": "Live history up +10.2% \u00b7 Vintage grail tier",
+      "image": "https://storage.googleapis.com/images.pricecharting.com/589d190e6f58444390da3104132dad3ab64fc5d70ecb9da2922a10732c192c34/240.jpg"
+    },
+    {
       "id": "X307",
       "name": "Charizard ex SIR (151) PSA 10",
       "set": "151",
@@ -614,54 +710,6 @@
       "image": "https://images.pokemontcg.io/ex6/105.png"
     },
     {
-      "id": "X305",
-      "name": "Iono SIR (PE) PSA 10",
-      "set": "Paldea Evolved",
-      "number": "269/193",
-      "variant": "PSA 10",
-      "tier": "T2",
-      "pop": 2400,
-      "live_price": 90.0,
-      "wb_price": 410.0,
-      "target_buy": 72.0,
-      "target_sell": 85.5,
-      "fw_score": 67.5,
-      "components": {
-        "momentum_rising": 67.3,
-        "scarcity": 39.2,
-        "accessibility": 80,
-        "hidden_alpha": 75,
-        "tier_premium": 70,
-        "liquidity": 90
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://storage.googleapis.com/images.pricecharting.com/a2d1db3fe118113f605cada5ca0d3bc169722057c6a9637f47bd3eae6c2f451b/240.jpg"
-    },
-    {
-      "id": "V208",
-      "name": "Gholdengo ex SIR (raw)",
-      "set": "Paradox Rift",
-      "number": "267/182",
-      "variant": "Raw NM",
-      "tier": "T5",
-      "pop": null,
-      "live_price": 24.77,
-      "wb_price": 24.77,
-      "target_buy": 19.82,
-      "target_sell": 23.53,
-      "fw_score": 67.5,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 60,
-        "accessibility": 90,
-        "hidden_alpha": 75,
-        "tier_premium": 30,
-        "liquidity": 70
-      },
-      "thesis": "Chase variant (alt art / SIR / SAR)",
-      "image": "https://images.pokemontcg.io/sv8pt5/164.png"
-    },
-    {
       "id": "V254",
       "name": "Mewtwo",
       "set": "Base Set Unlimited",
@@ -684,54 +732,6 @@
       },
       "thesis": "Live history up +12.9% \u00b7 Vintage grail tier",
       "image": "https://images.pokemontcg.io/base6/29.png"
-    },
-    {
-      "id": "V910",
-      "name": "Machamp Base Unlimited PSA 8",
-      "set": "Base Set",
-      "number": "8/102",
-      "variant": "PSA 8",
-      "tier": "T1",
-      "pop": 2700,
-      "live_price": 127.5,
-      "wb_price": 70.0,
-      "target_buy": 102.0,
-      "target_sell": 121.12,
-      "fw_score": 67.1,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 38.2,
-        "accessibility": 70,
-        "hidden_alpha": 40,
-        "tier_premium": 90,
-        "liquidity": 65
-      },
-      "thesis": "Live history up +13.3% \u00b7 Vintage grail tier",
-      "image": "https://storage.googleapis.com/images.pricecharting.com/91aa3156232af474ab31532da48755643508b4ba4039ddb1989a3f933b70e118/60.jpg"
-    },
-    {
-      "id": "V011",
-      "name": "Ninetales",
-      "set": "Base Set 1st Edition",
-      "number": "12/102",
-      "variant": "PSA 9",
-      "tier": "T1",
-      "pop": 500,
-      "live_price": 2569.47,
-      "wb_price": 2397.18,
-      "target_buy": 2055.58,
-      "target_sell": 2441.0,
-      "fw_score": 66.9,
-      "components": {
-        "momentum_rising": 100,
-        "scarcity": 51.4,
-        "accessibility": 25,
-        "hidden_alpha": 40,
-        "tier_premium": 90,
-        "liquidity": 80
-      },
-      "thesis": "Live history up +14.7% \u00b7 Vintage grail tier",
-      "image": "https://images.pokemontcg.io/ecard2/H19.png"
     }
   ]
 }

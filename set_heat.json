@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T19:45:09.118621+00:00",
+  "generated_at": "2026-06-05T13:58:26.637336+00:00",
   "n_sets": 160,
   "n_cards_classified": 774,
   "hot_sets_top10": [
@@ -121,8 +121,8 @@
     {
       "set": "ME: Ascended Heroes",
       "n_cards": 8,
-      "avg_score": 61.2,
-      "heat_score": 118.2,
+      "avg_score": 61.4,
+      "heat_score": 118.3,
       "buy_density_pct": 62.5,
       "avg_d7_pct": 44.65,
       "avg_d30_pct": 75.33,
@@ -131,7 +131,7 @@
       "n_hold": 2,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 6874.0,
+      "total_universe_usd": 6842.0,
       "top_card": {
         "cid": "X132",
         "name": "Mega Scrafty ex - 285/217",
@@ -223,7 +223,7 @@
       "n_hold": 4,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 400117.0,
+      "total_universe_usd": 463580.0,
       "top_card": {
         "cid": "X501",
         "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
@@ -585,8 +585,8 @@
     {
       "set": "ME: Ascended Heroes",
       "n_cards": 8,
-      "avg_score": 61.2,
-      "heat_score": 118.2,
+      "avg_score": 61.4,
+      "heat_score": 118.3,
       "buy_density_pct": 62.5,
       "avg_d7_pct": 44.65,
       "avg_d30_pct": 75.33,
@@ -595,7 +595,7 @@
       "n_hold": 2,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 6874.0,
+      "total_universe_usd": 6842.0,
       "top_card": {
         "cid": "X132",
         "name": "Mega Scrafty ex - 285/217",
@@ -687,7 +687,7 @@
       "n_hold": 4,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 400117.0,
+      "total_universe_usd": 463580.0,
       "top_card": {
         "cid": "X501",
         "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
@@ -756,7 +756,7 @@
       "n_hold": 6,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 18061.0,
+      "total_universe_usd": 18269.0,
       "top_card": {
         "cid": "X232",
         "name": "Dragonite (4)",
@@ -825,7 +825,7 @@
       "n_hold": 6,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 490463.0,
+      "total_universe_usd": 490165.0,
       "top_card": {
         "cid": "V011",
         "name": "Ninetales",
@@ -871,7 +871,7 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 3485.0,
+      "total_universe_usd": 5930.0,
       "top_card": {
         "cid": "V039",
         "name": "Gengar",
@@ -894,7 +894,7 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 95170.0,
+      "total_universe_usd": 95487.0,
       "top_card": {
         "cid": "V002",
         "name": "Charizard",
@@ -917,7 +917,7 @@
       "n_hold": 31,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 14383.0,
+      "total_universe_usd": 14238.0,
       "top_card": {
         "cid": "X117",
         "name": "Eevee ex - 167/131",
@@ -940,7 +940,7 @@
       "n_hold": 29,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 94538.0,
+      "total_universe_usd": 94269.0,
       "top_card": {
         "cid": "V255",
         "name": "Alakazam",
@@ -1009,7 +1009,7 @@
       "n_hold": 17,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 2466.0,
+      "total_universe_usd": 2524.0,
       "top_card": {
         "cid": "M066",
         "name": "Pikachu ex - 238/191",
@@ -1068,7 +1068,7 @@
     {
       "set": "Evolving Skies",
       "n_cards": 29,
-      "avg_score": 61.5,
+      "avg_score": 61.6,
       "heat_score": 79.5,
       "buy_density_pct": 24.1,
       "avg_d7_pct": 11.76,
@@ -1078,7 +1078,7 @@
       "n_hold": 22,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 16640.0,
+      "total_universe_usd": 16648.0,
       "top_card": {
         "cid": "M002",
         "name": "Umbreon VMAX (Alternate Art Secret)",
@@ -1101,7 +1101,7 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 250.0,
+      "total_universe_usd": 254.0,
       "top_card": {
         "cid": "DD002",
         "name": "Pokemon Evolutions Booster Pack",

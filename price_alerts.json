@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-04T19:45:08.208338+00:00",
-  "buy_alerts_count": 38,
-  "sell_alerts_count": 124,
+  "generated_at": "2026-06-05T13:58:25.465966+00:00",
+  "buy_alerts_count": 37,
+  "sell_alerts_count": 127,
   "high_score_count": 1,
   "buy_alerts": [
     {
@@ -89,30 +89,6 @@
       "source": "pricecharting:raw"
     },
     {
-      "cid": "PC004",
-      "name": "Premium Collection PSA 10 Box (Champion's Path)",
-      "variant": "Sealed",
-      "live_price": 221.55,
-      "buy_target": 388.0,
-      "wb_price": 485,
-      "discount_pct": 54.3,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
-      "cid": "X104",
-      "name": "N's Zekrom Full Art",
-      "variant": "Raw NM",
-      "live_price": 5.54,
-      "buy_target": 10.0,
-      "wb_price": 12,
-      "discount_pct": 53.8,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "tcgplayer_api"
-    },
-    {
       "cid": "P021",
       "name": "Pikachu Common",
       "variant": "Raw NM",
@@ -173,6 +149,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "Z011",
+      "name": "Umbreon",
+      "variant": "PSA 10",
+      "live_price": 925.0,
+      "buy_target": 1360.0,
+      "wb_price": 1700,
+      "discount_pct": 45.6,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa10"
+    },
+    {
       "cid": "Z024",
       "name": "Ho-Oh",
       "variant": "PSA 10",
@@ -185,18 +173,6 @@
       "source": "pricecharting:psa10"
     },
     {
-      "cid": "Z011",
-      "name": "Umbreon",
-      "variant": "PSA 10",
-      "live_price": 933.25,
-      "buy_target": 1360.0,
-      "wb_price": 1700,
-      "discount_pct": 45.1,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa10"
-    },
-    {
       "cid": "DD004",
       "name": "Pokemon Team Up Booster Box",
       "variant": "Sealed",
@@ -204,6 +180,18 @@
       "buy_target": 340.0,
       "wb_price": 425,
       "discount_pct": 44.5,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "PC004",
+      "name": "Premium Collection PSA 10 Box (Champion's Path)",
+      "variant": "Sealed",
+      "live_price": 278.43,
+      "buy_target": 388.0,
+      "wb_price": 485,
+      "discount_pct": 42.6,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -303,6 +291,18 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
+    },
+    {
+      "cid": "Z045",
+      "name": "Blaine's Charizard",
+      "variant": "PSA 9",
+      "live_price": 531.0,
+      "buy_target": 680.0,
+      "wb_price": 850,
+      "discount_pct": 37.5,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa9"
     }
   ],
   "sell_alerts": [
@@ -310,7 +310,7 @@
       "cid": "V010",
       "name": "Alakazam",
       "variant": "PSA 9",
-      "live_price": 5027.43,
+      "live_price": 5027.03,
       "sell_target": 1045.0,
       "wb_price": 950,
       "premium_pct": 429.2,
@@ -454,10 +454,10 @@
       "cid": "X130",
       "name": "Mega Gengar ex MAR (Ascended)",
       "variant": "Raw NM",
-      "live_price": 87.75,
+      "live_price": 87.44,
       "sell_target": 28.0,
       "wb_price": 25,
-      "premium_pct": 251.0,
+      "premium_pct": 249.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
@@ -466,10 +466,10 @@
       "cid": "P046",
       "name": "Mega Rayquaza Common (AH)",
       "variant": "Raw NM",
-      "live_price": 17.54,
+      "live_price": 17.22,
       "sell_target": 6.0,
       "wb_price": 5,
-      "premium_pct": 250.8,
+      "premium_pct": 244.4,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
@@ -499,25 +499,13 @@
       "source": "pricecharting:raw"
     },
     {
-      "cid": "V250",
-      "name": "Blastoise",
-      "variant": "PSA 9",
-      "live_price": 908.5,
-      "sell_target": 314.0,
-      "wb_price": 285,
-      "premium_pct": 218.8,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:psa9"
-    },
-    {
       "cid": "S010",
       "name": "SV 151 Booster Bundle",
       "variant": "Sealed (6 packs)",
-      "live_price": 182.91,
+      "live_price": 189.14,
       "sell_target": 63.0,
       "wb_price": 57.71,
-      "premium_pct": 216.9,
+      "premium_pct": 227.7,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "tcgplayer_api"
@@ -559,6 +547,18 @@
       "source": "tcgplayer_api"
     },
     {
+      "cid": "JB04",
+      "name": "Eevee Heroes Booster (JP single)",
+      "variant": "Sealed",
+      "live_price": 71.75,
+      "sell_target": 28.0,
+      "wb_price": 25,
+      "premium_pct": 187.0,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
       "cid": "X226",
       "name": "Evolving Skies Mini Tin",
       "variant": "Sealed",
@@ -569,6 +569,18 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X119",
+      "name": "Mewtwo Special Art (PE)",
+      "variant": "Raw NM",
+      "live_price": 71.1,
+      "sell_target": 28.0,
+      "wb_price": 25,
+      "premium_pct": 184.4,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "tcgplayer_api"
     },
     {
       "cid": "P037",
@@ -593,18 +605,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
-    },
-    {
-      "cid": "X119",
-      "name": "Mewtwo Special Art (PE)",
-      "variant": "Raw NM",
-      "live_price": 71.02,
-      "sell_target": 28.0,
-      "wb_price": 25,
-      "premium_pct": 184.1,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "tcgplayer_api"
     }
   ],
   "high_score_signals": [
