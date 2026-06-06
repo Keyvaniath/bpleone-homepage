@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-05T13:58:25.465966+00:00",
+  "generated_at": "2026-06-06T12:16:31.479723+00:00",
   "buy_alerts_count": 37,
-  "sell_alerts_count": 127,
+  "sell_alerts_count": 130,
   "high_score_count": 1,
   "buy_alerts": [
     {
@@ -29,6 +29,18 @@
       "source": "pricecharting:psa10"
     },
     {
+      "cid": "DD007",
+      "name": "Pokemon Vivid Voltage Booster Box",
+      "variant": "Sealed",
+      "live_price": 225.03,
+      "buy_target": 420.0,
+      "wb_price": 525,
+      "discount_pct": 57.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
       "cid": "JB05",
       "name": "VMAX Climax Pack (JP single)",
       "variant": "Sealed",
@@ -41,6 +53,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "V813",
+      "name": "Crystal Lugia Aquapolis",
+      "variant": "PSA 8",
+      "live_price": 407.5,
+      "buy_target": 760.0,
+      "wb_price": 950,
+      "discount_pct": 57.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa8"
+    },
+    {
       "cid": "D112",
       "name": "Pokemon Champion's Path ETB",
       "variant": "Sealed",
@@ -48,18 +72,6 @@
       "buy_target": 308.0,
       "wb_price": 385,
       "discount_pct": 57.0,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
-      "cid": "DD007",
-      "name": "Pokemon Vivid Voltage Booster Box",
-      "variant": "Sealed",
-      "live_price": 231.81,
-      "buy_target": 420.0,
-      "wb_price": 525,
-      "discount_pct": 55.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -128,13 +140,25 @@
       "cid": "V038",
       "name": "Aerodactyl",
       "variant": "PSA 9",
-      "live_price": 302.13,
+      "live_price": 302.48,
       "buy_target": 464.0,
       "wb_price": 580,
-      "discount_pct": 47.9,
+      "discount_pct": 47.8,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa9"
+    },
+    {
+      "cid": "DD004",
+      "name": "Pokemon Team Up Booster Box",
+      "variant": "Sealed",
+      "live_price": 225.03,
+      "buy_target": 340.0,
+      "wb_price": 425,
+      "discount_pct": 47.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
     },
     {
       "cid": "X534",
@@ -173,18 +197,6 @@
       "source": "pricecharting:psa10"
     },
     {
-      "cid": "DD004",
-      "name": "Pokemon Team Up Booster Box",
-      "variant": "Sealed",
-      "live_price": 235.87,
-      "buy_target": 340.0,
-      "wb_price": 425,
-      "discount_pct": 44.5,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
       "cid": "PC004",
       "name": "Premium Collection PSA 10 Box (Champion's Path)",
       "variant": "Sealed",
@@ -221,6 +233,18 @@
       "source": "tcgplayer_api"
     },
     {
+      "cid": "X315",
+      "name": "Hidden Fates Booster Box",
+      "variant": "Sealed",
+      "live_price": 225.03,
+      "buy_target": 304.0,
+      "wb_price": 380,
+      "discount_pct": 40.8,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
       "cid": "X313",
       "name": "151 ETB",
       "variant": "Sealed",
@@ -245,6 +269,18 @@
       "source": "pricecharting:raw"
     },
     {
+      "cid": "Z045",
+      "name": "Blaine's Charizard",
+      "variant": "PSA 9",
+      "live_price": 512.0,
+      "buy_target": 680.0,
+      "wb_price": 850,
+      "discount_pct": 39.8,
+      "just_crossed_today": false,
+      "confidence": "OVERRIDE",
+      "source": "pricecharting:psa9"
+    },
+    {
       "cid": "DD008",
       "name": "Pokemon Brilliant Stars Booster Box",
       "variant": "Sealed",
@@ -252,18 +288,6 @@
       "buy_target": 308.0,
       "wb_price": 385,
       "discount_pct": 39.8,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
-      "cid": "X315",
-      "name": "Hidden Fates Booster Box",
-      "variant": "Sealed",
-      "live_price": 231.81,
-      "buy_target": 304.0,
-      "wb_price": 380,
-      "discount_pct": 39.0,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -279,33 +303,45 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:psa10"
+    }
+  ],
+  "sell_alerts": [
+    {
+      "cid": "V253",
+      "name": "Charizard",
+      "variant": "PSA 8",
+      "live_price": 1255.43,
+      "sell_target": 1168.0,
+      "wb_price": 1061.89,
+      "premium_pct": 18.2,
+      "just_crossed_today": true,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:psa8"
     },
     {
-      "cid": "X320",
-      "name": "Evolving Skies Premium Collection",
+      "cid": "X142",
+      "name": "Journey Together Booster Bundle",
       "variant": "Sealed",
-      "live_price": 221.55,
-      "buy_target": 288.0,
-      "wb_price": 360,
-      "discount_pct": 38.5,
-      "just_crossed_today": false,
+      "live_price": 43.72,
+      "sell_target": 42.0,
+      "wb_price": 38,
+      "premium_pct": 15.1,
+      "just_crossed_today": true,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
     },
     {
-      "cid": "Z045",
-      "name": "Blaine's Charizard",
+      "cid": "V250",
+      "name": "Blastoise",
       "variant": "PSA 9",
-      "live_price": 531.0,
-      "buy_target": 680.0,
-      "wb_price": 850,
-      "discount_pct": 37.5,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
+      "live_price": 1006.17,
+      "sell_target": 999.0,
+      "wb_price": 908.5,
+      "premium_pct": 10.8,
+      "just_crossed_today": true,
+      "confidence": "MEDIUM",
       "source": "pricecharting:psa9"
-    }
-  ],
-  "sell_alerts": [
+    },
     {
       "cid": "V010",
       "name": "Alakazam",
@@ -391,6 +427,30 @@
       "source": "pricecharting:psa8"
     },
     {
+      "cid": "S008",
+      "name": "Lost Origin BB",
+      "variant": "Sealed (36 packs)",
+      "live_price": 780.69,
+      "sell_target": 220.0,
+      "wb_price": 200,
+      "premium_pct": 290.3,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X228",
+      "name": "Lost Origin Booster Box",
+      "variant": "Sealed",
+      "live_price": 780.69,
+      "sell_target": 220.0,
+      "wb_price": 200,
+      "premium_pct": 290.3,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
       "cid": "X325",
       "name": "Charizard Base 2 PSA 9",
       "variant": "PSA 9",
@@ -403,30 +463,6 @@
       "source": "pricecharting:psa9"
     },
     {
-      "cid": "S008",
-      "name": "Lost Origin BB",
-      "variant": "Sealed (36 packs)",
-      "live_price": 764.5,
-      "sell_target": 220.0,
-      "wb_price": 200,
-      "premium_pct": 282.2,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
-      "cid": "X228",
-      "name": "Lost Origin Booster Box",
-      "variant": "Sealed",
-      "live_price": 764.5,
-      "sell_target": 220.0,
-      "wb_price": 200,
-      "premium_pct": 282.2,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
-    },
-    {
       "cid": "V004",
       "name": "Charizard",
       "variant": "PSA 10",
@@ -437,18 +473,6 @@
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "X322",
-      "name": "Blastoise Base Shadowless PSA 8",
-      "variant": "PSA 8",
-      "live_price": 1074.5,
-      "sell_target": 319.0,
-      "wb_price": 290,
-      "premium_pct": 270.5,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pricecharting:psa8"
     },
     {
       "cid": "X130",
@@ -581,30 +605,6 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
-    },
-    {
-      "cid": "P037",
-      "name": "Marnie Holo Trainer",
-      "variant": "Raw NM",
-      "live_price": 17.05,
-      "sell_target": 7.0,
-      "wb_price": 6,
-      "premium_pct": 184.2,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "tcgplayer_api"
-    },
-    {
-      "cid": "S013",
-      "name": "Paldea Evolved BB",
-      "variant": "Sealed (36 packs)",
-      "live_price": 454.58,
-      "sell_target": 176.0,
-      "wb_price": 160,
-      "premium_pct": 184.1,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "pricecharting:raw"
     }
   ],
   "high_score_signals": [

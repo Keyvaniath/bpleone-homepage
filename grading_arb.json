@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T14:02:59Z",
+  "generated_at": "2026-06-06T12:21:26Z",
   "assumptions": {
     "fee": 0.13,
     "grade_cost": 30.0,
@@ -26,8 +26,8 @@
       "grade_cost": 30.0,
       "p10": 0.16,
       "p9": 0.34,
-      "ev_per_attempt": 13747.73,
-      "roi": 3.41,
+      "ev_per_attempt": 13773.67,
+      "roi": 3.42,
       "confidence": "vintage_edition_check",
       "tcgplayer_url": "https://www.tcgplayer.com/product/84198"
     },
@@ -186,8 +186,8 @@
       "grade_cost": 30.0,
       "p10": 0.1,
       "p9": 0.3,
-      "ev_per_attempt": 515.46,
-      "roi": 1.08,
+      "ev_per_attempt": 531.92,
+      "roi": 1.12,
       "confidence": "vintage_edition_check",
       "tcgplayer_url": "https://www.tcgplayer.com/product/89166"
     },
@@ -256,22 +256,6 @@
       "tcgplayer_url": "https://www.tcgplayer.com/product/246723"
     },
     {
-      "id": "X233",
-      "name": "Gengar (5)",
-      "set": "Fossil",
-      "era": "vintage",
-      "raw_cost": 313.36,
-      "psa10": 4558.93,
-      "psa9": 607.36,
-      "grade_cost": 30.0,
-      "p10": 0.1,
-      "p9": 0.3,
-      "ev_per_attempt": 383.25,
-      "roi": 1.12,
-      "confidence": "needs_psa10_verify",
-      "tcgplayer_url": "https://www.tcgplayer.com/product/106521"
-    },
-    {
       "id": "M081",
       "name": "Mega Gengar ex - 284/217",
       "set": "ME: Ascended Heroes",
@@ -286,6 +270,22 @@
       "roi": 0.27,
       "confidence": "high",
       "tcgplayer_url": "https://www.tcgplayer.com/product/676096"
+    },
+    {
+      "id": "X233",
+      "name": "Gengar (5)",
+      "set": "Fossil",
+      "era": "vintage",
+      "raw_cost": 313.36,
+      "psa10": 4558.93,
+      "psa9": 612.67,
+      "grade_cost": 30.0,
+      "p10": 0.1,
+      "p9": 0.3,
+      "ev_per_attempt": 372.19,
+      "roi": 1.08,
+      "confidence": "needs_psa10_verify",
+      "tcgplayer_url": "https://www.tcgplayer.com/product/106521"
     },
     {
       "id": "B011",
@@ -390,12 +390,12 @@
       "era": "vintage",
       "raw_cost": 70.01,
       "psa10": 875.99,
-      "psa9": 520.0,
+      "psa9": 532.9,
       "grade_cost": 30.0,
       "p10": 0.1,
       "p9": 0.3,
-      "ev_per_attempt": 274.13,
-      "roi": 2.74,
+      "ev_per_attempt": 284.71,
+      "roi": 2.85,
       "confidence": "needs_psa10_verify",
       "tcgplayer_url": "https://www.tcgplayer.com/product/86118"
     },

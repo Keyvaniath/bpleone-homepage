@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-05T13:58:26.648823+00:00",
+  "generated_at": "2026-06-06T12:16:32.717292+00:00",
   "n_total": 121,
   "by_product_type_stats": {
     "Booster Box": {
       "n": 59,
-      "avg_live_price": 9760.55,
+      "avg_live_price": 9760.39,
       "avg_d30_pct": 5.16,
-      "total_universe_usd": 575873.0
+      "total_universe_usd": 575863.0
     },
     "ETB": {
       "n": 21,
@@ -16,9 +16,9 @@
     },
     "Booster Bundle": {
       "n": 13,
-      "avg_live_price": 82.06,
+      "avg_live_price": 82.91,
       "avg_d30_pct": -1.42,
-      "total_universe_usd": 1067.0
+      "total_universe_usd": 1078.0
     },
     "Premium Collection": {
       "n": 15,
@@ -34,9 +34,9 @@
     },
     "Other Sealed": {
       "n": 5,
-      "avg_live_price": 74.97,
+      "avg_live_price": 74.83,
       "avg_d30_pct": 4.8,
-      "total_universe_usd": 375.0
+      "total_universe_usd": 374.0
     }
   },
   "top_buys": [
@@ -183,14 +183,14 @@
       "set": "Pokemon Day 2026 Pikachu Box",
       "product_type": "Other Sealed",
       "pack_count": null,
-      "live_price": 7.13,
+      "live_price": 6.5,
       "wb_price": 32.0,
       "ev_per_pack": null,
       "score": 65,
       "signal": "BUY",
       "d7_pct": 1.11,
       "d30_pct": 10.0,
-      "discount_to_wb_pct": 77.7,
+      "discount_to_wb_pct": 79.7,
       "tier": "T3"
     },
     {
@@ -573,23 +573,6 @@
       "tier": "T3"
     },
     {
-      "cid": "S009",
-      "name": "Silver Tempest BB",
-      "variant": "Sealed (36 packs)",
-      "set": "Silver Tempest",
-      "product_type": "Booster Box",
-      "pack_count": 36,
-      "live_price": 502.75,
-      "wb_price": 190.0,
-      "ev_per_pack": 13.97,
-      "score": 49,
-      "signal": "HOLD",
-      "d7_pct": 0,
-      "d30_pct": 2.8,
-      "discount_to_wb_pct": -164.6,
-      "tier": "T3"
-    },
-    {
       "cid": "X229",
       "name": "Silver Tempest Booster Box",
       "variant": "Sealed",
@@ -604,6 +587,23 @@
       "d7_pct": 2.6,
       "d30_pct": 6.0,
       "discount_to_wb_pct": -164.6,
+      "tier": "T3"
+    },
+    {
+      "cid": "S009",
+      "name": "Silver Tempest BB",
+      "variant": "Sealed (36 packs)",
+      "set": "Silver Tempest",
+      "product_type": "Booster Box",
+      "pack_count": 36,
+      "live_price": 493.14,
+      "wb_price": 190.0,
+      "ev_per_pack": 13.7,
+      "score": 49,
+      "signal": "HOLD",
+      "d7_pct": 0,
+      "d30_pct": 2.8,
+      "discount_to_wb_pct": -159.5,
       "tier": "T3"
     },
     {

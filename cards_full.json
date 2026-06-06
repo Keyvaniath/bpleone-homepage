@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T13:58:28.307804Z",
+  "generated_at": "2026-06-06T12:16:34.438814Z",
   "count": 774,
   "cards": {
     "V001": {
@@ -163,6 +163,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 48608.09
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 48608.09
         }
       ],
@@ -1210,6 +1214,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 5661.79
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 5661.79
         }
       ],
       "image": "https://images.pokemontcg.io/ru1/1.png",
@@ -1288,6 +1296,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 3137.16
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 3137.16
         }
       ],
@@ -1430,6 +1442,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 5027.03
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 5027.03
         }
       ],
@@ -2172,10 +2188,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 220,
       "wb_price": 4238.6,
-      "live_price": 4238.6,
+      "live_price": 4252.28,
       "live_source": "pricecharting:psa9",
-      "target_buy": 3390.88,
-      "target_sell": 4026.67,
+      "target_buy": 3401.82,
+      "target_sell": 4039.67,
       "score": 77,
       "signal": "STRONG BUY",
       "d7_workbook": 135.48,
@@ -2224,6 +2240,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 4238.6
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 4252.28
         }
       ],
       "image": "https://images.pokemontcg.io/neo4/113.png",
@@ -2235,11 +2255,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 1576.19,
+          "ungraded": 1512.87,
           "grade_7": 1352.5,
           "grade_8": 3100.0,
-          "grade_9": 4238.6,
-          "grade_9_5": 8500.0,
+          "grade_9": 4252.28,
+          "grade_9_5": 7988.7,
           "grade_10": 17847.66
         },
         "pokeprice": null,
@@ -2387,6 +2407,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 59549.55
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 59394.78
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/4114b3e6832bf8d39641c4d9594740579609bb71f30178678739b740f7f37154/60.jpg",
@@ -2400,7 +2424,7 @@
         "pricecharting": {
           "ungraded": null,
           "grade_7": null,
-          "grade_8": 59549.55,
+          "grade_8": 59394.78,
           "grade_9": 54250.0,
           "grade_9_5": null,
           "grade_10": null
@@ -2574,6 +2598,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 58723.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 58723.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -2585,11 +2613,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 3350.0,
-          "grade_7": 8749.0,
-          "grade_8": 11291.36,
-          "grade_9": 15861.22,
-          "grade_9_5": 18099.0,
+          "ungraded": 2960.01,
+          "grade_7": 9174.5,
+          "grade_8": 11350.99,
+          "grade_9": 20429.38,
+          "grade_9_5": 22472.0,
           "grade_10": 58723.0
         },
         "pokeprice": null,
@@ -3986,6 +4014,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 197448.76
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 197448.76
         }
       ],
@@ -7878,6 +7910,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 5800.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 5800.0
         }
       ],
       "image": "https://images.pokemontcg.io/sv8pt5/161.png",
@@ -9549,6 +9585,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 2549.23
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 2549.23
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/1d53b2174ffd9baeadc62527270258c117f0a5087894ecef387ff96810e4eaa2/240.jpg",
@@ -9892,6 +9932,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 600.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 600.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/230e99e882ea1a4fad096878c14b9f78a8c6e1ba3da1ea8032db6062439bbbae/240.jpg",
@@ -9935,10 +9979,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 180.0,
-      "live_price": 385.79,
+      "live_price": 389.97,
       "live_source": "pricecharting:raw",
-      "target_buy": 308.63,
-      "target_sell": 366.5,
+      "target_buy": 311.98,
+      "target_sell": 370.47,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -9971,6 +10015,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 385.79
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 389.97
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ugsxjoig7mzehidq/240.jpg",
@@ -9982,7 +10030,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 385.79,
+          "ungraded": 389.97,
           "grade_7": null,
           "grade_8": 379.99,
           "grade_9": null,
@@ -10014,10 +10062,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 200.0,
-      "live_price": 764.5,
+      "live_price": 780.69,
       "live_source": "pricecharting:raw",
-      "target_buy": 611.6,
-      "target_sell": 726.27,
+      "target_buy": 624.55,
+      "target_sell": 741.66,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -10046,6 +10094,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 764.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 780.69
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gd6mivft4qcajxyo/240.jpg",
@@ -10057,7 +10109,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 764.5,
+          "ungraded": 780.69,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -10128,6 +10180,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 493.14
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 493.14
         }
       ],
@@ -10252,10 +10308,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 220.0,
-      "live_price": 585.36,
+      "live_price": 606.09,
       "live_source": "pricecharting:raw",
-      "target_buy": 468.29,
-      "target_sell": 556.09,
+      "target_buy": 484.87,
+      "target_sell": 575.79,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -10288,6 +10344,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 585.36
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 606.09
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/b9f018596fc96ec1af92d71d1a658b8aef0c685301af88f1e7b0839259e85f57/240.jpg",
@@ -10299,7 +10359,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 585.36,
+          "ungraded": 606.09,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -10470,10 +10530,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 165.0,
-      "live_price": null,
-      "live_source": "workbook",
-      "target_buy": 132.0,
-      "target_sell": 156.75,
+      "live_price": 376.53,
+      "live_source": "pricecharting:raw",
+      "target_buy": 301.22,
+      "target_sell": 357.7,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -10490,21 +10550,32 @@
         {
           "ts": "2026-06-01T07:29:49.893387Z",
           "p": 369.98
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 376.53
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/b83473210e750afa40327787e3e9857c0494e9c6bdc92b72e975157aabfa469b/240.jpg",
       "notes": "OF Charizard SIR chase. Surging.",
-      "confidence": "UNKNOWN",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "no_live_price"
+        "single_source"
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 376.53,
+          "grade_7": null,
+          "grade_8": null,
+          "grade_9": null,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-obsidian-flames/booster-box",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -10708,6 +10779,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 163.74
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 163.74
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c9ec00614ec0ce1f87ffe426b17815b5a0812d610a9b1361a81f2f60f3789d36/240.jpg",
@@ -10897,10 +10972,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 130.0,
-      "live_price": 347.5,
+      "live_price": 350.0,
       "live_source": "pricecharting:raw",
-      "target_buy": 278.0,
-      "target_sell": 330.12,
+      "target_buy": 280.0,
+      "target_sell": 332.5,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -10933,6 +11008,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 347.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 350.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/3a276e35f46ccd9c8600887aa08763db0853a9a75dbf2ba4ea65d1159c10d49e/240.jpg",
@@ -10944,7 +11023,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 347.5,
+          "ungraded": 350.0,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -11269,6 +11348,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 78.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 78.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/it2f4kt6owa3oucf/240.jpg",
@@ -11312,11 +11395,11 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 175.0,
-      "live_price": null,
-      "live_source": "workbook",
-      "target_buy": 140.0,
-      "target_sell": 166.25,
-      "score": 50,
+      "live_price": 321.16,
+      "live_source": "pricecharting:raw",
+      "target_buy": 256.93,
+      "target_sell": 305.1,
+      "score": 49,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": 3.26,
@@ -11332,21 +11415,32 @@
         {
           "ts": "2026-06-01T07:29:49.893387Z",
           "p": 293.96
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 321.16
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/u5xnrlbvhqoqnwaq/240.jpg",
       "notes": "Mega Evolution debut. +18%/30D. In demand.",
-      "confidence": "UNKNOWN",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "no_live_price"
+        "single_source"
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 321.16,
+          "grade_7": null,
+          "grade_8": null,
+          "grade_9": null,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-mega-evolution/booster-box",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -11483,6 +11577,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 30.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 30.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hlblvcxh472iqrwf/240.jpg",
@@ -11561,6 +11659,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 110.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 110.0
         }
       ],
@@ -11755,11 +11857,11 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 40.0,
-      "live_price": 25.19,
+      "live_price": 92.81,
       "live_source": "pricecharting:raw",
-      "target_buy": 20.15,
-      "target_sell": 23.93,
-      "score": 55,
+      "target_buy": 74.25,
+      "target_sell": 88.17,
+      "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": -0.52,
@@ -11779,6 +11881,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 25.19
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 92.81
         }
       ],
       "image": null,
@@ -11790,10 +11896,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 25.19,
+          "ungraded": 92.81,
           "grade_7": null,
-          "grade_8": null,
-          "grade_9": null,
+          "grade_8": 210.0,
+          "grade_9": 153.6,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -12947,10 +13053,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 51.76,
+          "ungraded": 276.05,
           "grade_7": null,
-          "grade_8": 47.97,
-          "grade_9": 43.1,
+          "grade_8": 244.34,
+          "grade_9": 91.5,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -13010,6 +13116,10 @@
         },
         {
           "ts": "2026-06-04T14:14:48.953916Z",
+          "p": 881.22
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 881.22
         }
       ],
@@ -13263,10 +13373,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 320,
       "wb_price": 580.0,
-      "live_price": 302.13,
+      "live_price": 302.48,
       "live_source": "pricecharting:psa9",
-      "target_buy": 241.7,
-      "target_sell": 287.02,
+      "target_buy": 241.98,
+      "target_sell": 287.36,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -13287,6 +13397,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 302.13
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 302.48
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/1.png",
@@ -13298,12 +13412,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 42.73,
+          "ungraded": 40.0,
           "grade_7": 72.0,
-          "grade_8": 134.92,
-          "grade_9": 302.13,
-          "grade_9_5": 332.0,
-          "grade_10": 5169.0
+          "grade_8": 134.15,
+          "grade_9": 302.48,
+          "grade_9_5": 333.0,
+          "grade_10": 4994.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -13608,6 +13722,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 153.09
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 153.09
         }
       ],
       "image": "https://images.pokemontcg.io/base5/3.png",
@@ -13619,7 +13737,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 50.0,
+          "ungraded": 48.08,
           "grade_7": 56.2,
           "grade_8": 79.97,
           "grade_9": 153.09,
@@ -13651,10 +13769,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 240,
       "wb_price": 850.0,
-      "live_price": 973.23,
+      "live_price": 1043.74,
       "live_source": "pricecharting:psa9",
-      "target_buy": 778.58,
-      "target_sell": 924.57,
+      "target_buy": 834.99,
+      "target_sell": 991.55,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -13675,6 +13793,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 973.23
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 1043.74
         }
       ],
       "image": "https://images.pokemontcg.io/neo3/14.png",
@@ -13686,12 +13808,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 362.24,
-          "grade_7": 470.05,
+          "ungraded": 363.54,
+          "grade_7": 469.77,
           "grade_8": 720.0,
-          "grade_9": 973.23,
-          "grade_9_5": 1710.0,
-          "grade_10": 30694.17
+          "grade_9": 1043.74,
+          "grade_9_5": 2195.0,
+          "grade_10": 31207.09
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -13869,12 +13991,12 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 950,
       "wb_price": 360.0,
-      "live_price": null,
-      "live_source": "workbook",
-      "target_buy": 288.0,
-      "target_sell": 342.0,
+      "live_price": 507.33,
+      "live_source": "pricecharting:psa10",
+      "target_buy": 405.86,
+      "target_sell": 481.96,
       "score": 60,
-      "signal": "HOLD",
+      "signal": "BUY",
       "d7_workbook": 0.0,
       "d30_workbook": 32.49,
       "history": [
@@ -13889,21 +14011,32 @@
         {
           "ts": "2026-06-01T07:29:49.893387Z",
           "p": 501.25
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 507.33
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/l3qqpmgaj3myh646/240.jpg",
       "notes": "Hidden Fates Tag Team. Eon duo.",
-      "confidence": "UNKNOWN",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "no_live_price"
+        "single_source"
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 87.1,
+          "grade_7": 44.75,
+          "grade_8": 90.0,
+          "grade_9": 123.61,
+          "grade_9_5": 136.0,
+          "grade_10": 507.33
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/game/pokemon-team-up/latias-&-latios-gx-169?q=latias+and+latios+gx+169",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -15503,11 +15636,11 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 6.0,
-      "live_price": 0.74,
-      "live_source": "tcgplayer_api",
-      "target_buy": 0.59,
-      "target_sell": 0.7,
-      "score": 59,
+      "live_price": 6.0,
+      "live_source": "wb_no_sources",
+      "target_buy": 4.8,
+      "target_sell": 5.7,
+      "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": 0.0,
@@ -15551,23 +15684,23 @@
       ],
       "image": "https://images.pokemontcg.io/swsh8/251.png",
       "notes": "Pokemon GO Mew V. Lower print.",
-      "confidence": "MEDIUM",
+      "confidence": "UNKNOWN",
       "confidence_flags": [
-        "single_source"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": null,
         "pokeprice": null,
         "ebay_recent_avg": null,
-        "tcgplayer_market": 0.74,
+        "tcgplayer_market": null,
         "pricecharting_url": null,
-        "tcgplayer_url": "https://www.tcgplayer.com/product/270541",
+        "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 0,
+      "scrape_rejected_source": "rejected_upper_pokemontcg.io_$111_vs_wb_$6"
     },
     "P027": {
       "id": "P027",
@@ -19240,10 +19373,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 3200,
       "wb_price": 280.0,
-      "live_price": 383.96,
+      "live_price": 385.0,
       "live_source": "pricecharting:psa8",
-      "target_buy": 307.17,
-      "target_sell": 364.76,
+      "target_buy": 308.0,
+      "target_sell": 365.75,
       "score": 46,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -19272,6 +19405,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 383.96
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 385.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg",
@@ -19283,11 +19420,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 73.82,
-          "grade_7": 236.17,
-          "grade_8": 383.96,
-          "grade_9": 908.5,
-          "grade_9_5": 966.31,
+          "ungraded": 80.09,
+          "grade_7": 246.75,
+          "grade_8": 385.0,
+          "grade_9": 1006.17,
+          "grade_9_5": 1107.0,
           "grade_10": 8136.07
         },
         "pokeprice": null,
@@ -19394,11 +19531,11 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 4500,
       "wb_price": 180.0,
-      "live_price": 151.25,
+      "live_price": 157.5,
       "live_source": "pricecharting:psa8",
-      "target_buy": 121.0,
-      "target_sell": 143.69,
-      "score": 49,
+      "target_buy": 126.0,
+      "target_sell": 149.62,
+      "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.0,
       "d30_workbook": 0.0,
@@ -19434,6 +19571,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 151.25
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 157.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/240.jpg",
@@ -19445,10 +19586,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 18.7,
-          "grade_7": 84.0,
-          "grade_8": 151.25,
-          "grade_9": 388.42,
+          "ungraded": 23.0,
+          "grade_7": 83.5,
+          "grade_8": 157.5,
+          "grade_9": 387.5,
           "grade_9_5": 574.89,
           "grade_10": 3620.3
         },
@@ -19553,6 +19694,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 199.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 199.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/reffd4cefcefd053936849b85677b21fcc164bf9fc82cd5e080fa91df29d49f1a83/60.jpg",
@@ -19564,10 +19709,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 148.6,
+          "ungraded": 150.0,
           "grade_7": null,
           "grade_8": 199.0,
-          "grade_9": 180.19,
+          "grade_9": 179.79,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -19746,10 +19891,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 1400,
       "wb_price": 180.0,
-      "live_price": 310.74,
+      "live_price": 324.57,
       "live_source": "pricecharting:psa8",
-      "target_buy": 248.59,
-      "target_sell": 295.2,
+      "target_buy": 259.66,
+      "target_sell": 308.34,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -19782,6 +19927,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 310.74
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 324.57
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/7d8d5ae3dee91d23c5130c69e9dfd8e2135ba5fc099bf7a1972789321d54fe3a/240.jpg",
@@ -19793,10 +19942,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 200.0,
+          "ungraded": 185.73,
           "grade_7": 269.0,
-          "grade_8": 310.74,
-          "grade_9": 520.0,
+          "grade_8": 324.57,
+          "grade_9": 532.9,
           "grade_9_5": 550.0,
           "grade_10": 875.99
         },
@@ -19864,6 +20013,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 32.8
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 32.8
         }
       ],
@@ -19939,6 +20092,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 180.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 180.0
         }
       ],
@@ -20244,6 +20401,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 7999.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 7999.0
         }
       ],
       "image": "https://images.pokemontcg.io/neo2/1.png",
@@ -20287,10 +20448,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 18.0,
-      "live_price": 870.0,
+      "live_price": 850.0,
       "live_source": "single_pc",
-      "target_buy": 696.0,
-      "target_sell": 826.5,
+      "target_buy": 680.0,
+      "target_sell": 807.5,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -20308,9 +20469,9 @@
       "reconcile_reason": "only pc source; workbook < $100 so trusting source",
       "sources": {
         "pricecharting": {
-          "ungraded": 870.0,
+          "ungraded": 850.0,
           "grade_7": null,
-          "grade_8": 820.0,
+          "grade_8": 807.5,
           "grade_9": 790.0,
           "grade_9_5": null,
           "grade_10": null
@@ -20324,7 +20485,7 @@
       },
       "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$870_vs_wb_$18"
+      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$850_vs_wb_$18"
     },
     "JB02": {
       "id": "JB02",
@@ -20340,10 +20501,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 14.0,
-      "live_price": 400.0,
+      "live_price": 884.09,
       "live_source": "single_pc",
-      "target_buy": 320.0,
-      "target_sell": 380.0,
+      "target_buy": 707.27,
+      "target_sell": 839.89,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -20361,10 +20522,10 @@
       "reconcile_reason": "only pc source; workbook < $100 so trusting source",
       "sources": {
         "pricecharting": {
-          "ungraded": 400.0,
+          "ungraded": 884.09,
           "grade_7": null,
-          "grade_8": 375.0,
-          "grade_9": 300.0,
+          "grade_8": 769.99,
+          "grade_9": 700.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -20377,7 +20538,7 @@
       },
       "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$400_vs_wb_$14"
+      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$884_vs_wb_$14"
     },
     "JB03": {
       "id": "JB03",
@@ -20436,6 +20597,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 10.35
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 10.35
         }
       ],
@@ -20524,6 +20689,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 71.75
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 71.75
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/2fu3e6vrasznpp3j/240.jpg",
@@ -20611,6 +20780,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 6.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 6.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/5b79e524aa8aa5f9e9a74de180e6869eddebdf8cfa4610c7661890e147a0b95f/240.jpg",
@@ -20654,10 +20827,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 8.0,
-      "live_price": 100.0,
+      "live_price": 94.84,
       "live_source": "single_pc",
-      "target_buy": 80.0,
-      "target_sell": 95.0,
+      "target_buy": 75.87,
+      "target_sell": 90.1,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -20675,10 +20848,10 @@
       "reconcile_reason": "only pc source; workbook < $100 so trusting source",
       "sources": {
         "pricecharting": {
-          "ungraded": 100.0,
+          "ungraded": 94.84,
           "grade_7": null,
-          "grade_8": 60.96,
-          "grade_9": 49.0,
+          "grade_8": 69.9,
+          "grade_9": 56.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -20691,7 +20864,7 @@
       },
       "reconcile_confidence": "MEDIUM",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$100_vs_wb_$8"
+      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$95_vs_wb_$8"
     },
     "JB07": {
       "id": "JB07",
@@ -21187,10 +21360,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 22.0,
-      "live_price": 2.52,
+      "live_price": 2.35,
       "live_source": "pricecharting:raw",
-      "target_buy": 2.02,
-      "target_sell": 2.39,
+      "target_buy": 1.88,
+      "target_sell": 2.23,
       "score": 59,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -21231,6 +21404,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 2.52
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 2.35
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c3qo5ca6kugjskya/60.jpg",
@@ -21242,9 +21419,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 2.52,
+          "ungraded": 2.35,
           "grade_7": null,
-          "grade_8": 12.64,
+          "grade_8": 12.62,
           "grade_9": 8.47,
           "grade_9_5": null,
           "grade_10": null
@@ -21274,10 +21451,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": null,
       "wb_price": 45.0,
-      "live_price": 45.0,
+      "live_price": 50.0,
       "live_source": "pricecharting:raw",
-      "target_buy": 36.0,
-      "target_sell": 42.75,
+      "target_buy": 40.0,
+      "target_sell": 47.5,
       "score": 47,
       "signal": "HOLD",
       "d7_workbook": 0.0,
@@ -21298,6 +21475,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 45.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 50.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg",
@@ -21309,9 +21490,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 45.0,
+          "ungraded": 50.0,
           "grade_7": null,
-          "grade_8": 48.0,
+          "grade_8": 47.75,
           "grade_9": 33.0,
           "grade_9_5": null,
           "grade_10": null
@@ -21675,6 +21856,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 60.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 60.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/alaqmjyp3dxtyhzi/240.jpg",
@@ -21750,6 +21935,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 56.23
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 56.23
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/kl2i7msts33pdwbh/240.jpg",
@@ -21820,6 +22009,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 52.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 52.0
         }
       ],
@@ -21930,8 +22123,8 @@
         "pricecharting": {
           "ungraded": 265.0,
           "grade_7": null,
-          "grade_8": 1350.0,
-          "grade_9": 801.9,
+          "grade_8": 1441.22,
+          "grade_9": 800.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -22204,6 +22397,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 6.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 6.5
         }
       ],
@@ -24787,10 +24984,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 38.0,
-      "live_price": 40.95,
+      "live_price": 43.72,
       "live_source": "pricecharting:raw",
-      "target_buy": 32.76,
-      "target_sell": 38.9,
+      "target_buy": 34.98,
+      "target_sell": 41.53,
       "score": 53,
       "signal": "HOLD",
       "d7_workbook": 1.77,
@@ -24831,6 +25028,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 40.95
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 43.72
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/4b5fnjqg6t2vt5ew/240.jpg",
@@ -24842,7 +25043,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 40.95,
+          "ungraded": 43.72,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -25001,10 +25202,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 18.0,
-      "live_price": 315.19,
-      "live_source": "single_pc",
-      "target_buy": 252.15,
-      "target_sell": 299.43,
+      "live_price": 24.87,
+      "live_source": "pricecharting:raw",
+      "target_buy": 19.9,
+      "target_sell": 23.63,
       "score": 55,
       "signal": "HOLD",
       "d7_workbook": 3.87,
@@ -25013,16 +25214,22 @@
         {
           "ts": "2026-05-16T20:51:34.239708Z",
           "p": 240.43
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 24.87
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/rgsh346vh3ul2h76/60.jpg",
       "notes": "PF mini tin.",
       "confidence": "MEDIUM",
-      "confidence_flags": [],
-      "reconcile_reason": "only pc source; workbook < $100 so trusting source",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 315.19,
+          "ungraded": 24.87,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -25036,9 +25243,9 @@
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "MEDIUM",
-      "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$315_vs_wb_$18"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "X146": {
       "id": "X146",
@@ -25216,10 +25423,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 25.0,
-      "live_price": 315.19,
-      "live_source": "single_pc",
-      "target_buy": 252.15,
-      "target_sell": 299.43,
+      "live_price": 24.87,
+      "live_source": "pricecharting:raw",
+      "target_buy": 19.9,
+      "target_sell": 23.63,
       "score": 52,
       "signal": "HOLD",
       "d7_workbook": 0.52,
@@ -25232,16 +25439,22 @@
         {
           "ts": "2026-05-16T20:51:34.239708Z",
           "p": 240.43
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 24.87
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/rgsh346vh3ul2h76/60.jpg",
       "notes": "SF mini tin.",
       "confidence": "MEDIUM",
-      "confidence_flags": [],
-      "reconcile_reason": "only pc source; workbook < $100 so trusting source",
+      "confidence_flags": [
+        "single_source"
+      ],
+      "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 315.19,
+          "ungraded": 24.87,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -25255,9 +25468,9 @@
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": "MEDIUM",
-      "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_upper_pricecharting:raw_$315_vs_wb_$25"
+      "reconcile_confidence": null,
+      "scrape_rejected_value": null,
+      "scrape_rejected_source": null
     },
     "X150": {
       "id": "X150",
@@ -25316,6 +25529,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 6.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 6.5
         }
       ],
@@ -26096,10 +26313,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 4500,
       "wb_price": 80.0,
-      "live_price": 84.0,
+      "live_price": 83.5,
       "live_source": "pricecharting:psa7",
-      "target_buy": 67.2,
-      "target_sell": 79.8,
+      "target_buy": 66.8,
+      "target_sell": 79.33,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 1.86,
@@ -26140,6 +26357,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 84.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 83.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/240.jpg",
@@ -26151,10 +26372,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 18.7,
-          "grade_7": 84.0,
-          "grade_8": 151.25,
-          "grade_9": 388.42,
+          "ungraded": 23.0,
+          "grade_7": 83.5,
+          "grade_8": 157.5,
+          "grade_9": 387.5,
           "grade_9_5": 574.89,
           "grade_10": 3620.3
         },
@@ -26250,10 +26471,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 2800,
       "wb_price": 130.0,
-      "live_price": 236.17,
+      "live_price": 246.75,
       "live_source": "pricecharting:psa7",
-      "target_buy": 188.94,
-      "target_sell": 224.36,
+      "target_buy": 197.4,
+      "target_sell": 234.41,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 2.3,
@@ -26282,6 +26503,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 236.17
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 246.75
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg",
@@ -26293,11 +26518,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 73.82,
-          "grade_7": 236.17,
-          "grade_8": 383.96,
-          "grade_9": 908.5,
-          "grade_9_5": 966.31,
+          "ungraded": 80.09,
+          "grade_7": 246.75,
+          "grade_8": 385.0,
+          "grade_9": 1006.17,
+          "grade_9_5": 1107.0,
           "grade_10": 8136.07
         },
         "pokeprice": null,
@@ -26444,6 +26669,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 126.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 126.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c377255c9193086af0d715d279d4fda50021ddd332977ac5974dd5bd004e695c/240.jpg",
@@ -26487,10 +26716,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 3100,
       "wb_price": 70.0,
-      "live_price": 73.5,
+      "live_price": 77.8,
       "live_source": "pricecharting:psa8",
-      "target_buy": 58.8,
-      "target_sell": 69.83,
+      "target_buy": 62.24,
+      "target_sell": 73.91,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.84,
@@ -26523,6 +26752,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 73.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 77.8
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/va2mjhk5v2rtxxe3/240.jpg",
@@ -26534,11 +26767,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 16.89,
-          "grade_7": 50.0,
-          "grade_8": 73.5,
-          "grade_9": 363.0,
-          "grade_9_5": 399.0,
+          "ungraded": 14.75,
+          "grade_7": 51.38,
+          "grade_8": 77.8,
+          "grade_9": 363.21,
+          "grade_9_5": 400.0,
           "grade_10": 6082.19
         },
         "pokeprice": null,
@@ -26566,10 +26799,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 2800,
       "wb_price": 65.0,
-      "live_price": 69.94,
+      "live_price": 69.88,
       "live_source": "pricecharting:psa8",
-      "target_buy": 55.95,
-      "target_sell": 66.44,
+      "target_buy": 55.9,
+      "target_sell": 66.39,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 1.48,
@@ -26598,6 +26831,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 69.94
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 69.88
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/47d59467ece3bf922c56e3d649493160dd86c45252e7895a78693de79d34b72d/240.jpg",
@@ -26609,11 +26846,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 11.0,
-          "grade_7": 41.87,
-          "grade_8": 69.94,
-          "grade_9": 254.19,
-          "grade_9_5": 280.0,
+          "ungraded": 12.5,
+          "grade_7": 41.2,
+          "grade_8": 69.88,
+          "grade_9": 251.68,
+          "grade_9_5": 277.0,
           "grade_10": 4569.0
         },
         "pokeprice": null,
@@ -26716,10 +26953,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 2500,
       "wb_price": 60.0,
-      "live_price": 74.68,
+      "live_price": 71.0,
       "live_source": "pricecharting:psa8",
-      "target_buy": 59.74,
-      "target_sell": 70.95,
+      "target_buy": 56.8,
+      "target_sell": 67.45,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 0.64,
@@ -26752,6 +26989,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 74.68
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 71.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/e31d05739c6a5449f22f91f25332c068c07a768deac903c6df7f70988f42df7b/240.jpg",
@@ -26763,11 +27004,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 9.77,
-          "grade_7": 40.78,
-          "grade_8": 74.68,
-          "grade_9": 160.75,
-          "grade_9_5": 177.0,
+          "ungraded": 10.25,
+          "grade_7": 40.5,
+          "grade_8": 71.0,
+          "grade_9": 169.0,
+          "grade_9_5": 186.0,
           "grade_10": 1900.0
         },
         "pokeprice": null,
@@ -27044,6 +27285,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 83.62
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 83.62
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ywmwry3xp24ylmc4/240.jpg",
@@ -27276,6 +27521,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 89.99
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 89.99
         }
       ],
@@ -28704,6 +28953,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 600.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 600.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/230e99e882ea1a4fad096878c14b9f78a8c6e1ba3da1ea8032db6062439bbbae/240.jpg",
@@ -28747,10 +29000,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 200.0,
-      "live_price": 764.5,
+      "live_price": 780.69,
       "live_source": "pricecharting:raw",
-      "target_buy": 611.6,
-      "target_sell": 726.27,
+      "target_buy": 624.55,
+      "target_sell": 741.66,
       "score": 52,
       "signal": "HOLD",
       "d7_workbook": 1.61,
@@ -28787,6 +29040,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 764.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 780.69
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gd6mivft4qcajxyo/240.jpg",
@@ -28798,7 +29055,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 764.5,
+          "ungraded": 780.69,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -28830,10 +29087,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 190.0,
-      "live_price": 502.75,
+      "live_price": 493.14,
       "live_source": "pricecharting:raw",
-      "target_buy": 402.2,
-      "target_sell": 477.61,
+      "target_buy": 394.51,
+      "target_sell": 468.48,
       "score": 52,
       "signal": "HOLD",
       "d7_workbook": 2.6,
@@ -28858,6 +29115,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 502.75
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 493.14
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c1cd5f96c2f1776e6e5e8f549ffd3d066aff2439eac8fc4fdfc022abc27d6971/240.jpg",
@@ -28869,7 +29130,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 502.75,
+          "ungraded": 493.14,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -28901,10 +29162,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 180.0,
-      "live_price": 385.79,
+      "live_price": 389.97,
       "live_source": "pricecharting:raw",
-      "target_buy": 308.63,
-      "target_sell": 366.5,
+      "target_buy": 311.98,
+      "target_sell": 370.47,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": -0.16,
@@ -28937,6 +29198,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 385.79
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 389.97
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ugsxjoig7mzehidq/240.jpg",
@@ -28948,7 +29213,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 385.79,
+          "ungraded": 389.97,
           "grade_7": null,
           "grade_8": 379.99,
           "grade_9": null,
@@ -28980,10 +29245,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 4500,
       "wb_price": 1800.0,
-      "live_price": 3038.72,
+      "live_price": 3135.91,
       "live_source": "pricecharting:psa9",
-      "target_buy": 2430.98,
-      "target_sell": 2886.78,
+      "target_buy": 2508.73,
+      "target_sell": 2979.11,
       "score": 49,
       "signal": "HOLD",
       "d7_workbook": 1.39,
@@ -29028,6 +29293,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 3038.72
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 3135.91
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hpgpcpsd42huitud/240.jpg",
@@ -29039,10 +29308,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 385.25,
-          "grade_7": 710.0,
-          "grade_8": 1008.0,
-          "grade_9": 3038.72,
+          "ungraded": 339.04,
+          "grade_7": 740.27,
+          "grade_8": 1255.43,
+          "grade_9": 3135.91,
           "grade_9_5": 4051.0,
           "grade_10": 30085.73
         },
@@ -29146,10 +29415,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 950,
       "wb_price": 607.36,
-      "live_price": 607.36,
+      "live_price": 612.67,
       "live_source": "pricecharting:psa9",
-      "target_buy": 485.89,
-      "target_sell": 576.99,
+      "target_buy": 490.14,
+      "target_sell": 582.04,
       "score": 75,
       "signal": "STRONG BUY",
       "d7_workbook": 180.96,
@@ -29178,6 +29447,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 607.36
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 612.67
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/bz35k24srfg6jbvn/240.jpg",
@@ -29189,11 +29462,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 91.33,
+          "ungraded": 87.9,
           "grade_7": 183.5,
-          "grade_8": 328.48,
-          "grade_9": 607.36,
-          "grade_9_5": 668.0,
+          "grade_8": 304.63,
+          "grade_9": 612.67,
+          "grade_9_5": 674.0,
           "grade_10": 4558.93
         },
         "pokeprice": null,
@@ -29482,6 +29755,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 84.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 84.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/0374cd52bb22be6591b9807241107c22c6f72b2f071869c6e6342a156be99e10/60.jpg",
@@ -29541,14 +29818,14 @@
         "workbook_fallback",
         "source_rejected"
       ],
-      "reconcile_reason": "pc returned $12 but workbook is $220 (0.1x) \u2014 outside 0.15-8.0 band, using workbook",
+      "reconcile_reason": "pc returned $13 but workbook is $220 (0.1x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
           "ungraded": 1.79,
           "grade_7": null,
           "grade_8": 11.13,
-          "grade_9": 12.15,
-          "grade_9_5": 13.0,
+          "grade_9": 13.4,
+          "grade_9_5": 15.0,
           "grade_10": 24.69
         },
         "pokeprice": null,
@@ -29560,7 +29837,7 @@
       },
       "reconcile_confidence": "UNKNOWN",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_sanity_pricecharting:psa9_$12_vs_wb_$220"
+      "scrape_rejected_source": "rejected_sanity_pricecharting:psa9_$13_vs_wb_$220"
     },
     "X239": {
       "id": "X239",
@@ -29670,6 +29947,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 38.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 38.0
         }
       ],
@@ -29782,12 +30063,12 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 280,
       "wb_price": 180.0,
-      "live_price": null,
-      "live_source": "workbook",
-      "target_buy": 144.0,
-      "target_sell": 171.0,
-      "score": 52,
-      "signal": "HOLD",
+      "live_price": 85.0,
+      "live_source": "pricecharting:psa8",
+      "target_buy": 68.0,
+      "target_sell": 80.75,
+      "score": 63,
+      "signal": "BUY",
       "d7_workbook": 1.93,
       "d30_workbook": 4.0,
       "history": [
@@ -29802,21 +30083,32 @@
         {
           "ts": "2026-06-01T07:29:49.893387Z",
           "p": 84.41
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 85.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/dqv56jtl6eron3m4/60.jpg",
       "notes": "Crystal Kingdra. Niche cult.",
-      "confidence": "UNKNOWN",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "no_live_price"
+        "single_source"
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 97.0,
+          "grade_7": null,
+          "grade_8": 85.0,
+          "grade_9": 58.0,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=crystal+kingdra",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -30606,6 +30898,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 650.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 650.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/sn4ime7o52fbj6th/60.jpg",
@@ -30649,11 +30945,11 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 380.0,
-      "live_price": 231.81,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 185.45,
-      "target_sell": 220.22,
-      "score": 60,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
+      "score": 61,
       "signal": "BUY",
       "d7_workbook": 2.75,
       "d30_workbook": 6.0,
@@ -30681,6 +30977,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 231.81
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg",
@@ -30692,7 +30992,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 231.81,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -30968,12 +31268,12 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 360.0,
-      "live_price": 221.55,
+      "live_price": 278.43,
       "live_source": "pricecharting:raw",
-      "target_buy": 177.24,
-      "target_sell": 210.47,
-      "score": 61,
-      "signal": "BUY",
+      "target_buy": 222.74,
+      "target_sell": 264.51,
+      "score": 58,
+      "signal": "HOLD",
       "d7_workbook": 1.48,
       "d30_workbook": 10.0,
       "history": [
@@ -30992,6 +31292,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 221.55
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 278.43
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg",
@@ -31003,7 +31307,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 221.55,
+          "ungraded": 278.43,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -31059,6 +31363,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 4903.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 4907.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ym4hvnapxhl5iuny/240.jpg",
@@ -31070,11 +31378,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 972.69,
-          "grade_7": 2978.64,
-          "grade_8": 4903.5,
+          "ungraded": 807.08,
+          "grade_7": 3079.97,
+          "grade_8": 4907.5,
           "grade_9": 9402.0,
-          "grade_9_5": 10701.25,
+          "grade_9_5": 11261.5,
           "grade_10": 30100.0
         },
         "pokeprice": null,
@@ -31130,6 +31438,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 1074.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 1127.35
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/0f6ceabe0130339374548abe87c18eb15bdb5b5b4dd3fb3fce8f3b72798ea32a/240.jpg",
@@ -31141,9 +31453,9 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 234.67,
-          "grade_7": 667.46,
-          "grade_8": 1074.5,
+          "ungraded": 239.06,
+          "grade_7": 672.29,
+          "grade_8": 1127.35,
           "grade_9": 2550.64,
           "grade_9_5": 2806.0,
           "grade_10": 20250.0
@@ -31261,6 +31573,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 404.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 404.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/2f37c729f4ae91cb0c9013f9549d8a53096e707be680dcc9b4a3d99c89e60836/240.jpg",
@@ -31272,12 +31588,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 250.92,
-          "grade_7": 315.0,
+          "ungraded": 272.29,
+          "grade_7": 310.5,
           "grade_8": 404.5,
-          "grade_9": 719.38,
-          "grade_9_5": 791.0,
-          "grade_10": 11153.77
+          "grade_9": 718.44,
+          "grade_9_5": 790.0,
+          "grade_10": 11119.67
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -31482,6 +31798,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 1205.88
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 1205.01
         }
       ],
       "image": "https://images.pokemontcg.io/neo3/66.png",
@@ -31493,12 +31813,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 375.49,
+          "ungraded": 368.35,
           "grade_7": 733.06,
-          "grade_8": 752.95,
-          "grade_9": 1205.88,
+          "grade_8": 784.49,
+          "grade_9": 1205.01,
           "grade_9_5": 1664.0,
-          "grade_10": 3256.25
+          "grade_10": 3253.13
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -31592,8 +31912,8 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 110,
       "wb_price": 380.0,
-      "live_price": null,
-      "live_source": "workbook",
+      "live_price": 380.0,
+      "live_source": "wb_no_sources",
       "target_buy": 304.0,
       "target_sell": 361.0,
       "score": 54,
@@ -31614,21 +31934,28 @@
       "notes": "Crystal Char PSA 7 entry.",
       "confidence": "UNKNOWN",
       "confidence_flags": [
-        "no_live_price"
+        "workbook_fallback"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "no live source available; using workbook",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 50.0,
+          "grade_7": null,
+          "grade_8": 47.75,
+          "grade_9": 33.0,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=crystal+charizard+146",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 0,
+      "scrape_rejected_source": "rejected_sanity_pricecharting:fallback_grade_8_$48_vs_wb_$380"
     },
     "X401": {
       "id": "X401",
@@ -31877,10 +32204,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 4500,
       "wb_price": 3038.72,
-      "live_price": 3038.72,
+      "live_price": 3135.91,
       "live_source": "pricecharting:psa9",
-      "target_buy": 2430.98,
-      "target_sell": 2886.78,
+      "target_buy": 2508.73,
+      "target_sell": 2979.11,
       "score": 73,
       "signal": "BUY",
       "d7_workbook": 251.57,
@@ -31913,6 +32240,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 3038.72
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 3135.91
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hpgpcpsd42huitud/240.jpg",
@@ -31924,10 +32255,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 385.25,
-          "grade_7": 710.0,
-          "grade_8": 1008.0,
-          "grade_9": 3038.72,
+          "ungraded": 339.04,
+          "grade_7": 740.27,
+          "grade_8": 1255.43,
+          "grade_9": 3135.91,
           "grade_9_5": 4051.0,
           "grade_10": 30085.73
         },
@@ -31992,6 +32323,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 4903.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 4907.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ym4hvnapxhl5iuny/240.jpg",
@@ -32003,11 +32338,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 972.69,
-          "grade_7": 2978.64,
-          "grade_8": 4903.5,
+          "ungraded": 807.08,
+          "grade_7": 3079.97,
+          "grade_8": 4907.5,
           "grade_9": 9402.0,
-          "grade_9_5": 10701.25,
+          "grade_9_5": 11261.5,
           "grade_10": 30100.0
         },
         "pokeprice": null,
@@ -32184,7 +32519,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 5564.22,
+          "ungraded": 5560.93,
           "grade_7": 16438.49,
           "grade_8": 25693.98,
           "grade_9": 28263.0,
@@ -32349,6 +32684,10 @@
         },
         {
           "ts": "2026-06-04T14:14:48.953916Z",
+          "p": 52.18
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 52.18
         }
       ],
@@ -32654,6 +32993,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 1200.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 1200.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/o4gjgwo6iu7jvzly/60.jpg",
@@ -32697,10 +33040,10 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 850.0,
-      "live_price": 240.0,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 192.0,
-      "target_sell": 228.0,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 65,
       "signal": "BUY",
       "d7_workbook": 3.02,
@@ -32721,6 +33064,10 @@
         {
           "ts": "2026-06-02T15:10:17.676183Z",
           "p": 240.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/rg66owsenjkqfblu/60.jpg",
@@ -32732,7 +33079,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 240.0,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -33356,6 +33703,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 62508.04
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 62508.04
         }
       ],
@@ -34064,6 +34415,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 197448.76
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 197448.76
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg",
@@ -34297,6 +34652,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 413902.86
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 413902.86
         }
       ],
@@ -34671,33 +35030,44 @@
       "category": "Sealed Modern",
       "pop_psa10": null,
       "wb_price": 1200.0,
-      "live_price": null,
-      "live_source": "workbook",
-      "target_buy": 960.0,
-      "target_sell": 1140.0,
-      "score": 52,
-      "signal": "HOLD",
+      "live_price": 278.43,
+      "live_source": "pricecharting:raw",
+      "target_buy": 222.74,
+      "target_sell": 264.51,
+      "score": 63,
+      "signal": "BUY",
       "d7_workbook": 1.69,
       "d30_workbook": 5.0,
       "history": [
         {
           "ts": "2026-06-01T07:29:49.893387Z",
           "p": 213.51
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 278.43
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg",
       "notes": "HF Premium.",
-      "confidence": "UNKNOWN",
+      "confidence": "MEDIUM",
       "confidence_flags": [
-        "no_live_price"
+        "single_source"
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 278.43,
+          "grade_7": null,
+          "grade_8": null,
+          "grade_9": null,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=premium+collection",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -35033,6 +35403,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 39995.95
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 39995.95
         }
       ],
@@ -36489,6 +36863,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 925.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 925.0
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H30.png",
@@ -36875,6 +37253,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 3256.25
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 3253.13
         }
       ],
       "image": "https://images.pokemontcg.io/neo3/66.png",
@@ -36886,12 +37268,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 375.49,
+          "ungraded": 368.35,
           "grade_7": 733.06,
-          "grade_8": 752.95,
-          "grade_9": 1205.88,
+          "grade_8": 784.49,
+          "grade_9": 1205.01,
           "grade_9_5": 1664.0,
-          "grade_10": 3256.25
+          "grade_10": 3253.13
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -37901,6 +38283,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 531.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 512.0
         }
       ],
       "image": "https://images.pokemontcg.io/gym2/2.png",
@@ -37912,10 +38298,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 303.75,
+          "ungraded": 350.0,
           "grade_7": null,
-          "grade_8": 800.0,
-          "grade_9": 531.0,
+          "grade_8": 850.0,
+          "grade_9": 512.0,
           "grade_9_5": null,
           "grade_10": null
         },
@@ -38148,9 +38534,9 @@
       "reconcile_reason": "pc returned $33 but workbook is $5500 (0.0x) \u2014 outside 0.15-8.0 band, using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 45.0,
+          "ungraded": 50.0,
           "grade_7": null,
-          "grade_8": 48.0,
+          "grade_8": 47.75,
           "grade_9": 33.0,
           "grade_9_5": null,
           "grade_10": null
@@ -39575,10 +39961,10 @@
       "category": "Modern Chase PSA 10",
       "pop_psa10": 925,
       "wb_price": 175.0,
-      "live_price": 132.99,
+      "live_price": 136.75,
       "live_source": "pricecharting:psa10",
-      "target_buy": 106.39,
-      "target_sell": 126.34,
+      "target_buy": 109.4,
+      "target_sell": 129.91,
       "score": 56,
       "signal": "HOLD",
       "d7_workbook": 3.43,
@@ -39611,6 +39997,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 132.99
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 136.75
         }
       ],
       "image": "https://images.pokemontcg.io/rsv10pt5/169.png",
@@ -39622,12 +40012,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 32.23,
+          "ungraded": 35.2,
           "grade_7": 24.0,
           "grade_8": 29.58,
-          "grade_9": 43.23,
-          "grade_9_5": 44.9,
-          "grade_10": 132.99
+          "grade_9": 46.64,
+          "grade_9_5": 51.0,
+          "grade_10": 136.75
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -40756,6 +41146,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 197448.76
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 197448.76
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/ddavdw7k2rcj5c57/240.jpg",
@@ -41262,7 +41656,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 75.0,
+          "ungraded": 70.0,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -41317,7 +41711,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 75.0,
+          "ungraded": 70.0,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -41372,7 +41766,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 75.0,
+          "ungraded": 70.0,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -41426,11 +41820,18 @@
       ],
       "reconcile_reason": "",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 70.0,
+          "grade_7": null,
+          "grade_8": null,
+          "grade_9": null,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=sealed+booster+box+unlimited",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
@@ -41511,10 +41912,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 950.0,
-      "live_price": 235.87,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 188.7,
-      "target_sell": 224.08,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 67,
       "signal": "BUY",
       "d7_workbook": 1.42,
@@ -41555,6 +41956,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 235.87
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -41566,7 +41971,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 235.87,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -41629,6 +42034,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 170.63
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 170.63
         }
       ],
@@ -42036,11 +42445,11 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 175.0,
-      "live_price": 165.63,
+      "live_price": 170.63,
       "live_source": "pricecharting:raw",
-      "target_buy": 132.5,
-      "target_sell": 157.35,
-      "score": 55,
+      "target_buy": 136.5,
+      "target_sell": 162.1,
+      "score": 54,
       "signal": "HOLD",
       "d7_workbook": 1.73,
       "d30_workbook": 4.0,
@@ -42060,6 +42469,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 165.63
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 170.63
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/gu5hkgduou6ijmqi/60.jpg",
@@ -42071,7 +42484,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 165.63,
+          "ungraded": 170.63,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -42134,6 +42547,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 170.63
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 170.63
         }
       ],
@@ -43519,10 +43936,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 2850,
       "wb_price": 908.5,
-      "live_price": 908.5,
+      "live_price": 1006.17,
       "live_source": "pricecharting:psa9",
-      "target_buy": 726.8,
-      "target_sell": 863.07,
+      "target_buy": 804.94,
+      "target_sell": 955.86,
       "score": 73,
       "signal": "BUY",
       "d7_workbook": 224.91,
@@ -43551,6 +43968,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 908.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 1006.17
         }
       ],
       "image": "https://images.pokemontcg.io/bw8/137.png",
@@ -43562,11 +43983,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 73.82,
-          "grade_7": 236.17,
-          "grade_8": 383.96,
-          "grade_9": 908.5,
-          "grade_9_5": 966.31,
+          "ungraded": 80.09,
+          "grade_7": 246.75,
+          "grade_8": 385.0,
+          "grade_9": 1006.17,
+          "grade_9_5": 1107.0,
           "grade_10": 8136.07
         },
         "pokeprice": null,
@@ -43626,6 +44047,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 577.04
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 577.04
         }
       ],
       "image": "https://images.pokemontcg.io/ru1/1.png",
@@ -43637,12 +44062,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 65.0,
-          "grade_7": 182.5,
-          "grade_8": 270.0,
+          "ungraded": 60.0,
+          "grade_7": 183.75,
+          "grade_8": 270.91,
           "grade_9": 577.04,
-          "grade_9_5": 881.57,
-          "grade_10": 3042.06
+          "grade_9_5": 869.45,
+          "grade_10": 3300.0
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -43669,10 +44094,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 1850,
       "wb_price": 1850.0,
-      "live_price": 3038.72,
+      "live_price": 3135.91,
       "live_source": "pricecharting:psa9",
-      "target_buy": 2430.98,
-      "target_sell": 2886.78,
+      "target_buy": 2508.73,
+      "target_sell": 2979.11,
       "score": 50,
       "signal": "HOLD",
       "d7_workbook": 0.97,
@@ -43729,6 +44154,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 3038.72
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 3135.91
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -43740,10 +44169,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 385.25,
-          "grade_7": 710.0,
-          "grade_8": 1008.0,
-          "grade_9": 3038.72,
+          "ungraded": 339.04,
+          "grade_7": 740.27,
+          "grade_8": 1255.43,
+          "grade_9": 3135.91,
           "grade_9_5": 4051.0,
           "grade_10": 30085.73
         },
@@ -43772,10 +44201,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 5450,
       "wb_price": 1061.89,
-      "live_price": 1008.0,
+      "live_price": 1255.43,
       "live_source": "pricecharting:psa8",
-      "target_buy": 806.4,
-      "target_sell": 957.6,
+      "target_buy": 1004.34,
+      "target_sell": 1192.66,
       "score": 73,
       "signal": "BUY",
       "d7_workbook": 104.43,
@@ -43800,6 +44229,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 1008.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 1255.43
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/146.png",
@@ -43811,10 +44244,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 385.25,
-          "grade_7": 710.0,
-          "grade_8": 1008.0,
-          "grade_9": 3038.72,
+          "ungraded": 339.04,
+          "grade_7": 740.27,
+          "grade_8": 1255.43,
+          "grade_9": 3135.91,
           "grade_9_5": 4051.0,
           "grade_10": 30085.73
         },
@@ -43843,10 +44276,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 3450,
       "wb_price": 195.0,
-      "live_price": 388.42,
+      "live_price": 387.5,
       "live_source": "pricecharting:psa9",
-      "target_buy": 310.74,
-      "target_sell": 369.0,
+      "target_buy": 310.0,
+      "target_sell": 368.12,
       "score": 48,
       "signal": "HOLD",
       "d7_workbook": 1.19,
@@ -43879,6 +44312,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 388.42
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 387.5
         }
       ],
       "image": "https://images.pokemontcg.io/base6/29.png",
@@ -43890,10 +44327,10 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 18.7,
-          "grade_7": 84.0,
-          "grade_8": 151.25,
-          "grade_9": 388.42,
+          "ungraded": 23.0,
+          "grade_7": 83.5,
+          "grade_8": 157.5,
+          "grade_9": 387.5,
           "grade_9_5": 574.89,
           "grade_10": 3620.3
         },
@@ -44029,6 +44466,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 243.73
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 243.73
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H10.png",
@@ -44103,6 +44544,10 @@
         },
         {
           "ts": "2026-06-05T13:58:25.334791Z",
+          "p": 188.01
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 188.01
         }
       ],
@@ -44250,6 +44695,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 281.83
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 292.5
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H3.png",
@@ -44261,12 +44710,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 23.33,
-          "grade_7": 69.08,
+          "ungraded": 23.91,
+          "grade_7": 69.02,
           "grade_8": 97.0,
-          "grade_9": 281.83,
-          "grade_9_5": 310.0,
-          "grade_10": 3175.26
+          "grade_9": 292.5,
+          "grade_9_5": 322.0,
+          "grade_10": 3149.35
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -44329,6 +44778,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 214.44
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 215.5
         }
       ],
       "image": "https://images.pokemontcg.io/ecard3/H20.png",
@@ -44340,12 +44793,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 29.99,
-          "grade_7": 63.11,
+          "ungraded": 27.49,
+          "grade_7": 63.29,
           "grade_8": 90.0,
-          "grade_9": 214.44,
-          "grade_9_5": 236.0,
-          "grade_10": 715.41
+          "grade_9": 215.5,
+          "grade_9_5": 237.0,
+          "grade_10": 755.51
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -44510,6 +44963,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 8136.07
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 8136.07
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/fduultrrfpaofkxz/240.jpg",
@@ -44521,11 +44978,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 73.82,
-          "grade_7": 236.17,
-          "grade_8": 383.96,
-          "grade_9": 908.5,
-          "grade_9_5": 966.31,
+          "ungraded": 80.09,
+          "grade_7": 246.75,
+          "grade_8": 385.0,
+          "grade_9": 1006.17,
+          "grade_9_5": 1107.0,
           "grade_10": 8136.07
         },
         "pokeprice": null,
@@ -44705,6 +45162,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 2326.5
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 2326.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/c377255c9193086af0d715d279d4fda50021ddd332977ac5974dd5bd004e695c/240.jpg",
@@ -44775,6 +45236,10 @@
         },
         {
           "ts": "2026-06-04T19:45:08.121347Z",
+          "p": 2072.73
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
           "p": 2072.73
         }
       ],
@@ -45033,6 +45498,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 58723.0
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 58723.0
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/67ae70399e65038aeb665991d9e1fc289c5304aebc69eaf1c071ec5b1ec293bc/240.jpg",
@@ -45044,11 +45513,11 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 3350.0,
-          "grade_7": 8749.0,
-          "grade_8": 11291.36,
-          "grade_9": 15861.22,
-          "grade_9_5": 18099.0,
+          "ungraded": 2960.01,
+          "grade_7": 9174.5,
+          "grade_8": 11350.99,
+          "grade_9": 20429.38,
+          "grade_9_5": 22472.0,
           "grade_10": 58723.0
         },
         "pokeprice": null,
@@ -45486,12 +45955,12 @@
       "reconcile_reason": "no live source available; using workbook",
       "sources": {
         "pricecharting": {
-          "ungraded": 26.74,
+          "ungraded": 29.79,
           "grade_7": 69.0,
           "grade_8": 99.99,
           "grade_9": 510.0,
           "grade_9_5": 561.0,
-          "grade_10": 8502.73
+          "grade_10": 8469.22
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -45502,7 +45971,7 @@
       },
       "reconcile_confidence": "UNKNOWN",
       "scrape_rejected_value": 0,
-      "scrape_rejected_source": "rejected_upper_pricecharting:psa10_$8503_vs_wb_$425"
+      "scrape_rejected_source": "rejected_upper_pricecharting:psa10_$8469_vs_wb_$425"
     },
     "Z124": {
       "id": "Z124",
@@ -46275,10 +46744,10 @@
       "category": "Vintage Graded Singles",
       "pop_psa10": 385,
       "wb_price": 850.0,
-      "live_price": 778.71,
+      "live_price": 780.5,
       "live_source": "pricecharting:psa10",
-      "target_buy": 622.97,
-      "target_sell": 739.77,
+      "target_buy": 624.4,
+      "target_sell": 741.47,
       "score": 57,
       "signal": "HOLD",
       "d7_workbook": 2.26,
@@ -46303,6 +46772,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 778.71
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 780.5
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/j52dfruk7n6wtetx/240.jpg",
@@ -46314,12 +46787,12 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 97.06,
+          "ungraded": 105.66,
           "grade_7": 110.93,
           "grade_8": 130.73,
-          "grade_9": 177.62,
+          "grade_9": 174.56,
           "grade_9_5": 325.08,
-          "grade_10": 778.71
+          "grade_10": 780.5
         },
         "pokeprice": null,
         "ebay_recent_avg": null,
@@ -48776,6 +49249,10 @@
         {
           "ts": "2026-06-05T13:58:25.334791Z",
           "p": 278.43
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 278.43
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/hsb7v5ax367mu5ik/60.jpg",
@@ -48959,10 +49436,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 850.0,
-      "live_price": 235.87,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 188.7,
-      "target_sell": 224.08,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 68,
       "signal": "BUY",
       "d7_workbook": 2.76,
@@ -48991,6 +49468,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 235.87
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -49002,7 +49483,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 235.87,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -49034,10 +49515,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 425.0,
-      "live_price": 235.87,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 188.7,
-      "target_sell": 224.08,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 64,
       "signal": "BUY",
       "d7_workbook": 2.45,
@@ -49062,6 +49543,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 235.87
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -49073,7 +49558,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 235.87,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -49161,8 +49646,8 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 285.0,
-      "live_price": null,
-      "live_source": "workbook",
+      "live_price": 285.0,
+      "live_source": "wb_fallback_source_rejected",
       "target_buy": 228.0,
       "target_sell": 270.75,
       "score": 56,
@@ -49174,21 +49659,29 @@
       "notes": "Hidden Fates tin.",
       "confidence": "UNKNOWN",
       "confidence_flags": [
-        "no_live_price"
+        "workbook_fallback",
+        "source_rejected"
       ],
-      "reconcile_reason": "",
+      "reconcile_reason": "pc returned $25 but workbook is $285 (0.1x) \u2014 outside 0.1-15.0 band, using workbook",
       "sources": {
-        "pricecharting": null,
+        "pricecharting": {
+          "ungraded": 25.19,
+          "grade_7": null,
+          "grade_8": null,
+          "grade_9": null,
+          "grade_9_5": null,
+          "grade_10": null
+        },
         "pokeprice": null,
         "ebay_recent_avg": null,
         "tcgplayer_market": null,
-        "pricecharting_url": null,
+        "pricecharting_url": "https://www.pricecharting.com/search-products?type=prices&q=sealed+tin",
         "tcgplayer_url": null,
         "ppt_meta": null
       },
-      "reconcile_confidence": null,
-      "scrape_rejected_value": null,
-      "scrape_rejected_source": null
+      "reconcile_confidence": "UNKNOWN",
+      "scrape_rejected_value": 0,
+      "scrape_rejected_source": "rejected_sanity_pricecharting:raw_$25_vs_wb_$285"
     },
     "DD007": {
       "id": "DD007",
@@ -49204,10 +49697,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 525.0,
-      "live_price": 231.81,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 185.45,
-      "target_sell": 220.22,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 65,
       "signal": "BUY",
       "d7_workbook": 0.24,
@@ -49232,6 +49725,10 @@
         {
           "ts": "2026-06-03T15:56:42.617862Z",
           "p": 231.81
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -49243,7 +49740,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 231.81,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -49413,11 +49910,11 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 245.0,
-      "live_price": 235.87,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 188.7,
-      "target_sell": 224.08,
-      "score": 55,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
+      "score": 56,
       "signal": "HOLD",
       "d7_workbook": 1.57,
       "d30_workbook": 4.0,
@@ -49445,6 +49942,10 @@
         {
           "ts": "2026-06-04T19:45:08.121347Z",
           "p": 235.87
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -49456,7 +49957,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 235.87,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -49559,10 +50060,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 195.0,
-      "live_price": 231.81,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 185.45,
-      "target_sell": 220.22,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 53,
       "signal": "HOLD",
       "d7_workbook": 0.11,
@@ -49587,6 +50088,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 231.81
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -49598,7 +50103,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 231.81,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -49701,10 +50206,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 165.0,
-      "live_price": 231.81,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 185.45,
-      "target_sell": 220.22,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 53,
       "signal": "HOLD",
       "d7_workbook": 0.82,
@@ -49729,6 +50234,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 231.81
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -49740,7 +50249,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 231.81,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,
@@ -49772,10 +50281,10 @@
       "category": "Sealed Product",
       "pop_psa10": null,
       "wb_price": 165.0,
-      "live_price": 231.81,
+      "live_price": 225.03,
       "live_source": "pricecharting:raw",
-      "target_buy": 185.45,
-      "target_sell": 220.22,
+      "target_buy": 180.02,
+      "target_sell": 213.78,
       "score": 53,
       "signal": "HOLD",
       "d7_workbook": -0.28,
@@ -49800,6 +50309,10 @@
         {
           "ts": "2026-06-04T14:14:48.953916Z",
           "p": 231.81
+        },
+        {
+          "ts": "2026-06-06T12:16:31.344259Z",
+          "p": 225.03
         }
       ],
       "image": "https://storage.googleapis.com/images.pricecharting.com/z376uvyql62aorb5/60.jpg",
@@ -49811,7 +50324,7 @@
       "reconcile_reason": "",
       "sources": {
         "pricecharting": {
-          "ungraded": 231.81,
+          "ungraded": 225.03,
           "grade_7": null,
           "grade_8": null,
           "grade_9": null,

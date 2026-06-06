@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T13:58:26.637336+00:00",
-  "n_sets": 160,
+  "generated_at": "2026-06-06T12:16:32.704674+00:00",
+  "n_sets": 159,
   "n_cards_classified": 774,
   "hot_sets_top10": [
     {
@@ -119,29 +119,6 @@
       }
     },
     {
-      "set": "ME: Ascended Heroes",
-      "n_cards": 8,
-      "avg_score": 61.4,
-      "heat_score": 118.3,
-      "buy_density_pct": 62.5,
-      "avg_d7_pct": 44.65,
-      "avg_d30_pct": 75.33,
-      "n_strong_buy": 0,
-      "n_buy": 5,
-      "n_hold": 2,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 6842.0,
-      "top_card": {
-        "cid": "X132",
-        "name": "Mega Scrafty ex - 285/217",
-        "variant": "Raw NM",
-        "score": 74.0,
-        "signal": "BUY",
-        "live_price": 68.6
-      }
-    },
-    {
       "set": "Neo Revelation",
       "n_cards": 7,
       "avg_score": 64.7,
@@ -211,53 +188,53 @@
       }
     },
     {
-      "set": "Base Set (Shadowless)",
-      "n_cards": 8,
-      "avg_score": 63.9,
-      "heat_score": 115.5,
-      "buy_density_pct": 50.0,
-      "avg_d7_pct": 212.23,
-      "avg_d30_pct": 221.4,
-      "n_strong_buy": 1,
-      "n_buy": 3,
-      "n_hold": 4,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 463580.0,
-      "top_card": {
-        "cid": "X501",
-        "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
-        "variant": "PSA 8",
-        "score": 75.0,
-        "signal": "STRONG BUY",
-        "live_price": 31392.6
-      }
-    }
-  ],
-  "cold_sets_bottom10": [
-    {
-      "set": "SV05: Temporal Forces",
+      "set": "Jungle 1st Edition",
       "n_cards": 2,
-      "avg_score": 41.0,
-      "heat_score": -8.6,
-      "buy_density_pct": 0.0,
-      "avg_d7_pct": -34.8,
-      "avg_d30_pct": -30.99,
-      "n_strong_buy": 0,
+      "avg_score": 63.0,
+      "heat_score": 115.2,
+      "buy_density_pct": 50.0,
+      "avg_d7_pct": 137.5,
+      "avg_d30_pct": 138.75,
+      "n_strong_buy": 1,
       "n_buy": 0,
       "n_hold": 1,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 53.0,
+      "total_universe_usd": 3500.0,
       "top_card": {
-        "cid": "Q013",
-        "name": "Walking Wake ex - 205/162",
-        "variant": "PSA 10",
-        "score": 52.0,
-        "signal": "HOLD",
-        "live_price": null
+        "cid": "V037",
+        "name": "Snorlax",
+        "variant": "PSA 9",
+        "score": 77.0,
+        "signal": "STRONG BUY",
+        "live_price": 2550.0
       }
     },
+    {
+      "set": "Base Set 1st Edition",
+      "n_cards": 6,
+      "avg_score": 62.8,
+      "heat_score": 115.1,
+      "buy_density_pct": 50.0,
+      "avg_d7_pct": 122.68,
+      "avg_d30_pct": 127.14,
+      "n_strong_buy": 3,
+      "n_buy": 0,
+      "n_hold": 3,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 440260.0,
+      "top_card": {
+        "cid": "V011",
+        "name": "Ninetales",
+        "variant": "PSA 9",
+        "score": 76.0,
+        "signal": "STRONG BUY",
+        "live_price": 2569.47
+      }
+    }
+  ],
+  "cold_sets_bottom10": [
     {
       "set": "Team Rocket 1st Edition",
       "n_cards": 2,
@@ -277,29 +254,6 @@
         "name": "Dark Charizard",
         "variant": "PSA 9",
         "score": 49.0,
-        "signal": "HOLD",
-        "live_price": null
-      }
-    },
-    {
-      "set": "SV04: Paradox Rift",
-      "n_cards": 7,
-      "avg_score": 42.0,
-      "heat_score": -8.2,
-      "buy_density_pct": 0.0,
-      "avg_d7_pct": -53.83,
-      "avg_d30_pct": -34.24,
-      "n_strong_buy": 0,
-      "n_buy": 0,
-      "n_hold": 2,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 518.0,
-      "top_card": {
-        "cid": "M051",
-        "name": "Roaring Moon ex - 229/182",
-        "variant": "PSA 10",
-        "score": 76.0,
         "signal": "HOLD",
         "live_price": null
       }
@@ -351,6 +305,29 @@
       }
     },
     {
+      "set": "SV05: Temporal Forces",
+      "n_cards": 4,
+      "avg_score": 47.0,
+      "heat_score": -6.2,
+      "buy_density_pct": 0.0,
+      "avg_d7_pct": -16.14,
+      "avg_d30_pct": -10.75,
+      "n_strong_buy": 0,
+      "n_buy": 0,
+      "n_hold": 3,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 53.0,
+      "top_card": {
+        "cid": "V205",
+        "name": "Walking Wake ex - 205/162",
+        "variant": "Raw NM",
+        "score": 53.0,
+        "signal": "HOLD",
+        "live_price": null
+      }
+    },
+    {
       "set": "Trophy",
       "n_cards": 3,
       "avg_score": 48.3,
@@ -374,22 +351,22 @@
       }
     },
     {
-      "set": "SWSH06: Chilling Reign",
-      "n_cards": 10,
-      "avg_score": 49.4,
-      "heat_score": 3.9,
-      "buy_density_pct": 0.0,
-      "avg_d7_pct": -10.38,
-      "avg_d30_pct": -0.82,
+      "set": "SV04: Paradox Rift",
+      "n_cards": 9,
+      "avg_score": 46.7,
+      "heat_score": 2.9,
+      "buy_density_pct": 11.1,
+      "avg_d7_pct": -22.03,
+      "avg_d30_pct": -4.13,
       "n_strong_buy": 0,
-      "n_buy": 0,
-      "n_hold": 8,
+      "n_buy": 1,
+      "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 111.0,
+      "total_universe_usd": 542.0,
       "top_card": {
-        "cid": "M028",
-        "name": "Galarian Articuno V (Alternate Full Art)",
+        "cid": "M051",
+        "name": "Roaring Moon ex - 229/182",
         "variant": "PSA 10",
         "score": 76.0,
         "signal": "HOLD",
@@ -409,14 +386,14 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 9675.0,
+      "total_universe_usd": 9666.0,
       "top_card": {
         "cid": "Z011",
         "name": "Umbreon (32)",
         "variant": "PSA 10",
         "score": 67.0,
         "signal": "BUY",
-        "live_price": 933.25
+        "live_price": 925.0
       }
     },
     {
@@ -432,7 +409,7 @@
       "n_hold": 10,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 2321.0,
+      "total_universe_usd": 2329.0,
       "top_card": {
         "cid": "M049",
         "name": "Mela SIR",
@@ -443,26 +420,49 @@
       }
     },
     {
-      "set": "SWSH11: Lost Origin",
-      "n_cards": 3,
-      "avg_score": 46.0,
-      "heat_score": 5.9,
+      "set": "SWSH06: Chilling Reign",
+      "n_cards": 12,
+      "avg_score": 49.7,
+      "heat_score": 7.2,
       "buy_density_pct": 0.0,
-      "avg_d7_pct": -14.82,
-      "avg_d30_pct": 2.53,
+      "avg_d7_pct": -8.41,
+      "avg_d30_pct": -0.02,
       "n_strong_buy": 0,
       "n_buy": 0,
-      "n_hold": 2,
+      "n_hold": 10,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 157.0,
+      "total_universe_usd": 111.0,
       "top_card": {
-        "cid": "X153",
-        "name": "Aerodactyl V (Alternate Full Art)",
+        "cid": "M028",
+        "name": "Galarian Articuno V (Alternate Full Art)",
         "variant": "PSA 10",
-        "score": 55.0,
+        "score": 76.0,
         "signal": "HOLD",
-        "live_price": 78.72
+        "live_price": null
+      }
+    },
+    {
+      "set": "Paradigm Trigger",
+      "n_cards": 1,
+      "avg_score": 45.0,
+      "heat_score": 17.6,
+      "buy_density_pct": 0.0,
+      "avg_d7_pct": 0.0,
+      "avg_d30_pct": -0.43,
+      "n_strong_buy": 0,
+      "n_buy": 0,
+      "n_hold": 1,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 0.0,
+      "top_card": {
+        "cid": "J006",
+        "name": "Lugia VSTAR (Japanese)",
+        "variant": "PSA 10",
+        "score": 45.0,
+        "signal": "HOLD",
+        "live_price": null
       }
     }
   ],
@@ -583,29 +583,6 @@
       }
     },
     {
-      "set": "ME: Ascended Heroes",
-      "n_cards": 8,
-      "avg_score": 61.4,
-      "heat_score": 118.3,
-      "buy_density_pct": 62.5,
-      "avg_d7_pct": 44.65,
-      "avg_d30_pct": 75.33,
-      "n_strong_buy": 0,
-      "n_buy": 5,
-      "n_hold": 2,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 6842.0,
-      "top_card": {
-        "cid": "X132",
-        "name": "Mega Scrafty ex - 285/217",
-        "variant": "Raw NM",
-        "score": 74.0,
-        "signal": "BUY",
-        "live_price": 68.6
-      }
-    },
-    {
       "set": "Neo Revelation",
       "n_cards": 7,
       "avg_score": 64.7,
@@ -675,29 +652,6 @@
       }
     },
     {
-      "set": "Base Set (Shadowless)",
-      "n_cards": 8,
-      "avg_score": 63.9,
-      "heat_score": 115.5,
-      "buy_density_pct": 50.0,
-      "avg_d7_pct": 212.23,
-      "avg_d30_pct": 221.4,
-      "n_strong_buy": 1,
-      "n_buy": 3,
-      "n_hold": 4,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 463580.0,
-      "top_card": {
-        "cid": "X501",
-        "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
-        "variant": "PSA 8",
-        "score": 75.0,
-        "signal": "STRONG BUY",
-        "live_price": 31392.6
-      }
-    },
-    {
       "set": "Jungle 1st Edition",
       "n_cards": 2,
       "avg_score": 63.0,
@@ -718,6 +672,29 @@
         "score": 77.0,
         "signal": "STRONG BUY",
         "live_price": 2550.0
+      }
+    },
+    {
+      "set": "Base Set 1st Edition",
+      "n_cards": 6,
+      "avg_score": 62.8,
+      "heat_score": 115.1,
+      "buy_density_pct": 50.0,
+      "avg_d7_pct": 122.68,
+      "avg_d30_pct": 127.14,
+      "n_strong_buy": 3,
+      "n_buy": 0,
+      "n_hold": 3,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 440260.0,
+      "top_card": {
+        "cid": "V011",
+        "name": "Ninetales",
+        "variant": "PSA 9",
+        "score": 76.0,
+        "signal": "STRONG BUY",
+        "live_price": 2569.47
       }
     },
     {
@@ -756,14 +733,14 @@
       "n_hold": 6,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 18269.0,
+      "total_universe_usd": 18293.0,
       "top_card": {
         "cid": "X232",
         "name": "Dragonite (4)",
         "variant": "PSA 9",
         "score": 75.0,
         "signal": "STRONG BUY",
-        "live_price": 651.99
+        "live_price": 676.31
       }
     },
     {
@@ -790,6 +767,29 @@
       }
     },
     {
+      "set": "ME: Ascended Heroes",
+      "n_cards": 11,
+      "avg_score": 60.3,
+      "heat_score": 112.7,
+      "buy_density_pct": 45.5,
+      "avg_d7_pct": 32.94,
+      "avg_d30_pct": 60.12,
+      "n_strong_buy": 0,
+      "n_buy": 5,
+      "n_hold": 5,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 7214.0,
+      "top_card": {
+        "cid": "X132",
+        "name": "Mega Scrafty ex - 285/217",
+        "variant": "Raw NM",
+        "score": 74.0,
+        "signal": "BUY",
+        "live_price": 68.6
+      }
+    },
+    {
       "set": "Team Rocket",
       "n_cards": 3,
       "avg_score": 60.7,
@@ -813,26 +813,26 @@
       }
     },
     {
-      "set": "Base Set 1st Edition",
-      "n_cards": 9,
-      "avg_score": 58.7,
-      "heat_score": 108.5,
-      "buy_density_pct": 33.3,
-      "avg_d7_pct": 81.99,
-      "avg_d30_pct": 86.43,
-      "n_strong_buy": 3,
-      "n_buy": 0,
-      "n_hold": 6,
+      "set": "Base Set (Shadowless)",
+      "n_cards": 13,
+      "avg_score": 59.0,
+      "heat_score": 107.8,
+      "buy_density_pct": 30.8,
+      "avg_d7_pct": 130.87,
+      "avg_d30_pct": 138.17,
+      "n_strong_buy": 1,
+      "n_buy": 3,
+      "n_hold": 9,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 490165.0,
+      "total_universe_usd": 514339.0,
       "top_card": {
-        "cid": "V011",
-        "name": "Ninetales",
-        "variant": "PSA 9",
-        "score": 76.0,
+        "cid": "X501",
+        "name": "Pokemon Base Set (Shadowless) [1st Edition] Booster Pack",
+        "variant": "PSA 8",
+        "score": 75.0,
         "signal": "STRONG BUY",
-        "live_price": 2569.47
+        "live_price": 31392.6
       }
     },
     {
@@ -894,7 +894,7 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 95487.0,
+      "total_universe_usd": 95480.0,
       "top_card": {
         "cid": "V002",
         "name": "Charizard",
@@ -917,7 +917,7 @@
       "n_hold": 31,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 14238.0,
+      "total_universe_usd": 14237.0,
       "top_card": {
         "cid": "X117",
         "name": "Eevee ex - 167/131",
@@ -940,7 +940,7 @@
       "n_hold": 29,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 94269.0,
+      "total_universe_usd": 94215.0,
       "top_card": {
         "cid": "V255",
         "name": "Alakazam",
@@ -1043,26 +1043,26 @@
       }
     },
     {
-      "set": "Black Star Promo #24",
-      "n_cards": 1,
+      "set": "Mega Evolution ME01",
+      "n_cards": 2,
       "avg_score": 63.0,
-      "heat_score": 83.6,
+      "heat_score": 81.7,
       "buy_density_pct": 100.0,
-      "avg_d7_pct": 0.0,
-      "avg_d30_pct": 28.41,
+      "avg_d7_pct": 4.97,
+      "avg_d30_pct": 19.0,
       "n_strong_buy": 0,
-      "n_buy": 1,
+      "n_buy": 2,
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 1100.0,
+      "total_universe_usd": 0.0,
       "top_card": {
-        "cid": "M092",
-        "name": "Birthday Pikachu Promo",
-        "variant": "PSA 10",
+        "cid": "D118",
+        "name": "Pokemon Mega Evolution ME01 Booster Box",
+        "variant": "Sealed",
         "score": 63.0,
         "signal": "BUY",
-        "live_price": 1100.0
+        "live_price": null
       }
     },
     {
@@ -1135,26 +1135,26 @@
       }
     },
     {
-      "set": "Champion's Path PC",
+      "set": "Burning Shadows",
       "n_cards": 1,
-      "avg_score": 63.0,
-      "heat_score": 67.9,
+      "avg_score": 68.0,
+      "heat_score": 68.3,
       "buy_density_pct": 100.0,
-      "avg_d7_pct": 1.82,
-      "avg_d30_pct": 10.0,
+      "avg_d7_pct": 2.76,
+      "avg_d30_pct": 7.0,
       "n_strong_buy": 0,
       "n_buy": 1,
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 222.0,
+      "total_universe_usd": 236.0,
       "top_card": {
-        "cid": "PC004",
-        "name": "Premium Collection PSA 10 Box (Champion's Path)",
+        "cid": "DD003",
+        "name": "Pokemon Burning Shadows Booster Box",
         "variant": "Sealed",
-        "score": 63.0,
+        "score": 68.0,
         "signal": "BUY",
-        "live_price": 221.55
+        "live_price": 235.87
       }
     }
   ]
