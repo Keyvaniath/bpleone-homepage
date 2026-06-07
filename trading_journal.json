@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T12:16:32.575886+00:00",
+  "generated_at": "2026-06-07T12:36:20.342728+00:00",
   "summary": {
     "closed_trades": 1,
     "open_positions": 7,
@@ -91,7 +91,7 @@
       "qty": 1,
       "cost_per_unit": 1500.0,
       "total_cost": 1500.0,
-      "days_held": 66
+      "days_held": 67
     },
     {
       "item_id": "INV-002",
@@ -102,7 +102,7 @@
       "qty": 1,
       "cost_per_unit": 1450.0,
       "total_cost": 1450.0,
-      "days_held": 78
+      "days_held": 79
     },
     {
       "item_id": "INV-004",
@@ -113,7 +113,7 @@
       "qty": 4,
       "cost_per_unit": 265.0,
       "total_cost": 1060.0,
-      "days_held": 39
+      "days_held": 40
     },
     {
       "item_id": "P-003",
@@ -124,7 +124,7 @@
       "qty": 1,
       "cost_per_unit": 600.0,
       "total_cost": 600.0,
-      "days_held": 66
+      "days_held": 67
     },
     {
       "item_id": "INV-001",
@@ -135,7 +135,7 @@
       "qty": 2,
       "cost_per_unit": 275.0,
       "total_cost": 550.0,
-      "days_held": 52
+      "days_held": 53
     },
     {
       "item_id": "INV-003",
@@ -146,7 +146,7 @@
       "qty": 3,
       "cost_per_unit": 165.0,
       "total_cost": 495.0,
-      "days_held": 116
+      "days_held": 117
     },
     {
       "item_id": "P-001",
@@ -157,7 +157,7 @@
       "qty": 1,
       "cost_per_unit": 375.0,
       "total_cost": 375.0,
-      "days_held": 66
+      "days_held": 67
     }
   ]
 }

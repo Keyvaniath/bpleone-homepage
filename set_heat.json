@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T12:16:32.704674+00:00",
+  "generated_at": "2026-06-07T12:36:20.483451+00:00",
   "n_sets": 159,
   "n_cards_classified": 774,
   "hot_sets_top10": [
@@ -39,7 +39,7 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 15584.0,
+      "total_universe_usd": 15598.0,
       "top_card": {
         "cid": "V017",
         "name": "Shining Charizard",
@@ -131,7 +131,7 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 12154.0,
+      "total_universe_usd": 12168.0,
       "top_card": {
         "cid": "Z022",
         "name": "Shining Magikarp",
@@ -409,7 +409,7 @@
       "n_hold": 10,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 2329.0,
+      "total_universe_usd": 2706.0,
       "top_card": {
         "cid": "M049",
         "name": "Mela SIR",
@@ -503,7 +503,7 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 15584.0,
+      "total_universe_usd": 15598.0,
       "top_card": {
         "cid": "V017",
         "name": "Shining Charizard",
@@ -595,7 +595,7 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 12154.0,
+      "total_universe_usd": 12168.0,
       "top_card": {
         "cid": "Z022",
         "name": "Shining Magikarp",
@@ -733,7 +733,7 @@
       "n_hold": 6,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 18293.0,
+      "total_universe_usd": 18298.0,
       "top_card": {
         "cid": "X232",
         "name": "Dragonite (4)",
@@ -848,7 +848,7 @@
       "n_hold": 5,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 9205.0,
+      "total_universe_usd": 9190.0,
       "top_card": {
         "cid": "M101",
         "name": "Charizard V (Secret)",
@@ -940,7 +940,7 @@
       "n_hold": 29,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 94215.0,
+      "total_universe_usd": 94868.0,
       "top_card": {
         "cid": "V255",
         "name": "Alakazam",
@@ -976,8 +976,8 @@
     {
       "set": "Pokemon GO",
       "n_cards": 9,
-      "avg_score": 54.3,
-      "heat_score": 100.1,
+      "avg_score": 53.0,
+      "heat_score": 99.5,
       "buy_density_pct": 11.1,
       "avg_d7_pct": 33.04,
       "avg_d30_pct": 35.51,
@@ -986,7 +986,7 @@
       "n_hold": 8,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 573.0,
+      "total_universe_usd": 579.0,
       "top_card": {
         "cid": "P030",
         "name": "Charizard Full Art (Pokemon GO)",
@@ -1009,7 +1009,7 @@
       "n_hold": 17,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 2524.0,
+      "total_universe_usd": 2527.0,
       "top_card": {
         "cid": "M066",
         "name": "Pikachu ex - 238/191",
@@ -1068,17 +1068,17 @@
     {
       "set": "Evolving Skies",
       "n_cards": 29,
-      "avg_score": 61.6,
-      "heat_score": 79.5,
-      "buy_density_pct": 24.1,
+      "avg_score": 61.5,
+      "heat_score": 78.4,
+      "buy_density_pct": 20.7,
       "avg_d7_pct": 11.76,
       "avg_d30_pct": 53.8,
       "n_strong_buy": 6,
-      "n_buy": 1,
-      "n_hold": 22,
+      "n_buy": 0,
+      "n_hold": 23,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 16648.0,
+      "total_universe_usd": 16705.0,
       "top_card": {
         "cid": "M002",
         "name": "Umbreon VMAX (Alternate Art Secret)",
@@ -1101,7 +1101,7 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 254.0,
+      "total_universe_usd": 244.0,
       "top_card": {
         "cid": "DD002",
         "name": "Pokemon Evolutions Booster Pack",
@@ -1147,14 +1147,14 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 236.0,
+      "total_universe_usd": 225.0,
       "top_card": {
         "cid": "DD003",
         "name": "Pokemon Burning Shadows Booster Box",
         "variant": "Sealed",
         "score": 68.0,
         "signal": "BUY",
-        "live_price": 235.87
+        "live_price": 225.03
       }
     }
   ]
