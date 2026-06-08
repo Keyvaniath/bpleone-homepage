@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T12:36:20.483451+00:00",
+  "generated_at": "2026-06-08T14:55:42.290156+00:00",
   "n_sets": 159,
   "n_cards_classified": 774,
   "hot_sets_top10": [
@@ -39,14 +39,14 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 15598.0,
+      "total_universe_usd": 15639.0,
       "top_card": {
         "cid": "V017",
         "name": "Shining Charizard",
         "variant": "PSA 9",
         "score": 77.0,
         "signal": "STRONG BUY",
-        "live_price": 11345.38
+        "live_price": 11386.98
       }
     },
     {
@@ -131,7 +131,7 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 12168.0,
+      "total_universe_usd": 12171.0,
       "top_card": {
         "cid": "Z022",
         "name": "Shining Magikarp",
@@ -223,14 +223,14 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 440260.0,
+      "total_universe_usd": 440325.0,
       "top_card": {
         "cid": "V011",
         "name": "Ninetales",
         "variant": "PSA 9",
         "score": 76.0,
         "signal": "STRONG BUY",
-        "live_price": 2569.47
+        "live_price": 2634.73
       }
     }
   ],
@@ -409,7 +409,7 @@
       "n_hold": 10,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 2706.0,
+      "total_universe_usd": 2701.0,
       "top_card": {
         "cid": "M049",
         "name": "Mela SIR",
@@ -503,14 +503,14 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 15598.0,
+      "total_universe_usd": 15639.0,
       "top_card": {
         "cid": "V017",
         "name": "Shining Charizard",
         "variant": "PSA 9",
         "score": 77.0,
         "signal": "STRONG BUY",
-        "live_price": 11345.38
+        "live_price": 11386.98
       }
     },
     {
@@ -595,7 +595,7 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 12168.0,
+      "total_universe_usd": 12171.0,
       "top_card": {
         "cid": "Z022",
         "name": "Shining Magikarp",
@@ -687,14 +687,14 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 440260.0,
+      "total_universe_usd": 440325.0,
       "top_card": {
         "cid": "V011",
         "name": "Ninetales",
         "variant": "PSA 9",
         "score": 76.0,
         "signal": "STRONG BUY",
-        "live_price": 2569.47
+        "live_price": 2634.73
       }
     },
     {
@@ -733,7 +733,7 @@
       "n_hold": 6,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 18298.0,
+      "total_universe_usd": 18299.0,
       "top_card": {
         "cid": "X232",
         "name": "Dragonite (4)",
@@ -779,7 +779,7 @@
       "n_hold": 5,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 7214.0,
+      "total_universe_usd": 7217.0,
       "top_card": {
         "cid": "X132",
         "name": "Mega Scrafty ex - 285/217",
@@ -848,7 +848,7 @@
       "n_hold": 5,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 9190.0,
+      "total_universe_usd": 9195.0,
       "top_card": {
         "cid": "M101",
         "name": "Charizard V (Secret)",
@@ -871,14 +871,37 @@
       "n_hold": 3,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 5930.0,
+      "total_universe_usd": 5766.0,
       "top_card": {
         "cid": "V039",
         "name": "Gengar",
         "variant": "PSA 9",
         "score": 77.0,
         "signal": "STRONG BUY",
-        "live_price": 2382.77
+        "live_price": 2218.5
+      }
+    },
+    {
+      "set": "Prismatic Evolutions",
+      "n_cards": 41,
+      "avg_score": 56.6,
+      "heat_score": 105.7,
+      "buy_density_pct": 26.8,
+      "avg_d7_pct": 34.78,
+      "avg_d30_pct": 48.63,
+      "n_strong_buy": 0,
+      "n_buy": 11,
+      "n_hold": 30,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 15931.0,
+      "top_card": {
+        "cid": "X117",
+        "name": "Eevee ex - 167/131",
+        "variant": "Raw NM",
+        "score": 74.0,
+        "signal": "BUY",
+        "live_price": 172.16
       }
     },
     {
@@ -905,29 +928,6 @@
       }
     },
     {
-      "set": "Prismatic Evolutions",
-      "n_cards": 41,
-      "avg_score": 56.3,
-      "heat_score": 104.8,
-      "buy_density_pct": 24.4,
-      "avg_d7_pct": 34.78,
-      "avg_d30_pct": 48.63,
-      "n_strong_buy": 0,
-      "n_buy": 10,
-      "n_hold": 31,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 14237.0,
-      "top_card": {
-        "cid": "X117",
-        "name": "Eevee ex - 167/131",
-        "variant": "Raw NM",
-        "score": 74.0,
-        "signal": "BUY",
-        "live_price": 172.16
-      }
-    },
-    {
       "set": "Base Set",
       "n_cards": 36,
       "avg_score": 54.1,
@@ -940,7 +940,7 @@
       "n_hold": 29,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 94868.0,
+      "total_universe_usd": 98463.0,
       "top_card": {
         "cid": "V255",
         "name": "Alakazam",
@@ -963,21 +963,21 @@
       "n_hold": 11,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 118457.0,
+      "total_universe_usd": 117944.0,
       "top_card": {
         "cid": "X503",
         "name": "Lugia",
         "variant": "PSA 10",
         "score": 79.0,
         "signal": "STRONG BUY",
-        "live_price": 62508.04
+        "live_price": 61995.33
       }
     },
     {
       "set": "Pokemon GO",
       "n_cards": 9,
-      "avg_score": 53.0,
-      "heat_score": 99.5,
+      "avg_score": 54.4,
+      "heat_score": 100.1,
       "buy_density_pct": 11.1,
       "avg_d7_pct": 33.04,
       "avg_d30_pct": 35.51,
@@ -986,7 +986,7 @@
       "n_hold": 8,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 579.0,
+      "total_universe_usd": 623.0,
       "top_card": {
         "cid": "P030",
         "name": "Charizard Full Art (Pokemon GO)",
@@ -1009,7 +1009,7 @@
       "n_hold": 17,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 2527.0,
+      "total_universe_usd": 2747.0,
       "top_card": {
         "cid": "M066",
         "name": "Pikachu ex - 238/191",
@@ -1078,7 +1078,7 @@
       "n_hold": 23,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 16705.0,
+      "total_universe_usd": 16710.0,
       "top_card": {
         "cid": "M002",
         "name": "Umbreon VMAX (Alternate Art Secret)",
@@ -1086,29 +1086,6 @@
         "score": 79.0,
         "signal": "STRONG BUY",
         "live_price": 1855.94
-      }
-    },
-    {
-      "set": "Evolutions",
-      "n_cards": 2,
-      "avg_score": 68.5,
-      "heat_score": 70.1,
-      "buy_density_pct": 100.0,
-      "avg_d7_pct": 2.45,
-      "avg_d30_pct": 9.0,
-      "n_strong_buy": 0,
-      "n_buy": 2,
-      "n_hold": 0,
-      "n_sell": 0,
-      "n_strong_sell": 0,
-      "total_universe_usd": 244.0,
-      "top_card": {
-        "cid": "DD002",
-        "name": "Pokemon Evolutions Booster Pack",
-        "variant": "Sealed",
-        "score": 70.0,
-        "signal": "BUY",
-        "live_price": 18.63
       }
     },
     {
@@ -1124,14 +1101,14 @@
       "n_hold": 0,
       "n_sell": 0,
       "n_strong_sell": 0,
-      "total_universe_usd": 232.0,
+      "total_universe_usd": 225.0,
       "top_card": {
         "cid": "DD001",
         "name": "Pokemon Generations Booster Box",
         "variant": "Sealed",
         "score": 68.0,
         "signal": "BUY",
-        "live_price": 231.81
+        "live_price": 225.03
       }
     },
     {
@@ -1155,6 +1132,29 @@
         "score": 68.0,
         "signal": "BUY",
         "live_price": 225.03
+      }
+    },
+    {
+      "set": "Champion's Path PC",
+      "n_cards": 1,
+      "avg_score": 61.0,
+      "heat_score": 67.1,
+      "buy_density_pct": 100.0,
+      "avg_d7_pct": 1.82,
+      "avg_d30_pct": 10.0,
+      "n_strong_buy": 0,
+      "n_buy": 1,
+      "n_hold": 0,
+      "n_sell": 0,
+      "n_strong_sell": 0,
+      "total_universe_usd": 278.0,
+      "top_card": {
+        "cid": "PC004",
+        "name": "Premium Collection PSA 10 Box (Champion's Path)",
+        "variant": "Sealed",
+        "score": 61.0,
+        "signal": "BUY",
+        "live_price": 278.43
       }
     }
   ]

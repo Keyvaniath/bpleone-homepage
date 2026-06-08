@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-07T12:36:19.310193+00:00",
-  "buy_alerts_count": 41,
-  "sell_alerts_count": 131,
+  "generated_at": "2026-06-08T14:55:40.969215+00:00",
+  "buy_alerts_count": 40,
+  "sell_alerts_count": 138,
   "high_score_count": 1,
   "buy_alerts": [
     {
       "cid": "D109",
       "name": "Pokemon Hidden Fates ETB",
       "variant": "Sealed",
-      "live_price": 170.63,
+      "live_price": 170.42,
       "buy_target": 340.0,
       "wb_price": 425,
       "discount_pct": 59.9,
@@ -296,10 +296,10 @@
       "cid": "D116",
       "name": "Pokemon Prismatic Evolutions ETB",
       "variant": "Sealed",
-      "live_price": 170.63,
+      "live_price": 170.42,
       "buy_target": 228.0,
       "wb_price": 285,
-      "discount_pct": 40.1,
+      "discount_pct": 40.2,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
@@ -415,30 +415,6 @@
       "source": "pricecharting:raw"
     },
     {
-      "cid": "V004",
-      "name": "Charizard",
-      "variant": "PSA 10",
-      "live_price": 29985.79,
-      "sell_target": 8800.0,
-      "wb_price": 8000,
-      "premium_pct": 274.8,
-      "just_crossed_today": false,
-      "confidence": "OVERRIDE",
-      "source": "pricecharting:psa10"
-    },
-    {
-      "cid": "X130",
-      "name": "Mega Gengar ex MAR (Ascended)",
-      "variant": "Raw NM",
-      "live_price": 87.4,
-      "sell_target": 28.0,
-      "wb_price": 25,
-      "premium_pct": 249.6,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "tcgplayer_api"
-    },
-    {
       "cid": "S015",
       "name": "Obsidian Flames ETB",
       "variant": "Sealed",
@@ -449,6 +425,18 @@
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"
+    },
+    {
+      "cid": "X130",
+      "name": "Mega Gengar ex MAR (Ascended)",
+      "variant": "Raw NM",
+      "live_price": 86.78,
+      "sell_target": 28.0,
+      "wb_price": 25,
+      "premium_pct": 247.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "tcgplayer_api"
     },
     {
       "cid": "S030",
@@ -466,10 +454,10 @@
       "cid": "P046",
       "name": "Mega Rayquaza Common (AH)",
       "variant": "Raw NM",
-      "live_price": 16.96,
+      "live_price": 16.91,
       "sell_target": 6.0,
       "wb_price": 5,
-      "premium_pct": 239.2,
+      "premium_pct": 238.2,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
@@ -478,10 +466,10 @@
       "cid": "S010",
       "name": "SV 151 Booster Bundle",
       "variant": "Sealed (6 packs)",
-      "live_price": 192.35,
+      "live_price": 192.92,
       "sell_target": 63.0,
       "wb_price": 57.71,
-      "premium_pct": 233.3,
+      "premium_pct": 234.3,
       "just_crossed_today": false,
       "confidence": "OVERRIDE",
       "source": "tcgplayer_api"
@@ -511,6 +499,18 @@
       "source": "tcgplayer_api"
     },
     {
+      "cid": "X119",
+      "name": "Mewtwo Special Art (PE)",
+      "variant": "Raw NM",
+      "live_price": 72.28,
+      "sell_target": 28.0,
+      "wb_price": 25,
+      "premium_pct": 189.1,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "tcgplayer_api"
+    },
+    {
       "cid": "JB04",
       "name": "Eevee Heroes Booster (JP single)",
       "variant": "Sealed",
@@ -535,25 +535,13 @@
       "source": "pricecharting:raw"
     },
     {
-      "cid": "X119",
-      "name": "Mewtwo Special Art (PE)",
-      "variant": "Raw NM",
-      "live_price": 71.39,
-      "sell_target": 28.0,
-      "wb_price": 25,
-      "premium_pct": 185.6,
-      "just_crossed_today": false,
-      "confidence": "MEDIUM",
-      "source": "tcgplayer_api"
-    },
-    {
       "cid": "P037",
       "name": "Marnie Holo Trainer",
       "variant": "Raw NM",
-      "live_price": 17.11,
+      "live_price": 17.18,
       "sell_target": 7.0,
       "wb_price": 6,
-      "premium_pct": 185.2,
+      "premium_pct": 186.3,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "tcgplayer_api"
@@ -602,6 +590,18 @@
       "sell_target": 242.0,
       "wb_price": 220,
       "premium_pct": 172.7,
+      "just_crossed_today": false,
+      "confidence": "MEDIUM",
+      "source": "pricecharting:raw"
+    },
+    {
+      "cid": "S020",
+      "name": "Twilight Masquerade BB",
+      "variant": "Sealed (36 packs)",
+      "live_price": 350.0,
+      "sell_target": 143.0,
+      "wb_price": 130,
+      "premium_pct": 169.2,
       "just_crossed_today": false,
       "confidence": "MEDIUM",
       "source": "pricecharting:raw"

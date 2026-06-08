@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T12:36:20.859808+00:00",
+  "generated_at": "2026-06-08T14:55:42.679259+00:00",
   "overall": "RED",
   "counts": {
     "green": 21,
@@ -12,7 +12,7 @@
       "file": "live_prices.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 263016,
+      "size_bytes": 263753,
       "age_hours": 0.0,
       "status": "GREEN"
     },
@@ -29,7 +29,7 @@
       "file": "price_diff.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 3065,
+      "size_bytes": 9920,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -38,7 +38,7 @@
       "file": "morning_brief_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 9942,
+      "size_bytes": 9941,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -47,7 +47,7 @@
       "file": "price_alerts.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 15914,
+      "size_bytes": 15930,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -65,7 +65,7 @@
       "file": "daily_recap_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 5851,
+      "size_bytes": 5850,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -82,7 +82,7 @@
       "file": "signal_calibration.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 2923,
+      "size_bytes": 2920,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -99,7 +99,7 @@
       "file": "learning_summary.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 2561,
+      "size_bytes": 2557,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -108,7 +108,7 @@
       "file": "arbitrage_v2.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 114986,
+      "size_bytes": 115113,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -126,7 +126,7 @@
       "file": "past_picks.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 10515,
+      "size_bytes": 10513,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -144,45 +144,45 @@
       "file": "homepage_feed.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 217435,
-      "age_hours": 0.2,
-      "generated_age_hours": 24.3,
+      "size_bytes": 224044,
+      "age_hours": 0.1,
+      "generated_age_hours": 26.3,
       "status": "RED",
-      "reason": "stale: 24.3h > 12h"
+      "reason": "stale: 26.3h > 12h"
     },
     {
       "file": "cards_full.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 1400707,
-      "age_hours": 0.2,
-      "generated_age_hours": 24.3,
+      "size_bytes": 1425234,
+      "age_hours": 0.1,
+      "generated_age_hours": 26.3,
       "status": "RED",
-      "reason": "stale: 24.3h > 12h"
+      "reason": "stale: 26.3h > 12h"
     },
     {
       "file": "cards.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 1795311,
-      "age_hours": 0.2,
+      "size_bytes": 1797694,
+      "age_hours": 0.1,
       "status": "GREEN"
     },
     {
       "file": "future_winners.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 21372,
-      "age_hours": 0.2,
-      "generated_age_hours": 24.3,
+      "size_bytes": 21439,
+      "age_hours": 0.1,
+      "generated_age_hours": 26.3,
       "status": "YELLOW",
-      "reason": "aging: 24.3h > 24h"
+      "reason": "aging: 26.3h > 24h"
     },
     {
       "file": "set_heat.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 27590,
+      "size_bytes": 27616,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -191,7 +191,7 @@
       "file": "sealed_market.json",
       "kind": "json",
       "exists": true,
-      "size_bytes": 24409,
+      "size_bytes": 24322,
       "age_hours": 0.0,
       "generated_age_hours": 0.0,
       "status": "GREEN"
@@ -208,7 +208,7 @@
       "file": "weekly_recap.html",
       "kind": "html",
       "exists": true,
-      "size_bytes": 9285,
+      "size_bytes": 9292,
       "age_hours": 0.0,
       "status": "GREEN"
     },
